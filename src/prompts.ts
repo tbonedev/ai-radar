@@ -400,8 +400,8 @@ export function buildPeersComparisonPrompt(
 
   const openclawSection =
     lang === "en"
-      ? `## OpenClaw (core reference, github.com/${openclawDigest.config.repo})\n${openclawDigest.summary}`
-      : `## OpenClaw（核心参照，github.com/${openclawDigest.config.repo}）\n${openclawDigest.summary}`;
+      ? `## ${openclawDigest.config.name} (core reference, github.com/${openclawDigest.config.repo})\n${openclawDigest.summary}`
+      : `## ${openclawDigest.config.name}（核心参照，github.com/${openclawDigest.config.repo}）\n${openclawDigest.summary}`;
 
   const peerSections = peerDigests
     .map((d) => {
@@ -426,7 +426,7 @@ Generate a cross-project comparison report in English with these sections:
 
 1. **Ecosystem Overview** - 3-5 sentences on the overall personal AI assistant / agent open-source landscape
 2. **Activity Comparison** - Table comparing Issues count, PR count, Release status, and health score for each project
-3. **OpenClaw's Position** - Advantages vs peers, technical approach differences, community size comparison
+3. **${openclawDigest.config.name}'s Position** - Advantages vs peers, technical approach differences, community size comparison
 4. **Shared Technical Focus Areas** - Requirements emerging across multiple projects (note which projects, specific needs)
 5. **Differentiation Analysis** - Key differences in feature focus, target users, technical architecture
 6. **Community Momentum & Maturity** - Activity tiers, which are rapidly iterating, which are stabilizing
@@ -450,7 +450,7 @@ ${peerSections}
 
 1. **生态全景** - 用3-5句话概括个人 AI 助手/自主智能体开源生态整体态势
 2. **各项目活跃度对比** - 以表格形式汇总各项目今日的 Issues 数、PR 数、Release 情况及健康度评估
-3. **OpenClaw 在生态中的定位** - 与同类相比的优势、技术路线差异、社区规模对比
+3. **${openclawDigest.config.name} 在生态中的定位** - 与同类相比的优势、技术路线差异、社区规模对比
 4. **共同关注的技术方向** - 多项目共同涌现的需求（注明涉及哪些项目、具体诉求）
 5. **差异化定位分析** - 功能侧重、目标用户、技术架构的关键差异
 6. **社区热度与成熟度** - 活跃度分层，哪些处于快速迭代阶段，哪些在质量巩固阶段

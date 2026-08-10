@@ -41,8 +41,8 @@ export const CLI_REPORT = {
 } as const;
 
 export const OPENCLAW_REPORT = {
-  title: t("OpenClaw 生态日报", "OpenClaw Ecosystem Digest"),
-  deepDive: t("OpenClaw 项目深度报告", "OpenClaw Deep Dive"),
+  title: t("MCP 生态日报", "MCP Ecosystem Digest"),
+  deepDive: t("MCP 项目深度报告", "MCP Deep Dive"),
   comparison: t("横向生态对比", "Cross-Ecosystem Comparison"),
   peers: t("同赛道项目详细报告", "Peer Project Reports"),
 } as const;
@@ -111,7 +111,7 @@ export const COMMUNITY_REPORT = {
 
 export const ISSUE_LABELS = {
   cli: t("digest", "digest-en"),
-  openclaw: t("openclaw", "openclaw-en"),
+  openclaw: t("mcp", "mcp-en"),
   infra: t("infra", "infra-en"),
   web: t("web", "web-en"),
   trending: t("trending", "trending-en"),
@@ -126,7 +126,7 @@ export const CLI_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
   lang === "en" ? `📊 AI CLI Tools Digest ${dateStr}` : `📊 AI CLI 工具社区动态日报 ${dateStr}`;
 
 export const OPENCLAW_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
-  lang === "en" ? `🦞 OpenClaw Ecosystem Digest ${dateStr}` : `🦞 OpenClaw 生态日报 ${dateStr}`;
+  lang === "en" ? `🧩 MCP Ecosystem Digest ${dateStr}` : `🧩 MCP 生态日报 ${dateStr}`;
 
 export const INFRA_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
   lang === "en" ? `⚙️ AI Infrastructure Digest ${dateStr}` : `⚙️ AI 基础设施日报 ${dateStr}`;

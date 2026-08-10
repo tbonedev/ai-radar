@@ -20,7 +20,7 @@ export interface Highlights {
   en: ReportHighlights;
 }
 
-const PAGES_URL_DEFAULT = "https://duanyytop.github.io/agents-radar";
+const PAGES_URL_DEFAULT = "https://tbonedev.github.io/ai-radar";
 
 function escapeHtml(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");

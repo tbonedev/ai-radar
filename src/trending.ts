@@ -39,8 +39,12 @@ export interface TrendingData {
 const SEARCH_QUERIES = [
   { q: "topic:llm", label: "llm" },
   { q: "topic:ai-agent", label: "ai-agent" },
+  { q: "topic:mcp", label: "mcp" },
+  { q: "topic:model-context-protocol", label: "mcp-protocol" },
+  { q: "topic:mcp-server", label: "mcp-server" },
+  { q: "topic:claude-code", label: "claude-code" },
+  { q: "topic:agent-skills", label: "agent-skills" },
   { q: "topic:rag", label: "rag" },
-  { q: "topic:vector-database", label: "vector-db" },
   { q: "topic:large-language-model", label: "llm-model" },
   { q: "topic:machine-learning", label: "ml" },
 ];

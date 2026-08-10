@@ -66,8 +66,8 @@ describe("issue title functions", () => {
   });
 
   it("OPENCLAW_ISSUE_TITLE produces zh and en titles", () => {
-    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "zh")).toContain("OpenClaw");
-    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "en")).toContain("OpenClaw Ecosystem Digest");
+    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "zh")).toContain("MCP");
+    expect(OPENCLAW_ISSUE_TITLE("2026-03-12", "en")).toContain("MCP Ecosystem Digest");
   });
 
   it("INFRA_ISSUE_TITLE produces zh and en titles", () => {
@@ -127,7 +127,7 @@ describe("ISSUE_LABELS", () => {
   it("maps report types to label names", () => {
     expect(ISSUE_LABELS.cli.zh).toBe("digest");
     expect(ISSUE_LABELS.cli.en).toBe("digest-en");
-    expect(ISSUE_LABELS.openclaw.zh).toBe("openclaw");
+    expect(ISSUE_LABELS.openclaw.zh).toBe("mcp");
     expect(ISSUE_LABELS.infra.zh).toBe("infra");
     expect(ISSUE_LABELS.infra.en).toBe("infra-en");
     expect(ISSUE_LABELS.trending.en).toBe("trending-en");
