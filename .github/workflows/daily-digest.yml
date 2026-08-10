@@ -17,6 +17,12 @@ jobs:
     # the first-ever run (fetching 50 articles) may need up to 20 min.
     timeout-minutes: 40
 
+    # The `secrets` context is not available in a step-level `if` — referencing it
+    # there fails to parse the whole workflow. Lift it to a job-level env var and
+    # test that instead; `env` is available in `if`.
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -87,9 +93,8 @@ jobs:
           fi
 
       - name: Send Telegram notification
-        if: ${{ secrets.TELEGRAM_BOT_TOKEN != '' }}
+        if: env.TELEGRAM_BOT_TOKEN != ''
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PAGES_URL: https://tbonedev.github.io/ai-radar
         run: pnpm notify
