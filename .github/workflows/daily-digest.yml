@@ -33,13 +33,23 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # Default provider is claude-cli, which runs on a Claude subscription
+      # (secret CLAUDE_CODE_OAUTH_TOKEN, produced locally by `claude setup-token`)
+      # instead of a metered API key. Skipped when a different provider is chosen.
+      - name: Install Claude Code CLI
+        if: ${{ (vars.LLM_PROVIDER || 'claude-cli') == 'claude-cli' }}
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Run daily digest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Pick the provider with the repo variable LLM_PROVIDER
-          # (anthropic | openai | openrouter | deepseek | github-copilot)
+          # (claude-cli | anthropic | openai | openrouter | deepseek | github-copilot)
           # and set the matching secret below. Only one is needed.
-          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'openrouter' }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'claude-cli' }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+          CLAUDE_CLI_CONCURRENCY: ${{ vars.CLAUDE_CLI_CONCURRENCY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

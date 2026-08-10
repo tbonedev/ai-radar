@@ -12,6 +12,7 @@ export { OpenAIProvider } from "./openai.ts";
 export { GitHubCopilotProvider } from "./github-copilot.ts";
 export { OpenRouterProvider } from "./openrouter.ts";
 export { DeepSeekProvider } from "./deepseek.ts";
+export { ClaudeCliProvider } from "./claude-cli.ts";
 
 import type { LlmProvider, ProviderFactory } from "./types.ts";
 import { AnthropicProvider } from "./anthropic.ts";
@@ -19,12 +20,15 @@ import { OpenAIProvider } from "./openai.ts";
 import { GitHubCopilotProvider } from "./github-copilot.ts";
 import { OpenRouterProvider } from "./openrouter.ts";
 import { DeepSeekProvider } from "./deepseek.ts";
+import { ClaudeCliProvider } from "./claude-cli.ts";
 
 // ---------------------------------------------------------------------------
 // Single source of truth — add new providers here only.
 // ---------------------------------------------------------------------------
 
 const PROVIDERS = {
+  // Runs on a Claude subscription via the local `claude` CLI — no API key.
+  "claude-cli": () => new ClaudeCliProvider(),
   anthropic: () => new AnthropicProvider(),
   openai: () => new OpenAIProvider(),
   "github-copilot": () => new GitHubCopilotProvider(),

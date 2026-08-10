@@ -119,8 +119,15 @@ describe("LlmProvider interface", () => {
 // ---------------------------------------------------------------------------
 
 describe("VALID_PROVIDER_NAMES", () => {
-  it("contains all five supported providers", () => {
-    expect(VALID_PROVIDER_NAMES).toEqual(["anthropic", "openai", "github-copilot", "openrouter", "deepseek"]);
+  it("contains all six supported providers", () => {
+    expect(VALID_PROVIDER_NAMES).toEqual([
+      "claude-cli",
+      "anthropic",
+      "openai",
+      "github-copilot",
+      "openrouter",
+      "deepseek",
+    ]);
   });
 });
 
@@ -365,7 +372,7 @@ describe("createProvider", () => {
 
   it("throws descriptive error for unknown provider", () => {
     expect(() => createProvider("bogus" as never)).toThrow(
-      /Invalid LLM provider: "bogus".*Valid providers are: anthropic, openai, github-copilot, openrouter/,
+      /Invalid LLM provider: "bogus".*Valid providers are: claude-cli, anthropic, openai, github-copilot, openrouter/,
     );
   });
 
