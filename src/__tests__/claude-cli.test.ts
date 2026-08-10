@@ -38,6 +38,25 @@ describe("ClaudeCliProvider", () => {
     expect(spawnMock.mock.calls[0]?.[1]).toEqual(["--print", "--model", "sonnet"]);
   });
 
+  it("treats a blank env var as unset — Actions expands unset variables to ''", async () => {
+    const saved = process.env["CLAUDE_MODEL"];
+    process.env["CLAUDE_MODEL"] = "";
+    try {
+      const child = fakeChild();
+      spawnMock.mockReturnValue(child as never);
+
+      const promise = new ClaudeCliProvider().call("x", 16); // must not throw on ""
+      child.stdout.emit("data", "ok");
+      child.emit("close", 0);
+
+      await expect(promise).resolves.toBe("ok");
+      expect(spawnMock.mock.calls[0]?.[1]).toEqual(["--print", "--model", "sonnet"]);
+    } finally {
+      if (saved === undefined) delete process.env["CLAUDE_MODEL"];
+      else process.env["CLAUDE_MODEL"] = saved;
+    }
+  });
+
   it("rejects when the CLI exits non-zero, surfacing stderr", async () => {
     const child = fakeChild();
     spawnMock.mockReturnValue(child as never);

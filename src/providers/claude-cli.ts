@@ -40,6 +40,16 @@ function createGate(limit: number): <T>(fn: () => Promise<T>) => Promise<T> {
   };
 }
 
+/**
+ * GitHub Actions expands an unset repository variable to an empty string rather
+ * than omitting it, so `process.env.X ?? default` yields "" instead of the
+ * default. Treat blank as unset.
+ */
+function env(name: string): string | undefined {
+  const value = process.env[name]?.trim();
+  return value ? value : undefined;
+}
+
 /** Model names reach a shell on Windows — keep them to characters that cannot escape it. */
 function assertSafeModel(model: string): string {
   if (!/^[A-Za-z0-9._:-]+$/.test(model)) {
@@ -84,8 +94,8 @@ export class ClaudeCliProvider implements LlmProvider {
   private readonly gate: <T>(fn: () => Promise<T>) => Promise<T>;
 
   constructor(opts?: { model?: string; concurrency?: number }) {
-    this.model = assertSafeModel(opts?.model ?? process.env["CLAUDE_MODEL"] ?? DEFAULT_MODEL);
-    const envLimit = Number(process.env["CLAUDE_CLI_CONCURRENCY"]);
+    this.model = assertSafeModel(opts?.model ?? env("CLAUDE_MODEL") ?? DEFAULT_MODEL);
+    const envLimit = Number(env("CLAUDE_CLI_CONCURRENCY"));
     const limit =
       opts?.concurrency ?? (Number.isInteger(envLimit) && envLimit > 0 ? envLimit : DEFAULT_CONCURRENCY);
     this.gate = createGate(limit);
