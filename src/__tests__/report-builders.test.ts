@@ -3,6 +3,7 @@ import {
   buildCliReportContent,
   buildOpenclawReportContent,
   buildInfraReportContent,
+  buildDigestIssueBody,
 } from "../report-builders.ts";
 import type { RepoDigest } from "../prompts.ts";
 import type { GitHubItem, GitHubRelease } from "../github.ts";
@@ -151,6 +152,44 @@ describe("buildOpenclawReportContent", () => {
     expect(result).toContain("# MCP Ecosystem Digest 2026-03-09");
     expect(result).toContain("MCP Deep Dive");
     expect(result).toContain("Cross-Ecosystem Comparison");
+  });
+});
+
+// ---------------------------------------------------------------------------
+// buildDigestIssueBody
+// ---------------------------------------------------------------------------
+
+describe("buildDigestIssueBody", () => {
+  const ids = ["ai-cli", "ai-hn"] as const;
+
+  it("renders one linked section per report with its bullets", () => {
+    const body = buildDigestIssueBody(
+      "2026-03-09",
+      ids,
+      { "ai-cli": ["Claude Code shipped X", "Codex fixed Y"], "ai-hn": ["Front page: Z"] },
+      "me/radar",
+    );
+
+    expect(body).toContain("### [AI CLI Tools](https://github.com/me/radar/blob/HEAD/digests/2026-03-09/ai-cli.md)");
+    expect(body).toContain("- Claude Code shipped X");
+    expect(body).toContain("- Codex fixed Y");
+    expect(body).toContain("### [HN Community](https://github.com/me/radar/blob/HEAD/digests/2026-03-09/ai-hn.md)");
+    expect(body).toContain("- Front page: Z");
+  });
+
+  it("keeps a section when the LLM returned no highlights for it", () => {
+    const body = buildDigestIssueBody("2026-03-09", ids, { "ai-cli": ["only this"] }, "me/radar");
+    expect(body).toContain("_Nothing notable._");
+  });
+
+  it("stays short — a digest, not the reports themselves", () => {
+    const body = buildDigestIssueBody(
+      "2026-03-09",
+      ids,
+      { "ai-cli": ["a", "b", "c", "d", "e", "f"], "ai-hn": ["a", "b", "c", "d", "e", "f"] },
+      "me/radar",
+    );
+    expect(body.length).toBeLessThan(2000);
   });
 });
 

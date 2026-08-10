@@ -4,7 +4,41 @@
 
 import type { RepoConfig, RepoFetch } from "./github.ts";
 import type { RepoDigest } from "./prompts.ts";
-import { type Lang, CLI_REPORT, OPENCLAW_REPORT, INFRA_REPORT } from "./i18n.ts";
+import type { ReportHighlights } from "./prompts-data.ts";
+import { type Lang, CLI_REPORT, OPENCLAW_REPORT, INFRA_REPORT, NOTIFY_LABELS } from "./i18n.ts";
+
+// ---------------------------------------------------------------------------
+// Short daily digest
+// ---------------------------------------------------------------------------
+
+/**
+ * The body of the one issue opened per day: a few highlight bullets per
+ * section, each heading linking to the full report committed under
+ * digests/<date>/. The full reports used to be posted verbatim — three issues
+ * a day at ~100 KB each, which nobody reads.
+ *
+ * `/blob/HEAD/` resolves to whatever the default branch is, so the links keep
+ * working if the branch is ever renamed.
+ */
+export function buildDigestIssueBody(
+  dateStr: string,
+  reportIds: readonly string[],
+  highlights: ReportHighlights,
+  digestRepo: string,
+  lang: Lang = "en",
+): string {
+  const sections = reportIds.map((id) => {
+    const label = NOTIFY_LABELS[id]?.[lang] ?? id;
+    const heading = digestRepo
+      ? `### [${label}](https://github.com/${digestRepo}/blob/HEAD/digests/${dateStr}/${id}.md)`
+      : `### ${label}`;
+    const items = highlights[id];
+    const body = items?.length ? items.map((h) => `- ${h}`).join("\n") : "_Nothing notable._";
+    return `${heading}\n${body}`;
+  });
+
+  return `> Full reports live in [digests/${dateStr}/](https://github.com/${digestRepo}/tree/HEAD/digests/${dateStr}).\n\n${sections.join("\n\n")}\n`;
+}
 
 // ---------------------------------------------------------------------------
 // CLI Report

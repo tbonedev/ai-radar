@@ -122,6 +122,9 @@ export const ISSUE_LABELS = {
   community: t("community", "community-en"),
 } as const;
 
+/** Title of the single short digest issue opened each day. */
+export const DIGEST_ISSUE_TITLE = (dateStr: string) => `📡 AI Radar ${dateStr}`;
+
 export const CLI_ISSUE_TITLE = (dateStr: string, lang: Lang) =>
   lang === "en" ? `📊 AI CLI Tools Digest ${dateStr}` : `📊 AI CLI 工具社区动态日报 ${dateStr}`;
 

@@ -10,31 +10,19 @@ const SITE_URL = "https://tbonedev.github.io/ai-radar";
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const REPORT_FILES = [
   "ai-cli",
-  "ai-cli-en",
   "ai-agents",
-  "ai-agents-en",
   "ai-infra",
-  "ai-infra-en",
   "ai-web",
-  "ai-web-en",
   "ai-trending",
-  "ai-trending-en",
   "ai-hn",
-  "ai-hn-en",
   "ai-ph",
-  "ai-ph-en",
   "ai-arxiv",
-  "ai-arxiv-en",
   "ai-hf",
-  "ai-hf-en",
   "ai-community",
-  "ai-community-en",
   // Rollups are no longer generated — listed only so archived reports stay
   // reachable from the sidebar and RSS feed.
   "ai-weekly",
-  "ai-weekly-en",
   "ai-monthly",
-  "ai-monthly-en",
 ] as const;
 const MAX_FEED_ITEMS = 30;
 

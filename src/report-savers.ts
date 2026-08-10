@@ -60,7 +60,7 @@ export async function saveWebReport(
       const openaiNew = webResults.find((r) => r.site === "openai")?.newItems.length ?? 0;
       const openaiTotal = webResults.find((r) => r.site === "openai")?.totalDiscovered ?? 0;
 
-      const fileName = lang === "en" ? "ai-web-en.md" : "ai-web.md";
+      const fileName = "ai-web.md"; // ponytail: single-language (en) build — see LANG in index.ts
       const mode = isFirstRun ? WEB_REPORT.firstCrawl[lang] : WEB_REPORT.todayUpdate[lang];
 
       const webTitle = `# ${WEB_REPORT.title[lang]} ${dateStr}\n\n`;
@@ -91,10 +91,11 @@ export async function saveWebReport(
     console.log(`  [web/${lang}] No new content detected, skipping report.`);
   }
 
-  if (lang === "zh") {
-    saveWebState(webState);
-    console.log("  [web] State saved.");
-  }
+  // Persisting the crawl cursor used to be gated on lang === "zh" because the
+  // report ran twice per day. It now runs once, so gating it on a language that
+  // is never built would make every run re-crawl the sitemaps as a first run.
+  saveWebState(webState);
+  console.log("  [web] State saved.");
 }
 
 // ---------------------------------------------------------------------------
@@ -116,7 +117,7 @@ export async function saveTrendingReport(
     return;
   }
 
-  const fileName = lang === "en" ? "ai-trending-en.md" : "ai-trending.md";
+  const fileName = "ai-trending.md"; // ponytail: single-language (en) build — see LANG in index.ts
   const header =
     `# ${TRENDING_REPORT.title[lang]} ${dateStr}\n\n` +
     `> ${TRENDING_REPORT.sources[lang]} | ${lang === "en" ? "Generated" : "生成时间"}: ${utcStr} UTC\n\n---\n\n`;
@@ -153,7 +154,7 @@ export async function saveHnReport(
   console.log(`  [hn/${lang}] Calling LLM for HN report...`);
   try {
     const hnSummary = await callLlm(buildHnPrompt(hnData, dateStr, lang), LLM_TOKENS_LISTING);
-    const fileName = lang === "en" ? "ai-hn-en.md" : "ai-hn.md";
+    const fileName = "ai-hn.md"; // ponytail: single-language (en) build — see LANG in index.ts
     const header =
       lang === "en"
         ? `# ${HN_REPORT.title[lang]} ${dateStr}\n\n` +
@@ -200,7 +201,7 @@ export async function savePhReport(
   console.log(`  [ph/${lang}] Calling LLM for Product Hunt report...`);
   try {
     const phSummary = await callLlm(buildPhPrompt(phData, dateStr, lang), LLM_TOKENS_LISTING);
-    const fileName = lang === "en" ? "ai-ph-en.md" : "ai-ph.md";
+    const fileName = "ai-ph.md"; // ponytail: single-language (en) build — see LANG in index.ts
     const header =
       lang === "en"
         ? `# ${PH_REPORT.title[lang]} ${dateStr}\n\n` +
@@ -247,7 +248,7 @@ export async function saveArxivReport(
   console.log(`  [arxiv/${lang}] Calling LLM for ArXiv report...`);
   try {
     const summary = await callLlm(buildArxivPrompt(arxivData, dateStr, lang), LLM_TOKENS_LISTING);
-    const fileName = lang === "en" ? "ai-arxiv-en.md" : "ai-arxiv.md";
+    const fileName = "ai-arxiv.md"; // ponytail: single-language (en) build — see LANG in index.ts
     const header =
       lang === "en"
         ? `# ${ARXIV_REPORT.title[lang]} ${dateStr}\n\n` +
@@ -294,7 +295,7 @@ export async function saveHfReport(
   console.log(`  [hf/${lang}] Calling LLM for Hugging Face report...`);
   try {
     const summary = await callLlm(buildHfPrompt(hfData, dateStr, lang), LLM_TOKENS_LISTING);
-    const fileName = lang === "en" ? "ai-hf-en.md" : "ai-hf.md";
+    const fileName = "ai-hf.md"; // ponytail: single-language (en) build — see LANG in index.ts
     const header =
       lang === "en"
         ? `# ${HF_REPORT.title[lang]} ${dateStr}\n\n` +
@@ -346,7 +347,7 @@ export async function saveCommunityReport(
       buildCommunityPrompt(devtoData, lobstersData, dateStr, lang),
       LLM_TOKENS_LISTING,
     );
-    const fileName = lang === "en" ? "ai-community-en.md" : "ai-community.md";
+    const fileName = "ai-community.md"; // ponytail: single-language (en) build — see LANG in index.ts
     const devtoCount = devtoData.articles.length;
     const lobstersCount = lobstersData.stories.length;
     const header =
