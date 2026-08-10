@@ -1,6 +1,6 @@
 # AI Infrastructure Digest 2026-08-11
 
-> Generated: 2026-08-10 22:29 UTC | Projects covered: 6
+> Generated: 2026-08-10 23:22 UTC | Projects covered: 6
 
 - [Dify](https://github.com/langgenius/dify)
 - [LiteLLM](https://github.com/BerriAI/litellm)
@@ -13,57 +13,65 @@
 
 ## Cross-Project Comparison
 
-# AI Infrastructure Cross-Project Digest — 2026-08-11
+# AI Infrastructure Ecosystem — Cross-Project Digest
+**2026-08-11**
 
 ## 1. Ecosystem Overview
 
-The inference/serving layer had a genuinely major day: vLLM shipped v0.27.0 (561 commits, 242 contributors) with full-stack Kimi K3 support and a spec-decode scheduler claiming double-digit latency wins, while Ollama pushed MLX support for four new architectures in parallel. The dominant cross-cutting theme, though, isn't new models — it's **correctness debt surfacing under load**: vLLM has a silent weight-discard bug, Ollama has cross-request response contamination on MLX, and LiteLLM has a budget-enforcement bypass that's been silently broken since v1.82.3. Gateway/orchestration tooling (LiteLLM, Dify) is fighting security and billing-integrity fires rather than shipping capability. Meilisearch's day is a cautionary tale in itself — three consecutive patch releases each reverting the prior release. Chatwoot, included in this set, is not infrastructure (no models, no inference) and is flagged separately.
+Today's activity splits cleanly into two modes: **feature races** (vLLM's Kimi K3 launch, Ollama's Muse Glimmer day-0 support) and **stabilization pushes** (Meilisearch's revert-heavy patch series, LiteLLM's security hardening, Dify's data-integrity fixes). The serving/inference layer (vLLM, Ollama) is absorbing a wave of new-model support work tied to recent releases from Meta and DeepSeek, with both projects shipping rough, partially-broken day-0 support that needed immediate follow-up fixes. The gateway layer (LiteLLM) is defined by billing/observability correctness bugs (streaming undercounts, cache-accounting gaps) and two disclosed UI auth weaknesses — a reminder that gateways carry security surface area serving engines don't. Meanwhile Dify, at the application/orchestration layer, is dealing with vector-store data-loss bugs that echo a familiar RAG-infrastructure failure mode: deletion doesn't actually delete. Across the board, no project shipped a headline breaking change today, but three (vLLM, Ollama, LiteLLM) are visibly racing to support the same new-model wave (Kimi K3 / DeepSeek-V4-Flash / Muse Glimmer) within days of upstream release.
 
 ## 2. Activity Comparison
 
-| Project | Issues (discussed) | PRs (merged/open) | Release Today | Notes |
+| Project | Layer | New Issues (flagged) | New/Notable PRs | Release Today |
 |---|---|---|---|---|
-| **vLLM** | ~12 | ~17 | ✅ v0.27.0 (major, 561 commits) | Highest-velocity release of the day |
-| **Ollama** | ~13 | ~11 | ✅ v0.32.7 | Release itself is rocky (2 open bugs day-1) |
-| **LiteLLM** | ~14 | 6 | ✅ v1.96.0 (Docker-signing only) | Highest issue-to-fix ratio; 2 unresolved security disclosures |
-| **Dify** | ~13 | 8 | ❌ none | Data-integrity cluster (vector leaks, orphaned rows) |
-| **Meilisearch** | 2 | 6 | ✅ v1.53.0 + 3 reverts (v1.52.1–3) | 4 releases/reverts in one window — unstable cadence |
-| **Chatwoot** | 6 | 8 | ❌ none | *Not infra — customer-engagement platform, included for completeness only* |
+| **vLLM** | Serving engine | ~10 stability issues + several perf issues | v0.27.0 (561 commits, 242 contributors) | ✅ v0.27.0 |
+| **Ollama** | Local runtime | ~8 stability/perf issues | ~10 model-support PRs | ✅ v0.32.7 |
+| **LiteLLM** | Gateway/proxy | 8 stability issues (2 security) | ~10 (Bedrock web_search, rate limiting, caching) | ✅ v1.96.0 |
+| **Meilisearch** | Search infra | 1 high-severity (Windows snapshot) | 2 (#6583, #6584) | ✅ v1.53.0 + 3 patch releases (v1.52.1–1.52.3) |
+| **Dify** | App/orchestration (RAG) | 9 stability issues | ~5 fix PRs | None |
+| **Chatwoot** | Not infra (helpdesk) — reference only | 5 stability issues | ~10 (feature + hardening) | None |
+
+vLLM and Ollama are the two projects actively shipping releases *and* absorbing the largest new-model support burden. Meilisearch stands out for release *velocity* (4 tags in the window) driven almost entirely by reverts rather than forward progress.
 
 ## 3. Model Support Race
 
-**vLLM leads on breadth and depth** — Kimi K3 is fully wired (kernels, Python *and* Rust frontends), plus active AMD/ROCm day-0 parity work and a new Blackwell (SM120/121) backend. It's also the only project openly discussing *removing* long-tail quantization support (bitsandbytes/GGUF RFC) to cut maintenance surface.
+The same upstream releases — **Meta's Muse Glimmer/Muse Spark** and **DeepSeek-V4-Flash-0731** — are propagating through the stack simultaneously, and none of the receiving projects landed clean support:
 
-**Ollama is the volume leader** — four architectures in flight simultaneously (Nemotron 3, Gemma4 vision, Apertus 1.5, Bailing MoE V3), all MLX/Apple-Silicon-first. But its headline release (Muse Glimmer) shipped in a broken state: gated manifest blocks pulls, and the "MLX build" is reportedly repackaged NVFP4 weights — a **ship-before-ready** pattern that undercuts the volume story.
+- **Ollama** shipped Muse Glimmer support in v0.32.7 fastest (MLX/Apple Silicon only), but it's the most visibly broken: pull failures ([#17645](https://github.com/ollama/ollama/issues/17645)) and an MLX tag actually built from NVIDIA-only NVFP4 layers ([#17656](https://github.com/ollama/ollama/issues/17656)) suggest the release shipped ahead of QA. Ollama also led on breadth this window — Nemotron 3 Nano Omni, Bailing MoE V3, Gemma4 vision, Apertus 1.5 all landed same-day.
+- **vLLM** landed Kimi K3 fully end-to-end (kernels + both frontends) in v0.27.0 — the most complete single-release model launch of the day — but is now the bottleneck for **DeepSeek-V4-Flash-0731**: Ampere/SM8x support is an open 94-comment issue ([#50576](https://github.com/vllm-project/vllm/issues/50576)), and even on supported hardware there's a KV-cache regression ([#51041](https://github.com/vllm-project/vllm/issues/51041)) and a Blackwell/FlashInfer routing failure ([#50720](https://github.com/vllm-project/vllm/issues/50720)).
+- **LiteLLM** is a downstream consumer here, not a model-support driver — its only related item is a UI gap (Meta Model API missing from the "Add Model" dropdown, [#36164](https://github.com/BerriAI/litellm/issues/36164)) — but it's absorbing the *compatibility fallout* of these new models via a Bedrock `web_search` tool-support saga (three PRs today converging on "reject up front with a clear error" rather than a real fix).
 
-**LiteLLM and Dify aren't racing on new models** — they're racing on *compatibility surface*: LiteLLM added per-key prompt-caching control and fixed Bedrock/Codex/VSCode edge cases; Dify fixed vision-flag gating that was silently dropping files for non-vision-declared models (`qwen-long`).
+**Net read:** Ollama wins on time-to-ship and model breadth; vLLM wins on completeness-per-model but is gated on hardware coverage (Ampere) for the model everyone actually wants (DeepSeek-V4-Flash). Neither "day-0 support" claim should be trusted without checking the linked issues first.
 
-**Gaps worth flagging**: vLLM has no upstream path for DeepSeek-V4-Flash on Ampere (94-comment issue, still open) and no Qwen3.5-MoE support yet — both real ceilings for anyone not on Hopper/Blackwell.
+## 4. Performance & Optimization Frontier
 
-## 4. Performance Frontier
+Effort is concentrated in four areas, with vLLM dominating in volume and specificity:
 
-Effort is concentrated in three areas:
+- **Speculative decoding tuning (vLLM)** — the most mature optimization discussion today: a controlled A/B on production DeepSeek-V4-Flash quantifies a 10.6% acceptance-rate cost from a specific PR ([#49927](https://github.com/vllm-project/vllm/issues/49927)), plus a documented cudagraph-downgrade cliff at batch-size thresholds ([#49548](https://github.com/vllm-project/vllm/issues/49548)) — this is unusually rigorous, data-backed regression analysis rather than a bug report.
+- **Kernel/quantization work (vLLM)** — PTX 9.4 hardware INT4→INT8 expanding loads for W4A8 ([#49529](https://github.com/vllm-project/vllm/issues/49529)), AITER tuned GEMM for DeepSeek-V4 decode on ROCm, and a `free_blocks` LIFO-ordering fix that quietly undoes a prior "no-op" merge affecting prefix-cache reuse locality ([#51482](https://github.com/vllm-project/vllm/pull/51482)).
+- **Gateway-side write amplification (LiteLLM)** — two proposals to cut Redis/DB write load under high throughput (skip rate-limit writes for unrestricted keys, suppress per-entity spend UPDATEs) — this is capacity-planning-driven optimization, not latency-driven.
+- **Batching correctness at the embedding layer (Dify)** — bounding unbounded embedding-plugin requests to match existing `MAX_CHUNKS` batching, a straightforward but concrete fix for large-document indexing.
+- **Ollama** is notably *not* optimizing this window so much as chasing a regression: a flat TTFT penalty on Windows/CUDA introduced somewhere between 0.24.0 and 0.32.6 ([#17631](https://github.com/ollama/ollama/issues/17631)), with generation throughput improving even as time-to-first-token got worse — an unresolved, unexplained tradeoff worth watching.
 
-- **Spec decoding / scheduling** — vLLM's adaptive spec-decode budget (11–23% E2E latency, 55–65% TTFT improvement) and confidence-scheduled draft verification are the single most consequential perf items across all six projects today.
-- **Host↔device sync elimination** — vLLM continues stripping GPU↔CPU round-trips from the hot path (kv-sharing decode metadata); this is now a multi-week running effort, not a one-off.
-- **Memory/VRAM pressure** — Ollama's request to keep MoE experts in host RAM with on-demand GPU compute (fit 16B/35B MoE on 8–12GB GPUs) targets the same problem class as vLLM's quantization consolidation (six FP8/NVFP4/MXFP8 linear methods merged into one).
-
-Notably, **two projects reverted performance work today** rather than shipping it: Meilisearch pulled back its "speed up search" change and SSE streaming routes in the same patch cycle, and Dify's token-counting batching fix is really a correctness/cost patch (unbounded embedding-plugin requests) dressed as perf.
+KV cache, quantization, and spec-decode remain vLLM's territory; nobody else in this set is competing at that level of kernel/scheduler depth today.
 
 ## 5. Layer Positioning
 
-- **Serving/inference engines** (vLLM, Ollama) — vLLM is the production/cluster-scale engine (distributed serving, ROCm/CUDA/Blackwell backends, spec decode at scale); Ollama is the local/single-node runtime (Apple Silicon MLX-first, consumer GPU VRAM constraints). Their optimization targets don't overlap much: vLLM chases throughput at concurrency, Ollama chases fitting bigger models on smaller boxes.
-- **Gateway/routing** (LiteLLM) — sits above both, aggregating providers; today's activity (budget enforcement, per-key caching, tag-scoped rate limits) is entirely about *multi-tenant billing and access control*, not model execution.
-- **Application/orchestration** (Dify) — one layer further up; it consumes inference engines and gateways as backends, so its bugs (vector-store cleanup, Agent App image handling) are integration-layer, not model-serving.
-- **Adjacent, not infra**: Meilisearch (search/retrieval, occasionally paired with RAG stacks but not model-serving) and Chatwoot (support/messaging, no ML surface today) — both included in this set but outside the inference/gateway/fine-tuning scope this comparison is meant to track.
+- **Serving engine (data-center scale):** vLLM — the only project doing kernel-level, multi-GPU, cudagraph-aware optimization work. Its bug surface (composite VLM weight loading, MTP engine hangs, FlashInfer MLA routing) reflects the complexity tax of that scope.
+- **Local runtime (single-machine/edge):** Ollama — optimizing for breadth-of-model support and Apple Silicon/consumer-GPU constraints (VRAM ceilings, MoE-in-host-RAM proposals) rather than distributed throughput. Its stability bugs (cross-request contamination in long-lived MLX runners) are a correctness class specific to session-reuse on constrained hardware.
+- **Gateway/routing layer:** LiteLLM — doesn't run inference itself; its concerns are multi-tenant correctness (spend attribution, budget enforcement, cache accounting) and now, increasingly, security posture (session/credential replay via the UI). This is the layer where "who gets billed for what" bugs live, and today's list has three of them.
+- **Search/retrieval infra:** Meilisearch — adjacent to the AI stack via RAG/vector-adjacent filtering (the sharded foreign-filters release), but its core concerns (SSE route stability, Windows snapshot mechanics) are general distributed-systems hygiene, not AI-specific.
+- **Application/orchestration (RAG-heavy):** Dify — sits above the serving layer and inherits its assumptions; today's bugs (Weaviate delete-by-ID mismatch, orphaned pgvector rows) are vector-store integration failures, a recurring failure class for any orchestration layer that treats the vector DB as a black box.
+- **Out of scope (reference only):** Chatwoot — a helpdesk platform included in this run's data set but with no inference/serving surface; flagged rather than force-fit into infra categories.
 
 ## 6. Trend Signals
 
-- **Correctness bugs are now the story, not features.** Four of six projects have an open *silent* correctness bug today (vLLM's lm_head discard, Ollama's cross-request MLX contamination, Dify's Weaviate vector leak, LiteLLM's budget bypass) — none throw errors, all require active monitoring to catch. Application developers should treat "no error thrown" as insufficient evidence of correctness across this whole layer right now.
-- **Release discipline is diverging.** vLLM and Ollama ship large, mostly-stable releases; Meilisearch shipped and reverted three times in one window. Before pinning to any of these, check the last 48h of patch history, not just the latest tag.
-- **Apple Silicon / MLX is becoming a first-class target**, not an afterthought — four Ollama architectures landing there simultaneously signals local-inference demand is shaping upstream priorities, not just downstream packaging.
-- **Multi-tenant billing/security is the gateway layer's actual bottleneck** — LiteLLM's budget-bypass and session-revocation issues suggest gateway maturity is lagging behind gateway adoption; teams routing spend through it should not treat `max_budget` as authoritative today.
-- **Watch for silent architecture debt**: vLLM's own maintainers are proposing to *drop* quant formats (bitsandbytes/GGUF) from core — a signal that as engines scale, breadth gets traded for maintainability, and downstream users on long-tail formats should plan migration paths now rather than after an RFC lands.
+- **Day-0 model support is a liability, not a flex.** Both Ollama (Muse Glimmer) and vLLM (Kimi K3, indirectly via DeepSeek-V4-Flash gaps) show that racing to support a model on release day produces broken manifests, wrong-backend tags, and unsupported hardware tiers. **Application developers should treat "supports model X" announcements as provisional for at least 48–72 hours** and check linked issues before pointing production traffic at a new model.
+- **Vector-store "delete" is an unsolved problem across the stack.** Dify's Weaviate `delete_by_ids` bug and orphaned-KB-deletion issue are not novel failure modes — they're the same class of bug that recurs whenever an orchestration layer treats a vector DB as fire-and-forget. Teams with compliance/PII requirements should build reconciliation checks rather than trusting delete APIs at any layer.
+- **Gateway security is catching up to gateway ubiquity.** LiteLLM's two same-day-disclosed UI auth issues (session non-revocation, JWT embedding replayable API key material) suggest gateway software is now mature/deployed enough to draw real security scrutiny — expect more of this class of finding as LLM gateways become standard infrastructure rather than novel tooling.
+- **Billing/observability correctness is lagging behind feature velocity.** LiteLLM alone has three open issues today about wrong numbers (budget bypass, streaming undercounts, cache-accounting gaps) — as multi-provider routing becomes the norm, cost-tracking accuracy is becoming a first-class reliability concern, not an afterthought. **Anyone doing FinOps on LLM spend should cross-validate gateway-reported usage against provider-side numbers.**
+- **"Fix" PRs are colliding.** Both Dify (image-URL fix) and Chatwoot (avatar-sync fix, two competing PRs for the same issue) show the same-day pattern of parallel, uncoordinated fixes for identical bugs — a sign of fast-moving OSS triage outpacing PR review bandwidth. Watch for which PR actually merges before building around either.
+- **Revert-driven releases (Meilisearch) are a stability signal worth reading correctly** — a project shipping 4 tags in one window where 2 are pure reverts isn't unstable so much as *actively self-correcting quickly*; the concerning pattern would be silence, not rapid revert cycles.
 
 ---
 
@@ -74,49 +82,38 @@ Notably, **two projects reverted performance work today** rather than shipping i
 
 # Dify Digest — 2026-08-11
 
-**Source:** [langgenius/dify](https://github.com/langgenius/dify)
-
 ## Today's Highlights
+No new releases landed in the last 24h, but activity concentrated on data-integrity and reliability fixes: orphaned vector data on knowledge-base deletion, a Weaviate delete bug that silently leaves stale vectors, and a Celery/HITL race condition in workflow persistence. On the PR side, most volume is defensive hardening — tenant-scoping fixes for trace/dataset APIs, file-preview signature repairs, and several "swallowed exception" cleanups — rather than new features.
 
-No releases landed today, but activity concentrated on data-integrity bugs in the knowledge base and vector-store layers, plus an Agent App regression where tool-generated images silently vanish from chat. Several of these already have fix PRs open (icon rendering, image delivery, file-preview signatures), so expect quick patches. Two open RFC-style issues worth watching: a proposal to gate knowledge-base deletion behind an indexing-complete check, and a Weaviate long-term memory integration.
+## Releases & Breaking Changes
+None in the last 24h.
 
 ## New Model & Hardware Support
-
-- [PR #39472](https://github.com/langgenius/dify/pull/39472) — merge system messages to front, fixing message-ordering compatibility for **Qwen/vLLM** backends.
-- [PR #39478](https://github.com/langgenius/dify/pull/39478) — agent file filtering now checks the type-specific model feature instead of gating everything on a single vision flag; fixes silent file drops for non-vision-declared models like `qwen-long` ([issue #39431](https://github.com/langgenius/dify/issues/39431)).
+Nothing new. The closest adjacent item is [PR #39478](https://github.com/langgenius/dify/pull/39478), which loosens the file-upload gate for agent models that lack a declared `VISION` feature (e.g. `qwen-long`), so non-vision models stop silently dropping uploaded files.
 
 ## Performance & Optimization
-
-- [Issue #39976](https://github.com/langgenius/dify/issues/39976) — open RFC to benchmark Rust runtime optimization opportunities in the core execution path.
-- [PR #39571](https://github.com/langgenius/dify/pull/39571) — batches token counting during document indexing instead of sending an entire document's chunks to the embedding plugin in one unbounded request ([issue #39560](https://github.com/langgenius/dify/issues/39560)); brings token-counting in line with the existing `MAX_CHUNKS` batching used for the embedding call itself.
+- [PR #39571](https://github.com/langgenius/dify/pull/39571) — batches token counting during document indexing (`get_text_embedding_num_tokens`) to match the existing `MAX_CHUNKS` batching in `cached_embedding.py`; previously large documents sent the entire chunk set to the embedding plugin in one unbounded request. Fixes [#39560](https://github.com/langgenius/dify/issues/39560).
+- [Issue #39976](https://github.com/langgenius/dify/issues/39976) — open discussion on benchmarking Rust-runtime optimization opportunities; no numbers yet, worth watching for follow-up.
 
 ## Stability & Regressions
-
-Ranked by severity — data-integrity issues first:
-
-1. **[Issue #40457](https://github.com/langgenius/dify/issues/40457)** — Weaviate: deleting a document never removes its vectors. `delete_by_ids` passes Dify segment IDs to `delete_by_id`, which expects Weaviate object UUIDs — silent vector leak, reproducible on 1.16.1 and 1.13.3 (pre-dates the VDB workspace refactor, #34900). No fix PR yet.
-2. **[Issue #38518](https://github.com/langgenius/dify/issues/38518)** / **[#38522](https://github.com/langgenius/dify/issues/38522)** — deleting a knowledge base while its documents are still indexing leaves orphaned segments, child_chunks, and pgvector tables. A guard/pause-before-delete proposal is open but unimplemented.
-3. **[Issue #40445](https://github.com/langgenius/dify/issues/40445)** — race condition between Celery workflow persistence and HITL (human-in-the-loop) pause creation.
-4. **[Issue #40425](https://github.com/langgenius/dify/issues/40425)** — Agent App: images returned by third-party tools are discarded in `_convert_tool_response_to_text` and never shown in chat. Fix already up: [PR #40455](https://github.com/langgenius/dify/pull/40455).
-5. **[Issue #40448](https://github.com/langgenius/dify/issues/40448)** — nginx caches upstream DNS for api/plugin_daemon/web indefinitely; partial container restarts cause persistent 502 Connection Refused until nginx itself restarts.
-6. **[Issue #40389](https://github.com/langgenius/dify/issues/40389)** — Agent (Beta) + AWS Bedrock: empty tool descriptions from sandbox shell tools trigger a Bedrock `ValidationException`.
-7. **[Issue #40007](https://github.com/langgenius/dify/issues/40007)** — Dify Cloud MCP Server returns `-32603 Internal Server Error` when called from an n8n MCP client.
-8. **[Issue #40394](https://github.com/langgenius/dify/issues/40394)** — file-preview endpoint returns 404 "File not found or signature is invalid" for existing uploads. Fixed by [PR #40397](https://github.com/langgenius/dify/pull/40397) (inconsistent signing across deprecated `/image-preview` paths).
-9. **[Issue #40418](https://github.com/langgenius/dify/issues/40418)** — bare `except` in storage `exists()` swallows `KeyboardInterrupt`/`SystemExit`.
-10. **[Issue #40411](https://github.com/langgenius/dify/issues/40411)** — File-list input with a default value returns "Invalid upload file" in Web App on v1.14.2.
-11. **[Issue #39565](https://github.com/langgenius/dify/issues/39565)** (closed) — HTTP Request node: Enter key in Params/Headers fields corrupted the row, no keyboard way to advance.
-12. **[Issue #39473](https://github.com/langgenius/dify/issues/39473)** — generated column on the `agents` table breaks PostgreSQL logical replication (`wal_level=logical`); fix replaces it with a partial unique index.
-
-Minor/tooling fixes with PRs merged or open today: mutable default `{}` argument shared on the password-reset path ([PR #39852](https://github.com/langgenius/dify/pull/39852)), MCP client SSE-vs-streamable-http fallback hang ([PR #39321](https://github.com/langgenius/dify/pull/39321), fixes #39301), feedback export `end_date` filter excluding the last day ([PR #40114](https://github.com/langgenius/dify/pull/40114), fixes #40050), agent icon 404s from raw `upload_files.id` instead of signed `icon_url` ([PR #40449](https://github.com/langgenius/dify/pull/40449)).
+Ranked by severity/blast radius:
+- **Data loss — Weaviate vector store**: [Issue #40457](https://github.com/langgenius/dify/issues/40457) — `delete_by_ids` passes Dify segment IDs where Weaviate expects object UUIDs, so document deletion never actually removes vectors. Confirmed present since 1.13.3, not a regression from the earlier VDB refactor (#34900). No fix PR yet.
+- **Orphaned data on KB deletion**: [Issue #38518](https://github.com/langgenius/dify/issues/38518) — deleting a knowledge base while documents are still indexing leaves orphaned segments, child_chunks and pgvector tables; companion proposal [#38522](https://github.com/langgenius/dify/issues/38522) suggests pausing/blocking deletion during active indexing.
+- **Race condition**: [Issue #40445](https://github.com/langgenius/dify/issues/40445) — race between Celery workflow-persistence and HITL pause creation.
+- **Infra/deploy**: [Issue #40448](https://github.com/langgenius/dify/issues/40448) — nginx caches upstream DNS for api/plugin_daemon/web indefinitely, so partial container restarts produce 502s until nginx itself restarts.
+- **Silent exception swallowing**: [Issue #40418](https://github.com/langgenius/dify/issues/40418) — bare `except` in storage `exists()` swallows `KeyboardInterrupt`/`SystemExit`.
+- **Provider integration bug**: [Issue #40389](https://github.com/langgenius/dify/issues/40389) — Agent (Beta) + AWS Bedrock throws `ValidationException` from empty tool descriptions on sandbox shell tools.
+- **File serving**: [Issue #40394](https://github.com/langgenius/dify/issues/40394) / fix in [PR #40397](https://github.com/langgenius/dify/pull/40397) — `/files/{id}/file-preview` incorrectly 404s with "signature is invalid" due to inconsistent signing across deprecated vs. current preview routes.
+- **Agent UX**: [Issue #40425](https://github.com/langgenius/dify/issues/40425) — Agent App drops tool-generated image URLs in `_convert_tool_response_to_text`, so images never render in chat; fix already up in [PR #40455](https://github.com/langgenius/dify/pull/40455).
+- **Upload validation**: [Issue #40411](https://github.com/langgenius/dify/issues/40411) — File-list input with a default value returns "Invalid upload file" in Web App on v1.14.2.
+- Closed same-day: [Issue #39565](https://github.com/langgenius/dify/issues/39565) (HTTP Request node param row corruption on Enter key) and [Issue #40050](https://github.com/langgenius/dify/issues/40050) (feedback export `end_date` filter excluded the end date, fixed via [PR #40114](https://github.com/langgenius/dify/pull/40114)).
 
 ## What This Means for Application Developers
-
-- **If you use Weaviate as your vector store**, be aware document deletion currently doesn't clean up vectors — treat it as a known leak until #40457 is patched; audit index size if you delete documents frequently.
-- **Knowledge-base deletion during active indexing is unsafe** — avoid deleting a KB mid-index until #38522's guard lands, or you'll accumulate orphaned rows in pgvector.
-- **Agent Apps using tools that return images** (image generation, etc.) will silently lose those images in chat on current releases; the fix (#40455) is ready but not yet merged — pin or patch if this is on your critical path.
-- **Bedrock-backed Agent (Beta) users** relying on the built-in sandbox shell tool may hit hard `ValidationException` failures from empty tool descriptions — watch #40389 for a fix.
-- **Self-hosted Docker deployments** doing rolling/partial container restarts should watch #40448: nginx's indefinite upstream DNS caching can produce persistent 502s until nginx is restarted too.
-- **Qwen/vLLM users** get a compatibility fix for message ordering and vision-feature-gated file handling — reduces silent file drops for models like `qwen-long`.
+- **If you use Weaviate as your vector store**, treat document deletion as unreliable right now — [#40457](https://github.com/langgenius/dify/issues/40457) means "deleted" documents can leave stale vectors retrievable in search until a fix ships. Consider a periodic reconciliation check if this matters for compliance/PII.
+- **Avoid deleting knowledge bases mid-indexing** — [#38518](https://github.com/langgenius/dify/issues/38518) confirms this can orphan Postgres/pgvector rows that need manual cleanup.
+- **Bedrock + Agent (Beta) users**: sandbox shell tool calls can hard-fail with a `ValidationException` ([#40389](https://github.com/langgenius/dify/issues/40389)) — worth testing before relying on Agent (Beta) in production with Bedrock-backed models.
+- **Tool-generated images** in Agent App chat were silently dropped; the fix ([PR #40455](https://github.com/langgenius/dify/pull/40455)) is up but not yet merged — expect this to land soon if you depend on image-returning tools.
+- **Self-hosted/Docker deployers** should watch [#40448](https://github.com/langgenius/dify/issues/40448) — rolling restarts of individual containers (api/plugin_daemon/web) can trigger persistent 502s from nginx's DNS cache until the full stack is bounced.
 
 </details>
 
@@ -127,230 +124,231 @@ Minor/tooling fixes with PRs merged or open today: mutable default `{}` argument
 
 ## Today's Highlights
 
-A single release (**v1.96.0**) landed with only a Docker image-signing note — no functional changes. The real story is spend/budget integrity: a critical bug reports proxy `max_budget` enforcement silently failing since v1.82.3 (#26672, 15 comments, still open), compounded by two UI security disclosures on v1.94.0 (reusable JWT key material, no session revocation on logout) and a provider-independent streaming usage undercount. On the fix side, five PRs landed today hardening tag-scoped rate limits, prompt-caching cost accounting, and admin-only UI gating.
+LiteLLM shipped v1.96.0, formalizing cosign signature verification for all Docker images. The day's engineering focus was split between security hardening on the proxy UI (two disclosed auth weaknesses) and a flurry of Bedrock `web_search` tool-compatibility fixes, alongside a provider-independent streaming usage-undercounting bug that's drawing active investigation. On the feature side, tag-scoped rate limiting and per-key prompt caching toggles landed as notable proxy capabilities.
 
 ## Releases & Breaking Changes
 
-- **[v1.96.0](https://github.com/BerriAI/litellm)** — release notes are limited to Docker image signature verification (cosign); no functional changelog surfaced in this window.
-- [#36464](https://github.com/BerriAI/litellm/pull/36464) — Bedrock malformed tool-call arguments now reject with a **400** instead of a retryable error, preventing routers from walking the full fallback graph (and logging full message history on every hop) on unparseable output. Worth reviewing if client retry logic assumes the old 500 behavior.
-- [#36466](https://github.com/BerriAI/litellm/pull/36466) — New `enable_prompt_caching` per-key toggle on `/key/generate` and `/key/update`, moving prompt caching from a gateway-wide flag to opt-in per virtual key.
-- [#36459](https://github.com/BerriAI/litellm/pull/36459) — New tag-scoped token/request/dollar/concurrency rate limits, independent of the calling API key.
+- **[v1.96.0](https://github.com/BerriAI/litellm)** — Docker images are now signed with [cosign](https://docs.sigstore.dev/cosign/overview/); operators pulling images in supply-chain-sensitive environments should add signature verification to their pull/deploy pipeline.
+- **[#31261 — Rust-backed pip binary](https://github.com/BerriAI/litellm/issues/31261)**: upcoming work to make `pip install litellm` default to a Rust extension where a compatible wheel exists. Tracked as the central issue for install regressions; worth watching if you pin `litellm` in CI images.
 
 ## New Model & Hardware Support
 
-Nothing shipped in this window. Two tracking items worth watching:
-- [#31261](https://github.com/BerriAI/litellm/issues/31261) — the Rust-backed `pip install litellm` binary continues collecting install-compatibility reports (8 comments, 6 👍) ahead of becoming the default.
-- [#36080](https://github.com/BerriAI/litellm/pull/36080) — adds/corrects `deprecation_date` metadata for 216 model registry entries, feeding an upcoming model-retirement warning feature.
-- [#32218](https://github.com/BerriAI/litellm/issues/32218) — Z.AI's documented `glm-5.2[1m]` (1M context variant) returns "Unknown Model" through the proxy even though the base `glm-5.2` works.
+- No new model/backend/quantization support merged in this window. Related: **[#36164](https://github.com/BerriAI/litellm/issues/36164)** notes the Meta Model API (`meta/muse-spark-1.1`) is supported server-side but missing from the UI "Add Model" provider dropdown — a UI gap, not a capability gap.
 
 ## Performance & Optimization
 
-- [#31880](https://github.com/BerriAI/litellm/issues/31880) — rate limiter currently writes counters to Redis after every request even for keys/users/teams with no configured limits; a fix PR skips these no-op writes to cut wasted I/O at high throughput.
-- [#31866](https://github.com/BerriAI/litellm/issues/31866) — proposed `disable_entity_spend_updates` flag to suppress per-entity spend counter UPDATEs (key/user/team/org/tag) while still preserving raw spend-log rows, targeting write load at high request volume.
-- [#36452](https://github.com/BerriAI/litellm/pull/36452) — cost-optimization dashboard's "prompt caching savings" figure previously priced only the cache-read discount and ignored the cache-write premium providers charge (Anthropic bills writes at 1.25x); fix nets the two out for an accurate savings number.
+- **[#31880 — Skip post-call Redis writes for unrestricted keys](https://github.com/BerriAI/litellm/issues/31880)**: the rate limiter currently writes counters to Redis after every call even for keys/users/teams with no configured limits, adding wasted write load at high throughput. Fix PR in progress.
+- **[#34444 — Clamp `least_busy` counter at zero](https://github.com/BerriAI/litellm/pull/34444)**: salvages two stale PRs (#25393, #25325) fixing a race in the router's `least_busy` load-balancing strategy where the pre-call increment/post-call decrement can drift negative under concurrent failures.
+- **[#31866 — `disable_entity_spend_updates` flag](https://github.com/BerriAI/litellm/issues/31866)**: proposes suppressing per-entity spend counter UPDATEs (key/user/team/org/tag tables) while keeping raw spend-log inserts, to cut DB write amplification at high request volume.
 
 ## Stability & Regressions
 
 Ranked by severity:
 
-1. **Critical — budget bypass.** [#26672](https://github.com/BerriAI/litellm/issues/26672): key/user `max_budget` enforcement silently fails on a fresh v1.82.3 deploy despite spend exceeding the limit. 15 comments, open, no linked fix.
-2. **High — security (v1.94.0).** [#35664](https://github.com/BerriAI/litellm/issues/35664): the UI auth cookie JWT embeds reusable API key material — a copied/replayed cookie authenticates as the victim session. Companion [#35665](https://github.com/BerriAI/litellm/issues/35665): logout and password change don't revoke active UI sessions. Both open, unfixed.
-3. **High — billing correctness.** [#36114](https://github.com/BerriAI/litellm/issues/36114): streaming usage severely undercounted across providers in chained proxy setups (front-proxy → upstream-proxy → Bedrock), despite correct non-streaming usage and an already-fixed `chunk_parser()`; root cause pinned to the stream-aggregation layer, not provider transformation. Open.
-4. **Medium — cost accounting.** [#36091](https://github.com/BerriAI/litellm/issues/36091): when the Anthropic `/v1/messages` bridge is served by an OpenAI Responses-API model (e.g. `gpt-5.x` reasoning models), `cache_read_input_tokens` always reports 0 even at ~100% upstream cache hit rate.
-5. **Medium — regression.** [#31441](https://github.com/BerriAI/litellm/issues/31441): `end_user` in SpendLogs pins to the first request's `user` for all subsequent requests on a shared virtual key — introduced in v1.87.0.
-6. **Medium.** [#27518](https://github.com/BerriAI/litellm/issues/27518): proxy-level `async_pre_call_hook` callbacks are bypassed on the Anthropic `/v1/messages` endpoint, silently disabling custom guardrails for that path.
-7. **Lower severity.** [#36366](https://github.com/BerriAI/litellm/issues/36366): Azure Responses forwards empty namespace descriptions from `additional_tools`, breaking Codex CLI 0.147.0's default tool payload. [#35775](https://github.com/BerriAI/litellm/issues/35775): incompatible with VSCode's native BYOK Model-Provider support.
-8. **Fixed today (merged).** [#36453](https://github.com/BerriAI/litellm/pull/36453): MCP tool-call spans were crashing Arize tracing on `CallToolResult` (no `.get`), blanking the rest of the span; fix coerces Pydantic responses to dicts. [#36455](https://github.com/BerriAI/litellm/pull/36455): duplicate legacy invitation emails on v2 deployments, plus a broken onboarding link.
+1. **[#26672 — Budget enforcement bypassed on v1.82.3](https://github.com/BerriAI/litellm/issues/26672)** (15 comments, still open since April): key/user `max_budget` isn't enforced on fresh deployments despite spend exceeding the limit — a correctness/cost-control failure with no confirmed fix yet.
+2. **[#36114 — Streaming usage severely undercounted](https://github.com/BerriAI/litellm/issues/36114)**: provider-independent undercount of token usage on streamed `/chat/completions` through chained proxies (Front → Upstream → Bedrock), even with the previously-fixed `chunk_parser()` — root cause traced to the stream aggregation layer. Directly affects billing accuracy.
+3. **[#35665 / #35664 — UI auth security issues (v1.94.0)](https://github.com/BerriAI/litellm/issues/35665)**: logout/password-change don't revoke active UI sessions, and the UI cookie JWT embeds reusable API key material — both allow session/credential replay. No fix PR referenced yet; treat as priority for anyone exposing the LiteLLM UI externally.
+4. **[#31441 — `end_user` pinned to first request on shared keys](https://github.com/BerriAI/litellm/issues/31441)**: regression since v1.87.0 — SpendLogs `end_user` sticks to the first request's `user` value for all subsequent calls on a shared virtual key, corrupting per-user spend attribution.
+5. **[#36091 — Anthropic bridge drops cache accounting](https://github.com/BerriAI/litellm/issues/36091)**: `/v1/messages` served via OpenAI Responses-API backends (e.g. `gpt-5.x` reasoning models) always reports `cache_read_input_tokens: 0`, even at ~100% upstream cache hit — breaks cost/cache observability for cross-provider Anthropic-format routing.
+6. **Bedrock `web_search` tool churn** — three PRs same day ([#36473](https://github.com/BerriAI/litellm/pull/36473), [#36477](https://github.com/BerriAI/litellm/pull/36477) closed, [#36442](https://github.com/BerriAI/litellm/pull/36442) closed): Anthropic's server-side `web_search` tool on Bedrock returns an opaque 400; fixes converge on rejecting the tool up front with an actionable error and setting `handles_web_search_natively()` to `False` for Bedrock Claude models. Covered by new e2e test [#36443](https://github.com/BerriAI/litellm/pull/36443).
+7. **[#36366 — Azure Responses drops nested tool namespaces](https://github.com/BerriAI/litellm/issues/36366)**: `additional_tools` namespace descriptions forwarded empty to Azure Responses, breaking Codex CLI 0.147.0's default tool payload.
+8. **[#36453 — Arize MCP tool calls crash span logging](https://github.com/BerriAI/litellm/pull/36453)**: MCP `CallToolResult` objects crash Arize span attribute setting, blanking the entire span (not just the MCP fields) — fix coerces Pydantic responses to dicts defensively.
 
 ## What This Means for Application Developers
 
-- **Don't treat `max_budget` as a hard ceiling right now** — [#26672](https://github.com/BerriAI/litellm/issues/26672) shows enforcement can silently fail even on a clean deploy. Pair it with an external spend alert until this closes.
-- **If you meter usage from streaming responses through a multi-hop proxy chain, cross-check against non-streaming or provider-native usage** — [#36114](https://github.com/BerriAI/litellm/issues/36114) confirms streaming counts can be significantly wrong, and this isn't provider-specific.
-- **On v1.94.0, rotate UI session cookies manually if compromise is a concern** — logout and password changes don't currently revoke a leaked session token ([#35664](https://github.com/BerriAI/litellm/issues/35664)/[#35665](https://github.com/BerriAI/litellm/issues/35665)).
-- **If you route through the Anthropic `/v1/messages` endpoint, verify custom proxy hooks are actually firing** ([#27518](https://github.com/BerriAI/litellm/issues/27518)) rather than assuming hook-based guardrails apply there.
-- **Teams computing prompt-cache ROI on Anthropic-via-Responses-API routes should discount reported savings** until [#36091](https://github.com/BerriAI/litellm/issues/36091) is fixed — cache hits aren't reflected in usage today.
-- **Codex CLI / agent-tooling users on Azure Responses should watch [#36366](https://github.com/BerriAI/litellm/issues/36366)** before relying on default namespaced tool payloads passing through cleanly.
+- **Verify budget enforcement manually** if you're on v1.82.3+ — #26672 means `max_budget` may silently not cap spend on fresh deployments; don't rely on it as a hard safety net until confirmed fixed.
+- **Streaming token counts may be wrong** for chained-proxy setups (#36114) and Anthropic-format cache metrics may under-report for Responses-API-backed models (#36091) — cross-check billing against provider-side usage if you depend on LiteLLM's cost tracking for streaming or cross-provider `/v1/messages` traffic.
+- **Rotate/short-lived-ify UI sessions** if you expose the LiteLLM admin UI: #35665/#35664 mean logged-out sessions and password changes don't invalidate old credentials, and the cookie JWT itself carries replayable API key material.
+- **Shared virtual keys with per-user attribution** (multi-tenant setups passing `user` in the OpenAI request body) will see incorrect `end_user` spend logs since v1.87.0 (#31441) — don't trust per-end-user cost breakdowns on shared keys until patched.
+- **New capability to adopt**: [#36459](https://github.com/BerriAI/litellm/pull/36459) adds tag-scoped token/request/dollar/concurrency rate limits — useful if you need per-feature or per-customer-tag caps independent of the API key. [#36466](https://github.com/BerriAI/litellm/pull/36466) adds a per-key `enable_prompt_caching` toggle, letting you opt individual keys into prompt caching instead of a gateway-wide flag.
+- If you use Bedrock with Anthropic's `web_search` tool, expect it to now fail fast with a clear error rather than an opaque Bedrock 400 — it was never actually supported there.
 
 </details>
 
 <details>
 <summary><strong>Chatwoot</strong> — <a href="https://github.com/chatwoot/chatwoot">chatwoot/chatwoot</a></summary>
 
-One quick flag before the digest: Chatwoot is a customer-engagement/support platform (Ruby on Rails, WhatsApp/Telegram/email inboxes), not an inference engine, model server, or fine-tuning framework — it isn't part of `INFRA_REPOS` in this project's config. Today's data has nothing on models, hardware backends, quantization, or throughput, so those sections below are marked N/A rather than padded with unrelated content.
+# Chatwoot Digest — 2026-08-11
 
----
+*Note: Chatwoot is a customer-engagement/helpdesk platform, not an inference/serving stack, so the "New Model & Hardware Support" and "Performance & Optimization" sections are thin or N/A for this data set — flagged rather than padded.*
 
-# Chatwoot — 2026-08-11
+## 1. Today's Highlights
 
-## Today's Highlights
-WhatsApp Business-Scoped User ID (BSUID) work is moving fast ahead of Meta's deadline: [PR #15392](https://github.com/chatwoot/chatwoot/pull/15392) exposes BSUID in the agent bot webhook payload, closing [#15387](https://github.com/chatwoot/chatwoot/issues/15387) and eliminating a per-event REST call for integrations. A batch of Sentry-driven hardening fixes landed (NUL-byte search input, oversized pagination cursors, malformed filter payloads, empty round-robin queues), and a Facebook avatar-sync transaction bug ([#15378](https://github.com/chatwoot/chatwoot/issues/15378)) got two competing same-day fix PRs.
+The dominant thread today is WhatsApp Business-Scoped User ID (BSUID) support: [#13837](https://github.com/chatwoot/chatwoot/issues/13837) (Meta's phone-number-hiding username rollout, deadline June 2026) spawned a same-day feature request ([#15387](https://github.com/chatwoot/chatwoot/issues/15387)) and implementation PR ([#15392](https://github.com/chatwoot/chatwoot/pull/15392)) to expose BSUID in agent-bot webhook payloads. Separately, a batch of five PRs tagged `CW-7922` landed to harden backend paths that were throwing production Sentry errors (malformed filters, oversized cursors, NUL bytes in search, empty round-robin queues). A Facebook Messenger avatar-sync bug caused by an uncommitted-transaction race was reported and fixed within hours (#15378 → #15402/#15393).
 
-## Releases & Breaking Changes
+## 2. Releases & Breaking Changes
+
 None in the last 24h.
 
-## New Model & Hardware Support
-N/A — not applicable to this project.
+## 3. New Model & Hardware Support
 
-## Performance & Optimization
-No throughput/latency/kernel work. Closest analog: [PR #15401](https://github.com/chatwoot/chatwoot/pull/15401) moves canned-response lookups client-side (cached in IndexedDB, mirroring inboxes/labels/teams), removing a server round-trip on every keystroke in the reply composer's `/` picker.
+Not applicable — no model, backend, or hardware-support changes in today's data (Chatwoot has no ML inference layer in scope here).
 
-## Stability & Regressions
-1. **Facebook avatars never sync** ([#15378](https://github.com/chatwoot/chatwoot/issues/15378)) — `AvatarFromUrlJob` enqueued inside an uncommitted transaction; a fast worker can pick it up before the row is visible and drop it. Two fix PRs open same day: [#15402](https://github.com/chatwoot/chatwoot/pull/15402) (enqueue after commit) and [#15393](https://github.com/chatwoot/chatwoot/pull/15393).
-2. **WhatsApp Cloud API + Dualhook outbound `Not found`** ([#15404](https://github.com/chatwoot/chatwoot/issues/15404)) — dashboard-originated sends fail while inbound/direct sends work; no fix PR yet.
-3. **Email reply drops To-line recipients** ([#15394](https://github.com/chatwoot/chatwoot/issues/15394)) — reply CC computation silently omits extra `To` recipients; no fix PR yet.
-4. **Private Note button contrast** ([#15221](https://github.com/chatwoot/chatwoot/issues/15221)) — cosmetic, dark theme only, low severity.
-5. Proactive Sentry hardening (part of `CW-7922`): [#15397](https://github.com/chatwoot/chatwoot/pull/15397) NUL bytes in canned-response search, [#15400](https://github.com/chatwoot/chatwoot/pull/15400) oversized message cursors, [#15398](https://github.com/chatwoot/chatwoot/pull/15398) malformed filter payloads, [#15399](https://github.com/chatwoot/chatwoot/pull/15399) empty round-robin queues.
+## 4. Performance & Optimization
 
-## What This Means for Application Developers
-- If you consume agent-bot webhooks for WhatsApp contact resolution, [#15392](https://github.com/chatwoot/chatwoot/pull/15392) will hand you BSUID directly in the payload soon — drop any extra per-event API call once merged, and track [#13837](https://github.com/chatwoot/chatwoot/issues/13837) for the broader Meta username migration deadline.
-- Building custom WhatsApp Cloud API providers/webhooks (e.g. non-Meta relays like Dualhook)? [#15404](https://github.com/chatwoot/chatwoot/issues/15404) shows outbound sends can fail even when inbound works — check your provider path against Chatwoot's dashboard-send flow specifically, not just inbound delivery.
-- Anything reading email `To`/`CC` from the Chatwoot API should double check against [#15394](https://github.com/chatwoot/chatwoot/issues/15394) — reply recipients can be silently dropped until fixed.
+- **[#15401](https://github.com/chatwoot/chatwoot/pull/15401)** — Canned responses are now cached client-side in IndexedDB instead of hitting the server on every `/` keystroke in the reply editor, matching how inboxes/labels/teams are already cached. Reduces per-keystroke server round trips; no throughput numbers given.
+
+## 5. Stability & Regressions
+
+Ranked by apparent severity:
+
+1. **[#15404](https://github.com/chatwoot/chatwoot/issues/15404)** — WhatsApp Cloud API + Dualhook: outbound messages sent from the Chatwoot UI fail with `Not found`, while inbound and direct sends work. No fix PR yet; workflow-breaking for affected inboxes.
+2. **[#15378](https://github.com/chatwoot/chatwoot/issues/15378)** — Facebook contact avatars never sync because `AvatarFromUrlJob` is enqueued inside an uncommitted DB transaction — a race condition where a fast worker picks up the job before the row is visible. **Fix PRs already open:** [#15402](https://github.com/chatwoot/chatwoot/pull/15402) (enqueue after commit) and [#15393](https://github.com/chatwoot/chatwoot/pull/15393) (competing fix for the same issue — will need dedup/review).
+3. **[#15394](https://github.com/chatwoot/chatwoot/issues/15394)** — Email replies silently drop recipients that were in the customer's original `To` line (not just CC); root cause traced to the reply box computing an empty CC. No fix PR yet — silent data loss on a common email workflow.
+4. **CW-7922 hardening batch** (Sentry-driven, all merged/open same day): NUL bytes in canned-response search ([#15397](https://github.com/chatwoot/chatwoot/pull/15397)), oversized message-pagination cursors ([#15400](https://github.com/chatwoot/chatwoot/pull/15400)), malformed filter payloads ([#15398](https://github.com/chatwoot/chatwoot/pull/15398)), and empty round-robin queue writes ([#15399](https://github.com/chatwoot/chatwoot/pull/15399)) — all defensive fixes for edge-case production crashes, not new regressions.
+5. **[#15221](https://github.com/chatwoot/chatwoot/issues/15221)** — Minor: low-contrast "Add Note" button in dark-theme private note composer. Cosmetic, no fix PR yet.
+
+## 6. What This Means for Application Developers
+
+- **WhatsApp integrations**: once [#15392](https://github.com/chatwoot/chatwoot/pull/15392) merges, BSUID will be available directly in agent-bot webhook payloads (`Contact#webhook_data`/`push_event_data`), removing the need for a follow-up REST call per event — update webhook consumers to read the new field instead of polling.
+- **Facebook Messenger integrations**: if you rely on contact avatar URLs, expect stale/missing avatars on self-hosted instances until [#15402](https://github.com/chatwoot/chatwoot/pull/15402)/[#15393](https://github.com/chatwoot/chatwoot/pull/15393) ships — don't assume the missing-permissions explanation without checking this bug first.
+- **Email channel integrations**: outbound reply automation/APIs should not assume all original `To` recipients are preserved until [#15394](https://github.com/chatwoot/chatwoot/issues/15394) is fixed — verify recipient lists downstream if you depend on full-thread delivery.
+- **Automation builders**: [#15349](https://github.com/chatwoot/chatwoot/pull/15349) adds label conditions/actions to the "Conversation Resolved" automation event — useful for post-resolution tagging workflows.
+- **Editor/composer extensions**: [#15375](https://github.com/chatwoot/chatwoot/pull/15375) unifies mention/variable/emoji pickers with search+preview, and [#15391](https://github.com/chatwoot/chatwoot/pull/15391) fixes resizing during active Copilot suggestions — relevant if you build on top of the reply editor.
 
 </details>
 
 <details>
 <summary><strong>Meilisearch</strong> — <a href="https://github.com/meilisearch/meilisearch">meilisearch/meilisearch</a></summary>
 
-## Meilisearch — 2026-08-11
+# Meilisearch Infrastructure Digest — 2026-08-11
 
-### Today's Highlights
-Meilisearch shipped **v1.53.0**, adding network-hydrated sharding support for foreign filters, but it arrives on the heels of three rapid-fire patch releases (v1.52.1–v1.52.3) that each reverted something from the prior release — a search-speed optimization, the new `/tasks/stream` and `/batches/stream` SSE routes, and some search-path tracing overhead. A Windows-specific LMDB snapshot crash (map_size vs. page size) also has an open fix under review.
+## 1. Today's Highlights
+Meilisearch shipped **v1.53.0**, adding sharding support for foreign filters, while the two preceding patch releases (v1.52.2, v1.52.3) were both reverts of recent changes — one for the `/tasks/stream` and `/batches/stream` SSE routes, another for a search-speed optimization that introduced regressions. Today's PR activity (#6583, #6584) continues that stabilization push by rolling back additional search-progress tracing and hardening the health-check route.
 
-### Releases & Breaking Changes
-- **[v1.53.0](https://github.com/meilisearch/meilisearch/releases/tag/v1.53.0)** — Sharding for foreign filters ([#6517](https://github.com/meilisearch/meilisearch/pull/6517)): foreign filters now resolve by fetching and hydrating documents over the network, enabling cross-shard evaluation.
-- **[v1.52.3](https://github.com/meilisearch/meilisearch/releases/tag/v1.52.3)** — Reverted the "speed up search a bit more" change from [#6542](https://github.com/meilisearch/meilisearch/pull/6542).
-- **[v1.52.2](https://github.com/meilisearch/meilisearch/releases/tag/v1.52.2)** — Reverted the `/tasks/stream` and `/batches/stream` SSE routes ([#6533](https://github.com/meilisearch/meilisearch/pull/6533)).
-- **[v1.52.1](https://github.com/meilisearch/meilisearch/releases/tag/v1.52.1)** — Made health-route checks blocking ([#6583](https://github.com/meilisearch/meilisearch/pull/6583)) and reverted some search progress traces ([#6584](https://github.com/meilisearch/meilisearch/pull/6584)).
+## 2. Releases & Breaking Changes
+- **[v1.53.0](https://github.com/meilisearch/meilisearch/releases/tag/v1.53.0)** — Adds sharding for foreign filters ([#6517](https://github.com/meilisearch/meilisearch/pull/6517) by @ManyTheFish): foreign filters are now evaluated by retrieving documents across the network shard and hydrating them, rather than requiring co-located data.
+- **[v1.52.3](https://github.com/meilisearch/meilisearch/releases/tag/v1.52.3)** — Bug-fix release reverting the "speed up search speed" change from [#6542](https://github.com/meilisearch/meilisearch/pull/6542) after it caused issues.
+- **[v1.52.2](https://github.com/meilisearch/meilisearch/releases/tag/v1.52.2)** — Bug-fix release reverting the `/tasks/stream` and `/batches/stream` SSE routes ([#6533](https://github.com/meilisearch/meilisearch/pull/6533)).
+- **[v1.52.1](https://github.com/meilisearch/meilisearch/releases/tag/v1.52.1)** — Made health-route checks blocking ([#6583](https://github.com/meilisearch/meilisearch/pull/6583)) and reverted some search-progress traces ([#6584](https://github.com/meilisearch/meilisearch/pull/6584)).
+- In-flight: [#6582](https://github.com/meilisearch/meilisearch/pull/6582) (automated) bumps `Cargo.toml` to prep the next version cut.
 
-No documented breaking API changes; the pattern above is three consecutive "revert what shipped last" patches, worth watching before pinning to 1.52.x.
+No breaking API changes noted for application consumers in this window.
 
-### New Model & Hardware Support
-Not applicable — Meilisearch is a search engine, not a model-serving stack; no backend/quantization changes in this window.
+## 3. New Model & Hardware Support
+No updates — Meilisearch does not track model/hardware backend support in the same sense as inference engines; not applicable this period.
 
-### Performance & Optimization
-- The headline search-speed optimization merged earlier was **reverted** in v1.52.3 ([#6542](https://github.com/meilisearch/meilisearch/pull/6542)) — no numbers given, but the rollback implies it regressed correctness or another metric.
-- [#6584](https://github.com/meilisearch/meilisearch/pull/6584) strips extra progress-trace steps to cut work done on the search hot path.
-- v1.53.0's sharded foreign-filter design ([#6517](https://github.com/meilisearch/meilisearch/pull/6517)) trades network round-trips for cross-shard filter correctness — expect a latency cost proportional to shard count, no benchmarks published yet.
+## 4. Performance & Optimization
+- **Sharded foreign filters** ([#6517](https://github.com/meilisearch/meilisearch/pull/6517), landed in v1.53.0): foreign filter evaluation now hydrates documents over the network per shard, improving scalability for multi-node/sharded deployments.
+- **Search speed optimization reverted**: the PR underlying [#6542](https://github.com/meilisearch/meilisearch/pull/6542) ("speed up the search speed a bit more") was rolled back in v1.52.3 — no net throughput gain currently in production; watch for a re-landed, corrected version.
+- [#6584](https://github.com/meilisearch/meilisearch/pull/6584) trims progress-trace overhead on search routes to reduce work done per request (marked "no db change").
 
-### Stability & Regressions
-1. **High** — Windows snapshot crash: `remove_tasks` opens LMDB with a raw map size not aligned to the OS page size, causing `Batch failed map size ... must be a multiple of the system page size` during snapshot creation on Windows. Tracked in [#6051](https://github.com/meilisearch/meilisearch/issues/6051), fix open in [#6581](https://github.com/meilisearch/meilisearch/pull/6581).
-2. **Medium** — SSE streaming routes reverted just after shipping ([#6533](https://github.com/meilisearch/meilisearch/pull/6533)) — sign of an instability caught post-release.
-3. **Medium** — Search-speed optimization reverted ([#6542](https://github.com/meilisearch/meilisearch/pull/6542)) — likely a correctness or stability tradeoff, no root cause disclosed.
-4. **Low** — Health route could block actix workers; fixed by marking it explicitly blocking ([#6583](https://github.com/meilisearch/meilisearch/pull/6583)).
+## 5. Stability & Regressions
+Ranked by severity:
+1. **High** — Snapshot creation fails on Windows with an LMDB `map_size` error (`must be a multiple of the system page size (4096)`), triggered when `remove_tasks` runs during snapshotting. Fix in progress: [#6581](https://github.com/meilisearch/meilisearch/pull/6581) (fixes [#6051](https://github.com/meilisearch/meilisearch/issues/6051)), open and awaiting merge.
+2. **Medium** — Search-speed change in [#6542](https://github.com/meilisearch/meilisearch/pull/6542) caused a regression and was reverted in v1.52.3.
+3. **Medium** — SSE routes (`/tasks/stream`, `/batches/stream`) added instability and were reverted in v1.52.2 ([#6533](https://github.com/meilisearch/meilisearch/pull/6533)); any integrations built against these streaming endpoints will need to fall back to polling.
+4. **Low** — Health route was blocking the actix worker pool; fixed by making the blocking portion explicit ([#6583](https://github.com/meilisearch/meilisearch/pull/6583)).
 
-### What This Means for Application Developers
-- Hold off building on `/tasks/stream` / `/batches/stream` — they were reverted right after release; don't assume they'll reappear unchanged.
-- Don't rely on 1.52.x's "faster search" claim — it's been rolled back as of 1.52.3.
-- If you snapshot Meilisearch on Windows, wait for [#6581](https://github.com/meilisearch/meilisearch/pull/6581) to land before trusting backup/restore in production.
-- If you upgrade to 1.53.0 for sharded foreign filters, test cross-shard filter latency under your own load — no published benchmarks yet.
-- Multi-tenant apps needing per-tenant attribute schemas should read the discussion on [#6553](https://github.com/meilisearch/meilisearch/issues/6553) — official guidance still steers away from one-index-per-tenant, but no first-class alternative exists yet for heterogeneous attribute sets.
+## 6. What This Means for Application Developers
+- **Avoid `/tasks/stream` and `/batches/stream` for now** — these SSE endpoints were pulled in v1.52.2; use polling against `/tasks` and `/batches` instead until they reappear.
+- **Windows-hosted deployments** doing snapshot backups should hold off or monitor [#6581](https://github.com/meilisearch/meilisearch/pull/6581) closely — snapshot creation can currently fail outright on Windows hosts.
+- **Multi-tenant filtering**: open issue [#6553](https://github.com/meilisearch/meilisearch/issues/6553) highlights a real gap — Meilisearch's guidance against per-tenant indexes doesn't cleanly support tenants with heterogeneous attribute sets on a single index. Teams building multi-tenant search should evaluate index-per-tenant tradeoffs carefully rather than assume the single-index model fits.
+- **Sharded/distributed setups** benefit from v1.53.0's foreign-filter sharding — worth upgrading if you rely on cross-shard filtering.
+- Treat v1.52.x as a turbulent patch series (rapid revert-then-refix cycle); pin to **v1.53.0** or later for a more stable base.
 
 </details>
 
 <details>
 <summary><strong>Ollama</strong> — <a href="https://github.com/ollama/ollama">ollama/ollama</a></summary>
 
-# Ollama — 2026-08-11
+# Ollama Digest — 2026-08-11
 
 ## Today's Highlights
-
-Ollama shipped [v0.32.7](https://github.com/ollama/ollama/releases/tag/v0.32.7) with initial support for Meta's **Muse Glimmer**, but the release is rocky: the manifest doesn't allow pulling the model yet ([#17645](https://github.com/ollama/ollama/issues/17645)) and the advertised MLX build is reportedly repackaged NVFP4 weights, not real MLX ([#17656](https://github.com/ollama/ollama/issues/17656)). Elsewhere, MLX gains four new architectures in flight (Nemotron 3, Gemma4 vision, Apertus 1.5, Bailing MoE V3) while tool-calling reliability across Qwen/harmony parsers gets a cluster of fixes.
+Ollama shipped **v0.32.7**, adding initial support for Meta's newly released **Muse Glimmer** model via the MLX engine on Apple Silicon, with CUDA/ROCm/CPU support promised "in coming days." The release landed rough: multiple bug reports surfaced within hours pointing to incomplete/incorrect model manifests. Separately, a serious correctness bug was reported in the MLX engine where long-lived runners can leak responses across unrelated requests — a notable risk for anyone running keep-alive sessions in production.
 
 ## Releases & Breaking Changes
-
-- **[v0.32.7](https://github.com/ollama/ollama/releases/tag/v0.32.7)** — adds Muse Glimmer support via the MLX engine on Apple Silicon only; CUDA/AMD/other platform support is "coming days," not yet in this build.
-- **[#17645](https://github.com/ollama/ollama/issues/17645)** — `ollama pull muse-glimmer:30b-q8_0` on 0.32.7 fails with a 412 "requires a newer version" error — the release note and the actual gated manifest are out of sync.
-- **[#17654](https://github.com/ollama/ollama/pull/17654)** — Windows-on-Arm CPU builds currently ship baseline `armv8-a` with zero dot-product/matrix instructions; sets `GGML_CPU_ARM_ARCH` to fix.
+- **[v0.32.7](https://github.com/ollama/ollama/releases/tag/v0.32.7)** — adds Muse Glimmer support (MLX/Apple Silicon only for now; NVIDIA/AMD/CPU to follow). See [PR #17646](https://github.com/ollama/ollama/pull/17646).
+- The rollout is incomplete: [#17645](https://github.com/ollama/ollama/issues/17645) reports `ollama pull muse-glimmer:30b-q8_0` fails with a 412 "requires a newer version" manifest error even on 0.32.7, and [#17656](https://github.com/ollama/ollama/issues/17656) reports the `muse-glimmer:30b-mlx` tag is actually built from NVIDIA-only NVFP4 layers rather than real MLX weights — the advertised Apple Silicon build may not be what it claims to be.
 
 ## New Model & Hardware Support
-
-- **Muse Glimmer** (Meta) — initial MLX-only support in v0.32.7; CUDA/ROCm/CPU pending.
-- **Nemotron 3** — MLX implementation in progress ([#17060](https://github.com/ollama/ollama/pull/17060)), including Mamba2/recurrent layers, MoE routing, and quantized NVFP4/MXFP8 expert paths via a shared Metal-optimized GatherQMM kernel.
-- **Gemma4** — MLX image input support ([#17650](https://github.com/ollama/ollama/pull/17650)), adding vision embeddings and PLE/bidirectional image attention through the generic `base.MediaModel` interface.
-- **Apertus v1.5** (8B/70B, Swiss AI Initiative) — native chat/renderer/parser support ([#17555](https://github.com/ollama/ollama/pull/17555)).
-- **Bailing MoE V3** — MLX safetensors support ([#17643](https://github.com/ollama/ollama/pull/17643)) with hybrid KDA/MLA attention and dense/MoE FFN layers.
-- **[#17659](https://github.com/ollama/ollama/pull/17659)** — routine llama.cpp vendor update.
+- **Muse Glimmer** (Meta) — initial MLX/Apple Silicon support in v0.32.7 (manifest issues noted above).
+- **Nemotron 3 Nano Omni** — MLX implementation including Mamba2/recurrent pieces, MoE routing, and quantized NVFP4/MXFP8 expert paths: [PR #17060](https://github.com/ollama/ollama/pull/17060).
+- **Bailing MoE V3** — MLX safetensors support with hybrid KDA/MLA attention: [PR #17643](https://github.com/ollama/ollama/pull/17643).
+- **Gemma4** — MLX image input support (vision embedder + transformer-based vision tower checkpoints): [PR #17650](https://github.com/ollama/ollama/pull/17650).
+- **Apertus 1.5** (8B/70B, Swiss AI Initiative) — native parser/renderer support: [PR #17555](https://github.com/ollama/ollama/pull/17555).
+- **Windows-on-Arm CPU build** — currently ships with zero dot-product/matrix instructions due to missing `-march`; fix sets `GGML_CPU_ARM_ARCH`: [PR #17654](https://github.com/ollama/ollama/pull/17654).
 
 ## Performance & Optimization
-
-- **[#17631](https://github.com/ollama/ollama/issues/17631)** — TTFT regression on Windows/CUDA between 0.24.0 → 0.32.6: a flat per-request overhead (+156ms Gemma E4B, +44ms Qwen3) that doesn't scale with prompt size and isn't prompt-cache related; generation throughput itself improved. Looks like fixed per-request runner overhead — worth watching for a root-cause fix.
-- **[#17557](https://github.com/ollama/ollama/issues/17557)** — feature request to keep MoE expert weights in host RAM with on-demand GPU compute, so 16B/35B MoE models fit on 8GB/12GB GPUs instead of OOMing (currently inherits llama.cpp's load-everything-to-VRAM default).
+- **TTFT regression on Windows/CUDA**: upgrading 0.24.0 → 0.32.6 adds a flat per-request latency toll to warm time-to-first-token (+156ms on Gemma E4B, +44ms on Qwen3), independent of prompt size; generation throughput actually improved. No root cause identified yet: [#17631](https://github.com/ollama/ollama/issues/17631).
+- **8GB/12GB GPU MoE OOM**: feature request to keep MoE expert weights in host RAM with on-demand GPU compute, instead of loading all experts into VRAM (currently a 16B MoE with a 6GB file needs 23GB VRAM): [#17557](https://github.com/ollama/ollama/issues/17557).
+- **Windows dual-socket CPU/GPU utilization**: high CPU / low GPU utilization reported in hybrid CPU+GPU configurations: [#16873](https://github.com/ollama/ollama/issues/16873).
+- Windows-on-Arm CPU perf fix above ([PR #17654](https://github.com/ollama/ollama/pull/17654)) also belongs here — baseline `armv8-a` build was leaving matrix/dot-product instructions unused.
 
 ## Stability & Regressions
-
-- **[#17599](https://github.com/ollama/ollama/issues/17599)** (high severity) — MLX engine with `OLLAMA_KEEP_ALIVE=-1` on long-lived runners intermittently returns a **verbatim answer from a different, earlier request** — cross-request response contamination, not just degraded output. No fix PR yet; correctness-critical for any multi-tenant or agent deployment on Apple Silicon.
-- **[#17596](https://github.com/ollama/ollama/issues/17596)** — deterministic CUDA illegal memory access in flash-attention (head-size-256) during large prefill on DGX Spark (GB10), reproducible against Qwen3-Next 80B-A3B.
-- **[#17444](https://github.com/ollama/ollama/issues/17444)** — 0.32.4/0.32.5 broke tool calling in the VS Code Copilot harness; confirmed workaround is rolling back to 0.32.1.
-- **[#17632](https://github.com/ollama/ollama/issues/17632)** — MLX BF16 (Laguna-S 2.1) intermittently fails to terminate, degenerating into stream-of-consciousness output on Apple Silicon.
-- **[#17517](https://github.com/ollama/ollama/issues/17517)** — Qwen3.6 35B Q4_K_M hits a memory ceiling on load post-update without filling GPU VRAM, even with reduced context.
-- **[#16785](https://github.com/ollama/ollama/issues/16785)** — fixed by **[#17644](https://github.com/ollama/ollama/pull/17644)**: `ollama run ... > file` was writing raw ANSI escape sequences into redirected output.
-- **[#17652](https://github.com/ollama/ollama/issues/17652)** — user skills under `~/.ollama/skills/` silently dropped; **[#17657](https://github.com/ollama/ollama/pull/17657)** adds diagnostics for rejected skill names.
+Ranked by severity:
+1. **Cross-request response contamination (MLX engine, `keep_alive -1`)** — a long-lived runner intermittently returns a verbatim answer belonging to a *different, earlier* request rather than the current prompt. Potentially serious for multi-tenant/production use: [#17599](https://github.com/ollama/ollama/issues/17599). No fix PR yet.
+2. **CUDA illegal memory access on DGX Spark (GB10)** — deterministic crash in flash-attention kernel for head-size-256 models (e.g. Qwen3-Next 80B-A3B) during large prefill: [#17596](https://github.com/ollama/ollama/issues/17596). No fix PR yet.
+3. **Tool calling broken in VS Code Copilot harness** since 0.32.4/0.32.5; workaround is reverting to 0.32.1: [#17444](https://github.com/ollama/ollama/issues/17444). No fix PR linked yet.
+4. **MLX BF16 non-termination** — Laguna-S 2.1 MLX BF16 intermittently fails to stop generating and degenerates into stream-of-consciousness output on Apple Silicon: [#17632](https://github.com/ollama/ollama/issues/17632).
+5. **Qwen memory/loading regression** — recent update causes Qwen models to hit VRAM ceiling without properly filling the GPU, even at reduced context: [#17517](https://github.com/ollama/ollama/issues/17517).
+6. **Redirected stdout writes terminal control sequences** — `ollama run x > file` should fail cleanly instead of corrupting the file with ANSI escapes; fix PR opened but subsequently closed: [#16785](https://github.com/ollama/ollama/issues/16785) / [PR #17644](https://github.com/ollama/ollama/pull/17644) (closed).
 
 ## What This Means for Application Developers
-
-- **Hold off on Muse Glimmer** until the manifest gate and MLX-weights mismatch ([#17645](https://github.com/ollama/ollama/issues/17645), [#17656](https://github.com/ollama/ollama/issues/17656)) are resolved — it isn't reliably pullable yet.
-- **Pin below 0.32.4 or wait for a fix** if you depend on tool calling from VS Code/Copilot-style clients ([#17444](https://github.com/ollama/ollama/issues/17444)).
-- **Avoid `OLLAMA_KEEP_ALIVE=-1` on MLX in multi-request/agentic setups** until [#17599](https://github.com/ollama/ollama/issues/17599) is fixed — responses can silently leak between requests.
-- Tool-calling robustness is actively improving: malformed JSON tolerance for harmony/gpt-oss ([#17642](https://github.com/ollama/ollama/pull/17642)), better error context for Qwen3-VL parser failures ([#17651](https://github.com/ollama/ollama/pull/17651)), and opt-in streaming of partial tool-call arguments for Qwen ([#17658](https://github.com/ollama/ollama/pull/17658)) — useful if you're building agent frameworks on top of `/api/chat`.
-- If pulling GGUFs directly from Hugging Face, note `hf.co/...` pulls currently skip the built-in renderer/parser assignment even for recognized architectures, degrading tool-calling reliability ([#17636](https://github.com/ollama/ollama/issues/17636)).
-- Ollama Cloud API users: direct `https://ollama.com/v1` calls can 402 with "extra usage only" even when the same key works fine through the signed-in local client's Pro allowance ([#17639](https://github.com/ollama/ollama/issues/17639)) — check billing headers if cloud requests fail unexpectedly.
+- **Hold off on Muse Glimmer in production** until the manifest issues ([#17645](https://github.com/ollama/ollama/issues/17645), [#17656](https://github.com/ollama/ollama/issues/17656)) are resolved — the model may not pull correctly or may silently run on the wrong backend.
+- **Audit `OLLAMA_KEEP_ALIVE=-1` deployments on Apple Silicon** against [#17599](https://github.com/ollama/ollama/issues/17599): long-lived MLX runners can return another request's answer, which is a correctness/security concern for any app serving multiple users or sessions from one runner.
+- **Tool-calling reliability is actively in flux**: several parallel efforts landed or are in review — wrapping parser errors with client-facing context ([PR #17651](https://github.com/ollama/ollama/pull/17651)), tolerating malformed JSON in harmony/gpt-oss tool calls ([PR #17642](https://github.com/ollama/ollama/pull/17642)), and opt-in progressive Qwen tool-call streaming ([PR #17658](https://github.com/ollama/ollama/pull/17658)). If you build agents on Ollama's tool-calling API, test against these changes before upgrading, and note that pulling GGUFs directly from Hugging Face (`hf.co/...`) currently skips the built-in tool-call renderer/parser for recognized architectures ([#17636](https://github.com/ollama/ollama/issues/17636)) — prefer the Ollama library/registry path for reliable tool calling.
+- **Benchmark before upgrading on Windows/CUDA** if you're latency-sensitive — the reported flat TTFT regression ([#17631](https://github.com/ollama/ollama/issues/17631)) could affect interactive/agentic workloads even though raw generation throughput is better.
+- **Modelfile users**: `num_gpu` is being restored to the documented parameter table ([PR #17648](https://github.com/ollama/ollama/pull/17648)) as the only way to force CPU-only execution without changing the API request — useful if you need per-model hardware pinning.
 
 </details>
 
 <details>
 <summary><strong>vLLM</strong> — <a href="https://github.com/vllm-project/vllm">vllm-project/vllm</a></summary>
 
-# vLLM Daily Digest — 2026-08-11
+# vLLM Digest — 2026-08-11
 
-## Today's Highlights
+## 1. Today's Highlights
 
-**v0.27.0** shipped with 561 commits from 242 contributors (64 new), headlined by full-stack **Kimi K3** support (core kernels, Python + Rust frontends). Performance work dominates today's PR queue — an adaptive spec-decode scheduling budget claims 11–23% E2E latency reduction and 55–65% TTFT improvement ([#51725](https://github.com/vllm-project/vllm/pull/51725)), alongside further GPU↔CPU sync removal on the model execution path ([#51738](https://github.com/vllm-project/vllm/pull/51738)). On the stability side, watch two correctness issues: a silent `lm_head` weight discard on composite VLMs ([#51063](https://github.com/vllm-project/vllm/issues/51063)) and V1+MTP+GLM-5.1 engine hangs under load ([#40926](https://github.com/vllm-project/vllm/issues/40926)).
+**v0.27.0 shipped** with 561 commits from 242 contributors (64 new), headlined by full-stack **Kimi K3 support** (core kernels, Python/Rust frontends, AttnRes kernels). The community is racing to close gaps around **DeepSeek-V4-Flash-0731**: Ampere/SM8x enablement is the most-discussed open issue (94 comments), while separate reports flag a KV-cache regression and a FlashInfer MLA routing bug on Blackwell. On the stability side, a V1 engine hang under MTP+GLM-5.1 and a silent correctness bug in composite VLM weight loading are the two items worth flagging to on-call teams.
 
-## Releases & Breaking Changes
+## 2. Releases & Breaking Changes
 
-- **v0.27.0**: Kimi K3 full-stack landing — core model/kernels ([#50089](https://github.com/vllm-project/vllm/pull/50089), [#50000](https://github.com/vllm-project/vllm/pull/50000)), Python frontend ([#50093](https://github.com/vllm-project/vllm/pull/50093)), Rust frontend ([#50104](https://github.com/vllm-project/vllm/pull/50104)), AttnRes kernels ([#50090](https://github.com/vllm-project/vllm/pull/50090)).
-- **RFC**: bitsandbytes and GGUF quantization proposed for migration out of core into an OOT plugin, citing low usage (~0.5%/0.1%) relative to maintenance cost against the `weight_loader_v2` architecture ([#39583](https://github.com/vllm-project/vllm/issues/39583)).
-- **CI**: release image publishing switches from a single serial DockerHub job to a 7-way Buildkite matrix across CUDA/ROCm/XPU/CPU variants ([#51735](https://github.com/vllm-project/vllm/pull/51735)).
+- **[v0.27.0](https://github.com/vllm-project/vllm/releases/tag/v0.27.0)** — 561 commits / 242 contributors. Headline: Kimi K3 support landing end-to-end in a single release (core model + kernels, Python + Rust frontends, AttnRes kernels).
+- RFC: **[Migrate bitsandbytes and GGUF quantization to an OOT plugin](https://github.com/vllm-project/vllm/issues/39583)** — maintainers propose moving both formats out-of-tree given low usage (~0.5% / 0.1%) relative to maintenance cost against the `weight_loader_v2` architecture. Watch for deprecation if this lands.
 
-## New Model & Hardware Support
+## 3. New Model & Hardware Support
 
-- **Kimi-K3 on ROCm/AMD**: tracking issue for day-0 feature parity — AITER fused-MoE (a16w4/a8w4) already integrated, more gaps being triaged ([#50682](https://github.com/vllm-project/vllm/issues/50682)).
-- **ROCm/DSV4**: AITER tuned GEMM now used for full-graph decode attention, requiring new plumbing for cudagraph warmup to detect graph mode from within a layer ([#51713](https://github.com/vllm-project/vllm/pull/51713)); native MXFP4 TP8 shard allocation preserved instead of padding to 512 ([#51473](https://github.com/vllm-project/vllm/pull/51473)).
-- **B12X backend**: new opt-in linear/MoE/causal-attention kernels for NVIDIA SM120/SM121 (Blackwell), added without touching generic model-runner code ([#51696](https://github.com/vllm-project/vllm/pull/51696)).
-- **ROCm CI base**: moving to "The Rock" 7.14 while holding Python 3.12 / Ubuntu 22.04 steady ([#49925](https://github.com/vllm-project/vllm/pull/49925)).
-- **Open request**: SM8x (Ampere A100/A800) support for DeepSeek-V4-Flash/-0731 has no upstream path yet — highest-engagement open issue today at 94 comments ([#50576](https://github.com/vllm-project/vllm/issues/50576)).
-- **Gap**: Qwen3.5-MoE (`Qwen3_5MoeForConditionalGeneration`) architecture still unsupported ([#35344](https://github.com/vllm-project/vllm/issues/35344)); Intel ARC 140v lacks an XE2 cutlass kernel ([#37828](https://github.com/vllm-project/vllm/issues/37828)).
+- **[ROCm/AMD Kimi-K3 gap tracking](https://github.com/vllm-project/vllm/issues/50682)** — day-0 AITER fused-MoE (a16w4/a8w4) landed; broader ROCm enablement roadmap still open.
+- **[DeepSeek-V4-Flash SM8x (Ampere A100/A800) support request](https://github.com/vllm-project/vllm/issues/50576)** — highest-engagement issue this week (94 comments); DeepSeek-V4-Flash-0731 currently cannot run on Ampere.
+- **[Intel Arc B50 (Battlemage) TP=2 IPC handle crash](https://github.com/vllm-project/vllm/issues/48953)** — `zeMemOpenIpcHandle INVALID_ARGUMENT` on dual XPU, same failure class as an earlier Arc issue.
+- **[ROCm DSV4: AITER tuned GEMM for full-graph decode attention](https://github.com/vllm-project/vllm/pull/51713)** — routes DeepSeek-V4 attention projections through AITER's tuned GEMM under full cudagraph decode.
+- **[W4A16 DSA enablement (draft, do-not-merge)](https://github.com/vllm-project/vllm/pull/51724)** — depends on a companion FlashMLA PR; passing E2E unit tests on GLM-5.2/DSV3.2.
+- **[Cohere v2 stop-sequence reporting fix](https://github.com/vllm-project/vllm/pull/51556)** — aligns Cohere streaming stop reasons with OpenAI-compatible `STOP_SEQUENCE` semantics.
 
-## Performance & Optimization
+## 4. Performance & Optimization
 
-- **Adaptive spec-decode scheduling budget**: scales scheduled-token count with actual concurrency instead of a fixed `max_num_batched_tokens` cap — reported 11–23% E2E latency reduction and 55–65% TTFT improvement ([#51725](https://github.com/vllm-project/vllm/pull/51725)).
-- **DSpark confidence-scheduled verification**: sizes speculative draft-verification budget per-request from confidence rather than always verifying a fixed k, aimed at high-concurrency collapse where fixed-k spec decode burns more compute than it returns ([#47808](https://github.com/vllm-project/vllm/pull/47808)).
-- **More host-roundtrip removal**: continuing the `VLLM_GPU_SYNC_CHECK` sync-avoidance effort, this round targets kv-sharing fast-prefill decode metadata derived host-side ([#51738](https://github.com/vllm-project/vllm/pull/51738)).
-- **Kernel**: proposal to adopt PTX 9.4 `ldmatrix.s8.s4` for hardware INT4→INT8 expanding loads in W4A8-INT8 paths ([#49529](https://github.com/vllm-project/vllm/issues/49529)).
-- **ModelOpt refactor**: six near-duplicate FP8/NVFP4/MXFP8 `LinearMethod` classes consolidated into one generic `ModelOptLinearMethod` ([#49381](https://github.com/vllm-project/vllm/pull/49381)).
+- **[PTX 9.4 `ldmatrix.s8.s4` for W4A8-INT8](https://github.com/vllm-project/vllm/issues/49529)** — proposes using CUDA 13.4's hardware INT4→INT8 expanding load to speed up W4A8 kernel paths.
+- **[Skip detokenization in offline beam search](https://github.com/vllm-project/vllm/pull/50333)** (closed) — follow-up to #46422; avoids detokenizing `2 × beam_width` logprob candidates per step.
+- **Spec-decode regression analysis on production DeepSeek-V4-Flash**: **[#49927](https://github.com/vllm-project/vllm/issues/49927)** isolates a ~10.6% spec-decode acceptance-rate cost from #48137 and an output-distribution shift from #48660, via controlled A/B on a 2-node DGX Spark deployment.
+- **[Dynamic spec decoding throughput collapse at batch-size threshold](https://github.com/vllm-project/vllm/issues/49548)** — `num_speculative_tokens_per_batch_size` triggers a documented FULL_AND_PIECEWISE→PIECEWISE cudagraph downgrade costing ~14% single-stream latency, but shows a sharper cliff under concurrency.
+- **[DSD baseline tax vs. no-spec](https://github.com/vllm-project/vllm/issues/49986)** — every dynamic-speculative-decoding arm pays overhead vs. no-spec under production defaults; PIECEWISE override identified as a contributing factor.
+- **[`free_blocks` LIFO reuse order restore](https://github.com/vllm-project/vllm/pull/51482)** — #48017's "no-op" claim was wrong; the merged condition routed freed blocks through `append_n` instead of `prepend_n` when prefix caching is off, likely affecting block-reuse locality/perf.
 
-## Stability & Regressions
+## 5. Stability & Regressions
 
 Ranked by severity:
 
-1. **Silent correctness bug** — composite VLM wrapper (`Mistral3ForConditionalGeneration`) resolves `tie_word_embeddings` from the wrong top-level config, silently discarding a real `lm_head.weight` and producing fluent-but-wrong output with no error signal ([#51063](https://github.com/vllm-project/vllm/issues/51063), open, no fix PR yet).
-2. **Engine deadlock** — V1 + MTP + GLM-5.1 (DSA+MoE+MLA) workers hang under sustained production traffic; scheduler stalls, `sample_tokens` RPC times out, ends in `EngineDeadError` ([#40926](https://github.com/vllm-project/vllm/issues/40926), open).
-3. **Crash** — hybrid multi-group KV: `_update_requests_with_invalid_blocks` throws `ValueError: too many values to unpack` whenever a KV connector reports load-error blocks ([#50687](https://github.com/vllm-project/vllm/issues/50687), open).
-4. **Load-time crash** — block-scaled FP8 (compressed-tensors W8A8) hits a DeepGEMM "Unknown SF transformation" assertion on SM120 Blackwell ([#47436](https://github.com/vllm-project/vllm/issues/47436), open).
-5. **Reported perf/quality regression** — production A/B on DeepSeek-V4-Flash isolates #48137 to a ~10.6% spec-decode acceptance-rate cost and #48660 to an output-distribution shift ([#49927](https://github.com/vllm-project/vllm/issues/49927), open).
-6. **Fixed today** — CUDA image-preprocessing crash (`CUDNN_STATUS_INTERNAL_ERROR`) under `--mm-device-do-normalize`, reported as [#51717](https://github.com/vllm-project/vllm/issues/51717) and already fixed by [#51734](https://github.com/vllm-project/vllm/pull/51734) (replaces `F.batch_norm` with a cudnn-free equivalent).
-7. **Broken feature** — Gemma-4 KV-cache CPU offloading reported broken, no repro details yet ([#42348](https://github.com/vllm-project/vllm/issues/42348), open).
-8. **Parser gap** — `qwen3_xml` tool parser consumes `</think>`, merging reasoning into `content` with no way to split it back out ([#51679](https://github.com/vllm-project/vllm/issues/51679), open).
-9. **Attention fix** — MLA prefill workspace allocation size revert; a `max-num-seqs * block_size` minimum reintroduced by #50484 is no longer needed after #50613's per-request MLA chunked-context scheduling ([#51733](https://github.com/vllm-project/vllm/pull/51733)).
-10. Also landed: async Mamba align D2H count/row-shift decoupling under spec decode + async scheduling ([#51599](https://github.com/vllm-project/vllm/pull/51599)).
+1. **[V1 + MTP + GLM-5.1 worker hang, EngineDeadError](https://github.com/vllm-project/vllm/issues/40926)** — under TP=8 sustained production traffic, scheduler stalls (`step_counter=0`), `sample_tokens` RPC times out after 30s. No fix PR linked yet — high severity for production serving.
+2. **[Composite VLM (Mistral3ForConditionalGeneration) silently discards real `lm_head.weight`](https://github.com/vllm-project/vllm/issues/51063)** — `tie_word_embeddings` resolved from wrong top-level config, producing coherent-vocabulary-but-incoherent output. Silent correctness bug, no error raised — dangerous for unattended pipelines.
+3. **[DeepSeek-V4-Flash-0731 KV cache 8× larger per token](https://github.com/vllm-project/vllm/issues/51041)** — 56 bytes/token vs. the preview checkpoint, `max_model_len` capped to ~121K on H20 TP=2. Regression, not yet triaged with a fix.
+4. **[FlashInfer sparse MLA decode kernel routing failure on SM120](https://github.com/vllm-project/vllm/issues/50720)** — DeepSeek-V4-Flash-0731 + DSpark fails on RTX PRO 6000 Blackwell.
+5. **[Hybrid multi-group KV crash on connector load errors](https://github.com/vllm-project/vllm/issues/50687)** — `_update_requests_with_invalid_blocks` raises `ValueError: too many values to unpack` for any KVConnectorBase_V1 integration reporting invalid blocks.
+6. **[Block-scaled FP8 crash on load, SM120 Blackwell](https://github.com/vllm-project/vllm/issues/47436)** — DeepGEMM "Unknown SF transformation" assertion, v0.24.0.
+7. **[ngram spec decoding changes greedy output](https://github.com/vllm-project/vllm/issues/41758)** — correctness divergence vs. non-speculative greedy decoding on Qwen3-0.6B/A100.
+8. **[Chat completion 500 on non-object JSON bodies](https://github.com/vllm-project/vllm/pull/51654)** — fix PR open; server currently returns 500 instead of 4xx for malformed request payloads.
+9. **[`/v1/responses` protocol drift breaks OpenAI SDK compatibility](https://github.com/vllm-project/vllm/issues/39426)** (closed) — malformed tool-call aggregation.
+10. **[Qwen3.6-35B-A3B-FP8 code generation fails with malformed JSON](https://github.com/vllm-project/vllm/issues/47761)** — "Unterminated string" errors on v0.23.0/0.24.0.
 
-## What This Means for Application Developers
+Test infra fix in flight: **[`test_sharded_state_loader` fix](https://github.com/vllm-project/vllm/pull/51736)** addresses a batch-invariance assumption mismatch between checkpoint save/reshard/reload comparisons.
 
-- If you serve **Mistral3-family composite VLMs**, check output quality carefully — #51063 means a misconfigured `tie_word_embeddings` can silently drop your real output head and give coherent-looking but wrong text with zero error logs.
-- Running **GLM-5.1 with MTP speculative decoding on V1** under real traffic carries a known hang risk (#40926); consider disabling MTP or pinning to a version before this surfaces, and watch for a fix.
-- Teams using `--mm-device-do-normalize` for on-device image preprocessing should pick up **v0.27.0+** (or the corresponding patch) to get the #51734 fix for the cudnn crash.
-- If TTFT/latency at high concurrency is a pain point, the adaptive spec-decode budget (#51725) is worth tracking for adoption — it's a scheduler-level change, not a model change, so it should be a drop-in win once merged.
-- DeepSeek-V4-Flash users on Ampere (A100/A800) remain blocked — no SM8x support path exists yet (#50576); plan capacity on Hopper/Blackwell or wait on that thread.
+## 6. What This Means for Application Developers
+
+- **Pin your checkpoint** if serving `DeepSeek-V4-Flash-0731`: KV-cache footprint and `max_model_len` limits differ substantially from the preview build (#51041), and Blackwell users may hit the FlashInfer MLA routing bug (#50720) — validate on your target hardware before upgrading.
+- **Hold off on Mistral3-family composite VLMs** in unattended/agentic pipelines until #51063 lands a fix — the model can silently produce coherent-looking but wrong output with no error signal.
+- **Malformed client payloads currently 500 instead of 4xx** (#51654, fix pending) — if you're doing contract testing against the OpenAI-compatible endpoint, expect this to change soon; don't hard-code retry logic around 500s for bad input.
+- **Speculative decoding tuning**: if you use dynamic `num_speculative_tokens_per_batch_size`, watch for throughput cliffs at the batch-size threshold under concurrency (#49548) — the effect is worse in production than single-stream benchmarks suggest.
+- Ampere (A100/A800) users tracking DeepSeek-V4-Flash should follow #50576 for SM8x enablement — not yet supported.
 
 </details>
 
