@@ -3,3 +3,6 @@
 node_modules/
 dist/
 social/
+
+# stray local tooling state
+.claude-flow/
