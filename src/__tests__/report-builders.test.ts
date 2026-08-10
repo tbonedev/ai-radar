@@ -170,10 +170,14 @@ describe("buildDigestIssueBody", () => {
       "me/radar",
     );
 
-    expect(body).toContain("### [AI CLI Tools](https://github.com/me/radar/blob/HEAD/digests/2026-03-09/ai-cli.md)");
+    expect(body).toContain(
+      "### [AI CLI Tools](https://github.com/me/radar/blob/HEAD/digests/2026-03-09/ai-cli.md)",
+    );
     expect(body).toContain("- Claude Code shipped X");
     expect(body).toContain("- Codex fixed Y");
-    expect(body).toContain("### [HN Community](https://github.com/me/radar/blob/HEAD/digests/2026-03-09/ai-hn.md)");
+    expect(body).toContain(
+      "### [HN Community](https://github.com/me/radar/blob/HEAD/digests/2026-03-09/ai-hn.md)",
+    );
     expect(body).toContain("- Front page: Z");
   });
 

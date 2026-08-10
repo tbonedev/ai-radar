@@ -218,11 +218,15 @@ const LABEL_COLORS: Record<string, string> = {
  * Inserts a zero-width space in "github.com" so GitHub's auto-linker
  * won't create "mentioned this issue" notifications on external repos.
  */
-function neutralizeGitHubRefs(text: string): string {
+export function neutralizeGitHubRefs(text: string): string {
   return (
     text
-      // Prevent "mentioned this issue" cross-references
-      .replace(/https:\/\/github\.com\//g, "https://github\u200B.com/")
+      // Prevent "mentioned this issue" cross-references. /blob/ and /tree/ links
+      // point at files, never at an issue or PR, so they cannot raise a
+      // cross-reference \u2014 and the digest needs them clickable.
+      .replace(/https:\/\/github\.com\/\S*/g, (url) =>
+        /\/(blob|tree)\//.test(url) ? url : url.replace("https://github.com/", "https://github\u200B.com/"),
+      )
       // Prevent @mention notifications — insert zero-width space after @
       .replace(/@([a-zA-Z\d](?:[a-zA-Z\d]|-(?=[a-zA-Z\d])){0,38})/g, "@\u200B$1")
   );

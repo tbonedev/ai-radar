@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "AI CLI tools in consolidation, not feature race",
+      "Multi-agent reliability bugs recur across tools",
+      "Claude Code, Copilot CLI face billing/auth trust issues",
+      "Qwen Code, OpenCode push hardest on new features",
+      "Claude Code shipped zero releases today",
+      "Windows instability plagues Codex, Copilot CLI, OpenCode"
+    ],
+    "ai-agents": [
+      "MCP servers: 3 SSRF security fixes in flight",
+      "SDK v2 migration PR #4551 underway",
+      "Zero merges despite 8 active PRs today",
+      "New contribution-policy automation PR #4528",
+      "Maintainers steer new servers to MCP Registry",
+      "Redirect-bypass gap closed in #4622 follow-up"
+    ],
+    "ai-infra": [
+      "vLLM ships v0.27.0 with full Kimi K3 support",
+      "vLLM has a silent weight-discard bug",
+      "Ollama adds MLX support for four architectures",
+      "LiteLLM budget-enforcement bypass since v1.82.3",
+      "Meilisearch: three patch releases, three reverts",
+      "Ollama v0.32.7 ships with 2 open day-1 bugs"
+    ],
+    "ai-trending": [
+      "prime-agent gains +2,655 stars in a single day",
+      "MCP servers consolidate as standard tool-access layer",
+      "Firecrawl adds 815 stars, now at 165K total",
+      "context7 MCP server hits 60,558 stars",
+      "chrome-devtools-mcp brings Chrome control to agents",
+      "Skepticism grows over inflated 'awesome-skills' repos"
+    ],
+    "ai-web": [
+      "Claude Sonnet 5 goes GA, default for Free/Pro",
+      "Unreleased Claude model tightens Riemann bound",
+      "OpenAI posts cluster around AI cybersecurity",
+      "ChatGPT Business adds premium seats",
+      "Anthropic: 2 new articles, sitemap total 432",
+      "OpenAI: 4 new articles, sitemap total 904"
+    ],
+    "ai-hn": [
+      "Muse Glimmer: Meta's 30B local agent tops HN, 956 pts",
+      "Zuckerberg blasts 'closed AI rivals'",
+      "Kinney Drugs pulls AI phone assistant after backlash",
+      "Ambient AI surveillance piece draws 413 points",
+      "Claude's Riemann Hypothesis research gets 141 points",
+      "Sentiment: excitement for open models, AI fatigue rising"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops HF with 10,467 likes, 1.5M downloads",
+      "MiniMax-H3 spawns 18 of 30 trending repos",
+      "DeepSeek V4-Flash-0731 nears 1M downloads",
+      "Unsloth GGUF-quantizes V4-Flash-0731 fast",
+      "FLUX.1-dev still tops likes overall at 14,076",
+      "LiquidAI LFM2.5-2.6B targets on-device inference"
+    ],
+    "ai-community": [
+      "AI Agent Skill threat framework proposed",
+      "MCP attack-class catalogue published",
+      "OpenAI agent 'attacked' Hugging Face at Black Hat",
+      "Agent passed 2,283 tests, still broke in production",
+      "Self-hosting agent backends on single TPU chip",
+      "Kimi-to-Qwen distillation: what actually transfers"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "AI CLI tools in consolidation, not feature race",
+      "Multi-agent reliability bugs recur across tools",
+      "Claude Code, Copilot CLI face billing/auth trust issues",
+      "Qwen Code, OpenCode push hardest on new features",
+      "Claude Code shipped zero releases today",
+      "Windows instability plagues Codex, Copilot CLI, OpenCode"
+    ],
+    "ai-agents": [
+      "MCP servers: 3 SSRF security fixes in flight",
+      "SDK v2 migration PR #4551 underway",
+      "Zero merges despite 8 active PRs today",
+      "New contribution-policy automation PR #4528",
+      "Maintainers steer new servers to MCP Registry",
+      "Redirect-bypass gap closed in #4622 follow-up"
+    ],
+    "ai-infra": [
+      "vLLM ships v0.27.0 with full Kimi K3 support",
+      "vLLM has a silent weight-discard bug",
+      "Ollama adds MLX support for four architectures",
+      "LiteLLM budget-enforcement bypass since v1.82.3",
+      "Meilisearch: three patch releases, three reverts",
+      "Ollama v0.32.7 ships with 2 open day-1 bugs"
+    ],
+    "ai-trending": [
+      "prime-agent gains +2,655 stars in a single day",
+      "MCP servers consolidate as standard tool-access layer",
+      "Firecrawl adds 815 stars, now at 165K total",
+      "context7 MCP server hits 60,558 stars",
+      "chrome-devtools-mcp brings Chrome control to agents",
+      "Skepticism grows over inflated 'awesome-skills' repos"
+    ],
+    "ai-web": [
+      "Claude Sonnet 5 goes GA, default for Free/Pro",
+      "Unreleased Claude model tightens Riemann bound",
+      "OpenAI posts cluster around AI cybersecurity",
+      "ChatGPT Business adds premium seats",
+      "Anthropic: 2 new articles, sitemap total 432",
+      "OpenAI: 4 new articles, sitemap total 904"
+    ],
+    "ai-hn": [
+      "Muse Glimmer: Meta's 30B local agent tops HN, 956 pts",
+      "Zuckerberg blasts 'closed AI rivals'",
+      "Kinney Drugs pulls AI phone assistant after backlash",
+      "Ambient AI surveillance piece draws 413 points",
+      "Claude's Riemann Hypothesis research gets 141 points",
+      "Sentiment: excitement for open models, AI fatigue rising"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops HF with 10,467 likes, 1.5M downloads",
+      "MiniMax-H3 spawns 18 of 30 trending repos",
+      "DeepSeek V4-Flash-0731 nears 1M downloads",
+      "Unsloth GGUF-quantizes V4-Flash-0731 fast",
+      "FLUX.1-dev still tops likes overall at 14,076",
+      "LiquidAI LFM2.5-2.6B targets on-device inference"
+    ],
+    "ai-community": [
+      "AI Agent Skill threat framework proposed",
+      "MCP attack-class catalogue published",
+      "OpenAI agent 'attacked' Hugging Face at Black Hat",
+      "Agent passed 2,283 tests, still broke in production",
+      "Self-hosting agent backends on single TPU chip",
+      "Kimi-to-Qwen distillation: what actually transfers"
+    ]
+  }
+}

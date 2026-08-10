@@ -438,16 +438,21 @@ async function main(): Promise<void> {
   console.log(`  Saved ${saveFile(openclawContent, dateStr, "ai-agents.md")}`);
   console.log(`  Saved ${saveFile(infraContent, dateStr, "ai-infra.md")}`);
 
+  // Each saver opens its own issue when handed a repo — seven more issues a day
+  // on top of the three main reports. The single digest issue below replaces
+  // them all, so they are called with no repo and only write their file.
+  const NO_ISSUE = "";
+
   // Persists the sitemap crawl cursor, so it must run before anything reads it again.
-  await saveWebReport(webResults, webState, utcStr, dateStr, digestRepo, ft, LANG);
+  await saveWebReport(webResults, webState, utcStr, dateStr, NO_ISSUE, ft, LANG);
 
   await Promise.all([
-    saveTrendingReport(trendingData, summaries.trendingSummary, utcStr, dateStr, digestRepo, ft, LANG),
-    saveHnReport(hnData, utcStr, dateStr, digestRepo, ft, LANG),
-    savePhReport(phData, utcStr, dateStr, digestRepo, ft, LANG),
-    saveArxivReport(arxivData, utcStr, dateStr, digestRepo, ft, LANG),
-    saveHfReport(hfData, utcStr, dateStr, digestRepo, ft, LANG),
-    saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, digestRepo, ft, LANG),
+    saveTrendingReport(trendingData, summaries.trendingSummary, utcStr, dateStr, NO_ISSUE, ft, LANG),
+    saveHnReport(hnData, utcStr, dateStr, NO_ISSUE, ft, LANG),
+    savePhReport(phData, utcStr, dateStr, NO_ISSUE, ft, LANG),
+    saveArxivReport(arxivData, utcStr, dateStr, NO_ISSUE, ft, LANG),
+    saveHfReport(hfData, utcStr, dateStr, NO_ISSUE, ft, LANG),
+    saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, NO_ISSUE, ft, LANG),
   ]);
 
   // 5. Generate highlights for Telegram notification
