@@ -32,6 +32,7 @@ import type { ArxivData } from "./arxiv.ts";
 import type { HfData } from "./hf.ts";
 import type { DevtoData } from "./devto.ts";
 import type { LobstersData } from "./lobsters.ts";
+import type { FeedsData } from "./feeds.ts";
 
 // ---------------------------------------------------------------------------
 // Web report
@@ -329,13 +330,14 @@ export async function saveHfReport(
 export async function saveCommunityReport(
   devtoData: DevtoData,
   lobstersData: LobstersData,
+  feedsData: FeedsData,
   utcStr: string,
   dateStr: string,
   digestRepo: string,
   footer: string,
   lang: Lang = "zh",
 ): Promise<void> {
-  const hasData = devtoData.fetchSuccess || lobstersData.fetchSuccess;
+  const hasData = devtoData.fetchSuccess || lobstersData.fetchSuccess || feedsData.fetchSuccess;
   if (!hasData) {
     console.log(`  [community/${lang}] No data available, skipping report.`);
     return;
@@ -344,7 +346,7 @@ export async function saveCommunityReport(
   console.log(`  [community/${lang}] Calling LLM for community report...`);
   try {
     const summary = await callLlm(
-      buildCommunityPrompt(devtoData, lobstersData, dateStr, lang),
+      buildCommunityPrompt(devtoData, lobstersData, feedsData, dateStr, lang),
       LLM_TOKENS_LISTING,
     );
     const fileName = "ai-community.md"; // ponytail: single-language (en) build — see LANG in index.ts

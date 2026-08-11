@@ -12,6 +12,7 @@ import type { ArxivData } from "./arxiv.ts";
 import type { HfData } from "./hf.ts";
 import type { DevtoData } from "./devto.ts";
 import type { LobstersData } from "./lobsters.ts";
+import type { FeedsData } from "./feeds.ts";
 import type { Lang } from "./i18n.ts";
 export function buildTrendingPrompt(data: TrendingData, dateStr: string, lang: Lang = "zh"): string {
   const trendingSection =
@@ -66,7 +67,14 @@ ${searchSection}
 
 ---
 
-Generate a structured AI Open Source Trends Report in English:
+Generate a structured AI Open Source Trends Report in English.
+
+The reader is a working engineer looking for things they have not already heard
+of — tools worth trying, new approaches, useful repositories. Projects they
+already know (the large, established frameworks) are not a finding, no matter
+how many stars they gained. Lead with what is genuinely new or unfamiliar, say
+what it actually does in concrete terms, and say who would want it. A star count
+is a weak signal on its own; explain what the project *is* before citing it.
 
 **Step 1 (Filter)**: From the above data, select projects clearly related to AI/ML (exclude unrelated general tools, frontend frameworks, games, etc.). Skip non-AI trending repos.
 
@@ -79,7 +87,10 @@ Generate a structured AI Open Source Trends Report in English:
 
 **Step 3 (Output Report)** with these sections:
 
-1. **Today's Highlights** — 3-5 sentences on the most noteworthy AI open-source developments today
+1. **Finds** — the 3-6 projects here most worth a developer's attention today,
+   weighted toward ones that are not already well known. For each: repo as a
+   Markdown link, one sentence on what it concretely does, and one on who would
+   use it and why. Say plainly if a project looks like hype or an empty shell.
 
 2. **Top Projects by Category** — For each category, render a **Markdown table** with exactly these columns:
 
@@ -737,9 +748,22 @@ ${modelsText}
 export function buildCommunityPrompt(
   devto: DevtoData,
   lobsters: LobstersData,
+  feeds: FeedsData,
   dateStr: string,
   lang: Lang = "zh",
 ): string {
+  const feedsText =
+    feeds.items.length > 0
+      ? feeds.items
+          .map(
+            (f, i) =>
+              `${i + 1}. **${f.title}**\n` +
+              `   Source: ${f.source} | Link: ${f.url}\n` +
+              `   ${f.excerpt.slice(0, 900)}`,
+          )
+          .join("\n\n")
+      : "(No practitioner feed items available)";
+
   const devtoText =
     devto.articles.length > 0
       ? devto.articles
@@ -795,11 +819,33 @@ ${lobstersText}
 
 ---
 
-Generate a structured Tech Community AI Digest in English:
+## Practitioner feeds — engineering blogs and AI subreddits (${feeds.items.length} items)
 
-1. **Today's Highlights** — 3-5 sentences on the most discussed AI topics across these communities today
+${feedsText}
 
-2. **Dev.to Highlights** — Select 5-10 most valuable articles as a **Markdown table**:
+---
+
+Generate a structured Tech Community AI Digest in English.
+
+The reader is a working engineer who wants to get better at building with these
+models. They are already covered on release news elsewhere, so a version number
+or a "X released Y" line is worthless here unless it changes how someone should
+work. What they want from this section: techniques, workflows, hard-won lessons,
+post-mortems, and arguments between practitioners about how to do this well.
+Prefer a concrete method someone can try tomorrow over a summary of discourse.
+
+1. **Worth Your Time** — the 3-6 items here that actually teach something. For
+   each: title as a Markdown link, the source, and 2-3 sentences on the specific
+   technique, claim, or lesson — not what the article is "about". If someone
+   reports a result, give the number. Skip anything that is only an announcement.
+
+2. **Techniques and Workflows** — 100-250 words on concrete practice appearing
+   across these sources: prompting and harness patterns, evaluation approaches,
+   agent-design choices, things people tried that failed and why. Name the
+   source for each claim. If nothing methodological appeared today, say so in
+   one line rather than padding.
+
+3. **Dev.to Highlights** — Select 5-10 most valuable articles as a **Markdown table**:
 
    | Article | Reactions | Comments | Summary |
    | :--- | ---: | ---: | :--- |
@@ -808,7 +854,7 @@ Generate a structured Tech Community AI Digest in English:
    - **Reactions / Comments**: copy the numbers from the input verbatim
    - **Summary**: 2 sentences — the key takeaway for developers
 
-3. **Lobste.rs Highlights** — Select 3-8 most notable stories as a **Markdown table**:
+4. **Lobste.rs Highlights** — Select 3-8 most notable stories as a **Markdown table**:
 
    | Story | Score | Comments | Summary |
    | :--- | ---: | ---: | :--- |
@@ -816,13 +862,6 @@ Generate a structured Tech Community AI Digest in English:
    - **Story**: title as a Markdown link, followed by " · [discuss](discussion-url)"
    - **Score / Comments**: copy the numbers from the input verbatim
    - **Summary**: 2 sentences — why it's worth reading
-
-4. **Community Pulse** — 100-200 words on what these communities are talking about:
-   - Common themes across both platforms
-   - Practical concerns developers have about AI tools
-   - Emerging tutorials, patterns, or best practices
-
-5. **Worth Reading** — 2-3 articles/stories most worth reading in depth
 
 Style: English, concise and developer-friendly, preserve all original links.
 `;

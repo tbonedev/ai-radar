@@ -13,31 +13,20 @@
 # Each entry requires: id (filename slug), repo (owner/repo), name (display name).
 # Set paginated: true for high-volume repos with many daily updates.
 
+# Deliberately short. Per-repo tracking summarises issues, PRs and releases —
+# that is a changelog, and a changelog is not a finding. Discovery comes from
+# the trending search (young repos only) and the practitioner feeds instead.
+# Keep only repos whose day-to-day activity teaches something.
+
 cli_repos:
   - id: claude-code
     repo: anthropics/claude-code
     name: Claude Code
     paginated: true
-  - id: codex
-    repo: openai/codex
-    name: OpenAI Codex
-    paginated: true
-  - id: gemini-cli
-    repo: google-gemini/gemini-cli
-    name: Gemini CLI
-  - id: copilot-cli
-    repo: github/copilot-cli
-    name: GitHub Copilot CLI
   - id: opencode
     repo: anomalyco/opencode
     name: OpenCode
     paginated: true
-  - id: cline
-    repo: cline/cline
-    name: Cline
-  - id: qwen-code
-    repo: QwenLM/qwen-code
-    name: Qwen Code
 
 # ── Claude Code Skills ────────────────────────────────────────────────────────
 # Tracked separately without a date filter, sorted by community engagement.
@@ -81,9 +70,10 @@ openclaw_peers:
     repo: VoltAgent/awesome-agent-skills
     name: Awesome Agent Skills
 
-# ── Infrastructure ────────────────────────────────────────────────────────────
-# Half bleeding-edge inference layer, half this project's own dependencies —
-# so a breaking release lands in the digest instead of in production.
+# ── Own stack ─────────────────────────────────────────────────────────────────
+# Kept only so a security advisory or breaking change lands in the digest
+# rather than in production. Cut to two: this section is a safety net, not a
+# discovery source, and every repo here costs an LLM summary per day.
 
 infra_repos:
   - id: dify
@@ -93,17 +83,4 @@ infra_repos:
   - id: litellm
     repo: BerriAI/litellm
     name: LiteLLM
-    paginated: true
-  - id: chatwoot
-    repo: chatwoot/chatwoot
-    name: Chatwoot
-  - id: meilisearch
-    repo: meilisearch/meilisearch
-    name: Meilisearch
-  - id: ollama
-    repo: ollama/ollama
-    name: Ollama
-  - id: vllm
-    repo: vllm-project/vllm
-    name: vLLM
     paginated: true

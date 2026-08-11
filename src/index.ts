@@ -54,6 +54,7 @@ import { fetchArxivData, type ArxivData } from "./arxiv.ts";
 import { fetchHfData, type HfData } from "./hf.ts";
 import { fetchDevtoData, type DevtoData } from "./devto.ts";
 import { fetchLobstersData, type LobstersData } from "./lobsters.ts";
+import { fetchFeedsData, type FeedsData } from "./feeds.ts";
 import { loadConfig } from "./config.ts";
 import { toCstDateStr, toUtcStr } from "./date.ts";
 import { type Lang, MSG, ISSUE_LABELS, DIGEST_ISSUE_TITLE } from "./i18n.ts";
@@ -120,10 +121,11 @@ async function fetchAllData(
   hfData: HfData;
   devtoData: DevtoData;
   lobstersData: LobstersData;
+  feedsData: FeedsData;
 }> {
   const allConfigs = [...CLI_REPOS, OPENCLAW, ...OPENCLAW_PEERS, ...INFRA_REPOS];
   console.log(
-    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters`,
+    `  Tracking: ${allConfigs.map((r) => r.id).join(", ")}, claude-code-skills, web, hn, ph, arxiv, hf, devto, lobsters, feeds`,
   );
 
   const [
@@ -137,6 +139,7 @@ async function fetchAllData(
     hfData,
     devtoData,
     lobstersData,
+    feedsData,
   ] = await Promise.all([
     Promise.all(
       allConfigs.map(async (cfg) => {
@@ -195,6 +198,7 @@ async function fetchAllData(
     fetchHfData().catch((): HfData => ({ models: [], fetchSuccess: false })),
     fetchDevtoData().catch((): DevtoData => ({ articles: [], fetchSuccess: false })),
     fetchLobstersData().catch((): LobstersData => ({ stories: [], fetchSuccess: false })),
+    fetchFeedsData().catch((): FeedsData => ({ items: [], fetchSuccess: false })),
   ]);
 
   return {
@@ -208,6 +212,7 @@ async function fetchAllData(
     hfData,
     devtoData,
     lobstersData,
+    feedsData,
   };
 }
 
@@ -359,6 +364,7 @@ async function main(): Promise<void> {
     hfData,
     devtoData,
     lobstersData,
+    feedsData,
   } = await fetchAllData(since, webState);
 
   const peerIds = new Set(OPENCLAW_PEERS.map((p) => p.id));
@@ -452,7 +458,7 @@ async function main(): Promise<void> {
     savePhReport(phData, utcStr, dateStr, NO_ISSUE, ft, LANG),
     saveArxivReport(arxivData, utcStr, dateStr, NO_ISSUE, ft, LANG),
     saveHfReport(hfData, utcStr, dateStr, NO_ISSUE, ft, LANG),
-    saveCommunityReport(devtoData, lobstersData, utcStr, dateStr, NO_ISSUE, ft, LANG),
+    saveCommunityReport(devtoData, lobstersData, feedsData, utcStr, dateStr, NO_ISSUE, ft, LANG),
   ]);
 
   // 5. Generate highlights for Telegram notification
