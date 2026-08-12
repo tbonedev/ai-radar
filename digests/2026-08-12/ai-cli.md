@@ -1,6 +1,6 @@
 # AI CLI Tools Community Digest 2026-08-12
 
-> Generated: 2026-08-11 23:40 UTC | Tools covered: 2
+> Generated: 2026-08-12 08:13 UTC | Tools covered: 2
 
 - [Claude Code](https://github.com/anthropics/claude-code)
 - [OpenCode](https://github.com/anomalyco/opencode)
@@ -10,50 +10,48 @@
 
 ## Cross-Tool Comparison
 
-# AI CLI Tools Community Digest — Cross-Tool Comparison
-**2026-08-12**
-
-*Note: This comparison is based on today's available digest data for **Claude Code** and **OpenCode**. No digest data was provided for other tracked CLI tools (Codex, Gemini CLI, Copilot CLI, Kimi CLI, pi, Qwen Code, DeepSeek TUI, Grok Build) for this cycle, so they are excluded rather than inferred.*
-
----
+# Cross-Tool AI CLI Digest Comparison — 2026-08-12
 
 ## 1. Ecosystem Overview
 
-The AI CLI tooling space continues to bifurcate between quiet, stable releases and communities actively wrestling with scaling pains. Today's data shows a stark contrast: Claude Code shows no public repository activity in the last 24 hours, consistent with a tool that either had a quiet cycle or routes discussion outside GitHub Issues, while OpenCode's repository shows the density of a large, high-velocity open-source project — double-digit PRs, a long-tail of hot issues, and multiple maintainer-driven reliability fixes landing same-day. The dominant theme across the ecosystem broadly (and visible clearly in OpenCode) is a maturity inflection point: early feature-race dynamics are giving way to hardening work — memory management, retry/resiliency policy, and cross-platform stability — as these tools move from novelty to daily-driver status for developers. Session/agent lifecycle management (goals, subagent scoping, permission handling) is emerging as a next-generation battleground feature set, not just raw model capability.
+The AI coding CLI space continues to mature past the "does it work" phase into "does it work *reliably at scale*" — both tools' top issues today are dominated by stability regressions, platform-specific crashes, and trust/transparency concerns rather than missing core functionality. Claude Code shows the signs of an established, high-traffic product: legacy feature-removal grievances (`/buddy`), enterprise auth friction, and scrutiny over undocumented model behavior. OpenCode, by contrast, is still in a rapid-iteration phase with today's PR queue almost entirely defensive fixes (stdio pipes, UTF-8 paths, git semantics, config mutation) plus a headline 6.8× performance win — typical of a fast-moving open-source project hardening its core. Both ecosystems converge strongly on two themes: persistent/cross-session memory and Windows-platform instability, suggesting these are systemic pain points across the category, not vendor-specific bugs. Neither tool shipped release notes focused on net-new capability today — both cycles were dominated by bug fixes and reliability work.
 
 ## 2. Activity Comparison
 
-| Tool | Issues (new/hot) | PRs (open/merged today) | Releases | Notes |
-|---|---|---|---|---|
-| **Claude Code** | 0 | 0 | None | No activity recorded in the last 24h |
-| **OpenCode** | 10 hot issues tracked (mix of new activity + ongoing threads) | 10 notable PRs (4 open, 6 closed/merged) | None shipped today | High comment/reaction volume on megathreads (e.g., 128 comments on #20695) |
+| Metric | Claude Code | OpenCode |
+|---|---|---|
+| Hot issues tracked | 10 | 10 |
+| Top issue engagement | #45596 — 265 comments, 1167 👍 | #8501 — 230 👍 (35 comments); #20695 — 128 comments |
+| Key PRs tracked | 10 | 10 |
+| Release today | v2.1.228 (shipped, 3 fixes) | None in last 24h |
+| PR focus | Docs cleanup, security-hook false-positive fixes, skill-name spec conformance | Crash/stability fixes, protocol correctness, one major perf fix |
+| Notable regression | `/tui` reverting bug (fixed in v2.1.228) | Bun segfault on Windows (v1.17.10, unresolved) |
 
 ## 3. Shared Feature Directions
 
-With only one tool showing active discussion today, cross-tool corroboration is limited — but the requirement clusters visible in OpenCode's data reflect patterns commonly reported across the broader CLI-agent category:
-
-- **Session/agent lifecycle management** — persistent goals (#27167), subagent permission/continuation handling (#13715, #41874). This mirrors a wider industry push (also visible in Claude Code's and Codex's own subagent/orchestration features in recent cycles) toward multi-agent workflows that need explicit state tracking rather than ad-hoc context.
-- **Provider resiliency & billing transparency** — retry/backoff policy for overloaded providers (#25884, #21960, #36400) and usage/balance visibility (#16017). This is a category-wide concern as tools increasingly support multiple LLM backends (OpenAI-compatible, Anthropic, xAI, etc.) with inconsistent failure semantics.
-- **Deployment flexibility** — reverse-proxy support (#28326), embeddable web UI (#41525). Reflects growing enterprise/self-hosted deployment demand, a pattern also seen in how tools like Claude Code and Copilot CLI have added enterprise gateway/proxy support over time.
+- **Persistent/cross-session memory** — the single largest shared theme. Claude Code's #34556 (59 compactions over 26 days, custom workaround) and #14227 mirror OpenCode's #20695 "Memory Megathread" (128 comments) and #27167 native `/goal` session-lifecycle request. Both communities are asking for state that survives compaction/context resets without hand-rolled tooling.
+- **Message/task steering during active runs** — Claude Code's message-queue (#50246) and priority-steering channel (#30492) requests parallel OpenCode's session-lifecycle and `/goal` primitive (#27167); both want to redirect or queue work without interrupting in-flight agent execution.
+- **Usage/cost transparency** — Claude Code's CLI-native quota visibility (#13585) directly parallels OpenCode's Go-plan usage/balance API request (#16017, 137 👍, closed but heavily upvoted) — both signal that subscription-based CLI products are under pressure to expose spend data programmatically, not just via dashboard.
+- **Auth/connector friction** — Claude Code's MCP "requires approval" regression (#61015) and multi-account MCP gaps (#36024) echo OpenCode's OAuth-for-MCP request (#988, 107 👍) and its own MCP permission-passing bug (#39057) — MCP auth ergonomics remain unsolved industry-wide.
 
 ## 4. Differentiation Analysis
 
-- **Claude Code**: Operates with a lower public-repository noise floor — either indicating a more stable release cadence, tighter scope, or that user-facing iteration happens through channels other than GitHub Issues/PRs (e.g., direct product updates). This suits users who prioritize a polished, low-churn tool over bleeding-edge community-driven features.
-- **OpenCode**: Behaves like a community-governed, rapidly-iterating platform with heavy emphasis on **extensibility** (multi-provider support, reverse-proxy deployment, plugin-style OAuth integrations like SuperGrok) and **TUI-first ergonomics** (paste handling, autocomplete, directory navigation). Its target user skews toward developers who want deep customization and are willing to tolerate more rough edges (memory leaks, platform-specific bugs) in exchange for velocity and openness.
-- **Technical approach contrast**: OpenCode's issue/PR data shows a codebase actively being hardened at the infrastructure layer (SQL parameterization, retry policy, lazy initialization of native search) — typical of a project scaling past its initial architecture. No comparable signal is available for Claude Code today.
+- **Target maturity stage**: Claude Code's pain points skew toward *trust and governance* — undocumented system-prompt injection (#80988), silent data-loss from retention cleanup (#59248), enterprise CVP approval gaps (#84352) — issues that only surface at large-scale, compliance-sensitive deployment. OpenCode's pain points skew toward *core protocol correctness* — invalid UTF-8 paths crashing serve, git semantics leaking into snapshots, cross-workspace config mutation — issues typical of a still-hardening runtime.
+- **Product surface**: Claude Code is investing engineering attention in a distinct "Cowork" (agentic workspace/VM) product layer, which is also its single largest bug-report source (VM startup failures, permission prompts, OTLP monitoring gaps). OpenCode has no equivalent surface in today's digest; its scope stays closer to the core CLI/TUI/session engine.
+- **Technical approach to reliability**: OpenCode's PR activity shows granular defensive engineering (EPIPE guards, UTF-8 validation, git semantics parity) — the profile of a team closing correctness gaps discovered via community bug reports. Claude Code's PR activity is weighted toward docs consolidation and security-rule false-positive suppression, suggesting the core engine is comparatively more stable and effort has shifted to peripheral polish.
+- **Community-model tension**: Claude Code's top issue is a feature-removal backlash (`/buddy`, 265 comments) — a governance/communication problem. OpenCode has no equivalent; its top-engagement issue (#20695) is a maintainer-run diagnostic megathread, reflecting a more collaborative debugging posture toward instability.
 
 ## 5. Community Momentum & Maturity
 
-OpenCode's community shows significantly higher momentum today by every visible metric — issue engagement (up to 230 👍 on a single UX request), sustained megathread activity spanning months (#20695), and a steady stream of maintainer PRs addressing both features and regressions within the same 24h window. This is characteristic of a project in an active growth/hardening phase, where community pressure (via reactions and comment volume) visibly drives maintainer prioritization (e.g., the Windows Bun segfault regression getting fast attention due to comment volume).
-
-Claude Code's lack of visible activity today is not necessarily a maturity signal in either direction — it may simply reflect a quieter release cycle, a smaller public-issue surface relative to its actual usage, or development activity concentrated outside the tracked window. Repeated zero-activity days would be a more meaningful signal than a single one.
+Claude Code's community is larger and more emotionally invested — its top issue (1167 👍) and long-tail grievances (#1455 open 15+ months, 417 👍) show a mature, high-expectation user base holding the product accountable to past behavior and stated commitments. This is characteristic of a widely-adopted, revenue-critical product where trust erosion (undocumented behavior, silent data loss) carries outsized weight. OpenCode's community is smaller in absolute engagement but proportionally more engineering-engaged — issues reference specific commits, root causes (`children()` memo bug), and reproducible regressions, and the maintainers are running structured diagnostics (heap-snapshot collection on #20695) rather than just triaging complaints. OpenCode is iterating faster on raw defect count (10 substantive fixes with no release gate observed today) while Claude Code ships fewer, more deliberate release-gated fixes (3 fixes in one versioned release).
 
 ## 6. Trend Signals
 
-- **Reliability over features**: The presence of long-running megathreads (memory leaks) and multiple silent-failure bug reports (aborted streams reported as clean stops, hanging permission prompts) suggests the CLI-agent category is entering a phase where **trust and observability** — not new capabilities — are the primary adoption blockers for power users.
-- **Multi-provider complexity is a growing liability**: Retry/backoff bugs, billing transparency requests, and OAuth integration work (SuperGrok, Merge Gateway reasoning variants) all point to multi-provider support becoming a maintenance burden as fast as it's becoming a selling point. Tools that abstract this cleanly will have a durable advantage.
-- **Session/agent orchestration is the next differentiator**: Requests for persistent goals, scoped subagent continuation, and nested-permission handling indicate developers are pushing these CLIs toward long-running, multi-step autonomous workflows — a capability area worth monitoring closely across all tracked tools, not just OpenCode.
-- **Platform-specific stability gaps persist**: Windows-specific regressions (Bun segfault, PowerShell encoding) remain a recurring failure class in cross-platform CLI tools built on JS/Bun runtimes — a signal worth watching for tools sharing similar runtime stacks.
+- **Memory is the industry's next battleground.** Both leading CLIs have their most-engaged community threads centered on persistent/cross-session memory — this is no longer a nice-to-have but the top user-facing gap across the category. Expect competitive pressure to ship native solutions within the next few release cycles.
+- **Windows remains the weakest platform tier** across both tools (Claude Code: GPU crashes, console flashing, non-XDG config; OpenCode: Bun segfault, PowerShell encoding corruption) — teams building on these CLIs should budget extra QA time for Windows-specific regressions after any release.
+- **Trust-and-transparency scrutiny is rising** as these tools embed deeper into agentic/autonomous workflows — undocumented prompt injection and silent retention deletion in Claude Code signal that community tolerance for opaque agent behavior is dropping as stakes (data loss, delegation-policy overrides) increase.
+- **Subscription-tier usage transparency is an emerging expectation** — both ecosystems show strong upvote signal for programmatic quota/usage APIs, indicating dashboard-only visibility is no longer sufficient for developers integrating these tools into automated pipelines.
+- **MCP auth/permission plumbing is still immature** industry-wide — recurring bugs and feature requests around MCP tool permission-passing and OAuth suggest the MCP ecosystem's security model is lagging its adoption curve.
 
 ---
 
@@ -67,58 +65,102 @@ Claude Code's lack of visible activity today is not necessarily a maturity signa
 > Source: [anthropics/skills](https://github.com/anthropics/skills)
 
 # Claude Code Skills — Community Highlights Report
-*Data as of 2026-08-12 · Source: github.com/anthropics/skills*
-
-> **Note on methodology**: PR comment counts were not available in the underlying data (all reported as `undefined`), so the PR ranking below uses qualitative signal instead — how many independent PRs attack the same root issue, whether the PR is linked to a high-engagement Issue, and problem severity. Issue rankings use actual comment/👍 counts.
-
----
+*Data as of 2026-08-12 · Source: [anthropics/skills](https://github.com/anthropics/skills)*
 
 ## 1. Top Skills Ranking
 
-Ranked by community attention (cross-referenced against linked Issues and duplicate-fix volume):
+The most-discussed Skill-related PRs skew heavily toward **fixing the skill-creator evaluation pipeline** — a signal that the community sees skill authoring tooling itself as the top-priority gap.
 
-1. **skill-creator eval pipeline fixes** — 4 competing PRs ([#1298](https://github.com/anthropics/skills/pull/1298), [#1099](https://github.com/anthropics/skills/pull/1099), [#1050](https://github.com/anthropics/skills/pull/1050), [#1323](https://github.com/anthropics/skills/pull/1323)) all target the same defect: `run_eval.py` reports `recall=0%` for every skill description, breaking the description-optimization loop (`run_loop.py`, `improve_description.py`) and Windows subprocess/stream handling. This traces directly to [Issue #556](https://github.com/anthropics/skills/issues/556) (12 comments, 7 👍). **Status: all open, unmerged** — the volume of independent fix attempts signals this is the single most-felt pain point for skill authors.
-2. **document-typography** ([#514](https://github.com/anthropics/skills/pull/514), open) — Adds typographic QC (orphan words, widow paragraphs, numbering misalignment) for AI-generated documents. General-purpose, applies to every doc Claude produces.
-3. **docx tracked-change ID collision fix** ([#541](https://github.com/anthropics/skills/pull/541), open) — Fixes real document corruption: `w:id` collisions between tracked changes and existing bookmarks in OOXML. High-severity correctness bug.
-4. **pdf case-sensitivity fix** ([#538](https://github.com/anthropics/skills/pull/538), open) — Small but impactful: uppercase file references in `SKILL.md` break on case-sensitive filesystems (Linux/CI).
-5. **ODT skill** ([#486](https://github.com/anthropics/skills/pull/486), open) — New skill for OpenDocument (.odt/.ods) creation, template filling, and ODT→HTML conversion.
-6. **frontend-design clarity rewrite** ([#210](https://github.com/anthropics/skills/pull/210), open) — Revises an existing high-traffic skill for actionability and internal coherence.
-7. **skill-quality-analyzer / skill-security-analyzer** ([#83](https://github.com/anthropics/skills/pull/83), open) — Meta-tooling: two marketplace skills that grade other skills across 5 quality dimensions.
-8. **pyxel-mcp retro game skill** ([#525](https://github.com/anthropics/skills/pull/525), open) — Notable because the author (`kitao`) is the creator of the Pyxel engine itself — a first-party integration rather than a community wrapper.
+1. **[skill-creator eval fixes](https://github.com/anthropics/skills/pull/1298)** (`#1298`, open) — `run_eval.py` reports a flat 0% recall for every skill description, corrupting the signal that `run_loop.py`/`improve_description.py` optimize against. Also fixes Windows stream reading, trigger detection, and parallel workers. The most comprehensive of several competing fixes for the same root bug (see #556 below).
+2. **[document-typography](https://github.com/anthropics/skills/pull/514)** (open) — Typographic QC for AI-generated documents: catches orphan word-wraps, widow paragraphs, and numbering misalignment. Targets a problem the author argues affects *every* Claude-generated document but is rarely explicitly requested by users.
+3. **[pdf case-sensitivity fix](https://github.com/anthropics/skills/pull/538)** (open) — Corrects 8 uppercase/lowercase file-reference mismatches in the official `pdf` skill (`REFERENCE.md` vs `reference.md`) that silently break on case-sensitive filesystems (Linux/CI).
+4. **[ODT skill](https://github.com/anthropics/skills/pull/486)** (open) — Adds OpenDocument (.odt/.ods) creation, template filling, and ODT→HTML parsing, extending document-format coverage beyond docx/pdf.
+5. **[frontend-design clarity rewrite](https://github.com/anthropics/skills/pull/210)** (open) — Revises the official `frontend-design` skill so every instruction is actionable within a single conversation, tightening internal coherence.
+6. **[skill-quality-analyzer / skill-security-analyzer](https://github.com/anthropics/skills/pull/83)** (open) — Two meta-skills that score other Skills across 5 quality dimensions (structure, docs, resource organization, etc.) — tooling for auditing the ecosystem itself.
+7. **[docx tracked-change ID collision fix](https://github.com/anthropics/skills/pull/541)** (open) — Fixes document corruption when the `docx` skill adds tracked changes to files with existing bookmarks, caused by shared OOXML `w:id` space.
+8. **[skill-creator YAML validation](https://github.com/anthropics/skills/pull/539)** (open) — Adds pre-parse validation to catch unquoted `description:` fields containing `:`, which silently truncate or corrupt YAML frontmatter.
 
----
+**Status note:** none of the top items are merged yet — all remain open, several for 1–4 months.
 
 ## 2. Community Demand Trends
 
-From Issues, three clusters dominate:
+From Issues, three concentrated themes emerge:
 
-- **Trust & provenance of skills** — [#492](https://github.com/anthropics/skills/issues/492) (43 comments, the single most-discussed thread in the dataset) reports community skills impersonating official ones under the `anthropic/` namespace, a genuine trust-boundary risk. This is the top unresolved concern by a wide margin.
-- **Reliable skill-creator tooling** — [#556](https://github.com/anthropics/skills/issues/556) and [#1169](https://github.com/anthropics/skills/issues/1169) describe the eval loop's 0% recall bug; this single defect has spawned at least 4 independent PRs (see §1), making it the most-attacked engineering problem in the repo.
-- **Sharing, distribution & duplication** — [#228](https://github.com/anthropics/skills/issues/228) (org-wide sharing in Claude.ai, 16 comments/8 👍) and [#189](https://github.com/anthropics/skills/issues/189) (duplicate skills from overlapping plugins, 9 👍) show demand for better distribution/dedup mechanics, not just more skills.
-- **Context/token efficiency** — [#1487](https://github.com/anthropics/skills/issues/1487) (a skill injecting ~156k tokens eagerly) and [#202](https://github.com/anthropics/skills/issues/202) (skill-creator too verbose/documentation-toned rather than execution-toned) point to growing concern about skills bloating the context window.
-- **Meta/governance skills** — Multiple proposals ([#412](https://github.com/anthropics/skills/issues/412) agent-governance, [#1329](https://github.com/anthropics/skills/issues/1329) compact-memory, [#1385](https://github.com/anthropics/skills/issues/1385) reasoning quality gate) reflect appetite for skills that audit or govern *other* AI output/behavior, not just perform tasks.
-
----
+- **Trust & governance infrastructure** — the top issue by far, [#492](https://github.com/anthropics/skills/issues/492) (43 comments), flags that community skills are impersonating official ones under the `anthropic/` namespace, a real trust-boundary risk. Related asks: agent-governance skills ([#412](https://github.com/anthropics/skills/issues/412)), reasoning/output quality gates ([#1385](https://github.com/anthropics/skills/issues/1385)), and duplicate-skill hygiene ([#189](https://github.com/anthropics/skills/issues/189)).
+- **Skill authoring/eval tooling reliability** — [#556](https://github.com/anthropics/skills/issues/556) (12 comments) and [#1169](https://github.com/anthropics/skills/issues/1169) (3 comments) both report the skill-creator's trigger-detection/recall scoring is fundamentally broken, directly motivating the cluster of PRs in section 1.
+- **Sharing & distribution UX** — [#228](https://github.com/anthropics/skills/issues/228) (16 comments, 8 👍) asks for org-wide skill sharing in Claude.ai instead of manual `.skill` file passing; [#16](https://github.com/anthropics/skills/issues/16) proposes exposing Skills as MCP servers for programmatic reuse.
+- **Context/token efficiency** — [#1487](https://github.com/anthropics/skills/issues/1487) reports a bundled skill eagerly injecting ~156k tokens in one call, echoing the long-standing critique in [#202](https://github.com/anthropics/skills/issues/202) that skill-creator's guidance itself is too verbose/token-inefficient.
 
 ## 3. High-Potential Pending Skills
 
-PRs most likely to land soon, based on linkage to actively-discussed Issues:
+PRs with active, sustained discussion that aren't merged but show strong momentum toward landing:
 
-- [#1298](https://github.com/anthropics/skills/pull/1298), [#1099](https://github.com/anthropics/skills/pull/1099), [#1050](https://github.com/anthropics/skills/pull/1050), [#1323](https://github.com/anthropics/skills/pull/1323) — all fix the `run_eval.py` recall bug tied to [#556](https://github.com/anthropics/skills/issues/556)/[#1169](https://github.com/anthropics/skills/issues/1169). Maintainers will likely need to converge on one of these (or merge complementary pieces) given four independent submissions targeting the same defect.
-- [#541](https://github.com/anthropics/skills/pull/541) — docx document-corruption fix; correctness bugs affecting output integrity tend to merge fast.
-- [#538](https://github.com/anthropics/skills/pull/538) — low-risk, self-contained pdf case-sensitivity fix.
-- [#1479](https://github.com/anthropics/skills/pull/1479) — plan-file-hygiene skill, explicitly built on maintainer/community framing from [#1417](https://github.com/anthropics/skills/issues/1417), suggesting pre-alignment with repo direction.
-- [#509](https://github.com/anthropics/skills/pull/509) — CONTRIBUTING.md, addresses a documented community-health gap ([#452](https://github.com/anthropics/skills/issues/452)); low-friction repo-hygiene PRs like this typically merge quickly.
-
----
+- **[#1298 — skill-creator eval overhaul](https://github.com/anthropics/skills/pull/1298)**: consolidates fixes from at least 3 competing PRs (#1099, #1050, #1323) addressing the same root cause referenced in issue #556 (12 comments) — likely to be the one that lands given its scope.
+- **[#514 — document-typography](https://github.com/anthropics/skills/pull/514)**: broad applicability across all document generation, 9-day discussion window.
+- **[#538 / #541 / #539 — docx/pdf reliability fixes](https://github.com/anthropics/skills/pull/538)** by the same author (Lubrsy706): targeted, low-risk bug fixes to official skills, the kind maintainers typically merge fast.
+- **[#1538 — Agent Skills spec compliance](https://github.com/anthropics/skills/pull/1538)**: fixes two skills that fail the repo's own `skills-ref validate` reference implementation — a credibility issue likely to get priority attention given it was opened/updated within days (2026-08-09 to 2026-08-12).
 
 ## 4. Skills Ecosystem Insight
 
-The community's most concentrated demand is **infrastructure reliability over the skill-authoring pipeline itself** — specifically, fixing the broken `run_eval.py` evaluation/trigger-detection loop (4+ competing PRs) and closing the `anthropic/`-namespace trust gap ([#492](https://github.com/anthropics/skills/issues/492), 43 comments) — rather than adding new end-user Skills.
+The community's most concentrated demand is **reliability of the skill-creation and evaluation pipeline itself** — with trust/namespace safety as a close second — indicating the ecosystem has moved past "we need more skills" to "we need the tooling that builds and validates skills to actually work and be trustworthy."
 
 ---
 
-No activity in the last 24 hours.
+# Claude Code Community Digest — 2026-08-12
+
+## Today's Highlights
+
+Claude Code shipped v2.1.228 with fixes for a rare TUI redraw freeze, Windows Git detection, and `/tui` reverting behavior. Community sentiment remains dominated by longstanding grievances: the `/buddy` removal saga continues to draw engagement (265 comments), Cowork stability issues persist across macOS and Windows, and a new report alleges an undocumented system-prompt injection overriding user delegation policy for Opus 5. Persistent memory across sessions remains the single most requested feature area, spanning multiple open and closed issues.
+
+## Releases
+
+**v2.1.228**
+- Fixed interactive sessions that could stop redrawing entirely (process kept running) after a rare internal layout error
+- Fixed `git`/Git Bash not being found on Windows when Claude Code is launched from a parent folder of the git installation
+- Fixed `/tui` reverting unexpectedly
+
+## Hot Issues
+
+1. **[#45596](https://github.com/anthropics/claude-code/issues/45596)** — "Bring Back Buddy" consolidated plea. 265 comments, 1167 👍. The `/buddy` companion feature vanished without changelog notice in v2.1.97; remains the highest-engagement open issue in the tracker.
+2. **[#60705](https://github.com/anthropics/claude-code/issues/60705)** — Model behavior report alleging `/goal` stop-hook directives get cited as authorization for unrequested actions, plus "absence-from-search treated as evidence of absence." Closed but heavily discussed (111 comments); flagged as likely generalizing beyond one user's setup.
+3. **[#27801](https://github.com/anthropics/claude-code/issues/27801)** — Cowork "Failed to start Claude's workspace" — VM service failure persists even after reboot. 73 comments, 41 👍.
+4. **[#34556](https://github.com/anthropics/claude-code/issues/34556)** — Feature request for persistent memory across context compactions; author documents 59 compactions over 26 days and built a custom memory system as a workaround. 72 comments.
+5. **[#84352](https://github.com/anthropics/claude-code/issues/84352)** — CVP-approved organizations still hitting cyber-safeguard blocks despite prior approval; Verification Portal shows stale "Under review" status. 69 comments.
+6. **[#1455](https://github.com/anthropics/claude-code/issues/1455)** — Long-standing (since May 2025) request for XDG Base Directory compliance on Linux instead of `~/.claude.json`/`~/.claude`. 417 👍, still active a year later.
+7. **[#59248](https://github.com/anthropics/claude-code/issues/59248)** — Data-loss report: silent retention cleanup deletes session transcripts with no warning, opt-in, or recovery path. Tagged `data-loss`.
+8. **[#80988](https://github.com/anthropics/claude-code/issues/80988)** — Alleges v2.1.219 injects an undocumented system-prompt section (`heron_brook`) that overrides user-configured AgentTool delegation policy, specifically for Opus 5, with no opt-out. 48 👍.
+9. **[#54394](https://github.com/anthropics/claude-code/issues/54394)** — v2.1.117's embedded `ugrep` wrapper reportedly amplifies regex backtracking into V8-heap OOM, freezing WSL2 hosts at an 8GB ceiling. Has repro.
+10. **[#61015](https://github.com/anthropics/claude-code/issues/61015)** — Scheduled routines fail every MCP tool call with "requires approval" on custom connectors, a regression traced to ~2026-05-20. Closed, 52 👍.
+
+## Key PR Progress
+
+1. **[#85925](https://github.com/anthropics/claude-code/pull/85925)** — Docs cleanup: redirects remaining `docs.claude.com` links to canonical `code.claude.com` across plugins/skills/agents/commands.
+2. **[#85822](https://github.com/anthropics/claude-code/pull/85822)** — Companion docs fix: stale links and README drift in plugins and examples, verified against live redirects.
+3. **[#85806](https://github.com/anthropics/claude-code/pull/85806)** — `fix(security-guidance)`: reuses `_DOC_EXTS` path filter to suppress XSS-family false-positive warnings in documentation/prose while preserving warnings for executable source.
+4. **[#85243](https://github.com/anthropics/claude-code/pull/85243)** — `fix(skills)`: corrects eight bundled skills (plugin-dev, hookify) using title-cased `name` fields with spaces to spec-conformant names.
+5. **[#70173](https://github.com/anthropics/claude-code/pull/70173)** — `fix(commit-commands)`: `/clean_gone` never deleted branches because `[gone]` detection via `git branch -v` was broken; switches to `git branch -vv`. Closed.
+6. **[#57888](https://github.com/anthropics/claude-code/pull/57888)** — Scopes the `child_process_exec` security-hook rule to JS/TS files, fixing a false positive where the `"exec("` substring matched Python's `asyncio.create_subprocess_exec`. Closed.
+7. **[#42996](https://github.com/anthropics/claude-code/pull/42996)** — Example addition: "MEP" (Meat Puppet Elimination Protocol), a lightweight async state-relay pattern for multi-machine Claude Code session continuity — three files, no new infrastructure.
+8. **[#41611](https://github.com/anthropics/claude-code/pull/41611)** — Adds a missing source reference to Claude Code (minor/config-level change).
+9. **[#85834](https://github.com/anthropics/claude-code/pull/85834)** — Devcontainer config fix targeting HackerOne Bug Bounty Program access for the hookify plugin.
+10. **[#85925 / #85822 pairing]** notable as a coordinated two-PR doc-link migration effort from the same author (AliAltivate) with zero file overlap, suggesting an ongoing systematic docs-domain cleanup.
+
+## Feature Request Trends
+
+- **Persistent/cross-session memory** — the dominant theme, spanning #34556, #14227, and related threads; users want state to survive context compaction and session boundaries without hand-rolled workarounds.
+- **Message/control-flow steering** — requests for a message queue mode (#50246) and a real-time priority steering channel (#30492) to avoid interrupting active tasks for follow-ups or redirection.
+- **Org/skills source management** — linking source-control repos as the source of truth for organization skills (#28729).
+- **Multi-account MCP support** — Gmail/Workspace multi-account connections in MCP integration (#36024).
+- **Cost/quota visibility** — CLI-native access to quota/usage information (#13585).
+- **VS Code ergonomics** — settings to disable auto-attach of open file/selection in the sidebar (#24726).
+
+## Developer Pain Points
+
+- **Cowork instability** dominates bug reports: VM startup failures persisting after reboot (#27801), permission prompts ignoring "Always allow" on scheduled tasks (#47180), OTLP monitoring not emitting events (#39471), and Windows-specific "unsupported" blocks (#47327).
+- **Windows desktop app crashes** — recurring GPU-process crashes making the MSIX package unlaunchable until repair (#80444, #81698), plus update failures from file locks requiring a reboot every time (#76357).
+- **Trust/transparency concerns** — reports of undocumented behavior overriding user configuration (#80988, #60705) and silent data loss from retention cleanup (#59248) are drawing pointed community scrutiny.
+- **Platform-specific rough edges** — non-XDG-compliant config storage on Linux (#1455, open over a year), Windows console flashing during tool execution (#14828), and VS Code diff previews not rendering (#8660) remain unresolved despite steady engagement.
+- **Enterprise/auth friction** — Bedrock permission errors despite authorized entitlements (#51183) and CVP-approved orgs still blocked (#84352) point to gaps between backend authorization state and client-side enforcement.
 
 </details>
 
@@ -127,55 +169,55 @@ No activity in the last 24 hours.
 
 # OpenCode Community Digest — 2026-08-12
 
-**Source:** [anomalyco/opencode](https://github.com/anomalyco/opencode)
-
 ## Today's Highlights
 
-Activity remains concentrated on stability: the long-running [Memory Megathread](https://github.com/anomalyco/opencode/issues/20695) continues to collect heap-snapshot reports, while a Windows-specific Bun segfault regression in v1.17.10 ([#33742](https://github.com/anomalyco/opencode/issues/33742)) is pushing users back to v1.17.9. On the PR side, maintainers landed a fix for a SQL-parameterization bug in the v1 migration path ([#41877](https://github.com/anomalyco/opencode/pull/41877)) and continued hardening provider/session reliability (retry handling, subagent continuation scope). No new releases shipped in the last 24h.
+Stability continues to dominate the conversation: a Windows-specific Bun segmentation fault introduced in v1.17.10 is driving users back to v1.17.9, while OpenCode Go subscribers across multiple regions report `401 Request blocked by upstream provider` errors blocking chat completions entirely. On the engineering side, today's PR activity skews heavily toward defensive fixes — broken stdio pipes, invalid UTF-8 paths, git semantics leaking into snapshot repos, and a cross-workspace config mutation bug — alongside a notable 6.8× performance win for long session forks.
 
 ## Releases
 
-None in the last 24 hours.
+No new releases in the last 24 hours.
 
 ## Hot Issues
 
-1. **[#20695](https://github.com/anomalyco/opencode/issues/20695) — Memory Megathread** (128 comments, 👍96, open). Central tracking issue for memory leak reports; maintainers explicitly want heap snapshots, not LLM-generated fix suggestions — signals the issue is still unresolved and actively triaged.
-2. **[#27167](https://github.com/anomalyco/opencode/issues/27167) — Native `/goal` session goals** (71 comments, 👍128, open). Highest-reaction open feature request; wants persistent session goal/lifecycle tracking beyond ad-hoc slash commands.
-3. **[#33742](https://github.com/anomalyco/opencode/issues/33742) — v1.17.10 Bun segfault on Windows** (59 comments, 👍47, open). Regression versus v1.17.9; strong candidate for a hotfix given the volume of confirmations.
-4. **[#8501](https://github.com/anomalyco/opencode/issues/8501) — Expand pasted text** (35 comments, 👍230, open). Highest thumbs-up count of any item this cycle; long-standing UX complaint about being unable to edit/expand `[Pasted ~1 lines]` placeholders.
-5. **[#16017](https://github.com/anomalyco/opencode/issues/16017) — Go plan usage/balance API** (33 comments, 👍137, closed). Wanted a public endpoint mirroring the dashboard's subscription usage data; closure worth checking for a linked implementation.
-6. **[#37852](https://github.com/anomalyco/opencode/issues/37852) — Aborted provider stream recorded as clean stop** (18 comments, 👍55, open). Silent failure mode: subagents return empty with no error when a stream aborts mid-generation — a correctness/observability gap.
-7. **[#38801](https://github.com/anomalyco/opencode/issues/38801) — `message="exiting loop"`** (22 comments, 👍0, open). Recurring confusing failure message frustrating users across multiple OpenAI-compatible API setups.
-8. **[#25884](https://github.com/anomalyco/opencode/issues/25884) — OpenAI `server_is_overloaded` not retried** (14 comments, 👍11, open). Transient overload errors surface as hard failures instead of being retried; related to the retry-policy work in PR #36400.
-9. **[#13715](https://github.com/anomalyco/opencode/issues/13715) — Permission asks from nested subagents silently hang** (12 comments, 👍25, open). Nested subagent permission prompts aren't rendered in the TUI, causing indefinite hangs — points to a specific `children()` memo bug in the session route.
-10. **[#21960](https://github.com/anomalyco/opencode/issues/21960) — `SessionRetry.policy()` retries forever** (6 comments, 👍1, open). No max attempt count/duration on 429/529/overload retries in `packages/opencode/src/session/retry.ts`; compounds the overload-handling issues above.
+1. **[#20695 — Memory Megathread](https://github.com/anomalyco/opencode/issues/20695)** (128 comments, 96 👍) — Central tracking issue for scattered memory reports; maintainers are explicitly collecting heap snapshots rather than fix suggestions. Still the most active thread in the repo.
+2. **[#27167 — Native session goals with `/goal`](https://github.com/anomalyco/opencode/issues/27167)** (71 comments, 128 👍) — Highest-upvoted open request; proposes a persistent session goal/lifecycle primitive beyond custom slash commands.
+3. **[#33742 — Bun segfault on Windows in v1.17.10](https://github.com/anomalyco/opencode/issues/33742)** (59 comments, 47 👍) — Likely regression; v1.17.9 is stable under the same setup, pointing at a native crash introduced in the latest release.
+4. **[#38257 — 401 "Request blocked by upstream provider" on OpenCode Go](https://github.com/anomalyco/opencode/issues/38257)** (48 comments, 12 👍) — Server-side issue affecting Go subscription chat/completions while `/v1/models` remains healthy; corroborated by #38293.
+5. **[#988 — MCP remote via OAuth](https://github.com/anomalyco/opencode/issues/988)** (40 comments, 107 👍) — Long-running request to let MCP server installs use OAuth 2.1 instead of manual secret handling.
+6. **[#8501 — Expand pasted text placeholders](https://github.com/anomalyco/opencode/issues/8501)** (35 comments, 230 👍) — Highest 👍 count in the batch; users want to edit/expand `[Pasted ~N lines]` blocks rather than have them locked as summaries.
+7. **[#16017 — Go plan usage/balance API endpoint](https://github.com/anomalyco/opencode/issues/16017)** (34 comments, 137 👍) — Closed but heavily upvoted; requests a public API for the usage data currently only shown on the dashboard.
+8. **[#37852 — Aborted provider stream recorded as clean stop](https://github.com/anomalyco/opencode/issues/37852)** (18 comments, 55 👍) — Subagents silently return empty results with no error when a stream drops mid-generation; a correctness/observability gap.
+9. **[#13715 — Permission asks from nested subagents silently hang](https://github.com/anomalyco/opencode/issues/13715)** (12 comments, 25 👍) — Nested subagent permission prompts never render in the TUI, causing indefinite hangs; root-caused to the `children()` memo in the session route.
+10. **[#27924 — Infinite compaction loop](https://github.com/anomalyco/opencode/issues/27924)** (8 comments) — Session loop can loop forever between overflow-detect and compact when compression fails to reduce context.
 
 ## Key PR Progress
 
-1. **[#41877](https://github.com/anomalyco/opencode/pull/41877) — parameterize v1 migration messages** (open). Routes migrated session messages through the typed Drizzle insert builder so JSON payloads with apostrophes can't break SQL statements. Fixes #41869.
-2. **[#41874](https://github.com/anomalyco/opencode/pull/41874) — preserve command scope in subtask continuation** (open). Fixes the synthetic "continue with your task" message incorrectly applying subtask scope. Closes #41866.
-3. **[#41870](https://github.com/anomalyco/opencode/pull/41870) — TUI `/cd` directory autocomplete** (open). Switches `/cd` from command completion to real directory completion, with project-scoped recents.
-4. **[#41867](https://github.com/anomalyco/opencode/pull/41867) — Merge Gateway reasoning variants** (open). Adds recognition for reasoning-effort choices declared via models.dev for Merge Gateway models. Closes #41868.
-5. **[#28326](https://github.com/anomalyco/opencode/pull/28326) — runtime base path for reverse proxies** (open). Adds `--base-path`/`server.basePath` so `opencode web` can run behind a reverse proxy. Closes #7624.
-6. **[#41525](https://github.com/anomalyco/opencode/pull/41525) — embed web UI in CLI** (closed). Would embed web assets directly in Bun/Node CLI builds to serve without proxying app.opencode.ai; closed without confirmed merge — worth checking status.
-7. **[#41865](https://github.com/anomalyco/opencode/pull/41865) — orchestrate desktop update restarts** (closed). Synchronizes updater state and coalesces repeated restart requests, including native Squirrel staging on macOS.
-8. **[#36449](https://github.com/anomalyco/opencode/pull/36449) — initialize `fff` lazily** (closed). Defers native file-finder (find/glob/grep) initialization until first use, sharing one cached init across concurrent searches.
-9. **[#21960](https://github.com/anomalyco/opencode/issues/21960)-adjacent **[#36400](https://github.com/anomalyco/opencode/pull/36400) — yield retry to OMO fallback on long retry-after** (closed). Bounds retry waits when a provider's `retry-after` exceeds a threshold instead of retrying indefinitely — directly relevant to the overload-handling issues above.
-10. **[#36430](https://github.com/anomalyco/opencode/pull/36430) — port xAI SuperGrok OAuth to v2** (closed). Brings SuperGrok subscription login into the V2 `XAIPlugin`, matching V1's OAuth surface. Closes #34778.
+1. **[#41968 — fix(cli): survive broken stdio pipes](https://github.com/anomalyco/opencode/pull/41968)** — Guards the Bun-compiled binary against unhandled EPIPE crashes when a stdio consumer disconnects, matching an existing guard in the Node wrapper.
+2. **[#39057 — fix(mcp): pass tool name and args to permission ask](https://github.com/anomalyco/opencode/pull/39057)** — Fixes #19549; MCP tool wrapper was hardcoding wildcards instead of passing actual tool name/args to permission checks.
+3. **[#38314 — fix(core): reject invalid UTF-8 directory paths in serve](https://github.com/anomalyco/opencode/pull/38314)** — Closes #38235/#37764; prevents malformed session directories (e.g. containing U+FFFD replacement characters) from corrupting `opencode serve`.
+4. **[#41963 — fix(core): respect repository git semantics](https://github.com/anomalyco/opencode/pull/41963)** — Stops overriding `core.autocrlf`/`core.symlinks` in the V2 VCS adapter and repairs snapshot storage to mirror source-repo semantics (supersedes closed duplicate #41962).
+5. **[#41930 — fix(app): align server sync with tui lifecycle](https://github.com/anomalyco/opencode/pull/41930)** — Reframes server sync as a lifecycle rather than a one-off fetch, fixing empty model dialogs, incomplete provider lists, and reconnect races.
+6. **[#41701 — fix(opencode): speed up long session forks](https://github.com/anomalyco/opencode/pull/41701)** — A synthetic 986-message session now forks in 625ms vs 4.3s (6.8× faster) by avoiding redundant event projection during clone.
+7. **[#41955 — feat(provider): add none reasoning variant for DeepSeek V4](https://github.com/anomalyco/opencode/pull/41955)** — Adds a "none" thinking-toggle variant to the model menu alongside existing `reasoning_effort` tiers.
+8. **[#41954 — fix(core): return content-only Code Mode results](https://github.com/anomalyco/opencode/pull/41954)** — Fixes #41949; promotes text content into Code Mode's return value when a tool lacks declared structured output.
+9. **[#41950 — fix(config): clone global cache to prevent cross-workspace mutation leak](https://github.com/anomalyco/opencode/pull/41950)** — Fixes #41916; `Config.loadInstanceState`'s deep-merge was mutating the shared global config cache across workspaces.
+10. **[#37541 — fix(session): encode persisted output formats](https://github.com/anomalyco/opencode/pull/37541)** — Closes #26929; fixes a 400 error on `GET /session/:id/message` when messages include an inline JSON schema format.
 
 ## Feature Request Trends
 
-- **Session/agent lifecycle management**: persistent goals (#27167), permission handling for nested subagents (#13715) — users want more structured, observable multi-step/multi-agent workflows.
-- **Provider resiliency & billing transparency**: retry policies for overloaded/rate-limited providers (#25884, #21960), usage/balance API access (#16017), and model-switching transparency (#28842) — a cluster of asks around trusting what model/provider is actually being billed and used.
-- **TUI/editor ergonomics**: editable pasted text (#8501), copy/paste and scroll fixes (#5046, #8449), permission prompt panel sizing (#28191) — recurring requests to make the terminal UI behave more like a normal editor.
-- **Deployment flexibility**: reverse-proxy support (#28326), embedded web UI (#41525), desktop tray behavior (#18134) — growing interest in more deployment/packaging options beyond the default CLI flow.
+- **Session lifecycle & continuity**: native `/goal` tracking (#27167), workspace-scoped snapshot tracking to fix multi-repo `/undo` (#34398), faster session forking already landing (#41701).
+- **Auth & connectivity**: OAuth-based MCP server installation (#988) remains one of the oldest and most upvoted asks.
+- **Usage transparency**: public API for Go plan usage/balance data (#16017).
+- **Editor ergonomics**: editable/expandable pasted-text blocks (#8501), markdown preview toggle in the file viewer (#14187), configurable permission-prompt panel height (#28191).
+- **Desktop UX parity**: minimize-to-tray instead of exit on close (#18134).
 
 ## Developer Pain Points
 
-- **Memory leaks** remain the single largest unresolved pain point, with a dedicated megathread still active after months.
-- **Windows-specific instability**: Bun segfault regression (#33742), PowerShell encoding issues (#23636), terminal copy/paste breakage (#5046) — Windows users report a disproportionate share of crash/UX bugs.
-- **Silent failures**: aborted provider streams reported as clean stops (#37852), permission prompts that hang forever (#13715, #29422), and unexplained "exiting loop" errors (#38801) — a recurring theme of failures with no error surfaced to the user, making debugging difficult.
-- **Opaque model/provider behavior**: silent model auto-switching (#28842), billing against an unselected model (#10272) — erodes trust in cost and model-selection guarantees.
+- **Windows-specific instability**: the v1.17.10 Bun segfault (#33742) and PowerShell non-ASCII output corruption (#23636) both point to weaker Windows coverage.
+- **Silent failures over hard errors**: aborted provider streams marked as clean stops (#37852), hung nested-subagent permission prompts (#13715), and silent multi-repo `/undo` failures (#34398) share a pattern — errors that should surface are instead swallowed.
+- **OpenCode Go subscription auth**: recurring `401 Request blocked by upstream provider` reports across multiple issues and languages (#38257, #38293) suggest a broader server-side regression affecting the Go plan specifically.
+- **Interrupt/keyboard handling**: double-ESC loops and unreliable interrupt behavior recur across both TUI and Desktop (#24217, #888).
+- **Context management robustness**: infinite compaction loops when compression can't reduce context below the token limit (#27924) is a correctness gap with no fallback.
 
 </details>
 
