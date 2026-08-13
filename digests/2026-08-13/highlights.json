@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.229 adds Remote Control resume",
+      "OpenCode ships two releases in one day",
+      "Issue #45596 draws 266 comments, 1,167 👍",
+      "OpenCode fixes Kimi and xAI provider bugs",
+      "Windows remains weak point across CLI tools",
+      "Billing reliability now a universal pain point"
+    ],
+    "ai-agents": [
+      "Two SSRF-prevention PRs land for MCP fetch server",
+      "Filesystem server fixes Unicode path bugs",
+      "Memory-hardening thread #4117 open since May",
+      "Zero of 7 open PRs merged today",
+      "PR #3921 still awaits review since April",
+      "MCP ecosystem shows healthy triage activity"
+    ],
+    "ai-infra": [
+      "Dify agent silently fabricates tool-call success",
+      "LiteLLM patches Langfuse credential leak",
+      "LiteLLM closes cross-user Redis Cluster leak",
+      "Dify still fixing 1.16.1 data-sync regression",
+      "LiteLLM fixes PII masking truthiness bypass",
+      "Both projects skip releases to harden security"
+    ],
+    "ai-trending": [
+      "deja-vu indexes coding-agent logs, no LLM needed",
+      "kimi-k3-in-c runs 2.78T model on one CPU",
+      "Kronos: foundation model for financial markets",
+      "Microsoft SkillOpt auto-tunes agent skills",
+      "code-context-engine cuts token use by 94%",
+      "deja-vu hits 84.9% hit@1 on LongMemEval-S"
+    ],
+    "ai-web": [
+      "Anthropic warns agent-to-agent traffic may explode",
+      "Multiagent systems could split human/agent institutions",
+      "OpenAI details \"How Enterprises Put AI to Work\"",
+      "Anthropic ties research to worker retraining policy",
+      "Frontier Red Team flags systemic multiagent risk",
+      "Only 3 new official articles today, light cadence"
+    ],
+    "ai-hn": [
+      "Muse Glimmer: Meta's 30B agent model hits 1199 pts",
+      "DeepSeek V4 Pro 0813 launches with 895 pts",
+      "\"AI eating the middle class\" thread hits 858 pts",
+      "Collective-memory debate draws 965 comments",
+      "Grok 4.6 joins the frontier-model race",
+      "Research shows reasoning traces stolen from APIs"
+    ],
+    "ai-arxiv": [
+      "Long-context training can erode parametric knowledge",
+      "Convergent Detour Hijacking attacks skill-based agents",
+      "LLM user simulators collapse under multi-agent RL",
+      "Clinical RAG system matches frontier LLMs on HealthBench",
+      "Massive activations studied in linear-attention LLMs",
+      "Model rankings shift with inference-time token budgets"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops trending with 10,593 likes",
+      "MiniMax-H3 video model dominates top-30 list",
+      "Comfy-Org mirror hits 6.8M downloads",
+      "DeepSeek-V4-Flash-0731 races trillion-parameter MoE",
+      "Qwen3.8-2.4T-A95B joins trillion-parameter race",
+      "NVIDIA ships Nemotron 3.5 Lightning in NVFP4"
+    ],
+    "ai-community": [
+      "Martin Fowler tests if TDD actually helps agents",
+      "\"Empty Prompt Is Not a Blind Review\" on tool scope",
+      "Self-consistency check before trusting LLM judges",
+      "pgvector dedup: fixed similarity threshold is a trap",
+      "Dev.to publishes 30 AI articles today",
+      "Lobste.rs adds 4 AI-related stories"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.229 adds Remote Control resume",
+      "OpenCode ships two releases in one day",
+      "Issue #45596 draws 266 comments, 1,167 👍",
+      "OpenCode fixes Kimi and xAI provider bugs",
+      "Windows remains weak point across CLI tools",
+      "Billing reliability now a universal pain point"
+    ],
+    "ai-agents": [
+      "Two SSRF-prevention PRs land for MCP fetch server",
+      "Filesystem server fixes Unicode path bugs",
+      "Memory-hardening thread #4117 open since May",
+      "Zero of 7 open PRs merged today",
+      "PR #3921 still awaits review since April",
+      "MCP ecosystem shows healthy triage activity"
+    ],
+    "ai-infra": [
+      "Dify agent silently fabricates tool-call success",
+      "LiteLLM patches Langfuse credential leak",
+      "LiteLLM closes cross-user Redis Cluster leak",
+      "Dify still fixing 1.16.1 data-sync regression",
+      "LiteLLM fixes PII masking truthiness bypass",
+      "Both projects skip releases to harden security"
+    ],
+    "ai-trending": [
+      "deja-vu indexes coding-agent logs, no LLM needed",
+      "kimi-k3-in-c runs 2.78T model on one CPU",
+      "Kronos: foundation model for financial markets",
+      "Microsoft SkillOpt auto-tunes agent skills",
+      "code-context-engine cuts token use by 94%",
+      "deja-vu hits 84.9% hit@1 on LongMemEval-S"
+    ],
+    "ai-web": [
+      "Anthropic warns agent-to-agent traffic may explode",
+      "Multiagent systems could split human/agent institutions",
+      "OpenAI details \"How Enterprises Put AI to Work\"",
+      "Anthropic ties research to worker retraining policy",
+      "Frontier Red Team flags systemic multiagent risk",
+      "Only 3 new official articles today, light cadence"
+    ],
+    "ai-hn": [
+      "Muse Glimmer: Meta's 30B agent model hits 1199 pts",
+      "DeepSeek V4 Pro 0813 launches with 895 pts",
+      "\"AI eating the middle class\" thread hits 858 pts",
+      "Collective-memory debate draws 965 comments",
+      "Grok 4.6 joins the frontier-model race",
+      "Research shows reasoning traces stolen from APIs"
+    ],
+    "ai-arxiv": [
+      "Long-context training can erode parametric knowledge",
+      "Convergent Detour Hijacking attacks skill-based agents",
+      "LLM user simulators collapse under multi-agent RL",
+      "Clinical RAG system matches frontier LLMs on HealthBench",
+      "Massive activations studied in linear-attention LLMs",
+      "Model rankings shift with inference-time token budgets"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops trending with 10,593 likes",
+      "MiniMax-H3 video model dominates top-30 list",
+      "Comfy-Org mirror hits 6.8M downloads",
+      "DeepSeek-V4-Flash-0731 races trillion-parameter MoE",
+      "Qwen3.8-2.4T-A95B joins trillion-parameter race",
+      "NVIDIA ships Nemotron 3.5 Lightning in NVFP4"
+    ],
+    "ai-community": [
+      "Martin Fowler tests if TDD actually helps agents",
+      "\"Empty Prompt Is Not a Blind Review\" on tool scope",
+      "Self-consistency check before trusting LLM judges",
+      "pgvector dedup: fixed similarity threshold is a trap",
+      "Dev.to publishes 30 AI articles today",
+      "Lobste.rs adds 4 AI-related stories"
+    ]
+  }
+}
