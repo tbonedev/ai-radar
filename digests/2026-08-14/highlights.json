@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.232 turns on subagent forking",
+      "v2.1.231 fixes MCP OAuth issue",
+      "OpenCode: 267 open issues, 223 PRs touched",
+      "OpenCode ships no release in 24 hours",
+      "Cross-session @-mentions land in Claude Code",
+      "Trust, not features, now bottlenecks AI CLI adoption"
+    ],
+    "ai-agents": [
+      "MCP filesystem server move_file risks data loss",
+      "Issue #4117: safer persistence, atomic writes for memory",
+      "No fix pipeline for today's reported MCP bugs",
+      "4 issues touch @modelcontextprotocol/server-filesystem",
+      "MCP ecosystem digest covers 7 projects",
+      "Zero PRs in flight for MCP servers today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM focus on hardening, not new features",
+      "LiteLLM v1.98.0-dev.2 adds Docker image signing docs",
+      "Dify fixes prompt_tokens undercounting bug",
+      "LiteLLM patches cache-write cost, batch double-counting",
+      "Dify PR throughput hits 168 vs LiteLLM's ~15",
+      "Token-accounting bugs emerge as systemic pain point"
+    ],
+    "ai-trending": [
+      "deja-vu indexes agent logs, no LLM needed",
+      "cactus-compute/needle: 14MB model for phones, wearables",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "NVIDIA's Switchyard routes across LLM providers",
+      "FluidVoice: on-device macOS dictation alternative",
+      "deja-vu claims 84.9% hit@1 on LongMemEval-S"
+    ],
+    "ai-web": [
+      "Claude pushes Riemann zeta zero bound to 67.2%",
+      "Unreleased Claude variant aids pure math research",
+      "OpenAI names Dali Rajic Chief Revenue Officer",
+      "OpenAI teases mysterious 'Ultrafast' project",
+      "Anthropic's math result validated by external experts",
+      "Only 3 new official AI articles crawled today"
+    ],
+    "ai-hn": [
+      "DeepSeek V4 Pro tops HN with 1021 points",
+      "Gemini 3.7 Flash launches, scores 790 points",
+      "Grok 4.6 debuts with 625 points on HN",
+      "'AI eats the web' sparks 933-point debate",
+      "OpenAI's ethics head departs after under a year",
+      "Codex Linux desktop preview draws attention"
+    ],
+    "ai-arxiv": [
+      "DFM Mimir v1: 1B-param model hits frontier performance",
+      "Synthetic Persona Pretraining bakes in alignment early",
+      "Vero pairs code generation with machine-checked proofs",
+      "QuoteBench finds agent pipelines silently corrupt actions",
+      "CAPRI repairs Isabelle proofs under contracts",
+      "DARTree, RMM chip away at inference costs"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops HF trending with 10,638 likes",
+      "MiniMax-H3 ComfyUI repack pulls 10.36M downloads",
+      "DeepSeek ships V4-Flash and V4-Pro same week",
+      "Qwen3.8-2.4T-A95B: a 2.4T-parameter MoE model",
+      "Meta's Muse-Glimmer-30B VLM spawns GGUF quants",
+      "Video generation and sparse MoEs drive HF trends"
+    ],
+    "ai-community": [
+      "Harness bugs masquerade as 'model personality'",
+      "Bad brief poisons both AI writer and AI reviewer",
+      "GhostSplice shows LLMs can't do access control",
+      "Martin Fowler tests TDD inside agent loops",
+      "Dev.to and Lobsters roundup: 34 stories total",
+      "Prompt fragments evade single-turn moderation checks"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.232 turns on subagent forking",
+      "v2.1.231 fixes MCP OAuth issue",
+      "OpenCode: 267 open issues, 223 PRs touched",
+      "OpenCode ships no release in 24 hours",
+      "Cross-session @-mentions land in Claude Code",
+      "Trust, not features, now bottlenecks AI CLI adoption"
+    ],
+    "ai-agents": [
+      "MCP filesystem server move_file risks data loss",
+      "Issue #4117: safer persistence, atomic writes for memory",
+      "No fix pipeline for today's reported MCP bugs",
+      "4 issues touch @modelcontextprotocol/server-filesystem",
+      "MCP ecosystem digest covers 7 projects",
+      "Zero PRs in flight for MCP servers today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM focus on hardening, not new features",
+      "LiteLLM v1.98.0-dev.2 adds Docker image signing docs",
+      "Dify fixes prompt_tokens undercounting bug",
+      "LiteLLM patches cache-write cost, batch double-counting",
+      "Dify PR throughput hits 168 vs LiteLLM's ~15",
+      "Token-accounting bugs emerge as systemic pain point"
+    ],
+    "ai-trending": [
+      "deja-vu indexes agent logs, no LLM needed",
+      "cactus-compute/needle: 14MB model for phones, wearables",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "NVIDIA's Switchyard routes across LLM providers",
+      "FluidVoice: on-device macOS dictation alternative",
+      "deja-vu claims 84.9% hit@1 on LongMemEval-S"
+    ],
+    "ai-web": [
+      "Claude pushes Riemann zeta zero bound to 67.2%",
+      "Unreleased Claude variant aids pure math research",
+      "OpenAI names Dali Rajic Chief Revenue Officer",
+      "OpenAI teases mysterious 'Ultrafast' project",
+      "Anthropic's math result validated by external experts",
+      "Only 3 new official AI articles crawled today"
+    ],
+    "ai-hn": [
+      "DeepSeek V4 Pro tops HN with 1021 points",
+      "Gemini 3.7 Flash launches, scores 790 points",
+      "Grok 4.6 debuts with 625 points on HN",
+      "'AI eats the web' sparks 933-point debate",
+      "OpenAI's ethics head departs after under a year",
+      "Codex Linux desktop preview draws attention"
+    ],
+    "ai-arxiv": [
+      "DFM Mimir v1: 1B-param model hits frontier performance",
+      "Synthetic Persona Pretraining bakes in alignment early",
+      "Vero pairs code generation with machine-checked proofs",
+      "QuoteBench finds agent pipelines silently corrupt actions",
+      "CAPRI repairs Isabelle proofs under contracts",
+      "DARTree, RMM chip away at inference costs"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops HF trending with 10,638 likes",
+      "MiniMax-H3 ComfyUI repack pulls 10.36M downloads",
+      "DeepSeek ships V4-Flash and V4-Pro same week",
+      "Qwen3.8-2.4T-A95B: a 2.4T-parameter MoE model",
+      "Meta's Muse-Glimmer-30B VLM spawns GGUF quants",
+      "Video generation and sparse MoEs drive HF trends"
+    ],
+    "ai-community": [
+      "Harness bugs masquerade as 'model personality'",
+      "Bad brief poisons both AI writer and AI reviewer",
+      "GhostSplice shows LLMs can't do access control",
+      "Martin Fowler tests TDD inside agent loops",
+      "Dev.to and Lobsters roundup: 34 stories total",
+      "Prompt fragments evade single-turn moderation checks"
+    ]
+  }
+}
