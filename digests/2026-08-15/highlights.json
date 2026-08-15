@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.233 adds GitLab MR support",
+      "OpenCode merges 10 PRs in 24h, no release yet",
+      "Claude Code issue #38335 nears 835 comments",
+      "Session-limit exhaustion dominates Claude Code",
+      "OpenCode fights memory leaks, provider bugs",
+      "Clipboard bug drives 110 👍 on OpenCode issue"
+    ],
+    "ai-agents": [
+      "Python mcp SDK 2.0.0 breaks fetch & git servers",
+      "Fix PR #4645 caps SDK dependency same-day",
+      "10 issues, 7 PRs touched in MCP servers repo",
+      "New contributor KavyaNagariya lands first PR",
+      "Time server gets dead-code cleanup PR #4546",
+      "Timezone example bug fixed in PR #4536"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM ship zero releases today",
+      "Dify fixes silent RAG search failures",
+      "LiteLLM tackles provider-translation fidelity bugs",
+      "Dify's internal-URL leak stays unresolved",
+      "LiteLLM's budget-bypass vulnerability lingers",
+      "LiteLLM merges Enterprise Control Plane config"
+    ],
+    "ai-trending": [
+      "deja-vu indexes agent session history, no LLM",
+      "deja-vu hits 84.9% hit@1 on LongMemEval-S",
+      "cactus-compute/needle: 14MB on-device model",
+      "code-context-engine cuts agent tokens by 94%",
+      "microsoft/flint-chart: a language for AI charts",
+      "citrolabs/ego-lite: browser built for AI agents"
+    ],
+    "ai-web": [
+      "Claude rolls out text watermarking for EU AI Act",
+      "Watermark adds zero cost, latency, or traceability",
+      "Anthropic publishes worker-retraining research",
+      "Study meta-analyzes 56 randomized retraining trials",
+      "OpenAI posts zero new content today",
+      "Anthropic doubles down on responsible-AI policy"
+    ],
+    "ai-hn": [
+      "GLM-5.3 tops HN with 1082 points, 526 comments",
+      "DeepSeek V4 Pro 0813 lands on OpenRouter",
+      "Gemini 3.7 Flash cracks 900+ HN points",
+      "Google teases homomorphic-encryption privacy AI",
+      "Cerebras accelerates GPT-5.6 inference",
+      "AI watermark 'unremovable' claim sparks HN debate"
+    ],
+    "ai-arxiv": [
+      "OmniScientist pushes long-horizon AI-scientist agents",
+      "Vero brings formally verified code generation",
+      "QuoteBench probes coding-agent command fidelity",
+      "LittleLearner curates 88B-token pretraining corpus",
+      "DARTree speeds inference via diffusion decoding",
+      "Gricean Retreat studies LLM knowledge boundaries"
+    ],
+    "ai-hf": [
+      "Kimi-K3 leads HF with 10,690 likes, ~2M downloads",
+      "Qwen3.8-27B tops likes despite near-zero downloads",
+      "MiniMax-H3 Comfy-Org build tops 11.7M downloads",
+      "DeepSeek ships dual V4-Flash and V4-Pro release",
+      "Qwen3.8-2.4T-A95B debuts as sparse MoE flagship",
+      "GGUF and FP8 quantizations trend alongside bases"
+    ],
+    "ai-community": [
+      "Simon Willison: hallucinate tags, then embed-match",
+      "Martin Fowler tests TDD inside the agent loop",
+      "4,200 trials expose LLM agent reliability failures",
+      "MCP cacheScope bug leaks cached results across users",
+      "Study: tool success needs independent verification",
+      "Dev.to digest covers 30 articles plus Lobsters pick"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.233 adds GitLab MR support",
+      "OpenCode merges 10 PRs in 24h, no release yet",
+      "Claude Code issue #38335 nears 835 comments",
+      "Session-limit exhaustion dominates Claude Code",
+      "OpenCode fights memory leaks, provider bugs",
+      "Clipboard bug drives 110 👍 on OpenCode issue"
+    ],
+    "ai-agents": [
+      "Python mcp SDK 2.0.0 breaks fetch & git servers",
+      "Fix PR #4645 caps SDK dependency same-day",
+      "10 issues, 7 PRs touched in MCP servers repo",
+      "New contributor KavyaNagariya lands first PR",
+      "Time server gets dead-code cleanup PR #4546",
+      "Timezone example bug fixed in PR #4536"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM ship zero releases today",
+      "Dify fixes silent RAG search failures",
+      "LiteLLM tackles provider-translation fidelity bugs",
+      "Dify's internal-URL leak stays unresolved",
+      "LiteLLM's budget-bypass vulnerability lingers",
+      "LiteLLM merges Enterprise Control Plane config"
+    ],
+    "ai-trending": [
+      "deja-vu indexes agent session history, no LLM",
+      "deja-vu hits 84.9% hit@1 on LongMemEval-S",
+      "cactus-compute/needle: 14MB on-device model",
+      "code-context-engine cuts agent tokens by 94%",
+      "microsoft/flint-chart: a language for AI charts",
+      "citrolabs/ego-lite: browser built for AI agents"
+    ],
+    "ai-web": [
+      "Claude rolls out text watermarking for EU AI Act",
+      "Watermark adds zero cost, latency, or traceability",
+      "Anthropic publishes worker-retraining research",
+      "Study meta-analyzes 56 randomized retraining trials",
+      "OpenAI posts zero new content today",
+      "Anthropic doubles down on responsible-AI policy"
+    ],
+    "ai-hn": [
+      "GLM-5.3 tops HN with 1082 points, 526 comments",
+      "DeepSeek V4 Pro 0813 lands on OpenRouter",
+      "Gemini 3.7 Flash cracks 900+ HN points",
+      "Google teases homomorphic-encryption privacy AI",
+      "Cerebras accelerates GPT-5.6 inference",
+      "AI watermark 'unremovable' claim sparks HN debate"
+    ],
+    "ai-arxiv": [
+      "OmniScientist pushes long-horizon AI-scientist agents",
+      "Vero brings formally verified code generation",
+      "QuoteBench probes coding-agent command fidelity",
+      "LittleLearner curates 88B-token pretraining corpus",
+      "DARTree speeds inference via diffusion decoding",
+      "Gricean Retreat studies LLM knowledge boundaries"
+    ],
+    "ai-hf": [
+      "Kimi-K3 leads HF with 10,690 likes, ~2M downloads",
+      "Qwen3.8-27B tops likes despite near-zero downloads",
+      "MiniMax-H3 Comfy-Org build tops 11.7M downloads",
+      "DeepSeek ships dual V4-Flash and V4-Pro release",
+      "Qwen3.8-2.4T-A95B debuts as sparse MoE flagship",
+      "GGUF and FP8 quantizations trend alongside bases"
+    ],
+    "ai-community": [
+      "Simon Willison: hallucinate tags, then embed-match",
+      "Martin Fowler tests TDD inside the agent loop",
+      "4,200 trials expose LLM agent reliability failures",
+      "MCP cacheScope bug leaks cached results across users",
+      "Study: tool success needs independent verification",
+      "Dev.to digest covers 30 articles plus Lobsters pick"
+    ]
+  }
+}
