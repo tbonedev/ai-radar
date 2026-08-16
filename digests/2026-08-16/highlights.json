@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code thread hits 1,487 comments, 693 👍",
+      "OpenCode Memory Megathread draws 132 comments",
+      "No new releases for Claude Code or OpenCode",
+      "OpenCode adds Kimi Code OAuth, Modal support",
+      "Claude Code fixes YAML/frontmatter parsing bug",
+      "Usage limits top pain point across both tools"
+    ],
+    "ai-agents": [
+      "MCP closes 2 issues open since Nov 2024",
+      "Issue #40: npx Windows bug closed after 113 comments",
+      "Two new third-party MCP servers submitted",
+      "Docs typo fix merged in Everything server",
+      "No new MCP server releases today",
+      "Servers repo shifts to bug-triage/stabilization mode"
+    ],
+    "ai-infra": [
+      "LiteLLM under-billed multimodal usage by 54x",
+      "Dify's Agent V2 unusable in standard deploys",
+      "LiteLLM security audit finds 3 exploitable CVEs",
+      "LiteLLM ships v1.98.0-rc.1 and v1.97.0",
+      "LiteLLM adds Vertex AI Gemini Live GA pricing",
+      "LiteLLM proxy defaults flagged: no-auth, SSRF"
+    ],
+    "ai-trending": [
+      "deja-vu indexes local coding-agent session logs",
+      "code-context-engine claims 94% token savings",
+      "turbo-fieldfare runs Gemma 4 26B in ~2GB RAM",
+      "Agent_Memory_Techniques: 30 hands-on notebooks",
+      "MCP server orders real phone numbers for OTP",
+      "Local-first, no-LLM tools trend on GitHub"
+    ],
+    "ai-web": [
+      "Anthropic warns agent traffic may outpace humans",
+      "New: 'Patterns and problems in multiagent systems'",
+      "Institutions unprepared for agent-to-agent scale",
+      "OpenAI adds zero new content today",
+      "Anthropic predicts human-AI vs agent-only split",
+      "Confabulation risks seen compounding at scale"
+    ],
+    "ai-hn": [
+      "GLM-5.3 claims frontier coding, cyber capabilities",
+      "DeepSeek V4 Pro 0813 launches on OpenRouter",
+      "Gemini 3.7 Flash and Cerebras GPT-5.6 Sol debut",
+      "AI's working-memory edge over humans: 476 pts",
+      "Google pushes homomorphic encryption for private AI",
+      "New coding agents: Bullet, Mole, ThoughtDAG, waku.sh"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops likes chart with 10,741 likes",
+      "Qwen3.8-27B nears 10K likes, spawns spin-offs",
+      "MiniMax-H3 hits 2.2M downloads, 12.8M via ComfyUI",
+      "DeepSeek-V4-Flash outpaces Pro in adoption",
+      "unsloth ships GGUF/FP8/NVFP4 quant variants fast",
+      "Quantized 'uncensored' derivatives dominate trend"
+    ],
+    "ai-community": [
+      "Willison: skip classification, let LLM hallucinate tags",
+      "Flue 2 brings React hooks pattern to agent loops",
+      "Why 'it looks good' isn't an LLM eval metric",
+      "LLM compliance checker gave verdicts with no rule",
+      "Dev.to + Lobste.rs surface 32 AI community posts",
+      "Community warns against trusting LLM classifiers blindly"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code thread hits 1,487 comments, 693 👍",
+      "OpenCode Memory Megathread draws 132 comments",
+      "No new releases for Claude Code or OpenCode",
+      "OpenCode adds Kimi Code OAuth, Modal support",
+      "Claude Code fixes YAML/frontmatter parsing bug",
+      "Usage limits top pain point across both tools"
+    ],
+    "ai-agents": [
+      "MCP closes 2 issues open since Nov 2024",
+      "Issue #40: npx Windows bug closed after 113 comments",
+      "Two new third-party MCP servers submitted",
+      "Docs typo fix merged in Everything server",
+      "No new MCP server releases today",
+      "Servers repo shifts to bug-triage/stabilization mode"
+    ],
+    "ai-infra": [
+      "LiteLLM under-billed multimodal usage by 54x",
+      "Dify's Agent V2 unusable in standard deploys",
+      "LiteLLM security audit finds 3 exploitable CVEs",
+      "LiteLLM ships v1.98.0-rc.1 and v1.97.0",
+      "LiteLLM adds Vertex AI Gemini Live GA pricing",
+      "LiteLLM proxy defaults flagged: no-auth, SSRF"
+    ],
+    "ai-trending": [
+      "deja-vu indexes local coding-agent session logs",
+      "code-context-engine claims 94% token savings",
+      "turbo-fieldfare runs Gemma 4 26B in ~2GB RAM",
+      "Agent_Memory_Techniques: 30 hands-on notebooks",
+      "MCP server orders real phone numbers for OTP",
+      "Local-first, no-LLM tools trend on GitHub"
+    ],
+    "ai-web": [
+      "Anthropic warns agent traffic may outpace humans",
+      "New: 'Patterns and problems in multiagent systems'",
+      "Institutions unprepared for agent-to-agent scale",
+      "OpenAI adds zero new content today",
+      "Anthropic predicts human-AI vs agent-only split",
+      "Confabulation risks seen compounding at scale"
+    ],
+    "ai-hn": [
+      "GLM-5.3 claims frontier coding, cyber capabilities",
+      "DeepSeek V4 Pro 0813 launches on OpenRouter",
+      "Gemini 3.7 Flash and Cerebras GPT-5.6 Sol debut",
+      "AI's working-memory edge over humans: 476 pts",
+      "Google pushes homomorphic encryption for private AI",
+      "New coding agents: Bullet, Mole, ThoughtDAG, waku.sh"
+    ],
+    "ai-hf": [
+      "Kimi-K3 tops likes chart with 10,741 likes",
+      "Qwen3.8-27B nears 10K likes, spawns spin-offs",
+      "MiniMax-H3 hits 2.2M downloads, 12.8M via ComfyUI",
+      "DeepSeek-V4-Flash outpaces Pro in adoption",
+      "unsloth ships GGUF/FP8/NVFP4 quant variants fast",
+      "Quantized 'uncensored' derivatives dominate trend"
+    ],
+    "ai-community": [
+      "Willison: skip classification, let LLM hallucinate tags",
+      "Flue 2 brings React hooks pattern to agent loops",
+      "Why 'it looks good' isn't an LLM eval metric",
+      "LLM compliance checker gave verdicts with no rule",
+      "Dev.to + Lobste.rs surface 32 AI community posts",
+      "Community warns against trusting LLM classifiers blindly"
+    ]
+  }
+}
