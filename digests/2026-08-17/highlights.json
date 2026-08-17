@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code issue #6235 hits 4,574 👍",
+      "OpenCode unifies Desktop/Web/TUI client-server layer",
+      "OpenCode adds LM Studio provider integration",
+      "No new releases from Claude Code or OpenCode",
+      "Claude Code Skills tracked in today's digest",
+      "AGENTS.md standardization sparks community debate"
+    ],
+    "ai-agents": [
+      "MCP server-memory reliability under scrutiny",
+      "server-filesystem Windows path bugs persist",
+      "mcp-server-fetch, git face startup failures",
+      "PR #4648 proposes Game Engine Runtime MCP",
+      "Servers repo now rejects new README listings",
+      "10 issues active, zero PRs merged today"
+    ],
+    "ai-infra": [
+      "Dify fixes orphaned vector collections bug",
+      "Dify tackles timestamp drift, streaming defaults",
+      "LiteLLM budget enforcement bug persists",
+      "LiteLLM adds new provider backend integrations",
+      "Dify runs large parallel test-suite refactor",
+      "No tagged releases from Dify or LiteLLM today"
+    ],
+    "ai-trending": [
+      "cactus-compute/needle: 14MB model, +443 stars",
+      "Gemma 4 26B-A4B runs in 2GB RAM on Mac",
+      "deja-vu gives coding agents shared memory",
+      "microsoft/SkillOpt optimizes agent skills",
+      "elara-labs ships code-context-engine",
+      "Agent memory tools skip vector stores today"
+    ],
+    "ai-hn": [
+      "Claude text watermarking sparks HN backlash",
+      "GLM-5.3 tops HN with 1,157 points",
+      "DeepSeek V4 Pro 0813 scores 1,036 points",
+      "Gemini 3.7 Flash breaks 900+ points",
+      "Stripe reportedly buys OpenRouter for $7B+",
+      "Nvidia scales back OpenAI financing guarantee"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF with 10,427 likes",
+      "Kimi-K3 nears 11K likes, 2.1M downloads",
+      "MiniMax-H3 ComfyUI hits 13.4M downloads",
+      "DeepSeek V4 ships Pro and Flash checkpoints",
+      "Nemotron-3.5-Lightning launches dual formats",
+      "Ling-3.0-tiny debuts as MIT-licensed model"
+    ],
+    "ai-community": [
+      "Turn tag classification into generate-then-retrieve",
+      "Cursor's CWE-78 'fix' still runs injected code",
+      "Guardrails for letting LLMs call live APIs",
+      "Why one dev stopped trusting LLM financial facts",
+      "Simon Willison flags hallucinate-then-match trick",
+      "Dev.to and Lobste.rs AI roundup for Aug 17"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code issue #6235 hits 4,574 👍",
+      "OpenCode unifies Desktop/Web/TUI client-server layer",
+      "OpenCode adds LM Studio provider integration",
+      "No new releases from Claude Code or OpenCode",
+      "Claude Code Skills tracked in today's digest",
+      "AGENTS.md standardization sparks community debate"
+    ],
+    "ai-agents": [
+      "MCP server-memory reliability under scrutiny",
+      "server-filesystem Windows path bugs persist",
+      "mcp-server-fetch, git face startup failures",
+      "PR #4648 proposes Game Engine Runtime MCP",
+      "Servers repo now rejects new README listings",
+      "10 issues active, zero PRs merged today"
+    ],
+    "ai-infra": [
+      "Dify fixes orphaned vector collections bug",
+      "Dify tackles timestamp drift, streaming defaults",
+      "LiteLLM budget enforcement bug persists",
+      "LiteLLM adds new provider backend integrations",
+      "Dify runs large parallel test-suite refactor",
+      "No tagged releases from Dify or LiteLLM today"
+    ],
+    "ai-trending": [
+      "cactus-compute/needle: 14MB model, +443 stars",
+      "Gemma 4 26B-A4B runs in 2GB RAM on Mac",
+      "deja-vu gives coding agents shared memory",
+      "microsoft/SkillOpt optimizes agent skills",
+      "elara-labs ships code-context-engine",
+      "Agent memory tools skip vector stores today"
+    ],
+    "ai-hn": [
+      "Claude text watermarking sparks HN backlash",
+      "GLM-5.3 tops HN with 1,157 points",
+      "DeepSeek V4 Pro 0813 scores 1,036 points",
+      "Gemini 3.7 Flash breaks 900+ points",
+      "Stripe reportedly buys OpenRouter for $7B+",
+      "Nvidia scales back OpenAI financing guarantee"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF with 10,427 likes",
+      "Kimi-K3 nears 11K likes, 2.1M downloads",
+      "MiniMax-H3 ComfyUI hits 13.4M downloads",
+      "DeepSeek V4 ships Pro and Flash checkpoints",
+      "Nemotron-3.5-Lightning launches dual formats",
+      "Ling-3.0-tiny debuts as MIT-licensed model"
+    ],
+    "ai-community": [
+      "Turn tag classification into generate-then-retrieve",
+      "Cursor's CWE-78 'fix' still runs injected code",
+      "Guardrails for letting LLMs call live APIs",
+      "Why one dev stopped trusting LLM financial facts",
+      "Simon Willison flags hallucinate-then-match trick",
+      "Dev.to and Lobste.rs AI roundup for Aug 17"
+    ]
+  }
+}
