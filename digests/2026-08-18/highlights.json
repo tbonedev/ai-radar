@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.234 update",
+      "Windows messaging regression spikes issues",
+      "Issue #27302 hits 231 comments, 348 👍",
+      "OpenCode: 185 issues, 150 PRs touched",
+      "OpenCode billing/quota trust concerns grow",
+      "Claude Code Skills tracked in digest"
+    ],
+    "ai-agents": [
+      "MCP servers: 16 PRs updated, 5 issues",
+      "AbhiPra24 opens 5 bug-fix PRs in one day",
+      "CVE security patch lands in PR #4650",
+      "Schema regression fixed by two contributors",
+      "PR #4648 rejected under new server policy",
+      "Official MCP Server Registry now the norm"
+    ],
+    "ai-infra": [
+      "Dify: Redis-cached secret leak patched",
+      "LiteLLM leaks plaintext creds via /health",
+      "LiteLLM: 84 issues, 326 PRs in 24h",
+      "Claude Opus 5 support friction in LiteLLM",
+      "No new releases from Dify or LiteLLM today",
+      "Security hardening dominates infra layer"
+    ],
+    "ai-trending": [
+      "deja-vu: LLM-free memory for coding agents",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "llmfit checks model fit on your hardware",
+      "omlx: Apple Silicon LLM server, menu bar UI",
+      "code-context-engine cuts agent tokens 94%",
+      "turbo-fieldfare hits 6,134 stars"
+    ],
+    "ai-web": [
+      "OpenAI joins Ports Pike Project",
+      "Anthropic posts zero new articles today",
+      "OpenAI sitemap now totals 909 articles",
+      "Low-signal day: metadata-only OpenAI item",
+      "Anthropic sitemap holds steady at 435",
+      "No strategic signal shift detected today"
+    ],
+    "ai-hn": [
+      "GPT-5.6 Sol price cut by 50%",
+      "GPT-5.6 Sol called OpenAI's best vision model",
+      "Anthropic watermark text sparks distrust",
+      "AI;DR essay draws hundreds of comments",
+      "Copilot Autofix bug hit Snowflake's Jira",
+      "Stripe–OpenRouter $7B+ acquisition rumor"
+    ],
+    "ai-arxiv": [
+      "Proteus: incremental memory for long context",
+      "Model Hypnosis: subliminal control of AI",
+      "Agentic systems dominate today's papers",
+      "ClawGym II explores RL over agent harnesses",
+      "State-injection attacks target embodied agents",
+      "Explanation robustness questioned via tests"
+    ],
+    "ai-hf": [
+      "Qwen3.8-2.4T-A95B: 2.4T param MoE model",
+      "MiniMax-H3 hits 14M+ downloads",
+      "DeepSeek V4 Flash nears 2M downloads",
+      "Kimi-K3 rivals Qwen3.8-27B on likes",
+      "MiniMax-Music3 joins trending video/music",
+      "GGUF/FP8 quantizations flood the board"
+    ],
+    "ai-community": [
+      "Don't Give the Model SQL: schema traps",
+      "CI check catches ignored tool-call failures",
+      "50KB CLI kills 5 MCP token-waste pains",
+      "Copilot Autofix caused Snowflake CI bug",
+      "Post-mortem hardens GitHub Actions security",
+      "Dev.to + Lobste.rs: 35 stories tracked"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.234 update",
+      "Windows messaging regression spikes issues",
+      "Issue #27302 hits 231 comments, 348 👍",
+      "OpenCode: 185 issues, 150 PRs touched",
+      "OpenCode billing/quota trust concerns grow",
+      "Claude Code Skills tracked in digest"
+    ],
+    "ai-agents": [
+      "MCP servers: 16 PRs updated, 5 issues",
+      "AbhiPra24 opens 5 bug-fix PRs in one day",
+      "CVE security patch lands in PR #4650",
+      "Schema regression fixed by two contributors",
+      "PR #4648 rejected under new server policy",
+      "Official MCP Server Registry now the norm"
+    ],
+    "ai-infra": [
+      "Dify: Redis-cached secret leak patched",
+      "LiteLLM leaks plaintext creds via /health",
+      "LiteLLM: 84 issues, 326 PRs in 24h",
+      "Claude Opus 5 support friction in LiteLLM",
+      "No new releases from Dify or LiteLLM today",
+      "Security hardening dominates infra layer"
+    ],
+    "ai-trending": [
+      "deja-vu: LLM-free memory for coding agents",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "llmfit checks model fit on your hardware",
+      "omlx: Apple Silicon LLM server, menu bar UI",
+      "code-context-engine cuts agent tokens 94%",
+      "turbo-fieldfare hits 6,134 stars"
+    ],
+    "ai-web": [
+      "OpenAI joins Ports Pike Project",
+      "Anthropic posts zero new articles today",
+      "OpenAI sitemap now totals 909 articles",
+      "Low-signal day: metadata-only OpenAI item",
+      "Anthropic sitemap holds steady at 435",
+      "No strategic signal shift detected today"
+    ],
+    "ai-hn": [
+      "GPT-5.6 Sol price cut by 50%",
+      "GPT-5.6 Sol called OpenAI's best vision model",
+      "Anthropic watermark text sparks distrust",
+      "AI;DR essay draws hundreds of comments",
+      "Copilot Autofix bug hit Snowflake's Jira",
+      "Stripe–OpenRouter $7B+ acquisition rumor"
+    ],
+    "ai-arxiv": [
+      "Proteus: incremental memory for long context",
+      "Model Hypnosis: subliminal control of AI",
+      "Agentic systems dominate today's papers",
+      "ClawGym II explores RL over agent harnesses",
+      "State-injection attacks target embodied agents",
+      "Explanation robustness questioned via tests"
+    ],
+    "ai-hf": [
+      "Qwen3.8-2.4T-A95B: 2.4T param MoE model",
+      "MiniMax-H3 hits 14M+ downloads",
+      "DeepSeek V4 Flash nears 2M downloads",
+      "Kimi-K3 rivals Qwen3.8-27B on likes",
+      "MiniMax-Music3 joins trending video/music",
+      "GGUF/FP8 quantizations flood the board"
+    ],
+    "ai-community": [
+      "Don't Give the Model SQL: schema traps",
+      "CI check catches ignored tool-call failures",
+      "50KB CLI kills 5 MCP token-waste pains",
+      "Copilot Autofix caused Snowflake CI bug",
+      "Post-mortem hardens GitHub Actions security",
+      "Dev.to + Lobste.rs: 35 stories tracked"
+    ]
+  }
+}
