@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.235 ships spellcheck, cache fix",
+      "Claude Code hot issues draw ~747 comments",
+      "OpenCode logs 10 active PRs, no release yet",
+      "OpenCode battles memory & SQLite growth in sessions",
+      "Claude Code hit by Windows Desktop stability issues",
+      "Enterprise auth friction dogs Claude Code"
+    ],
+    "ai-agents": [
+      "MCP Python SDK 2.0.0 breaks fetch, git, time servers",
+      "8 of 12 PRs are dependency-cap fixes for one bug",
+      "MCP release 2026.8.18 patches SDK breakage",
+      "10 of 16 issues closed, all from one root cause",
+      "Seven contributors converge on same fix independently",
+      "McpError renamed to MCPError in SDK 2.0.0"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.99.0-dev.1 with cosign image signing",
+      "Dify mid-way through large ORM/session refactor",
+      "Dify hit by real-time event-delivery regression",
+      "Dify has two open RBAC permission gaps",
+      "LiteLLM triaging routing and tool-calling bugs",
+      "Neither project touched inference-layer performance"
+    ],
+    "ai-trending": [
+      "deja-vu indexes 18 coding agents' session logs",
+      "omlx: LLM inference server built for Apple Silicon",
+      "code-context-engine claims 94% token cost cut",
+      "emisar: Elixir MCP with prod-change approval gate",
+      "MisakaNet: git-backed micro-lessons for agents",
+      "Local-first agent tooling dominates today's trends"
+    ],
+    "ai-web": [
+      "Anthropic: Claude aids protein binder design, 2x hit rate",
+      "Claude succeeds on 14 of 15 protein design targets",
+      "OpenAI publishes 7 articles, substance unretrievable",
+      "OpenAI eyes ChatGPT ad expansion in Europe",
+      "OpenAI unveils teen-focused ChatGPT product",
+      "Anthropic bets on scientific, enterprise credibility"
+    ],
+    "ai-hn": [
+      "AI;DR nabs 1,072 points blasting AI summarization",
+      "Gruber slams Anthropic's writing-style 'watermarking'",
+      "Google-Spirit Airlines data deal sparks 575-pt debate",
+      "Cerebras unveils CS-4 wafer-scale chip",
+      "GPT-5.6 Sol gets steep OpenRouter price cut",
+      "Claude autonomously writes macOS printer driver"
+    ],
+    "ai-arxiv": [
+      "TokEval benchmarks tokenizer design choices",
+      "Chain-of-Experience reframes learning as test-time",
+      "Papers question if self-improving agents truly improve",
+      "Bayesian optimization speeds up diffusion sampling",
+      "Recirculation trick boosts inference-time accuracy",
+      "Applied papers target radiology, flight safety"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B VLM tops trending, spawns dozen forks",
+      "Qwen3.8-2.4T-A95B MoE hits 1,075 likes",
+      "DeepSeek V4-Pro and V4-Flash drop together",
+      "Kimi-K3 signals Moonshot AI's frontier push",
+      "MiniMax-H3 ComfyUI build nets 14.7M downloads",
+      "MiniMax-Music3 extends family into text-to-music"
+    ],
+    "ai-community": [
+      "MCP servers cost 64% more tokens than tiktoken est.",
+      "LLM judge agreement drops to 60% near pass/fail cutoff",
+      "AI agent DB writes diverge on 11 of 17 records",
+      "Token usage trackers disagree by 2x to 8x",
+      "72 trials expose MCP context-budget miscalculation",
+      "Digest spans 30 Dev.to posts plus 5 Lobsters stories"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.235 ships spellcheck, cache fix",
+      "Claude Code hot issues draw ~747 comments",
+      "OpenCode logs 10 active PRs, no release yet",
+      "OpenCode battles memory & SQLite growth in sessions",
+      "Claude Code hit by Windows Desktop stability issues",
+      "Enterprise auth friction dogs Claude Code"
+    ],
+    "ai-agents": [
+      "MCP Python SDK 2.0.0 breaks fetch, git, time servers",
+      "8 of 12 PRs are dependency-cap fixes for one bug",
+      "MCP release 2026.8.18 patches SDK breakage",
+      "10 of 16 issues closed, all from one root cause",
+      "Seven contributors converge on same fix independently",
+      "McpError renamed to MCPError in SDK 2.0.0"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.99.0-dev.1 with cosign image signing",
+      "Dify mid-way through large ORM/session refactor",
+      "Dify hit by real-time event-delivery regression",
+      "Dify has two open RBAC permission gaps",
+      "LiteLLM triaging routing and tool-calling bugs",
+      "Neither project touched inference-layer performance"
+    ],
+    "ai-trending": [
+      "deja-vu indexes 18 coding agents' session logs",
+      "omlx: LLM inference server built for Apple Silicon",
+      "code-context-engine claims 94% token cost cut",
+      "emisar: Elixir MCP with prod-change approval gate",
+      "MisakaNet: git-backed micro-lessons for agents",
+      "Local-first agent tooling dominates today's trends"
+    ],
+    "ai-web": [
+      "Anthropic: Claude aids protein binder design, 2x hit rate",
+      "Claude succeeds on 14 of 15 protein design targets",
+      "OpenAI publishes 7 articles, substance unretrievable",
+      "OpenAI eyes ChatGPT ad expansion in Europe",
+      "OpenAI unveils teen-focused ChatGPT product",
+      "Anthropic bets on scientific, enterprise credibility"
+    ],
+    "ai-hn": [
+      "AI;DR nabs 1,072 points blasting AI summarization",
+      "Gruber slams Anthropic's writing-style 'watermarking'",
+      "Google-Spirit Airlines data deal sparks 575-pt debate",
+      "Cerebras unveils CS-4 wafer-scale chip",
+      "GPT-5.6 Sol gets steep OpenRouter price cut",
+      "Claude autonomously writes macOS printer driver"
+    ],
+    "ai-arxiv": [
+      "TokEval benchmarks tokenizer design choices",
+      "Chain-of-Experience reframes learning as test-time",
+      "Papers question if self-improving agents truly improve",
+      "Bayesian optimization speeds up diffusion sampling",
+      "Recirculation trick boosts inference-time accuracy",
+      "Applied papers target radiology, flight safety"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B VLM tops trending, spawns dozen forks",
+      "Qwen3.8-2.4T-A95B MoE hits 1,075 likes",
+      "DeepSeek V4-Pro and V4-Flash drop together",
+      "Kimi-K3 signals Moonshot AI's frontier push",
+      "MiniMax-H3 ComfyUI build nets 14.7M downloads",
+      "MiniMax-Music3 extends family into text-to-music"
+    ],
+    "ai-community": [
+      "MCP servers cost 64% more tokens than tiktoken est.",
+      "LLM judge agreement drops to 60% near pass/fail cutoff",
+      "AI agent DB writes diverge on 11 of 17 records",
+      "Token usage trackers disagree by 2x to 8x",
+      "72 trials expose MCP context-budget miscalculation",
+      "Digest spans 30 Dev.to posts plus 5 Lobsters stories"
+    ]
+  }
+}
