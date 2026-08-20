@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code, OpenCode both ship patches today",
+      "AGENTS.md issue #6235: 365 comments, 4.7K likes",
+      "OpenCode PR #5887 adds async sub-agent delegation",
+      "Claude Code battles Windows GPU crashes",
+      "OpenCode works on Electron cold-start speed",
+      "Interoperable AGENTS.md config becomes table stakes"
+    ],
+    "ai-agents": [
+      "MCP servers: 8 PRs active, 2 issues open",
+      "v2 SDK migration underway via changesets pipeline",
+      "re2zero submits fixes to filesystem, seq-thinking",
+      "PR #4670 fixes UTF-8 safety in headFile/tailFile",
+      "LinkedIn posting PR #4653 closed, unmerged",
+      "No new MCP releases shipped today"
+    ],
+    "ai-infra": [
+      "Dify, LiteLLM ship zero releases, fix bugs instead",
+      "LiteLLM: 76 issues, 271 active PRs today",
+      "Dify streaming transport, timezone bugs surface",
+      "LiteLLM adds three new OpenAI-compatible providers",
+      "Dify has 1 pending security advisory, 2 RBAC issues",
+      "Agent-loop fragility hits infra plumbing layer"
+    ],
+    "ai-trending": [
+      "omlx: Apple Silicon LLM server via menu bar app",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "deja-vu: no-LLM memory for coding agents",
+      "code-context-engine cuts token use by 94%",
+      "openless: hold hotkey, speak, get polished text",
+      "coco flagged as hype: 'superintelligence' claims"
+    ],
+    "ai-web": [
+      "OpenAI: 'Zero Data Retention' article, no body text",
+      "Anthropic publishes zero new articles today",
+      "Duplicate crawl entry flagged as pipeline artifact",
+      "OpenAI sitemap now totals 918 articles",
+      "Anthropic sitemap holds steady at 436 articles",
+      "Zero Data Retention signals enterprise compliance push"
+    ],
+    "ai-hn": [
+      "AI;DR tops HN: 1,089 pts, 686 comments",
+      "OpenRouter acquired by Stripe, 807 points",
+      "Google buys Spirit Airlines' data, 608 pts",
+      "Claude writes driver for HP printer, Drobo",
+      "Cerebras CS-4, GLM-5.3 benchmarks draw attention",
+      "Unsloth Dynamic 3.0 GGUFs improve low-bit accuracy"
+    ],
+    "ai-arxiv": [
+      "SPADE: self-play in adaptive synthetic environments",
+      "Group-calibrated distillation boosts long-context",
+      "Papers debate: capability plateau, reliability gap",
+      "New method detects covert multi-agent coordination",
+      "ADEPT, GS-VLA push vision-language-action robotics",
+      "Multi-teacher distillation trains smaller models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops board: 11,564 likes, 1M downloads",
+      "DeepSeek ships V4-Pro and V4-Flash simultaneously",
+      "Kimi-K3 racks up 10,867 likes from Moonshot",
+      "MiniMax-Music3, MiniMax-H3 push generative media",
+      "MiniMax-H3 ComfyUI package tops 15M downloads",
+      "Abliterated Qwen3.8 forks flood HF same-day"
+    ],
+    "ai-community": [
+      "290 of 300 broken tool calls evade schema checks",
+      "String-truncation bug silently drops prompt rules",
+      "Reasoning traces barely predict final-answer accuracy",
+      "Log exact API payloads, not source prompt templates",
+      "News bot ships stale 'breaking' news as verified",
+      "r/LocalLLaMA challenges Qwen3.8 'overthinking' claim"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code, OpenCode both ship patches today",
+      "AGENTS.md issue #6235: 365 comments, 4.7K likes",
+      "OpenCode PR #5887 adds async sub-agent delegation",
+      "Claude Code battles Windows GPU crashes",
+      "OpenCode works on Electron cold-start speed",
+      "Interoperable AGENTS.md config becomes table stakes"
+    ],
+    "ai-agents": [
+      "MCP servers: 8 PRs active, 2 issues open",
+      "v2 SDK migration underway via changesets pipeline",
+      "re2zero submits fixes to filesystem, seq-thinking",
+      "PR #4670 fixes UTF-8 safety in headFile/tailFile",
+      "LinkedIn posting PR #4653 closed, unmerged",
+      "No new MCP releases shipped today"
+    ],
+    "ai-infra": [
+      "Dify, LiteLLM ship zero releases, fix bugs instead",
+      "LiteLLM: 76 issues, 271 active PRs today",
+      "Dify streaming transport, timezone bugs surface",
+      "LiteLLM adds three new OpenAI-compatible providers",
+      "Dify has 1 pending security advisory, 2 RBAC issues",
+      "Agent-loop fragility hits infra plumbing layer"
+    ],
+    "ai-trending": [
+      "omlx: Apple Silicon LLM server via menu bar app",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "deja-vu: no-LLM memory for coding agents",
+      "code-context-engine cuts token use by 94%",
+      "openless: hold hotkey, speak, get polished text",
+      "coco flagged as hype: 'superintelligence' claims"
+    ],
+    "ai-web": [
+      "OpenAI: 'Zero Data Retention' article, no body text",
+      "Anthropic publishes zero new articles today",
+      "Duplicate crawl entry flagged as pipeline artifact",
+      "OpenAI sitemap now totals 918 articles",
+      "Anthropic sitemap holds steady at 436 articles",
+      "Zero Data Retention signals enterprise compliance push"
+    ],
+    "ai-hn": [
+      "AI;DR tops HN: 1,089 pts, 686 comments",
+      "OpenRouter acquired by Stripe, 807 points",
+      "Google buys Spirit Airlines' data, 608 pts",
+      "Claude writes driver for HP printer, Drobo",
+      "Cerebras CS-4, GLM-5.3 benchmarks draw attention",
+      "Unsloth Dynamic 3.0 GGUFs improve low-bit accuracy"
+    ],
+    "ai-arxiv": [
+      "SPADE: self-play in adaptive synthetic environments",
+      "Group-calibrated distillation boosts long-context",
+      "Papers debate: capability plateau, reliability gap",
+      "New method detects covert multi-agent coordination",
+      "ADEPT, GS-VLA push vision-language-action robotics",
+      "Multi-teacher distillation trains smaller models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops board: 11,564 likes, 1M downloads",
+      "DeepSeek ships V4-Pro and V4-Flash simultaneously",
+      "Kimi-K3 racks up 10,867 likes from Moonshot",
+      "MiniMax-Music3, MiniMax-H3 push generative media",
+      "MiniMax-H3 ComfyUI package tops 15M downloads",
+      "Abliterated Qwen3.8 forks flood HF same-day"
+    ],
+    "ai-community": [
+      "290 of 300 broken tool calls evade schema checks",
+      "String-truncation bug silently drops prompt rules",
+      "Reasoning traces barely predict final-answer accuracy",
+      "Log exact API payloads, not source prompt templates",
+      "News bot ships stale 'breaking' news as verified",
+      "r/LocalLLaMA challenges Qwen3.8 'overthinking' claim"
+    ]
+  }
+}
