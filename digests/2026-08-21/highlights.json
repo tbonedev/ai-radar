@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.238 released",
+      "Issue #6235 hits 374 comments, 4.9k 👍",
+      "OpenCode ships ~13 PRs in 24h",
+      "OpenCode Go billing/quota trust concerns",
+      "Session hangs plague both CLI tools",
+      "Community pushes for config interoperability"
+    ],
+    "ai-agents": [
+      "MCP filesystem server gets 2 bug fixes",
+      "PR #4674 fixes trailing newline in tail",
+      "PR #4672 strips trailing whitespace on writes",
+      "server-pdf correctness bug surfaces",
+      "MCP ecosystem in steady maintenance mode",
+      "Zero releases across 7 tracked MCP projects"
+    ],
+    "ai-infra": [
+      "Dify mid-refactor: 110 PRs touched today",
+      "LiteLLM discloses credential-leak issue",
+      "LiteLLM cost-accounting integrity crisis",
+      "Dify RBAC regressions surface in refactor",
+      "LiteLLM v1.99.0-dev.2 adds cosign signing",
+      "110 Dify PRs mostly refactor churn"
+    ],
+    "ai-trending": [
+      "deja-vu: local memory layer for coding agents",
+      "turbovec: Rust ANN index via TurboQuant",
+      "Tencent AI-Infra-Guard red-teams agents/MCP",
+      "microsoft/SkillOpt auto-trains agent skills",
+      "deer-flow/llm-space: desktop agent prototyping",
+      "No embeddings needed for cross-tool agent memory"
+    ],
+    "ai-web": [
+      "Claude designs protein binders, 14 of 15 hit",
+      "22–35% binder success rate, 2–3x industry norm",
+      "Opus 5 matches lab NMR/LC-MS purity analysis",
+      "Claude analysis done in under 25 minutes",
+      "Anthropic frames Claude as science co-worker",
+      "No new OpenAI content published today"
+    ],
+    "ai-hn": [
+      "\"Don't paste the AI, please\" hits 1009 pts",
+      "OpenRouter joins Stripe, 945 pts debate",
+      "Unsloth Dynamic 3.0 GGUFs improve quantization",
+      "Ornith-1.5 self-rewrites its own scaffolding",
+      "Codex/Bedrock 10x billing bug sparks outrage",
+      "New coding agents: Seed, TrueForge, OneCLI, fx"
+    ],
+    "ai-arxiv": [
+      "ConceptGuard audits context-sensitive unlearning",
+      "Phantom Gains: self-improvement gains are noise",
+      "MemTrapBench probes LLM memory cognitive traps",
+      "Agentic evaluation rigor is today's theme",
+      "New benchmarks for legal and medical review",
+      "Field shifts toward auditable agent evaluation"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B triggers rapid quantization wave",
+      "MiniMax-Music3 launches text-to-music model",
+      "MiniMax-H3 debuts image/text-to-video",
+      "DeepSeek V4 Pro and Flash checkpoints land",
+      "Kimi-K3 posts strong community engagement",
+      "Lightricks LTX-2.5 video model gains traction"
+    ],
+    "ai-community": [
+      "Repo symbol indexing cut from 30s to 98ms",
+      "Claude Code backfills 1,200 tests in 3 weeks",
+      "RAG pipeline hit by accidental prompt injection",
+      "Asana completes Enzyme migration in two weeks",
+      "Airbnb, Uber report similar AI migration wins",
+      "Agentic coding proves strong fit for migrations"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.238 released",
+      "Issue #6235 hits 374 comments, 4.9k 👍",
+      "OpenCode ships ~13 PRs in 24h",
+      "OpenCode Go billing/quota trust concerns",
+      "Session hangs plague both CLI tools",
+      "Community pushes for config interoperability"
+    ],
+    "ai-agents": [
+      "MCP filesystem server gets 2 bug fixes",
+      "PR #4674 fixes trailing newline in tail",
+      "PR #4672 strips trailing whitespace on writes",
+      "server-pdf correctness bug surfaces",
+      "MCP ecosystem in steady maintenance mode",
+      "Zero releases across 7 tracked MCP projects"
+    ],
+    "ai-infra": [
+      "Dify mid-refactor: 110 PRs touched today",
+      "LiteLLM discloses credential-leak issue",
+      "LiteLLM cost-accounting integrity crisis",
+      "Dify RBAC regressions surface in refactor",
+      "LiteLLM v1.99.0-dev.2 adds cosign signing",
+      "110 Dify PRs mostly refactor churn"
+    ],
+    "ai-trending": [
+      "deja-vu: local memory layer for coding agents",
+      "turbovec: Rust ANN index via TurboQuant",
+      "Tencent AI-Infra-Guard red-teams agents/MCP",
+      "microsoft/SkillOpt auto-trains agent skills",
+      "deer-flow/llm-space: desktop agent prototyping",
+      "No embeddings needed for cross-tool agent memory"
+    ],
+    "ai-web": [
+      "Claude designs protein binders, 14 of 15 hit",
+      "22–35% binder success rate, 2–3x industry norm",
+      "Opus 5 matches lab NMR/LC-MS purity analysis",
+      "Claude analysis done in under 25 minutes",
+      "Anthropic frames Claude as science co-worker",
+      "No new OpenAI content published today"
+    ],
+    "ai-hn": [
+      "\"Don't paste the AI, please\" hits 1009 pts",
+      "OpenRouter joins Stripe, 945 pts debate",
+      "Unsloth Dynamic 3.0 GGUFs improve quantization",
+      "Ornith-1.5 self-rewrites its own scaffolding",
+      "Codex/Bedrock 10x billing bug sparks outrage",
+      "New coding agents: Seed, TrueForge, OneCLI, fx"
+    ],
+    "ai-arxiv": [
+      "ConceptGuard audits context-sensitive unlearning",
+      "Phantom Gains: self-improvement gains are noise",
+      "MemTrapBench probes LLM memory cognitive traps",
+      "Agentic evaluation rigor is today's theme",
+      "New benchmarks for legal and medical review",
+      "Field shifts toward auditable agent evaluation"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B triggers rapid quantization wave",
+      "MiniMax-Music3 launches text-to-music model",
+      "MiniMax-H3 debuts image/text-to-video",
+      "DeepSeek V4 Pro and Flash checkpoints land",
+      "Kimi-K3 posts strong community engagement",
+      "Lightricks LTX-2.5 video model gains traction"
+    ],
+    "ai-community": [
+      "Repo symbol indexing cut from 30s to 98ms",
+      "Claude Code backfills 1,200 tests in 3 weeks",
+      "RAG pipeline hit by accidental prompt injection",
+      "Asana completes Enzyme migration in two weeks",
+      "Airbnb, Uber report similar AI migration wins",
+      "Agentic coding proves strong fit for migrations"
+    ]
+  }
+}
