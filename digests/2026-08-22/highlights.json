@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.239 adds cost transparency",
+      "OpenCode ships two releases in a single day",
+      "OpenCode merges 10 PRs vs Claude Code's zero",
+      "Claude Code issue #84352 hits 133 comments",
+      "OpenCode's #20695 memory megathread grows",
+      "Claude Code #77136 draws 339 👍 reactions"
+    ],
+    "ai-agents": [
+      "MCP filesystem server gets Windows path fixes",
+      "PR #4684 fixes 8.3-short-name path bugs",
+      "Sequentialthinking server hits schema regression",
+      "9 PRs open, zero merges in 24 hours",
+      "Filesystem create_directory fix still pending",
+      "No maintainer engagement on tracked PRs"
+    ],
+    "ai-infra": [
+      "Dify patches RBAC bypass and SVG XSS bugs",
+      "Dify's lint sweep touches 128 files",
+      "LiteLLM found silently undercounting costs",
+      "LiteLLM health-check risks OOM at scale",
+      "LiteLLM adds Bedrock DeepSeek R1 support",
+      "Neither Dify nor LiteLLM shipped a release"
+    ],
+    "ai-trending": [
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "deja-vu indexes logs from 18 coding agents",
+      "img2threejs turns images into Three.js code",
+      "MisakaNet shares debugging notes via git",
+      "opencodex proxies Codex/Claude to any model",
+      "OBLITERATUS trends on GitHub today"
+    ],
+    "ai-hn": [
+      "Anna's Archive book-scan plea hits 554 pts",
+      "OpenRouter acquired by Stripe, 954 points",
+      "AI boosts homework, hurts exam scores: study",
+      "Mystery \"Ox Alpha\" model surfaces on OpenRouter",
+      "Show HN wave: OneCLI, OzBrain, Oasis, Proliferate",
+      "HN sentiment: skeptical but engaged today"
+    ],
+    "ai-arxiv": [
+      "Phantom Gains questions agent capability claims",
+      "ConceptGuard benchmarks context-aware unlearning",
+      "MidTool synthesizes data for agentic tool use",
+      "Daedalus-150M targets CPU-native inference",
+      "InsufficiencyBench probes query ambiguity",
+      "Learning When to Think tunes reasoning budgets"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops trending with 12K+ likes",
+      "Kimi-K3 nears 2.5M downloads on HF",
+      "DeepSeek ships V4-Pro and V4-Flash variants",
+      "MiniMax launches Music3 and H3 video models",
+      "Lightricks LTX-2.5 advances open video gen",
+      "Dozens of uncensored Qwen3.8 finetunes appear"
+    ],
+    "ai-community": [
+      "Token-measuring proxy triples the count itself",
+      "Error feedback backfires under Adam optimizer",
+      "Design agents so injected instructions can't act",
+      "Simon Willison says: stop making TUIs",
+      "Dev.to and Lobste.rs spotlight AI dev pitfalls",
+      "Observer-effect trap bites agent instrumentation"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.239 adds cost transparency",
+      "OpenCode ships two releases in a single day",
+      "OpenCode merges 10 PRs vs Claude Code's zero",
+      "Claude Code issue #84352 hits 133 comments",
+      "OpenCode's #20695 memory megathread grows",
+      "Claude Code #77136 draws 339 👍 reactions"
+    ],
+    "ai-agents": [
+      "MCP filesystem server gets Windows path fixes",
+      "PR #4684 fixes 8.3-short-name path bugs",
+      "Sequentialthinking server hits schema regression",
+      "9 PRs open, zero merges in 24 hours",
+      "Filesystem create_directory fix still pending",
+      "No maintainer engagement on tracked PRs"
+    ],
+    "ai-infra": [
+      "Dify patches RBAC bypass and SVG XSS bugs",
+      "Dify's lint sweep touches 128 files",
+      "LiteLLM found silently undercounting costs",
+      "LiteLLM health-check risks OOM at scale",
+      "LiteLLM adds Bedrock DeepSeek R1 support",
+      "Neither Dify nor LiteLLM shipped a release"
+    ],
+    "ai-trending": [
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "deja-vu indexes logs from 18 coding agents",
+      "img2threejs turns images into Three.js code",
+      "MisakaNet shares debugging notes via git",
+      "opencodex proxies Codex/Claude to any model",
+      "OBLITERATUS trends on GitHub today"
+    ],
+    "ai-hn": [
+      "Anna's Archive book-scan plea hits 554 pts",
+      "OpenRouter acquired by Stripe, 954 points",
+      "AI boosts homework, hurts exam scores: study",
+      "Mystery \"Ox Alpha\" model surfaces on OpenRouter",
+      "Show HN wave: OneCLI, OzBrain, Oasis, Proliferate",
+      "HN sentiment: skeptical but engaged today"
+    ],
+    "ai-arxiv": [
+      "Phantom Gains questions agent capability claims",
+      "ConceptGuard benchmarks context-aware unlearning",
+      "MidTool synthesizes data for agentic tool use",
+      "Daedalus-150M targets CPU-native inference",
+      "InsufficiencyBench probes query ambiguity",
+      "Learning When to Think tunes reasoning budgets"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops trending with 12K+ likes",
+      "Kimi-K3 nears 2.5M downloads on HF",
+      "DeepSeek ships V4-Pro and V4-Flash variants",
+      "MiniMax launches Music3 and H3 video models",
+      "Lightricks LTX-2.5 advances open video gen",
+      "Dozens of uncensored Qwen3.8 finetunes appear"
+    ],
+    "ai-community": [
+      "Token-measuring proxy triples the count itself",
+      "Error feedback backfires under Adam optimizer",
+      "Design agents so injected instructions can't act",
+      "Simon Willison says: stop making TUIs",
+      "Dev.to and Lobste.rs spotlight AI dev pitfalls",
+      "Observer-effect trap bites agent instrumentation"
+    ]
+  }
+}
