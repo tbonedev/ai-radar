@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.240 and v2.1.241 hotfixes",
+      "OpenCode merges 10 PRs on stability, zero releases",
+      "AGENTS.md thread hits 375 comments, ~4,963 👍",
+      "OpenCode's Memory Megathread draws 135 comments",
+      "Agent sandboxing becomes a baseline expectation",
+      "Session reliability now the top trust bottleneck"
+    ],
+    "ai-agents": [
+      "MCP ecosystem shifts to submission-review bottlenecks",
+      "DNS key-rotation bug flagged in MCP Registry",
+      "Claude Plugins visibility gap persists 4+ months",
+      "x402 micropayment-gated MCP tools emerging",
+      "Awesome-list repos absorb most contributor energy",
+      "Hosted/remote MCP servers trend upward"
+    ],
+    "ai-infra": [
+      "Dify closes three authorization/timing bugs",
+      "LiteLLM ships v1.98.0 and v1.99.0-rc.1, signed",
+      "LiteLLM fixes cost-accounting and provider gaps",
+      "LiteLLM's replayable UI cookie remains open risk",
+      "Dify's PRs still pending merge, no release",
+      "LiteLLM pulls ahead in new model support race"
+    ],
+    "ai-trending": [
+      "deja-vu indexes 20+ coding agents' session logs",
+      "code-context-engine claims 94% token-spend cut",
+      "turbo-fieldfare runs Gemma 4 26B in ~2GB RAM",
+      "claudexor rotates quota across agent subscriptions",
+      "tw-legal-rag serves 22.5M Taiwanese court rulings",
+      "Small agent-tooling utilities cluster trends today"
+    ],
+    "ai-hn": [
+      "OpenRouter joins Stripe, sparks 497-comment debate",
+      "Anna's Archive urges scanning rare books, 616 pts",
+      "\"I'm becoming AI-blind\" draws 478 points",
+      "AI homework gains, then exam scores drop: 372 pts",
+      "Mystery \"Ox Alpha\" stealth model appears, 248 pts",
+      "Quantization quietly degrades local LLM quality"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 12,189 likes",
+      "Qwen3.8-27B logs 2M+ downloads in days",
+      "DeepSeek ships V4-Pro and V4-Flash updates",
+      "MiniMax releases H3 video and Music3 models",
+      "Lightricks drops LTX-2.5 image/text-to-video",
+      "Abliterated Qwen3.8 GGUF variants surge"
+    ],
+    "ai-community": [
+      "PlannerCritic fixes planner bugs bigger models can't",
+      "VAPT pipeline keeps LLM out of CVSS scoring",
+      "Cron \"success\" masked a 3-week silent outage",
+      "Deterministic scoring layer prevents drift",
+      "Solo AI company's monitoring missed real failures",
+      "Dev.to and Lobste.rs highlight agent reliability gaps"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.240 and v2.1.241 hotfixes",
+      "OpenCode merges 10 PRs on stability, zero releases",
+      "AGENTS.md thread hits 375 comments, ~4,963 👍",
+      "OpenCode's Memory Megathread draws 135 comments",
+      "Agent sandboxing becomes a baseline expectation",
+      "Session reliability now the top trust bottleneck"
+    ],
+    "ai-agents": [
+      "MCP ecosystem shifts to submission-review bottlenecks",
+      "DNS key-rotation bug flagged in MCP Registry",
+      "Claude Plugins visibility gap persists 4+ months",
+      "x402 micropayment-gated MCP tools emerging",
+      "Awesome-list repos absorb most contributor energy",
+      "Hosted/remote MCP servers trend upward"
+    ],
+    "ai-infra": [
+      "Dify closes three authorization/timing bugs",
+      "LiteLLM ships v1.98.0 and v1.99.0-rc.1, signed",
+      "LiteLLM fixes cost-accounting and provider gaps",
+      "LiteLLM's replayable UI cookie remains open risk",
+      "Dify's PRs still pending merge, no release",
+      "LiteLLM pulls ahead in new model support race"
+    ],
+    "ai-trending": [
+      "deja-vu indexes 20+ coding agents' session logs",
+      "code-context-engine claims 94% token-spend cut",
+      "turbo-fieldfare runs Gemma 4 26B in ~2GB RAM",
+      "claudexor rotates quota across agent subscriptions",
+      "tw-legal-rag serves 22.5M Taiwanese court rulings",
+      "Small agent-tooling utilities cluster trends today"
+    ],
+    "ai-hn": [
+      "OpenRouter joins Stripe, sparks 497-comment debate",
+      "Anna's Archive urges scanning rare books, 616 pts",
+      "\"I'm becoming AI-blind\" draws 478 points",
+      "AI homework gains, then exam scores drop: 372 pts",
+      "Mystery \"Ox Alpha\" stealth model appears, 248 pts",
+      "Quantization quietly degrades local LLM quality"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 12,189 likes",
+      "Qwen3.8-27B logs 2M+ downloads in days",
+      "DeepSeek ships V4-Pro and V4-Flash updates",
+      "MiniMax releases H3 video and Music3 models",
+      "Lightricks drops LTX-2.5 image/text-to-video",
+      "Abliterated Qwen3.8 GGUF variants surge"
+    ],
+    "ai-community": [
+      "PlannerCritic fixes planner bugs bigger models can't",
+      "VAPT pipeline keeps LLM out of CVSS scoring",
+      "Cron \"success\" masked a 3-week silent outage",
+      "Deterministic scoring layer prevents drift",
+      "Solo AI company's monitoring missed real failures",
+      "Dev.to and Lobste.rs highlight agent reliability gaps"
+    ]
+  }
+}
