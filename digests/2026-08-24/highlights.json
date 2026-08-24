@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code top issue hits 👍351 reactions",
+      "OpenCode ships 10 PRs, mostly fixes",
+      "OpenCode faces upstream provider outage",
+      "Claude Code sees zero PRs beyond docs",
+      "Both push skill/config interoperability",
+      "Consolidation phase: reliability over new UX"
+    ],
+    "ai-agents": [
+      "MCP servers: 6 PRs open, zero merges today",
+      "Filesystem server gets POSIX path-handling fix",
+      "Test-coverage push: filesystem 0%→98.5%",
+      "Sequentialthinking test coverage hits full",
+      "Memory persistence safety debate continues",
+      "String-parameter security thread still open"
+    ],
+    "ai-infra": [
+      "Dify plugin preview URLs leaked publicly",
+      "LiteLLM's Stability Sprint tackles budget races",
+      "LiteLLM adds four new provider integrations",
+      "Dify patches Weaviate scoring bug",
+      "LiteLLM fixes empty-list access-control gap",
+      "Dify adds Agent V2 draft-save feature"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents memory, no embeddings",
+      "code-context-engine cuts agent tokens by 94%",
+      "MisakaNet: agents share debugging lessons via git",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "Microsoft SkillOpt optimizes reusable agent skills",
+      "GitHub Trending spotlights agent-memory tools today"
+    ],
+    "ai-hn": [
+      "Anthropic model struggles draws 466pts, 402 comments",
+      "Claude API outage sparks reliability worries",
+      "Local LLMs underperform: deep dive hits 489pts",
+      "GLM-5.3 'owns' locked-down Fire tablet, 645pts",
+      "AI book destruction sparks 901-comment debate",
+      "NanoGPT Speedrun Frontier tracks training records"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops list with 12K+ likes",
+      "Qwen3.8-27B spawns dozen abliterated variants",
+      "DeepSeek-V4-Flash/Pro ship, millions downloaded",
+      "Kimi-K3 by Moonshot pulls millions of downloads",
+      "MiniMax launches video model MiniMax-H3",
+      "Ornith-1.5 family trends across all sizes"
+    ],
+    "ai-community": [
+      "AI agents waste half their context window",
+      "MCP server burns 47K tokens just to say hello",
+      "PlannerCritic runs 170 agent trials for $0.49",
+      "Simon Willison: code review isn't enough now",
+      "Study: 312K tokens spent before real work starts",
+      "Field tests catch bugs unit tests miss"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code top issue hits 👍351 reactions",
+      "OpenCode ships 10 PRs, mostly fixes",
+      "OpenCode faces upstream provider outage",
+      "Claude Code sees zero PRs beyond docs",
+      "Both push skill/config interoperability",
+      "Consolidation phase: reliability over new UX"
+    ],
+    "ai-agents": [
+      "MCP servers: 6 PRs open, zero merges today",
+      "Filesystem server gets POSIX path-handling fix",
+      "Test-coverage push: filesystem 0%→98.5%",
+      "Sequentialthinking test coverage hits full",
+      "Memory persistence safety debate continues",
+      "String-parameter security thread still open"
+    ],
+    "ai-infra": [
+      "Dify plugin preview URLs leaked publicly",
+      "LiteLLM's Stability Sprint tackles budget races",
+      "LiteLLM adds four new provider integrations",
+      "Dify patches Weaviate scoring bug",
+      "LiteLLM fixes empty-list access-control gap",
+      "Dify adds Agent V2 draft-save feature"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents memory, no embeddings",
+      "code-context-engine cuts agent tokens by 94%",
+      "MisakaNet: agents share debugging lessons via git",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "Microsoft SkillOpt optimizes reusable agent skills",
+      "GitHub Trending spotlights agent-memory tools today"
+    ],
+    "ai-hn": [
+      "Anthropic model struggles draws 466pts, 402 comments",
+      "Claude API outage sparks reliability worries",
+      "Local LLMs underperform: deep dive hits 489pts",
+      "GLM-5.3 'owns' locked-down Fire tablet, 645pts",
+      "AI book destruction sparks 901-comment debate",
+      "NanoGPT Speedrun Frontier tracks training records"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops list with 12K+ likes",
+      "Qwen3.8-27B spawns dozen abliterated variants",
+      "DeepSeek-V4-Flash/Pro ship, millions downloaded",
+      "Kimi-K3 by Moonshot pulls millions of downloads",
+      "MiniMax launches video model MiniMax-H3",
+      "Ornith-1.5 family trends across all sizes"
+    ],
+    "ai-community": [
+      "AI agents waste half their context window",
+      "MCP server burns 47K tokens just to say hello",
+      "PlannerCritic runs 170 agent trials for $0.49",
+      "Simon Willison: code review isn't enough now",
+      "Study: 312K tokens spent before real work starts",
+      "Field tests catch bugs unit tests miss"
+    ]
+  }
+}
