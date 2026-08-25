@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.245 hotfix patches Linux crashes",
+      "OpenCode ships two patch releases in 24 hours",
+      "Issue #50246 hits 199 👍 on queued messaging",
+      "OpenCode building V2 session-data overhaul",
+      "Both tools converge on sandboxed execution",
+      "OpenCode patches gateway routing twice today"
+    ],
+    "ai-agents": [
+      "MCP servers repo mid security audit wave",
+      "SSRF and path traversal reports surface",
+      "PR #4687 fixes zod dependency bug",
+      "Supply-chain forking risk flagged",
+      "No new MCP releases this cycle",
+      "Memory persistence security issue reported"
+    ],
+    "ai-infra": [
+      "Dify closes five vulnerability reports same day",
+      "LiteLLM fixes streaming billing accuracy bug",
+      "LiteLLM adds three new provider integrations",
+      "Dify merges two RBAC security fixes",
+      "Neither Dify nor LiteLLM releases today",
+      "LiteLLM leads today's model support race"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents zero-cost memory",
+      "Gemma 4 26B runs in 2GB RAM on Macs",
+      "loop-engineering tools for agent control loops",
+      "claudexor rotates quota across AI subscriptions",
+      "Microsoft's SkillOpt optimizes agent skills",
+      "claudexor already has 423 stars"
+    ],
+    "ai-web": [
+      "Anthropic rolls out EU AI Act text watermarking",
+      "Fable 5 cuts biology safeguard false positives 85%",
+      "Claude-designed protein binders hit 14 of 15 targets",
+      "Opus 5 matches lab NMR analysis in 25 minutes",
+      "Dual-use biology stays gated behind Opus 5",
+      "OpenAI's only new page ties to GPT-5.6 and Kiro"
+    ],
+    "ai-hn": [
+      "FT report on Claude traction sparks 684 comments",
+      "Anna's Archive urges scanning rare books before AI",
+      "GPT 5.6 'Sol' price cut extended to Nov 21",
+      "Viral tweet says kids should build LLMs from scratch",
+      "Local LLMs feel dumber due to quantization tricks",
+      "Debate: does AI coding erode developer skill?"
+    ],
+    "ai-arxiv": [
+      "New recipe trains token-level critics stably",
+      "Memory-injection attacks target LLM agents",
+      "Reasoning fine-tuning can induce misalignment",
+      "Benchmark tests whole-repo code migration",
+      "Study questions if agent-to-agent chat helps",
+      "ConvergeFlow proves convergence to token embeddings"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 12,563 likes",
+      "DeepSeek drops V4-Flash and V4-Pro models",
+      "MiniMax ships both video and music models",
+      "Dozens of Qwen3.8-27B forks appear overnight",
+      "Lightricks advances video diffusion with LTX-2.5",
+      "Ornith-ai debuts 9B and 35B MoE models"
+    ],
+    "ai-community": [
+      "Harness scaffolding beats model in ARC-AGI-3",
+      "Agents 'started working' as harnesses matured",
+      "PlannerCritic design defeats prompt injection",
+      "Microsoft folds harness logic into training",
+      "Critic model never sees raw untrusted context",
+      "RAG assistant nearly shipped hallucinated APIs"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.245 hotfix patches Linux crashes",
+      "OpenCode ships two patch releases in 24 hours",
+      "Issue #50246 hits 199 👍 on queued messaging",
+      "OpenCode building V2 session-data overhaul",
+      "Both tools converge on sandboxed execution",
+      "OpenCode patches gateway routing twice today"
+    ],
+    "ai-agents": [
+      "MCP servers repo mid security audit wave",
+      "SSRF and path traversal reports surface",
+      "PR #4687 fixes zod dependency bug",
+      "Supply-chain forking risk flagged",
+      "No new MCP releases this cycle",
+      "Memory persistence security issue reported"
+    ],
+    "ai-infra": [
+      "Dify closes five vulnerability reports same day",
+      "LiteLLM fixes streaming billing accuracy bug",
+      "LiteLLM adds three new provider integrations",
+      "Dify merges two RBAC security fixes",
+      "Neither Dify nor LiteLLM releases today",
+      "LiteLLM leads today's model support race"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents zero-cost memory",
+      "Gemma 4 26B runs in 2GB RAM on Macs",
+      "loop-engineering tools for agent control loops",
+      "claudexor rotates quota across AI subscriptions",
+      "Microsoft's SkillOpt optimizes agent skills",
+      "claudexor already has 423 stars"
+    ],
+    "ai-web": [
+      "Anthropic rolls out EU AI Act text watermarking",
+      "Fable 5 cuts biology safeguard false positives 85%",
+      "Claude-designed protein binders hit 14 of 15 targets",
+      "Opus 5 matches lab NMR analysis in 25 minutes",
+      "Dual-use biology stays gated behind Opus 5",
+      "OpenAI's only new page ties to GPT-5.6 and Kiro"
+    ],
+    "ai-hn": [
+      "FT report on Claude traction sparks 684 comments",
+      "Anna's Archive urges scanning rare books before AI",
+      "GPT 5.6 'Sol' price cut extended to Nov 21",
+      "Viral tweet says kids should build LLMs from scratch",
+      "Local LLMs feel dumber due to quantization tricks",
+      "Debate: does AI coding erode developer skill?"
+    ],
+    "ai-arxiv": [
+      "New recipe trains token-level critics stably",
+      "Memory-injection attacks target LLM agents",
+      "Reasoning fine-tuning can induce misalignment",
+      "Benchmark tests whole-repo code migration",
+      "Study questions if agent-to-agent chat helps",
+      "ConvergeFlow proves convergence to token embeddings"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 12,563 likes",
+      "DeepSeek drops V4-Flash and V4-Pro models",
+      "MiniMax ships both video and music models",
+      "Dozens of Qwen3.8-27B forks appear overnight",
+      "Lightricks advances video diffusion with LTX-2.5",
+      "Ornith-ai debuts 9B and 35B MoE models"
+    ],
+    "ai-community": [
+      "Harness scaffolding beats model in ARC-AGI-3",
+      "Agents 'started working' as harnesses matured",
+      "PlannerCritic design defeats prompt injection",
+      "Microsoft folds harness logic into training",
+      "Critic model never sees raw untrusted context",
+      "RAG assistant nearly shipped hallucinated APIs"
+    ]
+  }
+}
