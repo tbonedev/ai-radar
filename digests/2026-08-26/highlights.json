@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode: 226 issues touched in 24h",
+      "Claude Code v2.1.246 ships wildcard Bash fix",
+      "New Auto mode tab in /permissions",
+      "Zero Claude Code PRs merged despite heavy traffic",
+      "AGENTS.md emerging as cross-tool config standard",
+      "Ecosystem entering post-growth 'hardening' phase"
+    ],
+    "ai-agents": [
+      "MCP servers repo: 5 issues, 5 PRs updated",
+      "PR #4695 fixes sequential-thinking schema bug",
+      "Memory-file corruption fix in flight",
+      "Filesystem path handling bug being patched",
+      "New 'mcptoon' server listing requested",
+      "Ohu Web Intelligence server listing requested"
+    ],
+    "ai-infra": [
+      "Dify ships v1.17.0 then 2 same-day hotfixes",
+      "LiteLLM adds cosign image signing",
+      "Dify v1.17.0 regression breaks model usage",
+      "LiteLLM v1.100.0-dev.1 supply-chain release",
+      "3 open correctness bugs in LiteLLM routing",
+      "Neither project touched core inference perf"
+    ],
+    "ai-trending": [
+      "kimi-k3-in-c runs 2.78T-param model on CPU",
+      "turbo-fieldfare: Gemma 4 26B in 2GB RAM on Mac",
+      "deja-vu recalls coding-agent session history",
+      "alibaba/open-code-review: hybrid LLM+static review",
+      "dbx: 20MB client covering 90+ database engines",
+      "No-GPU, no-framework quantization pushed further"
+    ],
+    "ai-web": [
+      "Anthropic surfaces entire Economic Index archive",
+      "Clio rebrands to 'Anthropic Insights'",
+      "Anthropic launches $5M wellbeing grant program",
+      "27 new articles across Anthropic and OpenAI",
+      "OpenAI posts metadata-only 'Jalapeno' stubs",
+      "Anthropic builds economic-policy research narrative"
+    ],
+    "ai-hn": [
+      "Apple M6/M5 Ultra launch tops HN today",
+      "SemiAnalysis: OpenAI 'Jalapeño' chip beats Blackwell",
+      "FT: Anthropic's best model struggles for users",
+      "Anthropic's $30T revenue claim draws skepticism",
+      "'Fences, Not Sandboxes' essay on agent containment",
+      "Security research on inference-engine exploitation"
+    ],
+    "ai-arxiv": [
+      "Recuris, SPO++, Meta^n tackle agent self-improvement",
+      "Medical chain-of-thought found often 'decorative'",
+      "Effective learning rate unifies pretraining loss curves",
+      "BrowserForge scales data for web agents",
+      "LAION-BVD dataset targets embodied agents",
+      "StarHarness explores agent harness evolution"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart with 12,767 likes",
+      "DeepSeek V4-Flash-0731 draws strong engagement",
+      "Kimi-K3 from Moonshot AI trends highly",
+      "MiniMax-H3 leads active video-generation wave",
+      "SenseNova-U1.5-8B-MoT: native any-to-any model",
+      "Wave of abliterated Qwen3.8-27B derivatives"
+    ],
+    "ai-community": [
+      "MCP wastes 4-32x more tokens than CLI calls",
+      "Half of 'ChatGPT' traffic was secret-scanning bots",
+      "Dev killed his own token-optimization stack",
+      "97% token savings hid a silent correctness failure",
+      "148K vs 222K: token counters found drifting",
+      "Cloudflare AI Crawl Control exposes fake crawlers"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenCode: 226 issues touched in 24h",
+      "Claude Code v2.1.246 ships wildcard Bash fix",
+      "New Auto mode tab in /permissions",
+      "Zero Claude Code PRs merged despite heavy traffic",
+      "AGENTS.md emerging as cross-tool config standard",
+      "Ecosystem entering post-growth 'hardening' phase"
+    ],
+    "ai-agents": [
+      "MCP servers repo: 5 issues, 5 PRs updated",
+      "PR #4695 fixes sequential-thinking schema bug",
+      "Memory-file corruption fix in flight",
+      "Filesystem path handling bug being patched",
+      "New 'mcptoon' server listing requested",
+      "Ohu Web Intelligence server listing requested"
+    ],
+    "ai-infra": [
+      "Dify ships v1.17.0 then 2 same-day hotfixes",
+      "LiteLLM adds cosign image signing",
+      "Dify v1.17.0 regression breaks model usage",
+      "LiteLLM v1.100.0-dev.1 supply-chain release",
+      "3 open correctness bugs in LiteLLM routing",
+      "Neither project touched core inference perf"
+    ],
+    "ai-trending": [
+      "kimi-k3-in-c runs 2.78T-param model on CPU",
+      "turbo-fieldfare: Gemma 4 26B in 2GB RAM on Mac",
+      "deja-vu recalls coding-agent session history",
+      "alibaba/open-code-review: hybrid LLM+static review",
+      "dbx: 20MB client covering 90+ database engines",
+      "No-GPU, no-framework quantization pushed further"
+    ],
+    "ai-web": [
+      "Anthropic surfaces entire Economic Index archive",
+      "Clio rebrands to 'Anthropic Insights'",
+      "Anthropic launches $5M wellbeing grant program",
+      "27 new articles across Anthropic and OpenAI",
+      "OpenAI posts metadata-only 'Jalapeno' stubs",
+      "Anthropic builds economic-policy research narrative"
+    ],
+    "ai-hn": [
+      "Apple M6/M5 Ultra launch tops HN today",
+      "SemiAnalysis: OpenAI 'Jalapeño' chip beats Blackwell",
+      "FT: Anthropic's best model struggles for users",
+      "Anthropic's $30T revenue claim draws skepticism",
+      "'Fences, Not Sandboxes' essay on agent containment",
+      "Security research on inference-engine exploitation"
+    ],
+    "ai-arxiv": [
+      "Recuris, SPO++, Meta^n tackle agent self-improvement",
+      "Medical chain-of-thought found often 'decorative'",
+      "Effective learning rate unifies pretraining loss curves",
+      "BrowserForge scales data for web agents",
+      "LAION-BVD dataset targets embodied agents",
+      "StarHarness explores agent harness evolution"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart with 12,767 likes",
+      "DeepSeek V4-Flash-0731 draws strong engagement",
+      "Kimi-K3 from Moonshot AI trends highly",
+      "MiniMax-H3 leads active video-generation wave",
+      "SenseNova-U1.5-8B-MoT: native any-to-any model",
+      "Wave of abliterated Qwen3.8-27B derivatives"
+    ],
+    "ai-community": [
+      "MCP wastes 4-32x more tokens than CLI calls",
+      "Half of 'ChatGPT' traffic was secret-scanning bots",
+      "Dev killed his own token-optimization stack",
+      "97% token savings hid a silent correctness failure",
+      "148K vs 222K: token counters found drifting",
+      "Cloudflare AI Crawl Control exposes fake crawlers"
+    ]
+  }
+}
