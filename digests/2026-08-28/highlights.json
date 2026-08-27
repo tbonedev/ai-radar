@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.247 release",
+      "OpenCode faces backlash over UI redesign",
+      "OpenCode: 10 PRs vs Claude Code's 3 in 24h",
+      "Claude Code in stabilization, thin PR flow",
+      "Provider integration friction hits both tools",
+      "Trust & transparency emerge as key concern"
+    ],
+    "ai-agents": [
+      "Two competing fixes for sequentialthinking bug",
+      "5 open MCP server PRs, none merged in 24h",
+      "PR #4652 restores nextThoughtNeeded schema field",
+      "PR #4701 overlaps fix for same regression",
+      "Maintainer-review bottleneck stalls MCP servers",
+      "7 MCP ecosystem projects tracked today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM both skip 24h release",
+      "Dify hit by three RBAC/authorization bugs",
+      "LiteLLM exposes unauthenticated metrics endpoint",
+      "LiteLLM leaks plaintext credentials",
+      "LiteLLM billing/cost-tracking regressions found",
+      "Dify 1.17.0 stabilizes under load"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "Gemma 4 26B runs in 2GB RAM on Apple silicon",
+      "deja-vu indexes coding agent session history",
+      "Microsoft SkillOpt auto-optimizes agent skills",
+      "Alibaba open-code-review blends static+LLM analysis",
+      "Extreme quantization shrinks trillion-param models"
+    ],
+    "ai-web": [
+      "Anthropic unveils Model Hardware Standard (MHS)",
+      "MHS lets AI agents run lab hardware autonomously",
+      "Anthropic opens Claude usage data to researchers",
+      "48 new Anthropic articles, mostly historical backfill",
+      "OpenAI teases Hugging Face incident post",
+      "Anthropic Insights pilot shares real-world Claude data"
+    ],
+    "ai-hn": [
+      "GLM-5.3-Flash tops HN with 1099 points",
+      "Qwen3.8-Flash-Next scores 682 points on HN",
+      "Satirical 'open source AI CEO' hits 890 points",
+      "Gates' 'turbulent AI era' essay sparks debate",
+      "Gemini Omni 1.1 Flash launches, draws discussion",
+      "HN skepticism grows over AI boom sustainability"
+    ],
+    "ai-arxiv": [
+      "Prefix Sliding cuts memory for long CoT inference",
+      "New theory bounds LoRA rank-error tradeoffs",
+      "ProgRouter brings cost-aware multi-agent routing",
+      "R3 shows RL reasoning transfers to robot control",
+      "Sparse autoencoders probe neutrino physics model",
+      "Studies dissect why Muon beats Adam optimizer"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads HF trending with 13K likes",
+      "unsloth/Qwen3.8-27B-GGUF hits 7.76M downloads",
+      "Kimi-K3 nears 3M downloads in first week",
+      "DeepSeek-V4-Flash-0731 posts strong likes ratio",
+      "MiniMax-H3 video model hits 4.86M downloads",
+      "Qwen3.8 derivatives dominate 15 of 30 trending"
+    ],
+    "ai-community": [
+      "Task-difficulty routing cuts inference cost 48x",
+      "Framing bias: 'scanner flagged' sways LLM reviews",
+      "Robust JSON pipeline tames flaky LLM outputs",
+      "Team ditches LLM agents controlling LLM agents",
+      "Local model routing flips profitable customer mix",
+      "Dev.to & Lobsters spotlight agent reliability fixes"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.247 release",
+      "OpenCode faces backlash over UI redesign",
+      "OpenCode: 10 PRs vs Claude Code's 3 in 24h",
+      "Claude Code in stabilization, thin PR flow",
+      "Provider integration friction hits both tools",
+      "Trust & transparency emerge as key concern"
+    ],
+    "ai-agents": [
+      "Two competing fixes for sequentialthinking bug",
+      "5 open MCP server PRs, none merged in 24h",
+      "PR #4652 restores nextThoughtNeeded schema field",
+      "PR #4701 overlaps fix for same regression",
+      "Maintainer-review bottleneck stalls MCP servers",
+      "7 MCP ecosystem projects tracked today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM both skip 24h release",
+      "Dify hit by three RBAC/authorization bugs",
+      "LiteLLM exposes unauthenticated metrics endpoint",
+      "LiteLLM leaks plaintext credentials",
+      "LiteLLM billing/cost-tracking regressions found",
+      "Dify 1.17.0 stabilizes under load"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "Gemma 4 26B runs in 2GB RAM on Apple silicon",
+      "deja-vu indexes coding agent session history",
+      "Microsoft SkillOpt auto-optimizes agent skills",
+      "Alibaba open-code-review blends static+LLM analysis",
+      "Extreme quantization shrinks trillion-param models"
+    ],
+    "ai-web": [
+      "Anthropic unveils Model Hardware Standard (MHS)",
+      "MHS lets AI agents run lab hardware autonomously",
+      "Anthropic opens Claude usage data to researchers",
+      "48 new Anthropic articles, mostly historical backfill",
+      "OpenAI teases Hugging Face incident post",
+      "Anthropic Insights pilot shares real-world Claude data"
+    ],
+    "ai-hn": [
+      "GLM-5.3-Flash tops HN with 1099 points",
+      "Qwen3.8-Flash-Next scores 682 points on HN",
+      "Satirical 'open source AI CEO' hits 890 points",
+      "Gates' 'turbulent AI era' essay sparks debate",
+      "Gemini Omni 1.1 Flash launches, draws discussion",
+      "HN skepticism grows over AI boom sustainability"
+    ],
+    "ai-arxiv": [
+      "Prefix Sliding cuts memory for long CoT inference",
+      "New theory bounds LoRA rank-error tradeoffs",
+      "ProgRouter brings cost-aware multi-agent routing",
+      "R3 shows RL reasoning transfers to robot control",
+      "Sparse autoencoders probe neutrino physics model",
+      "Studies dissect why Muon beats Adam optimizer"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads HF trending with 13K likes",
+      "unsloth/Qwen3.8-27B-GGUF hits 7.76M downloads",
+      "Kimi-K3 nears 3M downloads in first week",
+      "DeepSeek-V4-Flash-0731 posts strong likes ratio",
+      "MiniMax-H3 video model hits 4.86M downloads",
+      "Qwen3.8 derivatives dominate 15 of 30 trending"
+    ],
+    "ai-community": [
+      "Task-difficulty routing cuts inference cost 48x",
+      "Framing bias: 'scanner flagged' sways LLM reviews",
+      "Robust JSON pipeline tames flaky LLM outputs",
+      "Team ditches LLM agents controlling LLM agents",
+      "Local model routing flips profitable customer mix",
+      "Dev.to & Lobsters spotlight agent reliability fixes"
+    ]
+  }
+}
