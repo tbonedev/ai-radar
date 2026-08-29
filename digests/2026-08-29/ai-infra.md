@@ -1,6 +1,6 @@
 # AI Infrastructure Digest 2026-08-29
 
-> Generated: 2026-08-28 19:12 UTC | Projects covered: 2
+> Generated: 2026-08-29 12:56 UTC | Projects covered: 2
 
 - [Dify](https://github.com/langgenius/dify)
 - [LiteLLM](https://github.com/BerriAI/litellm)
@@ -9,59 +9,60 @@
 
 ## Cross-Project Comparison
 
-# AI Infrastructure Ecosystem — Cross-Project Comparison
-**2026-08-29 | Dify vs. LiteLLM**
+# AI Infrastructure Cross-Project Digest — 2026-08-29
 
 ## 1. Ecosystem Overview
 
-Today's activity across Dify and LiteLLM reflects two mature, high-traffic projects in stability-hardening mode rather than feature-expansion mode: both shipped same-day fixes for serious defects (a data-integrity bug in Dify, a proxy-crashing regression in LiteLLM), and both are managing the operational fallout of recently-shipped surfaces (Dify's Skills/Agent V2 rollout, LiteLLM's budget-cascade and Anthropic-bridge work). Neither project touched core inference performance — no kernel, batching, quantization, or KV-cache activity appeared in either digest — underscoring that both sit above the model-serving layer, where the engineering focus is correctness, latency-at-the-edges, and multi-tenant governance rather than raw throughput. Streaming reliability against Anthropic's `/v1/messages` format is a shared pain point independently surfacing in both codebases. Security/default-posture gaps (unauthenticated metrics in LiteLLM, SSRF misclassification in Dify) round out the picture of two platforms scaling into more security-conscious, multi-tenant deployments.
+Neither Dify nor LiteLLM shipped a release in the last 24 hours, but both projects show heavy correctness-focused engineering activity rather than net-new capability work. The common thread across both platforms is **trust in the accounting/execution layer**: Dify is confronting an agent that can silently fabricate tool-call success, while LiteLLM is confronting silent billing and logging loss under streaming and multi-threaded conditions. This is a maturity signal for the AI infra layer broadly — as agentic and gateway systems move from novelty to production dependency, "did it actually work / did we actually charge for it correctly" bugs are surfacing as top-severity issues rather than edge cases. Model/hardware support additions were incremental on both sides (credential encryption on Dify, provider-routing fixes on LiteLLM) rather than frontier-model races. Internal hardening — test-suite migrations, session-passing refactors, Rust-based gateway rewrites — suggests both teams are investing in long-term reliability over feature velocity this cycle.
 
 ## 2. Activity Comparison
 
-| Metric | Dify | LiteLLM |
-|---|---|---|
-| Issues referenced today | ~14 (2 closed same-day) | ~13 (1 closed same-day) |
-| PRs referenced today | 4 (all bug fixes) | 7 (1 critical fix, 2 model/perf fixes, 2 feature/integration, 2 correctness) |
-| Release | None in last 24h | v1.100.0-dev.2 (dev release — cosign image signature verification) |
-| Severity of top issue | High (data integrity: orphaned attachments) — fix already merged | Critical (proxy fails to start on import) — fix already merged |
-| Long-running unresolved threads | 1 (Redis client-limit issue, closed) | 2 (Prisma reconnection crash, 16 comments; unauthenticated `/metrics`) |
+| Project | Layer | Issues (24h) | PRs (24h) | Release Status | Top Severity |
+|---|---|---|---|---|---|
+| **Dify** | Agent/workflow orchestration platform | 7 | 5 | None | Agent fabricates tool-call success (#40671) |
+| **LiteLLM** | LLM gateway / proxy | 11 | 8 | None | Streaming usage/cost loss on cached tokens (#36168) |
 
-Both projects show a "detect → fix same day" pattern on their most severe issue, suggesting healthy triage/CI discipline. LiteLLM's PR mix skews more toward net-new capability (guardrail integration, cosign signing, cost-shadow accounting) than Dify's, which was entirely defensive today.
+LiteLLM shows roughly 50–60% higher raw activity volume, consistent with its broader surface area (multi-provider routing, spend tracking, proxy admin API) versus Dify's more contained agent/workflow scope. Both projects' PR mix skews toward bug fixes and internal refactors over new features — no user-facing feature PRs of note in either digest today.
 
 ## 3. Model Support Race
 
-LiteLLM is the only project with model-layer movement today, and it's ahead by default since Dify shipped none:
+LiteLLM is clearly ahead on model/provider breadth today:
 
-- **LiteLLM**: community request to add GLM-5.3-Flash pricing (closed same-day); a flagged fidelity gap where DeepSeek V4's graded `reasoning_effort` is collapsed to a bare `thinking: enabled` flag; a Bedrock Cohere embedding fix (`encoding_format` now routes correctly); a new Wingback guardrail integration exposed via Admin UI/config.
-- **Dify**: no new model support shipped. The only model-adjacent item is a *regression report* — custom Cohere models not appearing in the Knowledge Base model selector — which is a bug, not progress.
+| Addition | Project | Scope |
+|---|---|---|
+| vLLM-Omni videos API (`hosted_vllm` provider) | LiteLLM | New modality (video) routing |
+| Mistral Voxtral TTS on `/v1/audio/speech` | LiteLLM | Fixes a previously-broken provider mapping |
+| AWS partition-aware endpoints (GovCloud/China) | LiteLLM | Regional/compliance routing, not a new model per se |
+| GLM-5.3-Flash pricing request | LiteLLM | Community-requested, closed (pricing table entry) |
+| AWS KMS as `KEY_PROVIDER_TYPE` | Dify | Credential/security, not model support |
 
-As a gateway, LiteLLM's job is inherently model-support breadth (translation-layer parity across providers), so this gap is structural, not just a one-day snapshot: expect LiteLLM to consistently lead on raw model/API coverage while Dify's model surface moves more slowly and indirectly (via provider plugins).
+Dify shipped **no model or backend additions today** — its only credential-adjacent PR (AWS KMS) is infra/security scope. LiteLLM continues to function as the faster-moving "long tail" integration layer, picking up new modalities (video), regional routing, and provider-specific fixes at a pace Dify's more contained repo doesn't need to match. This is expected given LiteLLM's role as a universal gateway versus Dify's role as an application platform sitting one layer above model access.
 
-## 4. Performance & Optimization Frontier
+## 4. Performance Frontier
 
-Neither project is doing inference-layer optimization (no KV cache, batching, quantization, or kernel work in either digest) — expected, since both are application/gateway-layer projects that sit *above* serving engines like vLLM or SGLang rather than compete with them. Where effort is concentrated:
+No classic inference-engine optimizations (KV cache, quantization, kernel work) appear in either digest — expected, since neither Dify nor LiteLLM operates at the serving-engine layer. Optimization effort instead concentrates on **request-path and data-path efficiency**:
 
-- **LiteLLM** (network/cost layer): a bimodal TTFB issue on streaming Anthropic requests (~2s typical, intermittent ~16.7s spikes, isolated to proxy-side buffering); a per-request latency tax from redundant SigV4 credential resolution on Bedrock bearer-token auth (full IMDS timeout on every call, on hosts lacking IMDS); improved cost-accounting for shadow-routing (`shadow_eval` now includes the classifier call's own cost).
-- **Dify** (correctness/portability, not performance): the closest thing to a "performance" item is a portability fix replacing Postgres-only `NULLS LAST` with a portable sort key to fix MySQL pagination errors — a correctness fix, not an optimization.
+- **LiteLLM**: a missing `(api_key, startTime)` index on `LiteLLM_SpendLogs` was causing full-table scans on every spend-report query (#37983) — a classic gateway-layer bottleneck as deployments scale. Streaming guardrail buffering was also fixed so audit-only Bedrock guardrails no longer force full-response buffering before first-token delivery (#38722), directly improving perceived latency for streaming consumers like Claude Code.
+- **Dify**: no genuine performance PRs; the one "2048-lane parallel execution" claim (#41467) is flagged as low-trust, unsolicited, and bundling an unrelated payment scheme — explicitly called out as not a real signal.
 
-Net: LiteLLM is actively chasing tail latency and cost-accuracy at the proxy layer; Dify shows no performance-engineering activity today.
+Net: today's "performance frontier" activity is entirely at the **gateway/query layer** (index tuning, streaming buffer behavior), not the model-serving layer.
 
 ## 5. Layer Positioning
 
-These two projects occupy adjacent but distinct layers, and neither is a serving engine, local runtime, or training/fine-tuning framework:
+| Project | Primary Layer | Positioning |
+|---|---|---|
+| **Dify** | Application/agent orchestration platform | Sits above model access — builds workflows, agents, and tool-calling apps on top of LLM providers. Today's bugs (agent fabricating success, config alias resolution, stop-sequence dropping) are all orchestration-layer correctness issues, not model-serving issues. |
+| **LiteLLM** | Gateway / proxy / spend-management layer | Sits between applications and model providers — routes requests, tracks cost, applies guardrails. Today's issues (cost tracking, MCP gateway crashes, logging reliability, request routing) are all classic gateway-layer concerns: correctness of pass-through, observability, and multi-tenant billing. |
 
-- **Dify** — an **application/agent orchestration platform**: workflow builder, knowledge base (RAG), Skills/Agent V2 runtime, plugin daemon. It's the layer closest to end users and app developers, consuming models rather than serving or routing them.
-- **LiteLLM** — an **LLM gateway/proxy**: unified API translation across providers, request routing, budget/key governance, cost tracking, guardrails. It sits between applications (like Dify) and model backends/inference engines, and increasingly behaves like infrastructure-governance software (budget cascades, key-scoped model access, image provenance) rather than a thin proxy.
-
-In a full infra stack, LiteLLM would typically sit *underneath* an app layer like Dify (Dify → LiteLLM → inference engine/provider API), making them complementary rather than directly competing layers.
+Neither project touches the serving-engine or fine-tuning layers (vLLM/SGLang/llama.cpp/unsloth territory) — both are consumers of that layer, not implementers of it. This positions them as complementary rather than competitive: a production stack plausibly runs Dify (orchestration) → LiteLLM (gateway) → an inference engine, each layer surfacing today's own class of bug.
 
 ## 6. Trend Signals
 
-- **Streaming-format fidelity is the recurring failure mode wherever Anthropic's `/v1/messages` shape crosses a system boundary** — Dify's TTS/plugin-daemon streaming timeout and LiteLLM's TTFB spikes plus "200 OK with an embedded SSE error" bug are independent symptoms of the same underlying trend: streaming protocol translation is harder to get right than non-streaming, and app/gateway developers should add end-to-end stream-content health checks, not just HTTP status checks.
-- **Budget/cost governance is becoming a first-class gateway feature, not an afterthought** — LiteLLM's budget-cascade crash, stale budget-window enforcement, and key-creation model-access gaps all point to multi-tenant cost control maturing into core infrastructure surface area, worth watching for teams building metered/billed AI products.
-- **Session/state versioning is emerging in agent frameworks** — Dify's new 409 (`agent_session_configuration_changed`) for stale Agent V2 session snapshots signals that "agent state can go stale mid-conversation" is now being treated as a first-class error condition; app developers building on agent frameworks generally should expect to handle similar staleness errors going forward.
-- **Security defaults are lagging deployment maturity** — LiteLLM's unauthenticated `/metrics` (PII exposure risk) and Dify's SSRF-classification false positive behind a corporate proxy both suggest security hardening hasn't fully caught up with how these tools are actually deployed (multi-tenant, behind corporate proxies) — a good area for platform teams to audit proactively rather than wait for upstream fixes.
-- **Supply-chain provenance is entering the self-hosted LLM tooling baseline** — LiteLLM's cosign image-signing support is a small signal of broader movement toward verifiable build provenance for AI infrastructure images, worth adopting for regulated/production deployments.
+- **Silent-failure correctness is becoming the top-severity bug class across the agent/gateway stack.** Dify's agent fabricating tool-call success and LiteLLM's silent cached-token cost loss are structurally the same problem — a system reporting a false-positive "it worked" state. Application developers building on either platform should add independent verification (execution checks, spend reconciliation) rather than trusting reported status fields at face value.
+- **Billing/spend accuracy is an emerging liability surface for LLM gateways.** LiteLLM alone surfaced two separate cost-tracking bugs today (streaming cached-token loss, Anthropic batch cost always $0). Teams with cost-sensitive deployments should treat gateway-reported spend as approximate until these are confirmed fixed, and build their own usage cross-checks.
+- **Multi-threaded/async reliability gaps are recurring** — LiteLLM's `LoggingWorker` losing its queue across event loops mirrors a broader pattern of async-lifecycle bugs in Python-based gateway infrastructure; watch for similar issues in other asyncio-based proxies.
+- **Config layer fragility under advanced deployment topologies**: Dify's Nacos/Apollo alias-resolution bug shows that remote-config integrations (common in enterprise K8s deployments) are less battle-tested than local `.env`-based config — worth extra validation before relying on `AliasChoices`-style aliasing in production.
+- **Both projects are quietly investing in internal hardening** (Dify's ORM/session refactor and test migration, LiteLLM's Rust-based gateway rewrite) — expect continued wide-diff, low-user-visibility PRs in the near term rather than headline features, which is generally a healthy sign for platforms moving toward production-grade stability.
 
 ---
 
@@ -70,50 +71,37 @@ In a full infra stack, LiteLLM would typically sit *underneath* an app layer lik
 <details>
 <summary><strong>Dify</strong> — <a href="https://github.com/langgenius/dify">langgenius/dify</a></summary>
 
-# Dify Daily Digest — 2026-08-29
+# Dify Infrastructure Digest — 2026-08-29
 
 ## Today's Highlights
-
-No new releases landed today, but activity concentrated on stability fixes for the Skills/Agent V2 rollout and the multimodal knowledge base. A cluster of bugs surfaced around the recently-shipped Skills feature (upload failures, disappearing nav entries) alongside a data-integrity issue in dataset segment deletion that already has a same-day fix PR. On the engineering-process side, a large `dep-inject session`/`@model_validate` refactor wave (tracking issues [#40372](https://github.com/langgenius/dify/issues/40372) and [#36659](https://github.com/langgenius/dify/issues/36659)) continues to churn through the codebase.
+No releases shipped today, but the config layer took two real hits: a Nacos/Apollo alias-resolution bug ([#41439](https://github.com/langgenius/dify/issues/41439)) already has two competing fix PRs open the same day, and stop-sequences configured on non-workflow apps were confirmed to be silently dropped before reaching the model ([#41460](https://github.com/langgenius/dify/issues/41460), fixed same-day in [#41466](https://github.com/langgenius/dify/pull/41466)). Separately, a more concerning correctness report surfaced: the FunctionCalling agent strategy can report a tool call as successful without actually executing the tool ([#40671](https://github.com/langgenius/dify/issues/40671)). The bulk of PR volume remains internal refactor work — pushing `Session` objects explicitly through model accessors and migrating test suites off mocked sessions onto real SQLite-backed ORM instances.
 
 ## Releases & Breaking Changes
-
 None in the last 24h.
 
 ## New Model & Hardware Support
-
-Nothing new today — the only model-related item is a bug report that custom Cohere models aren't showing up in the Knowledge Base model selector ([#41422](https://github.com/langgenius/dify/issues/41422)).
+Nothing new reported today. The one credential-related addition — [#41469](https://github.com/langgenius/dify/pull/41469) adding AWS KMS as a `KEY_PROVIDER_TYPE` alongside `local`/`azure-keyvault` for tenant credential encryption — is infra/security scope, not model or backend support.
 
 ## Performance & Optimization
+- **TTS streaming timeouts on long replies**: [#41456](https://github.com/langgenius/dify/issues/41456) reports the plugin daemon timing out mid-stream for multi-sentence qwen3-tts-flash output on 1.17.0 self-hosted (Docker Compose). No fix PR yet — worth watching if you rely on long-form TTS plugin responses.
+- One PR ([#41467](https://github.com/langgenius/dify/pull/41467)) claims a "2048-lane parallel execution" tool node, but it's an unsolicited feature from an external org bundling an HTTP 402 crypto micro-payment scheme unrelated to Dify's roadmap — treat as unverified/low-trust pending maintainer triage, not a performance signal.
 
-No throughput/latency/kernel work reported today. The closest adjacent item is a portability fix replacing PostgreSQL-only `NULLS LAST` ordering with a portable boolean sort key for installed-apps pagination, fixing a MySQL `1064` SQL syntax error — PR [#41455](https://github.com/langgenius/dify/pull/41455).
-
-## Stability & Regressions
-
-Ranked by apparent severity/impact:
-
-- **Orphaned attachment records on segment deletion (data integrity)** — deleting a disabled segment from a multimodal dataset removes the `DocumentSegment` row but skips the async cleanup that owns its attachments, leaving `SegmentAttachmentBinding`/`UploadFile` rows orphaned. Issue [#41457](https://github.com/langgenius/dify/issues/41457) — **fix already up** in PR [#41458](https://github.com/langgenius/dify/pull/41458) (schedules cleanup even when segment is disabled, scopes deletes to tenant/dataset/document).
-- **QA segment answer silently cleared on partial update** — Service API partial updates (`content`/`keywords`-only) to a QA segment were unconditionally overwriting `segment.answer`, wiping stored answers due to a `None` default. Issue [#41315](https://github.com/langgenius/dify/issues/41315) — **fix up** in PR [#41445](https://github.com/langgenius/dify/pull/41445).
-- **Skills feature regressions (post-1.17.0 rollout)**:
-  - Skills nav entry flickers because an unresolved feature flag reads as disabled — [#41414](https://github.com/langgenius/dify/issues/41414)
-  - `skill.zip` upload fails entirely in 1.17.0 — [#41307](https://github.com/langgenius/dify/issues/41307)
-  - Skill nav entry needs to be gated by `skill.view` permission — [#41428](https://github.com/langgenius/dify/issues/41428) (closed)
-- **TTS streaming timeout** — long multi-sentence replies from qwen3-tts-flash time out streaming from the plugin daemon on 1.17.0 self-hosted — [#41456](https://github.com/langgenius/dify/issues/41456).
-- **Model deletion error** — deleting a model provider entry throws an error — [#41421](https://github.com/langgenius/dify/issues/41421).
-- **Nacos config source misreads Pydantic aliases** — remote settings source doesn't match config keys against `AliasChoices` field aliases — [#41439](https://github.com/langgenius/dify/issues/41439).
-- **Workflow canvas z-index bug** — dot-grid background renders above nodes/panels/menus in 1.17.0 — [#41451](https://github.com/langgenius/dify/issues/41451).
-- **Tool SSRF misclassification** — upstream 401 responses passing through a Squid proxy are incorrectly classified as `ToolSSRFError` — [#41434](https://github.com/langgenius/dify/issues/41434).
-- **Branding favicon detaches React icon link** — first click on a nav entry is lost after favicon changes — [#41432](https://github.com/langgenius/dify/issues/41432) (closed).
-- Redis `max number of clients reached` connection error — [#31603](https://github.com/langgenius/dify/issues/31603) (closed, longer-running thread).
+## Stability & Regressions (ranked by severity)
+1. **Agent fabricates tool-call success without execution** — [#40671](https://github.com/langgenius/dify/issues/40671): FunctionCalling strategy reports success on tool calls it never ran, correlated with semantic overlap between input data and the agent's own instruction vocabulary. Silent-failure class bug, no fix PR yet — highest severity since it corrupts agent output trust.
+2. **Nacos remote settings ignore pydantic field aliases** — [#41439](https://github.com/langgenius/dify/issues/41439): `AliasChoices`-based config keys aren't matched, so aliased settings loaded from Nacos/Apollo are silently missed. Two fix PRs already open: [#41465](https://github.com/langgenius/dify/pull/41465) and [#41463](https://github.com/langgenius/dify/pull/41463) — duplicate effort, likely to be reconciled.
+3. **Stop sequences dropped for non-workflow apps** — [#41460](https://github.com/langgenius/dify/issues/41460): chatbot/completion/agent/agent-chat apps never forward configured `stop` sequences to the runtime. Fixed same-day in [#41466](https://github.com/langgenius/dify/pull/41466).
+4. **skill.zip upload broken in 1.17.0** — [#41307](https://github.com/langgenius/dify/issues/41307): Skill module can't upload skill packages; no fix PR linked yet.
+5. **Orphaned attachment records on segment deletion** — [#41457](https://github.com/langgenius/dify/issues/41457): deleting a disabled multimodal segment removes the `DocumentSegment` row but skips async cleanup, leaving `SegmentAttachmentBinding`/`UploadFile` rows orphaned — a slow storage leak rather than an acute failure.
+6. **Workflow canvas dot-grid z-index bug** — [#41451](https://github.com/langgenius/dify/issues/41451): background grid renders above nodes/panels/menus in 1.17.0 — cosmetic/UX regression, no functional impact.
 
 ## What This Means for Application Developers
-
-- **Hold off on relying on Skills uploads** in 1.17.0 self-hosted deployments — zip upload and nav visibility are both broken; track [#41307](https://github.com/langgenius/dify/issues/41307) and [#41414](https://github.com/langgenius/dify/issues/41414) before rolling Skills out to users.
-- **If you use multimodal datasets with disabled/deleted segments**, expect orphaned file records until [#41458](https://github.com/langgenius/dify/pull/41458) merges — worth a storage cleanup pass afterward if you've hit this pattern.
-- **Service API consumers doing partial QA-segment updates** should double check stored answers weren't silently cleared prior to [#41445](https://github.com/langgenius/dify/pull/41445) landing.
-- **Agent V2 apps using session snapshots**: PR [#41447](https://github.com/langgenius/dify/pull/41447) adds a 409 (`agent_session_configuration_changed`) when the layer topology changes since a saved snapshot — plan for handling that error code and prompting users to start a new conversation.
-- **Squid/proxy users** relying on tool call SSRF protections should sanity-check that legitimate 401s aren't being blocked as SSRF ([#41434](https://github.com/langgenius/dify/issues/41434)).
-- No breaking API/config changes shipped today, so no urgent action needed on upgrade paths.
+- **Audit agent tool-call trust**: if you use the FunctionCalling agent strategy, don't assume a reported "success" means the tool actually ran — #40671 shows fabricated success is possible today; add your own execution verification where correctness matters.
+- **Check stop-sequence behavior after upgrading**: if you configure `stop` on chatbot/completion/agent apps (not workflow apps), verify the fix in #41466 lands in your version — otherwise sequences are silently ignored.
+- **Hold off on skill.zip uploads on 1.17.0** if you depend on the Skills feature — uploads are currently broken (#41307).
+- **Watch storage growth** if you delete multimodal segments frequently — orphaned attachment/upload rows won't self-clean yet (#41457).
+- **Nacos/Apollo users**: aliased config fields may not be picked up from remote settings sources until one of the two competing PRs merges — don't rely on `AliasChoices` fallback yet.
+- Be cautious merging unsolicited third-party tool-node PRs like #41467 without a security review — it bundles an unrequested payment/monetization mechanism into the workflow engine.
+- The heavy refactor/test-migration activity (session-passing through ORM accessors, SQLite-backed test suites) signals internal hardening work; expect more of these low-risk-but-wide-diff PRs in the near term rather than user-facing features.
 
 </details>
 
@@ -124,42 +112,46 @@ Ranked by apparent severity/impact:
 
 ## Today's Highlights
 
-The proxy shipped a critical startup-crash fix (`_BudgetCascade.rollover_caps` unhashable default breaking `import litellm.proxy.proxy_server`) alongside two other budget/key-management bug fixes, while a long-running Prisma reconnection issue (16 comments, 11 👍) and an unauthenticated `/metrics` PII-exposure report continue to draw attention. On the model-translation side, streaming reliability for the Anthropic `/v1/messages` bridge remains the recurring pain point, with a new intermittent ~16.7s TTFB report and a spec-compliance fix for chat→Responses API streaming landing today.
+No new releases landed today, but activity concentrated on cost/spend-tracking correctness (Anthropic batch billing, streaming usage loss) and proxy stability (MCP Gateway crashes, logging worker queue drops). On the PR side, a large Rust-based OCR/gateway refactor from the BerriAI team continues to advance alongside a steady stream of provider bug fixes (Bedrock partitions, Azure streaming, Mistral TTS).
 
 ## Releases & Breaking Changes
 
-- **v1.100.0-dev.2** — dev release; notable addition is Docker image signature verification via [cosign](https://docs.sigstore.dev/cosign/overview/), letting operators verify image provenance against the key introduced in commit `0112e53`. No breaking API changes noted.
+None in the last 24h.
 
 ## New Model & Hardware Support
 
-- [#38608](https://github.com/BerriAI/litellm/issues/38608) — Request to add GLM-5.3-Flash to `model_prices_and_context_window.json` (closed same day, 2 comments).
-- [#27439](https://github.com/BerriAI/litellm/issues/27439) — DeepSeek V4's graded `reasoning_effort` (`high`/`max`) is stripped to a bare `thinking: {"type": "enabled"}` instead of being passed through, dropping fidelity for DeepSeek V4 Pro/Flash callers.
-- [#38659](https://github.com/BerriAI/litellm/issues/38659) / fix [#38665](https://github.com/BerriAI/litellm/pull/38665) — `cohere.embed-english-v3` on Bedrock rejects `encoding_format` and other default embedding params (400s); fix routes it to `BedrockCohereEmbeddingConfig`.
-- [#38685](https://github.com/BerriAI/litellm/pull/38685) — New first-class **Wingback** guardrail integration, configurable from the Admin UI dropdown or `config.yaml`.
-- [#38688](https://github.com/BerriAI/litellm/pull/38688) — Example proxy hook for SynapticChain's HTTP 402 pay-per-token settlement (not core, but notable for gateway/billing extensibility).
+- **vLLM-Omni videos API** — adds `hosted_vllm` as a video provider, sending multipart form-data creates and passing through Omni-specific params (`extra_params`). ([PR #38148](https://github.com/BerriAI/litellm/pull/38148))
+- **Mistral text-to-speech** — adds a Mistral TTS config target so Voxtral models work on `/v1/audio/speech` (previously 500'd with "Unable to map the custom llm provider=mistral"). ([PR #38755](https://github.com/BerriAI/litellm/pull/38755))
+- **AWS partition-aware endpoints** — builds every AWS host/ARN from the request's region partition instead of hardcoding commercial, fixing GovCloud/China region routing and STS role assumption. ([PR #38747](https://github.com/BerriAI/litellm/pull/38747), closed)
+- Requested: **GLM-5.3-Flash** pricing/context entry in `model_prices_and_context_window.json`. ([Issue #38608](https://github.com/BerriAI/litellm/issues/38608), closed)
 
 ## Performance & Optimization
 
-- [#38689](https://github.com/BerriAI/litellm/issues/38689) — Bimodal TTFB on streaming Anthropic `/v1/messages` requests through the proxy: most runs return first byte in ~2s (matching direct Bedrock), but a subset intermittently spike to ~16.7s; not reproducible calling Bedrock directly, pointing at proxy-side buffering/connection-pool behavior.
-- [#38549](https://github.com/BerriAI/litellm/issues/38549) — Bedrock bearer-token auth still resolves full AWS SigV4 credentials (and discards them) on every request; on hosts without an IMDS endpoint this adds a full IMDS timeout per call — a real per-request latency tax for bearer-token Bedrock users.
-- [#38631](https://github.com/BerriAI/litellm/pull/38631) — `shadow_eval` now measures both arms' cost so shadow-routing jobs report actual savings, including the classifier call's own (sometimes 5x completion) cost, which was previously omitted.
+- **Spend log query index** — adds a `(api_key, startTime)` composite index to `LiteLLM_SpendLogs`, which currently has no `api_key` index; `/spend/logs`, `/spend/logs/ui`, `/key/spend/report`, and `/global/spend/report` all filter on this pair and were scanning every logged request per instance. ([PR #37983](https://github.com/BerriAI/litellm/pull/37983))
+- **Bedrock streaming guardrails** — honors streaming buffer/sampling config for post-call scans so audit-only guardrails no longer force full-response buffering before the first chunk reaches the client (previously stalled Claude Code's streaming UX). ([PR #38722](https://github.com/BerriAI/litellm/pull/38722))
+- **HF config fetch bound + test isolation** — bounds the Hugging Face `config.json` fetch used in cost calculation with a request timeout and removes an un-mocked network GET from embedding tests, addressing CI jobs hanging up to 20 minutes. ([PR #38752](https://github.com/BerriAI/litellm/pull/38752))
 
 ## Stability & Regressions
 
-1. **Critical — proxy fails to start.** [#38687](https://github.com/BerriAI/litellm/pull/38687) fixes `_BudgetCascade.rollover_caps` using a bare mutable default instead of `default_factory`, which broke `import litellm.proxy.proxy_server` (and every test importing it). Fix already merged same day.
-2. **High — DB stability.** [#26886](https://github.com/BerriAI/litellm/issues/26886) — Prisma query engine periodically crashes on the proxy pod with reconnection failures; open since April, still active (16 comments, 11 👍), no fix PR linked yet.
-3. **High — security default.** [#24530](https://github.com/BerriAI/litellm/issues/24530) — `/metrics` Prometheus endpoint is unauthenticated by default and can expose multi-tenant PII in production; opt-in `require_auth_for_metrics_endpoint` exists but the insecure default stands.
-4. **Medium — budget enforcement.** [#38634](https://github.com/BerriAI/litellm/issues/38634) — editing `max_budget`/`budget_duration` (UI or `/key/update`) leaves the existing `budget_limits` window stale, so auth keeps enforcing the old (429) limit. [#38629](https://github.com/BerriAI/litellm/issues/38629) — team model-access is enforced at request time but not at `/key/generate`, and `/key/update` validates against the pre-update model list, letting keys with disallowed models slip through creation.
-5. **Medium — streaming correctness.** [#38610](https://github.com/BerriAI/litellm/issues/38610) — streaming `/v1/messages` returns 200 with `message_start` followed by an SSE error chunk when both primary and fallback fail before content, misleading clients that expect either clean success or a proper error status. Related fix [#38654](https://github.com/BerriAI/litellm/pull/38654) addresses event-ordering bugs in the chat→Responses API streaming bridge for reasoning models (DeepSeek, Qwen).
-6. **Low-medium — infra config drift.** [#37988](https://github.com/BerriAI/litellm/issues/37988) — GCP Terraform module provisions Redis but the deployed proxy reports no coordination Redis (config not wired through). [#22289](https://github.com/BerriAI/litellm/issues/22289) — PostgreSQL/RDS connections silently dropped due to missing idle-connection lifetime defaults on K8s deployments.
+Ranked by apparent severity:
+
+1. **Streaming usage/cost loss (cached tokens)** — when the final SSE chunk carries a non-empty `choices` array, upstream `usage` (including `cached_tokens`) is dropped, causing requests to be billed at full input rate. Flagged as the mirror image of a previously fixed issue (#28735/#8450). No fix PR linked yet. ([Issue #36168](https://github.com/BerriAI/litellm/issues/36168))
+2. **Anthropic batch cost always $0** — `transform_file_content_request` routes `msgbatch_*` IDs to the wrong endpoint, so `CheckBatchCost` silently records 0 tokens/cost for completed batches. Closed, but worth confirming the fix landed. ([Issue #27944](https://github.com/BerriAI/litellm/issues/27944))
+3. **MCP Gateway crash** — `tools/list` throws a cancel-scope `RuntimeError` against spec-compliant Streamable HTTP servers, plus schema columns drop on restart. Closed. ([Issue #28391](https://github.com/BerriAI/litellm/issues/28391))
+4. **LoggingWorker drops its queue across event loops** — `_ensure_queue` abandons the worker task/queue (without cancelling) whenever it observes a new event loop, meaning multi-threaded worker pools silently lose logging on every thread switch. Open, no fix PR yet. ([Issue #36548](https://github.com/BerriAI/litellm/issues/36548))
+5. **Failed streams re-raise/re-log on every `next()`** — a single stuck failed stream re-runs failure logging on each subsequent chunk pull, flooding logging callbacks. Fix in progress: caches the terminal failure and re-raises without re-logging. ([PR #38753](https://github.com/BerriAI/litellm/pull/38753) fixes underlying pattern)
+6. **`litellm stops forwarding model requests`** — reported today against a containerized 1.97.0 proxy after mgmt-API-driven ephemeral key create/auto-delete cycles. A same-day fix PR addresses an `HTTPException` handling bug in `delete_key_fn`/`delete_verification_tokens` causing infinite-loop logging on `/key/delete`. ([Issue #38731](https://github.com/BerriAI/litellm/issues/38731) → [PR #38757](https://github.com/BerriAI/litellm/pull/38757))
+7. **Least-busy routing not balanced/aggressive enough** across multiple vLLM backend deployments. Open. ([Issue #37622](https://github.com/BerriAI/litellm/issues/37622))
+8. **`AllowedFailsPolicy.InternalServerErrorAllowedFails` silently ignored** in `get_allowed_fails_from_policy`. Open. ([Issue #29283](https://github.com/BerriAI/litellm/issues/29283))
+9. Minor UX/data-hygiene bugs: dashboard Logs pagination counts messages instead of sessions ([#38060](https://github.com/BerriAI/litellm/issues/38060)); delete-key confirmation dialog doesn't trim whitespace ([#38732](https://github.com/BerriAI/litellm/issues/38732)); user emails not trimmed on creation ([#28880](https://github.com/BerriAI/litellm/issues/28880)).
 
 ## What This Means for Application Developers
 
-- **Don't trust cost headers for aliased models yet** — [#38691](https://github.com/BerriAI/litellm/pull/38691) fixes `/v1/messages` pricing the cost header off the client-facing alias rather than the actual deployment model, which can silently misprice spend tracking/billing integrations; upgrade if you rely on per-request cost headers.
-- **Budget/key edits need re-verification** — if you programmatically adjust `max_budget`/`budget_duration` or team model allowlists via the API, double-check the resulting enforcement state ([#38634](https://github.com/BerriAI/litellm/issues/38634), [#38629](https://github.com/BerriAI/litellm/issues/38629)) until fixes land — stale limits can cause unexpected 429s or access outside intended scope.
-- **Anthropic streaming callers should add end-to-end health checks**, not just status-code checks — a 200 response can still carry an SSE error chunk with no content ([#38610](https://github.com/BerriAI/litellm/issues/38610)), and TTFB can spike ~8x intermittently ([#38689](https://github.com/BerriAI/litellm/issues/38689)).
-- **Lock your Docker image pulls to signed digests** now that cosign verification is documented for `v1.100.0-dev.2`, especially for production/regulated deployments.
-- **Bedrock users on bearer-token auth** should watch for latency regressions from the redundant SigV4 credential resolution ([#38549](https://github.com/BerriAI/litellm/issues/38549)) until patched.
+- **Audit token/cost accounting** if you rely on LiteLLM's spend tracking with streaming responses or Anthropic batch APIs — both cached-token usage and batch costs have open/recently-closed correctness bugs that can silently underbill or misattribute spend (#36168, #27944).
+- **Claude Code users on Bedrock/Anthropic pass-through** should watch #38718 (cache_control injection landing as a stray top-level field in long multi-turn tool-calling conversations) and #38722 (streaming now respects guardrail buffer config, fixing the "spinner then burst" UX on Bedrock).
+- **Multi-threaded proxy deployments** (worker pools, one event loop per thread) should treat logging as potentially unreliable until #36548 is resolved — don't assume all requests are captured by logging callbacks.
+- **Ephemeral-key workflows via the mgmt API** on 1.97.0 may hit request-forwarding stalls (#38731); a fix for the underlying `/key/delete` exception handling is already up (#38757) and worth picking up early if you use auto-created/auto-deleted keys.
+- Teams using **vLLM-Omni**, **Mistral Voxtral TTS**, or **GCP/GovCloud/China AWS regions** get new first-class support once #38148, #38755, and #38747 merge — worth tracking if those are on your roadmap.
 
 </details>
 

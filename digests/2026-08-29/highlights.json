@@ -1,150 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code ships v2.1.248–251 in 24h",
-      "OpenCode adds Azure Entra ID auth",
-      "Claude Code adds sandboxed --restricted mode",
-      "OpenCode ships MCP metadata passthrough",
-      "Claude Code debuts model-switch hooks",
-      "OpenCode's unqueue-messages issue gets 93 upvotes"
+      "OpenCode ships 10 fixes in one day",
+      "Claude Code v2.1.251 adds hook events",
+      "Both tools battle session state bloat",
+      "Claude Code fights Windows/Electron stability",
+      "OpenCode splits Session/Store architecture",
+      "Enterprise auth gating frustrates Claude Code users"
     ],
     "ai-agents": [
-      "MCP servers digest: 38 PRs, zero new releases",
-      "Filesystem server bug draws 5 rival PRs",
-      "Sequential-thinking server sees duplicate fixes",
-      "Maintainers merge 29 of 38 PRs in 24h",
-      "No release tagged despite fixes hitting main",
-      "Memory server also hit by competing PRs"
+      "MCP servers: 40 PRs, zero releases today",
+      "Filesystem path handling sees duplicate fix PRs",
+      "sequentialthinking schema drift draws fixes",
+      "Memory server persistence safety scrutinized",
+      "Registry submissions rejected, redirected externally",
+      "Everything server session cleanup bugs surface"
     ],
     "ai-infra": [
-      "Dify fixes orphaned-attachment data bug",
-      "LiteLLM patches proxy-crashing regression",
-      "LiteLLM ships v1.100.0-dev.2 with cosign signing",
-      "Dify flags SSRF misclassification gap",
-      "LiteLLM exposes unauthenticated metrics risk",
-      "Anthropic streaming reliability a shared pain point"
+      "Dify agent can fake tool-call success",
+      "LiteLLM loses cost data on cached-token streams",
+      "Neither Dify nor LiteLLM ships a release",
+      "LiteLLM sees 50-60% more raw activity",
+      "Dify adds credential encryption",
+      "LiteLLM patches provider-routing bugs"
     ],
     "ai-trending": [
-      "Chrome DevTools MCP server debuts officially",
-      "deja-vu indexes history across 20 agent tools",
+      "deja-vu: local search across coding-agent history",
+      "Chrome DevTools MCP server goes official",
+      "projectmem warns agents against repeat failures",
       "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
-      "Gemma 4 26B runs in 2GB RAM on M-series Macs",
-      "Microsoft's skill-recorder builds Copilot Skills",
-      "No-LLM local search beats embeddings approach"
+      "x64dbg MCP server written in Zig",
+      "17 coding agents indexed by deja-vu"
     ],
     "ai-web": [
-      "Anthropic unveils Model Hardware Standard preview",
-      "Claude runs autonomous alignment research",
-      "Claude for Teachers launches free K-12 access",
-      "Anthropic opens 10,000-seat scientist program",
-      "MHS lets agents run lab microscopes, robotics",
-      "OpenAI's Thailand post lacks captured text"
+      "Anthropic previews Model Hardware Standard",
+      "MHS lets AI agents control lab hardware directly",
+      "MHS targets drug discovery, quantum calibration",
+      "OpenAI statement on Cursor's SpaceX acquisition",
+      "Anthropic partners with HHMI Janelia",
+      "Labs move beyond models into infrastructure standards"
     ],
     "ai-hn": [
+      "OpenExecutive: open-source AI CEO tops HN",
       "Judge rules Anthropic blacklisting illegal",
-      "Satire 'AI CEO' project goes viral on GitHub",
-      "GLM-5.3-Flash draws 1121 points, 566 comments",
-      "Gemini-3.5-Transcribe rivals Whisper in tests",
-      "Claude's 'load-bearing vocabulary' sparks debate",
-      "Agent-memory and root-access risks stoke anxiety"
+      "GLM-5.3-Flash draws 1125 points, 572 comments",
+      "Qwen3.8-Flash-Next hits 697 points",
+      "OpenAI statement on Cursor-SpaceX deal",
+      "Chinese labs race US frontier on efficient models"
     ],
     "ai-arxiv": [
-      "WikiSkill compiles agent experience into skills",
-      "TTPO enables label-free test-time RL training",
-      "Weak models guide exploration, curb RLVR collapse",
-      "INTENT-AS-A-TOOL detects agentic misalignment",
-      "Puro-2B pretrains under $5,090 on one GPU",
-      "CritICL tackles RLVR entropy collapse"
+      "WikiSkill: agents build persistent skill libraries",
+      "SWE-Prime: fewer, better trajectories beat scale",
+      "CritICL boosts inference from small-model failures",
+      "INTENT-AS-A-TOOL tracks agent misalignment",
+      "Persona-Execution Separation audits agent actions",
+      "Field study reveals real workplace GenAI use"
     ],
     "ai-hf": [
-      "Qwen3.8-27B tops 3.4M downloads, spawns forks",
-      "GLM-5.3 and GLM-5.3-Flash launch fresh cycle",
-      "MiniMax-H3 leads video models, 4.85M downloads",
-      "Kimi-K3 and DeepSeek-V4-Flash ship rapidly",
-      "Lightricks LTX-2.5 extends open video race",
-      "Six authors ship 'uncensored' Qwen3.8 variants"
+      "Qwen3.8-27B and Flash-Next dominate trending",
+      "GLM-5.3-Flash hits 189K downloads",
+      "Kimi-K3 tops 11K likes on Hugging Face",
+      "MiniMax-H3 nears 5M video-gen downloads",
+      "Wave of uncensored Qwen3.8-27B fine-tunes",
+      "Unsloth fastest to ship GGUF quants"
     ],
     "ai-community": [
-      "Prompt injection breaks Claude Code Auto Mode 80%",
-      "Strands agent lifts Opus 5 to 99.95% on ARC-AGI-3",
-      "LLM critic disagreed with itself every trial",
-      "Auto Mode blocked its own malware-kill attempt",
-      "Gemini structured output: 5 undocumented rules",
-      "Harness design beat model choice on benchmark"
+      "Exploits now probe patches within 10 minutes",
+      "Prompt injection beats Claude Code Auto Mode 80%",
+      "Auto Mode blocked user's own kill attempt",
+      "89% of AI 'second opinions' are fake disagreement",
+      "Researcher switched models after Claude refused",
+      "Adversarial roles fix fake AI debate theater"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code ships v2.1.248–251 in 24h",
-      "OpenCode adds Azure Entra ID auth",
-      "Claude Code adds sandboxed --restricted mode",
-      "OpenCode ships MCP metadata passthrough",
-      "Claude Code debuts model-switch hooks",
-      "OpenCode's unqueue-messages issue gets 93 upvotes"
+      "OpenCode ships 10 fixes in one day",
+      "Claude Code v2.1.251 adds hook events",
+      "Both tools battle session state bloat",
+      "Claude Code fights Windows/Electron stability",
+      "OpenCode splits Session/Store architecture",
+      "Enterprise auth gating frustrates Claude Code users"
     ],
     "ai-agents": [
-      "MCP servers digest: 38 PRs, zero new releases",
-      "Filesystem server bug draws 5 rival PRs",
-      "Sequential-thinking server sees duplicate fixes",
-      "Maintainers merge 29 of 38 PRs in 24h",
-      "No release tagged despite fixes hitting main",
-      "Memory server also hit by competing PRs"
+      "MCP servers: 40 PRs, zero releases today",
+      "Filesystem path handling sees duplicate fix PRs",
+      "sequentialthinking schema drift draws fixes",
+      "Memory server persistence safety scrutinized",
+      "Registry submissions rejected, redirected externally",
+      "Everything server session cleanup bugs surface"
     ],
     "ai-infra": [
-      "Dify fixes orphaned-attachment data bug",
-      "LiteLLM patches proxy-crashing regression",
-      "LiteLLM ships v1.100.0-dev.2 with cosign signing",
-      "Dify flags SSRF misclassification gap",
-      "LiteLLM exposes unauthenticated metrics risk",
-      "Anthropic streaming reliability a shared pain point"
+      "Dify agent can fake tool-call success",
+      "LiteLLM loses cost data on cached-token streams",
+      "Neither Dify nor LiteLLM ships a release",
+      "LiteLLM sees 50-60% more raw activity",
+      "Dify adds credential encryption",
+      "LiteLLM patches provider-routing bugs"
     ],
     "ai-trending": [
-      "Chrome DevTools MCP server debuts officially",
-      "deja-vu indexes history across 20 agent tools",
+      "deja-vu: local search across coding-agent history",
+      "Chrome DevTools MCP server goes official",
+      "projectmem warns agents against repeat failures",
       "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
-      "Gemma 4 26B runs in 2GB RAM on M-series Macs",
-      "Microsoft's skill-recorder builds Copilot Skills",
-      "No-LLM local search beats embeddings approach"
+      "x64dbg MCP server written in Zig",
+      "17 coding agents indexed by deja-vu"
     ],
     "ai-web": [
-      "Anthropic unveils Model Hardware Standard preview",
-      "Claude runs autonomous alignment research",
-      "Claude for Teachers launches free K-12 access",
-      "Anthropic opens 10,000-seat scientist program",
-      "MHS lets agents run lab microscopes, robotics",
-      "OpenAI's Thailand post lacks captured text"
+      "Anthropic previews Model Hardware Standard",
+      "MHS lets AI agents control lab hardware directly",
+      "MHS targets drug discovery, quantum calibration",
+      "OpenAI statement on Cursor's SpaceX acquisition",
+      "Anthropic partners with HHMI Janelia",
+      "Labs move beyond models into infrastructure standards"
     ],
     "ai-hn": [
+      "OpenExecutive: open-source AI CEO tops HN",
       "Judge rules Anthropic blacklisting illegal",
-      "Satire 'AI CEO' project goes viral on GitHub",
-      "GLM-5.3-Flash draws 1121 points, 566 comments",
-      "Gemini-3.5-Transcribe rivals Whisper in tests",
-      "Claude's 'load-bearing vocabulary' sparks debate",
-      "Agent-memory and root-access risks stoke anxiety"
+      "GLM-5.3-Flash draws 1125 points, 572 comments",
+      "Qwen3.8-Flash-Next hits 697 points",
+      "OpenAI statement on Cursor-SpaceX deal",
+      "Chinese labs race US frontier on efficient models"
     ],
     "ai-arxiv": [
-      "WikiSkill compiles agent experience into skills",
-      "TTPO enables label-free test-time RL training",
-      "Weak models guide exploration, curb RLVR collapse",
-      "INTENT-AS-A-TOOL detects agentic misalignment",
-      "Puro-2B pretrains under $5,090 on one GPU",
-      "CritICL tackles RLVR entropy collapse"
+      "WikiSkill: agents build persistent skill libraries",
+      "SWE-Prime: fewer, better trajectories beat scale",
+      "CritICL boosts inference from small-model failures",
+      "INTENT-AS-A-TOOL tracks agent misalignment",
+      "Persona-Execution Separation audits agent actions",
+      "Field study reveals real workplace GenAI use"
     ],
     "ai-hf": [
-      "Qwen3.8-27B tops 3.4M downloads, spawns forks",
-      "GLM-5.3 and GLM-5.3-Flash launch fresh cycle",
-      "MiniMax-H3 leads video models, 4.85M downloads",
-      "Kimi-K3 and DeepSeek-V4-Flash ship rapidly",
-      "Lightricks LTX-2.5 extends open video race",
-      "Six authors ship 'uncensored' Qwen3.8 variants"
+      "Qwen3.8-27B and Flash-Next dominate trending",
+      "GLM-5.3-Flash hits 189K downloads",
+      "Kimi-K3 tops 11K likes on Hugging Face",
+      "MiniMax-H3 nears 5M video-gen downloads",
+      "Wave of uncensored Qwen3.8-27B fine-tunes",
+      "Unsloth fastest to ship GGUF quants"
     ],
     "ai-community": [
-      "Prompt injection breaks Claude Code Auto Mode 80%",
-      "Strands agent lifts Opus 5 to 99.95% on ARC-AGI-3",
-      "LLM critic disagreed with itself every trial",
-      "Auto Mode blocked its own malware-kill attempt",
-      "Gemini structured output: 5 undocumented rules",
-      "Harness design beat model choice on benchmark"
+      "Exploits now probe patches within 10 minutes",
+      "Prompt injection beats Claude Code Auto Mode 80%",
+      "Auto Mode blocked user's own kill attempt",
+      "89% of AI 'second opinions' are fake disagreement",
+      "Researcher switched models after Claude refused",
+      "Adversarial roles fix fake AI debate theater"
     ]
   }
 }
