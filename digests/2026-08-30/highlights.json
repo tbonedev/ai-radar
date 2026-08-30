@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code issue hits 5,083 👍 and 387 comments",
+      "OpenCode bot ships same-day concurrency, OOM fixes",
+      "Neither Claude Code nor OpenCode released in 24h",
+      "OpenCode absorbs fallout from recent UI redesign",
+      "Both tools converge on plugin and routing gaps",
+      "Claude Code Skills repo tracked alongside CLI"
+    ],
+    "ai-agents": [
+      "MCP servers: 9 PRs vs just 1 issue update today",
+      "Two contributors fix same stale-session bug",
+      "PR #4687 fixes missing zod dependency declare",
+      "Filesystem, time, memory servers get hardening",
+      "No new MCP server releases in the last 24h",
+      "A June 2025 PR still sits unmerged in servers"
+    ],
+    "ai-infra": [
+      "Dify hit by three RAG index-misalignment bugs",
+      "LiteLLM exposes unauthenticated metrics endpoint",
+      "LiteLLM patches a credential-forwarding leak",
+      "LiteLLM ships v1.100.0-rc.1 and v1.99.0-rc.2",
+      "Docker Model Runner gains new backend support",
+      "Dify pushes ahead with GraphRAG retrieval upgrade"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "Gemma 4 26B runs in 2GB RAM on M-series Macs",
+      "Heretic automates LLM censorship removal",
+      "PixelRAG retrieves via pixels, not parsed text",
+      "deja-vu searches your past AI coding sessions",
+      "On-device MoE inference hits consumer hardware"
+    ],
+    "ai-hn": [
+      "GLM-5.3-Flash tops HN with 1,128 points",
+      "Judge strikes down Anthropic blacklist order",
+      "OpenAI reacts to Cursor's SpaceX acquisition",
+      "Apple's M6/M5 Ultra launch draws big engagement",
+      "Gemini-3.5-Transcribe rivals Whisper on HN",
+      "OpenExecutive satirizes AI-driven layoffs"
+    ],
+    "ai-hf": [
+      "Qwen3.8-Flash-Next and Qwen3.8-27B lead charts",
+      "GLM-5.3 and GLM-5.3-Flash drop from zai-org",
+      "MiniMax-H3 pulls strong video-gen downloads",
+      "Kimi-K3 tops 11K likes as multimodal contender",
+      "DeepSeek-V4-Flash-0731 keeps steady cadence",
+      "Thomson Reuters enters with domain-tuned model"
+    ],
+    "ai-community": [
+      "Prompt injection breaks Claude Code Auto Mode",
+      "OCaml exploits appear within 10 min of a patch",
+      "40 lines of Go cut one team's LLM bill by 71%",
+      "GPT-5.6 Luna price drops to $0.20/M input",
+      "Auto Mode's own safety layer blocks its cleanup",
+      "Coding agents speed-run exploit discovery"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code issue hits 5,083 👍 and 387 comments",
+      "OpenCode bot ships same-day concurrency, OOM fixes",
+      "Neither Claude Code nor OpenCode released in 24h",
+      "OpenCode absorbs fallout from recent UI redesign",
+      "Both tools converge on plugin and routing gaps",
+      "Claude Code Skills repo tracked alongside CLI"
+    ],
+    "ai-agents": [
+      "MCP servers: 9 PRs vs just 1 issue update today",
+      "Two contributors fix same stale-session bug",
+      "PR #4687 fixes missing zod dependency declare",
+      "Filesystem, time, memory servers get hardening",
+      "No new MCP server releases in the last 24h",
+      "A June 2025 PR still sits unmerged in servers"
+    ],
+    "ai-infra": [
+      "Dify hit by three RAG index-misalignment bugs",
+      "LiteLLM exposes unauthenticated metrics endpoint",
+      "LiteLLM patches a credential-forwarding leak",
+      "LiteLLM ships v1.100.0-rc.1 and v1.99.0-rc.2",
+      "Docker Model Runner gains new backend support",
+      "Dify pushes ahead with GraphRAG retrieval upgrade"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "Gemma 4 26B runs in 2GB RAM on M-series Macs",
+      "Heretic automates LLM censorship removal",
+      "PixelRAG retrieves via pixels, not parsed text",
+      "deja-vu searches your past AI coding sessions",
+      "On-device MoE inference hits consumer hardware"
+    ],
+    "ai-hn": [
+      "GLM-5.3-Flash tops HN with 1,128 points",
+      "Judge strikes down Anthropic blacklist order",
+      "OpenAI reacts to Cursor's SpaceX acquisition",
+      "Apple's M6/M5 Ultra launch draws big engagement",
+      "Gemini-3.5-Transcribe rivals Whisper on HN",
+      "OpenExecutive satirizes AI-driven layoffs"
+    ],
+    "ai-hf": [
+      "Qwen3.8-Flash-Next and Qwen3.8-27B lead charts",
+      "GLM-5.3 and GLM-5.3-Flash drop from zai-org",
+      "MiniMax-H3 pulls strong video-gen downloads",
+      "Kimi-K3 tops 11K likes as multimodal contender",
+      "DeepSeek-V4-Flash-0731 keeps steady cadence",
+      "Thomson Reuters enters with domain-tuned model"
+    ],
+    "ai-community": [
+      "Prompt injection breaks Claude Code Auto Mode",
+      "OCaml exploits appear within 10 min of a patch",
+      "40 lines of Go cut one team's LLM bill by 71%",
+      "GPT-5.6 Luna price drops to $0.20/M input",
+      "Auto Mode's own safety layer blocks its cleanup",
+      "Coding agents speed-run exploit discovery"
+    ]
+  }
+}
