@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code vs OpenCode activity compared",
+      "OpenCode logs 197 issues, 157 PRs touched",
+      "Claude Code issue #18435 gets 767 👍",
+      "OpenCode issue #1505 draws 128 comments",
+      "Windows Desktop stability dominates Claude Code",
+      "Auto-compaction reliability concerns at OpenCode"
+    ],
+    "ai-agents": [
+      "MCP Servers: 11 PRs touched, 1 issue closed",
+      "Filesystem security bug fixed within a week",
+      "PR #4704 blocks Windows paths on POSIX",
+      "New Simplified Chinese README for MCP",
+      "MCP Registry publishing docs added",
+      "SSRF and path-traversal hardening lands"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM: no releases, pure hardening",
+      "LiteLLM's Rust gateway gains full middleware stack",
+      "Dify tackles RBAC, storage leak, MCP 500s",
+      "LiteLLM fixes Anthropic, Gemini, Bedrock bugs",
+      "Gateways race toward sub-1ms overhead",
+      "Dify adds workflow-as-tool, Langfuse OTel"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "Gemma 4 26B runs in 2GB RAM on MacBooks",
+      "PixelRAG searches rendered pages, skips HTML",
+      "Microsoft SkillOpt auto-tunes agent skills",
+      "deja-vu indexes coding agent session history",
+      "p-e-w/heretic: fully automatic tool trending"
+    ],
+    "ai-web": [
+      "OpenAI posts on ChatGPT ads expansion",
+      "Anthropic publishes nothing new today",
+      "Anthropic sitemap holds steady at 440 pages",
+      "OpenAI's sitemap grows to 932 articles",
+      "New OpenAI post only crawled as metadata",
+      "Quiet publishing day for both AI labs"
+    ],
+    "ai-hn": [
+      "OpenAI's Cursor call after SpaceX buyout: 841 pts",
+      "Judge rules Anthropic blacklist illegal: 639 pts",
+      "Breaking Claude Code Opus 5 Auto Mode exploit",
+      "Meta researcher's AI agent deletes her emails",
+      "Diffusion language model deep-dive trends",
+      "\"Good Culture, Not AI\" essay hits 469 points"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B pulls 4.7M downloads, 13K+ likes",
+      "GLM-5.3 dense and Flash variants trend",
+      "DeepSeek V4-Flash series gains traction",
+      "Nine abliterated Qwen3.8-27B GGUF derivatives",
+      "MiniMax-H3 spins up fast-growing video ecosystem",
+      "Lightricks LTX-2.5 pushes open video generation"
+    ],
+    "ai-community": [
+      "Prompt injection breaks Claude Code Auto Mode",
+      "Reversibility gate catches 600/600 tampered mutations",
+      "Probe vs Prose: verifier testing across 20 scenarios",
+      "Dev.to and Lobste.rs: 33 AI articles tracked",
+      "Auto Mode blocked its own kill attempt",
+      "Structured probes beat prose on vague rules"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code vs OpenCode activity compared",
+      "OpenCode logs 197 issues, 157 PRs touched",
+      "Claude Code issue #18435 gets 767 👍",
+      "OpenCode issue #1505 draws 128 comments",
+      "Windows Desktop stability dominates Claude Code",
+      "Auto-compaction reliability concerns at OpenCode"
+    ],
+    "ai-agents": [
+      "MCP Servers: 11 PRs touched, 1 issue closed",
+      "Filesystem security bug fixed within a week",
+      "PR #4704 blocks Windows paths on POSIX",
+      "New Simplified Chinese README for MCP",
+      "MCP Registry publishing docs added",
+      "SSRF and path-traversal hardening lands"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM: no releases, pure hardening",
+      "LiteLLM's Rust gateway gains full middleware stack",
+      "Dify tackles RBAC, storage leak, MCP 500s",
+      "LiteLLM fixes Anthropic, Gemini, Bedrock bugs",
+      "Gateways race toward sub-1ms overhead",
+      "Dify adds workflow-as-tool, Langfuse OTel"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "Gemma 4 26B runs in 2GB RAM on MacBooks",
+      "PixelRAG searches rendered pages, skips HTML",
+      "Microsoft SkillOpt auto-tunes agent skills",
+      "deja-vu indexes coding agent session history",
+      "p-e-w/heretic: fully automatic tool trending"
+    ],
+    "ai-web": [
+      "OpenAI posts on ChatGPT ads expansion",
+      "Anthropic publishes nothing new today",
+      "Anthropic sitemap holds steady at 440 pages",
+      "OpenAI's sitemap grows to 932 articles",
+      "New OpenAI post only crawled as metadata",
+      "Quiet publishing day for both AI labs"
+    ],
+    "ai-hn": [
+      "OpenAI's Cursor call after SpaceX buyout: 841 pts",
+      "Judge rules Anthropic blacklist illegal: 639 pts",
+      "Breaking Claude Code Opus 5 Auto Mode exploit",
+      "Meta researcher's AI agent deletes her emails",
+      "Diffusion language model deep-dive trends",
+      "\"Good Culture, Not AI\" essay hits 469 points"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B pulls 4.7M downloads, 13K+ likes",
+      "GLM-5.3 dense and Flash variants trend",
+      "DeepSeek V4-Flash series gains traction",
+      "Nine abliterated Qwen3.8-27B GGUF derivatives",
+      "MiniMax-H3 spins up fast-growing video ecosystem",
+      "Lightricks LTX-2.5 pushes open video generation"
+    ],
+    "ai-community": [
+      "Prompt injection breaks Claude Code Auto Mode",
+      "Reversibility gate catches 600/600 tampered mutations",
+      "Probe vs Prose: verifier testing across 20 scenarios",
+      "Dev.to and Lobste.rs: 33 AI articles tracked",
+      "Auto Mode blocked its own kill attempt",
+      "Structured probes beat prose on vague rules"
+    ]
+  }
+}
