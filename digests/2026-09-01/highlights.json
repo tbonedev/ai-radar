@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.252 patches 3 bugs",
+      "OpenCode logs 204 PR updates in 24h",
+      "OpenCode adds Azure Entra ID auth",
+      "Claude Code hardens ZDR, Windows packaging",
+      "Clipboard, keybinding bugs plague both tools",
+      "Claude Code issue triage called inconsistent"
+    ],
+    "ai-agents": [
+      "MCP servers ship v2026.8.31 patch release",
+      "Zod v3→v4 broke schemas in 3 MCP servers",
+      "server-fetch SSRF fix still in review",
+      "9 PRs touched, 4 closed on MCP servers",
+      "Filesystem, memory servers get schema fixes",
+      "MCP registry ecosystem spans 7 projects"
+    ],
+    "ai-infra": [
+      "LiteLLM ships supply-chain security release",
+      "Dify mid-migration to new Graphon engine",
+      "Dify RBAC decorator bug found missing",
+      "LiteLLM patches silent ssl_verify bypass",
+      "LiteLLM maps Gemini 3.7 Flash reasoning effort",
+      "Dify merges 4+ fix PRs, 2 big PRs in flight"
+    ],
+    "ai-trending": [
+      "MiniMind trains 64M LLM from scratch in 2h",
+      "Kimi K3 (2.78T params) runs on CPU, 8GB RAM",
+      "PixelRAG skips OCR with pixel-native search",
+      "deja-vu indexes Claude Code, Codex sessions",
+      "165 Agent Skills for scientific research",
+      "kimi-k3-in-c: dependency-free C99 inference"
+    ],
+    "ai-web": [
+      "Anthropic discloses Claude security incidents",
+      "AISI tested unnamed model 'Claude Mythos 5'",
+      "Third-party eval misconfig exposed real systems",
+      "OpenAI backs California AI youth safety bill",
+      "Anthropic sitemap tops 438 published articles",
+      "OpenAI sitemap nears 933 total articles"
+    ],
+    "ai-hn": [
+      "Judge rules Anthropic blacklist illegal, 646 pts",
+      "Mac Studio/Mini shortage tied to local AI demand",
+      "Breaking Claude Code Opus 5 Auto Mode",
+      "ChatGPT Work surface draws technical scrutiny",
+      "Diffusion language model build guide trends",
+      "Rise and Fall of Agent Civilizations sparks debate"
+    ],
+    "ai-arxiv": [
+      "RLVR's gains may not transfer to agentic tasks",
+      "Sycophancy transfers from neutral training data",
+      "On-policy distillation reliability questioned",
+      "Cheap responsible-AI benchmarks flip conclusions",
+      "Medical scribe audit: LLM judges miss omissions",
+      "Superintelligence paper eyes post-RLVR path"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B nets 13,523 likes, ~5M downloads",
+      "Unsloth GGUF build tops 9.3M downloads",
+      "Kimi-K3 multimodal release earns 11,125 likes",
+      "GLM-5.3 debuts with new glm_moe_dsa architecture",
+      "LTX-2.5 and MiniMax H3 heat up video gen",
+      "Abliterated Qwen3.8 variants flood community"
+    ],
+    "ai-community": [
+      "Replay JSONL traces to debug agent runs",
+      "Test ADK agents on structure, not sentences",
+      "Reader catches benchmark's leaked test set",
+      "DSPy pipeline overfits, flops in production",
+      "Dev.to AI coverage spans 30 articles today",
+      "Lobste.rs adds 3 AI stories to the mix"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.252 patches 3 bugs",
+      "OpenCode logs 204 PR updates in 24h",
+      "OpenCode adds Azure Entra ID auth",
+      "Claude Code hardens ZDR, Windows packaging",
+      "Clipboard, keybinding bugs plague both tools",
+      "Claude Code issue triage called inconsistent"
+    ],
+    "ai-agents": [
+      "MCP servers ship v2026.8.31 patch release",
+      "Zod v3→v4 broke schemas in 3 MCP servers",
+      "server-fetch SSRF fix still in review",
+      "9 PRs touched, 4 closed on MCP servers",
+      "Filesystem, memory servers get schema fixes",
+      "MCP registry ecosystem spans 7 projects"
+    ],
+    "ai-infra": [
+      "LiteLLM ships supply-chain security release",
+      "Dify mid-migration to new Graphon engine",
+      "Dify RBAC decorator bug found missing",
+      "LiteLLM patches silent ssl_verify bypass",
+      "LiteLLM maps Gemini 3.7 Flash reasoning effort",
+      "Dify merges 4+ fix PRs, 2 big PRs in flight"
+    ],
+    "ai-trending": [
+      "MiniMind trains 64M LLM from scratch in 2h",
+      "Kimi K3 (2.78T params) runs on CPU, 8GB RAM",
+      "PixelRAG skips OCR with pixel-native search",
+      "deja-vu indexes Claude Code, Codex sessions",
+      "165 Agent Skills for scientific research",
+      "kimi-k3-in-c: dependency-free C99 inference"
+    ],
+    "ai-web": [
+      "Anthropic discloses Claude security incidents",
+      "AISI tested unnamed model 'Claude Mythos 5'",
+      "Third-party eval misconfig exposed real systems",
+      "OpenAI backs California AI youth safety bill",
+      "Anthropic sitemap tops 438 published articles",
+      "OpenAI sitemap nears 933 total articles"
+    ],
+    "ai-hn": [
+      "Judge rules Anthropic blacklist illegal, 646 pts",
+      "Mac Studio/Mini shortage tied to local AI demand",
+      "Breaking Claude Code Opus 5 Auto Mode",
+      "ChatGPT Work surface draws technical scrutiny",
+      "Diffusion language model build guide trends",
+      "Rise and Fall of Agent Civilizations sparks debate"
+    ],
+    "ai-arxiv": [
+      "RLVR's gains may not transfer to agentic tasks",
+      "Sycophancy transfers from neutral training data",
+      "On-policy distillation reliability questioned",
+      "Cheap responsible-AI benchmarks flip conclusions",
+      "Medical scribe audit: LLM judges miss omissions",
+      "Superintelligence paper eyes post-RLVR path"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B nets 13,523 likes, ~5M downloads",
+      "Unsloth GGUF build tops 9.3M downloads",
+      "Kimi-K3 multimodal release earns 11,125 likes",
+      "GLM-5.3 debuts with new glm_moe_dsa architecture",
+      "LTX-2.5 and MiniMax H3 heat up video gen",
+      "Abliterated Qwen3.8 variants flood community"
+    ],
+    "ai-community": [
+      "Replay JSONL traces to debug agent runs",
+      "Test ADK agents on structure, not sentences",
+      "Reader catches benchmark's leaked test set",
+      "DSPy pipeline overfits, flops in production",
+      "Dev.to AI coverage spans 30 articles today",
+      "Lobste.rs adds 3 AI stories to the mix"
+    ]
+  }
+}
