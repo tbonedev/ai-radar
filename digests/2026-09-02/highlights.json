@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.258 fixes macOS 12 launch crash",
+      "OpenCode v1.18.26 patches Bedrock GPT-5.6 reasoning",
+      "Claude Code adds default Fable 5.1 model",
+      "Issue #38335 hits 843 comments, 476 👍",
+      "OpenCode issue #6231 tops 225 👍 on auto-discovery",
+      "OpenCode ships high-velocity reliability fixes"
+    ],
+    "ai-agents": [
+      "MCP servers: 6 issues, 7 PRs merged in 24h",
+      "PR #4658 unifies git_log output schema",
+      "Memory server fix stops silent-failure deletes",
+      "Wave of promotional 'Add MCP server' issues",
+      "Maintainers triage community bugs same-day",
+      "Filesystem security-hardening PRs still open"
+    ],
+    "ai-infra": [
+      "Dify fixes E2B sandbox lifecycle, Redis leaks",
+      "LiteLLM pushes Rust rewrite for faster routing",
+      "LiteLLM adds HeFu, OpenInfer providers",
+      "Dify Agent V2 stalls on unresolved tool calls",
+      "LiteLLM MCP auto-execute hijacks tool calls",
+      "LiteLLM ships v1.99.1, v1.97.1 Docker patches"
+    ],
+    "ai-trending": [
+      "x64dbg-mcp-server drives debugger via MCP",
+      "deja-vu indexes coding agent session history",
+      "PixelRAG retrieves pages as images, not text",
+      "projectmem warns agents against repeat failures",
+      "turbo-fieldfare runs Gemma 4 26B MoE model",
+      "Trending mixes MCP tools and RAG research"
+    ],
+    "ai-web": [
+      "Anthropic launches Enterprise Frontier Safeguards",
+      "Claude gets text watermarking for EU AI Act",
+      "Anthropic addresses unauthorized access incidents",
+      "OpenAI teases healthcare records integration",
+      "OpenAI announces 'Path to Astra'",
+      "OpenAI adds 'Enterprise Data' signals page"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.1 & Mythos 5.1 top HN, 1291 pts",
+      "Small transformer beats LLMs on ARC-1 puzzle",
+      "Dan Luu rebuts Ed Zitron's AI predictions",
+      "'Claude Code went rogue' incident sparks debate",
+      "Breaking Claude Code Opus 5 Auto Mode security",
+      "'I Have Been Clawed' incident index launches"
+    ],
+    "ai-arxiv": [
+      "LLM-as-judge internals probed via 8 attacks",
+      "Quantization damage should be spent globally",
+      "Harness-of-Harness treats scaffolds as learnable",
+      "HarnessDev pushes long-horizon agent autonomy",
+      "SWE-agent scoring turns trajectory-aware",
+      "Facet-0, H3-World blend video and control"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops likes chart with 13,637",
+      "Qwen3.8-Flash-Next spawns GGUF, FP8 derivatives",
+      "GLM-5.3 and GLM-5.3-Flash launch from zai-org",
+      "DeepSeek-V4-Flash-Vision-Exp debuts",
+      "Kimi-K3 racks up 11,137 likes",
+      "MiniMax-H3 video model hits 5.5M downloads"
+    ],
+    "ai-community": [
+      "Self-review flagged flaws but agent shipped anyway",
+      "AgentSelfEdit: one edit fixed 4 tasks, broke 1",
+      "Agents write ASTs instead of raw code",
+      "Execution trees replace flat logs for debugging",
+      "Dev.to digest covers 30 AI articles today",
+      "Lobste.rs surfaces 3 notable AI stories"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.258 fixes macOS 12 launch crash",
+      "OpenCode v1.18.26 patches Bedrock GPT-5.6 reasoning",
+      "Claude Code adds default Fable 5.1 model",
+      "Issue #38335 hits 843 comments, 476 👍",
+      "OpenCode issue #6231 tops 225 👍 on auto-discovery",
+      "OpenCode ships high-velocity reliability fixes"
+    ],
+    "ai-agents": [
+      "MCP servers: 6 issues, 7 PRs merged in 24h",
+      "PR #4658 unifies git_log output schema",
+      "Memory server fix stops silent-failure deletes",
+      "Wave of promotional 'Add MCP server' issues",
+      "Maintainers triage community bugs same-day",
+      "Filesystem security-hardening PRs still open"
+    ],
+    "ai-infra": [
+      "Dify fixes E2B sandbox lifecycle, Redis leaks",
+      "LiteLLM pushes Rust rewrite for faster routing",
+      "LiteLLM adds HeFu, OpenInfer providers",
+      "Dify Agent V2 stalls on unresolved tool calls",
+      "LiteLLM MCP auto-execute hijacks tool calls",
+      "LiteLLM ships v1.99.1, v1.97.1 Docker patches"
+    ],
+    "ai-trending": [
+      "x64dbg-mcp-server drives debugger via MCP",
+      "deja-vu indexes coding agent session history",
+      "PixelRAG retrieves pages as images, not text",
+      "projectmem warns agents against repeat failures",
+      "turbo-fieldfare runs Gemma 4 26B MoE model",
+      "Trending mixes MCP tools and RAG research"
+    ],
+    "ai-web": [
+      "Anthropic launches Enterprise Frontier Safeguards",
+      "Claude gets text watermarking for EU AI Act",
+      "Anthropic addresses unauthorized access incidents",
+      "OpenAI teases healthcare records integration",
+      "OpenAI announces 'Path to Astra'",
+      "OpenAI adds 'Enterprise Data' signals page"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.1 & Mythos 5.1 top HN, 1291 pts",
+      "Small transformer beats LLMs on ARC-1 puzzle",
+      "Dan Luu rebuts Ed Zitron's AI predictions",
+      "'Claude Code went rogue' incident sparks debate",
+      "Breaking Claude Code Opus 5 Auto Mode security",
+      "'I Have Been Clawed' incident index launches"
+    ],
+    "ai-arxiv": [
+      "LLM-as-judge internals probed via 8 attacks",
+      "Quantization damage should be spent globally",
+      "Harness-of-Harness treats scaffolds as learnable",
+      "HarnessDev pushes long-horizon agent autonomy",
+      "SWE-agent scoring turns trajectory-aware",
+      "Facet-0, H3-World blend video and control"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops likes chart with 13,637",
+      "Qwen3.8-Flash-Next spawns GGUF, FP8 derivatives",
+      "GLM-5.3 and GLM-5.3-Flash launch from zai-org",
+      "DeepSeek-V4-Flash-Vision-Exp debuts",
+      "Kimi-K3 racks up 11,137 likes",
+      "MiniMax-H3 video model hits 5.5M downloads"
+    ],
+    "ai-community": [
+      "Self-review flagged flaws but agent shipped anyway",
+      "AgentSelfEdit: one edit fixed 4 tasks, broke 1",
+      "Agents write ASTs instead of raw code",
+      "Execution trees replace flat logs for debugging",
+      "Dev.to digest covers 30 AI articles today",
+      "Lobste.rs surfaces 3 notable AI stories"
+    ]
+  }
+}
