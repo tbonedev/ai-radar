@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.259 adds managed MCP support",
+      "OpenCode v1.18.27 patches Bedrock/Vertex bugs",
+      "Claude Code multi-window issue hits 228 👍",
+      "OpenCode model auto-discovery gets 225 👍",
+      "New sandbox `cd` guard regression in Git Bash",
+      "CLI ecosystem stabilizes after rapid feature growth"
+    ],
+    "ai-agents": [
+      "server-memory dominates 23 issues, 29 PRs today",
+      "Atomic persistence fix lands for saveGraph",
+      "Mutation serialization fix merged (#4555)",
+      "Security hardening issue still open after 4 months",
+      "Duplicate PRs signal maintainer bandwidth strain",
+      "No new releases across 7 MCP projects today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM ship zero releases today",
+      "LiteLLM auth deadlock freezes workers 15 minutes",
+      "LiteLLM Responses API has cross-tenant authz gap",
+      "Dify 1.17.0 hit by Skills upload blocker",
+      "Dify MySQL isolation-level bug in Knowledge API",
+      "LiteLLM Rust gateway rewrite still debated"
+    ],
+    "ai-trending": [
+      "google-research/timesfm: new time-series model",
+      "deja-vu builds agent memory with no LLM calls",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "PixelRAG proposes pixel-native retrieval",
+      "Konnect brings AI-assisted PCB design to KiCad 10",
+      "Trending finds span research to hardware tools"
+    ],
+    "ai-web": [
+      "Anthropic launches Enterprise Frontier Safeguards",
+      "EFS pairs zero data retention with misuse detection",
+      "EFS rollout starts this fall with cloud partners",
+      "Anthropic publishes worker retraining research",
+      "Retraining yields 2-3pp employment gain",
+      "OpenAI has no new content this cycle"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.1 and Mythos 5.1 launch, 1396 pts",
+      "Gemini 3.8 Flash and Flash Cyber debut",
+      "Meta ships Muse Spark 1.3",
+      "Multiverse Computing's Quasar 438B lands",
+      "Dan Luu grades Zitron's AI skeptic predictions",
+      "NYC school AI ban sparks heavy debate"
+    ],
+    "ai-arxiv": [
+      "UE5M3 FP4 scaling stabilizes 4-bit pretraining",
+      "Cliff learns process rewards from first mistake",
+      "Gold-medal coding competition pipelines emerge",
+      "Cheaper agent benchmarking methods proposed",
+      "RAG poisoning attacks target code generation",
+      "World models improve web agent evaluation"
+    ],
+    "ai-hf": [
+      "GLM-5.3 and Qwen3.8 lead trending models",
+      "Qwen3.8-27B is the week's most-liked release",
+      "Qwen3.8 GGUF quant tops 9.5M downloads",
+      "LTX-2.5 video model crosses 1M downloads",
+      "MiniMax-H3 video model hits 1M+ downloads",
+      "orcarouter floods list with GGUF quantizations"
+    ],
+    "ai-community": [
+      "AI gateway added 400ms via sequential middleware",
+      "Agent found 3 tool-access flaws in own app",
+      "LLM timeout didn't stop server-side work",
+      "Cancellation must reach the actual fetch call",
+      "Martin Fowler explores an 'accidental blackboard'",
+      "Dev.to and Lobste.rs spotlight AI engineering pitfalls"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.259 adds managed MCP support",
+      "OpenCode v1.18.27 patches Bedrock/Vertex bugs",
+      "Claude Code multi-window issue hits 228 👍",
+      "OpenCode model auto-discovery gets 225 👍",
+      "New sandbox `cd` guard regression in Git Bash",
+      "CLI ecosystem stabilizes after rapid feature growth"
+    ],
+    "ai-agents": [
+      "server-memory dominates 23 issues, 29 PRs today",
+      "Atomic persistence fix lands for saveGraph",
+      "Mutation serialization fix merged (#4555)",
+      "Security hardening issue still open after 4 months",
+      "Duplicate PRs signal maintainer bandwidth strain",
+      "No new releases across 7 MCP projects today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM ship zero releases today",
+      "LiteLLM auth deadlock freezes workers 15 minutes",
+      "LiteLLM Responses API has cross-tenant authz gap",
+      "Dify 1.17.0 hit by Skills upload blocker",
+      "Dify MySQL isolation-level bug in Knowledge API",
+      "LiteLLM Rust gateway rewrite still debated"
+    ],
+    "ai-trending": [
+      "google-research/timesfm: new time-series model",
+      "deja-vu builds agent memory with no LLM calls",
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "PixelRAG proposes pixel-native retrieval",
+      "Konnect brings AI-assisted PCB design to KiCad 10",
+      "Trending finds span research to hardware tools"
+    ],
+    "ai-web": [
+      "Anthropic launches Enterprise Frontier Safeguards",
+      "EFS pairs zero data retention with misuse detection",
+      "EFS rollout starts this fall with cloud partners",
+      "Anthropic publishes worker retraining research",
+      "Retraining yields 2-3pp employment gain",
+      "OpenAI has no new content this cycle"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.1 and Mythos 5.1 launch, 1396 pts",
+      "Gemini 3.8 Flash and Flash Cyber debut",
+      "Meta ships Muse Spark 1.3",
+      "Multiverse Computing's Quasar 438B lands",
+      "Dan Luu grades Zitron's AI skeptic predictions",
+      "NYC school AI ban sparks heavy debate"
+    ],
+    "ai-arxiv": [
+      "UE5M3 FP4 scaling stabilizes 4-bit pretraining",
+      "Cliff learns process rewards from first mistake",
+      "Gold-medal coding competition pipelines emerge",
+      "Cheaper agent benchmarking methods proposed",
+      "RAG poisoning attacks target code generation",
+      "World models improve web agent evaluation"
+    ],
+    "ai-hf": [
+      "GLM-5.3 and Qwen3.8 lead trending models",
+      "Qwen3.8-27B is the week's most-liked release",
+      "Qwen3.8 GGUF quant tops 9.5M downloads",
+      "LTX-2.5 video model crosses 1M downloads",
+      "MiniMax-H3 video model hits 1M+ downloads",
+      "orcarouter floods list with GGUF quantizations"
+    ],
+    "ai-community": [
+      "AI gateway added 400ms via sequential middleware",
+      "Agent found 3 tool-access flaws in own app",
+      "LLM timeout didn't stop server-side work",
+      "Cancellation must reach the actual fetch call",
+      "Martin Fowler explores an 'accidental blackboard'",
+      "Dev.to and Lobste.rs spotlight AI engineering pitfalls"
+    ]
+  }
+}
