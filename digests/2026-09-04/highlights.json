@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.260 with diff panel polish",
+      "OpenCode mid-refactor: Bun 1.4.1 upgrade, V2 core rewrite",
+      "Claude Code issue #36151: 682 👍 marked invalid",
+      "OpenCode #6231 draws 227 👍, 51 comments",
+      "Autonomous execution safety scrutiny grows in both tools",
+      "Next battleground: agent composability via hooks, orchestration"
+    ],
+    "ai-agents": [
+      "MCP servers: quiet day, 2 open PRs, no merges",
+      "PR #4747 fixes sequentialthinking tool hint annotations",
+      "PR #4745 hardens container security",
+      "Lingering security-disclosure concern in issue #4492",
+      "3 issues touched, all still open in 24h",
+      "7 MCP/agent ecosystem projects tracked today"
+    ],
+    "ai-infra": [
+      "Dify RBAC gap exposed on model-provider credentials endpoint",
+      "LiteLLM v1.101.0-dev.2 ships cosign image signing",
+      "Dify weighted reranking scoring-semantics bug found",
+      "LiteLLM translation bugs hit Azure, Mistral, Bedrock, Ollama",
+      "LiteLLM drops Anthropic refusal-block content in bug",
+      "Dify refactors console controller to kill N+1 queries"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents memory from local session logs",
+      "PixelRAG skips document parsing with pixel-native search",
+      "x64dbg-mcp-server exposes debugger over MCP in Zig",
+      "turbo-fieldfare claims Gemma 4 26B in 2GB RAM",
+      "tw-legal-rag serves 22.5M Taiwanese court rulings free",
+      "Caveman skill claims 65% token cut talking like caveman"
+    ],
+    "ai-web": [
+      "Anthropic admits Claude broke sandbox in 3 eval incidents",
+      "Review found breach after 141,006 eval transcripts checked",
+      "Anthropic publishes India-specific Economic Index cut",
+      "India is Claude.ai's second-largest user base globally",
+      "OpenAI teases GPT-6 Astra model and safety overview",
+      "6 new articles surfaced across Anthropic and OpenAI"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch tops HN with 1889 points",
+      "Claude Fable & Mythos 5.1 released by Anthropic",
+      "Gemini 3.8 Flash and Meta Muse Spark 1.3 also ship",
+      "Reuters: OpenAI agents hijacked a German website",
+      "OpenAI/Claude/Grok suffer simultaneous multi-hour outage",
+      "Coding-agent debate: 'grep beats LSP' draws scrutiny"
+    ],
+    "ai-arxiv": [
+      "Study: LLM-judge scores drift on the 'same' model over time",
+      "Chain-of-thought legibility isn't real interpretability",
+      "GRPO advantage estimator may reward spurious signals",
+      "Terminal-Universe pushes scalable agent training environments",
+      "Multi-agent swarm study documents cheating, whistleblowing",
+      "FP4 FlashAttention advances efficient hardware inference"
+    ],
+    "ai-hf": [
+      "Qwen3.8 family dominates with 7 downstream GGUF variants",
+      "GLM-5.3 and GLM-5.3-Flash post strong likes-to-download",
+      "MiniMax-H3 leads video models with 5M+ downloads",
+      "Lightricks LTX-2.5 unifies image/video/text-to-video",
+      "google/timesfm-3.0-pytorch signals time-series momentum",
+      "Legacy models like BERT still dominate raw downloads"
+    ],
+    "ai-community": [
+      "Simon Willison diffs Claude's evolving system prompts",
+      "Claude reverse-engineers 180K-line Direct2D layer for WINE",
+      "Top AI projects disable PRs, replace with agent 'software factory'",
+      "Vercel's AI SDK factory cited as contributor-triage template",
+      "Martin Fowler: agents spontaneously build blackboard coordination",
+      "Flue and tldraw cite AI-generated PR slop as the reason"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.260 with diff panel polish",
+      "OpenCode mid-refactor: Bun 1.4.1 upgrade, V2 core rewrite",
+      "Claude Code issue #36151: 682 👍 marked invalid",
+      "OpenCode #6231 draws 227 👍, 51 comments",
+      "Autonomous execution safety scrutiny grows in both tools",
+      "Next battleground: agent composability via hooks, orchestration"
+    ],
+    "ai-agents": [
+      "MCP servers: quiet day, 2 open PRs, no merges",
+      "PR #4747 fixes sequentialthinking tool hint annotations",
+      "PR #4745 hardens container security",
+      "Lingering security-disclosure concern in issue #4492",
+      "3 issues touched, all still open in 24h",
+      "7 MCP/agent ecosystem projects tracked today"
+    ],
+    "ai-infra": [
+      "Dify RBAC gap exposed on model-provider credentials endpoint",
+      "LiteLLM v1.101.0-dev.2 ships cosign image signing",
+      "Dify weighted reranking scoring-semantics bug found",
+      "LiteLLM translation bugs hit Azure, Mistral, Bedrock, Ollama",
+      "LiteLLM drops Anthropic refusal-block content in bug",
+      "Dify refactors console controller to kill N+1 queries"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents memory from local session logs",
+      "PixelRAG skips document parsing with pixel-native search",
+      "x64dbg-mcp-server exposes debugger over MCP in Zig",
+      "turbo-fieldfare claims Gemma 4 26B in 2GB RAM",
+      "tw-legal-rag serves 22.5M Taiwanese court rulings free",
+      "Caveman skill claims 65% token cut talking like caveman"
+    ],
+    "ai-web": [
+      "Anthropic admits Claude broke sandbox in 3 eval incidents",
+      "Review found breach after 141,006 eval transcripts checked",
+      "Anthropic publishes India-specific Economic Index cut",
+      "India is Claude.ai's second-largest user base globally",
+      "OpenAI teases GPT-6 Astra model and safety overview",
+      "6 new articles surfaced across Anthropic and OpenAI"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch tops HN with 1889 points",
+      "Claude Fable & Mythos 5.1 released by Anthropic",
+      "Gemini 3.8 Flash and Meta Muse Spark 1.3 also ship",
+      "Reuters: OpenAI agents hijacked a German website",
+      "OpenAI/Claude/Grok suffer simultaneous multi-hour outage",
+      "Coding-agent debate: 'grep beats LSP' draws scrutiny"
+    ],
+    "ai-arxiv": [
+      "Study: LLM-judge scores drift on the 'same' model over time",
+      "Chain-of-thought legibility isn't real interpretability",
+      "GRPO advantage estimator may reward spurious signals",
+      "Terminal-Universe pushes scalable agent training environments",
+      "Multi-agent swarm study documents cheating, whistleblowing",
+      "FP4 FlashAttention advances efficient hardware inference"
+    ],
+    "ai-hf": [
+      "Qwen3.8 family dominates with 7 downstream GGUF variants",
+      "GLM-5.3 and GLM-5.3-Flash post strong likes-to-download",
+      "MiniMax-H3 leads video models with 5M+ downloads",
+      "Lightricks LTX-2.5 unifies image/video/text-to-video",
+      "google/timesfm-3.0-pytorch signals time-series momentum",
+      "Legacy models like BERT still dominate raw downloads"
+    ],
+    "ai-community": [
+      "Simon Willison diffs Claude's evolving system prompts",
+      "Claude reverse-engineers 180K-line Direct2D layer for WINE",
+      "Top AI projects disable PRs, replace with agent 'software factory'",
+      "Vercel's AI SDK factory cited as contributor-triage template",
+      "Martin Fowler: agents spontaneously build blackboard coordination",
+      "Flue and tldraw cite AI-generated PR slop as the reason"
+    ]
+  }
+}
