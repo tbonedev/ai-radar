@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.261 adds org-policy diagnostics",
+      "OpenCode ships v1.18.28 and v1.18.29",
+      "Hooks issue draws 64 👍 and 103 comments",
+      "OpenCode #6231 model auto-discover hits 229 👍",
+      "Windows desktop launch failures plague Claude Code",
+      "OpenCode battles memory growth in long sessions"
+    ],
+    "ai-agents": [
+      "MCP Servers: quiet day, 2 issues, 3 open PRs",
+      "PR adds InterMCP to server frameworks list",
+      "Fix drops disconnected sessions from subscriptions map",
+      "Annotation-accuracy fix PR awaits review",
+      "No new MCP releases shipped today",
+      "Spam issue flagged amid routine triage"
+    ],
+    "ai-infra": [
+      "Dify migrates to new Graphon workflow engine",
+      "LiteLLM tackles spend-tracking, streaming bugs",
+      "Dify refactors its ORM access patterns",
+      "Neither Dify nor LiteLLM shipped a release",
+      "LiteLLM fixes Bedrock routing issues",
+      "Dify: ~13 issues, 9 PRs under ORM refactor"
+    ],
+    "ai-trending": [
+      "deja-vu builds agent memory from session history",
+      "Gemma 4 26B runs in ~2GB RAM on M-series Macs",
+      "projectmem warns agents against repeat failures",
+      "nvm-sh/nvm trending entry hides crypto-scam text",
+      "ponytail shows wildly inconsistent star counts",
+      "Local-first, no-LLM memory tools trend today"
+    ],
+    "ai-web": [
+      "Claude formalizes Fermat's Last Theorem in Lean",
+      "11-day autonomous proof effort by Claude",
+      "Anthropic publishes AI adoption brief on India",
+      "Study weighs worker retraining vs AI disruption",
+      "OpenAI posts zero new content today",
+      "Anthropic Economic Index research continues"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch dominates HN discussion",
+      "collusion.wiki sparks multi-agent coordination debate",
+      "Claude's Fermat proof wins math community praise",
+      "Nvidia reportedly acquires Hugging Face",
+      "Claude Fable & Mythos 5.1 spark pricing debates",
+      "NYT: enterprise open-source AI adoption grows"
+    ],
+    "ai-arxiv": [
+      "Papers question reliability of LLM judges, CoT",
+      "Hybrid recipes sequence distillation then RLVR",
+      "New research distills models from single examples",
+      "Study finds unstable results on shared LLM endpoints",
+      "FP4 attention pushes inference costs down",
+      "Agent research shifts toward trust, governance"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 13,988 likes, 6M downloads",
+      "MiniMax-H3 and LTX-2.5 push open video generation",
+      "GLM-5.3 pair challenges Qwen and DeepSeek",
+      "A third of trending models are 'uncensored' tunes",
+      "gpt2 still pulls 14.7M downloads years later",
+      "Spark-X2.5-4B trends as compact local option"
+    ],
+    "ai-community": [
+      "pass@64 collapses from 0.83 to 0.19 despite metrics",
+      "4-model AI review approves security hole 3x",
+      "4 of 8 agent frameworks get approval gate wrong",
+      "Outcome-only RL silently destroys sample diversity",
+      "Majority-vote LLM review fails on adversarial bugs",
+      "Broken human-approval gates found across frameworks"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.261 adds org-policy diagnostics",
+      "OpenCode ships v1.18.28 and v1.18.29",
+      "Hooks issue draws 64 👍 and 103 comments",
+      "OpenCode #6231 model auto-discover hits 229 👍",
+      "Windows desktop launch failures plague Claude Code",
+      "OpenCode battles memory growth in long sessions"
+    ],
+    "ai-agents": [
+      "MCP Servers: quiet day, 2 issues, 3 open PRs",
+      "PR adds InterMCP to server frameworks list",
+      "Fix drops disconnected sessions from subscriptions map",
+      "Annotation-accuracy fix PR awaits review",
+      "No new MCP releases shipped today",
+      "Spam issue flagged amid routine triage"
+    ],
+    "ai-infra": [
+      "Dify migrates to new Graphon workflow engine",
+      "LiteLLM tackles spend-tracking, streaming bugs",
+      "Dify refactors its ORM access patterns",
+      "Neither Dify nor LiteLLM shipped a release",
+      "LiteLLM fixes Bedrock routing issues",
+      "Dify: ~13 issues, 9 PRs under ORM refactor"
+    ],
+    "ai-trending": [
+      "deja-vu builds agent memory from session history",
+      "Gemma 4 26B runs in ~2GB RAM on M-series Macs",
+      "projectmem warns agents against repeat failures",
+      "nvm-sh/nvm trending entry hides crypto-scam text",
+      "ponytail shows wildly inconsistent star counts",
+      "Local-first, no-LLM memory tools trend today"
+    ],
+    "ai-web": [
+      "Claude formalizes Fermat's Last Theorem in Lean",
+      "11-day autonomous proof effort by Claude",
+      "Anthropic publishes AI adoption brief on India",
+      "Study weighs worker retraining vs AI disruption",
+      "OpenAI posts zero new content today",
+      "Anthropic Economic Index research continues"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch dominates HN discussion",
+      "collusion.wiki sparks multi-agent coordination debate",
+      "Claude's Fermat proof wins math community praise",
+      "Nvidia reportedly acquires Hugging Face",
+      "Claude Fable & Mythos 5.1 spark pricing debates",
+      "NYT: enterprise open-source AI adoption grows"
+    ],
+    "ai-arxiv": [
+      "Papers question reliability of LLM judges, CoT",
+      "Hybrid recipes sequence distillation then RLVR",
+      "New research distills models from single examples",
+      "Study finds unstable results on shared LLM endpoints",
+      "FP4 attention pushes inference costs down",
+      "Agent research shifts toward trust, governance"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 13,988 likes, 6M downloads",
+      "MiniMax-H3 and LTX-2.5 push open video generation",
+      "GLM-5.3 pair challenges Qwen and DeepSeek",
+      "A third of trending models are 'uncensored' tunes",
+      "gpt2 still pulls 14.7M downloads years later",
+      "Spark-X2.5-4B trends as compact local option"
+    ],
+    "ai-community": [
+      "pass@64 collapses from 0.83 to 0.19 despite metrics",
+      "4-model AI review approves security hole 3x",
+      "4 of 8 agent frameworks get approval gate wrong",
+      "Outcome-only RL silently destroys sample diversity",
+      "Majority-vote LLM review fails on adversarial bugs",
+      "Broken human-approval gates found across frameworks"
+    ]
+  }
+}
