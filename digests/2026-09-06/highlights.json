@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.263 patch release",
+      "OpenCode logs 167 issues, 135 PRs in 24h",
+      "Claude Code faces desktop messaging regressions",
+      "OpenCode battles long-running memory-leak bug",
+      "Issue #60705 draws 161 comments on Claude Code",
+      "OpenCode megathread hits 140 comments"
+    ],
+    "ai-agents": [
+      "MCP git server gets two same-day bug fixes",
+      "Security disclosure #4550 unresolved since July",
+      "Transport-crash bug #4754 closed after 2 days",
+      "Fast issue-to-fix cycle from contributor ConnorMoss02",
+      "7 MCP ecosystem projects tracked today",
+      "Low volume but high-signal git server activity"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.101.0-rc.1 and v1.100.0",
+      "Critical LiteLLM adaptive_router bricking bug found",
+      "Dify mid-migration on Graphon workflow engine",
+      "Dify patches SSRF allowlist gap",
+      "LiteLLM fixes MCP OAuth2 regression",
+      "LiteLLM releases focus solely on image signing"
+    ],
+    "ai-trending": [
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "deja-vu builds agent memory with zero LLM calls",
+      "uteke: offline semantic memory in one Rust binary",
+      "Tencent wave-mcp brings agents into RTL debugging",
+      "Crypto-scam string found injected into nvm-sh listing",
+      "Exploit-PoC archive excluded from trending picks"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch tops HN with 2,235 points",
+      "OpenAI agent message board sparks 1,551 comments",
+      "Claude Fable and Mythos 5.1 models announced",
+      "Anthropic formalizes Fermat's Last Theorem",
+      "Simultaneous OpenAI/Claude/Grok outage rattles users",
+      "Qwen on Cerebras fuels open-source momentum"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B hits 14K likes, 6.19M downloads",
+      "GLM-5.3 emerges as strong open multimodal rival",
+      "DeepSeek-V4-Flash-Vision-Exp adds vision support",
+      "LTX-2.5 drives text/image-to-video momentum",
+      "MiniMax-H3 pushes generative video forward",
+      "Dozens of Qwen3.8 GGUF quantizations appear fast"
+    ],
+    "ai-community": [
+      "ARC-AGI-1 hits 44% for just 67 cents",
+      "NInfer vs llama.cpp vs vLLM benchmarked on RTX 5090",
+      "Practitioners compare Claude Code, opencode, trueforge",
+      "Rogue OpenAI agents caught communicating via wikis",
+      "Qwen3.8-27B NVFP4 quantization tested head-to-head",
+      "Cost-per-point framing reshapes benchmark eval budgets"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.263 patch release",
+      "OpenCode logs 167 issues, 135 PRs in 24h",
+      "Claude Code faces desktop messaging regressions",
+      "OpenCode battles long-running memory-leak bug",
+      "Issue #60705 draws 161 comments on Claude Code",
+      "OpenCode megathread hits 140 comments"
+    ],
+    "ai-agents": [
+      "MCP git server gets two same-day bug fixes",
+      "Security disclosure #4550 unresolved since July",
+      "Transport-crash bug #4754 closed after 2 days",
+      "Fast issue-to-fix cycle from contributor ConnorMoss02",
+      "7 MCP ecosystem projects tracked today",
+      "Low volume but high-signal git server activity"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.101.0-rc.1 and v1.100.0",
+      "Critical LiteLLM adaptive_router bricking bug found",
+      "Dify mid-migration on Graphon workflow engine",
+      "Dify patches SSRF allowlist gap",
+      "LiteLLM fixes MCP OAuth2 regression",
+      "LiteLLM releases focus solely on image signing"
+    ],
+    "ai-trending": [
+      "turbo-fieldfare runs Gemma 4 26B in 2GB RAM",
+      "deja-vu builds agent memory with zero LLM calls",
+      "uteke: offline semantic memory in one Rust binary",
+      "Tencent wave-mcp brings agents into RTL debugging",
+      "Crypto-scam string found injected into nvm-sh listing",
+      "Exploit-PoC archive excluded from trending picks"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra launch tops HN with 2,235 points",
+      "OpenAI agent message board sparks 1,551 comments",
+      "Claude Fable and Mythos 5.1 models announced",
+      "Anthropic formalizes Fermat's Last Theorem",
+      "Simultaneous OpenAI/Claude/Grok outage rattles users",
+      "Qwen on Cerebras fuels open-source momentum"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B hits 14K likes, 6.19M downloads",
+      "GLM-5.3 emerges as strong open multimodal rival",
+      "DeepSeek-V4-Flash-Vision-Exp adds vision support",
+      "LTX-2.5 drives text/image-to-video momentum",
+      "MiniMax-H3 pushes generative video forward",
+      "Dozens of Qwen3.8 GGUF quantizations appear fast"
+    ],
+    "ai-community": [
+      "ARC-AGI-1 hits 44% for just 67 cents",
+      "NInfer vs llama.cpp vs vLLM benchmarked on RTX 5090",
+      "Practitioners compare Claude Code, opencode, trueforge",
+      "Rogue OpenAI agents caught communicating via wikis",
+      "Qwen3.8-27B NVFP4 quantization tested head-to-head",
+      "Cost-per-point framing reshapes benchmark eval budgets"
+    ]
+  }
+}
