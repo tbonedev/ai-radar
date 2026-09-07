@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code issue #84352 hits 197 comments",
+      "VS Code auto-attach context gets 225 👍 votes",
+      "OpenCode clipboard bug #4283 draws 129 comments",
+      "Both tools show zero new releases in 24h",
+      "Plugin/hook extensibility push across both tools",
+      "OpenCode tracks 188 issues, 177 PRs open"
+    ],
+    "ai-agents": [
+      "MCP servers repo fixes SSRF flaw in fetch server",
+      "PR #4262 fixes blob mimeType bug in everything server",
+      "Memory server race condition patch in progress",
+      "5 issues, 11 PRs touched across MCP servers today",
+      "Hardening push signals a release may be near",
+      "7 MCP ecosystem projects tracked this digest"
+    ],
+    "ai-infra": [
+      "Dify patches critical vector-store data leak",
+      "Dify migrates to new Graphon execution engine",
+      "LiteLLM logs 139 PRs, 54 issues in 24h",
+      "LiteLLM chases uncharged spend, dropped cache bugs",
+      "Neither Dify nor LiteLLM cut a release today",
+      "Dify's Graphon refactor PR #40277 under review"
+    ],
+    "ai-trending": [
+      "ripwire cuts agent repo-reading cost by ~95%",
+      "deja-vu shares memory across 18+ coding agents",
+      "Konnect brings 217 AI tools to KiCAD PCB design",
+      "Tencent's wave-mcp debugs RTL waveforms via MCP",
+      "MCP tooling expands into hardware, chip design",
+      "wave-mcp exposes 34 tools for signal tracing"
+    ],
+    "ai-web": [
+      "Claude produces first verified proof of Fermat's theorem",
+      "Claude worked autonomously 11 days on Lean proof",
+      "Anthropic posts accountability update on Aug incident",
+      "OpenAI's \"An Alien Mind\" essay surfaces, no text yet",
+      "OpenAI sitemap grows to 945 total articles",
+      "Anthropic sitemap crosses 440 published articles"
+    ],
+    "ai-hn": [
+      "collusion.wiki OpenAI board hits 2279 points",
+      "GPT-6 Astra launch tops HN with 2253 points",
+      "Fermat's Last Theorem proof draws 766 HN points",
+      "Qwen 3.8 27B hits 1500 tokens/s on Cerebras",
+      "HN debates whether LLMs are a \"cognitive virus\"",
+      "\"An Alien Mind\" essay sparks AI introspection"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B anchors sprawling fine-tune ecosystem",
+      "GLM-5.3 trends with 442K downloads this week",
+      "MiniMax-H3 and LTX-2.5 push video generation",
+      "DeepSeek-V4-Flash-Vision-Exp enters VLM race",
+      "GPT-2 still racks up 14.6M weekly downloads",
+      "Abliterated Qwen3.8-27B variants surge in demand"
+    ],
+    "ai-community": [
+      "Required failure-trigger field cuts review noise 4x",
+      "Google ADK agents have four distinct context slots",
+      "Dev.to counts a working agent loop at 239 lines",
+      "Validate tool calls against shipped, not cached schema",
+      "Piece argues frameworks and runtimes are different layers",
+      "Lobste.rs adds 6 stories alongside Dev.to's 30"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code issue #84352 hits 197 comments",
+      "VS Code auto-attach context gets 225 👍 votes",
+      "OpenCode clipboard bug #4283 draws 129 comments",
+      "Both tools show zero new releases in 24h",
+      "Plugin/hook extensibility push across both tools",
+      "OpenCode tracks 188 issues, 177 PRs open"
+    ],
+    "ai-agents": [
+      "MCP servers repo fixes SSRF flaw in fetch server",
+      "PR #4262 fixes blob mimeType bug in everything server",
+      "Memory server race condition patch in progress",
+      "5 issues, 11 PRs touched across MCP servers today",
+      "Hardening push signals a release may be near",
+      "7 MCP ecosystem projects tracked this digest"
+    ],
+    "ai-infra": [
+      "Dify patches critical vector-store data leak",
+      "Dify migrates to new Graphon execution engine",
+      "LiteLLM logs 139 PRs, 54 issues in 24h",
+      "LiteLLM chases uncharged spend, dropped cache bugs",
+      "Neither Dify nor LiteLLM cut a release today",
+      "Dify's Graphon refactor PR #40277 under review"
+    ],
+    "ai-trending": [
+      "ripwire cuts agent repo-reading cost by ~95%",
+      "deja-vu shares memory across 18+ coding agents",
+      "Konnect brings 217 AI tools to KiCAD PCB design",
+      "Tencent's wave-mcp debugs RTL waveforms via MCP",
+      "MCP tooling expands into hardware, chip design",
+      "wave-mcp exposes 34 tools for signal tracing"
+    ],
+    "ai-web": [
+      "Claude produces first verified proof of Fermat's theorem",
+      "Claude worked autonomously 11 days on Lean proof",
+      "Anthropic posts accountability update on Aug incident",
+      "OpenAI's \"An Alien Mind\" essay surfaces, no text yet",
+      "OpenAI sitemap grows to 945 total articles",
+      "Anthropic sitemap crosses 440 published articles"
+    ],
+    "ai-hn": [
+      "collusion.wiki OpenAI board hits 2279 points",
+      "GPT-6 Astra launch tops HN with 2253 points",
+      "Fermat's Last Theorem proof draws 766 HN points",
+      "Qwen 3.8 27B hits 1500 tokens/s on Cerebras",
+      "HN debates whether LLMs are a \"cognitive virus\"",
+      "\"An Alien Mind\" essay sparks AI introspection"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B anchors sprawling fine-tune ecosystem",
+      "GLM-5.3 trends with 442K downloads this week",
+      "MiniMax-H3 and LTX-2.5 push video generation",
+      "DeepSeek-V4-Flash-Vision-Exp enters VLM race",
+      "GPT-2 still racks up 14.6M weekly downloads",
+      "Abliterated Qwen3.8-27B variants surge in demand"
+    ],
+    "ai-community": [
+      "Required failure-trigger field cuts review noise 4x",
+      "Google ADK agents have four distinct context slots",
+      "Dev.to counts a working agent loop at 239 lines",
+      "Validate tool calls against shipped, not cached schema",
+      "Piece argues frameworks and runtimes are different layers",
+      "Lobste.rs adds 6 stories alongside Dev.to's 30"
+    ]
+  }
+}
