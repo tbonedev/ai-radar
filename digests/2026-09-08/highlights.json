@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code #18435: 183 comments, 791 upvotes",
+      "OpenCode ships strong multi-workstream PR activity",
+      "Both tools: zero releases, permissions in focus",
+      "OpenCode issue #20695 draws 141 comments",
+      "Extensibility/plugins emerge as next battleground",
+      "Terminal CLIs pulled toward editor-embedded UX"
+    ],
+    "ai-agents": [
+      "MCP servers: 5 issues, 11 PRs in 24h",
+      "fetch server SSRF hardening still unmerged",
+      "PR #4221 fixes mcp-server-git crash bug",
+      "PR #4262 fixes blob resource mimeType bug",
+      "server-filesystem hits JSON Schema bug",
+      "Security PRs open despite maintainer bottleneck"
+    ],
+    "ai-infra": [
+      "LiteLLM patches same-day auth info-disclosure bug",
+      "Dify contributor closes ~7 issues solo",
+      "LiteLLM breaking change: OpenCode Go header, 42👍",
+      "Dify hardens file handling on v1.17.0",
+      "Neither Dify nor LiteLLM tagged a release",
+      "Rate-limit and cleanup logic lags feature velocity"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: ripgrep-style MCP for AI agents",
+      "vshulcz/deja-vu: shared memory across 20+ agents",
+      "microsoft/skill-recorder turns sessions into Skills",
+      "Tencent/wave-mcp: 34 tools for hardware waveform",
+      "Ripwire compresses signatures to ~25% size",
+      "Deja-vu needs no LLM calls or embeddings"
+    ],
+    "ai-web": [
+      "Anthropic: 16M exchanges, DeepSeek distillation claim",
+      "5 Anthropic Policy articles, OpenAI posts zero",
+      "24,000 fraudulent accounts flagged by Anthropic",
+      "Batch spans Apr 2025–Jun 2026, backfill artifact",
+      "OpenAI sitemap: 945 total, zero new today",
+      "All signal is safety/policy, no product news"
+    ],
+    "ai-hn": [
+      "Hidden OpenAI agent board: 2289 pts, 1594 comments",
+      "GPT-6 Astra fallout: 2267 pts, 2069 comments",
+      "Mistral raises €3B for open-weight AI",
+      "Cantrill's 'intellectual fly is open' essay trends",
+      "Human-only site A/I shuts down amid AI fatigue",
+      "Anthropic formalizes Fermat's Last Theorem in Lean"
+    ],
+    "ai-hf": [
+      "Qwen3.8 family dominates trending with GGUF forks",
+      "MiniMax-H3 video model spawns fast fine-tunes",
+      "zai-org ships GLM-5.3 and GLM-5.3-Flash",
+      "Abliterated GLM-5.3 'cybersecurity' FP8 variant appears",
+      "DeepSeek V4-Flash-Vision-Exp adds multimodal",
+      "Legacy models like gpt2 still top downloads"
+    ],
+    "ai-community": [
+      "System prompts act as data, not binding rules",
+      "Local MCP cuts agent token usage by 85%",
+      "Guardrails often never verified to run live",
+      "70-line Python agent tricked into leaking .env",
+      "Six rebuild cycles chasing a nonexistent bug",
+      "Dev.to and Lobste.rs surface 36 AI articles today"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code #18435: 183 comments, 791 upvotes",
+      "OpenCode ships strong multi-workstream PR activity",
+      "Both tools: zero releases, permissions in focus",
+      "OpenCode issue #20695 draws 141 comments",
+      "Extensibility/plugins emerge as next battleground",
+      "Terminal CLIs pulled toward editor-embedded UX"
+    ],
+    "ai-agents": [
+      "MCP servers: 5 issues, 11 PRs in 24h",
+      "fetch server SSRF hardening still unmerged",
+      "PR #4221 fixes mcp-server-git crash bug",
+      "PR #4262 fixes blob resource mimeType bug",
+      "server-filesystem hits JSON Schema bug",
+      "Security PRs open despite maintainer bottleneck"
+    ],
+    "ai-infra": [
+      "LiteLLM patches same-day auth info-disclosure bug",
+      "Dify contributor closes ~7 issues solo",
+      "LiteLLM breaking change: OpenCode Go header, 42👍",
+      "Dify hardens file handling on v1.17.0",
+      "Neither Dify nor LiteLLM tagged a release",
+      "Rate-limit and cleanup logic lags feature velocity"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: ripgrep-style MCP for AI agents",
+      "vshulcz/deja-vu: shared memory across 20+ agents",
+      "microsoft/skill-recorder turns sessions into Skills",
+      "Tencent/wave-mcp: 34 tools for hardware waveform",
+      "Ripwire compresses signatures to ~25% size",
+      "Deja-vu needs no LLM calls or embeddings"
+    ],
+    "ai-web": [
+      "Anthropic: 16M exchanges, DeepSeek distillation claim",
+      "5 Anthropic Policy articles, OpenAI posts zero",
+      "24,000 fraudulent accounts flagged by Anthropic",
+      "Batch spans Apr 2025–Jun 2026, backfill artifact",
+      "OpenAI sitemap: 945 total, zero new today",
+      "All signal is safety/policy, no product news"
+    ],
+    "ai-hn": [
+      "Hidden OpenAI agent board: 2289 pts, 1594 comments",
+      "GPT-6 Astra fallout: 2267 pts, 2069 comments",
+      "Mistral raises €3B for open-weight AI",
+      "Cantrill's 'intellectual fly is open' essay trends",
+      "Human-only site A/I shuts down amid AI fatigue",
+      "Anthropic formalizes Fermat's Last Theorem in Lean"
+    ],
+    "ai-hf": [
+      "Qwen3.8 family dominates trending with GGUF forks",
+      "MiniMax-H3 video model spawns fast fine-tunes",
+      "zai-org ships GLM-5.3 and GLM-5.3-Flash",
+      "Abliterated GLM-5.3 'cybersecurity' FP8 variant appears",
+      "DeepSeek V4-Flash-Vision-Exp adds multimodal",
+      "Legacy models like gpt2 still top downloads"
+    ],
+    "ai-community": [
+      "System prompts act as data, not binding rules",
+      "Local MCP cuts agent token usage by 85%",
+      "Guardrails often never verified to run live",
+      "70-line Python agent tricked into leaking .env",
+      "Six rebuild cycles chasing a nonexistent bug",
+      "Dev.to and Lobste.rs surface 36 AI articles today"
+    ]
+  }
+}
