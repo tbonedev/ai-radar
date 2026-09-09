@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.265/266 hotfix pair",
+      "OpenCode releases v1.18.30 with prompt fixes",
+      "Issue #6235 hits 391 comments, 5.1k reactions",
+      "OpenCode battles memory leaks, perf regression",
+      "AGENTS.md emerges as cross-tool standard",
+      "OpenCode outpaces Claude Code in PR volume"
+    ],
+    "ai-agents": [
+      "MCP fetch/git servers get SSRF security fixes",
+      "Git MCP wrapper silently reports false success",
+      "Zod dependency bug fixed across 3 MCP servers",
+      "Fetch server adds retry with exponential backoff",
+      "GHSA-adjacent MCP disclosure pending since July",
+      "Spam PRs target ADDITIONAL.md in servers repo"
+    ],
+    "ai-infra": [
+      "LiteLLM rate-limiter bug silently halves quotas",
+      "LiteLLM logging bug leaks credentials",
+      "LiteLLM v1.102.0-dev.1 adds Docker image signing",
+      "Dify's Notion/CSV extractors hit correctness bugs",
+      "Dify plugin bug causes resource exhaustion",
+      "Dify dwarfs LiteLLM: 44 issues, 141 PRs touched"
+    ],
+    "ai-trending": [
+      "ripwire cuts agent context reads by 74.7%",
+      "deja-vu shares memory across 20+ coding agents",
+      "okf-agent-memory cuts token bloat by 80%",
+      "reverify checks AI claims against ground truth",
+      "skill-recorder turns screen sessions into skills",
+      "Agent memory tools dominate today's trends"
+    ],
+    "ai-web": [
+      "OpenAI publishes 6 articles, heaviest cluster yet",
+      "Anthropic posts zero new articles today",
+      "\"ChatGPT Images 2.5\" hinted in OpenAI slug",
+      "Navier-Stokes post appears as duplicate entries",
+      "OpenAI announces research/education grants",
+      "OpenAI entries are metadata-only, unverified"
+    ],
+    "ai-hn": [
+      "Navier-Stokes claim hits 1280 pts, 1029 comments",
+      "Anthropic researcher resigns over safety fears",
+      "Meta's Muse agent draws skeptical reception",
+      "Mistral raises €3B in new funding",
+      "OpenAI ships ChatGPT Images 2.5",
+      "AlphaGenome Atlas maps human DNA"
+    ],
+    "ai-arxiv": [
+      "SPINE benchmarks LLM sycophancy under pressure",
+      "Attention sinks traced to self-concentration",
+      "Coding agents that co-evolve with their harnesses",
+      "Training-free task vectors steer model behavior",
+      "Humanoid robots get whole-body navigation",
+      "AI diagnostic beats physicians in clinical trial"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops trends: 14,460 likes, 6.7M downloads",
+      "MiniMax-H3 video model hits 5M downloads",
+      "Lightricks LTX-2.5 draws community fine-tunes",
+      "Zhipu ships GLM-5.3 base and Flash models",
+      "DeepSeek-V4-Flash-Vision-Exp lands on Hub",
+      "all-MiniLM-L6-v2 quietly hits 253M downloads"
+    ],
+    "ai-community": [
+      "LLM-suggested Postgres indexes fail 4 in 10 checks",
+      "Agent rule-store resists 20 poisoning attempts",
+      "Red-teamed agent approves fake $185 refund",
+      "\"FAILED is not UNKNOWN\": the retry bug in agents",
+      "Dev.to spotlights AI agent security testing",
+      "Verify-don't-trust becomes theme for agent tools"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.265/266 hotfix pair",
+      "OpenCode releases v1.18.30 with prompt fixes",
+      "Issue #6235 hits 391 comments, 5.1k reactions",
+      "OpenCode battles memory leaks, perf regression",
+      "AGENTS.md emerges as cross-tool standard",
+      "OpenCode outpaces Claude Code in PR volume"
+    ],
+    "ai-agents": [
+      "MCP fetch/git servers get SSRF security fixes",
+      "Git MCP wrapper silently reports false success",
+      "Zod dependency bug fixed across 3 MCP servers",
+      "Fetch server adds retry with exponential backoff",
+      "GHSA-adjacent MCP disclosure pending since July",
+      "Spam PRs target ADDITIONAL.md in servers repo"
+    ],
+    "ai-infra": [
+      "LiteLLM rate-limiter bug silently halves quotas",
+      "LiteLLM logging bug leaks credentials",
+      "LiteLLM v1.102.0-dev.1 adds Docker image signing",
+      "Dify's Notion/CSV extractors hit correctness bugs",
+      "Dify plugin bug causes resource exhaustion",
+      "Dify dwarfs LiteLLM: 44 issues, 141 PRs touched"
+    ],
+    "ai-trending": [
+      "ripwire cuts agent context reads by 74.7%",
+      "deja-vu shares memory across 20+ coding agents",
+      "okf-agent-memory cuts token bloat by 80%",
+      "reverify checks AI claims against ground truth",
+      "skill-recorder turns screen sessions into skills",
+      "Agent memory tools dominate today's trends"
+    ],
+    "ai-web": [
+      "OpenAI publishes 6 articles, heaviest cluster yet",
+      "Anthropic posts zero new articles today",
+      "\"ChatGPT Images 2.5\" hinted in OpenAI slug",
+      "Navier-Stokes post appears as duplicate entries",
+      "OpenAI announces research/education grants",
+      "OpenAI entries are metadata-only, unverified"
+    ],
+    "ai-hn": [
+      "Navier-Stokes claim hits 1280 pts, 1029 comments",
+      "Anthropic researcher resigns over safety fears",
+      "Meta's Muse agent draws skeptical reception",
+      "Mistral raises €3B in new funding",
+      "OpenAI ships ChatGPT Images 2.5",
+      "AlphaGenome Atlas maps human DNA"
+    ],
+    "ai-arxiv": [
+      "SPINE benchmarks LLM sycophancy under pressure",
+      "Attention sinks traced to self-concentration",
+      "Coding agents that co-evolve with their harnesses",
+      "Training-free task vectors steer model behavior",
+      "Humanoid robots get whole-body navigation",
+      "AI diagnostic beats physicians in clinical trial"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops trends: 14,460 likes, 6.7M downloads",
+      "MiniMax-H3 video model hits 5M downloads",
+      "Lightricks LTX-2.5 draws community fine-tunes",
+      "Zhipu ships GLM-5.3 base and Flash models",
+      "DeepSeek-V4-Flash-Vision-Exp lands on Hub",
+      "all-MiniLM-L6-v2 quietly hits 253M downloads"
+    ],
+    "ai-community": [
+      "LLM-suggested Postgres indexes fail 4 in 10 checks",
+      "Agent rule-store resists 20 poisoning attempts",
+      "Red-teamed agent approves fake $185 refund",
+      "\"FAILED is not UNKNOWN\": the retry bug in agents",
+      "Dev.to spotlights AI agent security testing",
+      "Verify-don't-trust becomes theme for agent tools"
+    ]
+  }
+}
