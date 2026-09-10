@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.267 ships with plugin 'mods'",
+      "Issue #18435 hits 185 comments, 797 👍",
+      "OpenCode ships 10 PRs across desktop, TUI, providers",
+      "Windows remains pain point for Claude Code & OpenCode",
+      "Claude Code adds maxEffortLevel enterprise caps",
+      "OpenCode hit by ARM64 TUI crashes"
+    ],
+    "ai-agents": [
+      "MCP reference servers still pull 214k weekly installs",
+      "PR #4786 adds UK legislation MCP server, then closed",
+      "Docker/npm build fix lands for MCP servers repo",
+      "Multi-arch container image PR opens for MCP registry",
+      "MCP servers repo: 1 issue, 3 PRs in 24h",
+      "No new MCP releases today, steady maintenance"
+    ],
+    "ai-infra": [
+      "Dify ships v1.17.1 bug-fix release",
+      "Dify flags auth bypass in multi-tenant dataset API",
+      "Dify update forces 12-version Weaviate migration",
+      "LiteLLM v1.101.0-rc.2 adds cosign-signed images",
+      "LiteLLM found double-counting spend in billing",
+      "LiteLLM has RPM rate-limit enforcement gaps"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents shared memory, no LLM calls",
+      "ripwire: 'ripgrep for AI context', Red Hat-backed",
+      "llmfit checks which local models fit your hardware",
+      "colibri streams MoE experts from disk, pure C",
+      "OKF memory standard surfaces in 3 projects at once",
+      "colibri has 0 stars, claims need skeptical eyes"
+    ],
+    "ai-web": [
+      "Anthropic discloses 4th unauthorized Claude access case",
+      "Anthropic scanned ~481M transcripts for incidents",
+      "Anthropic backfills 160 posts, full blog history",
+      "Anthropic's $30B round hit $380B valuation",
+      "Anthropic files confidential draft S-1",
+      "Project Glasswing: Claude scans 200 infra partners"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra's 'hidden reasoning' sparks HN debate",
+      "AlphaGenome Atlas maps human DNA, 596 points",
+      "OpenAI accused of scraping unpublished math proofs",
+      "Claude autonomously themes a webpage, HN stunned",
+      "Mistral raises €3B in new funding round",
+      "Meta launches Muse coding agent"
+    ],
+    "ai-arxiv": [
+      "IdeaAMBIG benchmarks research-idea implementation gaps",
+      "ConvMem brings convolutional memory to long agents",
+      "KVShareArena enables cross-context KV-cache reuse",
+      "GANDR verifies legal claims against cited sources",
+      "New model maps AI-vendor risk in banking systems",
+      "Maverick offers privacy-preserving verifiable inference"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 14,577 likes, 7.3M downloads",
+      "DeepSeek ships two V4-series vision model releases",
+      "MiniMax-H3 video model hits 5.08M downloads",
+      "Four abliterated Qwen3.8-27B GGUF variants trend",
+      "MiniCPM5-2B targets efficient on-device deployment",
+      "Spark-X2.5-4B trends on likes despite low downloads"
+    ],
+    "ai-community": [
+      "Teams shift to 'review the review' AI-first workflow",
+      "Fowler: AI cut cost of generating, not verifying",
+      "Dev shifts from reviewing code to auditing agents",
+      "Google AI names 4 pitfalls of 'loop engineering'",
+      "Reviews now triaged by blast radius, not just diff",
+      "AI-authored PR passes CI, then breaks production"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.267 ships with plugin 'mods'",
+      "Issue #18435 hits 185 comments, 797 👍",
+      "OpenCode ships 10 PRs across desktop, TUI, providers",
+      "Windows remains pain point for Claude Code & OpenCode",
+      "Claude Code adds maxEffortLevel enterprise caps",
+      "OpenCode hit by ARM64 TUI crashes"
+    ],
+    "ai-agents": [
+      "MCP reference servers still pull 214k weekly installs",
+      "PR #4786 adds UK legislation MCP server, then closed",
+      "Docker/npm build fix lands for MCP servers repo",
+      "Multi-arch container image PR opens for MCP registry",
+      "MCP servers repo: 1 issue, 3 PRs in 24h",
+      "No new MCP releases today, steady maintenance"
+    ],
+    "ai-infra": [
+      "Dify ships v1.17.1 bug-fix release",
+      "Dify flags auth bypass in multi-tenant dataset API",
+      "Dify update forces 12-version Weaviate migration",
+      "LiteLLM v1.101.0-rc.2 adds cosign-signed images",
+      "LiteLLM found double-counting spend in billing",
+      "LiteLLM has RPM rate-limit enforcement gaps"
+    ],
+    "ai-trending": [
+      "deja-vu gives coding agents shared memory, no LLM calls",
+      "ripwire: 'ripgrep for AI context', Red Hat-backed",
+      "llmfit checks which local models fit your hardware",
+      "colibri streams MoE experts from disk, pure C",
+      "OKF memory standard surfaces in 3 projects at once",
+      "colibri has 0 stars, claims need skeptical eyes"
+    ],
+    "ai-web": [
+      "Anthropic discloses 4th unauthorized Claude access case",
+      "Anthropic scanned ~481M transcripts for incidents",
+      "Anthropic backfills 160 posts, full blog history",
+      "Anthropic's $30B round hit $380B valuation",
+      "Anthropic files confidential draft S-1",
+      "Project Glasswing: Claude scans 200 infra partners"
+    ],
+    "ai-hn": [
+      "GPT-6 Astra's 'hidden reasoning' sparks HN debate",
+      "AlphaGenome Atlas maps human DNA, 596 points",
+      "OpenAI accused of scraping unpublished math proofs",
+      "Claude autonomously themes a webpage, HN stunned",
+      "Mistral raises €3B in new funding round",
+      "Meta launches Muse coding agent"
+    ],
+    "ai-arxiv": [
+      "IdeaAMBIG benchmarks research-idea implementation gaps",
+      "ConvMem brings convolutional memory to long agents",
+      "KVShareArena enables cross-context KV-cache reuse",
+      "GANDR verifies legal claims against cited sources",
+      "New model maps AI-vendor risk in banking systems",
+      "Maverick offers privacy-preserving verifiable inference"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 14,577 likes, 7.3M downloads",
+      "DeepSeek ships two V4-series vision model releases",
+      "MiniMax-H3 video model hits 5.08M downloads",
+      "Four abliterated Qwen3.8-27B GGUF variants trend",
+      "MiniCPM5-2B targets efficient on-device deployment",
+      "Spark-X2.5-4B trends on likes despite low downloads"
+    ],
+    "ai-community": [
+      "Teams shift to 'review the review' AI-first workflow",
+      "Fowler: AI cut cost of generating, not verifying",
+      "Dev shifts from reviewing code to auditing agents",
+      "Google AI names 4 pitfalls of 'loop engineering'",
+      "Reviews now triaged by blast radius, not just diff",
+      "AI-authored PR passes CI, then breaks production"
+    ]
+  }
+}
