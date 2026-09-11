@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.268 ships new release",
+      "OpenCode #6231: model auto-discovery, 232 👍",
+      "Claude Code #2511: knowledge base request, 406 👍",
+      "OpenCode sees 10 PR updates in 24h vs CC's 3",
+      "Enterprise gateway: CIDR allowlisting added",
+      "Function Hooks extensibility lands in Claude Code"
+    ],
+    "ai-agents": [
+      "Security scan grades MCP reference servers",
+      "Two competing PRs harden fetch server against SSRF",
+      "Stable error codes for filesystem path validation",
+      "Session cleanup fix for 'everything' server",
+      "Zero merges today — active review/hardening phase",
+      "No new MCP releases shipped this cycle"
+    ],
+    "ai-infra": [
+      "Dify patches live API-key secret exposure bug",
+      "LiteLLM still containing 7-month supply-chain hack",
+      "ReDoS bug found in LiteLLM log redaction",
+      "Dify fixes Redis Sentinel/Cluster parsing corruption",
+      "LiteLLM ships v1.102.0-dev.2 and v1.100.1",
+      "Dify closes Dataset Service owner-bypass flaw"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs inference on CPU",
+      "Gemma 4 26B runs in 2GB RAM on M-series Mac",
+      "deja-vu: shared memory pool across 20+ coding agents",
+      "ripwire: MCP server computes blast radius pre-edit",
+      "Red Hat's ripwire cuts token spend for AI agents",
+      "okf-agent-memory brings git-native agent memory"
+    ],
+    "ai-web": [
+      "Anthropic alignment report: 481M transcripts scanned",
+      "New Opus 4.6 cybersecurity incident disclosed",
+      "Frontier Red Team releases military-use evaluations",
+      "Anthropic backfills full news archive to Feb 2025",
+      "62 new Anthropic articles, 6 new from OpenAI",
+      "Alignment assessment covers four security incidents"
+    ],
+    "ai-hn": [
+      "'Change button to blue' Claude demo hits 1177 pts",
+      "Meta's Muse agent launch draws 735 comments",
+      "OpenAI accused of repeatedly re-enabling training opt-in",
+      "Terence Tao warns AI is 'mining' open math problems",
+      "AlphaGenome Atlas maps human DNA at high resolution",
+      "Lean 4 verifies new Navier-Stokes result"
+    ],
+    "ai-arxiv": [
+      "GPU-CFR delivers 80x speedup on GPU-resistant workload",
+      "py-kvcache benchmarks NVMe caching vs recomputation",
+      "Headroom-Closed Index probes recursive self-improvement",
+      "New benchmark exposes RAG's hidden safety costs",
+      "Zero-overhead backdoor detection method proposed",
+      "MoE models shown to overfit more on repeated data"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts: 14.7K likes, 7.56M downloads",
+      "DeepSeek-V4.1-Flash adds multimodal image-text input",
+      "MiniMax-H3 video model hits 5,140 likes",
+      "Lightricks LTX-2.5 pushes text-to-video pipelines",
+      "GGUF/uncensored quantizations dominate a third of list",
+      "MiniCPM5-2B trends as compact on-device chat model"
+    ],
+    "ai-community": [
+      "Datasette security audit used 3 rival AI models",
+      "D-Engine cuts LLM token usage 42% via gate",
+      "nautilus-compass beats mem0 by 11.6pt on retrieval",
+      "Model swaps can silently lose memory-file facts",
+      "Simon Willison cross-checks findings across models",
+      "Local memory layer skips LLM calls at write time"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.268 ships new release",
+      "OpenCode #6231: model auto-discovery, 232 👍",
+      "Claude Code #2511: knowledge base request, 406 👍",
+      "OpenCode sees 10 PR updates in 24h vs CC's 3",
+      "Enterprise gateway: CIDR allowlisting added",
+      "Function Hooks extensibility lands in Claude Code"
+    ],
+    "ai-agents": [
+      "Security scan grades MCP reference servers",
+      "Two competing PRs harden fetch server against SSRF",
+      "Stable error codes for filesystem path validation",
+      "Session cleanup fix for 'everything' server",
+      "Zero merges today — active review/hardening phase",
+      "No new MCP releases shipped this cycle"
+    ],
+    "ai-infra": [
+      "Dify patches live API-key secret exposure bug",
+      "LiteLLM still containing 7-month supply-chain hack",
+      "ReDoS bug found in LiteLLM log redaction",
+      "Dify fixes Redis Sentinel/Cluster parsing corruption",
+      "LiteLLM ships v1.102.0-dev.2 and v1.100.1",
+      "Dify closes Dataset Service owner-bypass flaw"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs inference on CPU",
+      "Gemma 4 26B runs in 2GB RAM on M-series Mac",
+      "deja-vu: shared memory pool across 20+ coding agents",
+      "ripwire: MCP server computes blast radius pre-edit",
+      "Red Hat's ripwire cuts token spend for AI agents",
+      "okf-agent-memory brings git-native agent memory"
+    ],
+    "ai-web": [
+      "Anthropic alignment report: 481M transcripts scanned",
+      "New Opus 4.6 cybersecurity incident disclosed",
+      "Frontier Red Team releases military-use evaluations",
+      "Anthropic backfills full news archive to Feb 2025",
+      "62 new Anthropic articles, 6 new from OpenAI",
+      "Alignment assessment covers four security incidents"
+    ],
+    "ai-hn": [
+      "'Change button to blue' Claude demo hits 1177 pts",
+      "Meta's Muse agent launch draws 735 comments",
+      "OpenAI accused of repeatedly re-enabling training opt-in",
+      "Terence Tao warns AI is 'mining' open math problems",
+      "AlphaGenome Atlas maps human DNA at high resolution",
+      "Lean 4 verifies new Navier-Stokes result"
+    ],
+    "ai-arxiv": [
+      "GPU-CFR delivers 80x speedup on GPU-resistant workload",
+      "py-kvcache benchmarks NVMe caching vs recomputation",
+      "Headroom-Closed Index probes recursive self-improvement",
+      "New benchmark exposes RAG's hidden safety costs",
+      "Zero-overhead backdoor detection method proposed",
+      "MoE models shown to overfit more on repeated data"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts: 14.7K likes, 7.56M downloads",
+      "DeepSeek-V4.1-Flash adds multimodal image-text input",
+      "MiniMax-H3 video model hits 5,140 likes",
+      "Lightricks LTX-2.5 pushes text-to-video pipelines",
+      "GGUF/uncensored quantizations dominate a third of list",
+      "MiniCPM5-2B trends as compact on-device chat model"
+    ],
+    "ai-community": [
+      "Datasette security audit used 3 rival AI models",
+      "D-Engine cuts LLM token usage 42% via gate",
+      "nautilus-compass beats mem0 by 11.6pt on retrieval",
+      "Model swaps can silently lose memory-file facts",
+      "Simon Willison cross-checks findings across models",
+      "Local memory layer skips LLM calls at write time"
+    ]
+  }
+}
