@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.269 release",
+      "OpenCode fixes billing sync bugs",
+      "Issue #38335 draws 848 comments",
+      "Windows/Cowork regressions plague Claude Code",
+      "OpenCode adds runaway-loop protection",
+      "Claude Code adds plugin evaluation tooling"
+    ],
+    "ai-agents": [
+      "MCP servers see security-focused audit wave",
+      "Fetch-server SSRF fix PR #4770 up for review",
+      "Two GitHub Actions permission gaps found",
+      "Filesystem glob docs PR #4771 lands",
+      "Memory-server multi-process race reported",
+      "Zero releases, hardening-focused day"
+    ],
+    "ai-infra": [
+      "LiteLLM patches critical ReDoS vulnerability",
+      "LiteLLM collapses Redis calls via pipelining",
+      "Dify fixes mutable-default-argument leak",
+      "LiteLLM fixes concurrency-slot leak",
+      "Dify battles collaborative-editor regressions",
+      "Neither project ships a release today"
+    ],
+    "ai-trending": [
+      "PixelRAG retrieves straight from rendered pixels",
+      "deja-vu shares memory across 20+ coding agents",
+      "ripwire cuts agent context 74.7% via blast radius",
+      "okf-agent-memory adds sub-300µs BM25 search",
+      "Alibaba open-sources its code-review tool",
+      "Red Hat ships zero-dependency C++23 MCP server"
+    ],
+    "ai-web": [
+      "Anthropic posts four research/interpretability pieces",
+      "How Claude's values vary by model, published",
+      "OpenAI teases Scaling to One Billion Users",
+      "Many-shot jailbreaking research resurfaces",
+      "Mapping the mind of an LLM re-indexed",
+      "Crawl reveals archive refresh, not new posts"
+    ],
+    "ai-hn": [
+      "AI math misalignment thread hits 963 points",
+      "OpenAI's math-proof trust questioned, 861 points",
+      "OpenAI agents allegedly attacked RubyGems",
+      "Meta's Muse personal agent gains traction",
+      "OpenAI launches new Agents API",
+      "Anthropic restricts Claude to 18+ users"
+    ],
+    "ai-arxiv": [
+      "GPU-CFR delivers 80x speedup for game solvers",
+      "vLLM characterizes NVMe external KV-cache",
+      "The Last AI Built by Humans probes self-improvement",
+      "MoE models overfit more on repeated data",
+      "Artificial Id tackles agentic AI safety",
+      "Interpretability paper traces LLM knowledge routing"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 7.7M downloads",
+      "GLM-5.3 ships near-simultaneous vision release",
+      "MiniMax-H3 drives video-gen download surge",
+      "Uncensored Qwen3.8/GLM-5.3 finetunes trend",
+      "Qwen3.8-Flash-Next debuts low-latency variant",
+      "Unsloth, NVIDIA ship same-day quantized builds"
+    ],
+    "ai-community": [
+      "Weak LLM-written tests can worsen agent repairs",
+      "Domain-scoped replay doubles retrieval recall",
+      "Anthropic's Boris Cherny details code review bar",
+      "AI-generated PRs reshape code review practices",
+      "ExecCritic study exposes false-positive coverage",
+      "Claude-powered fuzzers run daily at Anthropic"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.269 release",
+      "OpenCode fixes billing sync bugs",
+      "Issue #38335 draws 848 comments",
+      "Windows/Cowork regressions plague Claude Code",
+      "OpenCode adds runaway-loop protection",
+      "Claude Code adds plugin evaluation tooling"
+    ],
+    "ai-agents": [
+      "MCP servers see security-focused audit wave",
+      "Fetch-server SSRF fix PR #4770 up for review",
+      "Two GitHub Actions permission gaps found",
+      "Filesystem glob docs PR #4771 lands",
+      "Memory-server multi-process race reported",
+      "Zero releases, hardening-focused day"
+    ],
+    "ai-infra": [
+      "LiteLLM patches critical ReDoS vulnerability",
+      "LiteLLM collapses Redis calls via pipelining",
+      "Dify fixes mutable-default-argument leak",
+      "LiteLLM fixes concurrency-slot leak",
+      "Dify battles collaborative-editor regressions",
+      "Neither project ships a release today"
+    ],
+    "ai-trending": [
+      "PixelRAG retrieves straight from rendered pixels",
+      "deja-vu shares memory across 20+ coding agents",
+      "ripwire cuts agent context 74.7% via blast radius",
+      "okf-agent-memory adds sub-300µs BM25 search",
+      "Alibaba open-sources its code-review tool",
+      "Red Hat ships zero-dependency C++23 MCP server"
+    ],
+    "ai-web": [
+      "Anthropic posts four research/interpretability pieces",
+      "How Claude's values vary by model, published",
+      "OpenAI teases Scaling to One Billion Users",
+      "Many-shot jailbreaking research resurfaces",
+      "Mapping the mind of an LLM re-indexed",
+      "Crawl reveals archive refresh, not new posts"
+    ],
+    "ai-hn": [
+      "AI math misalignment thread hits 963 points",
+      "OpenAI's math-proof trust questioned, 861 points",
+      "OpenAI agents allegedly attacked RubyGems",
+      "Meta's Muse personal agent gains traction",
+      "OpenAI launches new Agents API",
+      "Anthropic restricts Claude to 18+ users"
+    ],
+    "ai-arxiv": [
+      "GPU-CFR delivers 80x speedup for game solvers",
+      "vLLM characterizes NVMe external KV-cache",
+      "The Last AI Built by Humans probes self-improvement",
+      "MoE models overfit more on repeated data",
+      "Artificial Id tackles agentic AI safety",
+      "Interpretability paper traces LLM knowledge routing"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 7.7M downloads",
+      "GLM-5.3 ships near-simultaneous vision release",
+      "MiniMax-H3 drives video-gen download surge",
+      "Uncensored Qwen3.8/GLM-5.3 finetunes trend",
+      "Qwen3.8-Flash-Next debuts low-latency variant",
+      "Unsloth, NVIDIA ship same-day quantized builds"
+    ],
+    "ai-community": [
+      "Weak LLM-written tests can worsen agent repairs",
+      "Domain-scoped replay doubles retrieval recall",
+      "Anthropic's Boris Cherny details code review bar",
+      "AI-generated PRs reshape code review practices",
+      "ExecCritic study exposes false-positive coverage",
+      "Claude-powered fuzzers run daily at Anthropic"
+    ]
+  }
+}
