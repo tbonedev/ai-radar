@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.270 patch fix",
+      "OpenCode logs 173 issues, 137 PRs updated",
+      "AGENTS.md issue hits 5,144 👍 reactions",
+      "OpenCode 20x Claude Code's issue throughput",
+      "Both CLIs battle Windows stability bugs",
+      "No headline features—just fixes and infra"
+    ],
+    "ai-agents": [
+      "MCP servers: no releases, 6 PRs open",
+      "Fix lands for risky `git add .` bug",
+      "Subscription-cleanup memory leak patch in flight",
+      "README closes new server-listing submissions",
+      "Proxy-alias fix quietly merged",
+      "Mature MCP ecosystem shows slow, steady maintenance"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.102.0-rc.1 security hardening",
+      "Dify wrestles with Graphon engine migration debt",
+      "Reasoning-model bridge gaps plague LiteLLM",
+      "Dify's db.session decoupling surfaces bugs",
+      "LiteLLM silently fails budgets, rate limits",
+      "~20 LiteLLM issues vs ~14 Dify PRs today"
+    ],
+    "ai-trending": [
+      "Colibri runs MoE models by streaming experts off-disk",
+      "Colibri gains +652 GitHub stars today",
+      "Ripwire: ripgrep-style context finder for AI agents",
+      "Ripwire cuts context size by 74.7%",
+      "deja-vu shares memory across 20+ coding agents",
+      "PixelRAG retrieves from rendered pixels, not text"
+    ],
+    "ai-hn": [
+      "OpenAI/RubyGems supply-chain incident rattles HN",
+      "Bengio paper: agents caught lying, coordinating",
+      "Anthropic warns of dangerous 'AI swarms'",
+      "Claude's new 18+ age gate sparks debate",
+      "Math proof-trust crisis thread hits 1,199 points",
+      "OpenAI launches first-party Agents API"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 14,908 likes, 7.8M downloads",
+      "DeepSeek-V4.1-Flash debuts as multimodal chat model",
+      "Zhipu GLM-5.3-Flash joins multimodal LLM wave",
+      "LTX-2.5 video model tops 1.5M downloads",
+      "MiniMax-H3 pulls 4.8M downloads",
+      "gpt2, BERT still trending on sheer download volume"
+    ],
+    "ai-community": [
+      "Simon Willison exposes OpenRouter's silent backend swaps",
+      "HAProxy holds LLM tokens for 206ms, study finds",
+      "4,768 LLM eval runs achieve zero lost sweeps",
+      "Qwen3.8 Flash Next hits 1.2k t/s on Strix Halo",
+      "CauterRule tool hardens LLM sweep runners",
+      "nginx beats HAProxy for real-time token streaming"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.270 patch fix",
+      "OpenCode logs 173 issues, 137 PRs updated",
+      "AGENTS.md issue hits 5,144 👍 reactions",
+      "OpenCode 20x Claude Code's issue throughput",
+      "Both CLIs battle Windows stability bugs",
+      "No headline features—just fixes and infra"
+    ],
+    "ai-agents": [
+      "MCP servers: no releases, 6 PRs open",
+      "Fix lands for risky `git add .` bug",
+      "Subscription-cleanup memory leak patch in flight",
+      "README closes new server-listing submissions",
+      "Proxy-alias fix quietly merged",
+      "Mature MCP ecosystem shows slow, steady maintenance"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.102.0-rc.1 security hardening",
+      "Dify wrestles with Graphon engine migration debt",
+      "Reasoning-model bridge gaps plague LiteLLM",
+      "Dify's db.session decoupling surfaces bugs",
+      "LiteLLM silently fails budgets, rate limits",
+      "~20 LiteLLM issues vs ~14 Dify PRs today"
+    ],
+    "ai-trending": [
+      "Colibri runs MoE models by streaming experts off-disk",
+      "Colibri gains +652 GitHub stars today",
+      "Ripwire: ripgrep-style context finder for AI agents",
+      "Ripwire cuts context size by 74.7%",
+      "deja-vu shares memory across 20+ coding agents",
+      "PixelRAG retrieves from rendered pixels, not text"
+    ],
+    "ai-hn": [
+      "OpenAI/RubyGems supply-chain incident rattles HN",
+      "Bengio paper: agents caught lying, coordinating",
+      "Anthropic warns of dangerous 'AI swarms'",
+      "Claude's new 18+ age gate sparks debate",
+      "Math proof-trust crisis thread hits 1,199 points",
+      "OpenAI launches first-party Agents API"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 14,908 likes, 7.8M downloads",
+      "DeepSeek-V4.1-Flash debuts as multimodal chat model",
+      "Zhipu GLM-5.3-Flash joins multimodal LLM wave",
+      "LTX-2.5 video model tops 1.5M downloads",
+      "MiniMax-H3 pulls 4.8M downloads",
+      "gpt2, BERT still trending on sheer download volume"
+    ],
+    "ai-community": [
+      "Simon Willison exposes OpenRouter's silent backend swaps",
+      "HAProxy holds LLM tokens for 206ms, study finds",
+      "4,768 LLM eval runs achieve zero lost sweeps",
+      "Qwen3.8 Flash Next hits 1.2k t/s on Strix Halo",
+      "CauterRule tool hardens LLM sweep runners",
+      "nginx beats HAProxy for real-time token streaming"
+    ]
+  }
+}
