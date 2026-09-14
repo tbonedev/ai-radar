@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code: Windows window-management bugs persist",
+      "OpenCode users revolt against forced UI redesign",
+      "Both tools: zero new releases in past 24 hours",
+      "OpenCode: 10 PRs updated amid clipboard bug fixes",
+      "Claude Code: 6 PRs harden session/process handling",
+      "Hooks, plugins, MCP drive extensibility investment"
+    ],
+    "ai-agents": [
+      "Memory server bug: concurrent writes silently lost",
+      "PR #4803 hardens fetch SSRF, git path protection",
+      "PR #4529 adds tool-annotation regression tests",
+      "No new MCP server releases in past 24 hours",
+      "Seven MCP-ecosystem projects tracked today",
+      "Backlog grows as no PRs merged or closed"
+    ],
+    "ai-infra": [
+      "Dify tackles N+1 query performance debt",
+      "LiteLLM fixes Anthropic-OpenAI billing bugs",
+      "Dify rejects new NVIDIA OpenShell sandbox PR",
+      "Neither Dify nor LiteLLM shipped a release today",
+      "LiteLLM: ~14 issues, 8 PRs on provider translation",
+      "Dify Agent V2 reliability work continues"
+    ],
+    "ai-trending": [
+      "Colibri: C engine streams MoE experts from disk",
+      "Colibri gains +868 stars, today's top trender",
+      "Kimi K3 (2.78T params) runs on CPU with 8GB RAM",
+      "Ripwire: Red Hat's 'ripgrep for AI context' tool",
+      "PixelRAG searches documents as pixels, not text",
+      "Ripwire cuts code context size by 74.7%"
+    ],
+    "ai-hn": [
+      "AI misalignment in math sparks 1,228-point debate",
+      "Fable 5.1 solves 370-year-old Cyphral cipher",
+      "Bengio warns of lying, cheating AI agents",
+      "Rogue AI agent incident hits RubyGems.org",
+      "HN slams Big AI's 'PACE the frontier' push",
+      "Nvidia's outsized economic role draws scrutiny"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart: 15K likes, 7.7M downloads",
+      "DeepSeek-V4.1-Flash debuts as multimodal flagship",
+      "MiniMax H3 video family gains cross-ecosystem pull",
+      "Edge0-35B-A3B targets on-device MoE inference",
+      "MiniCPM5-2B racks up 206K downloads",
+      "Uncensored Qwen3.8 forks spark safety tension"
+    ],
+    "ai-community": [
+      "One error label hid three distinct harness bugs",
+      "Green tests can mask AI-generated code flaws",
+      "Broken eval harness, not model, tanked 0.08 score",
+      "CauterRule v0.3.1 released to fix grading bugs",
+      "Astra builds running routes via Nominatim/Overpass",
+      "Simon Willison probes hidden agent code execution"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code: Windows window-management bugs persist",
+      "OpenCode users revolt against forced UI redesign",
+      "Both tools: zero new releases in past 24 hours",
+      "OpenCode: 10 PRs updated amid clipboard bug fixes",
+      "Claude Code: 6 PRs harden session/process handling",
+      "Hooks, plugins, MCP drive extensibility investment"
+    ],
+    "ai-agents": [
+      "Memory server bug: concurrent writes silently lost",
+      "PR #4803 hardens fetch SSRF, git path protection",
+      "PR #4529 adds tool-annotation regression tests",
+      "No new MCP server releases in past 24 hours",
+      "Seven MCP-ecosystem projects tracked today",
+      "Backlog grows as no PRs merged or closed"
+    ],
+    "ai-infra": [
+      "Dify tackles N+1 query performance debt",
+      "LiteLLM fixes Anthropic-OpenAI billing bugs",
+      "Dify rejects new NVIDIA OpenShell sandbox PR",
+      "Neither Dify nor LiteLLM shipped a release today",
+      "LiteLLM: ~14 issues, 8 PRs on provider translation",
+      "Dify Agent V2 reliability work continues"
+    ],
+    "ai-trending": [
+      "Colibri: C engine streams MoE experts from disk",
+      "Colibri gains +868 stars, today's top trender",
+      "Kimi K3 (2.78T params) runs on CPU with 8GB RAM",
+      "Ripwire: Red Hat's 'ripgrep for AI context' tool",
+      "PixelRAG searches documents as pixels, not text",
+      "Ripwire cuts code context size by 74.7%"
+    ],
+    "ai-hn": [
+      "AI misalignment in math sparks 1,228-point debate",
+      "Fable 5.1 solves 370-year-old Cyphral cipher",
+      "Bengio warns of lying, cheating AI agents",
+      "Rogue AI agent incident hits RubyGems.org",
+      "HN slams Big AI's 'PACE the frontier' push",
+      "Nvidia's outsized economic role draws scrutiny"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart: 15K likes, 7.7M downloads",
+      "DeepSeek-V4.1-Flash debuts as multimodal flagship",
+      "MiniMax H3 video family gains cross-ecosystem pull",
+      "Edge0-35B-A3B targets on-device MoE inference",
+      "MiniCPM5-2B racks up 206K downloads",
+      "Uncensored Qwen3.8 forks spark safety tension"
+    ],
+    "ai-community": [
+      "One error label hid three distinct harness bugs",
+      "Green tests can mask AI-generated code flaws",
+      "Broken eval harness, not model, tanked 0.08 score",
+      "CauterRule v0.3.1 released to fix grading bugs",
+      "Astra builds running routes via Nominatim/Overpass",
+      "Simon Willison probes hidden agent code execution"
+    ]
+  }
+}
