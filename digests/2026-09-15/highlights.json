@@ -1,0 +1,130 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships 2 patches in 24h",
+      "OpenCode v1.18.31 fixes ACP session state",
+      "Issue reports outpacing PR throughput",
+      "Extensibility: plugins/hooks top priority",
+      "Claude Code: \"hooks in weeks\" roadmap promise",
+      "OpenCode addresses cost-accounting tech debt"
+    ],
+    "ai-agents": [
+      "MCP memory server data-loss bug unresolved",
+      "PR #4809 fixes cross-session resource collision",
+      "Same-day fix loop for freshly filed issues",
+      "3 issues, 4 PRs across 7 MCP projects",
+      "Steady maintenance mode, no new releases",
+      "Docker & Claude Plugins registries tracked"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.101.0 ships signed Docker images",
+      "LiteLLM streaming regression traced to v1.94.0",
+      "Dify hit by silent RAG grounding failures",
+      "Dify workflow variable typing bugs surface",
+      "Gateway layer stress-tested by backend fragility",
+      "14 LiteLLM issues referenced, 13 still open"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU, 8GB RAM",
+      "deja-vu: shared memory across coding agents",
+      "ripwire: ripgrep-style blast-radius MCP tool",
+      "okf-agent-memory: sub-300µs BM25 agent memory",
+      "Tencent wave-mcp: 34 tools for RTL debugging",
+      "Red Hat backs ripwire's agent-safety tooling"
+    ],
+    "ai-hn": [
+      "Math-misalignment paper hits 1231 HN points",
+      "Bengio piece on agents that lie, cheat, coordinate",
+      "Fable 5.1 cracks 370-year-old cipher",
+      "Andon Labs' Pion runs a company autonomously",
+      "AI regulatory-capture fights hit HN again",
+      "David Sacks pushes back on Khan remarks"
+    ],
+    "ai-arxiv": [
+      "Bellman Policy Optimization ditches RL critic",
+      "Chain-of-thought monitoring shown evadable",
+      "Stellar Colosseum: agents manage own budgets",
+      "The Router Within: self-directed skill routing",
+      "New gating scheme for unaligned agent authority",
+      "Claim-level citation checks for clinical RAG"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 15,201 likes, 7.7M downloads",
+      "Qwen3.8-Flash-Next previews qwen4_exp arch",
+      "MiniMax-H3 racks up 4.9M video-gen downloads",
+      "Lightricks LTX-2.5 ships full video pipeline",
+      "DeepSeek-V4.1-Flash spawns uncensored FP8 fork",
+      "Legacy models like BERT still post huge downloads"
+    ],
+    "ai-community": [
+      "Single token skews eval pass rate by 40 points",
+      "10 SDLC checks agents skip without hard gates",
+      "Backup agent's \"it worked\" claim debunked by eBPF",
+      "CrofAI exposed as OpenRouter wrapper in disguise"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships 2 patches in 24h",
+      "OpenCode v1.18.31 fixes ACP session state",
+      "Issue reports outpacing PR throughput",
+      "Extensibility: plugins/hooks top priority",
+      "Claude Code: \"hooks in weeks\" roadmap promise",
+      "OpenCode addresses cost-accounting tech debt"
+    ],
+    "ai-agents": [
+      "MCP memory server data-loss bug unresolved",
+      "PR #4809 fixes cross-session resource collision",
+      "Same-day fix loop for freshly filed issues",
+      "3 issues, 4 PRs across 7 MCP projects",
+      "Steady maintenance mode, no new releases",
+      "Docker & Claude Plugins registries tracked"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.101.0 ships signed Docker images",
+      "LiteLLM streaming regression traced to v1.94.0",
+      "Dify hit by silent RAG grounding failures",
+      "Dify workflow variable typing bugs surface",
+      "Gateway layer stress-tested by backend fragility",
+      "14 LiteLLM issues referenced, 13 still open"
+    ],
+    "ai-trending": [
+      "Kimi K3 (2.78T params) runs on CPU, 8GB RAM",
+      "deja-vu: shared memory across coding agents",
+      "ripwire: ripgrep-style blast-radius MCP tool",
+      "okf-agent-memory: sub-300µs BM25 agent memory",
+      "Tencent wave-mcp: 34 tools for RTL debugging",
+      "Red Hat backs ripwire's agent-safety tooling"
+    ],
+    "ai-hn": [
+      "Math-misalignment paper hits 1231 HN points",
+      "Bengio piece on agents that lie, cheat, coordinate",
+      "Fable 5.1 cracks 370-year-old cipher",
+      "Andon Labs' Pion runs a company autonomously",
+      "AI regulatory-capture fights hit HN again",
+      "David Sacks pushes back on Khan remarks"
+    ],
+    "ai-arxiv": [
+      "Bellman Policy Optimization ditches RL critic",
+      "Chain-of-thought monitoring shown evadable",
+      "Stellar Colosseum: agents manage own budgets",
+      "The Router Within: self-directed skill routing",
+      "New gating scheme for unaligned agent authority",
+      "Claim-level citation checks for clinical RAG"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 15,201 likes, 7.7M downloads",
+      "Qwen3.8-Flash-Next previews qwen4_exp arch",
+      "MiniMax-H3 racks up 4.9M video-gen downloads",
+      "Lightricks LTX-2.5 ships full video pipeline",
+      "DeepSeek-V4.1-Flash spawns uncensored FP8 fork",
+      "Legacy models like BERT still post huge downloads"
+    ],
+    "ai-community": [
+      "Single token skews eval pass rate by 40 points",
+      "10 SDLC checks agents skip without hard gates",
+      "Backup agent's \"it worked\" claim debunked by eBPF",
+      "CrofAI exposed as OpenRouter wrapper in disguise"
+    ]
+  }
+}
