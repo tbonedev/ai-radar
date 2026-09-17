@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.274 ships memory warnings fix",
+      "OpenCode battles macOS SystemPrompt crash",
+      "Claude Code issue hits 1,495 comments",
+      "OpenCode adds multi-provider subagent orchestration",
+      "Billing friction hits both Claude Code, OpenCode",
+      "MCP startup timeout fixed in Claude Code"
+    ],
+    "ai-agents": [
+      "MCP Servers: 9 PRs, just 1 issue today",
+      "Filesystem UTF-8 decoding bug fixed (#4670)",
+      "Git log timestamp filter bug fixed (#4271)",
+      "BlueX888 bulk-audits sequentialthinking, git servers",
+      "No new MCP releases today",
+      "PNG checksum, git diff parsing bugs squashed"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.102.0-rc.2 with cosign signing",
+      "Dify absorbs 39 issues, 132 PRs today",
+      "MCP tool-calling bugs dominate Dify fixes",
+      "No new model support shipped by either project",
+      "LiteLLM hardens billing/cost accounting",
+      "Dify RAG ingestion correctness fixes land"
+    ],
+    "ai-trending": [
+      "deja-vu: shared memory for 20+ coding agents",
+      "ripwire: \"ripgrep of AI context\" for agents",
+      "skill-recorder turns screen recordings into Skills",
+      "okf-agent-memory: git-native BM25 agent memory",
+      "PixelRAG debuts as research-based project",
+      "Sub-300µs search, 80% token-bloat cut claimed"
+    ],
+    "ai-web": [
+      "OpenAI posts 58 new articles, Anthropic zero",
+      "~50 pages on \"disrupting malicious uses of AI\"",
+      "Gartner recognition page spotted in OpenAI batch",
+      "Anthropic sitemap tops 443 total articles",
+      "OpenAI sitemap surpasses 1,017 articles",
+      "Metadata-only crawl limits OpenAI analysis"
+    ],
+    "ai-hn": [
+      "System One Models and Jev tops HN: 1,828 pts",
+      "Fable 5.1 cracks 370-year-old cipher",
+      "Ternary LLMs push past 1.58-bit barrier",
+      "DeepSeek v4.1 Flash tops hacking benchmarks",
+      "Baseten GitHub PAT takeover exposes supply risk",
+      "AI \"model welfare\" debate sparks big thread"
+    ],
+    "ai-arxiv": [
+      "Papers probe reward hacking via interpretability",
+      "Zeroth-order method eases preference alignment",
+      "MoE expert-pruning boosts efficiency research",
+      "Multi-step agent privacy leakage under scrutiny",
+      "Model collapse theory questioned in new paper",
+      "Tokeniser quality reframed: objective vs search"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF with 7.4M downloads",
+      "DeepSeek-V4.1-Flash forked into uncensored builds",
+      "MiniMax-H3 multimodal model debuts on HF",
+      "LTX-2.5 leads trending video generation models",
+      "Tencent's AuK TTS model trends on HF",
+      "GPT-2, BERT still rack up massive downloads"
+    ],
+    "ai-community": [
+      "AI copies old code's bugs 100% of runs, study shows",
+      "Post-migration, models reuse the fixed component instead",
+      "170 AI planning runs repeat same 3 mistakes every time",
+      "Failure mode is planning structure, not model choice",
+      "Yegge shuts down \"Gas Town\" AI orchestrator",
+      "Dan Luu echoes multi-agent orchestration doubts"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.274 ships memory warnings fix",
+      "OpenCode battles macOS SystemPrompt crash",
+      "Claude Code issue hits 1,495 comments",
+      "OpenCode adds multi-provider subagent orchestration",
+      "Billing friction hits both Claude Code, OpenCode",
+      "MCP startup timeout fixed in Claude Code"
+    ],
+    "ai-agents": [
+      "MCP Servers: 9 PRs, just 1 issue today",
+      "Filesystem UTF-8 decoding bug fixed (#4670)",
+      "Git log timestamp filter bug fixed (#4271)",
+      "BlueX888 bulk-audits sequentialthinking, git servers",
+      "No new MCP releases today",
+      "PNG checksum, git diff parsing bugs squashed"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.102.0-rc.2 with cosign signing",
+      "Dify absorbs 39 issues, 132 PRs today",
+      "MCP tool-calling bugs dominate Dify fixes",
+      "No new model support shipped by either project",
+      "LiteLLM hardens billing/cost accounting",
+      "Dify RAG ingestion correctness fixes land"
+    ],
+    "ai-trending": [
+      "deja-vu: shared memory for 20+ coding agents",
+      "ripwire: \"ripgrep of AI context\" for agents",
+      "skill-recorder turns screen recordings into Skills",
+      "okf-agent-memory: git-native BM25 agent memory",
+      "PixelRAG debuts as research-based project",
+      "Sub-300µs search, 80% token-bloat cut claimed"
+    ],
+    "ai-web": [
+      "OpenAI posts 58 new articles, Anthropic zero",
+      "~50 pages on \"disrupting malicious uses of AI\"",
+      "Gartner recognition page spotted in OpenAI batch",
+      "Anthropic sitemap tops 443 total articles",
+      "OpenAI sitemap surpasses 1,017 articles",
+      "Metadata-only crawl limits OpenAI analysis"
+    ],
+    "ai-hn": [
+      "System One Models and Jev tops HN: 1,828 pts",
+      "Fable 5.1 cracks 370-year-old cipher",
+      "Ternary LLMs push past 1.58-bit barrier",
+      "DeepSeek v4.1 Flash tops hacking benchmarks",
+      "Baseten GitHub PAT takeover exposes supply risk",
+      "AI \"model welfare\" debate sparks big thread"
+    ],
+    "ai-arxiv": [
+      "Papers probe reward hacking via interpretability",
+      "Zeroth-order method eases preference alignment",
+      "MoE expert-pruning boosts efficiency research",
+      "Multi-step agent privacy leakage under scrutiny",
+      "Model collapse theory questioned in new paper",
+      "Tokeniser quality reframed: objective vs search"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF with 7.4M downloads",
+      "DeepSeek-V4.1-Flash forked into uncensored builds",
+      "MiniMax-H3 multimodal model debuts on HF",
+      "LTX-2.5 leads trending video generation models",
+      "Tencent's AuK TTS model trends on HF",
+      "GPT-2, BERT still rack up massive downloads"
+    ],
+    "ai-community": [
+      "AI copies old code's bugs 100% of runs, study shows",
+      "Post-migration, models reuse the fixed component instead",
+      "170 AI planning runs repeat same 3 mistakes every time",
+      "Failure mode is planning structure, not model choice",
+      "Yegge shuts down \"Gas Town\" AI orchestrator",
+      "Dan Luu echoes multi-agent orchestration doubts"
+    ]
+  }
+}
