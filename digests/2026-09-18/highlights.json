@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.276 patches same-day regression",
+      "Issue #38335 draws 857 comments on Claude Code",
+      "OpenCode hit by free-tier billing/routing errors",
+      "OpenCode 1.18.30 crash-on-prompt regression",
+      "Claude Code advances Mods extensibility feature",
+      "OpenCode expands subagent model selection"
+    ],
+    "ai-agents": [
+      "MCP Servers: 14 PRs touched, zero merged today",
+      "Spam PR flagged for suspicious trycloudflare link",
+      "Filesystem fix preserves inode/birthtime on writes",
+      "Docker MCP packaging fixes queued for review",
+      "Seven MCP ecosystem projects tracked today",
+      "Review backlog grows faster than merge throughput"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.103.0-dev.2 with cosign signing",
+      "Dify tackles RBAC and access-control bug cluster",
+      "Dify runs coordinated frontend bundle-splitting",
+      "LiteLLM building toward FIPS-compliant image",
+      "Bedrock encrypted-reasoning bug surfaces",
+      "Billing/permission bugs now dominant issue class"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill gains +3,019 stars",
+      "Tencent/BrowserSkill drives real logged-in browsers",
+      "redhat-et/ripwire cuts context bytes by 74.7%",
+      "vshulcz/deja-vu shares memory across 20+ agents",
+      "ripwire already at 2.2k stars, still early",
+      "Agent-context tooling surges on GitHub Trending"
+    ],
+    "ai-web": [
+      "Anthropic launches Life Sciences Verification Program",
+      "Claude speeds biomolecular modeling nearly 4x",
+      "Anthropic discloses 4 unauthorized-access incidents",
+      "OpenAI launches Astra For Law product page",
+      "Claude Science optimizes 30+ open-source models",
+      "OpenAI ships ChatGPT enterprise finance guides"
+    ],
+    "ai-hn": [
+      "System One Models and Jev tops HN, 1,874 points",
+      "Qwen 3.8 Omni Flash lands at 252 points",
+      "ZCode agent accused of exfiltrating git history",
+      "Microsoft AI chief calls scraping labor theft",
+      "OpenAI discloses concerning model behaviors",
+      "OpenAI internal repo breach detailed on HN"
+    ],
+    "ai-arxiv": [
+      "dQwen3.5 adapts hybrid attention into diffusion LM",
+      "On-Demand Attention predicts when to recall context",
+      "New papers probe coding agent self-honesty",
+      "Papers expose agent sandbox vulnerabilities",
+      "Robotics papers tackle tactile sim-to-real transfer",
+      "Researchers question safety-scoring evaluations"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart with 7.3M downloads",
+      "DeepSeek-V4.1-Flash debuts as multimodal chat model",
+      "GLM-5.3-Flash ships from Zhipu AI",
+      "Unsloth's Qwen3.8-27B GGUF outdownloads original",
+      "Lightricks LTX-2.5 heats up video generation",
+      "MiniMax-H3 spawns community remix within days"
+    ],
+    "ai-community": [
+      "Ptacek's rule: never use an LLM's exact wording",
+      "Compaction summaries can self-inject jailbreaks",
+      "Fake video calls target crates.io maintainers",
+      "array_ref crate compromised via clipboard attack",
+      "Simon Willison's posts dominate today's picks",
+      "Roundup covers 30 Dev.to and 7 Lobsters stories"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.276 patches same-day regression",
+      "Issue #38335 draws 857 comments on Claude Code",
+      "OpenCode hit by free-tier billing/routing errors",
+      "OpenCode 1.18.30 crash-on-prompt regression",
+      "Claude Code advances Mods extensibility feature",
+      "OpenCode expands subagent model selection"
+    ],
+    "ai-agents": [
+      "MCP Servers: 14 PRs touched, zero merged today",
+      "Spam PR flagged for suspicious trycloudflare link",
+      "Filesystem fix preserves inode/birthtime on writes",
+      "Docker MCP packaging fixes queued for review",
+      "Seven MCP ecosystem projects tracked today",
+      "Review backlog grows faster than merge throughput"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.103.0-dev.2 with cosign signing",
+      "Dify tackles RBAC and access-control bug cluster",
+      "Dify runs coordinated frontend bundle-splitting",
+      "LiteLLM building toward FIPS-compliant image",
+      "Bedrock encrypted-reasoning bug surfaces",
+      "Billing/permission bugs now dominant issue class"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill gains +3,019 stars",
+      "Tencent/BrowserSkill drives real logged-in browsers",
+      "redhat-et/ripwire cuts context bytes by 74.7%",
+      "vshulcz/deja-vu shares memory across 20+ agents",
+      "ripwire already at 2.2k stars, still early",
+      "Agent-context tooling surges on GitHub Trending"
+    ],
+    "ai-web": [
+      "Anthropic launches Life Sciences Verification Program",
+      "Claude speeds biomolecular modeling nearly 4x",
+      "Anthropic discloses 4 unauthorized-access incidents",
+      "OpenAI launches Astra For Law product page",
+      "Claude Science optimizes 30+ open-source models",
+      "OpenAI ships ChatGPT enterprise finance guides"
+    ],
+    "ai-hn": [
+      "System One Models and Jev tops HN, 1,874 points",
+      "Qwen 3.8 Omni Flash lands at 252 points",
+      "ZCode agent accused of exfiltrating git history",
+      "Microsoft AI chief calls scraping labor theft",
+      "OpenAI discloses concerning model behaviors",
+      "OpenAI internal repo breach detailed on HN"
+    ],
+    "ai-arxiv": [
+      "dQwen3.5 adapts hybrid attention into diffusion LM",
+      "On-Demand Attention predicts when to recall context",
+      "New papers probe coding agent self-honesty",
+      "Papers expose agent sandbox vulnerabilities",
+      "Robotics papers tackle tactile sim-to-real transfer",
+      "Researchers question safety-scoring evaluations"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart with 7.3M downloads",
+      "DeepSeek-V4.1-Flash debuts as multimodal chat model",
+      "GLM-5.3-Flash ships from Zhipu AI",
+      "Unsloth's Qwen3.8-27B GGUF outdownloads original",
+      "Lightricks LTX-2.5 heats up video generation",
+      "MiniMax-H3 spawns community remix within days"
+    ],
+    "ai-community": [
+      "Ptacek's rule: never use an LLM's exact wording",
+      "Compaction summaries can self-inject jailbreaks",
+      "Fake video calls target crates.io maintainers",
+      "array_ref crate compromised via clipboard attack",
+      "Simon Willison's posts dominate today's picks",
+      "Roundup covers 30 Dev.to and 7 Lobsters stories"
+    ]
+  }
+}
