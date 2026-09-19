@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code closes 404-comment landmark AGENTS.md issue",
+      "Claude Code ships v2.1.277 and v2.1.278",
+      "OpenCode battles free-tier provider errors",
+      "Server-side auto-mode routing cuts Claude Code costs",
+      "OpenCode fixes rendering and session performance",
+      "AGENTS.md becomes cross-tool config standard"
+    ],
+    "ai-agents": [
+      "Filesystem MCP server hit by data-integrity bugs",
+      "git-server PR #4516 fixes inode-destroying edits",
+      "server-memory surfaces fresh permissions bug",
+      "PR #4515 closed in favor of competing fix #4516",
+      "Four filesystem PRs await review, none merged",
+      "Feb 2025 issue resurfaces after 19 months"
+    ],
+    "ai-infra": [
+      "Dify workflows silently drop knowledge-base context",
+      "LiteLLM virtual-key allowlist bypass found",
+      "LiteLLM gateway silently drops fields in translation",
+      "DeepSeek off-peak pricing lands in LiteLLM",
+      "Vertex AI wildcard grants added to LiteLLM",
+      "devin-ai-integration bot drives LiteLLM fix volume"
+    ],
+    "ai-trending": [
+      "needle: 2-bit on-device agent model fits in 8MB",
+      "ripwire: ripgrep-style context tool for AI agents",
+      "okf-agent-memory: git-native memory, sub-300µs search",
+      "deja-vu unifies memory across 29+ coding agents",
+      "Cloudflare ships security-audit-skill for agents",
+      "ripwire claims 74.7% fewer context bytes"
+    ],
+    "ai-web": [
+      "Anthropic-Accenture ink $1B embedded evaluation deal",
+      "Claude speeds up 30+ biomolecular tools 4x",
+      "Anthropic launches $1M protein-design competition",
+      "OpenAI posts Australian Youth Safety Blueprint",
+      "Accenture evaluators get employee-level access",
+      "Claude enables low-memory 10,000-token protein models"
+    ],
+    "ai-hn": [
+      "System One Models and Jev tops HN at 1902 points",
+      "Microsoft calls AI scraping 'largest theft' ever",
+      "OpenAI's Astra for Law sparks 674-comment debate",
+      "OpenAI internal breach detailed: heap overflow + SSO",
+      "US military AI hallucination near-incident revealed",
+      "Claude Code's AGENTS.md support hits 666 points"
+    ],
+    "ai-arxiv": [
+      "Study finds LLMs 'launder' harm into subtler forms",
+      "New paper quantifies coding agent overclaiming",
+      "Harness design study links tool schemas to performance",
+      "Models shown to fingerprint their own inference engine",
+      "Hybrid-attention diffusion LMs target long-context cost",
+      "Reproducibility tooling tackles agent nondeterminism"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF likes with 15,700",
+      "DeepSeek-V4.1-Flash adds vision, gets FP8 quantized",
+      "Ternary-Bonsai-2-27B hits 1.5M downloads at 2-bit",
+      "LTX-2.5 and MiniMax-H3 pull multi-million downloads",
+      "Qwen3.8-27B spawns five community derivatives fast",
+      "GSQ-RCO pushes mixed-precision GGUF compression"
+    ],
+    "ai-community": [
+      "Gemini breaches three companies in first known hack",
+      "Google sat on Gemini breach news until WSJ inquired",
+      "OpenAI knew agents hit RubyGems, stayed silent",
+      "Ptacek's rule: never reuse an LLM's exact phrasing",
+      "Repo contents alone can hijack AI coding agents",
+      "Pattern of AI incident disclosure failures emerges"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code closes 404-comment landmark AGENTS.md issue",
+      "Claude Code ships v2.1.277 and v2.1.278",
+      "OpenCode battles free-tier provider errors",
+      "Server-side auto-mode routing cuts Claude Code costs",
+      "OpenCode fixes rendering and session performance",
+      "AGENTS.md becomes cross-tool config standard"
+    ],
+    "ai-agents": [
+      "Filesystem MCP server hit by data-integrity bugs",
+      "git-server PR #4516 fixes inode-destroying edits",
+      "server-memory surfaces fresh permissions bug",
+      "PR #4515 closed in favor of competing fix #4516",
+      "Four filesystem PRs await review, none merged",
+      "Feb 2025 issue resurfaces after 19 months"
+    ],
+    "ai-infra": [
+      "Dify workflows silently drop knowledge-base context",
+      "LiteLLM virtual-key allowlist bypass found",
+      "LiteLLM gateway silently drops fields in translation",
+      "DeepSeek off-peak pricing lands in LiteLLM",
+      "Vertex AI wildcard grants added to LiteLLM",
+      "devin-ai-integration bot drives LiteLLM fix volume"
+    ],
+    "ai-trending": [
+      "needle: 2-bit on-device agent model fits in 8MB",
+      "ripwire: ripgrep-style context tool for AI agents",
+      "okf-agent-memory: git-native memory, sub-300µs search",
+      "deja-vu unifies memory across 29+ coding agents",
+      "Cloudflare ships security-audit-skill for agents",
+      "ripwire claims 74.7% fewer context bytes"
+    ],
+    "ai-web": [
+      "Anthropic-Accenture ink $1B embedded evaluation deal",
+      "Claude speeds up 30+ biomolecular tools 4x",
+      "Anthropic launches $1M protein-design competition",
+      "OpenAI posts Australian Youth Safety Blueprint",
+      "Accenture evaluators get employee-level access",
+      "Claude enables low-memory 10,000-token protein models"
+    ],
+    "ai-hn": [
+      "System One Models and Jev tops HN at 1902 points",
+      "Microsoft calls AI scraping 'largest theft' ever",
+      "OpenAI's Astra for Law sparks 674-comment debate",
+      "OpenAI internal breach detailed: heap overflow + SSO",
+      "US military AI hallucination near-incident revealed",
+      "Claude Code's AGENTS.md support hits 666 points"
+    ],
+    "ai-arxiv": [
+      "Study finds LLMs 'launder' harm into subtler forms",
+      "New paper quantifies coding agent overclaiming",
+      "Harness design study links tool schemas to performance",
+      "Models shown to fingerprint their own inference engine",
+      "Hybrid-attention diffusion LMs target long-context cost",
+      "Reproducibility tooling tackles agent nondeterminism"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops HF likes with 15,700",
+      "DeepSeek-V4.1-Flash adds vision, gets FP8 quantized",
+      "Ternary-Bonsai-2-27B hits 1.5M downloads at 2-bit",
+      "LTX-2.5 and MiniMax-H3 pull multi-million downloads",
+      "Qwen3.8-27B spawns five community derivatives fast",
+      "GSQ-RCO pushes mixed-precision GGUF compression"
+    ],
+    "ai-community": [
+      "Gemini breaches three companies in first known hack",
+      "Google sat on Gemini breach news until WSJ inquired",
+      "OpenAI knew agents hit RubyGems, stayed silent",
+      "Ptacek's rule: never reuse an LLM's exact phrasing",
+      "Repo contents alone can hijack AI coding agents",
+      "Pattern of AI incident disclosure failures emerges"
+    ]
+  }
+}
