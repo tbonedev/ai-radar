@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code & OpenCode both quiet on releases",
+      "OpenCode: 261 issues, 171 PRs touched",
+      "Claude Code thread hits 860 comments, 476 👍",
+      "Trust & billing disputes dominate both tools",
+      "OpenCode: higher-velocity, fragmented contributors",
+      "Sector shifts from \"can it code\" to \"can I trust it\""
+    ],
+    "ai-agents": [
+      "MCP servers: 7 issues, 8 PRs active today",
+      "3 PRs fixed Windows path/reliability bugs",
+      "Filesystem server: canonical UNC path fix merged",
+      "Memory-server permissions fix still open",
+      "Docker/CI hardening PRs in progress",
+      "No security incidents reported today"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.103.0-rc.1, cosign-signed images",
+      "Dify closes RBAC regression cluster",
+      "LiteLLM: credential leak in count_tokens fixed",
+      "Dify patches 2 CVEs: anyio, gitpython",
+      "Both projects prioritize hardening over features",
+      "Claude Code passthrough bugs surface in LiteLLM"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill: +3,155 stars in a day",
+      "redhat-et/ripwire: 74.7% smaller code signatures",
+      "okf-agent-memory: sub-300µs BM25 search, pure Go",
+      "deja-vu unifies memory across 28+ coding agents",
+      "Zero-dependency C++23 MCP server for codebases",
+      "OKF v0.2 spec implemented with zero external DBs"
+    ],
+    "ai-hn": [
+      "AI-generated posters essay hits 1625 pts, 854 comments",
+      "System One Models and Jev launch draws 1920 pts",
+      "MS director calls AI scraping \"largest theft\" ever",
+      "Claude Code ships AGENTS.md support",
+      "OpenAI internal-repo security compromise disclosed",
+      "Qwen 3.8 Omni Flash launches to 340 pts"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts: 15,817 likes, 7.3M downloads",
+      "DeepSeek-V4.1-Flash forked uncensored FP8 in days",
+      "LTX-2.5 and MiniMax-H3 heat up video generation",
+      "Ternary-Bonsai-2-27B ships in 2-bit GGUF/MLX",
+      "Tencent AuK zero-shot TTS breaks into trending",
+      "GLM-5.3-Flash gains traction as lightweight chat model"
+    ],
+    "ai-community": [
+      "\"1,558 Tests Green and No Auth\" exposes fake test suite",
+      "MCP tool descriptions can silently change post-approval",
+      "Steve Yegge shuts down multi-agent \"Gas Town\" project",
+      "42% of companies scrapped AI projects in 2025",
+      "Fix: hash and pin MCP tool descriptions at approval",
+      "Silent LLM failures return 200 OK, not errors"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code & OpenCode both quiet on releases",
+      "OpenCode: 261 issues, 171 PRs touched",
+      "Claude Code thread hits 860 comments, 476 👍",
+      "Trust & billing disputes dominate both tools",
+      "OpenCode: higher-velocity, fragmented contributors",
+      "Sector shifts from \"can it code\" to \"can I trust it\""
+    ],
+    "ai-agents": [
+      "MCP servers: 7 issues, 8 PRs active today",
+      "3 PRs fixed Windows path/reliability bugs",
+      "Filesystem server: canonical UNC path fix merged",
+      "Memory-server permissions fix still open",
+      "Docker/CI hardening PRs in progress",
+      "No security incidents reported today"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.103.0-rc.1, cosign-signed images",
+      "Dify closes RBAC regression cluster",
+      "LiteLLM: credential leak in count_tokens fixed",
+      "Dify patches 2 CVEs: anyio, gitpython",
+      "Both projects prioritize hardening over features",
+      "Claude Code passthrough bugs surface in LiteLLM"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill: +3,155 stars in a day",
+      "redhat-et/ripwire: 74.7% smaller code signatures",
+      "okf-agent-memory: sub-300µs BM25 search, pure Go",
+      "deja-vu unifies memory across 28+ coding agents",
+      "Zero-dependency C++23 MCP server for codebases",
+      "OKF v0.2 spec implemented with zero external DBs"
+    ],
+    "ai-hn": [
+      "AI-generated posters essay hits 1625 pts, 854 comments",
+      "System One Models and Jev launch draws 1920 pts",
+      "MS director calls AI scraping \"largest theft\" ever",
+      "Claude Code ships AGENTS.md support",
+      "OpenAI internal-repo security compromise disclosed",
+      "Qwen 3.8 Omni Flash launches to 340 pts"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts: 15,817 likes, 7.3M downloads",
+      "DeepSeek-V4.1-Flash forked uncensored FP8 in days",
+      "LTX-2.5 and MiniMax-H3 heat up video generation",
+      "Ternary-Bonsai-2-27B ships in 2-bit GGUF/MLX",
+      "Tencent AuK zero-shot TTS breaks into trending",
+      "GLM-5.3-Flash gains traction as lightweight chat model"
+    ],
+    "ai-community": [
+      "\"1,558 Tests Green and No Auth\" exposes fake test suite",
+      "MCP tool descriptions can silently change post-approval",
+      "Steve Yegge shuts down multi-agent \"Gas Town\" project",
+      "42% of companies scrapped AI projects in 2025",
+      "Fix: hash and pin MCP tool descriptions at approval",
+      "Silent LLM failures return 200 OK, not errors"
+    ]
+  }
+}
