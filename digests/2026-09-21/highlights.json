@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code issue hits 1,496 comments on usage limits",
+      "OpenCode ships 10 PRs in 24 hours",
+      "Both tools redesign extensibility/hooks systems",
+      "Usage-limit transparency tops community trust issues",
+      "Claude Code faces silent transcript deletion bug",
+      "OpenCode battles SQLite corruption on NFS"
+    ],
+    "ai-agents": [
+      "MCP servers repo lands 7 PRs, no new releases",
+      "Year-old filesystem bug #470 still unresolved",
+      "git_log date-filter parsing bug finally fixed",
+      "New community server listings: MySpec, KindleSMS",
+      "CI hardening and fetch-timeout fixes merged",
+      "Docs/community PRs outpace core bug fixes"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM both patch auth/credential bugs",
+      "LiteLLM fixes same-day OAuth-token leak in Anthropic path",
+      "Dify logs 118 PRs from major UI refactor",
+      "Timing-attack fixes land on Dify trial endpoints",
+      "Neither project touched core inference internals today",
+      "Security bugs, not speed, dominate infra risk"
+    ],
+    "ai-trending": [
+      "deja-vu gives 30+ coding agents shared memory",
+      "ripwire maps codebases for AI agents, Red Hat-backed",
+      "Gemma 4 26B runs in 2GB RAM on Apple Silicon",
+      "Microsoft's skill-recorder turns screen sessions into Skills",
+      "okf-agent-memory brings Git-native memory to agents",
+      "Sub-300µs BM25 search for agent memory search"
+    ],
+    "ai-hn": [
+      "'System One Models and Jev' sparks 1,936-point debate",
+      "AI-generated event posters spark 931-comment backlash",
+      "Claude Code adopts emerging AGENTS.md convention",
+      "Qwen Image 2.1 draws praise for open weights",
+      "OpenAI launches Astra, a legal-vertical AI product",
+      "OpenAI security breach writeup fuels fresh scrutiny"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 15,922 likes",
+      "Qwen3.8-27B surpasses 7.1M downloads",
+      "Ternary-Bonsai-2-27B ships in 2-bit ternary format",
+      "DeepSeek-V4.1-Flash goes native multimodal chat",
+      "Qwen3.8-Flash-Next hints at early Qwen4 architecture",
+      "Lightricks LTX-2.5 pushes text-to-video quality"
+    ],
+    "ai-community": [
+      "A pattern for catching AI's confidently wrong code",
+      "llm-keys-ui lets agents fetch API keys without pasting",
+      "Planner-implementer agents linked by task spec contract",
+      "Five frontier models tested against known failure cases",
+      "Green test suites don't prove AI-written code is correct",
+      "Structured task specs beat free-form agent instructions"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code issue hits 1,496 comments on usage limits",
+      "OpenCode ships 10 PRs in 24 hours",
+      "Both tools redesign extensibility/hooks systems",
+      "Usage-limit transparency tops community trust issues",
+      "Claude Code faces silent transcript deletion bug",
+      "OpenCode battles SQLite corruption on NFS"
+    ],
+    "ai-agents": [
+      "MCP servers repo lands 7 PRs, no new releases",
+      "Year-old filesystem bug #470 still unresolved",
+      "git_log date-filter parsing bug finally fixed",
+      "New community server listings: MySpec, KindleSMS",
+      "CI hardening and fetch-timeout fixes merged",
+      "Docs/community PRs outpace core bug fixes"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM both patch auth/credential bugs",
+      "LiteLLM fixes same-day OAuth-token leak in Anthropic path",
+      "Dify logs 118 PRs from major UI refactor",
+      "Timing-attack fixes land on Dify trial endpoints",
+      "Neither project touched core inference internals today",
+      "Security bugs, not speed, dominate infra risk"
+    ],
+    "ai-trending": [
+      "deja-vu gives 30+ coding agents shared memory",
+      "ripwire maps codebases for AI agents, Red Hat-backed",
+      "Gemma 4 26B runs in 2GB RAM on Apple Silicon",
+      "Microsoft's skill-recorder turns screen sessions into Skills",
+      "okf-agent-memory brings Git-native memory to agents",
+      "Sub-300µs BM25 search for agent memory search"
+    ],
+    "ai-hn": [
+      "'System One Models and Jev' sparks 1,936-point debate",
+      "AI-generated event posters spark 931-comment backlash",
+      "Claude Code adopts emerging AGENTS.md convention",
+      "Qwen Image 2.1 draws praise for open weights",
+      "OpenAI launches Astra, a legal-vertical AI product",
+      "OpenAI security breach writeup fuels fresh scrutiny"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts with 15,922 likes",
+      "Qwen3.8-27B surpasses 7.1M downloads",
+      "Ternary-Bonsai-2-27B ships in 2-bit ternary format",
+      "DeepSeek-V4.1-Flash goes native multimodal chat",
+      "Qwen3.8-Flash-Next hints at early Qwen4 architecture",
+      "Lightricks LTX-2.5 pushes text-to-video quality"
+    ],
+    "ai-community": [
+      "A pattern for catching AI's confidently wrong code",
+      "llm-keys-ui lets agents fetch API keys without pasting",
+      "Planner-implementer agents linked by task spec contract",
+      "Five frontier models tested against known failure cases",
+      "Green test suites don't prove AI-written code is correct",
+      "Structured task specs beat free-form agent instructions"
+    ]
+  }
+}
