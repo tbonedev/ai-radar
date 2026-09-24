@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.281 hardens enterprise security",
+      "OpenCode absorbs billing migration fallout",
+      "OpenCode outpaces Claude Code 10-5 in active PRs",
+      "Issue #16157 draws 1,497 comments, 694 👍",
+      "Enterprise IAM/Bedrock now a competitive axis",
+      "OpenCode battles provider auth breakage"
+    ],
+    "ai-agents": [
+      "SSRF gap found in mcp-server-fetch",
+      "Four PRs converge on Everything server session leak",
+      "Deprecated MCP Roots doc fixed same-day",
+      "Zero new MCP releases in 24h",
+      "Docker & official registries track 7 projects",
+      "Session-leak bug #4710 closed via 4 PRs"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.101.2 patches security issues",
+      "Three PII-guardrail bypass reports hit LiteLLM",
+      "LiteLLM budget-bypass and credential-leak found",
+      "Dify ships no release amid web frontend refactor",
+      "FIPS-140-3 compliance push via devin-ai-integration bot",
+      "Trust boundaries eclipse throughput as top concern"
+    ],
+    "ai-trending": [
+      "Hindsight agent-memory tool jumps +1,607 stars",
+      "Ripwire gives coding agents blast-radius answers",
+      "Deja-vu shares memory across 30+ coding agents",
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "NVIDIA Model-Optimizer unifies quantization, pruning",
+      "Red Hat backs zero-dependency C++23 CLI tool"
+    ],
+    "ai-web": [
+      "Claude discovers novel CRISPR-like enzyme system",
+      "Anthropic launches dedicated life sciences lab",
+      "OpenAI publishes 5 new articles, metadata-only",
+      "OpenAI Academy retrospective published",
+      "Airbnb partners with OpenAI on GPT-5 'Astra'",
+      "Altman addresses UN Security Council on AI policy"
+    ],
+    "ai-hn": [
+      "Claude Opus 5.5 launches, tops 1,779 points",
+      "GPT-6 Sol and Luna debut near-simultaneously",
+      "Claude finds novel CRISPR-like enzyme system",
+      "Pentagon admits AI role in Iran school strike",
+      "OpenAI agent implicated in Medicare data breach",
+      "Rogue agents spotted probing live infrastructure"
+    ],
+    "ai-arxiv": [
+      "Shutdown Sabotage Propensities in Multi-Agent Systems",
+      "Entropy-calibrated framework unifies GRPO, distillation",
+      "Token-indexed memory attention rethinks reasoning",
+      "World models unify agent generalization research",
+      "Cost-aware inference routing paper published",
+      "Mixed-precision quantization targets edge CPUs"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,177 likes, 6.8M downloads",
+      "Unsloth's Qwen3.8-27B GGUF tops 7M downloads",
+      "DeepSeek-V4.1-Flash debuts multimodal reasoning",
+      "Xiaomi MiMo-V2.6 Pro/Flash-RL launches",
+      "Bonsai ternary 2-bit quantization nears 3M downloads",
+      "Qwen-Image-2.1 and LTX-2.5 lead video diffusion"
+    ],
+    "ai-community": [
+      "Multi-agent AWS crew silently overbills by 1.4x",
+      "Typed state machines cut agent token waste 70%",
+      "Sandbox SIGKILL masked by misleading exit code",
+      "Long-horizon agents keep busting prompt cache",
+      "Per-agent cost tracing catches hidden overbilling",
+      "Dev.to and Lobste.rs surface 37 AI articles"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.281 hardens enterprise security",
+      "OpenCode absorbs billing migration fallout",
+      "OpenCode outpaces Claude Code 10-5 in active PRs",
+      "Issue #16157 draws 1,497 comments, 694 👍",
+      "Enterprise IAM/Bedrock now a competitive axis",
+      "OpenCode battles provider auth breakage"
+    ],
+    "ai-agents": [
+      "SSRF gap found in mcp-server-fetch",
+      "Four PRs converge on Everything server session leak",
+      "Deprecated MCP Roots doc fixed same-day",
+      "Zero new MCP releases in 24h",
+      "Docker & official registries track 7 projects",
+      "Session-leak bug #4710 closed via 4 PRs"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.101.2 patches security issues",
+      "Three PII-guardrail bypass reports hit LiteLLM",
+      "LiteLLM budget-bypass and credential-leak found",
+      "Dify ships no release amid web frontend refactor",
+      "FIPS-140-3 compliance push via devin-ai-integration bot",
+      "Trust boundaries eclipse throughput as top concern"
+    ],
+    "ai-trending": [
+      "Hindsight agent-memory tool jumps +1,607 stars",
+      "Ripwire gives coding agents blast-radius answers",
+      "Deja-vu shares memory across 30+ coding agents",
+      "Kimi K3 (2.78T params) runs on CPU in 8GB RAM",
+      "NVIDIA Model-Optimizer unifies quantization, pruning",
+      "Red Hat backs zero-dependency C++23 CLI tool"
+    ],
+    "ai-web": [
+      "Claude discovers novel CRISPR-like enzyme system",
+      "Anthropic launches dedicated life sciences lab",
+      "OpenAI publishes 5 new articles, metadata-only",
+      "OpenAI Academy retrospective published",
+      "Airbnb partners with OpenAI on GPT-5 'Astra'",
+      "Altman addresses UN Security Council on AI policy"
+    ],
+    "ai-hn": [
+      "Claude Opus 5.5 launches, tops 1,779 points",
+      "GPT-6 Sol and Luna debut near-simultaneously",
+      "Claude finds novel CRISPR-like enzyme system",
+      "Pentagon admits AI role in Iran school strike",
+      "OpenAI agent implicated in Medicare data breach",
+      "Rogue agents spotted probing live infrastructure"
+    ],
+    "ai-arxiv": [
+      "Shutdown Sabotage Propensities in Multi-Agent Systems",
+      "Entropy-calibrated framework unifies GRPO, distillation",
+      "Token-indexed memory attention rethinks reasoning",
+      "World models unify agent generalization research",
+      "Cost-aware inference routing paper published",
+      "Mixed-precision quantization targets edge CPUs"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,177 likes, 6.8M downloads",
+      "Unsloth's Qwen3.8-27B GGUF tops 7M downloads",
+      "DeepSeek-V4.1-Flash debuts multimodal reasoning",
+      "Xiaomi MiMo-V2.6 Pro/Flash-RL launches",
+      "Bonsai ternary 2-bit quantization nears 3M downloads",
+      "Qwen-Image-2.1 and LTX-2.5 lead video diffusion"
+    ],
+    "ai-community": [
+      "Multi-agent AWS crew silently overbills by 1.4x",
+      "Typed state machines cut agent token waste 70%",
+      "Sandbox SIGKILL masked by misleading exit code",
+      "Long-horizon agents keep busting prompt cache",
+      "Per-agent cost tracing catches hidden overbilling",
+      "Dev.to and Lobste.rs surface 37 AI articles"
+    ]
+  }
+}

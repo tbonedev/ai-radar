@@ -1,0 +1,76 @@
+# Hugging Face Trending Models Digest 2026-09-24
+
+> Source: [Hugging Face Hub](https://huggingface.co/) | 30 models | Generated: 2026-09-24 12:30 UTC
+
+---
+
+# Hugging Face Trending Models Digest — 2026-09-24
+
+## Today's Highlights
+
+The week's trending list is dominated by two ecosystems: **Qwen** (both the Qwen3.8-27B chat/vision line and the Qwen-Image-2.1 generation line) and a wave of **GGUF/quantization** releases racing to compress them for local inference. Qwen/Qwen3.8-27B leads by a wide margin with 16,177 likes and nearly 6.8M downloads, cementing it as the current reference open-weight vision-language model, while unsloth's GGUF port of the same model has independently pulled in over 7M downloads. DeepSeek and Xiaomi MiMo both pushed new multimodal reasoning models (DeepSeek-V4.1-Flash, MiMo-V2.6 Pro/Flash-RL), signaling continued Chinese-lab investment in fast, RL-tuned multimodal chat models. On the generative side, Qwen-Image-2.1 and Lightricks' LTX-2.5 video model show strong momentum in image/video diffusion, and prism-ml's ternary 2-bit "Bonsai" quantization of a 27B model (nearly 3M downloads) highlights extreme-compression techniques breaking into the mainstream.
+
+## Trending Models
+
+### 🧠 Language Models
+
+| Model | Author | Likes | Downloads | Summary |
+| :--- | :--- | ---: | ---: | :--- |
+| [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Qwen | 16,177 | 6,765,008 | The top-trending model on the platform this week, a 27B image-text-to-text conversational model that has become the de facto base for a huge fine-tune/quantization ecosystem. Its 6.8M downloads and dozens of derivative repos (GGUF, MLX, uncensored, distilled) reflect its role as the current open-weight VLM standard. |
+| [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | Qwen | 5,652 | 830,208 | A faster "Next" variant in the Qwen3.8 family using an experimental `qwen4_exp` architecture, suggesting early testing for the next-generation Qwen line. Strong early adoption (5.6k likes) shows demand for lower-latency conversational variants alongside the flagship 27B model. |
+| [deepseek-ai/DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash) | deepseek-ai | 3,692 | 606,028 | DeepSeek's latest fast multimodal model, tagged image-text-to-text, continuing the "Flash" pattern of trading some capability for speed and cost. It's one of the highest-liked new checkpoints this week, indicating strong community anticipation for DeepSeek's V4.1 line. |
+| [XingChen-AGI/Xing4.0-29B-A4B](https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B) | XingChen-AGI | 1,640 | 41,923 | A 29B conversational text-generation model from a lesser-known Chinese AGI lab, using an "A4B" (likely active-parameter MoE) architecture. Its rapid rise to 1,640 likes despite modest downloads suggests early community curiosity about a new competitive entrant. |
+| [XiaomiMiMo/MiMo-V2.6-Pro-RL](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL) | XiaomiMiMo | 468 | 9,841 | The "Pro" tier of Xiaomi's RL-post-trained MiMo-V2.6 multimodal text-generation series, aimed at maximizing reasoning quality. Its release alongside a Flash and a Distill-Qwen-9B variant shows Xiaomi rolling out a full RL model family in one push. |
+| [XiaomiMiMo/MiMo-V2.6-Flash-RL](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL) | XiaomiMiMo | 435 | 18,821 | The lightweight, faster sibling of MiMo-V2.6-Pro-RL, trading some accuracy for speed via the same RL post-training recipe. Its higher download count relative to the Pro variant hints that developers are favoring the cheaper option for production use. |
+| [yandex/AliceAI-Foundation-80B-A3B-Base](https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base) | yandex | 304 | 2,678 | Yandex's 80B-parameter foundation base model for its Alice AI assistant, using custom code and an A3B MoE-style naming convention. As a rare foundation-model release from a non-US, non-Chinese lab, it's notable for broadening the geographic diversity of open large-model releases. |
+| [Altworld/Hemmingway-1](https://huggingface.co/Altworld/Hemmingway-1) | Altworld | 608 | 4,541 | A Qwen3.5-text-based conversational model positioned as a writing-focused assistant (per its literary namesake). Early traction (608 likes on modest downloads) suggests interest in creative-writing-tuned chat models built on the Qwen3.5 base. |
+
+### 🎨 Multimodal & Generation
+
+| Model | Author | Likes | Downloads | Summary |
+| :--- | :--- | ---: | ---: | :--- |
+| [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | Lightricks | 4,952 | 1,637,601 | The highest-liked multimodal release this week, a versatile video model supporting image-to-video, text-to-video, and video-to-video generation. Its 1.6M downloads make it one of the most-adopted open video generation models currently available. |
+| [Qwen/Qwen-Image-2.1](https://huggingface.co/Qwen/Qwen-Image-2.1) | Qwen | 2,126 | 37,618 | Qwen's flagship text-to-image model with both generation and editing capabilities, spawning an entire downstream ecosystem (ComfyUI ports, uncensored GGUFs, text-encoder quantizations) within days of release. It's effectively become this week's reference diffusion checkpoint. |
+| [Comfy-Org/Qwen-Image-2.1](https://huggingface.co/Comfy-Org/Qwen-Image-2.1) | Comfy-Org | 651 | 2,858,923 | The official ComfyUI single-file packaging of Qwen-Image-2.1, and by far the most-downloaded item in this list at 2.86M downloads. It shows ComfyUI remains the dominant distribution channel for getting new diffusion models into local workflows fast. |
+| [TaichuAI/ZDTaichu5.0-9B](https://huggingface.co/TaichuAI/ZDTaichu5.0-9B) | TaichuAI | 994 | 8,313 | A 9B vision-language model emphasizing spatial reasoning, positioned as a multimodal model with stronger geometric/spatial understanding than typical VLMs. Its focus tag ("spatial-reasoning") points to growing interest in VLMs for robotics and embodied-AI use cases. |
+| [m-a-p/YuE2-3B](https://huggingface.co/m-a-p/YuE2-3B) | m-a-p | 992 | 23,703 | A 3B text-to-audio music generation model supporting symbolic planning and agentic editing of compositions. It represents one of the more capability-rich open music-generation releases, combining generation with iterative, agent-style editing. |
+| [inclusionAI/Ming-Image-0.1-Design](https://huggingface.co/inclusionAI/Ming-Image-0.1-Design) | inclusionAI | 204 | 0 | An early-stage (0.1) text-to-image model from Ant Group's inclusionAI, specialized for design-oriented image generation. Zero downloads with real likes suggests it's just landed and is being watched ahead of first usable release. |
+
+### 🔧 Specialized Models
+
+| Model | Author | Likes | Downloads | Summary |
+| :--- | :--- | ---: | ---: | :--- |
+| [convaiinnovations/laya](https://huggingface.co/convaiinnovations/laya) | convaiinnovations | 3,272 | 0 | A text-classification model built around a "system-one, calibrated-decisions" approach, aiming for fast, well-calibrated judgment calls rather than deep reasoning. It's the single most-liked model in this entire list despite zero recorded downloads, suggesting a viral announcement ahead of public weight availability. |
+| [netease-youdao/Confucius4-R2T2](https://huggingface.co/netease-youdao/Confucius4-R2T2) | netease-youdao | 382 | 4,930 | The fourth generation of NetEase Youdao's Confucius ASR model line, using a novel "R2T2" architecture for speech recognition. Continued iteration on this series signals sustained investment in Chinese-market speech-to-text tooling. |
+| [AlexWortega/openjev](https://huggingface.co/AlexWortega/openjev) | AlexWortega | 544 | 0 | An open NLI (natural language inference) cross-encoder built on a Qwen3.5 backbone, useful for tasks like fact verification and re-ranking. Its likes-without-downloads pattern again points to a fresh, high-anticipation release. |
+| [convaiinnovations/laya-multilingual](https://huggingface.co/convaiinnovations/laya-multilingual) | convaiinnovations | 235 | 0 | The multilingual variant of the "laya" classifier, built on an mmBERT backbone for cross-lingual calibrated classification. Its pairing with the flagship laya model shows convaiinnovations expanding language coverage immediately after initial launch. |
+| [Cactus-Compute/needle3](https://huggingface.co/Cactus-Compute/needle3) | Cactus-Compute | 219 | 69,655 | An on-device, tool-calling/function-calling specialized model designed for edge deployment with the "cactus-needle" framework. Its meaningful download count relative to likes suggests real developer adoption for on-device agentic tool use. |
+| [nvidia/Nemotron-3-Diarization](https://huggingface.co/nvidia/Nemotron-3-Diarization) | nvidia | 213 | 4,282 | An NVIDIA NeMo-based speaker diarization and voice-activity-detection model in the Nemotron-3 family, available in both safetensors and GGUF. It extends Nemotron beyond text generation into core audio-processing infrastructure. |
+
+### 📦 Fine-tunes & Quantizations
+
+| Model | Author | Likes | Downloads | Summary |
+| :--- | :--- | ---: | ---: | :--- |
+| [prism-ml/Ternary-Bonsai-2-27B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf) | prism-ml | 1,989 | 2,991,233 | A ternary (2-bit) GGUF quantization of a 27B model, the standout download figure in this category at nearly 3M. It demonstrates extreme low-bit quantization is now practical enough for mainstream llama.cpp adoption at scale. |
+| [unsloth/Qwen3.8-27B-GGUF](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF) | unsloth | 4,570 | 7,063,930 | Unsloth's GGUF conversion of the flagship Qwen3.8-27B, with the highest download count of any model in this digest (7M+). It underscores Unsloth's role as the go-to distributor for making flagship releases runnable locally within hours of launch. |
+| [ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF](https://huggingface.co/huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF) | ISTA-DASLab | 1,631 | 1,465,429 | A research-grade quantization of Qwen3.8-27B using GSQ (mixed-precision) and RCO techniques from the Institute of Science and Technology Austria. Its 1.46M downloads show strong demand for academically-optimized compression, not just community GGUFs. |
+| [DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF) | DavidAU | 1,141 | 1,502,387 | An elaborately merged and "uncensored" fine-tune/quant stack of Qwen3.8-27B combining multiple community techniques (Heretic decensoring, MTP, coder-focused tuning). Despite the unwieldy name, it pulled 1.5M downloads, showing real demand for uncensored, coding-oriented Qwen derivatives. |
+| [prism-ml/Ternary-Bonsai-2-27B-mlx-2bit](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit) | prism-ml | 364 | 51,644 | The Apple Silicon (MLX) port of the same ternary 2-bit Bonsai quantization, letting Mac users run a 27B model at extreme compression locally. It shows quantization innovators now ship day-one MLX builds alongside GGUF as standard practice. |
+| [abenzerps/Qwen-Image-2.1-Uncensored-GGUF](https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF) | abenzerps | 1,558 | 575,697 | An uncensored GGUF quantization of Qwen-Image-2.1 packaged for ComfyUI, already at 575k downloads within days of the base model's release. This mirrors the familiar pattern of decensored image-model variants emerging almost immediately after a major diffusion release. |
+| [ukisai/Swift-Qwen3.8-27b](https://huggingface.co/ukisai/Swift-Qwen3.8-27b) | ukisai | 569 | 18,227 | A community fine-tune of Qwen3.8-27B branded "Swift," likely optimized for inference speed or responsiveness. It's one of many independent derivatives competing for adoption within the crowded Qwen3.8-27B fine-tune space. |
+| [harshatheg/Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD) | harshatheg | 563 | 0 | A small 1B Qwen2.5 fine-tune using RLCD (RL from Contrastive Distillation) with structured/constrained decoding tailored for Apple Silicon via MLX. Its focus on parallel and constrained decoding signals growing interest in efficient on-device structured generation. |
+| [XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B) | XiaomiMiMo | 420 | 5,705 | A 9B distillation of the MiMo-V2.6 reasoning capabilities onto a Qwen3.5 base, making the family's RL-trained behavior accessible at a much smaller footprint. Rounds out Xiaomi's simultaneous Pro/Flash/Distill release strategy for the MiMo-V2.6 line. |
+| [pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF](https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF) | pottokao | 227 | 103,226 | A specialized fp8 GGUF quantization of just the Qwen-Image-2.1 text encoder for ComfyUI, decensored via the "Heretic" technique. Its component-level (encoder-only) quantization reflects increasingly granular optimization of diffusion pipelines. |
+
+## Ecosystem Signal
+
+The Qwen family (Qwen3.8-27B and Qwen-Image-2.1) is the clear center of gravity this week, generating not just flagship releases but a dense secondary market of GGUF, MLX, distilled, and "uncensored" derivatives from independent labs (unsloth, ISTA-DASLab, DavidAU, prism-ml, ukisai) — a pattern that shows Qwen has effectively become the default open base for downstream experimentation, much as Llama once was. Chinese labs continue to dominate frontier releases (DeepSeek, Xiaomi MiMo, NetEase Youdao, Yandex's Alice for the Russian market), reinforcing an open-weight-first trend outside the US. Quantization activity is especially notable: extreme 2-bit ternary quantization (prism-ml's Bonsai) crossed 3M downloads, and component-level quantization (text-encoder-only GGUFs) is emerging as a refinement technique for diffusion models specifically. Multimodal generation (image, video, music) is also thriving, led by Lightricks' LTX-2.5 video model and Qwen-Image-2.1's editing capabilities, suggesting the community's appetite has shifted from pure text chat toward generative and agentic multimodal tooling.
+
+## Worth Exploring
+
+1. **[Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)** — the clear reference model of the week; worth studying both directly and via its downstream derivative ecosystem to understand what makes a base model this fine-tune-friendly.
+2. **[prism-ml/Ternary-Bonsai-2-27B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf)** — a rare, genuinely novel technique (ternary 2-bit quantization) with adoption numbers proving it's not just a research curiosity; worth benchmarking against standard 4-bit GGUFs.
+3. **[Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)** — the strongest open video-generation release this week, worth trying for its unusually broad task coverage (image-to-video, text-to-video, video-to-video) in a single checkpoint.
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/tbonedev/ai-radar).*

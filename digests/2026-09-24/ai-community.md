@@ -1,0 +1,56 @@
+# Tech Community AI Digest 2026-09-24
+
+> Sources: [Dev.to](https://dev.to/) (30 articles) + [Lobste.rs](https://lobste.rs/) (7 stories) | Generated: 2026-09-24 12:30 UTC
+
+---
+
+# Tech Community AI Digest — 2026-09-24
+
+## 1. Worth Your Time
+
+- **[Per-Agent Cost Tracking for Multi-Agent AI on AWS](https://dev.to/sarvar_04/per-agent-cost-tracking-for-multi-agent-ai-on-aws-10eg)** — Dev.to (Sarvar Nadaf). A multi-agent Bedrock/Strands crew returned a correct answer with a 200 OK, yet billed ~1.4x the expected cost — the waste was invisible until per-agent cost tracing was added. The method is read-only instrumentation that attributes spend per agent hop, catching silent overbilling that response-level monitoring misses entirely.
+
+- **[How We Cut 70% of Multi-Agent Token Waste by Replacing Supervisor LLMs with Typed State Machines](https://dev.to/anasbuilds997/how-we-cut-70-of-multi-agent-token-waste-by-replacing-supervisor-llms-with-typed-state-machines-4alk)** — Dev.to (anassBld). Supervisor-LLM orchestration patterns tend to create infinite retry loops and silent token inflation because the "router" itself is a probabilistic model making routing decisions. Swapping the supervisor for a deterministic typed state machine cut token waste by 70% — a concrete argument for pushing control flow out of the LLM wherever the transitions are actually enumerable.
+
+- **[My own sandbox was killing my agent's shell, and the exit code hid it](https://dev.to/pm25coder/my-own-sandbox-was-killing-my-agents-shell-and-the-exit-code-hid-it-2a7f)** — Dev.to (pm25coder). A post-mortem on the worst kind of agent failure: not a broken command, but a broken signal. The sandbox was SIGKILL-ing the shell process, and the wrapper reported a misleading exit code, masking the real failure — a reminder to check actual signals/process state, not just exit codes, when debugging agent tool execution.
+
+- **[How Long-Horizon Agents Kept Busting the Prompt Cache](https://dev.to/reidmarlow/how-long-horizon-agents-kept-busting-the-prompt-cache-1e2l)** — Dev.to (Reid Marlow). Long-running agent sessions accumulate context in ways that invalidate the prompt cache prefix on every turn, quietly multiplying cost and latency even as per-token prices fall. The fix path is about keeping the stable prefix genuinely stable rather than appending in ways that shift earlier tokens.
+
+- **[Your Semantic Cache Answers the Question Next Door](https://dev.to/devopsdaily/your-semantic-cache-answers-the-question-next-door-3d55)** — Dev.to (DevOps Daily). Replaying 288 real questions through a semantic cache showed that at a moderate similarity threshold, the cache confidently returns answers to a *different but nearby* question rather than a cache miss — a concrete failure mode for anyone relying on embedding-similarity caching in production.
+
+- **[Uptime Is Not an Agent SLO](https://dev.to/raju_dandigam/uptime-is-not-an-agent-slo-f34)** — Dev.to (Raju Dandigam). An agent endpoint returning HTTP 200 in 99.95% of requests tells you nothing about whether the agent did the right thing — the argument is for defining SLOs around task correctness and outcome quality, not transport-layer availability.
+
+## 2. Techniques and Workflows
+
+A cluster of posts today converge on one theme: standard observability signals (HTTP status, exit codes, cache hits) actively lie about agent correctness. Sarvar Nadaf's per-agent cost tracing on AWS Bedrock/Strands caught a 1.4x billing overrun on a "successful" 200-OK response — the fix was tagging cost per agent hop rather than trusting the aggregate bill. Raju Dandigam makes the same point structurally: uptime and 200-response rates are the wrong SLO for agents; correctness needs its own metric. pm25coder's sandbox post-mortem extends this to exit codes — a SIGKILL'd shell reported a misleading code, hiding the actual failure from the agent's own error handling.
+
+On the architecture side, anassBld reports cutting multi-agent token waste by 70% by replacing a supervisor LLM (prone to infinite retry loops from its own probabilistic routing) with a deterministic typed state machine — a concrete data point for the broader "don't use an LLM where enumerable logic will do" argument. Two posts tackle caching specifically: DevOps Daily found their semantic cache returns near-miss answers at moderate similarity thresholds (tested against 288 replayed questions), and Reid Marlow describes long-horizon agents busting prompt caches by mutating the "stable" prefix turn over turn, quietly reversing the benefit of newer cheaper-token pricing.
+
+## 3. Dev.to Highlights
+
+| Article | Reactions | Comments | Summary |
+| :--- | ---: | ---: | :--- |
+| [Per-Agent Cost Tracking for Multi-Agent AI on AWS](https://dev.to/sarvar_04/per-agent-cost-tracking-for-multi-agent-ai-on-aws-10eg) | 52 | 30 | Per-agent cost tracing exposed a 1.4x silent billing overrun on a "correct, 200 OK" multi-agent run. Shows how to instrument this read-only and for free. |
+| [I Compared 5 LLM Gateway Tools for Real-World Production Use](https://dev.to/devstackcommunity/i-compared-5-llm-gateway-tools-for-real-world-production-use-4n5p) | 21 | 6 | Compares gateway tools once an LLM app moves past toy scale, where routing, fallback, and rate-limit handling become the hard part. Useful if you're choosing a gateway layer rather than calling provider APIs directly. |
+| [How We Cut 70% of Multi-Agent Token Waste by Replacing Supervisor LLMs with Typed State Machines](https://dev.to/anasbuilds997/how-we-cut-70-of-multi-agent-token-waste-by-replacing-supervisor-llms-with-typed-state-machines-4alk) | 4 | 5 | Supervisor-LLM orchestration caused infinite retry loops and token inflation; a deterministic state machine cut waste 70%. A concrete case for minimizing LLM involvement in control flow. |
+| [Progressive Disclosure: Shaping Claude Code's Output](https://dev.to/reporails/progressive-disclosure-shaping-claude-codes-output-4dg4) | 5 | 6 | Opus 5.5's replies read differently — answer-first, less exploratory rambling — which changes how you should structure prompts for terse vs. exploratory output. Relevant if you're tuning system prompts around response verbosity. |
+| [Uptime Is Not an Agent SLO](https://dev.to/raju_dandigam/uptime-is-not-an-agent-slo-f34) | 5 | 2 | A 99.95% HTTP 200 rate says nothing about whether the agent's output was correct. Argues for outcome-based SLOs instead of transport-layer availability metrics. |
+| [Your Semantic Cache Answers the Question Next Door](https://dev.to/devopsdaily/your-semantic-cache-answers-the-question-next-door-3d55) | 5 | 0 | Replaying 288 questions through a semantic cache at a moderate similarity threshold produced confident answers to the wrong (but nearby) question. A concrete cautionary data point for embedding-similarity caching. |
+| [Cómo darle memoria semántica a un agente de IA sin base de datos vectorial](https://dev.to/aws-builders/como-darle-memoria-semantica-a-un-agente-de-ia-sin-base-de-datos-vectorial-505b) | 5 | 0 | Shows giving a serverless AI agent durable, meaning-based memory using search infrastructure instead of standing up a dedicated vector database. Useful pattern if you want semantic recall without new infra. |
+| [My own sandbox was killing my agent's shell, and the exit code hid it](https://dev.to/pm25coder/my-own-sandbox-was-killing-my-agents-shell-and-the-exit-code-hid-it-2a7f) | 3 | 3 | A sandbox's own SIGKILL was masked by a misleading exit code, hiding the real failure from the agent's error handling. Lesson: check actual process signals, not just exit codes, when debugging agent shells. |
+| [How Long-Horizon Agents Kept Busting the Prompt Cache](https://dev.to/reidmarlow/how-long-horizon-agents-kept-busting-the-prompt-cache-1e2l)| 2 | 2 | Long agent sessions mutate the "stable" prompt prefix turn-over-turn, invalidating the cache and eroding the benefit of cheaper per-token pricing. Points to prefix-append discipline as the fix. |
+| [AI Can Remember Everything. That's Exactly the Problem.](https://dev.to/josaphatstar/ai-can-remember-everything-thats-exactly-the-problem-1ee8) | 2 | 2 | Argues the unsolved half of agent memory isn't recall, it's forgetting — unbounded memory accumulation degrades relevance and privacy over time. Frames forgetting as a design requirement, not an omission. |
+
+## 4. Lobste.rs Highlights
+
+| Story | Score | Comments | Summary |
+| :--- | ---: | ---: | :--- |
+| [I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a "Breakthrough"](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me) · [discuss](https://lobste.rs/s/kaqsr5/i_built_non_autoregressive_decision) | 61 | 6 | An independent builder claims prior art on non-autoregressive classifier-style "decision models" now being marketed as novel by a well-funded lab. Worth reading for the technical comparison, independent of the priority dispute. |
+| [ChatGPT now knows what you do on other websites via ad collector](https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/) · [discuss](https://lobste.rs/s/jbnmj9/chatgpt_now_knows_what_you_do_on_other) | 60 | 7 | Documents an ad-tracking integration feeding cross-site browsing behavior into ChatGPT's context. Relevant to anyone building on top of consumer AI platforms and thinking about data-flow assumptions. |
+| [Laya — 33ms Multilingual System 1 Decision Engine](https://laya.convaiinnovations.com/) · [discuss](https://lobste.rs/s/ojukrw/laya_33ms_multilingual_system_1_decision) | 7 | 3 | A fast, non-generative classifier-style decision engine claiming 33ms multilingual inference, entering the same "System 1 model" space as several other launches this week. Useful if you're evaluating low-latency classification alternatives to LLM calls. |
+| [A Continual learning model trained from scratch on 8GB VRAM laptop with batch-1 stream of data](https://github.com/volotat/mini-AGI/) · [discuss](https://lobste.rs/s/gxjhqo/continual_learning_model_trained_from) | 4 | 0 | A from-scratch continual-learning setup running on consumer hardware with streaming batch-1 updates. Interesting as a minimal, inspectable reference implementation rather than a production technique. |
+| [How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip](https://spectrum.ieee.org/llms-for-chip-design) · [discuss](https://lobste.rs/s/7knhjd/how_openai_used_its_own_llms_design_its) | 3 | 0 | Describes using LLMs inside the hardware design loop for a custom AI accelerator chip. A concrete example of LLMs applied to EDA/chip-design workflows rather than software. |
+| [A study of sequence weighting at scale](https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/) · [discuss](https://lobste.rs/s/tamvz4/study_sequence_weighting_at_scale) | 2 | 0 | Jane Street's empirical study on how sequence-weighting choices affect training at scale. Useful if you're tuning loss weighting schemes and want data rather than folklore. |
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/tbonedev/ai-radar).*
