@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.282 patch release",
+      "Claude Code pushes new Mods hook system",
+      "OpenCode plans major 2.0 config overhaul",
+      "Issue #6235 draws 5,185 reactions, 409 comments",
+      "OpenCode adds session forking, subagent API",
+      "AGENTS.md cross-tool standard gains pressure"
+    ],
+    "ai-agents": [
+      "MCP servers: 19 issues open, zero closed today",
+      "PR #4716 fixes resource leak in everything server",
+      "server-filesystem, server-memory face bug reports",
+      "MCP ecosystem flagged for thin maintainer bandwidth",
+      "Docker MCP Registry among 7 tracked projects",
+      "No new MCP server releases shipped today"
+    ],
+    "ai-infra": [
+      "LiteLLM has unpatched credential-leak bug",
+      "LiteLLM access-control bypass still open",
+      "Dify sees 28 issues, 39 PRs touched today",
+      "Dify ships zero tagged releases despite churn",
+      "LiteLLM pushes four routine Docker builds",
+      "Silent failure modes plague both LiteLLM, Dify"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire cuts codebase context 74.7%",
+      "vectorize-io/hindsight gives agents real memory",
+      "deja-vu shares agent memory across 29+ tools",
+      "okf-agent-memory: sub-300us BM25, no vector DB",
+      "img2threejs turns images into Three.js scenes",
+      "OKF v0.2 spec powers git-native agent memory"
+    ],
+    "ai-web": [
+      "Anthropic's Project Swap tests agent trading",
+      "Claude agents negotiated book trades in study",
+      "61% pairwise ranking accuracy from 5-min chat",
+      "Sequel to earlier Project Deal experiment",
+      "OpenAI posts zero new content today",
+      "Six offices join Anthropic's trading-floor test"
+    ],
+    "ai-hn": [
+      "Claude Opus 5.5 launches, tops HN with 1117 comments",
+      "GPT-6 Sol and Luna launches same day as Opus",
+      "Pentagon: AI overreliance led to missile strike",
+      "Transluce reports rogue AI agents hacking",
+      "Claude Code gates AGENTS.md behind telemetry",
+      "Anthropic's Claude discovers novel enzyme system"
+    ],
+    "ai-arxiv": [
+      "Papers reveal agents can subvert oversight tools",
+      "SAGE, GRASP, HEXIS tackle long-horizon planning",
+      "MISVO steers LLMs without RL fine-tuning",
+      "PoEM predicts RL outcomes from existing policies",
+      "140M-scale CX agent simulation goes production",
+      "Robotics world-models bridge LLM planning, control"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart with 16,243 likes",
+      "Qwen3.8-27B hits 6.5M+ downloads",
+      "XiaomiMiMo ships full MiMo-V2.6 family",
+      "DeepSeek-V4.1-Flash gains strong traction",
+      "Qwen-Image-2.1 spawns uncensored GGUF fork",
+      "Lightricks' LTX-2.5 video model trends"
+    ],
+    "ai-community": [
+      "Same model solves 43 vs 72 tasks by harness",
+      "Stop-rule study: dumb budget beats confidence score",
+      "LLM memorization test flips after confound check",
+      "Engineer builds gate to block bad agent demos",
+      "Harness design rivals model choice in importance",
+      "12,533 earnings calls used in memorization test"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.282 patch release",
+      "Claude Code pushes new Mods hook system",
+      "OpenCode plans major 2.0 config overhaul",
+      "Issue #6235 draws 5,185 reactions, 409 comments",
+      "OpenCode adds session forking, subagent API",
+      "AGENTS.md cross-tool standard gains pressure"
+    ],
+    "ai-agents": [
+      "MCP servers: 19 issues open, zero closed today",
+      "PR #4716 fixes resource leak in everything server",
+      "server-filesystem, server-memory face bug reports",
+      "MCP ecosystem flagged for thin maintainer bandwidth",
+      "Docker MCP Registry among 7 tracked projects",
+      "No new MCP server releases shipped today"
+    ],
+    "ai-infra": [
+      "LiteLLM has unpatched credential-leak bug",
+      "LiteLLM access-control bypass still open",
+      "Dify sees 28 issues, 39 PRs touched today",
+      "Dify ships zero tagged releases despite churn",
+      "LiteLLM pushes four routine Docker builds",
+      "Silent failure modes plague both LiteLLM, Dify"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire cuts codebase context 74.7%",
+      "vectorize-io/hindsight gives agents real memory",
+      "deja-vu shares agent memory across 29+ tools",
+      "okf-agent-memory: sub-300us BM25, no vector DB",
+      "img2threejs turns images into Three.js scenes",
+      "OKF v0.2 spec powers git-native agent memory"
+    ],
+    "ai-web": [
+      "Anthropic's Project Swap tests agent trading",
+      "Claude agents negotiated book trades in study",
+      "61% pairwise ranking accuracy from 5-min chat",
+      "Sequel to earlier Project Deal experiment",
+      "OpenAI posts zero new content today",
+      "Six offices join Anthropic's trading-floor test"
+    ],
+    "ai-hn": [
+      "Claude Opus 5.5 launches, tops HN with 1117 comments",
+      "GPT-6 Sol and Luna launches same day as Opus",
+      "Pentagon: AI overreliance led to missile strike",
+      "Transluce reports rogue AI agents hacking",
+      "Claude Code gates AGENTS.md behind telemetry",
+      "Anthropic's Claude discovers novel enzyme system"
+    ],
+    "ai-arxiv": [
+      "Papers reveal agents can subvert oversight tools",
+      "SAGE, GRASP, HEXIS tackle long-horizon planning",
+      "MISVO steers LLMs without RL fine-tuning",
+      "PoEM predicts RL outcomes from existing policies",
+      "140M-scale CX agent simulation goes production",
+      "Robotics world-models bridge LLM planning, control"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops chart with 16,243 likes",
+      "Qwen3.8-27B hits 6.5M+ downloads",
+      "XiaomiMiMo ships full MiMo-V2.6 family",
+      "DeepSeek-V4.1-Flash gains strong traction",
+      "Qwen-Image-2.1 spawns uncensored GGUF fork",
+      "Lightricks' LTX-2.5 video model trends"
+    ],
+    "ai-community": [
+      "Same model solves 43 vs 72 tasks by harness",
+      "Stop-rule study: dumb budget beats confidence score",
+      "LLM memorization test flips after confound check",
+      "Engineer builds gate to block bad agent demos",
+      "Harness design rivals model choice in importance",
+      "12,533 earnings calls used in memorization test"
+    ]
+  }
+}
