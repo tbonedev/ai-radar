@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.283 ships new release",
+      "OpenCode lands 10 PRs in 24 hours",
+      "Issue #27302 hits 256 comments, 390 👍",
+      "Memory Megathread #20695 closed",
+      "DeepSeek V4 Flash quota friction hits OpenCode",
+      "Multi-account switching tops CLI wishlist"
+    ],
+    "ai-agents": [
+      "MCP servers: 2 issues, 6 PRs in 24h",
+      "Git reference server gets diff/staging fixes",
+      "ADDITIONAL.md PR queue keeps backing up",
+      "No new MCP releases shipped today",
+      "Fetch and everything servers get correctness fixes",
+      "Server submission automation gap flagged (#4850)"
+    ],
+    "ai-infra": [
+      "LiteLLM logs 51 issues updated today",
+      "Dify tackles RAG retrieval reliability bugs",
+      "Gemini 3.1/3.8 added to LiteLLM routing",
+      "Databricks routing drift causes friction",
+      "No inference-engine (vLLM/SGLang) activity today",
+      "Dify ships ~10 perf and bug-fix PRs"
+    ],
+    "ai-trending": [
+      "vectorize-io/hindsight gains +1,653 stars",
+      "NVIDIA Model-Optimizer unifies compression tools",
+      "redhat-et/ripwire: ripgrep for AI context",
+      "microsoft/skill-recorder turns demos into skills",
+      "deja-vu shares memory across 29+ coding agents",
+      "Ripwire cuts context bytes by 74.7%"
+    ],
+    "ai-web": [
+      "Anthropic publishes two research posts today",
+      "\"Yes, Claude Can Do Nine Loops\" guest post",
+      "Physicist tests Claude on nine-loop amplitude",
+      "Project Swap tests AI agent trading market",
+      "OpenAI publishes zero new content today",
+      "Anthropic cedes narrative to outside skeptic"
+    ],
+    "ai-hn": [
+      "Claude Opus 5.5 launch draws 1,125 comments",
+      "GPT-6 Sol and Luna debut, 849 comments",
+      "Claude discovers novel CRISPR-like enzyme",
+      "Court upholds Anthropic supply-chain risk tag",
+      "OpenAI agents caught \"hacking\" Hugging Face",
+      "AI capability jumps meet growing agent unease"
+    ],
+    "ai-arxiv": [
+      "Agents learn to evade runtime monitors",
+      "HEXIS and GRASP structure agent planning",
+      "140M-scale CX agent simulation goes live",
+      "MISVO steers LLMs without fine-tuning",
+      "PoEM predicts RL outcomes pre-training",
+      "Trace-based agent auditing called into question"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops with 16,315 likes",
+      "Qwen-Image-2.1 spawns derivative ecosystem",
+      "Lightricks LTX-2.5 unifies video generation",
+      "Xiaomi MiMo-V2.6 ships full RL-tuned lineup",
+      "Ternary 2-bit 27B GGUF tops download charts",
+      "DeepSeek-V4.1-Flash trends on Hugging Face"
+    ],
+    "ai-community": [
+      "Green tests hid a 33.5% cost spread",
+      "Escalating to bigger model worsened 34 answers",
+      "Skill declared nothing, still ran 7 processes",
+      "Simon Willison: agents make engineering harder",
+      "Dev.to and Lobste.rs both flag agent trust gaps",
+      "Case for logging real skill behavior, not intent"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.283 ships new release",
+      "OpenCode lands 10 PRs in 24 hours",
+      "Issue #27302 hits 256 comments, 390 👍",
+      "Memory Megathread #20695 closed",
+      "DeepSeek V4 Flash quota friction hits OpenCode",
+      "Multi-account switching tops CLI wishlist"
+    ],
+    "ai-agents": [
+      "MCP servers: 2 issues, 6 PRs in 24h",
+      "Git reference server gets diff/staging fixes",
+      "ADDITIONAL.md PR queue keeps backing up",
+      "No new MCP releases shipped today",
+      "Fetch and everything servers get correctness fixes",
+      "Server submission automation gap flagged (#4850)"
+    ],
+    "ai-infra": [
+      "LiteLLM logs 51 issues updated today",
+      "Dify tackles RAG retrieval reliability bugs",
+      "Gemini 3.1/3.8 added to LiteLLM routing",
+      "Databricks routing drift causes friction",
+      "No inference-engine (vLLM/SGLang) activity today",
+      "Dify ships ~10 perf and bug-fix PRs"
+    ],
+    "ai-trending": [
+      "vectorize-io/hindsight gains +1,653 stars",
+      "NVIDIA Model-Optimizer unifies compression tools",
+      "redhat-et/ripwire: ripgrep for AI context",
+      "microsoft/skill-recorder turns demos into skills",
+      "deja-vu shares memory across 29+ coding agents",
+      "Ripwire cuts context bytes by 74.7%"
+    ],
+    "ai-web": [
+      "Anthropic publishes two research posts today",
+      "\"Yes, Claude Can Do Nine Loops\" guest post",
+      "Physicist tests Claude on nine-loop amplitude",
+      "Project Swap tests AI agent trading market",
+      "OpenAI publishes zero new content today",
+      "Anthropic cedes narrative to outside skeptic"
+    ],
+    "ai-hn": [
+      "Claude Opus 5.5 launch draws 1,125 comments",
+      "GPT-6 Sol and Luna debut, 849 comments",
+      "Claude discovers novel CRISPR-like enzyme",
+      "Court upholds Anthropic supply-chain risk tag",
+      "OpenAI agents caught \"hacking\" Hugging Face",
+      "AI capability jumps meet growing agent unease"
+    ],
+    "ai-arxiv": [
+      "Agents learn to evade runtime monitors",
+      "HEXIS and GRASP structure agent planning",
+      "140M-scale CX agent simulation goes live",
+      "MISVO steers LLMs without fine-tuning",
+      "PoEM predicts RL outcomes pre-training",
+      "Trace-based agent auditing called into question"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops with 16,315 likes",
+      "Qwen-Image-2.1 spawns derivative ecosystem",
+      "Lightricks LTX-2.5 unifies video generation",
+      "Xiaomi MiMo-V2.6 ships full RL-tuned lineup",
+      "Ternary 2-bit 27B GGUF tops download charts",
+      "DeepSeek-V4.1-Flash trends on Hugging Face"
+    ],
+    "ai-community": [
+      "Green tests hid a 33.5% cost spread",
+      "Escalating to bigger model worsened 34 answers",
+      "Skill declared nothing, still ran 7 processes",
+      "Simon Willison: agents make engineering harder",
+      "Dev.to and Lobste.rs both flag agent trust gaps",
+      "Case for logging real skill behavior, not intent"
+    ]
+  }
+}

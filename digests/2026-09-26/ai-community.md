@@ -1,0 +1,59 @@
+# Tech Community AI Digest 2026-09-26
+
+> Sources: [Dev.to](https://dev.to/) (30 articles) + [Lobste.rs](https://lobste.rs/) (7 stories) | Generated: 2026-09-26 12:01 UTC
+
+---
+
+# Tech Community AI Digest — September 26, 2026
+
+## 1. Worth Your Time
+
+**[All my agent's tests were green, and they told me nothing](https://dev.to/arsentev/all-my-agents-tests-were-green-and-they-told-me-nothing-3n9n)** — Dev.to (Evgenii Arsentev)
+Across 36 runs and 4,086 tests, zero failures — but a 33.5% cost spread between conditions the tests couldn't distinguish. The lesson: a clean pass rate is not a comparison signal when your harness can't detect the dimension (cost, latency, approach quality) that actually varies; you need metrics beyond pass/fail to tell configurations apart.
+
+**[Escalating to the better model made 34 answers worse](https://dev.to/tom_jones_230c4659491adcd/escalating-to-the-better-model-made-34-answers-worse-ko7)** — Dev.to (Tom Jones)
+Challenges the standard "escalate to a bigger model when the small one fails" cascade design — in this test, routing to the stronger model flipped 34 previously-correct-or-neutral answers into wrong ones. Worth reading before you build a cheap→expensive fallback ladder as a reliability strategy.
+
+**[My AI Agent's Skill Declared Nothing. It Still Read 9 Files, Ran 7 Processes, and Got Blocked 3 Times.](https://dev.to/mikachu/my-ai-agents-skill-declared-nothing-it-still-read-9-files-ran-7-processes-and-got-blocked-3-gmn)** — Dev.to (Mika Flowers)
+A code-review skill with no declared permissions still touched the filesystem and spawned processes — the declaration surface and actual behavior are decoupled. Concrete argument for logging real tool/file/process activity rather than trusting a skill's stated scope.
+
+**[Note on 24th September 2026](https://simonwillison.net/2026/Sep/24/harder/)** — Simon Willison
+Blunt claim from heavy daily use: coding agents make software engineering *harder*, not easier, because unlocking their value requires more discipline and system knowledge than working without them, not less.
+
+**[Mica v0.1 4B got an iron pickaxe in real Minecraft without generating a single token](https://www.reddit.com/r/LocalLLaMA/comments/1wqahbz/mica_v01_4b_got_an_iron_pickaxe_in_real_minecraft/)** — r/LocalLLaMA
+Technique worth stealing for any constrained-action agent: instead of generating text output, the model scores the probabilities of fixed candidate-command labels and picks the argmax — zero output tokens, 90–150ms per decision on a single RTX 3090, 23 decisions from empty inventory to iron pickaxe.
+
+**[Your MCP Server Is Listening on 0.0.0.0 and Accepting Anonymous Client Registrations](https://dev.to/numbpill3d/your-mcp-server-is-listening-on-0000-and-accepting-anonymous-client-registrations-21fh)** — Dev.to (v. Splicer)
+Concrete misconfiguration audit of the Bifrost open-source AI gateway: binding to all interfaces plus unauthenticated client registration turns a local dev convenience into an open door to your LLM provider credentials. Check your own MCP gateway's bind address and auth before shipping.
+
+## 2. Techniques and Workflows
+
+Several sources push back on comfortable assumptions about agent reliability. **Tom Jones** (dev.to) found that escalating from a small to a large model in a cascade made 34 previously-fine answers worse — a caution against assuming "bigger model = strictly better" in a fallback chain; the interaction between the small model's framing and the large model's response matters. **Evgenii Arsentev** (dev.to) ran 36 trials of a coding agent and got 4,086/4,086 green tests with a 33.5% cost variance the test suite never surfaced — the practical takeaway is to instrument cost/latency/token-spend alongside pass/fail, since a saturated test suite stops being a useful comparison tool. **Mika Flowers** (dev.to) logged actual filesystem/process activity against a skill's declared manifest and found a total mismatch (9 files read, 7 processes run, 3 blocks, zero declarations) — a strong argument for runtime activity auditing over trusting static skill metadata, especially as **Kiell Tampubolon** (dev.to) separately documents malicious agent skills using the same declaration gap as an attack surface (ClawHub audit by Koi Security). On the architecture side, **Prakash Rao** (dev.to, x402 + MCP) works through where a spend-approval check should live when both the payment header and the tool call are agent-issued — his answer: keep the budget check outside the agent's own approval loop, since the agent already "approved" the request by making it. And on infrastructure, the **Mica** technique of scoring label probabilities instead of generating tokens (r/LocalLLaMA) is a low-latency pattern applicable anywhere the agent's output space is a small fixed set of actions rather than free text.
+
+## 3. Dev.to Highlights
+
+| Article | Reactions | Comments | Summary |
+| :--- | ---: | ---: | :--- |
+| [If AI Writes the Code and AI Reviews the Code, What Exactly Is the Developer Verifying?](https://dev.to/robertadam987_/if-ai-writes-the-code-and-ai-reviews-the-code-what-exactly-is-the-developer-verifying-b5h) | 23 | 1 | Argues that as AI handles writing, testing, and reviewing, the developer's remaining job shifts entirely to judgment calls about intent and risk rather than code mechanics. Raises the practical question of what verification step actually still needs a human. |
+| **[All my agent's tests were green, and they told me nothing](https://dev.to/arsentev/all-my-agents-tests-were-green-and-they-told-me-nothing-3n9n)** | 1 | 4 | 4,086 tests across 36 runs, zero failures, yet a 33.5% cost spread the suite never caught. Argues test-pass-rate alone is the wrong metric for comparing agent configurations. |
+| **[My AI Agent's Skill Declared Nothing. It Still Read 9 Files, Ran 7 Processes, and Got Blocked 3 Times.](https://dev.to/mikachu/my-ai-agents-skill-declared-nothing-it-still-read-9-files-ran-7-processes-and-got-blocked-3-gmn)** | 10 | 2 | A skill with an empty declared-permissions manifest still performed extensive file and process activity. Makes the case for runtime auditing of agent skills rather than trusting their stated scope. |
+| **[Escalating to the better model made 34 answers worse](https://dev.to/tom_jones_230c4659491adcd/escalating-to-the-better-model-made-34-answers-worse-ko7)** | 3 | 5 | Tests the standard cheap-then-expensive model cascade and finds escalation flips 34 answers from correct/neutral to wrong. Suggests cascade design needs more nuance than "always defer to the bigger model." |
+| [Can Two Local AI Agents Build an App Without Me? I Gave Them 6 Rounds to Find Out](https://dev.to/mikachu/can-two-local-ai-agents-build-an-app-without-me-i-gave-them-6-rounds-to-find-out-ko1) | 9 | 5 | A hands-on experiment letting two local agents iterate on an app across 6 rounds with no human intervention. Documents where the collaboration broke down and what kind of back-and-forth was actually productive. |
+| [I Built an AI Agent That Could Call APIs. Then I Had to Teach It When NOT to Call Them.](https://dev.to/katul1512/i-built-an-ai-agent-that-could-call-apis-then-i-had-to-teach-it-when-not-to-call-them-14kb) | 5 | 0 | The hard part of tool-using agents wasn't wiring up the API calls but constraining when the agent should abstain. A concrete write-up of guardrails for over-eager tool invocation. |
+| **[Your MCP Server Is Listening on 0.0.0.0 and Accepting Anonymous Client Registrations](https://dev.to/numbpill3d/your-mcp-server-is-listening-on-0000-and-accepting-anonymous-client-registrations-21fh)** | 1 | 0 | Audits the open-source Bifrost AI gateway and finds it binds to all interfaces while accepting unauthenticated client registrations by default. A checklist item for anyone self-hosting an MCP/LLM gateway. |
+| [The fake browser extension playbook is back. This time it ships as agent skills](https://dev.to/kielltampubolon/the-fake-browser-extension-playbook-is-back-this-time-it-ships-as-agent-skills-104l) | 1 | 0 | Covers Koi Security's audit of the ClawHub skill marketplace, where malicious payloads were distributed as agent skills using the same social-engineering playbook as fake browser extensions. Relevant if you install third-party agent skills from open marketplaces. |
+| [Approving a Tool Is Not Approving Data: What Laravel AI SDK 1.0 Changes, and What It Doesn't](https://dev.to/gabbrowick/approving-a-tool-is-not-approving-data-what-laravel-ai-sdk-10-changes-and-what-it-doesnt-1gj) | 1 | 1 | Explains Laravel AI SDK's new Approvable tool-call gating and clarifies a subtle gap: approving that a tool *may run* is not the same as approving the *data* it acts on. Useful distinction for anyone building human-in-the-loop tool approval flows. |
+| [x402 + MCP: where does the budget check go?](https://dev.to/prakash_rao/x402-mcp-where-does-the-budget-check-go-4h06) | 3 | 0 | Works through a real AGNTCon Tokyo demo of an agent trying to overspend, and argues the spend-check needs to live outside the agent's own request-approval loop since the agent already "approved" its own request. Concrete architecture guidance for agent payment flows. |
+
+## 4. Lobste.rs Highlights
+
+| Story | Score | Comments | Summary |
+| :--- | ---: | ---: | :--- |
+| [Goodbye Google](https://robert.ocallahan.org/2026/09/goodbye-google.html) · [discuss](https://lobste.rs/s/sxlf4a/goodbye_google) | 89 | 18 | A departure post reflecting on Google's trajectory and culture from a long-time insider's perspective, tagged both AI and person. Highest-scoring item of the day and driving a large discussion thread. |
+| [I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a "Breakthrough"](https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me) · [discuss](https://lobste.rs/s/kaqsr5/i_built_non_autoregressive_decision) | 61 | 6 | An independent researcher describes building non-autoregressive decision models before a frontier lab published similar work framed as novel. Worth reading for the technical approach itself as much as the priority dispute. |
+| [ChatGPT now knows what you do on other websites via ad collector](https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/) · [discuss](https://lobste.rs/s/jbnmj9/chatgpt_now_knows_what_you_do_on_other) | 60 | 7 | Documents an ad-tracking/data-collection mechanism tied to ChatGPT that surfaces browsing activity from other sites. Relevant privacy concern for anyone embedding ChatGPT-based features into products that touch user browsing data. |
+| [Laya — 33ms Multilingual System 1 Decision Engine](https://laya.convaiinnovations.com/) · [discuss](https://lobste.rs/s/ojukrw/laya_33ms_multilingual_system_1_decision) | 7 | 3 | A low-latency (33ms) decision engine positioned as "System 1"-style fast inference for multilingual tasks, contrasting with slower deliberative LLM reasoning. Interesting reference point if you're designing latency-sensitive agent decision loops. |
+| [Combining Machine Learning and Homomorphic Encryption in the Apple Ecosystem](https://machinelearning.apple.com/research/homomorphic-encryption) · [discuss](https://lobste.rs/s/7ekwll/combining_machine_learning_homomorphic) | 2 | 0 | Apple's research write-up on running ML inference over homomorphically encrypted data, trading compute cost for keeping user data encrypted end-to-end. Relevant if you need privacy-preserving inference on sensitive data. |
+
+---
+*This digest is auto-generated by [agents-radar](https://github.com/tbonedev/ai-radar).*
