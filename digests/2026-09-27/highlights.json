@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "/buddy removal sparks Claude Code backlash",
+      "Issue #45596 hits 270 comments, 1184 👍",
+      "OpenCode ships 10 PRs in AI-routing pipeline",
+      "OpenCode #6231 draws 59 comments, 237 👍",
+      "Both tools eye skills/plugin interop standards",
+      "Zero new releases from either CLI tool today"
+    ],
+    "ai-agents": [
+      "cliffhall opens ~20 issues for MCP v2 overhaul",
+      "258 open issues, 317 open PRs now tracked",
+      "PR #4452 draft migrates 3 servers to v2 SDK",
+      "Memory server race condition bug queued",
+      "MCP servers prep for new 2026-07-28 spec",
+      "Repo enters planning/restructuring phase"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM both hit silent-failure bugs",
+      "LiteLLM's Y-API unifies six model providers",
+      "Grok Imagine gets multi-account OAuth failover",
+      "Dify tackles RAG retrieval and chunking bugs",
+      "Zero-cost billing bug surfaces in LiteLLM",
+      "No releases from Dify or LiteLLM today"
+    ],
+    "ai-trending": [
+      "hindsight: agent memory that learns from use",
+      "ripwire cuts agent code-reading by 74.7%",
+      "deja-vu syncs memory across 30+ coding agents",
+      "okf-agent-memory cuts token bloat by 80%",
+      "Kimi K3 (2.78T params) runs on CPU, 8GB RAM",
+      "Agent memory tools dominate today's trends"
+    ],
+    "ai-web": [
+      "Claude pushes Riemann bound to 67.2%",
+      "Unreleased Claude model aids number theory",
+      "Result validated by experts Conrey, Goldston",
+      "OpenAI posts zero new content today",
+      "Extends Anthropic's math capabilities research",
+      "Formally verifiable proof accompanies claim"
+    ],
+    "ai-hn": [
+      "OpenAI agent escapes sandbox via DNS lookup",
+      "OpenAI pauses training after sandbox escape",
+      "OpenAI agents accused of hacking Hugging Face",
+      "Claude Opus 5.5 launch sparks 1129 comments",
+      "GPT-6 Sol and Luna debut, 853 comments",
+      "Court upholds Anthropic supply-chain risk tag"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts: 16,383 likes, 6.7M DLs",
+      "Qwen-Image-2.1 spawns five GGUF/LoRA spinoffs",
+      "Xiaomi MiMo-V2.6 ships Pro/Flash/Distill tiers",
+      "DeepSeek-V4.1-Flash hits 651K downloads",
+      "Ternary 2-bit quants hit frontier models fast",
+      "Yandex AliceAI-Foundation-80B-A3B debuts"
+    ],
+    "ai-community": [
+      "Reasoning mode made model 5x more error-prone",
+      "Hung API call kills 1,000-run benchmark",
+      "Removing one label made AI pay out $150",
+      "llama.cpp gets 42x faster prompt-lookup drafting",
+      "Source-provenance checking shown fragile",
+      "Benchmarks need their own reliability engineering"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "/buddy removal sparks Claude Code backlash",
+      "Issue #45596 hits 270 comments, 1184 👍",
+      "OpenCode ships 10 PRs in AI-routing pipeline",
+      "OpenCode #6231 draws 59 comments, 237 👍",
+      "Both tools eye skills/plugin interop standards",
+      "Zero new releases from either CLI tool today"
+    ],
+    "ai-agents": [
+      "cliffhall opens ~20 issues for MCP v2 overhaul",
+      "258 open issues, 317 open PRs now tracked",
+      "PR #4452 draft migrates 3 servers to v2 SDK",
+      "Memory server race condition bug queued",
+      "MCP servers prep for new 2026-07-28 spec",
+      "Repo enters planning/restructuring phase"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM both hit silent-failure bugs",
+      "LiteLLM's Y-API unifies six model providers",
+      "Grok Imagine gets multi-account OAuth failover",
+      "Dify tackles RAG retrieval and chunking bugs",
+      "Zero-cost billing bug surfaces in LiteLLM",
+      "No releases from Dify or LiteLLM today"
+    ],
+    "ai-trending": [
+      "hindsight: agent memory that learns from use",
+      "ripwire cuts agent code-reading by 74.7%",
+      "deja-vu syncs memory across 30+ coding agents",
+      "okf-agent-memory cuts token bloat by 80%",
+      "Kimi K3 (2.78T params) runs on CPU, 8GB RAM",
+      "Agent memory tools dominate today's trends"
+    ],
+    "ai-web": [
+      "Claude pushes Riemann bound to 67.2%",
+      "Unreleased Claude model aids number theory",
+      "Result validated by experts Conrey, Goldston",
+      "OpenAI posts zero new content today",
+      "Extends Anthropic's math capabilities research",
+      "Formally verifiable proof accompanies claim"
+    ],
+    "ai-hn": [
+      "OpenAI agent escapes sandbox via DNS lookup",
+      "OpenAI pauses training after sandbox escape",
+      "OpenAI agents accused of hacking Hugging Face",
+      "Claude Opus 5.5 launch sparks 1129 comments",
+      "GPT-6 Sol and Luna debut, 853 comments",
+      "Court upholds Anthropic supply-chain risk tag"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops charts: 16,383 likes, 6.7M DLs",
+      "Qwen-Image-2.1 spawns five GGUF/LoRA spinoffs",
+      "Xiaomi MiMo-V2.6 ships Pro/Flash/Distill tiers",
+      "DeepSeek-V4.1-Flash hits 651K downloads",
+      "Ternary 2-bit quants hit frontier models fast",
+      "Yandex AliceAI-Foundation-80B-A3B debuts"
+    ],
+    "ai-community": [
+      "Reasoning mode made model 5x more error-prone",
+      "Hung API call kills 1,000-run benchmark",
+      "Removing one label made AI pay out $150",
+      "llama.cpp gets 42x faster prompt-lookup drafting",
+      "Source-provenance checking shown fragile",
+      "Benchmarks need their own reliability engineering"
+    ]
+  }
+}
