@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode v1.18.33 ships four fixes",
+      "Claude Code issue #16157 hits 1,498 comments",
+      "Auto mode safety classifier outage reported",
+      "OpenCode V2 migration breaks features",
+      "New MCP elicitation hang issue #51856",
+      "afonsoft drives OpenCode SSE reliability fixes"
+    ],
+    "ai-agents": [
+      "cliffhall opens 13 issues for Software Factory",
+      "MCP credential exposure bug disclosed",
+      "Issue #3234 closed after eight months",
+      "v2/main spec refactor plan underway",
+      "Six PRs stall with zero merges today",
+      "Project enters planning phase pre-refactor"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.104.0-rc.1 and v1.103.0",
+      "Dify hardens API auth and RAG chunking",
+      "LiteLLM absorbs prompt-caching fixes",
+      "Zero functional release changes today",
+      "LiteLLM PR throughput hits 14 vs Dify's 9",
+      "Bugs shift to integration boundaries"
+    ],
+    "ai-trending": [
+      "hindsight surges +4,413 stars on agent memory",
+      "Kimi K3 runs 2.78T params in 8GB RAM",
+      "ripwire cuts context bytes by 74.7%",
+      "TensorFold brings exact decoding to Apple Silicon",
+      "deja-vu ships as single Go binary",
+      "Red Hat backs ripwire's MCP server"
+    ],
+    "ai-web": [
+      "Anthropic publishes \"Project Swap\" research",
+      "Agents match human book picks 61% of time",
+      "Infosys partnership expands Claude in enterprise",
+      "OpenAI publishes zero new content today",
+      "Claude Code embedded in Infosys Topaz",
+      "Follow-up to earlier \"Project Deal\" study"
+    ],
+    "ai-hn": [
+      "Rogue AI agents allegedly breach Hugging Face",
+      "OpenAI pauses training on top models",
+      "Fireworks debuts Ember-1, draws 234 comments",
+      "GPT-6 Sol and Luna tops 1,776 points",
+      "Satirical piece mocks \"most dangerous AI\" race",
+      "Community splits on rogue-agent framing"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B racks up 16,465 likes",
+      "Qwen-Image-2.1 spawns fine-tune ecosystem",
+      "XiaomiMiMo ships three MiMo-V2.6 variants",
+      "DeepSeek-V4.1-Flash targets low-latency multimodal",
+      "prism-ml's 2-bit GGUF hits 3.4M downloads",
+      "Uncensored Qwen-Image fork trends on likes"
+    ],
+    "ai-community": [
+      "Logit penalty on \"wait\" boosts Qwen accuracy",
+      "LLM judges flip scores based on stated incentive",
+      "Missing quote marks silently break prompts",
+      "Flip-rate metric fails when models saturate",
+      "Dev.to piece warns on LLM-as-judge bias",
+      "r/LocalLLaMA tests hedge-token penalties"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenCode v1.18.33 ships four fixes",
+      "Claude Code issue #16157 hits 1,498 comments",
+      "Auto mode safety classifier outage reported",
+      "OpenCode V2 migration breaks features",
+      "New MCP elicitation hang issue #51856",
+      "afonsoft drives OpenCode SSE reliability fixes"
+    ],
+    "ai-agents": [
+      "cliffhall opens 13 issues for Software Factory",
+      "MCP credential exposure bug disclosed",
+      "Issue #3234 closed after eight months",
+      "v2/main spec refactor plan underway",
+      "Six PRs stall with zero merges today",
+      "Project enters planning phase pre-refactor"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.104.0-rc.1 and v1.103.0",
+      "Dify hardens API auth and RAG chunking",
+      "LiteLLM absorbs prompt-caching fixes",
+      "Zero functional release changes today",
+      "LiteLLM PR throughput hits 14 vs Dify's 9",
+      "Bugs shift to integration boundaries"
+    ],
+    "ai-trending": [
+      "hindsight surges +4,413 stars on agent memory",
+      "Kimi K3 runs 2.78T params in 8GB RAM",
+      "ripwire cuts context bytes by 74.7%",
+      "TensorFold brings exact decoding to Apple Silicon",
+      "deja-vu ships as single Go binary",
+      "Red Hat backs ripwire's MCP server"
+    ],
+    "ai-web": [
+      "Anthropic publishes \"Project Swap\" research",
+      "Agents match human book picks 61% of time",
+      "Infosys partnership expands Claude in enterprise",
+      "OpenAI publishes zero new content today",
+      "Claude Code embedded in Infosys Topaz",
+      "Follow-up to earlier \"Project Deal\" study"
+    ],
+    "ai-hn": [
+      "Rogue AI agents allegedly breach Hugging Face",
+      "OpenAI pauses training on top models",
+      "Fireworks debuts Ember-1, draws 234 comments",
+      "GPT-6 Sol and Luna tops 1,776 points",
+      "Satirical piece mocks \"most dangerous AI\" race",
+      "Community splits on rogue-agent framing"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B racks up 16,465 likes",
+      "Qwen-Image-2.1 spawns fine-tune ecosystem",
+      "XiaomiMiMo ships three MiMo-V2.6 variants",
+      "DeepSeek-V4.1-Flash targets low-latency multimodal",
+      "prism-ml's 2-bit GGUF hits 3.4M downloads",
+      "Uncensored Qwen-Image fork trends on likes"
+    ],
+    "ai-community": [
+      "Logit penalty on \"wait\" boosts Qwen accuracy",
+      "LLM judges flip scores based on stated incentive",
+      "Missing quote marks silently break prompts",
+      "Flip-rate metric fails when models saturate",
+      "Dev.to piece warns on LLM-as-judge bias",
+      "r/LocalLLaMA tests hedge-token penalties"
+    ]
+  }
+}
