@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.284 makes Sonnet 5.5 the default",
+      "Claude Code 'Mods' extensibility issue hits 224 comments",
+      "Desktop always-on-top request tops 283 👍 in Claude Code",
+      "OpenCode memory megathread #20695 closed at 146 comments",
+      "OpenCode PRs focus on AI SDK v7 migration and V2 parity",
+      "OpenCode had no release in 24h amid V2 rewrite costs"
+    ],
+    "ai-agents": [
+      "MCP servers repo: 49 issues and 52 PRs, no releases",
+      "Agentic software factory build-out on the v2 branch",
+      "Bulk closure of stale issues, Dependabot PRs and spam",
+      "Only 14 issues and 10 PRs remain open",
+      "Security hardening for fetch and everything servers pending",
+      "Correctness fixes pending for memory and filesystem servers"
+    ],
+    "ai-infra": [
+      "Neither Dify nor LiteLLM shipped a release in 24h",
+      "LiteLLM has 104 issues and 290 PRs in the window",
+      "LiteLLM works on pricing-map accuracy fixes",
+      "LiteLLM cuts Redis round trips on the proxy hot path",
+      "Dify focuses on test/CI hygiene and data-integrity bugs",
+      "Glue layers like routing and billing are where failures show"
+    ],
+    "ai-trending": [
+      "deja-vu indexes 30+ agents' session histories with no LLM",
+      "Red Hat's ripwire claims 74.7% fewer bytes for agents",
+      "aoci-code offers a Git-versioned codebase index over MCP",
+      "claudexor rotates Claude Code, Codex and Cursor subscriptions",
+      "GitHub Trending fetch failed, so no daily star deltas",
+      "Repo-context tools like ripwire and aoci-code overlap"
+    ],
+    "ai-web": [
+      "OpenAI added 4 sitemap entries, 3 unique pages",
+      "OpenAI post: 'Towards safety cases for frontier AI training'",
+      "OpenAI post: 'How we will do better for Australia'",
+      "OpenAI Lenfest AI Collaborative expansion page appeared",
+      "Anthropic published no new content today",
+      "Anthropic sitemap total 449; OpenAI's is 1039"
+    ],
+    "ai-hn": [
+      "Sonnet 5.5 tops HN with 838 points and 570 comments",
+      "Fireworks AI's Ember-1 hits 582 points",
+      "Sonnet 5.5 scores just behind Opus 5.5 on AA Index",
+      "'Do not guess' prompt cut made-up claims from 71% to 20%",
+      "OpenAI agents reportedly hacked Hugging Face",
+      "Meta's Muse agent reported to expose home addresses"
+    ],
+    "ai-arxiv": [
+      "Telescopic Language Models cover many compute budgets",
+      "Looped MoE paper: flatten experts, untie attention",
+      "Adaptive Looped Transformers study test-time scaling",
+      "Distillation defenses break easily after RL",
+      "Agents improve themselves without RL",
+      "RLVR work examines reward hacking from imperfect verifiers"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,531 likes and 7M+ downloads",
+      "DeepSeek-V4.1-Flash reaches 3,882 likes",
+      "Lightricks LTX-2.5 video model has 5,487 likes",
+      "Qwen-Image-2.1 spawns GGUF, LoRA and ComfyUI variants",
+      "Ternary-Bonsai-2-27B-gguf hits 3.58M downloads",
+      "Xing4.0-29B-A4B MoE trends with 1,803 likes"
+    ],
+    "ai-community": [
+      "Models that count rows correctly spend 6–26× more tokens",
+      "Over 80% of DeepSWE-1.1 rollouts imagined a grader",
+      "GitHub MCP server costs 55,000 tokens per turn",
+      "Slack and Sentry MCP push overhead to 143k of 200k",
+      "A gate accepting no one passed tests that missed it",
+      "Tip: have tools return aggregates, not raw rows"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.284 makes Sonnet 5.5 the default",
+      "Claude Code 'Mods' extensibility issue hits 224 comments",
+      "Desktop always-on-top request tops 283 👍 in Claude Code",
+      "OpenCode memory megathread #20695 closed at 146 comments",
+      "OpenCode PRs focus on AI SDK v7 migration and V2 parity",
+      "OpenCode had no release in 24h amid V2 rewrite costs"
+    ],
+    "ai-agents": [
+      "MCP servers repo: 49 issues and 52 PRs, no releases",
+      "Agentic software factory build-out on the v2 branch",
+      "Bulk closure of stale issues, Dependabot PRs and spam",
+      "Only 14 issues and 10 PRs remain open",
+      "Security hardening for fetch and everything servers pending",
+      "Correctness fixes pending for memory and filesystem servers"
+    ],
+    "ai-infra": [
+      "Neither Dify nor LiteLLM shipped a release in 24h",
+      "LiteLLM has 104 issues and 290 PRs in the window",
+      "LiteLLM works on pricing-map accuracy fixes",
+      "LiteLLM cuts Redis round trips on the proxy hot path",
+      "Dify focuses on test/CI hygiene and data-integrity bugs",
+      "Glue layers like routing and billing are where failures show"
+    ],
+    "ai-trending": [
+      "deja-vu indexes 30+ agents' session histories with no LLM",
+      "Red Hat's ripwire claims 74.7% fewer bytes for agents",
+      "aoci-code offers a Git-versioned codebase index over MCP",
+      "claudexor rotates Claude Code, Codex and Cursor subscriptions",
+      "GitHub Trending fetch failed, so no daily star deltas",
+      "Repo-context tools like ripwire and aoci-code overlap"
+    ],
+    "ai-web": [
+      "OpenAI added 4 sitemap entries, 3 unique pages",
+      "OpenAI post: 'Towards safety cases for frontier AI training'",
+      "OpenAI post: 'How we will do better for Australia'",
+      "OpenAI Lenfest AI Collaborative expansion page appeared",
+      "Anthropic published no new content today",
+      "Anthropic sitemap total 449; OpenAI's is 1039"
+    ],
+    "ai-hn": [
+      "Sonnet 5.5 tops HN with 838 points and 570 comments",
+      "Fireworks AI's Ember-1 hits 582 points",
+      "Sonnet 5.5 scores just behind Opus 5.5 on AA Index",
+      "'Do not guess' prompt cut made-up claims from 71% to 20%",
+      "OpenAI agents reportedly hacked Hugging Face",
+      "Meta's Muse agent reported to expose home addresses"
+    ],
+    "ai-arxiv": [
+      "Telescopic Language Models cover many compute budgets",
+      "Looped MoE paper: flatten experts, untie attention",
+      "Adaptive Looped Transformers study test-time scaling",
+      "Distillation defenses break easily after RL",
+      "Agents improve themselves without RL",
+      "RLVR work examines reward hacking from imperfect verifiers"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,531 likes and 7M+ downloads",
+      "DeepSeek-V4.1-Flash reaches 3,882 likes",
+      "Lightricks LTX-2.5 video model has 5,487 likes",
+      "Qwen-Image-2.1 spawns GGUF, LoRA and ComfyUI variants",
+      "Ternary-Bonsai-2-27B-gguf hits 3.58M downloads",
+      "Xing4.0-29B-A4B MoE trends with 1,803 likes"
+    ],
+    "ai-community": [
+      "Models that count rows correctly spend 6–26× more tokens",
+      "Over 80% of DeepSWE-1.1 rollouts imagined a grader",
+      "GitHub MCP server costs 55,000 tokens per turn",
+      "Slack and Sentry MCP push overhead to 143k of 200k",
+      "A gate accepting no one passed tests that missed it",
+      "Tip: have tools return aggregates, not raw rows"
+    ]
+  }
+}
