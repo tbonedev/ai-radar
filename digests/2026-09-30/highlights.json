@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.285 shipped; 2.1.286 already in progress",
+      "Claude Code Mods thread #91870 hits 225 comments",
+      "Claude Code adds sec-default security layer and managed policy",
+      "Multi-account request #18435 tops Claude Code at 843 👍",
+      "OpenCode V2 migration causes memory exhaustion and data loss",
+      "OpenCode Memory Megathread #20695 closed, 149 comments"
+    ],
+    "ai-agents": [
+      "MCP Servers: no releases, 22 items updated in 24h",
+      "cliffhall drives agentic software factory work on v2 branch",
+      "Factory Wave 3 PRs and issues closed on 2026-09-29",
+      "PR #4916 proposes removing sequentialthinking server",
+      "PR #4899 adds board-ops and issue-create skills",
+      "Community filesystem and memory server fixes remain unmerged"
+    ],
+    "ai-infra": [
+      "LiteLLM ships six releases, incl. v1.105.0-dev.1",
+      "LiteLLM patches four older lines, likely backports",
+      "Dify PR #40277 moves entrypoints onto Graphon 0.8",
+      "Dify nested Workflow Tools 7-part PR stack in flight",
+      "Bugs cluster around zero values, pagination, spend increments",
+      "Dify ships no release in the last 24 hours"
+    ],
+    "ai-trending": [
+      "VectifyAI/PageIndex: vectorless RAG, +1,095 stars today",
+      "NVIDIA/OpenShell: Rust agent sandbox, +1,280 today",
+      "colbymchenry/codegraph: local code knowledge graph for agents",
+      "redhat-et/ripwire cuts context bytes 74.7%, 2,375 stars",
+      "vshulcz/deja-vu searches history of 34 coding agents",
+      "deja-vu is a single Go binary with 1,101 stars"
+    ],
+    "ai-web": [
+      "Anthropic: GLM-5.3 can build end-to-end cyber exploits",
+      "GLM-5.3 safeguards bypassed 64%–100% in Anthropic tests",
+      "Safeguarded Claude models resisted the same attacks",
+      "Anthropic Interviewer study: \"What do you want from AI?\"",
+      "OpenAI publishes GPT-6.1 Sol, Dots and DevDay recap",
+      "7 new articles: 2 Anthropic, 5 OpenAI"
+    ],
+    "ai-hn": [
+      "GPT 6.1 Sol tops HN: 991 points, 866 comments",
+      "Sonnet 5.5 draws 878 points, 608 comments",
+      "Anthropic's GLM-5.3 cyber research hits 233 points",
+      "OpenAI Dots always-on agents launch and DevDay recap",
+      "Reported $1.4T OpenAI valuation lands on HN",
+      "BitNet on ESP32 and 22KiB transformer lead on-device trend"
+    ],
+    "ai-arxiv": [
+      "Dr. OPD: token-weighted on-policy distillation",
+      "Power-sharpened sampling lifts small-model reasoning without RL",
+      "Alpha Diffusion LMs: factorization alone isn't the problem",
+      "Agent harnesses treated as learnable objects",
+      "KV-cache and linear-attention state quantization cut memory",
+      "Papers question whether CoT traces reflect model behavior"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,609 likes, 7M downloads",
+      "DeepSeek-V4.1-Flash reaches 3,916 likes",
+      "Lightricks LTX-2.5 hits 5,619 likes",
+      "Xing4.0-29B-A4B: MoE with only ~4B active parameters",
+      "Xiaomi MiMo-V2.6-Pro-RL: high downloads relative to likes",
+      "Qwen-Image-2.1 spawns GGUF, ComfyUI and Turbo LoRA variants"
+    ],
+    "ai-community": [
+      "Meta's injection detector caught 1% of attacks, 99% once tuned",
+      "Green AI guardrail can still catch nothing",
+      "Guardrail default threshold was roughly 50x too high",
+      "AWS Bedrock agent governance: 2 of 3 policies blocked nothing",
+      "Only the runaway-agent hard-block fired in the loan-crew test",
+      "Binary test rewards in code-agent RL reward sloppy diffs"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.285 shipped; 2.1.286 already in progress",
+      "Claude Code Mods thread #91870 hits 225 comments",
+      "Claude Code adds sec-default security layer and managed policy",
+      "Multi-account request #18435 tops Claude Code at 843 👍",
+      "OpenCode V2 migration causes memory exhaustion and data loss",
+      "OpenCode Memory Megathread #20695 closed, 149 comments"
+    ],
+    "ai-agents": [
+      "MCP Servers: no releases, 22 items updated in 24h",
+      "cliffhall drives agentic software factory work on v2 branch",
+      "Factory Wave 3 PRs and issues closed on 2026-09-29",
+      "PR #4916 proposes removing sequentialthinking server",
+      "PR #4899 adds board-ops and issue-create skills",
+      "Community filesystem and memory server fixes remain unmerged"
+    ],
+    "ai-infra": [
+      "LiteLLM ships six releases, incl. v1.105.0-dev.1",
+      "LiteLLM patches four older lines, likely backports",
+      "Dify PR #40277 moves entrypoints onto Graphon 0.8",
+      "Dify nested Workflow Tools 7-part PR stack in flight",
+      "Bugs cluster around zero values, pagination, spend increments",
+      "Dify ships no release in the last 24 hours"
+    ],
+    "ai-trending": [
+      "VectifyAI/PageIndex: vectorless RAG, +1,095 stars today",
+      "NVIDIA/OpenShell: Rust agent sandbox, +1,280 today",
+      "colbymchenry/codegraph: local code knowledge graph for agents",
+      "redhat-et/ripwire cuts context bytes 74.7%, 2,375 stars",
+      "vshulcz/deja-vu searches history of 34 coding agents",
+      "deja-vu is a single Go binary with 1,101 stars"
+    ],
+    "ai-web": [
+      "Anthropic: GLM-5.3 can build end-to-end cyber exploits",
+      "GLM-5.3 safeguards bypassed 64%–100% in Anthropic tests",
+      "Safeguarded Claude models resisted the same attacks",
+      "Anthropic Interviewer study: \"What do you want from AI?\"",
+      "OpenAI publishes GPT-6.1 Sol, Dots and DevDay recap",
+      "7 new articles: 2 Anthropic, 5 OpenAI"
+    ],
+    "ai-hn": [
+      "GPT 6.1 Sol tops HN: 991 points, 866 comments",
+      "Sonnet 5.5 draws 878 points, 608 comments",
+      "Anthropic's GLM-5.3 cyber research hits 233 points",
+      "OpenAI Dots always-on agents launch and DevDay recap",
+      "Reported $1.4T OpenAI valuation lands on HN",
+      "BitNet on ESP32 and 22KiB transformer lead on-device trend"
+    ],
+    "ai-arxiv": [
+      "Dr. OPD: token-weighted on-policy distillation",
+      "Power-sharpened sampling lifts small-model reasoning without RL",
+      "Alpha Diffusion LMs: factorization alone isn't the problem",
+      "Agent harnesses treated as learnable objects",
+      "KV-cache and linear-attention state quantization cut memory",
+      "Papers question whether CoT traces reflect model behavior"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,609 likes, 7M downloads",
+      "DeepSeek-V4.1-Flash reaches 3,916 likes",
+      "Lightricks LTX-2.5 hits 5,619 likes",
+      "Xing4.0-29B-A4B: MoE with only ~4B active parameters",
+      "Xiaomi MiMo-V2.6-Pro-RL: high downloads relative to likes",
+      "Qwen-Image-2.1 spawns GGUF, ComfyUI and Turbo LoRA variants"
+    ],
+    "ai-community": [
+      "Meta's injection detector caught 1% of attacks, 99% once tuned",
+      "Green AI guardrail can still catch nothing",
+      "Guardrail default threshold was roughly 50x too high",
+      "AWS Bedrock agent governance: 2 of 3 policies blocked nothing",
+      "Only the runaway-agent hard-block fired in the loan-crew test",
+      "Binary test rewards in code-agent RL reward sloppy diffs"
+    ]
+  }
+}
