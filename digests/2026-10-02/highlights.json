@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.287 launches Mods extensibility",
+      "OpenCode V2 adds ACP protocol support and Effect refactor",
+      "Claude Code's top issue hits 232 comments",
+      "OpenCode's top thread draws 136 comments",
+      "Billing and quota opacity drive complaints in both tools",
+      "Windows and desktop app rough edges recur in both communities"
+    ],
+    "ai-agents": [
+      "MCP Servers v2 'agentic software factory' push by @cliffhall",
+      "PR #4941 opens changesets 'version packages' release flow",
+      "Changesets for TypeScript servers replace #4604 (#4927)",
+      "Milestone release flow and release skill added (#4928)",
+      "@jayhemnani9910 files fixes for git, filesystem, everything servers",
+      "v2/main to main merge prepares for v2.0.0"
+    ],
+    "ai-infra": [
+      "LiteLLM ships dev pre-release v1.105.0-dev.2",
+      "LiteLLM has 318 PRs updated in 24h",
+      "LiteLLM PyPI compromise tracker #24518 highlights supply-chain risk",
+      "Dify has pagination, retrieval and parsing bugs, few fix PRs",
+      "LiteLLM budget, spend-log and guardrail gaps reported",
+      "Many LiteLLM issues closed by stale bot, not fixed"
+    ],
+    "ai-trending": [
+      "context-mode sandboxes tool output, claims 98% less",
+      "Red Hat's ripwire returns code signatures, 74.7% fewer bytes",
+      "deja-vu searches Claude Code, Codex and Cursor history locally",
+      "cost-xray shows what Claude Code and Codex send to the API",
+      "kimi-k3-in-c claims 2.78T-param Kimi K3 on one CPU",
+      "Trending list star totals were missing, shown as ⭐0"
+    ],
+    "ai-web": [
+      "Anthropic publishes 'Claude-shaped science' guest post",
+      "Prof. Matthew Schwartz introduces BootLoops calculation toolkit",
+      "Claude finds links from BootLoops to ecology and genetics",
+      "Post follows up Schwartz's earlier 'Vibe Physics' piece",
+      "OpenAI adds an Albertsons retail item under /index/",
+      "Sitemap totals: Anthropic 454, OpenAI 1046"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with 1,663 points",
+      "OpenAI 'Dots: Always-on agents' draws 764 points",
+      "Third Circuit rules AI training on copyrighted work not fair use",
+      "FTC probe into AI companies draws heavy discussion",
+      "KernelBench asks whether LLMs can write GPU kernels",
+      "Responsible Release of AI-Generated Mathematics hits 186 comments"
+    ],
+    "ai-arxiv": [
+      "'SFT Learns Better Than You Think' adds sampling to finetuning",
+      "Multi-teacher on-policy distillation analyzed on Qwen3-1.7B",
+      "Looped transformers decode better using intermediate states",
+      "AutoCompact tackles coding-agent context management",
+      "TACO, ZFO and SoftServe target memory-lean LLM fine-tuning",
+      "Local Support Learning proposed for model forgetting"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,753 likes, 6.9M downloads",
+      "DeepSeek-V4.1-Flash reaches 4,003 likes",
+      "Lightricks LTX-2.5 hits 5,905 likes",
+      "About a third of entries build on Qwen3.8 or Qwen-Image-2.1",
+      "Mixed-precision GGUF (GSQ/RCO) and ternary 2-bit weights surge",
+      "convaiinnovations/laya: 4,911 likes but 0 downloads"
+    ],
+    "ai-community": [
+      "An eval passed because the model had seen the answers",
+      "Claude Code Read deny rules let 4 of 11 routes through",
+      "Poisoned-test probe: top models noticed, then passed anyway",
+      "One unchanged model scored 31, 21 and 31 out of 50",
+      "Smaller models read URLs like Python, not like fetch()",
+      "Advice: enforce secrets rules at sandbox or filesystem level"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.287 launches Mods extensibility",
+      "OpenCode V2 adds ACP protocol support and Effect refactor",
+      "Claude Code's top issue hits 232 comments",
+      "OpenCode's top thread draws 136 comments",
+      "Billing and quota opacity drive complaints in both tools",
+      "Windows and desktop app rough edges recur in both communities"
+    ],
+    "ai-agents": [
+      "MCP Servers v2 'agentic software factory' push by @cliffhall",
+      "PR #4941 opens changesets 'version packages' release flow",
+      "Changesets for TypeScript servers replace #4604 (#4927)",
+      "Milestone release flow and release skill added (#4928)",
+      "@jayhemnani9910 files fixes for git, filesystem, everything servers",
+      "v2/main to main merge prepares for v2.0.0"
+    ],
+    "ai-infra": [
+      "LiteLLM ships dev pre-release v1.105.0-dev.2",
+      "LiteLLM has 318 PRs updated in 24h",
+      "LiteLLM PyPI compromise tracker #24518 highlights supply-chain risk",
+      "Dify has pagination, retrieval and parsing bugs, few fix PRs",
+      "LiteLLM budget, spend-log and guardrail gaps reported",
+      "Many LiteLLM issues closed by stale bot, not fixed"
+    ],
+    "ai-trending": [
+      "context-mode sandboxes tool output, claims 98% less",
+      "Red Hat's ripwire returns code signatures, 74.7% fewer bytes",
+      "deja-vu searches Claude Code, Codex and Cursor history locally",
+      "cost-xray shows what Claude Code and Codex send to the API",
+      "kimi-k3-in-c claims 2.78T-param Kimi K3 on one CPU",
+      "Trending list star totals were missing, shown as ⭐0"
+    ],
+    "ai-web": [
+      "Anthropic publishes 'Claude-shaped science' guest post",
+      "Prof. Matthew Schwartz introduces BootLoops calculation toolkit",
+      "Claude finds links from BootLoops to ecology and genetics",
+      "Post follows up Schwartz's earlier 'Vibe Physics' piece",
+      "OpenAI adds an Albertsons retail item under /index/",
+      "Sitemap totals: Anthropic 454, OpenAI 1046"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with 1,663 points",
+      "OpenAI 'Dots: Always-on agents' draws 764 points",
+      "Third Circuit rules AI training on copyrighted work not fair use",
+      "FTC probe into AI companies draws heavy discussion",
+      "KernelBench asks whether LLMs can write GPU kernels",
+      "Responsible Release of AI-Generated Mathematics hits 186 comments"
+    ],
+    "ai-arxiv": [
+      "'SFT Learns Better Than You Think' adds sampling to finetuning",
+      "Multi-teacher on-policy distillation analyzed on Qwen3-1.7B",
+      "Looped transformers decode better using intermediate states",
+      "AutoCompact tackles coding-agent context management",
+      "TACO, ZFO and SoftServe target memory-lean LLM fine-tuning",
+      "Local Support Learning proposed for model forgetting"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,753 likes, 6.9M downloads",
+      "DeepSeek-V4.1-Flash reaches 4,003 likes",
+      "Lightricks LTX-2.5 hits 5,905 likes",
+      "About a third of entries build on Qwen3.8 or Qwen-Image-2.1",
+      "Mixed-precision GGUF (GSQ/RCO) and ternary 2-bit weights surge",
+      "convaiinnovations/laya: 4,911 likes but 0 downloads"
+    ],
+    "ai-community": [
+      "An eval passed because the model had seen the answers",
+      "Claude Code Read deny rules let 4 of 11 routes through",
+      "Poisoned-test probe: top models noticed, then passed anyway",
+      "One unchanged model scored 31, 21 and 31 out of 50",
+      "Smaller models read URLs like Python, not like fetch()",
+      "Advice: enforce secrets rules at sandbox or filesystem level"
+    ]
+  }
+}
