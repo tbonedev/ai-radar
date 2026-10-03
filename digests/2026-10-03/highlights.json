@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.288 adds $.ui.selection() for mods",
+      "Built-in gh api now works in Claude Code cloud sessions",
+      "Claude Code #45596 hits 275 comments and 1186 👍",
+      "Rate limit hit at 16% usage on Claude Max (#29579)",
+      "OpenCode free-tier gating errors dominate its issues",
+      "OpenCode Go quota bug and V2 rewrite concerns grow"
+    ],
+    "ai-agents": [
+      "MCP Servers: 1 issue and 7 PRs updated, no releases",
+      "PR #4776 adds robots.txt timeout to fetch server",
+      "MemTether cross-client memory hub listing PR closed (#4946)",
+      "Most open PRs are small fixes to git and everything servers",
+      "Review throughput looks slow on late-September fix PRs",
+      "Seven projects tracked, including MCP Registry and Docker"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM shipped no releases in the last 24h",
+      "LiteLLM focuses on budget enforcement and spend-log durability",
+      "LiteLLM has about 14 PRs in flight versus Dify's 4",
+      "Dify GraphRAG PR #43355 is a size XXL feature",
+      "LiteLLM adds new guardrails for agent and MCP tooling",
+      "Fixes for /v1/messages and /v1/responses translation bugs"
+    ],
+    "ai-trending": [
+      "Agent-Reach gains 1,683 stars today, the biggest on the list",
+      "deja-vu indexes history from Claude Code, Codex and Cursor",
+      "Red Hat's ripwire gives agents signatures, claims 74.7% fewer bytes",
+      "cost-xray shows what Claude Code and Codex send to the API",
+      "Trending list shows ⭐0 totals, a scraper gap",
+      "Topic-search star counts for days-old repos look suspect"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Frontier Academy with $100M",
+      "Goal is to train 10,000 Frontier Deployed Engineers by 2027",
+      "First cohorts include Accenture, Deloitte, McKinsey and Bain",
+      "Morgan Stanley and Novo Nordisk join as launch cohorts",
+      "Anthropic aims to set a competency standard for Claude deployment",
+      "OpenAI's only new item is a metadata-only URL"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with 1,687 points and 1,174 comments",
+      "FLUX 3 Image from Black Forest Labs reaches 361 points",
+      "AI beats the best Stratego player in history",
+      "antirez's local-LLM project ds4 draws attention",
+      "ChatGPT's new Sites feature gets HN discussion",
+      "Gemini ending free Flash/Pro access draws skepticism"
+    ],
+    "ai-arxiv": [
+      "SFT with sampling may match RL, challenging post-training norms",
+      "Multi-teacher on-policy distillation analyzed on Qwen3-1.7B",
+      "TACO optimizer compresses state for full fine-tuning",
+      "AutoCompact tackles coding-agent context management",
+      "New benchmarks cover cybersecurity tool use and enterprise data agents",
+      "A humanoid tool-use benchmark appears among 50 papers"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,835 likes and 6.9M downloads",
+      "Qwen-Image-2.1 spawns ComfyUI, turbo LoRA and face-swap variants",
+      "Lightricks LTX-2.5 reaches 6,046 likes",
+      "DeepSeek-V4.1-Flash gets 4,027 likes and 787K downloads",
+      "Cloudflare publishes its own models, clef and clef-flash",
+      "laya has 5,028 likes but 0 downloads, an odd pattern"
+    ],
+    "ai-community": [
+      "26 of 27 reviewer agents approved a test that can't fail",
+      "Agents in sandboxes passed instructions via a shared cache",
+      "Models miscount tool-returned rows, so compute counts in tools",
+      "More context can make AI coding agents worse",
+      "Treat caches, email and shared docs as injection paths",
+      "Mutation testing suggested over model reviewers for tests"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.288 adds $.ui.selection() for mods",
+      "Built-in gh api now works in Claude Code cloud sessions",
+      "Claude Code #45596 hits 275 comments and 1186 👍",
+      "Rate limit hit at 16% usage on Claude Max (#29579)",
+      "OpenCode free-tier gating errors dominate its issues",
+      "OpenCode Go quota bug and V2 rewrite concerns grow"
+    ],
+    "ai-agents": [
+      "MCP Servers: 1 issue and 7 PRs updated, no releases",
+      "PR #4776 adds robots.txt timeout to fetch server",
+      "MemTether cross-client memory hub listing PR closed (#4946)",
+      "Most open PRs are small fixes to git and everything servers",
+      "Review throughput looks slow on late-September fix PRs",
+      "Seven projects tracked, including MCP Registry and Docker"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM shipped no releases in the last 24h",
+      "LiteLLM focuses on budget enforcement and spend-log durability",
+      "LiteLLM has about 14 PRs in flight versus Dify's 4",
+      "Dify GraphRAG PR #43355 is a size XXL feature",
+      "LiteLLM adds new guardrails for agent and MCP tooling",
+      "Fixes for /v1/messages and /v1/responses translation bugs"
+    ],
+    "ai-trending": [
+      "Agent-Reach gains 1,683 stars today, the biggest on the list",
+      "deja-vu indexes history from Claude Code, Codex and Cursor",
+      "Red Hat's ripwire gives agents signatures, claims 74.7% fewer bytes",
+      "cost-xray shows what Claude Code and Codex send to the API",
+      "Trending list shows ⭐0 totals, a scraper gap",
+      "Topic-search star counts for days-old repos look suspect"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude Frontier Academy with $100M",
+      "Goal is to train 10,000 Frontier Deployed Engineers by 2027",
+      "First cohorts include Accenture, Deloitte, McKinsey and Bain",
+      "Morgan Stanley and Novo Nordisk join as launch cohorts",
+      "Anthropic aims to set a competency standard for Claude deployment",
+      "OpenAI's only new item is a metadata-only URL"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with 1,687 points and 1,174 comments",
+      "FLUX 3 Image from Black Forest Labs reaches 361 points",
+      "AI beats the best Stratego player in history",
+      "antirez's local-LLM project ds4 draws attention",
+      "ChatGPT's new Sites feature gets HN discussion",
+      "Gemini ending free Flash/Pro access draws skepticism"
+    ],
+    "ai-arxiv": [
+      "SFT with sampling may match RL, challenging post-training norms",
+      "Multi-teacher on-policy distillation analyzed on Qwen3-1.7B",
+      "TACO optimizer compresses state for full fine-tuning",
+      "AutoCompact tackles coding-agent context management",
+      "New benchmarks cover cybersecurity tool use and enterprise data agents",
+      "A humanoid tool-use benchmark appears among 50 papers"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,835 likes and 6.9M downloads",
+      "Qwen-Image-2.1 spawns ComfyUI, turbo LoRA and face-swap variants",
+      "Lightricks LTX-2.5 reaches 6,046 likes",
+      "DeepSeek-V4.1-Flash gets 4,027 likes and 787K downloads",
+      "Cloudflare publishes its own models, clef and clef-flash",
+      "laya has 5,028 likes but 0 downloads, an odd pattern"
+    ],
+    "ai-community": [
+      "26 of 27 reviewer agents approved a test that can't fail",
+      "Agents in sandboxes passed instructions via a shared cache",
+      "Models miscount tool-returned rows, so compute counts in tools",
+      "More context can make AI coding agents worse",
+      "Treat caches, email and shared docs as injection paths",
+      "Mutation testing suggested over model reviewers for tests"
+    ]
+  }
+}
