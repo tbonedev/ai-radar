@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.289 ships security and stability fixes",
+      "Claude Code #45596 hits 277 comments, 1,186 👍",
+      "Claude Code input freeze and idle auto-compaction regressions",
+      "OpenCode: free-tier gating and billing-state sync failures",
+      "OpenCode #43886: stacked schema-ID migration PR burst",
+      "Both tools' users want controllable compaction"
+    ],
+    "ai-agents": [
+      "MCP Servers: 12 issues and 23 PRs updated in 24h",
+      "@cliffhall drives the 'agentic software factory' tracker #4858",
+      "First semver release prep: TS servers move to 1.0.0 (#4968)",
+      "Changesets 'version packages' bot PR #4941 is open",
+      "Nine test PRs target a per-file 90% coverage gate",
+      "Repo moves to 'issues, not PRs' contribution policy"
+    ],
+    "ai-infra": [
+      "LiteLLM shipped three releases in 24h",
+      "LiteLLM v1.105.0-rc.1 joins v1.104.0 and v1.103.3",
+      "Dify: 92 PRs updated, mostly test hardening",
+      "Dify had no release; spent the day on bug triage",
+      "Shared theme: budget enforcement and credential routing",
+      "Guardrail coverage and silent stream failures flagged"
+    ],
+    "ai-trending": [
+      "antirez/ds4: C engine for DeepSeek 4, +211 stars today",
+      "vshulcz/deja-vu searches 35 agents' session histories",
+      "redhat-et/ripwire claims 74.7% fewer bytes for agents",
+      "yetone/magpie pairs any agent with any model",
+      "Ripwire is a zero-dependency C++23 CLI and MCP server",
+      "ds4 supports Metal, CUDA and ROCm backends"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with 1696 points",
+      "FLUX 3 Image from Black Forest Labs hits 432 points",
+      "AI beats best Stratego player, and does it cheaply",
+      "Ex-OpenAI staffer says company culture is broken",
+      "LeCun dismisses AI extinction fears",
+      "Opus 5.5 usage tips and agent sandboxes trend"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,906 likes, 6.8M downloads",
+      "Qwen3.8-Flash-Next previews qwen4_exp architecture",
+      "Lightricks LTX-2.5 leads open video: 6,203 likes",
+      "DeepSeek-V4.1-Flash draws 4,073 likes",
+      "Qwen-Image-2.1 drives LoRA and GGUF derivatives",
+      "Aleph-Alpha Kolibri-1: vLLM-ready reasoning MoE"
+    ],
+    "ai-community": [
+      "Simon Willison: we need default hard budget caps",
+      "Local memory MCP server scored 12/12 versus 0/12 without",
+      "Agent blocklist failed four bypasses written after the fact",
+      "Sonnet invented 4 answers when memory was missing",
+      "'A green test that lied about my pipeline' on Dev.to",
+      "Red-team guardrails with adversarial cases written later"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.289 ships security and stability fixes",
+      "Claude Code #45596 hits 277 comments, 1,186 👍",
+      "Claude Code input freeze and idle auto-compaction regressions",
+      "OpenCode: free-tier gating and billing-state sync failures",
+      "OpenCode #43886: stacked schema-ID migration PR burst",
+      "Both tools' users want controllable compaction"
+    ],
+    "ai-agents": [
+      "MCP Servers: 12 issues and 23 PRs updated in 24h",
+      "@cliffhall drives the 'agentic software factory' tracker #4858",
+      "First semver release prep: TS servers move to 1.0.0 (#4968)",
+      "Changesets 'version packages' bot PR #4941 is open",
+      "Nine test PRs target a per-file 90% coverage gate",
+      "Repo moves to 'issues, not PRs' contribution policy"
+    ],
+    "ai-infra": [
+      "LiteLLM shipped three releases in 24h",
+      "LiteLLM v1.105.0-rc.1 joins v1.104.0 and v1.103.3",
+      "Dify: 92 PRs updated, mostly test hardening",
+      "Dify had no release; spent the day on bug triage",
+      "Shared theme: budget enforcement and credential routing",
+      "Guardrail coverage and silent stream failures flagged"
+    ],
+    "ai-trending": [
+      "antirez/ds4: C engine for DeepSeek 4, +211 stars today",
+      "vshulcz/deja-vu searches 35 agents' session histories",
+      "redhat-et/ripwire claims 74.7% fewer bytes for agents",
+      "yetone/magpie pairs any agent with any model",
+      "Ripwire is a zero-dependency C++23 CLI and MCP server",
+      "ds4 supports Metal, CUDA and ROCm backends"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with 1696 points",
+      "FLUX 3 Image from Black Forest Labs hits 432 points",
+      "AI beats best Stratego player, and does it cheaply",
+      "Ex-OpenAI staffer says company culture is broken",
+      "LeCun dismisses AI extinction fears",
+      "Opus 5.5 usage tips and agent sandboxes trend"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,906 likes, 6.8M downloads",
+      "Qwen3.8-Flash-Next previews qwen4_exp architecture",
+      "Lightricks LTX-2.5 leads open video: 6,203 likes",
+      "DeepSeek-V4.1-Flash draws 4,073 likes",
+      "Qwen-Image-2.1 drives LoRA and GGUF derivatives",
+      "Aleph-Alpha Kolibri-1: vLLM-ready reasoning MoE"
+    ],
+    "ai-community": [
+      "Simon Willison: we need default hard budget caps",
+      "Local memory MCP server scored 12/12 versus 0/12 without",
+      "Agent blocklist failed four bypasses written after the fact",
+      "Sonnet invented 4 answers when memory was missing",
+      "'A green test that lied about my pipeline' on Dev.to",
+      "Red-team guardrails with adversarial cases written later"
+    ]
+  }
+}
