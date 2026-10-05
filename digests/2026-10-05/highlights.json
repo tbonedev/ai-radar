@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code Mods framework went live Oct 1",
+      "Claude Code #18435 multi-account tops 858 👍",
+      "Claude Code #91870 Mods thread hits 244 comments",
+      "OpenCode 2.0 line: ACP and compaction bug fixes",
+      "OpenCode #17318 SSE timeouts drew 53 comments",
+      "OpenCode adds Vercel AI Gateway and FreeBSD support"
+    ],
+    "ai-agents": [
+      "MCP Servers: 75 of 83 issues closed in 24h",
+      "87 of 90 MCP PRs closed in bulk v2 triage",
+      "MCP servers PR #4941 v2 version packages still open",
+      "Filesystem server gets Windows EPERM rename fallbacks",
+      "Maintainer cliffhall runs agentic software factory",
+      "2026-07-28 Spec Refactor drives new auto-generated bugs"
+    ],
+    "ai-infra": [
+      "LiteLLM: silent billing undercounts reported",
+      "LiteLLM: data lost in provider translation",
+      "LiteLLM authorization gaps flagged in issues",
+      "Dify: ~20 test-hardening PRs from one contributor",
+      "No releases from Dify or LiteLLM in 24h",
+      "LiteLLM: 16 issues cited, 15 PRs, 7 open fixes"
+    ],
+    "ai-trending": [
+      "Agent-Reach gains 1,156 stars reading social platforms",
+      "redhat-et/ripwire: C++23 MCP repo maps, 74.7% fewer bytes",
+      "okf-agent-memory: Git-native agent memory, OKF v0.2",
+      "deja-vu: Go binary indexes history of 35+ agents",
+      "ponytail shows 155,688 stars, possibly inflated",
+      "Trending star totals are 0, so only daily gains shown"
+    ],
+    "ai-web": [
+      "OpenAI posted 2 new pages dated 2026-10-05",
+      "OpenAI page on EU text provenance",
+      "OpenAI page on new ChatGPT ads format and measurement",
+      "Anthropic published 0 new articles today",
+      "OpenAI sitemap total reaches 1,049 pages",
+      "Anthropic sitemap total stands at 455"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with score 1699",
+      "Ex-OpenAI safety staffer's resignation essay: ~800 comments",
+      "Yann LeCun dismisses extinction risk, ~800 comments",
+      "Anthropic reportedly reported a user's diary to police",
+      "FLUX 3 Image released by Black Forest Labs",
+      "AI beats top Stratego player on a modest budget"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,983 likes",
+      "Qwen3.8-27B has 6,758,884 downloads",
+      "DeepSeek-V4.1-Flash reaches 4,108 likes",
+      "Cloudflare releases clef, 1,346 likes",
+      "Aleph-Alpha Kolibri-1: MoE reasoning model with vLLM",
+      "Qwen-Image-2.1 and LTX-2.5 anchor generation models"
+    ],
+    "ai-community": [
+      "Simon Willison: default hard budget caps for agents",
+      "Why AI audit logs can't be trusted as evidence",
+      "Textract plus Bedrock eviction-notice AI that won't lie",
+      "Averaging LLM benchmarks ranked Kimi K3 below Llama 2 70B",
+      "Dev.to: 30 articles and 3 Lobste.rs stories covered",
+      "Log agent actions outside the agent's trust boundary"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code Mods framework went live Oct 1",
+      "Claude Code #18435 multi-account tops 858 👍",
+      "Claude Code #91870 Mods thread hits 244 comments",
+      "OpenCode 2.0 line: ACP and compaction bug fixes",
+      "OpenCode #17318 SSE timeouts drew 53 comments",
+      "OpenCode adds Vercel AI Gateway and FreeBSD support"
+    ],
+    "ai-agents": [
+      "MCP Servers: 75 of 83 issues closed in 24h",
+      "87 of 90 MCP PRs closed in bulk v2 triage",
+      "MCP servers PR #4941 v2 version packages still open",
+      "Filesystem server gets Windows EPERM rename fallbacks",
+      "Maintainer cliffhall runs agentic software factory",
+      "2026-07-28 Spec Refactor drives new auto-generated bugs"
+    ],
+    "ai-infra": [
+      "LiteLLM: silent billing undercounts reported",
+      "LiteLLM: data lost in provider translation",
+      "LiteLLM authorization gaps flagged in issues",
+      "Dify: ~20 test-hardening PRs from one contributor",
+      "No releases from Dify or LiteLLM in 24h",
+      "LiteLLM: 16 issues cited, 15 PRs, 7 open fixes"
+    ],
+    "ai-trending": [
+      "Agent-Reach gains 1,156 stars reading social platforms",
+      "redhat-et/ripwire: C++23 MCP repo maps, 74.7% fewer bytes",
+      "okf-agent-memory: Git-native agent memory, OKF v0.2",
+      "deja-vu: Go binary indexes history of 35+ agents",
+      "ponytail shows 155,688 stars, possibly inflated",
+      "Trending star totals are 0, so only daily gains shown"
+    ],
+    "ai-web": [
+      "OpenAI posted 2 new pages dated 2026-10-05",
+      "OpenAI page on EU text provenance",
+      "OpenAI page on new ChatGPT ads format and measurement",
+      "Anthropic published 0 new articles today",
+      "OpenAI sitemap total reaches 1,049 pages",
+      "Anthropic sitemap total stands at 455"
+    ],
+    "ai-hn": [
+      "Gemini 4 Argon tops HN with score 1699",
+      "Ex-OpenAI safety staffer's resignation essay: ~800 comments",
+      "Yann LeCun dismisses extinction risk, ~800 comments",
+      "Anthropic reportedly reported a user's diary to police",
+      "FLUX 3 Image released by Black Forest Labs",
+      "AI beats top Stratego player on a modest budget"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 16,983 likes",
+      "Qwen3.8-27B has 6,758,884 downloads",
+      "DeepSeek-V4.1-Flash reaches 4,108 likes",
+      "Cloudflare releases clef, 1,346 likes",
+      "Aleph-Alpha Kolibri-1: MoE reasoning model with vLLM",
+      "Qwen-Image-2.1 and LTX-2.5 anchor generation models"
+    ],
+    "ai-community": [
+      "Simon Willison: default hard budget caps for agents",
+      "Why AI audit logs can't be trusted as evidence",
+      "Textract plus Bedrock eviction-notice AI that won't lie",
+      "Averaging LLM benchmarks ranked Kimi K3 below Llama 2 70B",
+      "Dev.to: 30 articles and 3 Lobste.rs stories covered",
+      "Log agent actions outside the agent's trust boundary"
+    ]
+  }
+}
