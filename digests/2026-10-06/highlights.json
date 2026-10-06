@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.291 hotfix fixes v2.1.290 regressions",
+      "Claude Code #85891 hits 118 comments, 286 👍",
+      "Opt-out requested for Claude Code idle auto-compaction (#98747)",
+      "OpenCode V2 migration work moving through ~10 active PRs",
+      "OpenCode compaction infinite loop reported in #15533",
+      "Both tools struggle with usage limits and model routing"
+    ],
+    "ai-agents": [
+      "MCP servers saw just 1 issue and 1 PR in 24h",
+      "PR #4849 git_add no-op fix closed without merge",
+      "git_add always reported success, even on a no-op",
+      "Latest MCP servers release remains 2026.8.31",
+      "Open chore issue flags minimal release notes for 2026.8.31",
+      "Attention is on release hygiene for the v2 effort"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM shipped no releases in 24h",
+      "LiteLLM tracking Claude Opus 5.5 across multiple providers",
+      "LiteLLM has ~18 issues, double Dify's, many stale",
+      "Dify werkzeug security bump pending in #43609",
+      "Dify Qdrant backport open in #43605",
+      "Auth and billing accuracy are top open risks"
+    ],
+    "ai-trending": [
+      "morluto/rea agent reverse engineering jumps +2,963 stars",
+      "vshulcz/deja-vu indexes Claude Code, Codex, Cursor sessions",
+      "redhat-et/ripwire cuts coding-agent context bytes by 74.7%",
+      "Trending feed shows ⭐0 totals, so only daily gains are usable",
+      "Topic-search star totals like ponytail's 156,477 look inflated",
+      "Agent + debugger MCP stack emerging, e.g. x64dbg-mcp-server"
+    ],
+    "ai-web": [
+      "Anthropic's robot exposure index: 'What work can robots do?'",
+      "Robots can do ~75% of physical tasks technically",
+      "Robots are cost-competitive for only 0.3% of tasks",
+      "Reaching 10% could take about 40 years at historical trends",
+      "With LLMs, ~80% of work by time is exposed",
+      "OpenAI posted no new content; sitemap total 1,049"
+    ],
+    "ai-hn": [
+      "Reflection's Beam: 501B open-weight model, 485 points",
+      "Gemini 4 Argon thread tops 1,700 points",
+      "Anthropic reporting a user's diary to police: 758 points",
+      "OpenAI 'rogue' agents on Wikimedia draw sharp reactions",
+      "Opus 5.5 agents find magnetic semiconductor candidates",
+      "Dust pretrains transformers without backpropagation"
+    ],
+    "ai-arxiv": [
+      "Base models match RL-trained ones given starting-token cues",
+      "On-policy distillation sharpens outputs without search",
+      "Looped models revisited: rethinking at fixed points",
+      "KV-cache retrieval and hybrid memory cut LLM costs",
+      "Safety benchmarks for agent-run marketplaces",
+      "Frontier models tested on research taste and figure digitization"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,077 likes, 6.8M downloads",
+      "Qwen3.8-Flash-Next previews experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash tops 1.1M downloads, accepts image input",
+      "Cloudflare's first flagship VLM, Clef, has 1,597 likes",
+      "Lightricks LTX-2.5 leads open video generation, 6,576 likes",
+      "Qwen-Image-2.1 and a wave of quantized fine-tunes spread"
+    ],
+    "ai-community": [
+      "Simon Willison: default hard budget caps needed everywhere",
+      "Scaffolded trajectories make poor agent training data",
+      "Red CI badge hid five release-day failures",
+      "Equal-weight averaging ranked Kimi K3 behind Llama 2 70B",
+      "Soft billing caps don't protect agents running overnight",
+      "Dev.to (30 articles) and Lobste.rs (3 stories) covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.291 hotfix fixes v2.1.290 regressions",
+      "Claude Code #85891 hits 118 comments, 286 👍",
+      "Opt-out requested for Claude Code idle auto-compaction (#98747)",
+      "OpenCode V2 migration work moving through ~10 active PRs",
+      "OpenCode compaction infinite loop reported in #15533",
+      "Both tools struggle with usage limits and model routing"
+    ],
+    "ai-agents": [
+      "MCP servers saw just 1 issue and 1 PR in 24h",
+      "PR #4849 git_add no-op fix closed without merge",
+      "git_add always reported success, even on a no-op",
+      "Latest MCP servers release remains 2026.8.31",
+      "Open chore issue flags minimal release notes for 2026.8.31",
+      "Attention is on release hygiene for the v2 effort"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM shipped no releases in 24h",
+      "LiteLLM tracking Claude Opus 5.5 across multiple providers",
+      "LiteLLM has ~18 issues, double Dify's, many stale",
+      "Dify werkzeug security bump pending in #43609",
+      "Dify Qdrant backport open in #43605",
+      "Auth and billing accuracy are top open risks"
+    ],
+    "ai-trending": [
+      "morluto/rea agent reverse engineering jumps +2,963 stars",
+      "vshulcz/deja-vu indexes Claude Code, Codex, Cursor sessions",
+      "redhat-et/ripwire cuts coding-agent context bytes by 74.7%",
+      "Trending feed shows ⭐0 totals, so only daily gains are usable",
+      "Topic-search star totals like ponytail's 156,477 look inflated",
+      "Agent + debugger MCP stack emerging, e.g. x64dbg-mcp-server"
+    ],
+    "ai-web": [
+      "Anthropic's robot exposure index: 'What work can robots do?'",
+      "Robots can do ~75% of physical tasks technically",
+      "Robots are cost-competitive for only 0.3% of tasks",
+      "Reaching 10% could take about 40 years at historical trends",
+      "With LLMs, ~80% of work by time is exposed",
+      "OpenAI posted no new content; sitemap total 1,049"
+    ],
+    "ai-hn": [
+      "Reflection's Beam: 501B open-weight model, 485 points",
+      "Gemini 4 Argon thread tops 1,700 points",
+      "Anthropic reporting a user's diary to police: 758 points",
+      "OpenAI 'rogue' agents on Wikimedia draw sharp reactions",
+      "Opus 5.5 agents find magnetic semiconductor candidates",
+      "Dust pretrains transformers without backpropagation"
+    ],
+    "ai-arxiv": [
+      "Base models match RL-trained ones given starting-token cues",
+      "On-policy distillation sharpens outputs without search",
+      "Looped models revisited: rethinking at fixed points",
+      "KV-cache retrieval and hybrid memory cut LLM costs",
+      "Safety benchmarks for agent-run marketplaces",
+      "Frontier models tested on research taste and figure digitization"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,077 likes, 6.8M downloads",
+      "Qwen3.8-Flash-Next previews experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash tops 1.1M downloads, accepts image input",
+      "Cloudflare's first flagship VLM, Clef, has 1,597 likes",
+      "Lightricks LTX-2.5 leads open video generation, 6,576 likes",
+      "Qwen-Image-2.1 and a wave of quantized fine-tunes spread"
+    ],
+    "ai-community": [
+      "Simon Willison: default hard budget caps needed everywhere",
+      "Scaffolded trajectories make poor agent training data",
+      "Red CI badge hid five release-day failures",
+      "Equal-weight averaging ranked Kimi K3 behind Llama 2 70B",
+      "Soft billing caps don't protect agents running overnight",
+      "Dev.to (30 articles) and Lobste.rs (3 stories) covered"
+    ]
+  }
+}
