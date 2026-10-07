@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.292 adds plugin --marketplace install",
+      "Claude Code sub-agents get a new Agent `effort` param",
+      "OpenCode v1.18.35 ships agent-readable stats",
+      "OpenCode fixes xAI image tool-result bug",
+      "Claude Code #38335: 875 comments on abnormal limit drain",
+      "Both tools struggle with quotas, billing and access limits"
+    ],
+    "ai-agents": [
+      "MCP servers digest: 9 issues, 0 PRs, no releases",
+      "Memory server #4117 seeks atomic writes and quotas (22 comments)",
+      "Security audits target memory, git and filesystem servers",
+      "Closed #4721: sequentialthinking annotations were inaccurate",
+      "No PR activity: maintainer bandwidth looks like the bottleneck",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.106.0-dev.1 is a dev pre-release",
+      "LiteLLM Rust gateway migration targets sub-1ms overhead",
+      "LiteLLM bugs: spend races and dropped is_error flags",
+      "Dify shipped no release; fixes focus on workflow editor",
+      "Dify has about 16 PRs cited, mostly frontend fixes",
+      "Health-check misattribution PRs #44320 and #44982 closed"
+    ],
+    "ai-trending": [
+      "morluto/rea reverse-engineering agent tops trending, +4,666",
+      "cloudflare/security-audit-skill adds verified agent audits",
+      "redhat-et/ripwire claims 74.7% fewer bytes for repo maps",
+      "vshulcz/deja-vu builds local memory across ~35 agents",
+      "Trending repos show ⭐0 totals; only daily gains are valid",
+      "Topic-search star counts look inflated, e.g. ponytail at 157k"
+    ],
+    "ai-web": [
+      "Claude discovered a novel CRISPR-like enzyme system",
+      "Anthropic launches a life sciences research group and lab",
+      "Cyber Verification Program expands to three access tiers",
+      "CVP tiers cover Claude Mythos 5.1",
+      "OpenAI posted 8 items; slugs hint at GPT-5.6 and Codex",
+      "OpenAI slugs also mention an Atlassian partnership and math"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 tops HN with 1919 points",
+      "OpenAI's mathematics progress post hits 1064 points",
+      "Reflection releases Beam, a 501B open-weight model",
+      "Opus 5.5 agents discover room-temperature magnetic semiconductors",
+      "Debate over Anthropic reporting a user's diary to police",
+      "Alleged agent-driven bank hack in South Korea"
+    ],
+    "ai-arxiv": [
+      "Study explains why spurious forgetting is recoverable",
+      "Post-training decides the say-do gap in moral judgment",
+      "Hierarchical continuous diffusion proposed for language modeling",
+      "Papers cover prompt-injection-robust web agents",
+      "Benchmarks target over-defensive coding agents",
+      "Work on Best-of-N bias and secure speculative decoding"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,169 likes and 6.76M downloads",
+      "Qwen3.8-Flash-Next previews the experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash arrives with 1.26M downloads",
+      "LTX-2.5 is the top video model at 6,742 likes",
+      "Cloudflare debuts with clef vision-language models",
+      "Qwen-Image-2.1 spawns GGUFs, LoRAs and face-swap tools"
+    ],
+    "ai-community": [
+      "21M model plus a 6.4B lookup table matches a 114M dense model",
+      "That model runs at 140 tok/s on RX 9070 with 0.4GB VRAM",
+      "A free model can't test money controls",
+      "Prompt injection framed as a data-flow problem",
+      "Audit retrieval, MCP and tool boundaries as a data-flow graph",
+      "An AI judge's confidence-listening result turned out wrong"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.292 adds plugin --marketplace install",
+      "Claude Code sub-agents get a new Agent `effort` param",
+      "OpenCode v1.18.35 ships agent-readable stats",
+      "OpenCode fixes xAI image tool-result bug",
+      "Claude Code #38335: 875 comments on abnormal limit drain",
+      "Both tools struggle with quotas, billing and access limits"
+    ],
+    "ai-agents": [
+      "MCP servers digest: 9 issues, 0 PRs, no releases",
+      "Memory server #4117 seeks atomic writes and quotas (22 comments)",
+      "Security audits target memory, git and filesystem servers",
+      "Closed #4721: sequentialthinking annotations were inaccurate",
+      "No PR activity: maintainer bandwidth looks like the bottleneck",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.106.0-dev.1 is a dev pre-release",
+      "LiteLLM Rust gateway migration targets sub-1ms overhead",
+      "LiteLLM bugs: spend races and dropped is_error flags",
+      "Dify shipped no release; fixes focus on workflow editor",
+      "Dify has about 16 PRs cited, mostly frontend fixes",
+      "Health-check misattribution PRs #44320 and #44982 closed"
+    ],
+    "ai-trending": [
+      "morluto/rea reverse-engineering agent tops trending, +4,666",
+      "cloudflare/security-audit-skill adds verified agent audits",
+      "redhat-et/ripwire claims 74.7% fewer bytes for repo maps",
+      "vshulcz/deja-vu builds local memory across ~35 agents",
+      "Trending repos show ⭐0 totals; only daily gains are valid",
+      "Topic-search star counts look inflated, e.g. ponytail at 157k"
+    ],
+    "ai-web": [
+      "Claude discovered a novel CRISPR-like enzyme system",
+      "Anthropic launches a life sciences research group and lab",
+      "Cyber Verification Program expands to three access tiers",
+      "CVP tiers cover Claude Mythos 5.1",
+      "OpenAI posted 8 items; slugs hint at GPT-5.6 and Codex",
+      "OpenAI slugs also mention an Atlassian partnership and math"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 tops HN with 1919 points",
+      "OpenAI's mathematics progress post hits 1064 points",
+      "Reflection releases Beam, a 501B open-weight model",
+      "Opus 5.5 agents discover room-temperature magnetic semiconductors",
+      "Debate over Anthropic reporting a user's diary to police",
+      "Alleged agent-driven bank hack in South Korea"
+    ],
+    "ai-arxiv": [
+      "Study explains why spurious forgetting is recoverable",
+      "Post-training decides the say-do gap in moral judgment",
+      "Hierarchical continuous diffusion proposed for language modeling",
+      "Papers cover prompt-injection-robust web agents",
+      "Benchmarks target over-defensive coding agents",
+      "Work on Best-of-N bias and secure speculative decoding"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,169 likes and 6.76M downloads",
+      "Qwen3.8-Flash-Next previews the experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash arrives with 1.26M downloads",
+      "LTX-2.5 is the top video model at 6,742 likes",
+      "Cloudflare debuts with clef vision-language models",
+      "Qwen-Image-2.1 spawns GGUFs, LoRAs and face-swap tools"
+    ],
+    "ai-community": [
+      "21M model plus a 6.4B lookup table matches a 114M dense model",
+      "That model runs at 140 tok/s on RX 9070 with 0.4GB VRAM",
+      "A free model can't test money controls",
+      "Prompt injection framed as a data-flow problem",
+      "Audit retrieval, MCP and tool boundaries as a data-flow graph",
+      "An AI judge's confidence-listening result turned out wrong"
+    ]
+  }
+}
