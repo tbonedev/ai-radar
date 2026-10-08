@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code ships v2.1.293 and v2.1.294 in 24h",
+      "Claude Code #60705 closed after 226 comments",
+      "Claude Code adds fail-closed hooks (#84364)",
+      "Claude Code Desktop issue #85891 draws 286 👍",
+      "OpenCode V2 UI backlash over layout and missing notes",
+      "OpenCode TUI out-of-memory bug #51761 closed"
+    ],
+    "ai-agents": [
+      "MCP servers migrate to TypeScript SDK v2 (2.3.1)",
+      "PR #5063 moves four reference servers to SDK v2",
+      "First semver release tracked in #4968: TS at 1.0.0",
+      "Two reports flag misleading destructiveHint annotations",
+      "Changesets 'version packages' PR #4941 still open",
+      "Backlog triage trackers #4875–#4877 queued behind v2 work"
+    ],
+    "ai-infra": [
+      "LiteLLM pushes nine release tags in 24h",
+      "LiteLLM backports patches to four older minor lines",
+      "LiteLLM is rewriting its hot path in Rust",
+      "Dify ships no release; refactor tracked in #39993",
+      "Dify has three XXL refactor PRs: #43671–#43673",
+      "Both projects fix Anthropic/Responses/Chat translation bugs"
+    ],
+    "ai-trending": [
+      "morluto/rea gains +7,744 stars in a day",
+      "redhat-et/ripwire: C++23 repo map for agents, 2,423 stars",
+      "vshulcz/deja-vu searches 37 agents' history, 1,150 stars",
+      "okf-memory/okf-agent-memory: git-native memory, 756 stars",
+      "yetone/magpie menu-bar app routes agents to any model",
+      "ripwire claims 74.7% fewer bytes than full function bodies"
+    ],
+    "ai-web": [
+      "OpenAI index adds 'gpt-6-for-everyone' (2026-10-07)",
+      "OpenAI adds 'teens-learn-and-plan' page (2026-10-08)",
+      "OpenAI sitemap grows to 1,061 pages",
+      "Anthropic adds no new articles; sitemap holds at 456",
+      "Gpt-6-for-everyone URL appears twice in the index",
+      "All three OpenAI entries are metadata-only, no article text"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 tops HN with 2,020 points",
+      "OpenAI math announcement hits 1,296 points, 1,476 comments",
+      "OpenAI withdraws three math results from its claims",
+      "Terry Tao posts alongside an AHM statement on the math claims",
+      "Claude Haiku 5.5 and GPT-6 both pass 600 points",
+      "Google's EmbeddingGemma 2 lands on HN"
+    ],
+    "ai-arxiv": [
+      "Decoupling exploration from optimization in RLVR",
+      "Multi-teacher on-policy distillation via teacher-relative shifts",
+      "Joint on-policy learning and teaching for self-teachers",
+      "Harness-model co-evolution for terminal agents",
+      "Predicting post-training coding-agent performance from base models",
+      "Scaling laws for latent world models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,255 likes, 6.8M downloads",
+      "Qwen3.8-Flash-Next previews the experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash passes 1.28M downloads",
+      "Lightricks LTX-2.5 tops video generation with 6,877 likes",
+      "Aleph-Alpha Kolibri-1 MoE reasoning model trends",
+      "Qwen-Image-2.1 spawns a LoRA face-swap derivative"
+    ],
+    "ai-community": [
+      "Agents pass 97% static tool checks, fail half of interactive runs",
+      "3B LLM judge approved 11% of wrong answers",
+      "0.5B judge approved 41% of wrong answers",
+      "Audit agent self-reports against the tool-call log",
+      "46 Smithery MCP servers: 7 in 10 skip 'when to use'",
+      "Checker-first harness runs deterministic checks before LLM judges"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code ships v2.1.293 and v2.1.294 in 24h",
+      "Claude Code #60705 closed after 226 comments",
+      "Claude Code adds fail-closed hooks (#84364)",
+      "Claude Code Desktop issue #85891 draws 286 👍",
+      "OpenCode V2 UI backlash over layout and missing notes",
+      "OpenCode TUI out-of-memory bug #51761 closed"
+    ],
+    "ai-agents": [
+      "MCP servers migrate to TypeScript SDK v2 (2.3.1)",
+      "PR #5063 moves four reference servers to SDK v2",
+      "First semver release tracked in #4968: TS at 1.0.0",
+      "Two reports flag misleading destructiveHint annotations",
+      "Changesets 'version packages' PR #4941 still open",
+      "Backlog triage trackers #4875–#4877 queued behind v2 work"
+    ],
+    "ai-infra": [
+      "LiteLLM pushes nine release tags in 24h",
+      "LiteLLM backports patches to four older minor lines",
+      "LiteLLM is rewriting its hot path in Rust",
+      "Dify ships no release; refactor tracked in #39993",
+      "Dify has three XXL refactor PRs: #43671–#43673",
+      "Both projects fix Anthropic/Responses/Chat translation bugs"
+    ],
+    "ai-trending": [
+      "morluto/rea gains +7,744 stars in a day",
+      "redhat-et/ripwire: C++23 repo map for agents, 2,423 stars",
+      "vshulcz/deja-vu searches 37 agents' history, 1,150 stars",
+      "okf-memory/okf-agent-memory: git-native memory, 756 stars",
+      "yetone/magpie menu-bar app routes agents to any model",
+      "ripwire claims 74.7% fewer bytes than full function bodies"
+    ],
+    "ai-web": [
+      "OpenAI index adds 'gpt-6-for-everyone' (2026-10-07)",
+      "OpenAI adds 'teens-learn-and-plan' page (2026-10-08)",
+      "OpenAI sitemap grows to 1,061 pages",
+      "Anthropic adds no new articles; sitemap holds at 456",
+      "Gpt-6-for-everyone URL appears twice in the index",
+      "All three OpenAI entries are metadata-only, no article text"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 tops HN with 2,020 points",
+      "OpenAI math announcement hits 1,296 points, 1,476 comments",
+      "OpenAI withdraws three math results from its claims",
+      "Terry Tao posts alongside an AHM statement on the math claims",
+      "Claude Haiku 5.5 and GPT-6 both pass 600 points",
+      "Google's EmbeddingGemma 2 lands on HN"
+    ],
+    "ai-arxiv": [
+      "Decoupling exploration from optimization in RLVR",
+      "Multi-teacher on-policy distillation via teacher-relative shifts",
+      "Joint on-policy learning and teaching for self-teachers",
+      "Harness-model co-evolution for terminal agents",
+      "Predicting post-training coding-agent performance from base models",
+      "Scaling laws for latent world models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,255 likes, 6.8M downloads",
+      "Qwen3.8-Flash-Next previews the experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash passes 1.28M downloads",
+      "Lightricks LTX-2.5 tops video generation with 6,877 likes",
+      "Aleph-Alpha Kolibri-1 MoE reasoning model trends",
+      "Qwen-Image-2.1 spawns a LoRA face-swap derivative"
+    ],
+    "ai-community": [
+      "Agents pass 97% static tool checks, fail half of interactive runs",
+      "3B LLM judge approved 11% of wrong answers",
+      "0.5B judge approved 41% of wrong answers",
+      "Audit agent self-reports against the tool-call log",
+      "46 Smithery MCP servers: 7 in 10 skip 'when to use'",
+      "Checker-first harness runs deterministic checks before LLM judges"
+    ]
+  }
+}
