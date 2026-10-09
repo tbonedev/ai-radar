@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.295 adds fail-closed hooks",
+      "Hooks gain onFailure: \"block\" and OSC 7501 support",
+      "Claude Code issue tops 281 comments and 1,187 👍",
+      "Users ask for state to survive compaction (#70555)",
+      "OpenCode Go/Zen reliability and billing complaints",
+      "OpenCode serve mode resource leaks and Bun segfault"
+    ],
+    "ai-agents": [
+      "MCP Servers: 6 issues updated, no PRs or releases",
+      "memory server's destructiveHint: false is wrong (#5058)",
+      "v2 spec migration to 2026-07-28 tracked in #4852",
+      "Wave 4 depends on TS SDK v2 migration (#4856)",
+      "Small bugs open in time and fetch servers",
+      "7 MCP and agent-skill projects tracked"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM shipped no releases today",
+      "LiteLLM focuses on spend and budget correctness",
+      "LiteLLM Rust gateway rewrite continues",
+      "Dify Graphon 0.8 orchestration refactor in progress",
+      "LiteLLM adds new providers such as ZeroGPU",
+      "Dify langsmith bump 0.8.18 → 0.14.4 open (#43491)"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++23 code-signature MCP server",
+      "vshulcz/deja-vu indexes agent session history locally",
+      "alibaba/open-code-review gains +323 stars today",
+      "microsoft/skill-recorder turns screen recordings into Skills",
+      "Trending feed reports 0 total stars for every repo",
+      "Ripwire claims 74.7% byte reduction, unverified"
+    ],
+    "ai-web": [
+      "Anthropic launches the Cyber Mission program",
+      "OSS Scanner: free vulnerability scans for open source",
+      "Critical Infrastructure Defense Program (CIDP) announced",
+      "Anthropic commits $150M over three years to Genesis Mission",
+      "Usage Policy update takes effect Nov 12",
+      "Claude Science produces first full UV map of the sky"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 hits 2,034 points on HN",
+      "Claude Haiku 5.5 reaches 1,040 points",
+      "OpenAI withdraws three math results (351 pts, 591 comments)",
+      "Earlier OpenAI math post drew 1,331 points",
+      "OpenAI revenue shortfall story circulates",
+      "OpenAI reportedly fires three safety researchers"
+    ],
+    "ai-arxiv": [
+      "Probing for sabotage and deception in agents",
+      "Incident analysis of agents reaching real systems out of scope",
+      "Statistical re-examination of the METR time-horizon plot",
+      "Psychometric audit of a safety benchmark",
+      "Counterfactual audit of legal chain-of-thought faithfulness",
+      "4-bit optimizer states and cross-layer KV cache compression"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,322 likes, 6.78M downloads",
+      "Qwen3.8-Flash-Next previews the qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash gets 4,280 likes",
+      "Lightricks LTX-2.5 video model reaches 7,007 likes",
+      "Aleph-Alpha Kolibri-1 MoE reasoner released",
+      "Ternary 2-bit and uncensored quants trend heavily"
+    ],
+    "ai-community": [
+      "Jev reached zero mistakes, but the author still picks Flash-Lite",
+      "Subagents used 48% of a Claude Code week",
+      "September cut took only 17% of a Claude Code week",
+      "Bedrock and LangChain count input_tokens differently",
+      "Laya decision model: 3.9 ms p50 per word on RTX 4090",
+      "Benchmark of four open decision models over 9,534 words"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.295 adds fail-closed hooks",
+      "Hooks gain onFailure: \"block\" and OSC 7501 support",
+      "Claude Code issue tops 281 comments and 1,187 👍",
+      "Users ask for state to survive compaction (#70555)",
+      "OpenCode Go/Zen reliability and billing complaints",
+      "OpenCode serve mode resource leaks and Bun segfault"
+    ],
+    "ai-agents": [
+      "MCP Servers: 6 issues updated, no PRs or releases",
+      "memory server's destructiveHint: false is wrong (#5058)",
+      "v2 spec migration to 2026-07-28 tracked in #4852",
+      "Wave 4 depends on TS SDK v2 migration (#4856)",
+      "Small bugs open in time and fetch servers",
+      "7 MCP and agent-skill projects tracked"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM shipped no releases today",
+      "LiteLLM focuses on spend and budget correctness",
+      "LiteLLM Rust gateway rewrite continues",
+      "Dify Graphon 0.8 orchestration refactor in progress",
+      "LiteLLM adds new providers such as ZeroGPU",
+      "Dify langsmith bump 0.8.18 → 0.14.4 open (#43491)"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++23 code-signature MCP server",
+      "vshulcz/deja-vu indexes agent session history locally",
+      "alibaba/open-code-review gains +323 stars today",
+      "microsoft/skill-recorder turns screen recordings into Skills",
+      "Trending feed reports 0 total stars for every repo",
+      "Ripwire claims 74.7% byte reduction, unverified"
+    ],
+    "ai-web": [
+      "Anthropic launches the Cyber Mission program",
+      "OSS Scanner: free vulnerability scans for open source",
+      "Critical Infrastructure Defense Program (CIDP) announced",
+      "Anthropic commits $150M over three years to Genesis Mission",
+      "Usage Policy update takes effect Nov 12",
+      "Claude Science produces first full UV map of the sky"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 hits 2,034 points on HN",
+      "Claude Haiku 5.5 reaches 1,040 points",
+      "OpenAI withdraws three math results (351 pts, 591 comments)",
+      "Earlier OpenAI math post drew 1,331 points",
+      "OpenAI revenue shortfall story circulates",
+      "OpenAI reportedly fires three safety researchers"
+    ],
+    "ai-arxiv": [
+      "Probing for sabotage and deception in agents",
+      "Incident analysis of agents reaching real systems out of scope",
+      "Statistical re-examination of the METR time-horizon plot",
+      "Psychometric audit of a safety benchmark",
+      "Counterfactual audit of legal chain-of-thought faithfulness",
+      "4-bit optimizer states and cross-layer KV cache compression"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 17,322 likes, 6.78M downloads",
+      "Qwen3.8-Flash-Next previews the qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash gets 4,280 likes",
+      "Lightricks LTX-2.5 video model reaches 7,007 likes",
+      "Aleph-Alpha Kolibri-1 MoE reasoner released",
+      "Ternary 2-bit and uncensored quants trend heavily"
+    ],
+    "ai-community": [
+      "Jev reached zero mistakes, but the author still picks Flash-Lite",
+      "Subagents used 48% of a Claude Code week",
+      "September cut took only 17% of a Claude Code week",
+      "Bedrock and LangChain count input_tokens differently",
+      "Laya decision model: 3.9 ms p50 per word on RTX 4090",
+      "Benchmark of four open decision models over 9,534 words"
+    ]
+  }
+}
