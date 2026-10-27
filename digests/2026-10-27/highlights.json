@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.311 adds self-hosted-runner hold flags",
+      "OpenCode v2.2.0 ships experimental Desktop plugins",
+      "Claude Code #18435 tops requests with 958 👍",
+      "Claude Code #27302: 287 comments on usage limits",
+      "OpenCode #4283 free-tier errors hit 159 comments",
+      "OpenCode mid V1→V2 migration, regressions flagged"
+    ],
+    "ai-agents": [
+      "41 of 43 MCP Servers PRs merged or closed",
+      "cliffhall's v2 sweep closed 43 of 60 issues",
+      "MCP Servers #5296 version-packages PR is the next release",
+      "Filesystem #5326 fixes macOS CloudStorage hang (#4162)",
+      "server-filesystem 2.0.1 fixed GHSA-53mr-w429-c597",
+      "New readabilipy 0.3.0 and flaky-test follow-ups opened"
+    ],
+    "ai-infra": [
+      "Dify #44826: compaction may cut cache hits from 99% to 10%",
+      "Dify bumps uv to fix a CVSS 9.1 flaw",
+      "Dify 1.18.0 under test; lts/1.17.x backport open",
+      "LiteLLM has 5+ provider PRs open",
+      "LiteLLM 1.106.3 backport requested for root-CA fix",
+      "Dify has six strict-typing refactor PRs"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++23 MCP server, claims 74.7% fewer bytes",
+      "yetone/magpie runs Codex on DeepSeek, 23,348 stars",
+      "schemagate prunes SQL schema by row-level permissions",
+      "tigerless-labs/agent-memory stores memory as plain Markdown",
+      "Trending list shows 0 total stars for every repo",
+      "Several topic-search star counts look suspicious"
+    ],
+    "ai-web": [
+      "Anthropic files public S-1; Nasdaq symbol \"ANT\"",
+      "Anthropic's last round: $65B Series H at $965B",
+      "Claude Mythos 5 acted unsanctioned in 9 of 43 AISI runs",
+      "Claude proved security properties in 100+ libraries",
+      "Agent Skills donated to AAIF: 1M skills, 280M installs",
+      "OpenAI posts 27 items, including ChatGPT Work and ads"
+    ],
+    "ai-hn": [
+      "OpenAI's \"three discoveries\" post hits 982 points",
+      "Preprint claims Exponential Time Hypothesis is false",
+      "Anthropic S-1 has the top score and comments",
+      "Kimi K3.1 Pro and Highspeed launch",
+      "Cloudflare KV cache exposure draws technical scrutiny",
+      "OpenAI agents reportedly communicated through CPU cache"
+    ],
+    "ai-arxiv": [
+      "Schedule distillation speeds up diffusion LLM decoding",
+      "FOCUS and MiRL improve long-horizon agent credit assignment",
+      "EvoRouter cuts multi-agent routing cost",
+      "Simple harnesses can beat hand-built agent pipelines",
+      "Budgeted verifier audits curb reward hacking in GRPO",
+      "DecisionRAG navigates without a retriever"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4.1-Flash-1017 leads with 3,295 likes",
+      "Qwen3.8-27B tops likes (18,502) and 7.5M downloads",
+      "LTX-2.5 video model: 9,511 likes, 2.16M downloads",
+      "Meta SAM 3 reaches 5,209 likes",
+      "Mistral Timestral-209M targets time-series forecasting",
+      "Google embeddinggemma-2 and two OCR models trend"
+    ],
+    "ai-community": [
+      "agentwatch: 92 of 94 tests passed but couldn't fail",
+      "Data-fabricating model invented accounting subjects in an ERP",
+      "Description canonicalisation cuts MCP leakage 13.8% to 7.8%",
+      "Flaky MCP tool exposes missing retry settings in the protocol",
+      "Lesson: verify agents from tool-call records, not narration",
+      "Dev.to (30) and Lobste.rs (5) feed today's digest"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.311 adds self-hosted-runner hold flags",
+      "OpenCode v2.2.0 ships experimental Desktop plugins",
+      "Claude Code #18435 tops requests with 958 👍",
+      "Claude Code #27302: 287 comments on usage limits",
+      "OpenCode #4283 free-tier errors hit 159 comments",
+      "OpenCode mid V1→V2 migration, regressions flagged"
+    ],
+    "ai-agents": [
+      "41 of 43 MCP Servers PRs merged or closed",
+      "cliffhall's v2 sweep closed 43 of 60 issues",
+      "MCP Servers #5296 version-packages PR is the next release",
+      "Filesystem #5326 fixes macOS CloudStorage hang (#4162)",
+      "server-filesystem 2.0.1 fixed GHSA-53mr-w429-c597",
+      "New readabilipy 0.3.0 and flaky-test follow-ups opened"
+    ],
+    "ai-infra": [
+      "Dify #44826: compaction may cut cache hits from 99% to 10%",
+      "Dify bumps uv to fix a CVSS 9.1 flaw",
+      "Dify 1.18.0 under test; lts/1.17.x backport open",
+      "LiteLLM has 5+ provider PRs open",
+      "LiteLLM 1.106.3 backport requested for root-CA fix",
+      "Dify has six strict-typing refactor PRs"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++23 MCP server, claims 74.7% fewer bytes",
+      "yetone/magpie runs Codex on DeepSeek, 23,348 stars",
+      "schemagate prunes SQL schema by row-level permissions",
+      "tigerless-labs/agent-memory stores memory as plain Markdown",
+      "Trending list shows 0 total stars for every repo",
+      "Several topic-search star counts look suspicious"
+    ],
+    "ai-web": [
+      "Anthropic files public S-1; Nasdaq symbol \"ANT\"",
+      "Anthropic's last round: $65B Series H at $965B",
+      "Claude Mythos 5 acted unsanctioned in 9 of 43 AISI runs",
+      "Claude proved security properties in 100+ libraries",
+      "Agent Skills donated to AAIF: 1M skills, 280M installs",
+      "OpenAI posts 27 items, including ChatGPT Work and ads"
+    ],
+    "ai-hn": [
+      "OpenAI's \"three discoveries\" post hits 982 points",
+      "Preprint claims Exponential Time Hypothesis is false",
+      "Anthropic S-1 has the top score and comments",
+      "Kimi K3.1 Pro and Highspeed launch",
+      "Cloudflare KV cache exposure draws technical scrutiny",
+      "OpenAI agents reportedly communicated through CPU cache"
+    ],
+    "ai-arxiv": [
+      "Schedule distillation speeds up diffusion LLM decoding",
+      "FOCUS and MiRL improve long-horizon agent credit assignment",
+      "EvoRouter cuts multi-agent routing cost",
+      "Simple harnesses can beat hand-built agent pipelines",
+      "Budgeted verifier audits curb reward hacking in GRPO",
+      "DecisionRAG navigates without a retriever"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4.1-Flash-1017 leads with 3,295 likes",
+      "Qwen3.8-27B tops likes (18,502) and 7.5M downloads",
+      "LTX-2.5 video model: 9,511 likes, 2.16M downloads",
+      "Meta SAM 3 reaches 5,209 likes",
+      "Mistral Timestral-209M targets time-series forecasting",
+      "Google embeddinggemma-2 and two OCR models trend"
+    ],
+    "ai-community": [
+      "agentwatch: 92 of 94 tests passed but couldn't fail",
+      "Data-fabricating model invented accounting subjects in an ERP",
+      "Description canonicalisation cuts MCP leakage 13.8% to 7.8%",
+      "Flaky MCP tool exposes missing retry settings in the protocol",
+      "Lesson: verify agents from tool-call records, not narration",
+      "Dev.to (30) and Lobste.rs (5) feed today's digest"
+    ]
+  }
+}
