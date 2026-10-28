@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.312 adds enterprise OIDC claim override",
+      "Claude Code adds click-to-send in fullscreen mode",
+      "OpenCode v1.19.5 fixes TUI worker error handling",
+      "OpenCode V1→V2 move causes session migration regressions",
+      "Claude Code issue #18435 hits 968 👍",
+      "Claude Code Desktop gets sidebar filter, sort and grouping"
+    ],
+    "ai-agents": [
+      "MCP servers digest: 5 issues, no PRs, no releases",
+      "Filesystem server v2 hardening follows GHSA-53mr-w429-c597",
+      "server-filesystem 2.0.1 ships Linux/macOS parent-swap fix (#5237)",
+      "#5260 tracks the Windows follow-up to the filesystem advisory",
+      "Maintainer cliffhall filed 4 of 5 updated issues",
+      "Bounded-walk test and limit added for #4162 (#5326)"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.107.0 compromised with credential stealer on PyPI",
+      "LiteLLM ships 4 patch releases plus v1.109.0-dev.1",
+      "LiteLLM fixes silent cost-accounting errors",
+      "Dify 1.18.0 triage shows data loss and duplicate-run bugs",
+      "A lost Redis reply can leave Dify runs stuck",
+      "Digest covers only Dify and LiteLLM, no inference engines"
+    ],
+    "ai-trending": [
+      "agent-memory: shared Markdown memory for Claude Code and Codex",
+      "deja-vu: Go binary searches ~40 agents' session history",
+      "ripwire cuts agent code reads by a claimed 74.7%",
+      "Tencent wave-mcp: 34 tools for RTL waveform debugging",
+      "Trending list shows 0 total stars, so treat counts with caution",
+      "Topic search returns non-AI repos, such as a 43k-star debloater"
+    ],
+    "ai-web": [
+      "Anthropic files S-1 for Nasdaq IPO under \"ANT\"",
+      "Anthropic GSA deal gives governments 40% off Claude",
+      "Anthropic finds CRISPR-like enzyme system",
+      "Unreleased Anthropic model finds multi-step exploit chains",
+      "Anthropic studies how agents shape experts' judgment",
+      "OpenAI adds \"Oracle Apps in ChatGPT\" page"
+    ],
+    "ai-hn": [
+      "Anthropic S-1 tops HN with 1,697 points and 1,663 comments",
+      "OpenAI reports 3 new math, CS and physics discoveries (1,138 pts)",
+      "Preprint claims Exponential Time Hypothesis is false (786 pts)",
+      "OpenAI GPT-6.1 Terra release draws 629 points",
+      "Cloudflare KV cache leak sparks discussion",
+      "Claude training on pirated books stirs legal debate"
+    ],
+    "ai-arxiv": [
+      "Learned attention gates improve prompt injection robustness",
+      "SimpleLoRIF traces safety erosion to training data",
+      "MuonGS relaxes weight-norm control in Muon pretraining",
+      "Scaling laws for synthetic tool-use environments",
+      "Rollout-efficient RL for LLM agents",
+      "Timestral time-series foundation model appears"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,587 likes, 7.5M downloads",
+      "Qwen3.8-Flash-Next previews new qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash-1017 hits 3,480 likes",
+      "Lightricks LTX-2.5 draws 9,650 likes for video",
+      "FLUX.3 Klein ComfyUI release joins crowded image field",
+      "Meta SAM 3 and EmbeddingGemma 2 trend"
+    ],
+    "ai-community": [
+      "11 production agents: costliest step wasn't the model call in 9",
+      "MoE coding model 3x faster but went 0-for-5 on agent tasks",
+      "Agent capture hook reported zero LLM calls from a working agent",
+      "Four ways a test can pass while verifying nothing",
+      "Dev.to and Lobste.rs digest covers 36 stories",
+      "Single-shot benchmarks hide long agent-loop failures"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.312 adds enterprise OIDC claim override",
+      "Claude Code adds click-to-send in fullscreen mode",
+      "OpenCode v1.19.5 fixes TUI worker error handling",
+      "OpenCode V1→V2 move causes session migration regressions",
+      "Claude Code issue #18435 hits 968 👍",
+      "Claude Code Desktop gets sidebar filter, sort and grouping"
+    ],
+    "ai-agents": [
+      "MCP servers digest: 5 issues, no PRs, no releases",
+      "Filesystem server v2 hardening follows GHSA-53mr-w429-c597",
+      "server-filesystem 2.0.1 ships Linux/macOS parent-swap fix (#5237)",
+      "#5260 tracks the Windows follow-up to the filesystem advisory",
+      "Maintainer cliffhall filed 4 of 5 updated issues",
+      "Bounded-walk test and limit added for #4162 (#5326)"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.107.0 compromised with credential stealer on PyPI",
+      "LiteLLM ships 4 patch releases plus v1.109.0-dev.1",
+      "LiteLLM fixes silent cost-accounting errors",
+      "Dify 1.18.0 triage shows data loss and duplicate-run bugs",
+      "A lost Redis reply can leave Dify runs stuck",
+      "Digest covers only Dify and LiteLLM, no inference engines"
+    ],
+    "ai-trending": [
+      "agent-memory: shared Markdown memory for Claude Code and Codex",
+      "deja-vu: Go binary searches ~40 agents' session history",
+      "ripwire cuts agent code reads by a claimed 74.7%",
+      "Tencent wave-mcp: 34 tools for RTL waveform debugging",
+      "Trending list shows 0 total stars, so treat counts with caution",
+      "Topic search returns non-AI repos, such as a 43k-star debloater"
+    ],
+    "ai-web": [
+      "Anthropic files S-1 for Nasdaq IPO under \"ANT\"",
+      "Anthropic GSA deal gives governments 40% off Claude",
+      "Anthropic finds CRISPR-like enzyme system",
+      "Unreleased Anthropic model finds multi-step exploit chains",
+      "Anthropic studies how agents shape experts' judgment",
+      "OpenAI adds \"Oracle Apps in ChatGPT\" page"
+    ],
+    "ai-hn": [
+      "Anthropic S-1 tops HN with 1,697 points and 1,663 comments",
+      "OpenAI reports 3 new math, CS and physics discoveries (1,138 pts)",
+      "Preprint claims Exponential Time Hypothesis is false (786 pts)",
+      "OpenAI GPT-6.1 Terra release draws 629 points",
+      "Cloudflare KV cache leak sparks discussion",
+      "Claude training on pirated books stirs legal debate"
+    ],
+    "ai-arxiv": [
+      "Learned attention gates improve prompt injection robustness",
+      "SimpleLoRIF traces safety erosion to training data",
+      "MuonGS relaxes weight-norm control in Muon pretraining",
+      "Scaling laws for synthetic tool-use environments",
+      "Rollout-efficient RL for LLM agents",
+      "Timestral time-series foundation model appears"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,587 likes, 7.5M downloads",
+      "Qwen3.8-Flash-Next previews new qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash-1017 hits 3,480 likes",
+      "Lightricks LTX-2.5 draws 9,650 likes for video",
+      "FLUX.3 Klein ComfyUI release joins crowded image field",
+      "Meta SAM 3 and EmbeddingGemma 2 trend"
+    ],
+    "ai-community": [
+      "11 production agents: costliest step wasn't the model call in 9",
+      "MoE coding model 3x faster but went 0-for-5 on agent tasks",
+      "Agent capture hook reported zero LLM calls from a working agent",
+      "Four ways a test can pass while verifying nothing",
+      "Dev.to and Lobste.rs digest covers 36 stories",
+      "Single-shot benchmarks hide long agent-loop failures"
+    ]
+  }
+}
