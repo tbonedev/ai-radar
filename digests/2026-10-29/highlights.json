@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode v2.2.1 ships the new `/goal` command",
+      "OpenCode releases process-daemon-v0.3.2 with `@opencode/pty`",
+      "Claude Code #27302: multi-connector accounts, 289 comments",
+      "Claude Code users flag usage limits and data retention",
+      "OpenCode Zen free-tier problems draw 97 comments (#59387)",
+      "OpenCode has ~12 PRs in flight; Claude Code has 2 stale"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.2.0 ships Node and CA security updates",
+      "110 issues and 89 PRs updated in 24 hours",
+      "cliffhall's v2.3.0 sweep closes a long enhancement backlog",
+      "Trackers #5269 (filesystem) and #5271 (fetch) filed",
+      "'Version packages' PR #5401 is open for the next release",
+      "Windows security follow-up open for filesystem server"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.108.0-rc.1 plus v1.106.6 and v1.105.7 backports",
+      "LiteLLM prepares a Rust gateway rewrite",
+      "LiteLLM stabilizes cost accounting and provider parameters",
+      "Dify cleans up after 1.18.0 with data-integrity bugs",
+      "Dify backports fixes to lts/1.13.x and lts/1.17.x",
+      "Gateway and app layers show the reliability problems"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++ MCP repo map, claims 74.7% fewer bytes",
+      "vshulcz/deja-vu indexes history from about 40 coding agents",
+      "turbo-fieldfare runs Gemma 4 26B-A4B in ~2 GB on Macs",
+      "yetone/magpie pairs any agent with any model",
+      "Tencent/wave-mcp: MCP server with 34 RTL debug tools",
+      "Trending star counts show as ⭐0, a data gap"
+    ],
+    "ai-web": [
+      "Anthropic: unreleased model built Chrome and Safari exploit chains",
+      "Frontier Red Team reports zero-click RCE in Linux",
+      "Claude findings include an Android lock screen bypass",
+      "Anthropic drug development: partnerships with six organizations",
+      "AI for Science adds 20 institutions to free credits",
+      "OpenAI expands its ServiceNow partnership"
+    ],
+    "ai-hn": [
+      "Gemini 4 Carbon launch hits 970 points, 772 comments",
+      "OpenAI's three new discoveries: 1152 points, top story",
+      "'Exponential Time Hypothesis Is False' preprint gets 796 points",
+      "Artificial Analysis Index v5 ranks Gemini 4 Carbon #1",
+      "Posts allege Claude Code sends transcripts and user email",
+      "Threads on Anthropic training data copyright and AI harms"
+    ],
+    "ai-arxiv": [
+      "Learned attention gates improve prompt-injection robustness",
+      "SimpleLoRIF traces safety erosion to fine-tuning data",
+      "MuonGS pretrains LLMs with relaxed weight-norm control",
+      "Synthetic tool-use environments show scaling laws",
+      "Environment-aware rollout scheduling for agentic RL",
+      "Unsupervised RLVR collapse and the 'structure gap'"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4.1-Flash-1017 leads the week with 3,692 likes",
+      "Qwen3.8-27B tops likes (18,661) and 7.5M downloads",
+      "DeepSeek V4.1 derivatives take four more top-30 slots",
+      "Lightricks LTX-2.5 video model hits 9,789 likes",
+      "Uncensored Qwen-Image-2.1 GGUF reaches 5,290 likes",
+      "NVIDIA's 4GB Nemotron-3.5-Bolt targets on-device use"
+    ],
+    "ai-community": [
+      "Bench measures agent input tokens; one agent used 17,000 pre-prompt",
+      "Human approval must be bound to the exact action",
+      "Changing harness breaks frozen models, study finds",
+      "90% of coding-agent rework came from unclear work orders",
+      "Claude-plans, MiMo-codes split setup explored",
+      "Dev.to (30 articles) and Lobste.rs (5 stories) covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenCode v2.2.1 ships the new `/goal` command",
+      "OpenCode releases process-daemon-v0.3.2 with `@opencode/pty`",
+      "Claude Code #27302: multi-connector accounts, 289 comments",
+      "Claude Code users flag usage limits and data retention",
+      "OpenCode Zen free-tier problems draw 97 comments (#59387)",
+      "OpenCode has ~12 PRs in flight; Claude Code has 2 stale"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.2.0 ships Node and CA security updates",
+      "110 issues and 89 PRs updated in 24 hours",
+      "cliffhall's v2.3.0 sweep closes a long enhancement backlog",
+      "Trackers #5269 (filesystem) and #5271 (fetch) filed",
+      "'Version packages' PR #5401 is open for the next release",
+      "Windows security follow-up open for filesystem server"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.108.0-rc.1 plus v1.106.6 and v1.105.7 backports",
+      "LiteLLM prepares a Rust gateway rewrite",
+      "LiteLLM stabilizes cost accounting and provider parameters",
+      "Dify cleans up after 1.18.0 with data-integrity bugs",
+      "Dify backports fixes to lts/1.13.x and lts/1.17.x",
+      "Gateway and app layers show the reliability problems"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++ MCP repo map, claims 74.7% fewer bytes",
+      "vshulcz/deja-vu indexes history from about 40 coding agents",
+      "turbo-fieldfare runs Gemma 4 26B-A4B in ~2 GB on Macs",
+      "yetone/magpie pairs any agent with any model",
+      "Tencent/wave-mcp: MCP server with 34 RTL debug tools",
+      "Trending star counts show as ⭐0, a data gap"
+    ],
+    "ai-web": [
+      "Anthropic: unreleased model built Chrome and Safari exploit chains",
+      "Frontier Red Team reports zero-click RCE in Linux",
+      "Claude findings include an Android lock screen bypass",
+      "Anthropic drug development: partnerships with six organizations",
+      "AI for Science adds 20 institutions to free credits",
+      "OpenAI expands its ServiceNow partnership"
+    ],
+    "ai-hn": [
+      "Gemini 4 Carbon launch hits 970 points, 772 comments",
+      "OpenAI's three new discoveries: 1152 points, top story",
+      "'Exponential Time Hypothesis Is False' preprint gets 796 points",
+      "Artificial Analysis Index v5 ranks Gemini 4 Carbon #1",
+      "Posts allege Claude Code sends transcripts and user email",
+      "Threads on Anthropic training data copyright and AI harms"
+    ],
+    "ai-arxiv": [
+      "Learned attention gates improve prompt-injection robustness",
+      "SimpleLoRIF traces safety erosion to fine-tuning data",
+      "MuonGS pretrains LLMs with relaxed weight-norm control",
+      "Synthetic tool-use environments show scaling laws",
+      "Environment-aware rollout scheduling for agentic RL",
+      "Unsupervised RLVR collapse and the 'structure gap'"
+    ],
+    "ai-hf": [
+      "DeepSeek-V4.1-Flash-1017 leads the week with 3,692 likes",
+      "Qwen3.8-27B tops likes (18,661) and 7.5M downloads",
+      "DeepSeek V4.1 derivatives take four more top-30 slots",
+      "Lightricks LTX-2.5 video model hits 9,789 likes",
+      "Uncensored Qwen-Image-2.1 GGUF reaches 5,290 likes",
+      "NVIDIA's 4GB Nemotron-3.5-Bolt targets on-device use"
+    ],
+    "ai-community": [
+      "Bench measures agent input tokens; one agent used 17,000 pre-prompt",
+      "Human approval must be bound to the exact action",
+      "Changing harness breaks frozen models, study finds",
+      "90% of coding-agent rework came from unclear work orders",
+      "Claude-plans, MiMo-codes split setup explored",
+      "Dev.to (30 articles) and Lobste.rs (5 stories) covered"
+    ]
+  }
+}
