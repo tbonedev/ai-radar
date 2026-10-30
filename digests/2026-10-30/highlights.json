@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.314 released",
+      "OpenCode ships v2.2.3 and v2.2.2 in one day",
+      "OpenCode adds a 'Claude Agent' provider bridging into Claude Code",
+      "Claude Code #27302 hits 290 comments over quota accounting",
+      "Claude Code #15942 tops 478 👍 as most-wanted issue",
+      "OpenCode v1→v2 migration and Windows desktop stability complaints"
+    ],
+    "ai-agents": [
+      "MCP Servers repo quiet: 5 open issues, no PRs or releases",
+      "Issues #5415 and #5416 opened today",
+      "Four of five issues carry the v2 label",
+      "#5214 git_log input validation is the most discussed thread",
+      "#5218 reports tool-contract drift in server-filesystem",
+      "Outside contract-drift research project files two issues"
+    ],
+    "ai-infra": [
+      "Dify has 388 PRs and 62 issues updated in 24h",
+      "LiteLLM ships v1.109.0-dev.2 pre-release with cosign verification",
+      "LiteLLM has six open breaking-flagged PRs",
+      "LiteLLM has 405 PRs updated in 24h",
+      "Billing and cost-accounting bugs hit both Dify and LiteLLM",
+      "Reasoning and think-replay features cause new regressions"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: MCP repo map claims 74.7% fewer bytes",
+      "vshulcz/deja-vu indexes agent session history via MCP",
+      "microsoft/skill-recorder turns screen recordings into Skills",
+      "yetone/magpie routes any agent CLI to any model",
+      "lightpanda-io/browser: Zig headless browser gains +559 today",
+      "Topic-search star counts look implausibly high"
+    ],
+    "ai-web": [
+      "Anthropic and GSA offer 40% government discount on Claude",
+      "GSA discount extends to state, local and tribal governments",
+      "Anthropic launches a program to help agencies adopt Claude",
+      "Anthropic's Scaling Managed Agents post re-crawled",
+      "Claude Code best-practices post re-crawled",
+      "OpenAI posts 'How We Detect Frontier Model Misalignment'"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 weights released, tops HN at 1584 points",
+      "Gemini 4 Carbon draws 800 comments",
+      "Gemini 4 Carbon is #1 on Artificial Analysis Index v5",
+      "Claude Code extension compromise delivers a backdoor",
+      "Remote access trojan hits developer laptops via extensions",
+      "HN debates AI market valuations and trust in AI text"
+    ],
+    "ai-arxiv": [
+      "'Training Foundation Models with a Single Algorithm' unifies pretraining, SFT, RL",
+      "TextSeal2 watermark survives speculative decoding",
+      "Probes predict when an agent will give in",
+      "Verification methods for computer-using agents",
+      "Rewinding-based scalable oversight proposed",
+      "Neural Thickets re-examined in reproduction study"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,713 likes, 7.6M downloads",
+      "DeepSeek-V4.1-Flash-1017 spawns GGUF and abliterated variants",
+      "Lightricks LTX-2.5 reaches 9,909 likes",
+      "facebook/sam3 gets 5,479 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active, 1,239 downloads",
+      "LiquidAI ships full LFM3 family across modalities"
+    ],
+    "ai-community": [
+      "Paying 9x more for a 'smarter' LLM gave the same answers",
+      "Exposing every feature as a tool cost $0.148 per turn",
+      "Argument that agent memory should be a Postgres table",
+      "Vector databases criticized as agent memory",
+      "OpenAI Agents SDK 'No tool call found' error discussed",
+      "Dev.to (30 articles) and Lobste.rs (4 stories) covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.314 released",
+      "OpenCode ships v2.2.3 and v2.2.2 in one day",
+      "OpenCode adds a 'Claude Agent' provider bridging into Claude Code",
+      "Claude Code #27302 hits 290 comments over quota accounting",
+      "Claude Code #15942 tops 478 👍 as most-wanted issue",
+      "OpenCode v1→v2 migration and Windows desktop stability complaints"
+    ],
+    "ai-agents": [
+      "MCP Servers repo quiet: 5 open issues, no PRs or releases",
+      "Issues #5415 and #5416 opened today",
+      "Four of five issues carry the v2 label",
+      "#5214 git_log input validation is the most discussed thread",
+      "#5218 reports tool-contract drift in server-filesystem",
+      "Outside contract-drift research project files two issues"
+    ],
+    "ai-infra": [
+      "Dify has 388 PRs and 62 issues updated in 24h",
+      "LiteLLM ships v1.109.0-dev.2 pre-release with cosign verification",
+      "LiteLLM has six open breaking-flagged PRs",
+      "LiteLLM has 405 PRs updated in 24h",
+      "Billing and cost-accounting bugs hit both Dify and LiteLLM",
+      "Reasoning and think-replay features cause new regressions"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: MCP repo map claims 74.7% fewer bytes",
+      "vshulcz/deja-vu indexes agent session history via MCP",
+      "microsoft/skill-recorder turns screen recordings into Skills",
+      "yetone/magpie routes any agent CLI to any model",
+      "lightpanda-io/browser: Zig headless browser gains +559 today",
+      "Topic-search star counts look implausibly high"
+    ],
+    "ai-web": [
+      "Anthropic and GSA offer 40% government discount on Claude",
+      "GSA discount extends to state, local and tribal governments",
+      "Anthropic launches a program to help agencies adopt Claude",
+      "Anthropic's Scaling Managed Agents post re-crawled",
+      "Claude Code best-practices post re-crawled",
+      "OpenAI posts 'How We Detect Frontier Model Misalignment'"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 weights released, tops HN at 1584 points",
+      "Gemini 4 Carbon draws 800 comments",
+      "Gemini 4 Carbon is #1 on Artificial Analysis Index v5",
+      "Claude Code extension compromise delivers a backdoor",
+      "Remote access trojan hits developer laptops via extensions",
+      "HN debates AI market valuations and trust in AI text"
+    ],
+    "ai-arxiv": [
+      "'Training Foundation Models with a Single Algorithm' unifies pretraining, SFT, RL",
+      "TextSeal2 watermark survives speculative decoding",
+      "Probes predict when an agent will give in",
+      "Verification methods for computer-using agents",
+      "Rewinding-based scalable oversight proposed",
+      "Neural Thickets re-examined in reproduction study"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,713 likes, 7.6M downloads",
+      "DeepSeek-V4.1-Flash-1017 spawns GGUF and abliterated variants",
+      "Lightricks LTX-2.5 reaches 9,909 likes",
+      "facebook/sam3 gets 5,479 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active, 1,239 downloads",
+      "LiquidAI ships full LFM3 family across modalities"
+    ],
+    "ai-community": [
+      "Paying 9x more for a 'smarter' LLM gave the same answers",
+      "Exposing every feature as a tool cost $0.148 per turn",
+      "Argument that agent memory should be a Postgres table",
+      "Vector databases criticized as agent memory",
+      "OpenAI Agents SDK 'No tool call found' error discussed",
+      "Dev.to (30 articles) and Lobste.rs (4 stories) covered"
+    ]
+  }
+}
