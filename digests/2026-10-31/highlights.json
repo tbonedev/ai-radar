@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.316 adds pooled group budgets",
+      "Claude Code ships an `ultrathink` kill switch",
+      "OpenCode v2.2.4 and v2.2.5 released together",
+      "OpenCode adds persistent desktop terminals",
+      "Claude Code #27302 hits 291 comments, 441 👍",
+      "OpenCode #59387: free-tier limit resets draw 157 comments"
+    ],
+    "ai-agents": [
+      "MCP servers: 6 issues, 1 PR, no new releases",
+      "PR #4282 time-server schema constraints closed out of scope",
+      "Issue #3400 closed: server-memory tool annotations",
+      "Only one new issue (#5416) amid stale-item triage",
+      "Maintainers focus on tool-schema quality and annotations",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM stale-bot sweep inflates count to 390 PRs",
+      "LiteLLM turns silent 500s into explicit 400s",
+      "Dify 1.18.0 regressions dominate the bug reports",
+      "Neither Dify nor LiteLLM shipped a release",
+      "LiteLLM leads on provider translation fixes",
+      "Dify moves error handling and tracing into one path"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire claims 74.7% fewer bytes for agents",
+      "vshulcz/deja-vu builds agent memory from session history",
+      "aoci-spec/aoci-code maps codebase and DB schema via MCP",
+      "yetone/magpie routes agent CLIs to other models, 26,716 stars",
+      "microsoft/skill-recorder turns screen work into Skills",
+      "ripwire and aoci-code overlap; worth comparing"
+    ],
+    "ai-web": [
+      "Anthropic's unreleased model exploits Chrome, Safari, Windows",
+      "Five attack chains disclosed under 90+45-day policy",
+      "Anthropic Managed Agents explains its stable-interface design",
+      "Anthropic Insights pilot opens data to outside researchers",
+      "OpenAI posts on fair use and teen safety",
+      "OpenAI adds AI-training preferences for websites"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 open weights hit 1696 points",
+      "Gemini 4 Carbon draws 801 comments",
+      "Claude Code VS Code backdoor on Cursor Marketplace, 921 pts",
+      "Claude Code reportedly sends agent transcripts to its model",
+      "Anthropic IPO filing sparks heavy debate",
+      "OpenAI claims three science discoveries, 1158 pts"
+    ],
+    "ai-arxiv": [
+      "One algorithm for pretraining, SFT and RL",
+      "Multi-teacher on-policy self-distillation, per-token teachers",
+      "Multi-View MoE: every router shapes expert computation",
+      "PIVOT pushes RLVR with teacher guidance",
+      "Scalable oversight via rewinding agent actions",
+      "Autonomous science agents tackle quantum spin and genomics"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,829 likes, 7.5M downloads",
+      "Lightricks LTX-2.5 tops open video at 10,021 likes",
+      "DeepSeek-V4.1-Flash-1017 spawns GGUF and abliterated variants",
+      "Mistral-Large-4 is a 1T MoE with 52B active",
+      "Liquid AI's LFM3 spans text, vision, audio, omni",
+      "MiniMax-M3.1-Flash adds a multimodal Flash option"
+    ],
+    "ai-community": [
+      "A NES CPU emulator baked into Qwen3.5-4B weights",
+      "Compute KV cache bytes per token from config.json",
+      "Two-lane eval separates model score from product score",
+      "AGENTS.md poisoning makes Downloads a security boundary",
+      "Scope an idea first, then commit with a definition of done",
+      "Dev.to and Lobste.rs: 34 AI stories covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.316 adds pooled group budgets",
+      "Claude Code ships an `ultrathink` kill switch",
+      "OpenCode v2.2.4 and v2.2.5 released together",
+      "OpenCode adds persistent desktop terminals",
+      "Claude Code #27302 hits 291 comments, 441 👍",
+      "OpenCode #59387: free-tier limit resets draw 157 comments"
+    ],
+    "ai-agents": [
+      "MCP servers: 6 issues, 1 PR, no new releases",
+      "PR #4282 time-server schema constraints closed out of scope",
+      "Issue #3400 closed: server-memory tool annotations",
+      "Only one new issue (#5416) amid stale-item triage",
+      "Maintainers focus on tool-schema quality and annotations",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM stale-bot sweep inflates count to 390 PRs",
+      "LiteLLM turns silent 500s into explicit 400s",
+      "Dify 1.18.0 regressions dominate the bug reports",
+      "Neither Dify nor LiteLLM shipped a release",
+      "LiteLLM leads on provider translation fixes",
+      "Dify moves error handling and tracing into one path"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire claims 74.7% fewer bytes for agents",
+      "vshulcz/deja-vu builds agent memory from session history",
+      "aoci-spec/aoci-code maps codebase and DB schema via MCP",
+      "yetone/magpie routes agent CLIs to other models, 26,716 stars",
+      "microsoft/skill-recorder turns screen work into Skills",
+      "ripwire and aoci-code overlap; worth comparing"
+    ],
+    "ai-web": [
+      "Anthropic's unreleased model exploits Chrome, Safari, Windows",
+      "Five attack chains disclosed under 90+45-day policy",
+      "Anthropic Managed Agents explains its stable-interface design",
+      "Anthropic Insights pilot opens data to outside researchers",
+      "OpenAI posts on fair use and teen safety",
+      "OpenAI adds AI-training preferences for websites"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 open weights hit 1696 points",
+      "Gemini 4 Carbon draws 801 comments",
+      "Claude Code VS Code backdoor on Cursor Marketplace, 921 pts",
+      "Claude Code reportedly sends agent transcripts to its model",
+      "Anthropic IPO filing sparks heavy debate",
+      "OpenAI claims three science discoveries, 1158 pts"
+    ],
+    "ai-arxiv": [
+      "One algorithm for pretraining, SFT and RL",
+      "Multi-teacher on-policy self-distillation, per-token teachers",
+      "Multi-View MoE: every router shapes expert computation",
+      "PIVOT pushes RLVR with teacher guidance",
+      "Scalable oversight via rewinding agent actions",
+      "Autonomous science agents tackle quantum spin and genomics"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,829 likes, 7.5M downloads",
+      "Lightricks LTX-2.5 tops open video at 10,021 likes",
+      "DeepSeek-V4.1-Flash-1017 spawns GGUF and abliterated variants",
+      "Mistral-Large-4 is a 1T MoE with 52B active",
+      "Liquid AI's LFM3 spans text, vision, audio, omni",
+      "MiniMax-M3.1-Flash adds a multimodal Flash option"
+    ],
+    "ai-community": [
+      "A NES CPU emulator baked into Qwen3.5-4B weights",
+      "Compute KV cache bytes per token from config.json",
+      "Two-lane eval separates model score from product score",
+      "AGENTS.md poisoning makes Downloads a security boundary",
+      "Scope an idea first, then commit with a definition of done",
+      "Dev.to and Lobste.rs: 34 AI stories covered"
+    ]
+  }
+}
