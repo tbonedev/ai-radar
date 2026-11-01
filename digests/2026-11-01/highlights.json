@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Neither Claude Code nor OpenCode shipped a release today",
+      "Claude Code #27302: multi-account Connectors, 292 comments",
+      "OpenCode #59387 free-tier megathread hits 184 comments",
+      "Quota and billing friction dominates both communities",
+      "Claude Code's 3 PRs all closed unmerged, one author",
+      "OpenCode fixes edit tool, write lock and TUI bugs"
+    ],
+    "ai-agents": [
+      "MCP Servers: only 4 issues updated, no PRs or releases",
+      "Monthly dependency sweep #5417 opened by a bot",
+      "Sweep replaces Dependabot version-update PRs (#4874)",
+      "Schema quality issue #3669: missing property descriptions",
+      "Project focus is v2 hygiene, not new features",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM #49313: cross-tenant cache leak",
+      "LiteLLM #46874: budget bypass on fallback",
+      "Two competing LiteLLM cache-isolation fixes: #49576, #49563",
+      "Dify 1.18.0 regressions reported; no new release",
+      "Dify RAG index and DB divergence (#45238, #45236, #45223)",
+      "Tool-calling reliability is a weak spot in both projects"
+    ],
+    "ai-trending": [
+      "deja-vu: Go binary gives coding agents shared memory",
+      "ripwire: C++23 MCP server, 74.7% fewer bytes per signature",
+      "lightpanda-io/browser: Zig headless browser, +827 stars today",
+      "agent-memory: Markdown memory shared by Claude Code and Codex",
+      "Trending star totals show 0, so counts are unreliable",
+      "Some new repos show suspiciously inflated star counts"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 weights released, 1,710 points",
+      "Gemini 4 Carbon draws 801 comments, 1,013 points",
+      "Compromised Claude Code extension on Cursor Marketplace: 981 pts",
+      "Anthropic criticized for blocking training of larger models",
+      "Google's Sleep framework for LLM continual learning",
+      "HN worries about SRE deskilling and Cisco's unlimited tokens"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads: 18,892 likes, 7.9M downloads",
+      "DeepSeek-V4.1-Flash-1017 trending with 4,169 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active",
+      "Lightricks LTX-2.5 follows in video generation",
+      "LiquidAI LFM3 family places six entries on the board",
+      "Qwen3.8 and DeepSeek V4.1 derivatives top downloads"
+    ],
+    "ai-community": [
+      "ChatGPT account takeover via MathLive iframe postMessage",
+      "Hiding instructions in server logs to test which models obey",
+      "Field guide: indirect prompt injection hijacks AI agents",
+      "Retested MoE offloading benchmarks on a 16GB GPU",
+      "Dev.to (30 articles) and Lobste.rs (5 stories) covered",
+      "Treat every file an agent reads as untrusted input"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Neither Claude Code nor OpenCode shipped a release today",
+      "Claude Code #27302: multi-account Connectors, 292 comments",
+      "OpenCode #59387 free-tier megathread hits 184 comments",
+      "Quota and billing friction dominates both communities",
+      "Claude Code's 3 PRs all closed unmerged, one author",
+      "OpenCode fixes edit tool, write lock and TUI bugs"
+    ],
+    "ai-agents": [
+      "MCP Servers: only 4 issues updated, no PRs or releases",
+      "Monthly dependency sweep #5417 opened by a bot",
+      "Sweep replaces Dependabot version-update PRs (#4874)",
+      "Schema quality issue #3669: missing property descriptions",
+      "Project focus is v2 hygiene, not new features",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM #49313: cross-tenant cache leak",
+      "LiteLLM #46874: budget bypass on fallback",
+      "Two competing LiteLLM cache-isolation fixes: #49576, #49563",
+      "Dify 1.18.0 regressions reported; no new release",
+      "Dify RAG index and DB divergence (#45238, #45236, #45223)",
+      "Tool-calling reliability is a weak spot in both projects"
+    ],
+    "ai-trending": [
+      "deja-vu: Go binary gives coding agents shared memory",
+      "ripwire: C++23 MCP server, 74.7% fewer bytes per signature",
+      "lightpanda-io/browser: Zig headless browser, +827 stars today",
+      "agent-memory: Markdown memory shared by Claude Code and Codex",
+      "Trending star totals show 0, so counts are unreliable",
+      "Some new repos show suspiciously inflated star counts"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 weights released, 1,710 points",
+      "Gemini 4 Carbon draws 801 comments, 1,013 points",
+      "Compromised Claude Code extension on Cursor Marketplace: 981 pts",
+      "Anthropic criticized for blocking training of larger models",
+      "Google's Sleep framework for LLM continual learning",
+      "HN worries about SRE deskilling and Cisco's unlimited tokens"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads: 18,892 likes, 7.9M downloads",
+      "DeepSeek-V4.1-Flash-1017 trending with 4,169 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active",
+      "Lightricks LTX-2.5 follows in video generation",
+      "LiquidAI LFM3 family places six entries on the board",
+      "Qwen3.8 and DeepSeek V4.1 derivatives top downloads"
+    ],
+    "ai-community": [
+      "ChatGPT account takeover via MathLive iframe postMessage",
+      "Hiding instructions in server logs to test which models obey",
+      "Field guide: indirect prompt injection hijacks AI agents",
+      "Retested MoE offloading benchmarks on a 16GB GPU",
+      "Dev.to (30 articles) and Lobste.rs (5 stories) covered",
+      "Treat every file an agent reads as untrusted input"
+    ]
+  }
+}
