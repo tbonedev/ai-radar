@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code #18435 tops votes with 987 👍",
+      "Claude Code #27302 hits 294 comments on usage limits",
+      "OpenCode #59387 draws 208 comments, billing concerns",
+      "No releases from Claude Code or OpenCode in 24h",
+      "Claude Code adds per-model limits in /usage (#92080)",
+      "OpenCode shows heavier PR activity: 10 listed plus 4"
+    ],
+    "ai-agents": [
+      "MCP servers: SSRF protection fix in fetch (#4497)",
+      "Same SSRF guard for everything's gzip-file-as-resource (#4498)",
+      "#4551 migrates everything server to v2 SDK packages",
+      "Three of four open PRs stale since July",
+      "No releases or merges in MCP servers today",
+      "Security hardening and v2 SDK migration are main themes"
+    ],
+    "ai-infra": [
+      "Dify 1.18.0 regressions: LLM node slowdown, missing traces",
+      "Dify has 151 PRs, many strict-pyrefly typing chores",
+      "LiteLLM overbilling and premature TPM 429 bugs",
+      "LiteLLM building a Rust forwarding gateway (4-PR stack)",
+      "LiteLLM GHCR v1.94.1 and v1.95.0 lack git tags",
+      "MCP, A2A and JSON-RPC bugs hit both Dify and LiteLLM"
+    ],
+    "ai-trending": [
+      "vercel-labs/agent-desktop gained +2,243 stars today",
+      "agent-desktop drives desktop apps via accessibility trees",
+      "JustVugg/colibri streams MoE expert weights from disk",
+      "redhat-et/ripwire cuts agent context bytes by 74.7%",
+      "p-e-w/heretic removes model refusals without training",
+      "max-sixty/worktrunk manages Git worktrees for AI agents"
+    ],
+    "ai-web": [
+      "Anthropic posts 3 science-focused research articles",
+      "Vibe physics: Opus 4.5 helped write a theory paper",
+      "Schwartz paper took 110+ drafts and 36M tokens",
+      "Claude designed binders for 14 of 15 protein targets",
+      "OpenAI adds Grid Protectors Program page",
+      "Anthropic pages likely re-indexed older posts"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 weights released, 1722 points",
+      "Gemini 4 Carbon hits 1018 points, 803 comments",
+      "Backdoored Claude Code extension on Cursor Marketplace",
+      "Anthropic S-1: $17B Q3 revenue, $895B commitments",
+      "ChatGPT account-takeover write-up draws attention",
+      "Google's Sleep framework for LLM continual learning"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,988 likes, 7.9M downloads",
+      "Lightricks LTX-2.5 tops video with 10,321 likes",
+      "DeepSeek-V4.1-Flash-1017 has 4,648 likes, fast derivatives",
+      "Mistral-Large-4: 1T-parameter MoE, 52B active",
+      "LiquidAI ships full LFM3 family in one week",
+      "Baidu and Xiaomi both release dedicated OCR models"
+    ],
+    "ai-community": [
+      "Harness catches agents that claim 'done' falsely",
+      "Local quants vs Claude on 9 real C++/CUDA bugs",
+      "Idle 200K-token Claude session re-buys cache: $0.04 to $1.00",
+      "Opus 5.5 idle cache expiry costs about 25x more",
+      "9 shell commands that leave coding agents waiting for keystrokes",
+      "Template for contamination-resistant evals from own history"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code #18435 tops votes with 987 👍",
+      "Claude Code #27302 hits 294 comments on usage limits",
+      "OpenCode #59387 draws 208 comments, billing concerns",
+      "No releases from Claude Code or OpenCode in 24h",
+      "Claude Code adds per-model limits in /usage (#92080)",
+      "OpenCode shows heavier PR activity: 10 listed plus 4"
+    ],
+    "ai-agents": [
+      "MCP servers: SSRF protection fix in fetch (#4497)",
+      "Same SSRF guard for everything's gzip-file-as-resource (#4498)",
+      "#4551 migrates everything server to v2 SDK packages",
+      "Three of four open PRs stale since July",
+      "No releases or merges in MCP servers today",
+      "Security hardening and v2 SDK migration are main themes"
+    ],
+    "ai-infra": [
+      "Dify 1.18.0 regressions: LLM node slowdown, missing traces",
+      "Dify has 151 PRs, many strict-pyrefly typing chores",
+      "LiteLLM overbilling and premature TPM 429 bugs",
+      "LiteLLM building a Rust forwarding gateway (4-PR stack)",
+      "LiteLLM GHCR v1.94.1 and v1.95.0 lack git tags",
+      "MCP, A2A and JSON-RPC bugs hit both Dify and LiteLLM"
+    ],
+    "ai-trending": [
+      "vercel-labs/agent-desktop gained +2,243 stars today",
+      "agent-desktop drives desktop apps via accessibility trees",
+      "JustVugg/colibri streams MoE expert weights from disk",
+      "redhat-et/ripwire cuts agent context bytes by 74.7%",
+      "p-e-w/heretic removes model refusals without training",
+      "max-sixty/worktrunk manages Git worktrees for AI agents"
+    ],
+    "ai-web": [
+      "Anthropic posts 3 science-focused research articles",
+      "Vibe physics: Opus 4.5 helped write a theory paper",
+      "Schwartz paper took 110+ drafts and 36M tokens",
+      "Claude designed binders for 14 of 15 protein targets",
+      "OpenAI adds Grid Protectors Program page",
+      "Anthropic pages likely re-indexed older posts"
+    ],
+    "ai-hn": [
+      "Mistral Large 4 weights released, 1722 points",
+      "Gemini 4 Carbon hits 1018 points, 803 comments",
+      "Backdoored Claude Code extension on Cursor Marketplace",
+      "Anthropic S-1: $17B Q3 revenue, $895B commitments",
+      "ChatGPT account-takeover write-up draws attention",
+      "Google's Sleep framework for LLM continual learning"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 18,988 likes, 7.9M downloads",
+      "Lightricks LTX-2.5 tops video with 10,321 likes",
+      "DeepSeek-V4.1-Flash-1017 has 4,648 likes, fast derivatives",
+      "Mistral-Large-4: 1T-parameter MoE, 52B active",
+      "LiquidAI ships full LFM3 family in one week",
+      "Baidu and Xiaomi both release dedicated OCR models"
+    ],
+    "ai-community": [
+      "Harness catches agents that claim 'done' falsely",
+      "Local quants vs Claude on 9 real C++/CUDA bugs",
+      "Idle 200K-token Claude session re-buys cache: $0.04 to $1.00",
+      "Opus 5.5 idle cache expiry costs about 25x more",
+      "9 shell commands that leave coding agents waiting for keystrokes",
+      "Template for contamination-resistant evals from own history"
+    ]
+  }
+}
