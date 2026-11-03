@@ -1,76 +1,76 @@
 # Hugging Face Trending Models Digest 2026-11-03
 
-> Source: [Hugging Face Hub](https://huggingface.co/) | 30 models | Generated: 2026-11-02 16:47 UTC
+> Source: [Hugging Face Hub](https://huggingface.co/) | 30 models | Generated: 2026-11-03 14:49 UTC
 
 ---
 
 # Hugging Face Trending Models Digest — 2026-11-03
 
-## 1. Today's Highlights
+## Today's Highlights
 
-Qwen3.8-27B leads the week by a wide margin with 18,988 likes and 7.9M downloads, while Lightricks' LTX-2.5 (10,321 likes) dominates video generation. DeepSeek-V4.1-Flash-1017 draws 4,648 likes and has already spawned a quantization and an abliterated derivative. LiquidAI lands a full LFM3 family (text, VL, audio, omni) in one week, and Mistral-Large-4 arrives as a 1T-parameter MoE with 52B active. OCR is a visible theme, with Baidu and Xiaomi both shipping dedicated models.
+Qwen3.8-27B leads the week on engagement (19,049 likes, 8M+ downloads), while DeepSeek-V4.1-Flash-1017 and its community derivatives make up a visible cluster. Lightricks' LTX-2.5 and a quantized Qwen-Image-2.1 variant each pulled over 2.4M downloads, showing continued appetite for local video and image generation. Liquid AI shipped a full LFM3 family (text, vision, audio, omni), and Mistral-Large-4 arrived as a ~1T-parameter MoE with 52B active. OCR is also active, with entries from Baidu and Xiaomi.
 
-## 2. Trending Models
+## Trending Models
 
 ### 🧠 Language Models
 
 | Model | Author | Likes | Downloads | Summary |
 | :--- | :--- | ---: | ---: | :--- |
-| [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Qwen | 18,988 | 7,915,637 | A 27B image-text-to-text model from the Qwen family. It tops this week's likes and downloads, showing strong community pull for mid-size multimodal open weights. |
-| [deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017) | deepseek-ai | 4,648 | 177,009 | A multimodal "Flash" release in the DeepSeek V4.1 line. It is trending for rapid downstream activity, with quantized and modified variants appearing within days. |
-| [mistralai/Mistral-Large-4-1T-A52B](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B) | mistralai | 1,483 | 5,500 | A roughly 1T-parameter MoE with 52B active parameters and image-text input, tagged for vLLM and SGLang. Strong likes against low downloads reflect its size and interest from serving teams. |
-| [Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B) | Nanbeige | 998 | 16,976 | A 33B Llama-architecture text-generation model. It is gaining attention as a mid-large open LLM with nearly 1,000 likes. |
-| [XHToken/Spark-X2.6-4B](https://huggingface.co/XHToken/Spark-X2.6-4B) | XHToken | 967 | 18,126 | A compact 4B text-generation model. It is trending on small-model efficiency interest. |
-| [LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B) | LiquidAI | 840 | 42,384 | The base 1.7B model of Liquid's LFM3 architecture. It is trending as an on-device-friendly alternative to transformer small models. |
-| [RecursiveSI/flint](https://huggingface.co/RecursiveSI/flint) | RecursiveSI | 1,309 | 29,574 | A conversational text-generation model on a custom "flint" architecture. It has drawn 1,309 likes despite modest downloads. |
-| [Diffuspace/Clover-35B-A3B-Preview](https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview) | Diffuspace | 220 | 2,679 | A preview 35B MoE with only 3B active parameters. It is notable for its very low inference cost relative to total size. |
-| [sensenova/SenseNova-Loop-9B-Preview](https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview) | sensenova | 176 | 1,536 | A 9B multimodal preview model from SenseNova. It is early-stage but draws interest as a new entrant in the 9B class. |
+| [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Qwen | 19,049 | 8,014,877 | Image-text-to-text conversational model in the Qwen3.5 architecture family. It tops this week's list in both likes and downloads. |
+| [deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017) | deepseek-ai | 4,805 | 187,260 | Multimodal (image-text-to-text) Flash release from DeepSeek. It has spawned several uncensored and quantized derivatives within days. |
+| [mistralai/Mistral-Large-4-1T-A52B](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B) | mistralai | 1,527 | 6,556 | A ~1T-parameter MoE with 52B active parameters, tagged for vLLM and SGLang serving. Likes are high relative to downloads, which fits its size. |
+| [LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B) | LiquidAI | 1,351 | 47,817 | Compact 1.7B text-generation model in Liquid's LFM3 line. It is the base for several GGUF and uncensored variants. |
+| [RecursiveSI/flint](https://huggingface.co/RecursiveSI/flint) | RecursiveSI | 1,316 | 32,677 | Conversational text-generation model with a custom `flint` architecture. It gained 1,316 likes despite modest downloads. |
+| [Nanbeige/Nanbeige4.3-33B](https://huggingface.co/Nanbeige/Nanbeige4.3-33B) | Nanbeige | 1,018 | 17,839 | A 33B Llama-architecture LLM. It draws steady interest from the open-weight community. |
+| [Diffuspace/Clover-35B-A3B-Preview](https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview) | Diffuspace | 233 | 3,017 | Preview MoE with 35B total and 3B active parameters. It targets efficient inference. |
+| [sensenova/SenseNova-Loop-9B-Preview](https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview) | sensenova | 200 | 2,221 | 9B multimodal preview model from SenseNova. It is early-stage, with low downloads so far. |
 
 ### 🎨 Multimodal & Generation
 
 | Model | Author | Likes | Downloads | Summary |
 | :--- | :--- | ---: | ---: | :--- |
-| [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | Lightricks | 10,321 | 2,467,613 | An open image/text/video-to-video generation model. It has the second-highest likes this week and 2.4M+ downloads. |
-| [facebook/sam3](https://huggingface.co/facebook/sam3) | facebook | 5,701 | 1,879,182 | Meta's Segment Anything 3 with video support. It remains popular with 1.8M+ downloads for segmentation work. |
-| [abenzerps/Qwen-Image-2.1-Uncensored-Quantized](https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized) | abenzerps | 5,534 | 2,516,622 | A GGUF-quantized, uncensored Qwen-Image build for ComfyUI. It has the highest downloads in the image category. |
-| [black-forest-labs/flux-3-image-klein-comfy](https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy) | black-forest-labs | 2,329 | 1,003,813 | A ComfyUI-packaged FLUX.3 Klein for image generation and editing. It crosses 1M downloads on a convenient single-file format. |
-| [LiquidAI/LFM3-Omni-2B](https://huggingface.co/LiquidAI/LFM3-Omni-2B) | LiquidAI | 303 | 9,964 | A 2B any-to-any model covering text, image and audio. It shows omni-modality at very small scale. |
-| [speridlabs/idol](https://huggingface.co/speridlabs/idol) | speridlabs | 384 | 7,787 | An Apache-2.0 image-to-3D model using Gaussian splatting. It is trending for permissively licensed 3D reconstruction. |
-| [Pika-Labs/Pika-H3-Flex](https://huggingface.co/Pika-Labs/Pika-H3-Flex) | Pika-Labs | 345 | 491 | An image-to-video model with audio-video generation and LoRA support. Likes far outpace its 491 downloads, suggesting curiosity over adoption. |
-| [Edge0/Audio8-TTS-Realistic-Air](https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air) | Edge0 | 240 | 7,259 | A text-to-speech model focused on realistic voice output. It is a lightweight "Air" variant. |
-| [LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B) | LiquidAI | 216 | 10,141 | A 2B vision-language model in the LFM3 family. It targets edge-sized multimodal use. |
-| [LiquidAI/d1-2B](https://huggingface.co/LiquidAI/d1-2B) | LiquidAI | 182 | 5,047 | A 2B image-text model built on the LFM3-VL architecture. It extends the LFM3 line with a new variant. |
-| [LiquidAI/LFM3-Audio-2B](https://huggingface.co/LiquidAI/LFM3-Audio-2B) | LiquidAI | 195 | 6,300 | A 2B any-to-any audio model with speech recognition. It rounds out the LFM3 modality coverage. |
-| [nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B) | nvidia | 659 | 32,439 | A 30B MoE (4B active) speech recognition model on NeMo. It stands out for pairing LLM-scale capacity with low active compute. |
+| [Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | Lightricks | 10,434 | 2,488,128 | Open video model covering image-to-video, text-to-video and video-to-video. It is the second most-liked model this week. |
+| [facebook/sam3](https://huggingface.co/facebook/sam3) | facebook | 5,769 | 1,891,393 | Meta's Segment Anything 3 for mask generation, with video support. It combines high likes with 1.9M downloads. |
+| [black-forest-labs/flux-3-image-klein-comfy](https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy) | black-forest-labs | 2,390 | 1,032,077 | ComfyUI-ready FLUX.3 Klein checkpoint for image generation and editing. It passed 1M downloads. |
+| [Efficient-Large-Model/Open-H3-Regenerate-2K](https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K) | Efficient-Large-Model | 199 | 413,605 | LoRA for video refinement built on MiniMax-H3. Its download count is high relative to its likes. |
+| [speridlabs/idol](https://huggingface.co/speridlabs/idol) | speridlabs | 472 | 10,742 | Apache-2.0 image-to-3D model using Gaussian splatting. It brings a permissive license to 3D reconstruction. |
+| [Pika-Labs/Pika-H3-Flex](https://huggingface.co/Pika-Labs/Pika-H3-Flex) | Pika-Labs | 377 | 633 | Image-to-video LoRA with audio-video generation, tagged for diffusers. Downloads are still very low. |
+| [LiquidAI/LFM3-Omni-2B](https://huggingface.co/LiquidAI/LFM3-Omni-2B) | LiquidAI | 328 | 11,662 | 2B any-to-any model from Liquid. It packs several modalities into a very small footprint. |
+| [LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B) | LiquidAI | 223 | 11,153 | 2B vision-language member of the LFM3 family. It targets on-device image understanding. |
+| [LiquidAI/LFM3-Audio-2B](https://huggingface.co/LiquidAI/LFM3-Audio-2B) | LiquidAI | 203 | 7,069 | 2B any-to-any audio model with ASR capability. It completes Liquid's multimodal lineup. |
+| [LiquidAI/d1-2B](https://huggingface.co/LiquidAI/d1-2B) | LiquidAI | 195 | 5,952 | 2B image-text-to-text model on the LFM3-VL architecture. It is a smaller-scale companion release. |
+| [nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B) | nvidia | 709 | 38,942 | MoE speech-recognition model with 30B total and 4B active parameters. It brings an LLM-scale design to ASR. |
+| [Edge0/Audio8-TTS-Realistic-Air](https://huggingface.co/Edge0/Audio8-TTS-Realistic-Air) | Edge0 | 265 | 8,090 | Text-to-speech model aimed at realistic voices. It is a lightweight "Air" variant. |
 
 ### 🔧 Specialized Models
 
 | Model | Author | Likes | Downloads | Summary |
 | :--- | :--- | ---: | ---: | :--- |
-| [baidu/Unlimited-OCR-2](https://huggingface.co/baidu/Unlimited-OCR-2) | baidu | 552 | 147,588 | Baidu's second-generation OCR vision-language model. It has strong adoption at nearly 148K downloads. |
-| [xiaomi-research/Xiaomi-OCR-0](https://huggingface.co/xiaomi-research/Xiaomi-OCR-0) | xiaomi-research | 236 | 18,472 | An OCR model built on the Qwen3.5 base. It marks Xiaomi's entry into document understanding. |
-| [ccore/Qwen3.5-4B-3D-Coder](https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder) | ccore | 542 | 63,499 | A 4B Qwen3.5-based coder tuned for Three.js/3D code, with GGUF available. It is trending as a niche, locally runnable code specialist. |
-| [burner22/numbat](https://huggingface.co/burner22/numbat) | burner22 | 280 | 7,108 | An 8-bit ModelOpt-quantized model with custom code. Little metadata is provided, so its purpose is unclear. |
+| [baidu/Unlimited-OCR-2](https://huggingface.co/baidu/Unlimited-OCR-2) | baidu | 579 | 189,897 | Baidu's second-generation OCR vision-language model. It has strong downloads for a specialist model. |
+| [xiaomi-research/Xiaomi-OCR-0](https://huggingface.co/xiaomi-research/Xiaomi-OCR-0) | xiaomi-research | 255 | 20,802 | OCR model built on the Qwen3.5 architecture. It is Xiaomi's first appearance in this document-AI niche. |
+| [ccore/Qwen3.5-4B-3D-Coder](https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder) | ccore | 583 | 91,123 | 4B code model tuned for Three.js 3D scene generation, with GGUF available. It stands out as a small, task-specific coder. |
 
 ### 📦 Fine-tunes & Quantizations
 
 | Model | Author | Likes | Downloads | Summary |
 | :--- | :--- | ---: | ---: | :--- |
-| [ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF](https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF) | ISTA-DASLab | 553 | 2,408,000 | A mixed-precision GGUF quantization of DeepSeek-V4.1-Flash using GSQ and RCO methods. Its 2.4M downloads far exceed the original's 177,009. |
-| [LiquidAI/LFM3-1.7B-GGUF](https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF) | LiquidAI | 197 | 174,177 | The official llama.cpp-ready GGUF of LFM3-1.7B. It sees heavy local-use downloads. |
-| [AtomicChat/LFM3-1.7B-Uncensored-GGUF](https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF) | AtomicChat | 202 | 59,832 | A community uncensored GGUF of LFM3-1.7B. It shows how quickly derivatives follow a release. |
-| [OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated](https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated) | OBLITERATUS | 209 | 1,095 | An abliterated (refusal-removed) DeepSeek-V4.1-Flash variant. It appeared quickly after the base release. |
-| [FusionCow/Sulphur-3](https://huggingface.co/FusionCow/Sulphur-3) | FusionCow | 214 | 195 | A fine-tune of MiniMaxAI/MiniMax-H3. Likes outpace downloads, suggesting early interest. |
+| [abenzerps/Qwen-Image-2.1-Uncensored-Quantized](https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized) | abenzerps | 5,593 | 2,508,590 | GGUF-quantized, uncensored Qwen-Image-2.1 for ComfyUI. It is the most downloaded model in this category, at over 2.5M. |
+| [AtomicChat/LFM3-1.7B-Uncensored-GGUF](https://huggingface.co/AtomicChat/LFM3-1.7B-Uncensored-GGUF) | AtomicChat | 229 | 72,919 | Uncensored GGUF of LFM3-1.7B. It is easy to run locally. |
+| [AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF](https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF) | AtomicChat | 243 | 53,913 | Uncensored GGUF of DeepSeek-V4.1-Flash using GSQ quantization. It appeared within days of the base release. |
+| [LiquidAI/LFM3-1.7B-GGUF](https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF) | LiquidAI | 204 | 194,039 | Official llama.cpp-ready GGUF of LFM3-1.7B. Its downloads exceed those of the base model. |
+| [OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated](https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated) | OBLITERATUS | 231 | 1,643 | Abliterated (refusal-removed) variant of DeepSeek-V4.1-Flash. It shows how fast refusal-removal appears after a release. |
+| [FusionCow/Sulphur-3](https://huggingface.co/FusionCow/Sulphur-3) | FusionCow | 313 | 395 | Fine-tune of MiniMaxAI/MiniMax-H3. Likes are solid but downloads are minimal. |
+| [burner22/numbat](https://huggingface.co/burner22/numbat) | burner22 | 309 | 7,461 | 8-bit ModelOpt-quantized model with custom code. Its origin is not documented in the metadata. |
 
-## 3. Ecosystem Signal
+## Ecosystem Signal
 
-Qwen and DeepSeek remain the strongest open-weight momentum builders. Qwen3.8-27B leads all metrics, and Qwen3.5 serves as a base for third-party work such as Xiaomi-OCR-0 and the 3D coder. DeepSeek-V4.1-Flash has three entries (original, GGUF, abliterated), a sign of an active derivative ecosystem. LiquidAI is the notable newcomer, with seven LFM3 entries across text, vision, audio, omni and GGUF. That points to an on-device push on a non-transformer-style architecture. Mistral-Large-4 shows large open MoE models continuing at the frontier, and the Nemotron and Clover MoEs show the low-active-parameter pattern spreading. Quantization is a major driver of adoption: the ISTA-DASLab GGUF has about 13x the downloads of the original model. Uncensored and abliterated variants appear within days of releases. Note that Pika-H3-Flex has 345 likes but only 491 downloads, so its listing may reflect interest more than usage.
+The Qwen3.5/3.8 architecture is the strongest force this week. Qwen3.8-27B leads, and the same architecture underlies Xiaomi-OCR-0 and the Qwen3.5-4B-3D-Coder fine-tune. DeepSeek-V4.1-Flash has already produced three derivatives (uncensored GGUF, abliterated, and the base), which shows how quickly community tooling forms around a popular open release. Liquid AI is notable for breadth: seven LFM3-related repos span text, vision, audio and omni at around 2B parameters, a strong small-model, on-device strategy. Open weights dominate, and the largest models (Mistral-Large-4, Nemotron, Clover) use sparse MoE designs with small active-parameter counts. Quantization is widespread, with GGUF featuring in image generation (Qwen-Image) as well as LLMs, and "uncensored" variants draw large download counts. MiniMax-H3 is emerging as a base for video LoRAs and fine-tunes.
 
-## 4. Worth Exploring
+## Worth Exploring
 
-1. **[LiquidAI/LFM3-1.7B](https://huggingface.co/LiquidAI/LFM3-1.7B)** and its siblings: a full small-model family spanning text, vision, audio and omni, useful for studying edge-oriented architectures.
-2. **[ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF](https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF)**: worth studying for its GSQ/RCO mixed-precision approach and its outsized adoption.
-3. **[mistralai/Mistral-Large-4-1T-A52B](https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B)**: a 1T MoE with 52B active parameters and vLLM/SGLang support, relevant for anyone evaluating large-scale open-weight serving.
+1. **[LiquidAI/LFM3-Omni-2B](https://huggingface.co/LiquidAI/LFM3-Omni-2B)**: A 2B any-to-any model is a useful case study for on-device multimodal systems, and it is part of a consistent family.
+2. **[Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)**: With over 2.4M downloads, it is the open video model to test for local text/image-to-video workflows.
+3. **[nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B)**: A sparse MoE applied to speech recognition is an uncommon design worth studying for accuracy and cost.
 
 ---
 *This digest is auto-generated by [agents-radar](https://github.com/tbonedev/ai-radar).*

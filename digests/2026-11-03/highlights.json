@@ -1,134 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code #18435 tops votes with 987 👍",
-      "Claude Code #27302 hits 294 comments on usage limits",
-      "OpenCode #59387 draws 208 comments, billing concerns",
-      "No releases from Claude Code or OpenCode in 24h",
-      "Claude Code adds per-model limits in /usage (#92080)",
-      "OpenCode shows heavier PR activity: 10 listed plus 4"
+      "Claude Code v2.1.317 adds privacy and safety guardrails",
+      "Same 1.8× faster 5-hour quota drain hits both tools",
+      "Claude Code multi-window request tops at 264 👍",
+      "OpenCode auto-mode classifier issue #37564 gets 49 👍",
+      "Claude Code triage automation moved to Sonnet 5.5",
+      "OpenCode triage bot closes issues that already have replies"
     ],
     "ai-agents": [
-      "MCP servers: SSRF protection fix in fetch (#4497)",
-      "Same SSRF guard for everything's gzip-file-as-resource (#4498)",
-      "#4551 migrates everything server to v2 SDK packages",
-      "Three of four open PRs stale since July",
-      "No releases or merges in MCP servers today",
-      "Security hardening and v2 SDK migration are main themes"
+      "MCP Servers: 5 of 6 issues and the only PR closed",
+      "Four closed items concern the memory server",
+      "PR #4888 adds a skipped list to create_entities",
+      "Issue #5058: memory tools marked destructiveHint false but rewrite file",
+      "No new MCP releases in the last 24 hours",
+      "Maintainers sweep the v2-labelled memory backlog"
     ],
     "ai-infra": [
-      "Dify 1.18.0 regressions: LLM node slowdown, missing traces",
-      "Dify has 151 PRs, many strict-pyrefly typing chores",
-      "LiteLLM overbilling and premature TPM 429 bugs",
-      "LiteLLM building a Rust forwarding gateway (4-PR stack)",
-      "LiteLLM GHCR v1.94.1 and v1.95.0 lack git tags",
-      "MCP, A2A and JSON-RPC bugs hit both Dify and LiteLLM"
+      "Dify has 234 PRs updated, mostly test hardening",
+      "LiteLLM has 500 PRs updated, about 2x Dify",
+      "Dify 1.18.0 regressions hit agent and workflow nodes",
+      "LiteLLM reworks its spend ledger accounting",
+      "LiteLLM streaming bugs involve thinking-to-text transitions",
+      "Dify <think> handling for reasoning models draws bug reports"
     ],
     "ai-trending": [
-      "vercel-labs/agent-desktop gained +2,243 stars today",
-      "agent-desktop drives desktop apps via accessibility trees",
-      "JustVugg/colibri streams MoE expert weights from disk",
-      "redhat-et/ripwire cuts agent context bytes by 74.7%",
-      "p-e-w/heretic removes model refusals without training",
-      "max-sixty/worktrunk manages Git worktrees for AI agents"
+      "vercel-labs/agent-desktop adds +3,792 stars today",
+      "JustVugg/colibri +803: tiers MoE experts across GPU, RAM, NVMe",
+      "p-e-w/heretic +699 removes model refusals without training",
+      "max-sixty/worktrunk +437 manages Git worktrees for parallel agents",
+      "microsoft/TokenEconomizer cuts coding-agent token spend",
+      "Computer-use CLI agent-desktop is written in Rust"
     ],
     "ai-web": [
-      "Anthropic posts 3 science-focused research articles",
-      "Vibe physics: Opus 4.5 helped write a theory paper",
-      "Schwartz paper took 110+ drafts and 36M tokens",
-      "Claude designed binders for 14 of 15 protein targets",
-      "OpenAI adds Grid Protectors Program page",
-      "Anthropic pages likely re-indexed older posts"
+      "Anthropic publishes FlashProve, provable LLM inference",
+      "FlashProve proves a response came from a committed model",
+      "Collaborators on FlashProve include EPFL, StarkWare, MIT, Succinct",
+      "OpenAI added 5 index entries, with slugs only crawled",
+      "Anthropic sitemap now totals 493 pages",
+      "OpenAI sitemap now totals 1,104 pages"
     ],
     "ai-hn": [
-      "Mistral Large 4 weights released, 1722 points",
-      "Gemini 4 Carbon hits 1018 points, 803 comments",
-      "Backdoored Claude Code extension on Cursor Marketplace",
-      "Anthropic S-1: $17B Q3 revenue, $895B commitments",
-      "ChatGPT account-takeover write-up draws attention",
-      "Google's Sleep framework for LLM continual learning"
+      "Mistral Large 4 open weights hit 1,728 points on HN",
+      "Anthropic IPO filing dominates HN discussion",
+      "Backdoored Claude Code extension found on Cursor Marketplace",
+      "Anthropic filing cites spending commitments near $900B",
+      "LongCat-2.5 multimodal agentic model gets HN attention",
+      "Essay argues LLMs aren't superhuman at reading weights"
+    ],
+    "ai-arxiv": [
+      "Pretraining scale reverses the Muon vs AdamW fine-tuning gap",
+      "Scaling theory for multi-epoch pretraining and ensembling",
+      "Study of which RLVR reasoning strategies generalize",
+      "New benchmarks cover MCP tool poisoning attacks",
+      "Benchmarks test harmful actions by coding agents",
+      "Mobile manipulation systems learn from human demonstrations"
     ],
     "ai-hf": [
-      "Qwen3.8-27B leads with 18,988 likes, 7.9M downloads",
-      "Lightricks LTX-2.5 tops video with 10,321 likes",
-      "DeepSeek-V4.1-Flash-1017 has 4,648 likes, fast derivatives",
-      "Mistral-Large-4: 1T-parameter MoE, 52B active",
-      "LiquidAI ships full LFM3 family in one week",
-      "Baidu and Xiaomi both release dedicated OCR models"
+      "Qwen3.8-27B leads with 19,049 likes, 8M+ downloads",
+      "Mistral-Large-4: ~1T-parameter MoE with 52B active",
+      "DeepSeek-V4.1-Flash-1017 spawns quantized and uncensored derivatives",
+      "Liquid AI ships the full LFM3 family",
+      "LTX-2.5 and Qwen-Image-2.1 each top 2.4M downloads",
+      "Baidu and Xiaomi release new OCR models"
     ],
     "ai-community": [
-      "Harness catches agents that claim 'done' falsely",
-      "Local quants vs Claude on 9 real C++/CUDA bugs",
-      "Idle 200K-token Claude session re-buys cache: $0.04 to $1.00",
-      "Opus 5.5 idle cache expiry costs about 25x more",
-      "9 shell commands that leave coding agents waiting for keystrokes",
-      "Template for contamination-resistant evals from own history"
+      "Agent wrote a false 'I was wrong' record to memory",
+      "laya-guard: 322M classifier vets coding-agent shell commands",
+      "Benchmark finds today's Claude barely needs a custom skill",
+      "Turn your best prompts into a SKILL.md with a done condition",
+      "Test reflect-and-store loops with planted false premises",
+      "Dev.to and Lobste.rs feed 35 AI stories today"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code #18435 tops votes with 987 👍",
-      "Claude Code #27302 hits 294 comments on usage limits",
-      "OpenCode #59387 draws 208 comments, billing concerns",
-      "No releases from Claude Code or OpenCode in 24h",
-      "Claude Code adds per-model limits in /usage (#92080)",
-      "OpenCode shows heavier PR activity: 10 listed plus 4"
+      "Claude Code v2.1.317 adds privacy and safety guardrails",
+      "Same 1.8× faster 5-hour quota drain hits both tools",
+      "Claude Code multi-window request tops at 264 👍",
+      "OpenCode auto-mode classifier issue #37564 gets 49 👍",
+      "Claude Code triage automation moved to Sonnet 5.5",
+      "OpenCode triage bot closes issues that already have replies"
     ],
     "ai-agents": [
-      "MCP servers: SSRF protection fix in fetch (#4497)",
-      "Same SSRF guard for everything's gzip-file-as-resource (#4498)",
-      "#4551 migrates everything server to v2 SDK packages",
-      "Three of four open PRs stale since July",
-      "No releases or merges in MCP servers today",
-      "Security hardening and v2 SDK migration are main themes"
+      "MCP Servers: 5 of 6 issues and the only PR closed",
+      "Four closed items concern the memory server",
+      "PR #4888 adds a skipped list to create_entities",
+      "Issue #5058: memory tools marked destructiveHint false but rewrite file",
+      "No new MCP releases in the last 24 hours",
+      "Maintainers sweep the v2-labelled memory backlog"
     ],
     "ai-infra": [
-      "Dify 1.18.0 regressions: LLM node slowdown, missing traces",
-      "Dify has 151 PRs, many strict-pyrefly typing chores",
-      "LiteLLM overbilling and premature TPM 429 bugs",
-      "LiteLLM building a Rust forwarding gateway (4-PR stack)",
-      "LiteLLM GHCR v1.94.1 and v1.95.0 lack git tags",
-      "MCP, A2A and JSON-RPC bugs hit both Dify and LiteLLM"
+      "Dify has 234 PRs updated, mostly test hardening",
+      "LiteLLM has 500 PRs updated, about 2x Dify",
+      "Dify 1.18.0 regressions hit agent and workflow nodes",
+      "LiteLLM reworks its spend ledger accounting",
+      "LiteLLM streaming bugs involve thinking-to-text transitions",
+      "Dify <think> handling for reasoning models draws bug reports"
     ],
     "ai-trending": [
-      "vercel-labs/agent-desktop gained +2,243 stars today",
-      "agent-desktop drives desktop apps via accessibility trees",
-      "JustVugg/colibri streams MoE expert weights from disk",
-      "redhat-et/ripwire cuts agent context bytes by 74.7%",
-      "p-e-w/heretic removes model refusals without training",
-      "max-sixty/worktrunk manages Git worktrees for AI agents"
+      "vercel-labs/agent-desktop adds +3,792 stars today",
+      "JustVugg/colibri +803: tiers MoE experts across GPU, RAM, NVMe",
+      "p-e-w/heretic +699 removes model refusals without training",
+      "max-sixty/worktrunk +437 manages Git worktrees for parallel agents",
+      "microsoft/TokenEconomizer cuts coding-agent token spend",
+      "Computer-use CLI agent-desktop is written in Rust"
     ],
     "ai-web": [
-      "Anthropic posts 3 science-focused research articles",
-      "Vibe physics: Opus 4.5 helped write a theory paper",
-      "Schwartz paper took 110+ drafts and 36M tokens",
-      "Claude designed binders for 14 of 15 protein targets",
-      "OpenAI adds Grid Protectors Program page",
-      "Anthropic pages likely re-indexed older posts"
+      "Anthropic publishes FlashProve, provable LLM inference",
+      "FlashProve proves a response came from a committed model",
+      "Collaborators on FlashProve include EPFL, StarkWare, MIT, Succinct",
+      "OpenAI added 5 index entries, with slugs only crawled",
+      "Anthropic sitemap now totals 493 pages",
+      "OpenAI sitemap now totals 1,104 pages"
     ],
     "ai-hn": [
-      "Mistral Large 4 weights released, 1722 points",
-      "Gemini 4 Carbon hits 1018 points, 803 comments",
-      "Backdoored Claude Code extension on Cursor Marketplace",
-      "Anthropic S-1: $17B Q3 revenue, $895B commitments",
-      "ChatGPT account-takeover write-up draws attention",
-      "Google's Sleep framework for LLM continual learning"
+      "Mistral Large 4 open weights hit 1,728 points on HN",
+      "Anthropic IPO filing dominates HN discussion",
+      "Backdoored Claude Code extension found on Cursor Marketplace",
+      "Anthropic filing cites spending commitments near $900B",
+      "LongCat-2.5 multimodal agentic model gets HN attention",
+      "Essay argues LLMs aren't superhuman at reading weights"
+    ],
+    "ai-arxiv": [
+      "Pretraining scale reverses the Muon vs AdamW fine-tuning gap",
+      "Scaling theory for multi-epoch pretraining and ensembling",
+      "Study of which RLVR reasoning strategies generalize",
+      "New benchmarks cover MCP tool poisoning attacks",
+      "Benchmarks test harmful actions by coding agents",
+      "Mobile manipulation systems learn from human demonstrations"
     ],
     "ai-hf": [
-      "Qwen3.8-27B leads with 18,988 likes, 7.9M downloads",
-      "Lightricks LTX-2.5 tops video with 10,321 likes",
-      "DeepSeek-V4.1-Flash-1017 has 4,648 likes, fast derivatives",
-      "Mistral-Large-4: 1T-parameter MoE, 52B active",
-      "LiquidAI ships full LFM3 family in one week",
-      "Baidu and Xiaomi both release dedicated OCR models"
+      "Qwen3.8-27B leads with 19,049 likes, 8M+ downloads",
+      "Mistral-Large-4: ~1T-parameter MoE with 52B active",
+      "DeepSeek-V4.1-Flash-1017 spawns quantized and uncensored derivatives",
+      "Liquid AI ships the full LFM3 family",
+      "LTX-2.5 and Qwen-Image-2.1 each top 2.4M downloads",
+      "Baidu and Xiaomi release new OCR models"
     ],
     "ai-community": [
-      "Harness catches agents that claim 'done' falsely",
-      "Local quants vs Claude on 9 real C++/CUDA bugs",
-      "Idle 200K-token Claude session re-buys cache: $0.04 to $1.00",
-      "Opus 5.5 idle cache expiry costs about 25x more",
-      "9 shell commands that leave coding agents waiting for keystrokes",
-      "Template for contamination-resistant evals from own history"
+      "Agent wrote a false 'I was wrong' record to memory",
+      "laya-guard: 322M classifier vets coding-agent shell commands",
+      "Benchmark finds today's Claude barely needs a custom skill",
+      "Turn your best prompts into a SKILL.md with a done condition",
+      "Test reflect-and-store loops with planted false premises",
+      "Dev.to and Lobste.rs feed 35 AI stories today"
     ]
   }
 }
