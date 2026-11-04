@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.318 adds effort option, gateway assume_role",
+      "Claude Code #18435 hits 999 👍 and 233 comments",
+      "OpenCode #59387 tops issues with 268 comments",
+      "OpenCode PR #61522 promotes 26 commits dev→production",
+      "Users report agents running unrequested rm and Plan mode edits",
+      "OpenCode V1→V2 migration regressions pile up"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: 1 issue, 0 PRs, no releases",
+      "#3669: reference servers lack tool schema descriptions",
+      "Issue #3669 tagged v2, opened March 2026, 10 comments",
+      "No open PR yet addresses the schema description gap",
+      "Seven MCP ecosystem projects tracked, including Docker registry",
+      "Missing descriptions hurt LLM tool-call argument accuracy"
+    ],
+    "ai-infra": [
+      "Dify 1.19.0 ships nested workflow tracing",
+      "LiteLLM ships v1.108.0, v1.106.7 and v1.109.0-rc.1",
+      "Dify hotfix backport PR #45572 for 1.18.0-fix.6",
+      "Dify RAG bugs: corrupted vectors, regressions vs 1.18.0",
+      "LiteLLM bugs: dropped spend rows, empty cached streams",
+      "Only Dify and LiteLLM covered; vLLM, Ollama missing"
+    ],
+    "ai-trending": [
+      "vercel-labs/agent-desktop: Rust computer-use CLI, +2,463 today",
+      "NVIDIA/auto-ontology gains +2,053 with graph semantic layer",
+      "redhat-et/ripwire claims 74.7% fewer bytes for coding agents",
+      "max-sixty/worktrunk manages Git worktrees for parallel agents",
+      "cleanyourtv shows 51,805 stars; counts look inflated",
+      "dsh-our-free-model at 60,376 stars looks suspicious"
+    ],
+    "ai-web": [
+      "Anthropic unveils FlashProve for provable LLM inference",
+      "FlashProve lets users verify which model answered",
+      "Anthropic research from Frontier Red Team on inference proofs",
+      "OpenAI adds 5 index entries, only slugs available",
+      "OpenAI entries hint at GovCloud item and an acquisition",
+      "Sitemap totals: Anthropic 493, OpenAI 1109"
+    ],
+    "ai-hn": [
+      "Postman silent AI plugin installs hit 1410 points",
+      "Claude Code VS Code extension backdoor on Cursor: 1010 pts",
+      "OpenAI reportedly re-enables training on Codex chats",
+      "Gemini training on subscriber chat history angers users",
+      "Revolut moves to self-hosted coding models",
+      "$3.2T hidden AI debt and Fujifilm 5x tape boost"
+    ],
+    "ai-arxiv": [
+      "Training LLMs against their own beliefs induces misalignment",
+      "Suppressing misaligned behaviors durably across training",
+      "A Circuit for In-Context Learning explains label mapping",
+      "Looped transformers: KV-cache quantization and open pretraining",
+      "Speculative decoding used as a training signal",
+      "Skill-memory distillation targets long-horizon agent efficiency"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,122 likes, 8M+ downloads",
+      "Lightricks LTX-2.5 hits 10,569 likes for open video",
+      "DeepSeek-V4.1-Flash-1017 has 5,233 likes, five derivatives",
+      "Mistral-Large-4: 1T total, 52B active MoE",
+      "Nvidia Nemotron-3.5 Transcribe 30B-A4B brings MoE to speech",
+      "Liquid AI LFM3 1.7B text and 2B omni models trend"
+    ],
+    "ai-community": [
+      "Qwen weight editing curbs thinking loops without training",
+      "Claude Opus 5.5 rewrote 8 neurons of Gemma 4 12B",
+      "Rerunning a multi-agent experiment flipped half the conclusions",
+      "Qwen3.8 27B on RTX 5090: why vLLM didn't work",
+      "Simon Willison covers Qwen interpreting model weights",
+      "Dev.to and Lobste.rs: 35 articles and stories scanned"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.318 adds effort option, gateway assume_role",
+      "Claude Code #18435 hits 999 👍 and 233 comments",
+      "OpenCode #59387 tops issues with 268 comments",
+      "OpenCode PR #61522 promotes 26 commits dev→production",
+      "Users report agents running unrequested rm and Plan mode edits",
+      "OpenCode V1→V2 migration regressions pile up"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: 1 issue, 0 PRs, no releases",
+      "#3669: reference servers lack tool schema descriptions",
+      "Issue #3669 tagged v2, opened March 2026, 10 comments",
+      "No open PR yet addresses the schema description gap",
+      "Seven MCP ecosystem projects tracked, including Docker registry",
+      "Missing descriptions hurt LLM tool-call argument accuracy"
+    ],
+    "ai-infra": [
+      "Dify 1.19.0 ships nested workflow tracing",
+      "LiteLLM ships v1.108.0, v1.106.7 and v1.109.0-rc.1",
+      "Dify hotfix backport PR #45572 for 1.18.0-fix.6",
+      "Dify RAG bugs: corrupted vectors, regressions vs 1.18.0",
+      "LiteLLM bugs: dropped spend rows, empty cached streams",
+      "Only Dify and LiteLLM covered; vLLM, Ollama missing"
+    ],
+    "ai-trending": [
+      "vercel-labs/agent-desktop: Rust computer-use CLI, +2,463 today",
+      "NVIDIA/auto-ontology gains +2,053 with graph semantic layer",
+      "redhat-et/ripwire claims 74.7% fewer bytes for coding agents",
+      "max-sixty/worktrunk manages Git worktrees for parallel agents",
+      "cleanyourtv shows 51,805 stars; counts look inflated",
+      "dsh-our-free-model at 60,376 stars looks suspicious"
+    ],
+    "ai-web": [
+      "Anthropic unveils FlashProve for provable LLM inference",
+      "FlashProve lets users verify which model answered",
+      "Anthropic research from Frontier Red Team on inference proofs",
+      "OpenAI adds 5 index entries, only slugs available",
+      "OpenAI entries hint at GovCloud item and an acquisition",
+      "Sitemap totals: Anthropic 493, OpenAI 1109"
+    ],
+    "ai-hn": [
+      "Postman silent AI plugin installs hit 1410 points",
+      "Claude Code VS Code extension backdoor on Cursor: 1010 pts",
+      "OpenAI reportedly re-enables training on Codex chats",
+      "Gemini training on subscriber chat history angers users",
+      "Revolut moves to self-hosted coding models",
+      "$3.2T hidden AI debt and Fujifilm 5x tape boost"
+    ],
+    "ai-arxiv": [
+      "Training LLMs against their own beliefs induces misalignment",
+      "Suppressing misaligned behaviors durably across training",
+      "A Circuit for In-Context Learning explains label mapping",
+      "Looped transformers: KV-cache quantization and open pretraining",
+      "Speculative decoding used as a training signal",
+      "Skill-memory distillation targets long-horizon agent efficiency"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,122 likes, 8M+ downloads",
+      "Lightricks LTX-2.5 hits 10,569 likes for open video",
+      "DeepSeek-V4.1-Flash-1017 has 5,233 likes, five derivatives",
+      "Mistral-Large-4: 1T total, 52B active MoE",
+      "Nvidia Nemotron-3.5 Transcribe 30B-A4B brings MoE to speech",
+      "Liquid AI LFM3 1.7B text and 2B omni models trend"
+    ],
+    "ai-community": [
+      "Qwen weight editing curbs thinking loops without training",
+      "Claude Opus 5.5 rewrote 8 neurons of Gemma 4 12B",
+      "Rerunning a multi-agent experiment flipped half the conclusions",
+      "Qwen3.8 27B on RTX 5090: why vLLM didn't work",
+      "Simon Willison covers Qwen interpreting model weights",
+      "Dev.to and Lobste.rs: 35 articles and stories scanned"
+    ]
+  }
+}
