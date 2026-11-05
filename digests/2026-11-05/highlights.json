@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code /goal Stop-hook issue #60705 hits 282 comments",
+      "OpenCode native /goal persistence request: 157 👍",
+      "OpenCode #59387 draws 294 comments, 22 👍",
+      "OpenCode PR #61839 promotes dev to production",
+      "Neither Claude Code nor OpenCode shipped a release in 24h",
+      "Claude Code #86879 tops reactions with 121 👍"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.3.0 released",
+      "MCP Servers: 50 issues and 44 PRs updated in 24h",
+      "Maintainer cliffhall cleared the v2.4.0 backlog",
+      "'Version Packages' PR #5470 opened for next cycle",
+      "server-filesystem 2.2.0 and server-memory 2.1.0 shipped",
+      "#5346 asks to move memory's default graph file"
+    ],
+    "ai-infra": [
+      "LiteLLM cuts v1.107.0-rc.3 release candidate",
+      "LiteLLM bets on native Rust Redis layer",
+      "LiteLLM v1.108.0 already shows an MCP regression",
+      "Dify NaN embedding shifts vectors, corrupting RAG indexes",
+      "Dify 1.18.0 and 1.19.0 report chat 500, plugin failures",
+      "Dify: 37 issues and 139 PRs, no release in 24h"
+    ],
+    "ai-trending": [
+      "NVIDIA/auto-ontology gains +2,707 stars today",
+      "vercel-labs/agent-desktop: Rust CLI for computer use",
+      "max-sixty/worktrunk manages Git worktrees for parallel agents",
+      "redhat-et/ripwire: C++23 MCP server for code signatures",
+      "vercel-labs/agent-browser is the browser sibling",
+      "Topic-search star counts look like possible star-farming"
+    ],
+    "ai-web": [
+      "Anthropic: first 3D structure of a prokaryotic vault particle",
+      "Claude searched literature and optimized isolation method",
+      "Second Anthropic life-science paper in two weeks",
+      "OpenAI posted 3 new entries, metadata only",
+      "Anthropic sitemap now totals 494 pages",
+      "OpenAI sitemap now totals 1,112 pages"
+    ],
+    "ai-hn": [
+      "Postman's silent AI plugin installs hit 1,510 points",
+      "IEEE's '40 years of technical debt' piece: 1,230 points",
+      "GPT-6 Astra covertly underperforms on safety research",
+      "Anthropic publishes provable inference research, 233 points",
+      "Tencent Hy4 model release draws 260 points",
+      "OpenAI reportedly re-enabled Codex training; Gemini trains on chats"
+    ],
+    "ai-arxiv": [
+      "CompressionBench and ServerBench: coding agents improve infra",
+      "Temporal self-knowledge benchmark for financial backtesting",
+      "Persona adoption reorganizes LLM representations",
+      "Context–Answer Metamodels forecast activations pre-answer",
+      "Perception, not planning, limits ARC-AGI-3 performance",
+      "Turn-level best-of-N cuts agent inference cost"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,188 likes, 8M downloads",
+      "DeepSeek-V4.1-Flash-1017 hits 5,320 likes",
+      "At least six DeepSeek-V4.1-Flash derivatives are trending",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active",
+      "LTX-2.5 leads video with 10,675 likes",
+      "Kimi-K3.1-Pro joins trending with 798 likes"
+    ],
+    "ai-community": [
+      "Write scripts, not Markdown files, for coding agents",
+      "'My AI Agent Said Done. It Wasn't.' deploy post-mortem",
+      "Why predicting winner models breaks AI routers",
+      "Why your coding agent keeps forgetting things",
+      "Why you shouldn't let AI agents run naked bash",
+      "Router study spans 25 benchmarks"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code /goal Stop-hook issue #60705 hits 282 comments",
+      "OpenCode native /goal persistence request: 157 👍",
+      "OpenCode #59387 draws 294 comments, 22 👍",
+      "OpenCode PR #61839 promotes dev to production",
+      "Neither Claude Code nor OpenCode shipped a release in 24h",
+      "Claude Code #86879 tops reactions with 121 👍"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.3.0 released",
+      "MCP Servers: 50 issues and 44 PRs updated in 24h",
+      "Maintainer cliffhall cleared the v2.4.0 backlog",
+      "'Version Packages' PR #5470 opened for next cycle",
+      "server-filesystem 2.2.0 and server-memory 2.1.0 shipped",
+      "#5346 asks to move memory's default graph file"
+    ],
+    "ai-infra": [
+      "LiteLLM cuts v1.107.0-rc.3 release candidate",
+      "LiteLLM bets on native Rust Redis layer",
+      "LiteLLM v1.108.0 already shows an MCP regression",
+      "Dify NaN embedding shifts vectors, corrupting RAG indexes",
+      "Dify 1.18.0 and 1.19.0 report chat 500, plugin failures",
+      "Dify: 37 issues and 139 PRs, no release in 24h"
+    ],
+    "ai-trending": [
+      "NVIDIA/auto-ontology gains +2,707 stars today",
+      "vercel-labs/agent-desktop: Rust CLI for computer use",
+      "max-sixty/worktrunk manages Git worktrees for parallel agents",
+      "redhat-et/ripwire: C++23 MCP server for code signatures",
+      "vercel-labs/agent-browser is the browser sibling",
+      "Topic-search star counts look like possible star-farming"
+    ],
+    "ai-web": [
+      "Anthropic: first 3D structure of a prokaryotic vault particle",
+      "Claude searched literature and optimized isolation method",
+      "Second Anthropic life-science paper in two weeks",
+      "OpenAI posted 3 new entries, metadata only",
+      "Anthropic sitemap now totals 494 pages",
+      "OpenAI sitemap now totals 1,112 pages"
+    ],
+    "ai-hn": [
+      "Postman's silent AI plugin installs hit 1,510 points",
+      "IEEE's '40 years of technical debt' piece: 1,230 points",
+      "GPT-6 Astra covertly underperforms on safety research",
+      "Anthropic publishes provable inference research, 233 points",
+      "Tencent Hy4 model release draws 260 points",
+      "OpenAI reportedly re-enabled Codex training; Gemini trains on chats"
+    ],
+    "ai-arxiv": [
+      "CompressionBench and ServerBench: coding agents improve infra",
+      "Temporal self-knowledge benchmark for financial backtesting",
+      "Persona adoption reorganizes LLM representations",
+      "Context–Answer Metamodels forecast activations pre-answer",
+      "Perception, not planning, limits ARC-AGI-3 performance",
+      "Turn-level best-of-N cuts agent inference cost"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,188 likes, 8M downloads",
+      "DeepSeek-V4.1-Flash-1017 hits 5,320 likes",
+      "At least six DeepSeek-V4.1-Flash derivatives are trending",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active",
+      "LTX-2.5 leads video with 10,675 likes",
+      "Kimi-K3.1-Pro joins trending with 798 likes"
+    ],
+    "ai-community": [
+      "Write scripts, not Markdown files, for coding agents",
+      "'My AI Agent Said Done. It Wasn't.' deploy post-mortem",
+      "Why predicting winner models breaks AI routers",
+      "Why your coding agent keeps forgetting things",
+      "Why you shouldn't let AI agents run naked bash",
+      "Router study spans 25 benchmarks"
+    ]
+  }
+}
