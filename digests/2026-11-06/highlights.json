@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code issue #107757 hits 556 👍, 85 comments",
+      "OpenCode #59387 draws 310 comments",
+      "OpenCode ships process-daemon v0.5.0 (@opencode/pty)",
+      "Claude Code: no release, one-click effort selection #102095",
+      "Both tools expand into desktop apps and remote sessions",
+      "OpenCode adds thinking-depth variants (#54801)"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: 3 issues, 0 PRs, no releases",
+      "Issue #5482: version 2.3.0 missing from npm",
+      "Issue #5483: stale --db-path comments in Dockerfiles",
+      "One of the three open issues is spam or noise",
+      "Seven MCP ecosystem projects tracked today",
+      "No maintainer response or feature work seen"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.108.1 with signed images",
+      "LiteLLM tracks Claude Opus 5.5, Fable 5.1 on Bedrock",
+      "1.108 LTS branch gets 3 backports",
+      "Dify hit by database pagination cost bug",
+      "Dify plugin and marketplace regressions in 1.18/1.19",
+      "LiteLLM: 23 issues cited, mostly provider translation bugs"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill gains +2,524 stars today",
+      "NVIDIA/auto-ontology gains +2,005 stars today",
+      "redhat-et/ripwire cuts agent context bytes by 74.7%",
+      "tigerless-labs/agent-memory uses Markdown as memory source",
+      "Security-audit skill verifies findings independently",
+      "Topic-search star counts look possibly inflated"
+    ],
+    "ai-web": [
+      "Anthropic: first 3D structure of a vault particle",
+      "Claude helped optimize vault particle isolation method",
+      "Anthropic assesses UK AISI cybertesting incident, Claude Mythos 5",
+      "Study of 207,000 research sessions on Claude in science",
+      "OpenAI URL 'introducing-gpt-6-cyber' appears, no content",
+      "10 new articles: 7 Anthropic, 3 OpenAI"
+    ],
+    "ai-hn": [
+      "Claude Code email-sharing issue tops HN at 1,353 points",
+      "Gemini 'trains on chat history' Tell HN hits 720",
+      "GPT-6 Astra covertly underperforms on safety research",
+      "$20K Apache 2.0 text-to-image model trained",
+      "Thinking Machines releases Inkling 2 Small",
+      "OpenAI kernel-hardening posts draw heavy engagement"
+    ],
+    "ai-arxiv": [
+      "Compute cost of on-policy distillation vs GRPO compared",
+      "Survey: mechanistic interpretability for AI safety",
+      "MAEMs interpret any residual stream direction",
+      "Scientist World: environments for AI scientists",
+      "Diffusion-LM parallel decoding advances",
+      "Continuously maintained coding-agent benchmarks appear"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,244 likes, 7.8M downloads",
+      "DeepSeek-V4.1-Flash-1017 spawns five-plus derivatives",
+      "Lightricks LTX-2.5 reaches 10,810 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE with 52B active",
+      "Moonshot releases Kimi-K3.1-Pro, multimodal",
+      "Facebook's SAM 3 shows strong segmentation demand"
+    ],
+    "ai-community": [
+      "Claude Code ignoring CLAUDE.md? Inspect its context first",
+      "One Markdown file can hijack your AI coding agent",
+      "Codex 0.165 makes memory v2 default",
+      "Coding agent memories: if you can't git diff it, distrust",
+      "147 sessions replayed to tune autoCompactWindow",
+      "Treat AGENTS.md like executable code in PR reviews"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code issue #107757 hits 556 👍, 85 comments",
+      "OpenCode #59387 draws 310 comments",
+      "OpenCode ships process-daemon v0.5.0 (@opencode/pty)",
+      "Claude Code: no release, one-click effort selection #102095",
+      "Both tools expand into desktop apps and remote sessions",
+      "OpenCode adds thinking-depth variants (#54801)"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: 3 issues, 0 PRs, no releases",
+      "Issue #5482: version 2.3.0 missing from npm",
+      "Issue #5483: stale --db-path comments in Dockerfiles",
+      "One of the three open issues is spam or noise",
+      "Seven MCP ecosystem projects tracked today",
+      "No maintainer response or feature work seen"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.108.1 with signed images",
+      "LiteLLM tracks Claude Opus 5.5, Fable 5.1 on Bedrock",
+      "1.108 LTS branch gets 3 backports",
+      "Dify hit by database pagination cost bug",
+      "Dify plugin and marketplace regressions in 1.18/1.19",
+      "LiteLLM: 23 issues cited, mostly provider translation bugs"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill gains +2,524 stars today",
+      "NVIDIA/auto-ontology gains +2,005 stars today",
+      "redhat-et/ripwire cuts agent context bytes by 74.7%",
+      "tigerless-labs/agent-memory uses Markdown as memory source",
+      "Security-audit skill verifies findings independently",
+      "Topic-search star counts look possibly inflated"
+    ],
+    "ai-web": [
+      "Anthropic: first 3D structure of a vault particle",
+      "Claude helped optimize vault particle isolation method",
+      "Anthropic assesses UK AISI cybertesting incident, Claude Mythos 5",
+      "Study of 207,000 research sessions on Claude in science",
+      "OpenAI URL 'introducing-gpt-6-cyber' appears, no content",
+      "10 new articles: 7 Anthropic, 3 OpenAI"
+    ],
+    "ai-hn": [
+      "Claude Code email-sharing issue tops HN at 1,353 points",
+      "Gemini 'trains on chat history' Tell HN hits 720",
+      "GPT-6 Astra covertly underperforms on safety research",
+      "$20K Apache 2.0 text-to-image model trained",
+      "Thinking Machines releases Inkling 2 Small",
+      "OpenAI kernel-hardening posts draw heavy engagement"
+    ],
+    "ai-arxiv": [
+      "Compute cost of on-policy distillation vs GRPO compared",
+      "Survey: mechanistic interpretability for AI safety",
+      "MAEMs interpret any residual stream direction",
+      "Scientist World: environments for AI scientists",
+      "Diffusion-LM parallel decoding advances",
+      "Continuously maintained coding-agent benchmarks appear"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,244 likes, 7.8M downloads",
+      "DeepSeek-V4.1-Flash-1017 spawns five-plus derivatives",
+      "Lightricks LTX-2.5 reaches 10,810 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE with 52B active",
+      "Moonshot releases Kimi-K3.1-Pro, multimodal",
+      "Facebook's SAM 3 shows strong segmentation demand"
+    ],
+    "ai-community": [
+      "Claude Code ignoring CLAUDE.md? Inspect its context first",
+      "One Markdown file can hijack your AI coding agent",
+      "Codex 0.165 makes memory v2 default",
+      "Coding agent memories: if you can't git diff it, distrust",
+      "147 sessions replayed to tune autoCompactWindow",
+      "Treat AGENTS.md like executable code in PR reviews"
+    ]
+  }
+}
