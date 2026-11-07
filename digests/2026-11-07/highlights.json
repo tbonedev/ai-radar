@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code privacy issue #107757 hits 715 👍",
+      "Claude Code v2.1.319 changes auto-mode behavior",
+      "OpenCode v2.2.6 adds shared MCP connections",
+      "OpenCode v2.2.6 brings GUI plugin themes",
+      "Windows path bugs hit both Claude Code and OpenCode",
+      "OpenCode issue #59387 draws 320 comments"
+    ],
+    "ai-agents": [
+      "MCP Servers saw only 3 issues and 1 PR today",
+      "PR #3175 registers 7 reference servers in MCP Registry",
+      "PR #3175 has been open for about 10 months",
+      "Memory server bug: stale lock file cleanup (#5483)",
+      "Docker documentation fixes among today's updates",
+      "Third-party skills listing request filed"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.110.0-dev.1 pre-release",
+      "LiteLLM LTS patch v1.108.2 released",
+      "Dify 1.19.0 regression (#45753) open with no fix PR",
+      "LiteLLM backporting fixes onto lts/1.108.x",
+      "Budget and spend accounting bugs recur across both",
+      "Dify had no release in the last 24h"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill jumps +2,088 stars today",
+      "redhat-et/ripwire: C++23 MCP server for code lookup",
+      "ripwire claims 74.7% fewer bytes than bodies",
+      "billion-context claims 5x fewer tokens for long sessions",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "Some trending repos show odd star counts; treat as unverified"
+    ],
+    "ai-web": [
+      "Anthropic's 'dreaming' agent memory write-up",
+      "Anthropic studies 207,000 Claude research sessions by field",
+      "Anthropic guest post on AI-built scientific models",
+      "Claude agent plays EVE Online in long-horizon test",
+      "OpenAI publishes on wet lab science and AI agents",
+      "Anthropic put out four research pieces in two days"
+    ],
+    "ai-hn": [
+      "Claude Code privacy complaint tops HN at 1,578 points",
+      "Gemini Omni 1.2 Flash launches (348 points)",
+      "Thinking Machines releases Inkling 2 Small",
+      "Cheap model escalating to Opus cuts cost 4x",
+      "Firecracker VM escape draws attention",
+      "Anthropic IPO valuation and S-1 chatter dominate"
+    ],
+    "ai-arxiv": [
+      "Compute efficiency of on-policy distillation vs GRPO",
+      "LoRA spectral dynamics in SFT versus RL",
+      "Mechanistic interpretability survey for AI safety",
+      "Terminal-Bench: a benchmark that evolves over time",
+      "ReproBridge: reproducibility scaffolding for coding agents",
+      "XStack: a migration benchmark for agents"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,314 likes, 7.8M downloads",
+      "LTX-2.5 tops video generation with 10,924 likes",
+      "DeepSeek-V4.1-Flash-1017 spawns many community quants",
+      "Mistral-Large-4-1T-A52B: 1T MoE with 52B active",
+      "Moonshot releases Kimi-K3.1-Pro",
+      "LiquidAI LFM3-1.7B draws 70K downloads"
+    ],
+    "ai-community": [
+      "Optimizing agent environment cuts 70% more cost",
+      "Claude Code diff verification via post-edit hooks",
+      "Developer logs every rule their AI agent broke",
+      "Strands agent forgets mid-conversation despite saved session",
+      "Dev.to (30 articles) and Lobste.rs (5 stories) covered",
+      "Self-validating agent workflows you can add tomorrow"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code privacy issue #107757 hits 715 👍",
+      "Claude Code v2.1.319 changes auto-mode behavior",
+      "OpenCode v2.2.6 adds shared MCP connections",
+      "OpenCode v2.2.6 brings GUI plugin themes",
+      "Windows path bugs hit both Claude Code and OpenCode",
+      "OpenCode issue #59387 draws 320 comments"
+    ],
+    "ai-agents": [
+      "MCP Servers saw only 3 issues and 1 PR today",
+      "PR #3175 registers 7 reference servers in MCP Registry",
+      "PR #3175 has been open for about 10 months",
+      "Memory server bug: stale lock file cleanup (#5483)",
+      "Docker documentation fixes among today's updates",
+      "Third-party skills listing request filed"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.110.0-dev.1 pre-release",
+      "LiteLLM LTS patch v1.108.2 released",
+      "Dify 1.19.0 regression (#45753) open with no fix PR",
+      "LiteLLM backporting fixes onto lts/1.108.x",
+      "Budget and spend accounting bugs recur across both",
+      "Dify had no release in the last 24h"
+    ],
+    "ai-trending": [
+      "cloudflare/security-audit-skill jumps +2,088 stars today",
+      "redhat-et/ripwire: C++23 MCP server for code lookup",
+      "ripwire claims 74.7% fewer bytes than bodies",
+      "billion-context claims 5x fewer tokens for long sessions",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "Some trending repos show odd star counts; treat as unverified"
+    ],
+    "ai-web": [
+      "Anthropic's 'dreaming' agent memory write-up",
+      "Anthropic studies 207,000 Claude research sessions by field",
+      "Anthropic guest post on AI-built scientific models",
+      "Claude agent plays EVE Online in long-horizon test",
+      "OpenAI publishes on wet lab science and AI agents",
+      "Anthropic put out four research pieces in two days"
+    ],
+    "ai-hn": [
+      "Claude Code privacy complaint tops HN at 1,578 points",
+      "Gemini Omni 1.2 Flash launches (348 points)",
+      "Thinking Machines releases Inkling 2 Small",
+      "Cheap model escalating to Opus cuts cost 4x",
+      "Firecracker VM escape draws attention",
+      "Anthropic IPO valuation and S-1 chatter dominate"
+    ],
+    "ai-arxiv": [
+      "Compute efficiency of on-policy distillation vs GRPO",
+      "LoRA spectral dynamics in SFT versus RL",
+      "Mechanistic interpretability survey for AI safety",
+      "Terminal-Bench: a benchmark that evolves over time",
+      "ReproBridge: reproducibility scaffolding for coding agents",
+      "XStack: a migration benchmark for agents"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,314 likes, 7.8M downloads",
+      "LTX-2.5 tops video generation with 10,924 likes",
+      "DeepSeek-V4.1-Flash-1017 spawns many community quants",
+      "Mistral-Large-4-1T-A52B: 1T MoE with 52B active",
+      "Moonshot releases Kimi-K3.1-Pro",
+      "LiquidAI LFM3-1.7B draws 70K downloads"
+    ],
+    "ai-community": [
+      "Optimizing agent environment cuts 70% more cost",
+      "Claude Code diff verification via post-edit hooks",
+      "Developer logs every rule their AI agent broke",
+      "Strands agent forgets mid-conversation despite saved session",
+      "Dev.to (30 articles) and Lobste.rs (5 stories) covered",
+      "Self-validating agent workflows you can add tomorrow"
+    ]
+  }
+}
