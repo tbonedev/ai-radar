@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code leaks user emails to websites: 1596 HN pts",
+      "Claude Code #107757 tops issues: 738 👍, 108 comments",
+      "Visual Studio 2026 support requested, #15942 has 488 👍",
+      "OpenCode #59387 hits 328 comments over V2 migration",
+      "OpenCode official VS Code extension (#11176) has 164 👍",
+      "OpenCode wants Claude Code hooks compatibility (#12472)"
+    ],
+    "ai-agents": [
+      "Awesome MCP Servers gets 123 PRs, review is bottleneck",
+      "Docker MCP Registry sees 50 PRs in 24h",
+      "MCP Registry: 3 issues, 4 PRs, maintainer infra work",
+      "Trust and verification is the theme: Verified orgs, fingerprinting",
+      "Remote hosted MCP servers are replacing local containers",
+      "No project shipped a release; MCP Servers core quiet"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.108.3 LTS patch and v1.110.0-dev.2",
+      "Dify 1.19.0 has open HITL regression (#45753)",
+      "Dify fixing Agent V2 and Human Input bugs",
+      "LiteLLM closed 16 of ~23 cited issues",
+      "LiteLLM fixes Anthropic /v1/messages translation bugs",
+      "Dify fix PRs mostly from one contributor, severus0044"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: MCP server claims 74.7% fewer bytes",
+      "billion-context plugin: ~5x fewer tokens, +460 today",
+      "tigerless-labs/agent-memory: shared Markdown memory store",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "vshulcz/deja-vu claims memory across 43 agents",
+      "Star totals look unreliable; trust 'today' figures"
+    ],
+    "ai-web": [
+      "Anthropic: 'Teaching AI to build scientific models'",
+      "Guest post by ELLIS Institute Tübingen researchers",
+      "Uses 1951 Hodgkin–Huxley hand-calculation as framing",
+      "Proposes a three-step program for AI scientific modeling",
+      "OpenAI published no new content today",
+      "Anthropic sitemap total reaches 495; OpenAI at 1116"
+    ],
+    "ai-hn": [
+      "Claude Code emailing users' addresses to sites: 1596 pts",
+      "Claude Code 'Don't Ask Again' leaks secrets to public repos",
+      "'Goodbye Claude, Hello Pi' tool-switching post",
+      "Anthropic IPO valuation debate hits 620 comments",
+      "Gemini Omni 1.2 Flash launches: 365 pts, 252 comments",
+      "'AI is dramatically accelerating AI research': 349 comments"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B: 19,375 likes, 7.67M downloads",
+      "LTX-2.5 video model: 11,068 likes, 2.66M downloads",
+      "DeepSeek-V4.1-Flash-1017 drew 5,407 likes",
+      "Moonshot's Kimi-K3.1-Pro tops 1,691 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active",
+      "MiniMax-H3 ecosystem forms: Pika-H3-Flex, P-H3"
+    ],
+    "ai-community": [
+      "Agent said 'deployed' but containers were a day old",
+      "Correct timestamp in prompt, agent still ignored it",
+      "Penalty prompts yielded 0% abstention across Gemma models",
+      "Ten reproducible Ollama experiments on Gemma 2, 3, 4",
+      "Verify agent output against the running system",
+      "Build abstention paths into architecture, not prompts"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code leaks user emails to websites: 1596 HN pts",
+      "Claude Code #107757 tops issues: 738 👍, 108 comments",
+      "Visual Studio 2026 support requested, #15942 has 488 👍",
+      "OpenCode #59387 hits 328 comments over V2 migration",
+      "OpenCode official VS Code extension (#11176) has 164 👍",
+      "OpenCode wants Claude Code hooks compatibility (#12472)"
+    ],
+    "ai-agents": [
+      "Awesome MCP Servers gets 123 PRs, review is bottleneck",
+      "Docker MCP Registry sees 50 PRs in 24h",
+      "MCP Registry: 3 issues, 4 PRs, maintainer infra work",
+      "Trust and verification is the theme: Verified orgs, fingerprinting",
+      "Remote hosted MCP servers are replacing local containers",
+      "No project shipped a release; MCP Servers core quiet"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.108.3 LTS patch and v1.110.0-dev.2",
+      "Dify 1.19.0 has open HITL regression (#45753)",
+      "Dify fixing Agent V2 and Human Input bugs",
+      "LiteLLM closed 16 of ~23 cited issues",
+      "LiteLLM fixes Anthropic /v1/messages translation bugs",
+      "Dify fix PRs mostly from one contributor, severus0044"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: MCP server claims 74.7% fewer bytes",
+      "billion-context plugin: ~5x fewer tokens, +460 today",
+      "tigerless-labs/agent-memory: shared Markdown memory store",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "vshulcz/deja-vu claims memory across 43 agents",
+      "Star totals look unreliable; trust 'today' figures"
+    ],
+    "ai-web": [
+      "Anthropic: 'Teaching AI to build scientific models'",
+      "Guest post by ELLIS Institute Tübingen researchers",
+      "Uses 1951 Hodgkin–Huxley hand-calculation as framing",
+      "Proposes a three-step program for AI scientific modeling",
+      "OpenAI published no new content today",
+      "Anthropic sitemap total reaches 495; OpenAI at 1116"
+    ],
+    "ai-hn": [
+      "Claude Code emailing users' addresses to sites: 1596 pts",
+      "Claude Code 'Don't Ask Again' leaks secrets to public repos",
+      "'Goodbye Claude, Hello Pi' tool-switching post",
+      "Anthropic IPO valuation debate hits 620 comments",
+      "Gemini Omni 1.2 Flash launches: 365 pts, 252 comments",
+      "'AI is dramatically accelerating AI research': 349 comments"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B: 19,375 likes, 7.67M downloads",
+      "LTX-2.5 video model: 11,068 likes, 2.66M downloads",
+      "DeepSeek-V4.1-Flash-1017 drew 5,407 likes",
+      "Moonshot's Kimi-K3.1-Pro tops 1,691 likes",
+      "Mistral-Large-4-1T-A52B: 1T MoE, 52B active",
+      "MiniMax-H3 ecosystem forms: Pika-H3-Flex, P-H3"
+    ],
+    "ai-community": [
+      "Agent said 'deployed' but containers were a day old",
+      "Correct timestamp in prompt, agent still ignored it",
+      "Penalty prompts yielded 0% abstention across Gemma models",
+      "Ten reproducible Ollama experiments on Gemma 2, 3, 4",
+      "Verify agent output against the running system",
+      "Build abstention paths into architecture, not prompts"
+    ]
+  }
+}
