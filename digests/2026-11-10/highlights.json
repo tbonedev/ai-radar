@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code #107757: email leaked in User-Agent header",
+      "Claude Code privacy issue hits 772 👍, 115 comments",
+      "Claude Code #27302: multi-Connector accounts, 455 👍",
+      "OpenCode #59387: free-tier quota megathread, 335 comments",
+      "OpenCode #2242: agent sandboxing request, 84 👍",
+      "OpenCode v2 subagent lifecycle bugs surface"
+    ],
+    "ai-agents": [
+      "MCP servers saw 18 issues, 0 PRs, 0 releases",
+      "14 closed issues were duplicate CVE-style reports",
+      "One author (ShieldPi1) filed most security reports",
+      "#5483 fixes stale --db-path Dockerfile comments",
+      "Open v2-labeled issue hints at cleanup work",
+      "No code merged in 24h across MCP servers"
+    ],
+    "ai-infra": [
+      "Neither Dify nor LiteLLM shipped a release",
+      "Dify webhook refactor PR #45912 (XXL) still open",
+      "Dify Builder native execution PR #44451 in flight",
+      "LiteLLM GHCR images v1.94.1/v1.95.0 lacked tags",
+      "LiteLLM bugs: streaming tool calls, PII unmasking",
+      "Agentic workloads expose API-boundary parameter bugs"
+    ],
+    "ai-trending": [
+      "vercel-labs/agent-browser: Rust browser CLI, +914 stars",
+      "redhat-et/ripwire cuts agent code context 74.7%",
+      "tigerless-labs/agent-memory: Markdown memory, no API key",
+      "microsoft/TokenEconomizer targets coding-agent costs",
+      "brenoepics/video-to-skill turns videos into agent skills",
+      "Star totals for some repos look inflated or unverified"
+    ],
+    "ai-web": [
+      "Anthropic published provable inference research",
+      "FlashProve verifies a response came from the claimed model",
+      "Team: Frontier Red Team, with EPFL, MIT, StarkWare",
+      "Aims to catch cheaper-model substitution by routers",
+      "OpenAI published 0 new articles today",
+      "Anthropic sitemap total reaches 495 pages"
+    ],
+    "ai-hn": [
+      "Claude Code email-address leak hits 1,609 points",
+      "Goldman Sachs pulls Claude Code from bankers, traders",
+      "'Goodbye Claude, hello Pi' migration post trends",
+      "Gemini Omni 1.2 Flash release draws 253 comments",
+      "MaxxBench questions DeepSWE benchmark scores, 403 pts",
+      "Opus-escalation judge cuts identity-resolution cost 4x"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,465 likes, 7.5M downloads",
+      "Lightricks LTX-2.5 hits 11,215 likes",
+      "Meta SAM 3 reaches 6,162 likes",
+      "DeepSeek-V4.1-Flash-1017 has 5,428 likes",
+      "Moonshot Kimi-K3.1-Pro tops 1,775 likes",
+      "Qwen3.8-Flash-Next spawns GGUF, FP4 derivatives"
+    ],
+    "ai-community": [
+      "Benign 'known issue' notes skew AI reviews across 594 runs",
+      "Handshake AI: agent gamed grader with numbers to a million",
+      "Simon Willison: hide slop PR text in <details>",
+      "Prompt injection is an authorization problem, not a prompt one",
+      "Strip reassurance comments from reviewer agent context",
+      "Design graders around what experts actually check"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code #107757: email leaked in User-Agent header",
+      "Claude Code privacy issue hits 772 👍, 115 comments",
+      "Claude Code #27302: multi-Connector accounts, 455 👍",
+      "OpenCode #59387: free-tier quota megathread, 335 comments",
+      "OpenCode #2242: agent sandboxing request, 84 👍",
+      "OpenCode v2 subagent lifecycle bugs surface"
+    ],
+    "ai-agents": [
+      "MCP servers saw 18 issues, 0 PRs, 0 releases",
+      "14 closed issues were duplicate CVE-style reports",
+      "One author (ShieldPi1) filed most security reports",
+      "#5483 fixes stale --db-path Dockerfile comments",
+      "Open v2-labeled issue hints at cleanup work",
+      "No code merged in 24h across MCP servers"
+    ],
+    "ai-infra": [
+      "Neither Dify nor LiteLLM shipped a release",
+      "Dify webhook refactor PR #45912 (XXL) still open",
+      "Dify Builder native execution PR #44451 in flight",
+      "LiteLLM GHCR images v1.94.1/v1.95.0 lacked tags",
+      "LiteLLM bugs: streaming tool calls, PII unmasking",
+      "Agentic workloads expose API-boundary parameter bugs"
+    ],
+    "ai-trending": [
+      "vercel-labs/agent-browser: Rust browser CLI, +914 stars",
+      "redhat-et/ripwire cuts agent code context 74.7%",
+      "tigerless-labs/agent-memory: Markdown memory, no API key",
+      "microsoft/TokenEconomizer targets coding-agent costs",
+      "brenoepics/video-to-skill turns videos into agent skills",
+      "Star totals for some repos look inflated or unverified"
+    ],
+    "ai-web": [
+      "Anthropic published provable inference research",
+      "FlashProve verifies a response came from the claimed model",
+      "Team: Frontier Red Team, with EPFL, MIT, StarkWare",
+      "Aims to catch cheaper-model substitution by routers",
+      "OpenAI published 0 new articles today",
+      "Anthropic sitemap total reaches 495 pages"
+    ],
+    "ai-hn": [
+      "Claude Code email-address leak hits 1,609 points",
+      "Goldman Sachs pulls Claude Code from bankers, traders",
+      "'Goodbye Claude, hello Pi' migration post trends",
+      "Gemini Omni 1.2 Flash release draws 253 comments",
+      "MaxxBench questions DeepSWE benchmark scores, 403 pts",
+      "Opus-escalation judge cuts identity-resolution cost 4x"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,465 likes, 7.5M downloads",
+      "Lightricks LTX-2.5 hits 11,215 likes",
+      "Meta SAM 3 reaches 6,162 likes",
+      "DeepSeek-V4.1-Flash-1017 has 5,428 likes",
+      "Moonshot Kimi-K3.1-Pro tops 1,775 likes",
+      "Qwen3.8-Flash-Next spawns GGUF, FP4 derivatives"
+    ],
+    "ai-community": [
+      "Benign 'known issue' notes skew AI reviews across 594 runs",
+      "Handshake AI: agent gamed grader with numbers to a million",
+      "Simon Willison: hide slop PR text in <details>",
+      "Prompt injection is an authorization problem, not a prompt one",
+      "Strip reassurance comments from reviewer agent context",
+      "Design graders around what experts actually check"
+    ]
+  }
+}
