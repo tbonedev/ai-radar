@@ -1,23 +1,20 @@
 # AI Open Source Trends 2026-11-10
 
-> Sources: GitHub Trending + GitHub Search API | Generated: 2026-11-09 17:05 UTC
+> Sources: GitHub Trending + GitHub Search API | Generated: 2026-11-10 15:23 UTC
 
 ---
 
-# AI Open Source Trends Report: 2026-11-10
-
-Two caveats about the data:
-- The trending list reports total stars as 0 (missing), so I show "n/a" for those totals.
-- Several topic-search repos show very large star counts for projects that look new, such as a TV debloater at 55,293 and a plugin at 67,250. Treat those totals as unverified, because they may reflect star inflation or a data quirk.
+# AI Open Source Trends Report — 2026-11-10
 
 ## 1. Finds
 
-- **[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)**: A Rust CLI that lets an AI agent drive a browser through shell commands. It suits anyone whose agent harness needs web automation without wiring up a full Playwright or MCP stack. It gained +914 stars today.
-- **[redhat-et/ripwire](https://github.com/redhat-et/ripwire)**: A zero-dependency C++23 CLI and MCP server that gives coding agents function signatures instead of full bodies. It also reports blast radius and which tests to run after a change. The 74.7% byte reduction is the author's own claim, but the approach is concrete. It's worth a look if you pay for tokens on large repos.
-- **[tigerless-labs/agent-memory](https://github.com/tigerless-labs/agent-memory)**: A long-term memory runtime that uses plain Markdown as the source of truth, with local ranked retrieval and no API key. Claude Code and Codex share one store. It's useful if you switch between agents and are tired of re-explaining your project.
-- **[microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer)**: A "black-box" cost-control approach for coding agents that learns from past experience. It's aimed at teams whose agent bills are growing. The README summary is thin, so check for benchmarks before adopting it.
-- **[brenoepics/video-to-skill](https://github.com/brenoepics/video-to-skill)**: A Rust tool that turns a tutorial video into an installable agent skill by reading the screen rather than the transcript. It runs locally under MIT. It's useful for capturing GUI-only workflows, but it has only 145 stars and the output quality is unproven.
-- **[migsilva89/loadout](https://github.com/migsilva89/loadout)**: A Swift app that shows which skills, commands, subagents, plugins and MCP servers your coding assistants load, along with real usage. It helps if your agent setup has sprawled and you can't tell what is actually used.
+- **[redhat-et/ripwire](https://github.com/redhat-et/ripwire)** is a zero-dependency C++23 CLI and MCP server that gives coding agents function signatures instead of full bodies, which it says uses 74.7% fewer bytes. It also reports blast radius and tests-to-run after a change. It suits anyone paying for tokens on large repos, and it comes from a credible Red Hat team. The "every guess labelled" claim is worth testing.
+- **[vshulcz/deja-vu](https://github.com/vshulcz/deja-vu)** is a single Go binary that keeps sessions from 43 coding agents on local disk. It supports shared memory and cross-agent handoff, for example moving from Claude Code to Codex mid-task. It suits people who switch between agents and lose context.
+- **[ranxianglei/billion-context](https://github.com/ranxianglei/billion-context)** (+374 today) is a context-compression plugin for month-long sessions. It claims about 5x fewer tokens and says a 100K window is enough. It suits long-running agent users, but the claims are unverified, so benchmark them before trusting them.
+- **[drumih/turbo-fieldfare](https://github.com/drumih/turbo-fieldfare)** runs Gemma 4 26B-A4B in about 2 GB of RAM on M-series MacBooks, presumably by streaming MoE experts. It suits on-device inference tinkerers. Check the quality and speed trade-offs.
+- **[microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer)** does experience-driven, black-box cost control for coding agents. It suits teams with large agent bills who want savings without changing the model.
+- **[yetone/magpie](https://github.com/yetone/magpie)** is a menu-bar app that routes any agent to any model, such as Codex on DeepSeek or Claude Code on Kimi. It suits people who want a single model switchboard for several CLIs.
+- **Caution:** several topic-search entries look inflated or astroturfed. Examples are `Gathin23/cleanyourtv` with 55K stars for a TV debloater, and `Ebony-Vinyl/dsh-our-free-model` with 68K stars. Their repo ages are unknown, so treat the star counts as unreliable.
 
 ## 2. Top Projects by Category
 
@@ -25,79 +22,74 @@ Two caveats about the data:
 
 | Project | Lang | Stars (total / today) | Summary |
 | :--- | :--- | ---: | :--- |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Rust | n/a (+914) | Browser automation CLI built for AI agents. A strong momentum signal, since agent tooling is moving to simple shell-callable interfaces. |
-| [redhat-et/ripwire](https://github.com/redhat-et/ripwire) | C++ | 2,533 | CLI and MCP server that gives coding agents compact code signatures and change-impact checks. It claims 74.7% fewer bytes than sending full bodies. |
-| [microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | Python | 5,470 | Experience-driven cost control for coding agents. It addresses the growing cost of agent token spend. |
-| [yetone/magpie](https://github.com/yetone/magpie) | Go | 33,030 | A menu-bar tool that routes any agent to any model, for example Codex on DeepSeek or Claude Code on Kimi. It reflects demand for decoupling harnesses from model vendors. |
-| [migsilva89/loadout](https://github.com/migsilva89/loadout) | Swift | 104 | Inspector for the skills, MCP servers and plugins your coding assistants load, with usage data. It's small but fills an observability gap. |
-| [anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) | Python | n/a (+560) | Official starter projects for building deployable apps on the Claude API. Useful as reference code, though not new. |
-| [duty1g/x64dbg-mcp-server](https://github.com/duty1g/x64dbg-mcp-server) | Zig | 2,810 | Native MCP plugin that exposes the x64dbg debugger to AI assistants for breakpoints, memory reads and stepping. It's a niche but practical tool for reverse engineers. |
+| [redhat-et/ripwire](https://github.com/redhat-et/ripwire) | C++ | 2,536 | A CLI and MCP server that gives agents code signatures and impact analysis instead of whole files. It cuts context cost and comes from Red Hat. |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Rust | 0 (+775) | A browser automation CLI built for AI agents. It gained 775 stars today, which shows demand for agent-native tooling. |
+| [microsoft/TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | Python | 5,607 | Cuts coding-agent spend without touching the model. It is a practical answer to rising agent bills. |
+| [aoci-spec/aoci-code](https://github.com/aoci-spec/aoci-code) | Go | 1,893 | A Git-versioned codebase and schema map that agents read before editing, served through a local MCP server. It targets long-term code memory. |
+| [yetone/magpie](https://github.com/yetone/magpie) | Go | 33,766 | Menu-bar routing of any agent harness to any model. It is useful for mixing CLIs and providers. |
+| [kajisho5/ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | Python | 4,949 | Gives agents 42 local FFmpeg tools through an MCP server, with no cloud or API keys. It is a clean pattern for wrapping a mature CLI. |
 
 ### 🤖 AI Agents / Workflows
 
 | Project | Lang | Stars (total / today) | Summary |
 | :--- | :--- | ---: | :--- |
-| [milind-soni/OpenMausBot](https://github.com/milind-soni/OpenMausBot) | TypeScript | 19,449 (+1,589) | Open-source "Grok Bot" alternative that gives bots a virtual machine to use. It is the biggest mover in a visible cluster of similar clones. |
-| [modelflare-ai/AnyModelBot](https://github.com/modelflare-ai/AnyModelBot) | Python | 2,742 | Another Grok Bot alternative, with 70+ models behind one paid key, reachable through WeChat and Feishu. It looks commercial, so read the pay-per-use model first. |
-| [elie222/rakazo](https://github.com/elie222/rakazo) | TypeScript | 7,669 | Open-source Grok Bot alternative with your own choice of model and sandbox. It is a third entry in the same clone wave. |
-| [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | TypeScript | 10,552 | AI coworkers that each get their own computer, with every action decided before it happens and recorded after. It works with any AG-UI agent. |
-| [garrytan/gbrain](https://github.com/garrytan/gbrain) | TypeScript | n/a (+215) | An opinionated "brain" for OpenClaw/Hermes agents. Interesting mostly as one prominent builder's personal setup. |
-| [kirodotdev/KiroCrew](https://github.com/kirodotdev/KiroCrew) | Python | 4,857 | A persistent dev workspace that improves itself and continues beyond one session. |
-| [KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop) | TypeScript | 4,264 | Lets CLI agents pick up work in the background and only pings you with a card when a decision is needed. A good fit for async, human-in-the-loop work. |
-| [onehumanbeing/esp32-iphone-agent](https://github.com/onehumanbeing/esp32-iphone-agent) | Swift | 4,748 | Controls a real iPhone with a $7 ESP32, using AirPlay for sight and USB HID for input. It needs no jailbreak or Mac, and any OpenAI-compatible vision model works. |
+| [anthropics/skills](https://github.com/anthropics/skills) | Python | 0 (+1,676) | The official Agent Skills repository. It is well known, but its +1,676 today shows the skills format is still gaining adoption. |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | Shell | 0 (+1,223) | A personal `.agents` skills collection aimed at working engineers. It gained 1,223 stars today. |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | JavaScript | 0 (+465) | Production-grade engineering skills for coding agents. It is a curated, opinionated set. |
+| [vshulcz/deja-vu](https://github.com/vshulcz/deja-vu) | Go | 1,488 | Shared local memory and handoff across 43 coding agents. It addresses agent lock-in. |
+| [reason-machines/reason-network](https://github.com/reason-machines/reason-network) | Rust | 1,713 | Lets a team's coding agents talk to each other. It is an early multi-agent coordination layer. |
+| [KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop) | TypeScript | 4,404 | Lets CLI agents pick up and follow tasks in the background. It sends a decision card only when it is unsure. |
+| [autonomous-ai/openharness](https://github.com/autonomous-ai/openharness) | TypeScript | 1,472 | A command center for agents across machines. Its scope is broad, so it needs verification. |
 
 ### 📦 AI Applications
 
 | Project | Lang | Stars (total / today) | Summary |
 | :--- | :--- | ---: | :--- |
-| [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | Python | n/a (+505) | LLM-driven multi-market stock analysis with news, a decision dashboard and scheduled push alerts. It can run on free tiers. |
-| [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | Python | n/a (+31) | MCP server that lets Claude, ChatGPT and other assistants configure and automate Home Assistant. Small today, but useful for smart-home users. |
-| [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) | TypeScript | 12,018 | Free AI office suite with a CLI and skill so coding agents can create real .docx, .xlsx and .pptx files locally. |
-| [0xsline/OpenChatCut](https://github.com/0xsline/OpenChatCut) | TypeScript | 3,020 | Local-first conversational video editor with a multi-track timeline, MCP integration and Remotion rendering. |
-| [tangency-labs/solidcraft](https://github.com/tangency-labs/solidcraft) | Rust | 15,227 | Parametric 3D CAD application in pure Rust, scriptable through MCP. |
-| [ZJU-REAL/Easel](https://github.com/ZJU-REAL/Easel) | Python | 4,537 | Social-media agent covering Xiaohongshu, Douyin, Zhihu and Bilibili. It handles trend discovery, content creation, publishing and feedback learning. |
-| [ruvnet/RuView](https://github.com/ruvnet/RuView) | Rust | n/a (+245) | Claims to do spatial sensing, vital-sign monitoring and presence detection from commodity WiFi signals, with no video. The claims are ambitious, so verify before relying on them. |
+| [homeassistant-ai/ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | Python | 0 (+792) | An MCP server for configuring and automating Home Assistant from Claude or ChatGPT. It is a concrete, useful MCP use case. |
+| [genspark-ai/genoffice](https://github.com/genspark-ai/genoffice) | TypeScript | 12,095 | A free AI office suite with a CLI and skill that lets agents edit real docx, xlsx and pptx files locally. It is bring-your-own-key. |
+| [0xsline/OpenChatCut](https://github.com/0xsline/OpenChatCut) | TypeScript | 3,040 | A local-first conversational video editor with a multi-track timeline and Remotion rendering. |
+| [tangency-labs/solidcraft](https://github.com/tangency-labs/solidcraft) | Rust | 15,415 | A parametric CAD application in pure Rust that can be automated through MCP. It is a notable agent-driven CAD direction. |
+| [wangzan101/Mika](https://github.com/wangzan101/Mika) | Kotlin | 8,022 | An on-device Android agent that operates apps. It is part of the growing phone-agent trend. |
+| [onehumanbeing/esp32-iphone-agent](https://github.com/onehumanbeing/esp32-iphone-agent) | Swift | 4,798 | Controls a real iPhone with a $7 ESP32 using AirPlay for vision and USB HID for input. It is a clever hardware hack. |
 
 ### 🧠 LLMs / Training
 
 | Project | Lang | Stars (total / today) | Summary |
 | :--- | :--- | ---: | :--- |
-| [SoMarkAI/OXR](https://github.com/SoMarkAI/OXR) | Python | 3,717 | Open document-parsing model that claims state-of-the-art accuracy and speed, trained with an RSI loop in post-training. It's worth benchmarking against your current OCR or parsing stack. |
-| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | C++ | n/a (+579) | General-purpose physics simulator with contact dynamics. It's an established tool, and its spike likely reflects robotics and RL interest. |
-| [Human-Agent-Society/reef](https://github.com/Human-Agent-Society/reef) | Python | 7,792 | Infrastructure for continually self-improving agents. The description is vague, so check the repo for concrete mechanisms. |
-| [Mafdet-AI/mafdet](https://github.com/Mafdet-AI/mafdet) | Python | 80 | Local LLMs that read and reason while you type. Very early. |
+| [drumih/turbo-fieldfare](https://github.com/drumih/turbo-fieldfare) | Swift | 7,327 | Runs Gemma 4 26B-A4B in about 2 GB of RAM on a MacBook. It is an interesting memory-efficiency result for MoE. |
+| [SoMarkAI/OXR](https://github.com/SoMarkAI/OXR) | Python | 3,752 | An open document-parsing model that claims SOTA accuracy, trained with an RSI loop. It is relevant for pipelines that ingest PDFs. |
+| [Human-Agent-Society/reef](https://github.com/Human-Agent-Society/reef) | Python | 7,798 | Infrastructure for continually self-improving agents. The claim is ambitious, so check what it actually delivers. |
+| [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco) | C++ | 0 (+453) | A physics simulator. It is established and is mainly relevant as robotics and RL infrastructure. |
 
 ### 🔍 RAG / Knowledge
 
 | Project | Lang | Stars (total / today) | Summary |
 | :--- | :--- | ---: | :--- |
-| [tigerless-labs/agent-memory](https://github.com/tigerless-labs/agent-memory) | Python | 4,315 | Markdown-based long-term agent memory with local retrieval and a sleep-time manage layer. It is one store shared across Claude Code and Codex. |
-| [vshulcz/deja-vu](https://github.com/vshulcz/deja-vu) | Go | 1,463 | Memory and history layer across 43 agents, including Claude Code, Cursor, Codex and Gemini CLI, exposed as an MCP server. It's useful if you use several agents. |
-| [aoci-spec/aoci-code](https://github.com/aoci-spec/aoci-code) | Go | 1,885 | A Git-versioned map of your codebase and database schema that agents read before editing. It is local-first, with an MCP server and CLI. |
-| [sahenjp/RustXNG](https://github.com/sahenjp/RustXNG) | Rust | 941 | Self-hosted SearXNG-based metasearch and grounding engine for agents, with a JSON API. |
-| [yuezhiai/jonex](https://github.com/yuezhiai/jonex) | Python | 1,618 | Multimodal parsing engine plus an LLM-wiki knowledge engine. |
-| [Dongbumlee/ontosmith](https://github.com/Dongbumlee/ontosmith) | Python | 257 | Builds governed knowledge graphs from documents, with every fact traceable to its evidence. |
-| [calmrocks/ai-engineer-notebooks](https://github.com/calmrocks/ai-engineer-notebooks) | Jupyter Notebook | 742 | Framework-free Colab notebooks covering tool calling, RAG, evals, MCP, fine-tuning and prompt-injection security. They run on the free Groq API. |
+| [sahenjp/RustXNG](https://github.com/sahenjp/RustXNG) | Rust | 943 | A self-hosted metasearch and grounding engine for agents, built on SearXNG, with a JSON API. |
+| [YOLOW92/pagesift](https://github.com/YOLOW92/pagesift) | Rust | 262 | A single Rust binary that turns URLs, PDFs and Office files into clean Markdown or JSON. It offers Firecrawl-compatible APIs and an MCP server. |
+| [yuezhiai/jonex](https://github.com/yuezhiai/jonex) | Python | 1,624 | A multimodal parsing engine with an ontology-based knowledge layer. |
+| [Dongbumlee/ontosmith](https://github.com/Dongbumlee/ontosmith) | Python | 264 | Builds governed knowledge graphs from documents, with every fact traceable to its evidence. |
+| [FengZhenfei/carrel](https://github.com/FengZhenfei/carrel) | Python | 802 | Ontology-Augmented Generation for agents. It is early. |
 
 ## 3. Trend Signal Analysis
 
-**Agent skills are everywhere.** About a dozen repos in the data are skills for Claude Code, Codex or Cursor. Examples include video, charts, logos, writing and geolocation. The official [anthropics/skills](https://github.com/anthropics/skills) gained +1,052 today. Skills are becoming the plugin format for coding agents, so some tools now manage them (loadout) or generate them (video-to-skill).
+Skills are the strongest signal today. `anthropics/skills`, `mattpocock/skills` and `addyosmani/agent-skills` together gained more than 3,300 stars. The topic lists are full of domain skills for video, logo design, geolocation and writing. The SKILL.md format now works across Claude Code, Codex, Cursor and Gemini CLI, so it is becoming a portable packaging standard.
 
-**Agent-agnostic infrastructure is the second theme.** Memory layers (agent-memory, deja-vu), codebase indexes (aoci-code, ripwire) and model routers (magpie) all sit between the agent and the model. They share one assumption: you will use several agents and several models, so context should not be locked to one vendor.
+The second signal is token economics. `ripwire`, `TokenEconomizer`, `billion-context` and `kanzo` all pitch fewer tokens per task. As agent usage becomes continuous, cost and context management are replacing raw capability as the main concern.
 
-**A Grok Bot clone wave is running.** OpenMausBot (+1,589 today), AnyModelBot, rakazo and CopilotKit/OpenBot all pitch "open-source alternative with a VM or sandbox." That suggests a recent closed release set a template that the community is copying quickly.
+Third, there is a lot of tooling for the layer around agents. This includes cross-agent memory and handoff (`deja-vu`), model routers (`magpie`), and monitors and approval surfaces (`coucou`). It suggests developers run several agent harnesses in parallel and want one control plane.
 
-**Possible coordinated promotion.** Many repos reference "dsh" (DeepSeek Harness), and a separate cluster promotes "Jev" and TypeSafe (awesome-jev-tools, awesome-jev-live, ollaya). Combined with the implausibly high star counts on young repos, some of this momentum may be inflated or promotional. Check commit history and issues before trusting it.
+Fourth, "DSH" (DeepSeek Harness) plugins and bots form a visible cluster. The "Grok Bot alternative" repos (`OpenMausBot`, `rakazo`, `AnyModelBot`) show a similar copycat wave around one product. Several of these have implausible star counts, so I'd treat that cluster as partly inflated.
 
-**New direction.** Agents are moving into physical and edge settings, such as an ESP32 that operates an iPhone, on-device Android agents and WiFi sensing. Cost and token efficiency are also becoming first-class concerns, as in TokenEconomizer and ripwire.
+I can't tie these to specific model releases from the data alone. References to Gemma 4, DeepSeek V4.1, Kimi K3 and Opus 5.5 do indicate that tooling is following the latest models quickly.
 
 ## 4. Community Hot Spots
 
-- **Agent memory and context portability** ([agent-memory](https://github.com/tigerless-labs/agent-memory), [deja-vu](https://github.com/vshulcz/deja-vu), [aoci-code](https://github.com/aoci-spec/aoci-code)): Plain-file, shared stores are the emerging pattern, and they avoid lock-in to one agent.
-- **Token-efficient code context** ([ripwire](https://github.com/redhat-et/ripwire), [TokenEconomizer](https://github.com/microsoft/TokenEconomizer)): Both address agent cost directly. They are worth benchmarking on your own repos.
-- **Browser and computer-use CLIs** ([agent-browser](https://github.com/vercel-labs/agent-browser), [OpenMausBot](https://github.com/milind-soni/OpenMausBot)): Agent actuation through simple CLIs and VMs is where today's star momentum concentrates.
-- **Skills tooling** ([loadout](https://github.com/migsilva89/loadout), [video-to-skill](https://github.com/brenoepics/video-to-skill), [anthropics/skills](https://github.com/anthropics/skills)): Skill discovery, auditing and generation are the next layer to mature.
-- **MCP for specialist software** ([x64dbg-mcp-server](https://github.com/duty1g/x64dbg-mcp-server), [ha-mcp](https://github.com/homeassistant-ai/ha-mcp), [solidcraft](https://github.com/tangency-labs/solidcraft)): Wrapping debuggers, home automation and CAD behind MCP is an easy way to extend an agent into a new domain.
+- **Agent context economy:** try [ripwire](https://github.com/redhat-et/ripwire) and [TokenEconomizer](https://github.com/microsoft/TokenEconomizer). Measurable token savings translate directly into lower cost.
+- **Skills as the distribution format:** study [anthropics/skills](https://github.com/anthropics/skills) and [mattpocock/skills](https://github.com/mattpocock/skills), then package your own team's workflows. The format works across multiple agents.
+- **Cross-agent interoperability:** [deja-vu](https://github.com/vshulcz/deja-vu) and [magpie](https://github.com/yetone/magpie) reduce lock-in to a single vendor's agent.
+- **Agent-ready web and docs ingestion:** [pagesift](https://github.com/YOLOW92/pagesift), [RustXNG](https://github.com/sahenjp/RustXNG) and [agent-browser](https://github.com/vercel-labs/agent-browser) give agents grounded web access with small, self-hosted binaries.
+- **Local inference on laptops:** [turbo-fieldfare](https://github.com/drumih/turbo-fieldfare) points to MoE models running in very little RAM. Verify the throughput claims before building on it.
 
 ---
 *This digest is auto-generated by [agents-radar](https://github.com/tbonedev/ai-radar).*

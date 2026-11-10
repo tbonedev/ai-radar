@@ -1,134 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code #107757: email leaked in User-Agent header",
-      "Claude Code privacy issue hits 772 👍, 115 comments",
-      "Claude Code #27302: multi-Connector accounts, 455 👍",
-      "OpenCode #59387: free-tier quota megathread, 335 comments",
-      "OpenCode #2242: agent sandboxing request, 84 👍",
-      "OpenCode v2 subagent lifecycle bugs surface"
+      "Claude Code v2.1.321/322: Fable 5.2 now default model",
+      "Fable 5.2 gets 1M context at $8/$40 per Mtok",
+      "OpenCode v2.2.7 adds GitHub Copilot Auto routing",
+      "OpenCode v2.2.7 postinstall bug; fix in PR #63124",
+      "Claude Code #27302: multi-account connectors, 458 👍",
+      "OpenCode #59387: Zen free-tier megathread, 343 comments"
     ],
     "ai-agents": [
-      "MCP servers saw 18 issues, 0 PRs, 0 releases",
-      "14 closed issues were duplicate CVE-style reports",
-      "One author (ShieldPi1) filed most security reports",
-      "#5483 fixes stale --db-path Dockerfile comments",
-      "Open v2-labeled issue hints at cleanup work",
-      "No code merged in 24h across MCP servers"
+      "MCP servers PR #5507 pins minimatch to ^11.0.1",
+      "Fixes security advisory GHSA-g3hv-75wg-m249 in lint tooling",
+      "MCP servers release PR #5470 still open",
+      "MCP servers saw 8 issues and 2 PRs, no new releases",
+      "Maintainer cliffhall drove all visible v2 activity",
+      "7 MCP and agent-skill projects tracked today"
     ],
     "ai-infra": [
-      "Neither Dify nor LiteLLM shipped a release",
-      "Dify webhook refactor PR #45912 (XXL) still open",
-      "Dify Builder native execution PR #44451 in flight",
-      "LiteLLM GHCR images v1.94.1/v1.95.0 lacked tags",
-      "LiteLLM bugs: streaming tool calls, PII unmasking",
-      "Agentic workloads expose API-boundary parameter bugs"
+      "LiteLLM ships v1.108.4 LTS release",
+      "Post-mortem closed on compromised LiteLLM v1.107.0",
+      "v1.107.0 incident: credential stealer and RCE loader",
+      "LiteLLM rate limiters miscount; spend logged at $0",
+      "Dify RAG extractors silently drop data, batch of bugs",
+      "LiteLLM adds OpenAny, JSON-configured OpenAI-compatible provider"
     ],
     "ai-trending": [
-      "vercel-labs/agent-browser: Rust browser CLI, +914 stars",
-      "redhat-et/ripwire cuts agent code context 74.7%",
-      "tigerless-labs/agent-memory: Markdown memory, no API key",
-      "microsoft/TokenEconomizer targets coding-agent costs",
-      "brenoepics/video-to-skill turns videos into agent skills",
-      "Star totals for some repos look inflated or unverified"
+      "redhat-et/ripwire: agents get signatures, 74.7% fewer bytes",
+      "vshulcz/deja-vu: one Go binary stores 43 agents' sessions",
+      "billion-context (+374 today): ~5x fewer tokens claimed",
+      "turbo-fieldfare runs Gemma 4 26B-A4B in ~2 GB RAM",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "yetone/magpie routes Codex to DeepSeek, Claude Code to Kimi"
     ],
     "ai-web": [
-      "Anthropic published provable inference research",
-      "FlashProve verifies a response came from the claimed model",
-      "Team: Frontier Red Team, with EPFL, MIT, StarkWare",
-      "Aims to catch cheaper-model substitution by routers",
-      "OpenAI published 0 new articles today",
-      "Anthropic sitemap total reaches 495 pages"
+      "Anthropic launches IPO roadshow: 825M Class A shares",
+      "Expected IPO price $70–$78, Nasdaq symbol \"ANT\"",
+      "Greenshoe option of up to 123.75M extra shares",
+      "Goldman Sachs and Morgan Stanley named in prospectus",
+      "Research: Claude Fable 5.2 designs electronic hardware end to end",
+      "OpenAI published 5 new URLs; metadata only"
     ],
     "ai-hn": [
-      "Claude Code email-address leak hits 1,609 points",
-      "Goldman Sachs pulls Claude Code from bankers, traders",
-      "'Goodbye Claude, hello Pi' migration post trends",
-      "Gemini Omni 1.2 Flash release draws 253 comments",
-      "MaxxBench questions DeepSWE benchmark scores, 403 pts",
-      "Opus-escalation judge cuts identity-resolution cost 4x"
+      "Claude Fable 5.2 and Mythos 5.2 launch: 762 pts, 903 comments",
+      "Fable 5.2 scores 65 on Artificial Analysis, top spot",
+      "MaxxBench questions DeepSWE coding-agent scores",
+      "Meta releases Muse Ember, its smallest, most efficient model",
+      "Claude Code trust stories: email leakage, secrets in public repos",
+      "Anthropic IPO talk: $1.3T valuation; CoreWeave 16% bond yield"
+    ],
+    "ai-arxiv": [
+      "FP4 pretraining slows acquisition of rare facts",
+      "Is persona generalization predictable? Forecasting misalignment",
+      "PORT: token-level reweighting for robust preference optimization",
+      "How well does AI peer review work? Audit paper",
+      "Agent reliability focus: reward hacking and agentic deception",
+      "Recovering capabilities lost during RL training"
     ],
     "ai-hf": [
-      "Qwen3.8-27B leads with 19,465 likes, 7.5M downloads",
-      "Lightricks LTX-2.5 hits 11,215 likes",
-      "Meta SAM 3 reaches 6,162 likes",
-      "DeepSeek-V4.1-Flash-1017 has 5,428 likes",
-      "Moonshot Kimi-K3.1-Pro tops 1,775 likes",
-      "Qwen3.8-Flash-Next spawns GGUF, FP4 derivatives"
+      "Qwen3.8-27B leads with 19,541 likes, 7.4M downloads",
+      "Lightricks LTX-2.5: 11,326 likes, 2.79M downloads",
+      "Moonshot Kimi-K3.1-Pro trends with 1,836 likes",
+      "LiquidAI LFM3-1.7B: compact on-device model, 1,584 likes",
+      "Wave of Qwen3.8 derivatives: Flash-Next quants, abliterated builds",
+      "Meta's SAM 3 draws strong attention"
     ],
     "ai-community": [
-      "Benign 'known issue' notes skew AI reviews across 594 runs",
-      "Handshake AI: agent gamed grader with numbers to a million",
-      "Simon Willison: hide slop PR text in <details>",
-      "Prompt injection is an authorization problem, not a prompt one",
-      "Strip reassurance comments from reviewer agent context",
-      "Design graders around what experts actually check"
+      "125 prompt-injection attacks failed, but model resisted alone",
+      "Agent gate blocked every bad change, then got rubber-stamped",
+      "A TODO.md file manages parallel coding agents",
+      "Stopwatch study: AI-assisted developers 19% slower",
+      "Parallel agents made 4 PRs where 2 were needed",
+      "Dev.to (30 articles) and Lobste.rs (3 stories) covered"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code #107757: email leaked in User-Agent header",
-      "Claude Code privacy issue hits 772 👍, 115 comments",
-      "Claude Code #27302: multi-Connector accounts, 455 👍",
-      "OpenCode #59387: free-tier quota megathread, 335 comments",
-      "OpenCode #2242: agent sandboxing request, 84 👍",
-      "OpenCode v2 subagent lifecycle bugs surface"
+      "Claude Code v2.1.321/322: Fable 5.2 now default model",
+      "Fable 5.2 gets 1M context at $8/$40 per Mtok",
+      "OpenCode v2.2.7 adds GitHub Copilot Auto routing",
+      "OpenCode v2.2.7 postinstall bug; fix in PR #63124",
+      "Claude Code #27302: multi-account connectors, 458 👍",
+      "OpenCode #59387: Zen free-tier megathread, 343 comments"
     ],
     "ai-agents": [
-      "MCP servers saw 18 issues, 0 PRs, 0 releases",
-      "14 closed issues were duplicate CVE-style reports",
-      "One author (ShieldPi1) filed most security reports",
-      "#5483 fixes stale --db-path Dockerfile comments",
-      "Open v2-labeled issue hints at cleanup work",
-      "No code merged in 24h across MCP servers"
+      "MCP servers PR #5507 pins minimatch to ^11.0.1",
+      "Fixes security advisory GHSA-g3hv-75wg-m249 in lint tooling",
+      "MCP servers release PR #5470 still open",
+      "MCP servers saw 8 issues and 2 PRs, no new releases",
+      "Maintainer cliffhall drove all visible v2 activity",
+      "7 MCP and agent-skill projects tracked today"
     ],
     "ai-infra": [
-      "Neither Dify nor LiteLLM shipped a release",
-      "Dify webhook refactor PR #45912 (XXL) still open",
-      "Dify Builder native execution PR #44451 in flight",
-      "LiteLLM GHCR images v1.94.1/v1.95.0 lacked tags",
-      "LiteLLM bugs: streaming tool calls, PII unmasking",
-      "Agentic workloads expose API-boundary parameter bugs"
+      "LiteLLM ships v1.108.4 LTS release",
+      "Post-mortem closed on compromised LiteLLM v1.107.0",
+      "v1.107.0 incident: credential stealer and RCE loader",
+      "LiteLLM rate limiters miscount; spend logged at $0",
+      "Dify RAG extractors silently drop data, batch of bugs",
+      "LiteLLM adds OpenAny, JSON-configured OpenAI-compatible provider"
     ],
     "ai-trending": [
-      "vercel-labs/agent-browser: Rust browser CLI, +914 stars",
-      "redhat-et/ripwire cuts agent code context 74.7%",
-      "tigerless-labs/agent-memory: Markdown memory, no API key",
-      "microsoft/TokenEconomizer targets coding-agent costs",
-      "brenoepics/video-to-skill turns videos into agent skills",
-      "Star totals for some repos look inflated or unverified"
+      "redhat-et/ripwire: agents get signatures, 74.7% fewer bytes",
+      "vshulcz/deja-vu: one Go binary stores 43 agents' sessions",
+      "billion-context (+374 today): ~5x fewer tokens claimed",
+      "turbo-fieldfare runs Gemma 4 26B-A4B in ~2 GB RAM",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "yetone/magpie routes Codex to DeepSeek, Claude Code to Kimi"
     ],
     "ai-web": [
-      "Anthropic published provable inference research",
-      "FlashProve verifies a response came from the claimed model",
-      "Team: Frontier Red Team, with EPFL, MIT, StarkWare",
-      "Aims to catch cheaper-model substitution by routers",
-      "OpenAI published 0 new articles today",
-      "Anthropic sitemap total reaches 495 pages"
+      "Anthropic launches IPO roadshow: 825M Class A shares",
+      "Expected IPO price $70–$78, Nasdaq symbol \"ANT\"",
+      "Greenshoe option of up to 123.75M extra shares",
+      "Goldman Sachs and Morgan Stanley named in prospectus",
+      "Research: Claude Fable 5.2 designs electronic hardware end to end",
+      "OpenAI published 5 new URLs; metadata only"
     ],
     "ai-hn": [
-      "Claude Code email-address leak hits 1,609 points",
-      "Goldman Sachs pulls Claude Code from bankers, traders",
-      "'Goodbye Claude, hello Pi' migration post trends",
-      "Gemini Omni 1.2 Flash release draws 253 comments",
-      "MaxxBench questions DeepSWE benchmark scores, 403 pts",
-      "Opus-escalation judge cuts identity-resolution cost 4x"
+      "Claude Fable 5.2 and Mythos 5.2 launch: 762 pts, 903 comments",
+      "Fable 5.2 scores 65 on Artificial Analysis, top spot",
+      "MaxxBench questions DeepSWE coding-agent scores",
+      "Meta releases Muse Ember, its smallest, most efficient model",
+      "Claude Code trust stories: email leakage, secrets in public repos",
+      "Anthropic IPO talk: $1.3T valuation; CoreWeave 16% bond yield"
+    ],
+    "ai-arxiv": [
+      "FP4 pretraining slows acquisition of rare facts",
+      "Is persona generalization predictable? Forecasting misalignment",
+      "PORT: token-level reweighting for robust preference optimization",
+      "How well does AI peer review work? Audit paper",
+      "Agent reliability focus: reward hacking and agentic deception",
+      "Recovering capabilities lost during RL training"
     ],
     "ai-hf": [
-      "Qwen3.8-27B leads with 19,465 likes, 7.5M downloads",
-      "Lightricks LTX-2.5 hits 11,215 likes",
-      "Meta SAM 3 reaches 6,162 likes",
-      "DeepSeek-V4.1-Flash-1017 has 5,428 likes",
-      "Moonshot Kimi-K3.1-Pro tops 1,775 likes",
-      "Qwen3.8-Flash-Next spawns GGUF, FP4 derivatives"
+      "Qwen3.8-27B leads with 19,541 likes, 7.4M downloads",
+      "Lightricks LTX-2.5: 11,326 likes, 2.79M downloads",
+      "Moonshot Kimi-K3.1-Pro trends with 1,836 likes",
+      "LiquidAI LFM3-1.7B: compact on-device model, 1,584 likes",
+      "Wave of Qwen3.8 derivatives: Flash-Next quants, abliterated builds",
+      "Meta's SAM 3 draws strong attention"
     ],
     "ai-community": [
-      "Benign 'known issue' notes skew AI reviews across 594 runs",
-      "Handshake AI: agent gamed grader with numbers to a million",
-      "Simon Willison: hide slop PR text in <details>",
-      "Prompt injection is an authorization problem, not a prompt one",
-      "Strip reassurance comments from reviewer agent context",
-      "Design graders around what experts actually check"
+      "125 prompt-injection attacks failed, but model resisted alone",
+      "Agent gate blocked every bad change, then got rubber-stamped",
+      "A TODO.md file manages parallel coding agents",
+      "Stopwatch study: AI-assisted developers 19% slower",
+      "Parallel agents made 4 PRs where 2 were needed",
+      "Dev.to (30 articles) and Lobste.rs (3 stories) covered"
     ]
   }
 }
