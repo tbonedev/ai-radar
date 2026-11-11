@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code bulk-closes stale issues in cleanup sweep",
+      "Claude Code #18435 Desktop multi-account hits 1028 👍",
+      "Claude Code #27302 Connector accounts: 306 comments",
+      "OpenCode #59387 quota-error mega-thread: 353 comments",
+      "OpenCode PR #63308 adds Claude Agent account rotation",
+      "No releases for Claude Code or OpenCode in 24h"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.4.0 security release fixes six vulnerabilities",
+      "server-filesystem 2.3.0 patched in v2.4.0 release",
+      "mcp-server-git and mcp-server-fetch 2026.11.11 fixes",
+      "Three advisory-fix PRs merged in v2 line",
+      "v2/main merged into main",
+      "Follow-up bugs opened against freshly shipped fixes"
+    ],
+    "ai-infra": [
+      "LiteLLM ships six releases, including v1.110.0-rc.1",
+      "LiteLLM v1.109.0 stable and v1.108.5 LTS patch",
+      "LiteLLM Rust-port PR #51119 replaces stack of 8",
+      "Dify has no release; Agent V2 backend refactor",
+      "LiteLLM issues focus on spend and /v1/messages",
+      "Dify bugs span Knowledge, Workflow, Agent and RBAC"
+    ],
+    "ai-trending": [
+      "openai/codex-security: CLI and SDK for vuln fixing",
+      "shadcn/improve splits planning from execution, +333 stars",
+      "microsoft/TokenEconomizer cuts coding-agent token costs",
+      "redhat-et/ripwire: 74.7% smaller code signatures for agents",
+      "Free-model plugin shows 69,725 stars, possibly inflated",
+      "Trending feed reports 0 total stars for every repo"
+    ],
+    "ai-web": [
+      "OpenAI added 6 new articles; Anthropic added none",
+      "OpenAI posts 'Introducing Businesses ChatGPT'",
+      "OpenAI announces ChatGPT Plus for Veterans",
+      "4 OpenAI business/learn pages dated 2026-11-10",
+      "OpenAI sitemap now totals 1,123 URLs",
+      "Anthropic sitemap holds steady at 497 URLs"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.2 and Mythos 5.2 launch: 901 pts, 1,024 comments",
+      "Fable 5.2 scores 65 on Artificial Analysis, 376 pts",
+      "Amazon swaps Sonnet 4.6 for Strands Decider, 713 pts",
+      "Meta's Muse Ember small model hits 330 pts",
+      "Fragile-codebase essay draws 610 pts",
+      "Fireworks breach and Gemini annotator privacy concerns"
+    ],
+    "ai-arxiv": [
+      "Theory of coverage collapse in RL post-training",
+      "AutoScaffold: AI-guided scaffolding for RLVR",
+      "'AI Isn't Getting Dumber, We're Getting Pickier' uses Arena data",
+      "Studies on when agent memory helps or hurts",
+      "Speculative decoding and diffusion LM efficiency papers",
+      "Foundation models expand into biology, time series, tabular"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,603 likes, 7.2M downloads",
+      "Lightricks LTX-2.5 video model: 11,451 likes",
+      "Meta SAM 3 reaches 6,324 likes",
+      "DeepSeek-V4.1-Flash-1017 hits 5,482 likes",
+      "Moonshot Kimi-K3.1-Pro tops 1,903 likes",
+      "MiniMax-H3 spawns ComfyUI ports and quantizations"
+    ],
+    "ai-community": [
+      "Agent 'hallucinations' often stem from missing abstain rules",
+      "Martin Fowler on durable execution for long-horizon agents",
+      "Flaky-test root-cause pipeline with Strands Agents and Gemini",
+      "Run untrusted npm packages in an isolated AWS sandbox",
+      "Static scanners miss install-time postinstall scripts",
+      "Dev.to's 30 articles plus 5 Lobste.rs stories covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code bulk-closes stale issues in cleanup sweep",
+      "Claude Code #18435 Desktop multi-account hits 1028 👍",
+      "Claude Code #27302 Connector accounts: 306 comments",
+      "OpenCode #59387 quota-error mega-thread: 353 comments",
+      "OpenCode PR #63308 adds Claude Agent account rotation",
+      "No releases for Claude Code or OpenCode in 24h"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.4.0 security release fixes six vulnerabilities",
+      "server-filesystem 2.3.0 patched in v2.4.0 release",
+      "mcp-server-git and mcp-server-fetch 2026.11.11 fixes",
+      "Three advisory-fix PRs merged in v2 line",
+      "v2/main merged into main",
+      "Follow-up bugs opened against freshly shipped fixes"
+    ],
+    "ai-infra": [
+      "LiteLLM ships six releases, including v1.110.0-rc.1",
+      "LiteLLM v1.109.0 stable and v1.108.5 LTS patch",
+      "LiteLLM Rust-port PR #51119 replaces stack of 8",
+      "Dify has no release; Agent V2 backend refactor",
+      "LiteLLM issues focus on spend and /v1/messages",
+      "Dify bugs span Knowledge, Workflow, Agent and RBAC"
+    ],
+    "ai-trending": [
+      "openai/codex-security: CLI and SDK for vuln fixing",
+      "shadcn/improve splits planning from execution, +333 stars",
+      "microsoft/TokenEconomizer cuts coding-agent token costs",
+      "redhat-et/ripwire: 74.7% smaller code signatures for agents",
+      "Free-model plugin shows 69,725 stars, possibly inflated",
+      "Trending feed reports 0 total stars for every repo"
+    ],
+    "ai-web": [
+      "OpenAI added 6 new articles; Anthropic added none",
+      "OpenAI posts 'Introducing Businesses ChatGPT'",
+      "OpenAI announces ChatGPT Plus for Veterans",
+      "4 OpenAI business/learn pages dated 2026-11-10",
+      "OpenAI sitemap now totals 1,123 URLs",
+      "Anthropic sitemap holds steady at 497 URLs"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.2 and Mythos 5.2 launch: 901 pts, 1,024 comments",
+      "Fable 5.2 scores 65 on Artificial Analysis, 376 pts",
+      "Amazon swaps Sonnet 4.6 for Strands Decider, 713 pts",
+      "Meta's Muse Ember small model hits 330 pts",
+      "Fragile-codebase essay draws 610 pts",
+      "Fireworks breach and Gemini annotator privacy concerns"
+    ],
+    "ai-arxiv": [
+      "Theory of coverage collapse in RL post-training",
+      "AutoScaffold: AI-guided scaffolding for RLVR",
+      "'AI Isn't Getting Dumber, We're Getting Pickier' uses Arena data",
+      "Studies on when agent memory helps or hurts",
+      "Speculative decoding and diffusion LM efficiency papers",
+      "Foundation models expand into biology, time series, tabular"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,603 likes, 7.2M downloads",
+      "Lightricks LTX-2.5 video model: 11,451 likes",
+      "Meta SAM 3 reaches 6,324 likes",
+      "DeepSeek-V4.1-Flash-1017 hits 5,482 likes",
+      "Moonshot Kimi-K3.1-Pro tops 1,903 likes",
+      "MiniMax-H3 spawns ComfyUI ports and quantizations"
+    ],
+    "ai-community": [
+      "Agent 'hallucinations' often stem from missing abstain rules",
+      "Martin Fowler on durable execution for long-horizon agents",
+      "Flaky-test root-cause pipeline with Strands Agents and Gemini",
+      "Run untrusted npm packages in an isolated AWS sandbox",
+      "Static scanners miss install-time postinstall scripts",
+      "Dev.to's 30 articles plus 5 Lobste.rs stories covered"
+    ]
+  }
+}
