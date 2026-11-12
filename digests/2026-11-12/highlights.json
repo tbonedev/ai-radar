@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code #18435 multi-account request hits 1032 👍",
+      "Claude Code #60705 hits 296 comments before closure",
+      "OpenCode #59387 free-tier megathread passes 360 comments",
+      "OpenCode ships process-daemon v0.5.2 (pty sub-package)",
+      "Claude Code stale-bot closures inflate activity numbers",
+      "OpenCode #4283 clipboard issue draws 135 👍"
+    ],
+    "ai-agents": [
+      "MCP Servers: Streamable HTTP now in all reference servers",
+      "PR #5536 closes #576, open since Jan 2025",
+      "Memory server gets opt-in MEMORY_MAX_ENTITIES write limits",
+      "Changesets 'version packages' PR #5537 signals release",
+      "16 issues, 11 PRs updated; 10 PRs merged or closed",
+      "Maintainer cliffhall drives v2 hardening and cleanup"
+    ],
+    "ai-infra": [
+      "LiteLLM ships four releases incl. v1.110.0-rc.2",
+      "LiteLLM v1.108.6 LTS and v1.106.9 backports released",
+      "Dify PR #45918 adds BYOA/A2A external agents (XXL)",
+      "Dify PR #46090 adds malware scanning",
+      "LiteLLM adds Cursor CLI passthrough and LiteFlow workflows",
+      "Dify regressions tied to 1.17.0, 1.18.x and 1.19.0"
+    ],
+    "ai-trending": [
+      "openai/codex-security gains +663 stars today",
+      "redhat-et/ripwire cuts agent code context bytes by 74.7%",
+      "drumih/turbo-fieldfare runs Gemma 4 26B-A4B in ~2 GB RAM",
+      "ashhart/TensorFold: Zig inference engine on Metal/CUDA/Vulkan",
+      "microsoft/TokenEconomizer targets coding-agent cost control",
+      "tigerless-labs/agent-memory: Markdown memory shared by Claude Code and Codex"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.2 and Mythos 5.2 hit 915 pts, 1046 comments",
+      "Anthropic IPO page dominates the HN feed",
+      "Fireworks AI breach affects Notion",
+      "United bans AI booking agents",
+      "Amazon replaces Sonnet 4.6 with Strands Decider",
+      "'Fragile codebase' AI code quality thread draws 618 comments"
+    ],
+    "ai-arxiv": [
+      "Theory of coverage collapse in post-training policy optimization",
+      "AutoScaffold: AI-guided scaffolds for RLVR training",
+      "'AI Isn't Getting Dumber, We're Getting Pickier' uses Arena data",
+      "Agent memory: when should agents write lessons?",
+      "Overlapping-block diffusion LMs improve efficiency",
+      "Adaptive weight precision for small local models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops board: 19,697 likes, 7.1M downloads",
+      "Qwen3.8-Flash-Next debuts new qwen4_exp architecture",
+      "MiniMax H3 base video model passes 6.4M downloads",
+      "Lightricks LTX-2.5 reaches 11,588 likes",
+      "Moonshot releases Kimi-K3.1-Pro with compressed-tensors weights",
+      "Ripple-65B-Preview: Apache-2.0 open 65B model"
+    ],
+    "ai-community": [
+      "Fowler: tests as data to constrain AI-written code",
+      "Fowler: durable execution for long-horizon agents",
+      "Agents CLI eval run works as a CI quality gate",
+      "RAG permissions belong in retrieval, not prompts",
+      "Dev.to and Lobste.rs: 38 AI stories covered",
+      "Treat customer-level tests as the human-AI contract"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code #18435 multi-account request hits 1032 👍",
+      "Claude Code #60705 hits 296 comments before closure",
+      "OpenCode #59387 free-tier megathread passes 360 comments",
+      "OpenCode ships process-daemon v0.5.2 (pty sub-package)",
+      "Claude Code stale-bot closures inflate activity numbers",
+      "OpenCode #4283 clipboard issue draws 135 👍"
+    ],
+    "ai-agents": [
+      "MCP Servers: Streamable HTTP now in all reference servers",
+      "PR #5536 closes #576, open since Jan 2025",
+      "Memory server gets opt-in MEMORY_MAX_ENTITIES write limits",
+      "Changesets 'version packages' PR #5537 signals release",
+      "16 issues, 11 PRs updated; 10 PRs merged or closed",
+      "Maintainer cliffhall drives v2 hardening and cleanup"
+    ],
+    "ai-infra": [
+      "LiteLLM ships four releases incl. v1.110.0-rc.2",
+      "LiteLLM v1.108.6 LTS and v1.106.9 backports released",
+      "Dify PR #45918 adds BYOA/A2A external agents (XXL)",
+      "Dify PR #46090 adds malware scanning",
+      "LiteLLM adds Cursor CLI passthrough and LiteFlow workflows",
+      "Dify regressions tied to 1.17.0, 1.18.x and 1.19.0"
+    ],
+    "ai-trending": [
+      "openai/codex-security gains +663 stars today",
+      "redhat-et/ripwire cuts agent code context bytes by 74.7%",
+      "drumih/turbo-fieldfare runs Gemma 4 26B-A4B in ~2 GB RAM",
+      "ashhart/TensorFold: Zig inference engine on Metal/CUDA/Vulkan",
+      "microsoft/TokenEconomizer targets coding-agent cost control",
+      "tigerless-labs/agent-memory: Markdown memory shared by Claude Code and Codex"
+    ],
+    "ai-hn": [
+      "Claude Fable 5.2 and Mythos 5.2 hit 915 pts, 1046 comments",
+      "Anthropic IPO page dominates the HN feed",
+      "Fireworks AI breach affects Notion",
+      "United bans AI booking agents",
+      "Amazon replaces Sonnet 4.6 with Strands Decider",
+      "'Fragile codebase' AI code quality thread draws 618 comments"
+    ],
+    "ai-arxiv": [
+      "Theory of coverage collapse in post-training policy optimization",
+      "AutoScaffold: AI-guided scaffolds for RLVR training",
+      "'AI Isn't Getting Dumber, We're Getting Pickier' uses Arena data",
+      "Agent memory: when should agents write lessons?",
+      "Overlapping-block diffusion LMs improve efficiency",
+      "Adaptive weight precision for small local models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops board: 19,697 likes, 7.1M downloads",
+      "Qwen3.8-Flash-Next debuts new qwen4_exp architecture",
+      "MiniMax H3 base video model passes 6.4M downloads",
+      "Lightricks LTX-2.5 reaches 11,588 likes",
+      "Moonshot releases Kimi-K3.1-Pro with compressed-tensors weights",
+      "Ripple-65B-Preview: Apache-2.0 open 65B model"
+    ],
+    "ai-community": [
+      "Fowler: tests as data to constrain AI-written code",
+      "Fowler: durable execution for long-horizon agents",
+      "Agents CLI eval run works as a CI quality gate",
+      "RAG permissions belong in retrieval, not prompts",
+      "Dev.to and Lobste.rs: 38 AI stories covered",
+      "Treat customer-level tests as the human-AI contract"
+    ]
+  }
+}
