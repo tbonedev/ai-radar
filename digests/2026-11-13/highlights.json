@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.323 adds Code Mode and `engines` field",
+      "OpenCode v2.3.0 makes background subagents the default",
+      "OpenCode free-tier megathread #59387 hits 364 comments",
+      "Claude Code #30154 Desktop multi-window tops 274 👍",
+      "OpenCode #2242 sandboxing request gathers 84 👍",
+      "Both communities focus on cost, auth and silent regressions"
+    ],
+    "ai-agents": [
+      "MCP Servers: 8 open issues, no PRs or releases today",
+      "Five test-coverage proposals from reservoir-cmyk for memory server",
+      "Two Dependabot-sweep chores #5545 and #5546 target v2/main",
+      "Characterization tests cover memory, everything, sequentialthinking",
+      "Issue #5541: schema-invalid memory records can't be removed",
+      "No comments or reactions on any item today"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.111.0-dev.1 pre-release and v1.108.7 LTS patch",
+      "Rust is now LiteLLM's only router core",
+      "Dify PR #46141 adds an Evaluation workspace (XXL)",
+      "LiteLLM spend-tracking bugs have no linked fix PRs",
+      "Dify faces concurrency and data-loss bugs, Agent v2 push",
+      "Dify moves test modules under strict pyrefly typing"
+    ],
+    "ai-trending": [
+      "openai/codex-security trends with +754 stars today",
+      "alibaba/open-code-review pairs Go pipelines with LLM agent",
+      "redhat-et/ripwire: C++23 MCP server cuts agent token use",
+      "GoogleChrome/modern-web-guidance-src keeps agents current",
+      "Topic-search star counts look inflated, possibly botted",
+      "Security-focused coding-agent tools dominate today's trends"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude for Teachers, free for US K-12",
+      "Anthropic S-1 filed: Nasdaq listing under symbol \"ANT\"",
+      "Anthropic IPO roadshow has launched, per Nov 10 post",
+      "Claude 4 launch post re-crawled with updated date",
+      "Anthropic sitemap total reaches 497 articles",
+      "OpenAI published no new content today"
+    ],
+    "ai-hn": [
+      "Gemini 4 Hydrogen leads HN with 552 points, 343 comments",
+      "Major Claude outage hits claude.ai and Claude Code",
+      "Anthropic IPO page among the most-discussed items",
+      "Edge0-145B runs frontier-class AI locally (299 points)",
+      "Forensic claim: Chinese models show export-controlled GPU traces",
+      "On-device AI trend: Apple Foundation Models, local Mac app"
+    ],
+    "ai-arxiv": [
+      "Negative-Only Policy Optimization for one-sided verifiable rewards",
+      "Diffusion LMs learn when to remask for self-correction",
+      "Goal Encoding in LLMs: internal goal representations studied",
+      "Energy-based reasoning claimed 1,000x faster than looped models",
+      "Prompt-injection defenses for small models examined",
+      "Agents dominate: memory, security and evaluation papers"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,816 likes and ~7M downloads",
+      "Qwen3.8-Flash-Next hints at experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash-1017 has 5,610 likes",
+      "Kimi-K3.1-Pro ships compressed-tensors weights, 2,000 likes",
+      "Lightricks LTX-2.5 leads video: 11,704 likes, 2.78M downloads",
+      "MiniMax H3 image model spawns ComfyUI and video ecosystem"
+    ],
+    "ai-community": [
+      "Claude Code sends 74,500 tokens on the first message",
+      "MCP servers silently drain your context window",
+      "LLM pipeline never crashed, it quietly got worse",
+      "Codex \"never crashed, just quietly did nothing\" post",
+      "Silent skill blanking found in Claude Code setups",
+      "Five of eight agents left out the same caveat"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.323 adds Code Mode and `engines` field",
+      "OpenCode v2.3.0 makes background subagents the default",
+      "OpenCode free-tier megathread #59387 hits 364 comments",
+      "Claude Code #30154 Desktop multi-window tops 274 👍",
+      "OpenCode #2242 sandboxing request gathers 84 👍",
+      "Both communities focus on cost, auth and silent regressions"
+    ],
+    "ai-agents": [
+      "MCP Servers: 8 open issues, no PRs or releases today",
+      "Five test-coverage proposals from reservoir-cmyk for memory server",
+      "Two Dependabot-sweep chores #5545 and #5546 target v2/main",
+      "Characterization tests cover memory, everything, sequentialthinking",
+      "Issue #5541: schema-invalid memory records can't be removed",
+      "No comments or reactions on any item today"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.111.0-dev.1 pre-release and v1.108.7 LTS patch",
+      "Rust is now LiteLLM's only router core",
+      "Dify PR #46141 adds an Evaluation workspace (XXL)",
+      "LiteLLM spend-tracking bugs have no linked fix PRs",
+      "Dify faces concurrency and data-loss bugs, Agent v2 push",
+      "Dify moves test modules under strict pyrefly typing"
+    ],
+    "ai-trending": [
+      "openai/codex-security trends with +754 stars today",
+      "alibaba/open-code-review pairs Go pipelines with LLM agent",
+      "redhat-et/ripwire: C++23 MCP server cuts agent token use",
+      "GoogleChrome/modern-web-guidance-src keeps agents current",
+      "Topic-search star counts look inflated, possibly botted",
+      "Security-focused coding-agent tools dominate today's trends"
+    ],
+    "ai-web": [
+      "Anthropic launches Claude for Teachers, free for US K-12",
+      "Anthropic S-1 filed: Nasdaq listing under symbol \"ANT\"",
+      "Anthropic IPO roadshow has launched, per Nov 10 post",
+      "Claude 4 launch post re-crawled with updated date",
+      "Anthropic sitemap total reaches 497 articles",
+      "OpenAI published no new content today"
+    ],
+    "ai-hn": [
+      "Gemini 4 Hydrogen leads HN with 552 points, 343 comments",
+      "Major Claude outage hits claude.ai and Claude Code",
+      "Anthropic IPO page among the most-discussed items",
+      "Edge0-145B runs frontier-class AI locally (299 points)",
+      "Forensic claim: Chinese models show export-controlled GPU traces",
+      "On-device AI trend: Apple Foundation Models, local Mac app"
+    ],
+    "ai-arxiv": [
+      "Negative-Only Policy Optimization for one-sided verifiable rewards",
+      "Diffusion LMs learn when to remask for self-correction",
+      "Goal Encoding in LLMs: internal goal representations studied",
+      "Energy-based reasoning claimed 1,000x faster than looped models",
+      "Prompt-injection defenses for small models examined",
+      "Agents dominate: memory, security and evaluation papers"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 19,816 likes and ~7M downloads",
+      "Qwen3.8-Flash-Next hints at experimental qwen4_exp architecture",
+      "DeepSeek-V4.1-Flash-1017 has 5,610 likes",
+      "Kimi-K3.1-Pro ships compressed-tensors weights, 2,000 likes",
+      "Lightricks LTX-2.5 leads video: 11,704 likes, 2.78M downloads",
+      "MiniMax H3 image model spawns ComfyUI and video ecosystem"
+    ],
+    "ai-community": [
+      "Claude Code sends 74,500 tokens on the first message",
+      "MCP servers silently drain your context window",
+      "LLM pipeline never crashed, it quietly got worse",
+      "Codex \"never crashed, just quietly did nothing\" post",
+      "Silent skill blanking found in Claude Code setups",
+      "Five of eight agents left out the same caveat"
+    ]
+  }
+}
