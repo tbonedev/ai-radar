@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.325 ships zstd security fix",
+      "Claude Code #60705 thread hits 300 comments",
+      "Claude Code passkeys request tops 207 👍",
+      "OpenCode Free tier megathread: 366 comments",
+      "OpenCode PRs: native CLI port, provider resolution",
+      "OpenCode #4714 TUI search request has 69 👍"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: 3 issues, 0 PRs, no releases",
+      "#5071 tool-description clarity issue closed after 6 comments",
+      "Filesystem tools list_directory vs _with_sizes confusion",
+      "Two Dependabot-sweep chores from github-actions[bot]",
+      "Project in maintenance mode, focus on v2 branch",
+      "Seven MCP ecosystem projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM ships 3 releases incl. v1.111.0-dev.2",
+      "LiteLLM v1.108.8 LTS and v1.106.10 patch released",
+      "LiteLLM touched 500 PRs, 62 issues updated",
+      "Dify: 133 PRs, mostly strict-pyrefly migrations",
+      "Dify hit by wave of performance/concurrency reports",
+      "No inference-engine data (vLLM, SGLang, Ollama) today"
+    ],
+    "ai-trending": [
+      "alibaba/open-code-review gains +897 stars today",
+      "redhat-et/ripwire: C++23 CLI and MCP server, 2,543 stars",
+      "microsoft/TokenEconomizer cuts agent costs, 6,097 stars",
+      "Open-code-review mixes rule checks with an LLM agent",
+      "Trending list shows ⭐0 for every repo; data caveat",
+      "Topic-search star counts look inflated, likely star-farmed"
+    ],
+    "ai-web": [
+      "Anthropic 'Building strong safety evaluations' published",
+      "91 Anthropic 'new' articles look like a bulk re-index",
+      "OpenAI 'Introducing Chatgpt Wallet' appears, details unknown",
+      "Anthropic sitemap total: 498; OpenAI: 1,124",
+      "Archive covers Fable 5 / Mythos 5 model tiers",
+      "Content cites AI-for-science: Fermat's Last Theorem formalization"
+    ],
+    "ai-hn": [
+      "Anthropic IPO page tops HN: 996 points, 911 comments",
+      "Gemini 4 Hydrogen launch draws 565 points",
+      "Chinese models show export-controlled GPU fingerprint",
+      "Unsloth Qwen3.8-27B Dynamic v3.1 quants get 191 points",
+      "Debate over Nvidia allegedly engineering GPU scarcity",
+      "Claude outage reports surface in the feed"
+    ],
+    "ai-arxiv": [
+      "Negative-Only Policy Optimization for one-sided RLVR",
+      "Goal Encoding in LLMs probes internal goal representations",
+      "Diffusion LMs learn when to remask and regenerate",
+      "Agent memory cost-valuation for coding agents studied",
+      "Prompt-injection defense targets small models",
+      "Energy-based reasoning claims big speedups over looped models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads: 19,945 likes, 6.76M downloads",
+      "Qwen3.8-Flash-Next (qwen4_exp) hits 3M+ downloads",
+      "DeepSeek-V4.1-Flash-1017 draws 5,690 likes",
+      "Moonshot Kimi-K3.1-Pro ships compressed-tensors weights",
+      "MiniMax H3 image model spawns an ecosystem",
+      "Lightricks LTX-2.5: 11,857 likes, 2.78M downloads"
+    ],
+    "ai-community": [
+      "Fowler: 'Tests as data' for AI-generated code",
+      "Fowler: durable execution for long-horizon agents",
+      "37,000 MCP servers tested: ~9 in 10 answered",
+      "About 1 in 3 MCP servers needed a key before listing tools",
+      "12% of the official MCP registry was spam",
+      "Agents trust whatever tool output they receive"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.325 ships zstd security fix",
+      "Claude Code #60705 thread hits 300 comments",
+      "Claude Code passkeys request tops 207 👍",
+      "OpenCode Free tier megathread: 366 comments",
+      "OpenCode PRs: native CLI port, provider resolution",
+      "OpenCode #4714 TUI search request has 69 👍"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: 3 issues, 0 PRs, no releases",
+      "#5071 tool-description clarity issue closed after 6 comments",
+      "Filesystem tools list_directory vs _with_sizes confusion",
+      "Two Dependabot-sweep chores from github-actions[bot]",
+      "Project in maintenance mode, focus on v2 branch",
+      "Seven MCP ecosystem projects tracked today"
+    ],
+    "ai-infra": [
+      "LiteLLM ships 3 releases incl. v1.111.0-dev.2",
+      "LiteLLM v1.108.8 LTS and v1.106.10 patch released",
+      "LiteLLM touched 500 PRs, 62 issues updated",
+      "Dify: 133 PRs, mostly strict-pyrefly migrations",
+      "Dify hit by wave of performance/concurrency reports",
+      "No inference-engine data (vLLM, SGLang, Ollama) today"
+    ],
+    "ai-trending": [
+      "alibaba/open-code-review gains +897 stars today",
+      "redhat-et/ripwire: C++23 CLI and MCP server, 2,543 stars",
+      "microsoft/TokenEconomizer cuts agent costs, 6,097 stars",
+      "Open-code-review mixes rule checks with an LLM agent",
+      "Trending list shows ⭐0 for every repo; data caveat",
+      "Topic-search star counts look inflated, likely star-farmed"
+    ],
+    "ai-web": [
+      "Anthropic 'Building strong safety evaluations' published",
+      "91 Anthropic 'new' articles look like a bulk re-index",
+      "OpenAI 'Introducing Chatgpt Wallet' appears, details unknown",
+      "Anthropic sitemap total: 498; OpenAI: 1,124",
+      "Archive covers Fable 5 / Mythos 5 model tiers",
+      "Content cites AI-for-science: Fermat's Last Theorem formalization"
+    ],
+    "ai-hn": [
+      "Anthropic IPO page tops HN: 996 points, 911 comments",
+      "Gemini 4 Hydrogen launch draws 565 points",
+      "Chinese models show export-controlled GPU fingerprint",
+      "Unsloth Qwen3.8-27B Dynamic v3.1 quants get 191 points",
+      "Debate over Nvidia allegedly engineering GPU scarcity",
+      "Claude outage reports surface in the feed"
+    ],
+    "ai-arxiv": [
+      "Negative-Only Policy Optimization for one-sided RLVR",
+      "Goal Encoding in LLMs probes internal goal representations",
+      "Diffusion LMs learn when to remask and regenerate",
+      "Agent memory cost-valuation for coding agents studied",
+      "Prompt-injection defense targets small models",
+      "Energy-based reasoning claims big speedups over looped models"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads: 19,945 likes, 6.76M downloads",
+      "Qwen3.8-Flash-Next (qwen4_exp) hits 3M+ downloads",
+      "DeepSeek-V4.1-Flash-1017 draws 5,690 likes",
+      "Moonshot Kimi-K3.1-Pro ships compressed-tensors weights",
+      "MiniMax H3 image model spawns an ecosystem",
+      "Lightricks LTX-2.5: 11,857 likes, 2.78M downloads"
+    ],
+    "ai-community": [
+      "Fowler: 'Tests as data' for AI-generated code",
+      "Fowler: durable execution for long-horizon agents",
+      "37,000 MCP servers tested: ~9 in 10 answered",
+      "About 1 in 3 MCP servers needed a key before listing tools",
+      "12% of the official MCP registry was spam",
+      "Agents trust whatever tool output they receive"
+    ]
+  }
+}
