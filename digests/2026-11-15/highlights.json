@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code and OpenCode shipped no releases in 24h",
+      "Claude Code #87647 leads with 148 👍, still open",
+      "OpenCode #59387 hits 367 comments, 28 👍, open",
+      "Claude Code bulk-closes issues under stale labeling",
+      "OpenCode PRs: permission fixes, native CLI port, provider discovery",
+      "Claude Code PRs: docs fix and triage-workflow fix"
+    ],
+    "ai-agents": [
+      "MCP servers repo had just 1 issue and no PRs",
+      "#5551 asks to list Cowork multi-agent platform in ADDITIONAL.md",
+      "No new releases across the MCP servers repo",
+      "Seven MCP projects tracked, including the official Registry",
+      "Awesome MCP Servers and Docker MCP Registry covered",
+      "Quiet day reads as a lull, not a health problem"
+    ],
+    "ai-infra": [
+      "LiteLLM moves to keyless Sigstore cosign release signing",
+      "The signing change breaks existing cosign verify --key flows",
+      "LiteLLM v1.111.0-dev.4 is the tag to use; dev.3 is partial",
+      "Dify has 98 updated PRs, mostly pyrefly strict typing",
+      "Dify has an open prefix-cache loss issue",
+      "LiteLLM has open spend-log, budget and cache-leak bugs"
+    ],
+    "ai-trending": [
+      "ChromeDevTools/chrome-devtools-mcp gives agents browser access",
+      "alibaba/open-code-review mixes rules with an LLM agent",
+      "Tencent/LoopForge orchestrates Codex and Claude Code with approvals",
+      "backnotprop/plannotator annotates agent plans in one click",
+      "NVIDIA/SkillEvaluator adds quality gates for agent skills",
+      "Trending star counts show ⭐0, a data gap"
+    ],
+    "ai-hn": [
+      "Nvidia accused of engineering GPU scarcity: 1081 points",
+      "Gemini 4 Hydrogen launches: 569 points, 352 comments",
+      "Edge0-145B pitches frontier AI on your own computer",
+      "Unsloth Qwen3.8-27B Dynamic v3.1 quants hit 252 points",
+      "Anthropic service incident and Claude Desktop freeze bug",
+      "Big thread on Jonathan Blow's AI software quality talk"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops the board: 20,066 likes, 6.5M downloads",
+      "Qwen3.8-Flash-Next has 7,142 likes and tag qwen4_exp",
+      "DeepSeek-V4.1-Flash-1017 draws 5,718 likes",
+      "Moonshot's Kimi-K3.1-Pro reaches 2,092 likes",
+      "MiniMax-H3 video and image appear in five entries",
+      "Uncensored heretic fine-tunes draw heavy engagement"
+    ],
+    "ai-community": [
+      "Fowler: treat customer tests as the contract with agents",
+      "temperature=0 isn't deterministic: 17 of 5,000 tokens flipped",
+      "RAG is a search problem first: use an oracle to diagnose",
+      "Fewer permissions beat better judgment for AI agents",
+      "Dev.to (30 articles) and Lobste.rs (8 stories) covered",
+      "Data-file tests are harder for agents to rewrite by accident"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code and OpenCode shipped no releases in 24h",
+      "Claude Code #87647 leads with 148 👍, still open",
+      "OpenCode #59387 hits 367 comments, 28 👍, open",
+      "Claude Code bulk-closes issues under stale labeling",
+      "OpenCode PRs: permission fixes, native CLI port, provider discovery",
+      "Claude Code PRs: docs fix and triage-workflow fix"
+    ],
+    "ai-agents": [
+      "MCP servers repo had just 1 issue and no PRs",
+      "#5551 asks to list Cowork multi-agent platform in ADDITIONAL.md",
+      "No new releases across the MCP servers repo",
+      "Seven MCP projects tracked, including the official Registry",
+      "Awesome MCP Servers and Docker MCP Registry covered",
+      "Quiet day reads as a lull, not a health problem"
+    ],
+    "ai-infra": [
+      "LiteLLM moves to keyless Sigstore cosign release signing",
+      "The signing change breaks existing cosign verify --key flows",
+      "LiteLLM v1.111.0-dev.4 is the tag to use; dev.3 is partial",
+      "Dify has 98 updated PRs, mostly pyrefly strict typing",
+      "Dify has an open prefix-cache loss issue",
+      "LiteLLM has open spend-log, budget and cache-leak bugs"
+    ],
+    "ai-trending": [
+      "ChromeDevTools/chrome-devtools-mcp gives agents browser access",
+      "alibaba/open-code-review mixes rules with an LLM agent",
+      "Tencent/LoopForge orchestrates Codex and Claude Code with approvals",
+      "backnotprop/plannotator annotates agent plans in one click",
+      "NVIDIA/SkillEvaluator adds quality gates for agent skills",
+      "Trending star counts show ⭐0, a data gap"
+    ],
+    "ai-hn": [
+      "Nvidia accused of engineering GPU scarcity: 1081 points",
+      "Gemini 4 Hydrogen launches: 569 points, 352 comments",
+      "Edge0-145B pitches frontier AI on your own computer",
+      "Unsloth Qwen3.8-27B Dynamic v3.1 quants hit 252 points",
+      "Anthropic service incident and Claude Desktop freeze bug",
+      "Big thread on Jonathan Blow's AI software quality talk"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B tops the board: 20,066 likes, 6.5M downloads",
+      "Qwen3.8-Flash-Next has 7,142 likes and tag qwen4_exp",
+      "DeepSeek-V4.1-Flash-1017 draws 5,718 likes",
+      "Moonshot's Kimi-K3.1-Pro reaches 2,092 likes",
+      "MiniMax-H3 video and image appear in five entries",
+      "Uncensored heretic fine-tunes draw heavy engagement"
+    ],
+    "ai-community": [
+      "Fowler: treat customer tests as the contract with agents",
+      "temperature=0 isn't deterministic: 17 of 5,000 tokens flipped",
+      "RAG is a search problem first: use an oracle to diagnose",
+      "Fewer permissions beat better judgment for AI agents",
+      "Dev.to (30 articles) and Lobste.rs (8 stories) covered",
+      "Data-file tests are harder for agents to rewrite by accident"
+    ]
+  }
+}
