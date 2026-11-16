@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-11-15T14:28:59.711Z",
+    "lastChecked": "2026-11-16T16:42:33.759Z",
     "seenUrls": {
       "https://www.anthropic.com/news/responsible-scaling-policy-v3": "2026-11-13T22:37:05.591Z",
       "https://www.anthropic.com/research/deprecation-updates-opus-3": "2026-09-09T21:14:42.000Z",
@@ -553,11 +553,12 @@
       "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs": "2026-11-06T17:09:29.000Z",
       "https://www.anthropic.com/news/roadshow-launch": "2026-11-10T11:32:16.000Z",
       "https://www.anthropic.com/research/claude-electronics-design": "2026-11-09T18:51:01.000Z",
-      "https://www.anthropic.com/research/building-strong-safety-evaluations": "2026-11-13T22:37:05.581Z"
+      "https://www.anthropic.com/research/building-strong-safety-evaluations": "2026-11-13T22:37:05.581Z",
+      "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines": "2026-11-16T14:32:08.228Z"
     }
   },
   "openai": {
-    "lastChecked": "2026-11-15T14:29:01.153Z",
+    "lastChecked": "2026-11-16T16:42:34.708Z",
     "seenUrls": {
       "https://openai.com/index/arvind-kc-chief-people-officer/": "2026-11-03T13:34:40.079Z",
       "https://openai.com/index/put-ai-to-work-for-your-product-team/": "2026-11-10T09:52:35.698Z",
@@ -568,7 +569,7 @@
       "https://openai.com/index/inside-our-in-house-data-agent/": "2026-11-02T13:19:13.083Z",
       "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/": "2026-11-08T12:36:48.447Z",
       "https://openai.com/index/openai-deutschland/": "2026-11-09T18:35:33.421Z",
-      "https://openai.com/news/": "2026-11-15T10:05:53.594Z",
+      "https://openai.com/news/": "2026-11-15T22:04:23.461Z",
       "https://openai.com/news/engineering/": "2026-11-13T20:21:47.214Z",
       "https://openai.com/news/safety-alignment/": "2026-11-13T20:19:39.279Z",
       "https://openai.com/news/product-releases/": "2026-11-13T22:12:40.896Z",
@@ -1484,31 +1485,35 @@
       "https://openai.com/index/community-safety-report-and-new-protections-for-teens/": "2026-11-14T12:44:21.484Z",
       "https://openai.com/index/helping-websites-express-ai-training-preferences/": "2026-11-13T22:12:19.527Z",
       "https://openai.com/index/grid-protectors-program/": "2026-11-12T23:55:06.300Z",
-      "https://openai.com/index/scaling-git-at-openai/": "2026-11-15T14:21:22.789Z",
-      "https://openai.com/index/lifeval/": "2026-11-15T09:33:58.736Z",
+      "https://openai.com/index/scaling-git-at-openai/": "2026-11-16T14:36:39.743Z",
+      "https://openai.com/index/lifeval/": "2026-11-16T16:28:56.045Z",
       "https://openai.com/index/dan-driscoll-joins-openai/": "2026-11-13T22:12:16.429Z",
       "https://openai.com/index/forward-deployed-engineering-means/": "2026-11-13T22:12:23.905Z",
-      "https://openai.com/index/accelerating-engineering-for-the-physical-world/": "2026-11-10T18:04:42.427Z",
+      "https://openai.com/index/accelerating-engineering-for-the-physical-world/": "2026-11-16T06:08:13.736Z",
       "https://openai.com/index/daybreak-red-aws-govcloud/": "2026-11-15T10:05:47.787Z",
       "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer/": "2026-11-13T22:12:19.537Z",
       "https://openai.com/index/openai-to-acquire-pierre/": "2026-11-13T22:12:50.296Z",
       "https://openai.com/index/a-thousand-fewer-paths-to-root/": "2026-11-15T10:05:47.574Z",
-      "https://openai.com/index/introducing-images-2-6/": "2026-11-15T11:54:51.705Z",
-      "https://openai.com/index/introducing-gpt-6-cyber/": "2026-11-15T10:45:27.411Z",
-      "https://openai.com/index/australian-universities-ai-native-graduates/": "2026-11-13T22:12:41.596Z",
+      "https://openai.com/index/introducing-images-2-6/": "2026-11-16T15:36:12.614Z",
+      "https://openai.com/index/introducing-gpt-6-cyber/": "2026-11-16T15:40:01.309Z",
+      "https://openai.com/index/australian-universities-ai-native-graduates/": "2026-11-16T10:52:49.838Z",
       "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/": "2026-11-13T22:14:05.945Z",
       "https://openai.com/index/ai-effect-on-freelance-work/": "2026-11-13T22:40:18.435Z",
       "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life/": "2026-11-13T22:14:22.586Z",
       "https://openai.com/index/control-room/": "2026-11-14T12:44:20.478Z",
       "https://openai.com/index/closing-ai-guidance-gap-education/": "2026-11-13T22:12:10.026Z",
-      "https://openai.com/index/chatgpt-enterprise-aws-marketplace/": "2026-11-15T10:29:35.080Z",
+      "https://openai.com/index/chatgpt-enterprise-aws-marketplace/": "2026-11-16T15:29:25.134Z",
       "https://openai.com/index/introducing-businesses-chatgpt/": "2026-11-13T22:13:55.511Z",
       "https://openai.com/index/chatgpt-plus-for-veterans/": "2026-11-13T22:12:30.369Z",
       "https://openai.com/business/learn/enabling-a-data-driven-workforce-webinar/": "2026-11-10T21:25:43.585Z",
       "https://openai.com/business/learn/identifying-and-scaling-ai-use-cases/": "2026-11-10T21:24:23.149Z",
       "https://openai.com/business/learn/how-openai-uses-codex/": "2026-11-10T21:24:20.344Z",
       "https://openai.com/business/learn/fine-tuning-gpt-4o-webinar/": "2026-11-10T21:09:49.430Z",
-      "https://openai.com/index/introducing-chatgpt-wallet/": "2026-11-13T22:14:13.813Z"
+      "https://openai.com/index/introducing-chatgpt-wallet/": "2026-11-13T22:14:13.813Z",
+      "https://openai.com/index/our-first-phase-of-embedded-assessments/": "2026-11-16T16:27:20.431Z",
+      "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/": "2026-11-16T14:29:12.320Z",
+      "https://openai.com/index/advancing-computer-use-for-healthcare-teams/": "2026-11-16T14:01:22.138Z",
+      "https://openai.com/index/lvmh-media-division-partnership/": "2026-11-16T09:06:33.075Z"
     }
   }
 }

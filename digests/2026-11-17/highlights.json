@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code and OpenCode: no releases in last 24h",
+      "OpenCode #59387 free-tier megathread hits 378 comments",
+      "Claude Code #60705 closed with 304 comments",
+      "Claude Code #47509 draws 201 👍 on usage issues",
+      "Users ask for hard spend caps (#85422) in Claude Code",
+      "OpenCode 2.3.0 regressions dominate its bug reports"
+    ],
+    "ai-agents": [
+      "MCP servers: only 2 issues updated, no PRs or releases",
+      "#5553: filesystem search_files needs example descriptions",
+      "#5552: git_log description tweak for small local models",
+      "Both issues tagged enhancement and v2, 0 comments",
+      "Author tested server-filesystem 2.0.0 and 2.2.0",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM ship no releases in last 24h",
+      "Dify has 168 updated PRs, many strict-pyrefly typing",
+      "LiteLLM lts/1.108.x backports ongoing",
+      "LiteLLM bugs: finish-reason, tool-call, billing accuracy",
+      "Budget-enforcement bugs appear alongside new currency features",
+      "Large base64 image payloads expose gateway performance issues"
+    ],
+    "ai-trending": [
+      "NVIDIA/SkillEvaluator tests agent skills, +953 today",
+      "alibaba/open-code-review: Go reviewer with LLM agent, +946",
+      "redhat-et/ripwire: C++23 CLI and MCP server, 2,548 stars",
+      "microsoft/TokenEconomizer cuts agent costs, 7,035 stars",
+      "Trending star totals read 0 for every repo",
+      "Some topic-search repos show suspicious 77k and 58k stars"
+    ],
+    "ai-web": [
+      "Anthropic cuts CVD window from 90 to 30 days",
+      "Medium-severity disclosure window now 45 days",
+      "New CVD timelines apply from January 1, 2027",
+      "External coordinator escalation drops to 15 days",
+      "Patch-to-details wait shortened from 45 to 30 days",
+      "OpenAI adds 4 URLs on healthcare, assessment, media"
+    ],
+    "ai-hn": [
+      "Qwen4-Max launches, 763 points and 384 comments",
+      "Jonathan Blow's AI-coding talk draws 728 comments",
+      "'All AI-generated code should be Open Source' tops at 1210",
+      "Chinese models said to carry export-controlled GPU fingerprints",
+      "Raschka explainer on positional embeddings gets 239 points",
+      "Nvidia China sales and DRAM price-fixing stories trend"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,207 likes, 6.7M downloads",
+      "DeepSeek-V4.1-Flash-1017 hits 5,770 likes",
+      "Moonshot's Kimi-K3.1-Pro reaches 2,127 likes",
+      "MiniMax H3 image family has official, ComfyUI, GGUF builds",
+      "LTX-2.5 and IFM/PAN2 headline video and world models",
+      "Thinking Machines' Inkling-2-Small trends with 381 likes"
+    ],
+    "ai-community": [
+      "Strands orchestration: timeout never fires in nine real runs",
+      "Agent tool-call retries can cause duplicate charges",
+      "Classifier scored 96% because emails leaked across splits",
+      "An MCP tool call can resolve and still fail",
+      "Idempotency keys and reconciliation fix agent retries",
+      "Dev.to (30 articles) and Lobste.rs (9 stories) covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code and OpenCode: no releases in last 24h",
+      "OpenCode #59387 free-tier megathread hits 378 comments",
+      "Claude Code #60705 closed with 304 comments",
+      "Claude Code #47509 draws 201 👍 on usage issues",
+      "Users ask for hard spend caps (#85422) in Claude Code",
+      "OpenCode 2.3.0 regressions dominate its bug reports"
+    ],
+    "ai-agents": [
+      "MCP servers: only 2 issues updated, no PRs or releases",
+      "#5553: filesystem search_files needs example descriptions",
+      "#5552: git_log description tweak for small local models",
+      "Both issues tagged enhancement and v2, 0 comments",
+      "Author tested server-filesystem 2.0.0 and 2.2.0",
+      "Seven MCP and agent-skill projects tracked today"
+    ],
+    "ai-infra": [
+      "Dify and LiteLLM ship no releases in last 24h",
+      "Dify has 168 updated PRs, many strict-pyrefly typing",
+      "LiteLLM lts/1.108.x backports ongoing",
+      "LiteLLM bugs: finish-reason, tool-call, billing accuracy",
+      "Budget-enforcement bugs appear alongside new currency features",
+      "Large base64 image payloads expose gateway performance issues"
+    ],
+    "ai-trending": [
+      "NVIDIA/SkillEvaluator tests agent skills, +953 today",
+      "alibaba/open-code-review: Go reviewer with LLM agent, +946",
+      "redhat-et/ripwire: C++23 CLI and MCP server, 2,548 stars",
+      "microsoft/TokenEconomizer cuts agent costs, 7,035 stars",
+      "Trending star totals read 0 for every repo",
+      "Some topic-search repos show suspicious 77k and 58k stars"
+    ],
+    "ai-web": [
+      "Anthropic cuts CVD window from 90 to 30 days",
+      "Medium-severity disclosure window now 45 days",
+      "New CVD timelines apply from January 1, 2027",
+      "External coordinator escalation drops to 15 days",
+      "Patch-to-details wait shortened from 45 to 30 days",
+      "OpenAI adds 4 URLs on healthcare, assessment, media"
+    ],
+    "ai-hn": [
+      "Qwen4-Max launches, 763 points and 384 comments",
+      "Jonathan Blow's AI-coding talk draws 728 comments",
+      "'All AI-generated code should be Open Source' tops at 1210",
+      "Chinese models said to carry export-controlled GPU fingerprints",
+      "Raschka explainer on positional embeddings gets 239 points",
+      "Nvidia China sales and DRAM price-fixing stories trend"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,207 likes, 6.7M downloads",
+      "DeepSeek-V4.1-Flash-1017 hits 5,770 likes",
+      "Moonshot's Kimi-K3.1-Pro reaches 2,127 likes",
+      "MiniMax H3 image family has official, ComfyUI, GGUF builds",
+      "LTX-2.5 and IFM/PAN2 headline video and world models",
+      "Thinking Machines' Inkling-2-Small trends with 381 likes"
+    ],
+    "ai-community": [
+      "Strands orchestration: timeout never fires in nine real runs",
+      "Agent tool-call retries can cause duplicate charges",
+      "Classifier scored 96% because emails leaked across splits",
+      "An MCP tool call can resolve and still fail",
+      "Idempotency keys and reconciliation fix agent retries",
+      "Dev.to (30 articles) and Lobste.rs (9 stories) covered"
+    ]
+  }
+}
