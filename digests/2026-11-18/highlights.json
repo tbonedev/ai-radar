@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.326 adds Code Mode with agent teams",
+      "OpenCode v1.19.6 adds in-app upgrade path to 2.0",
+      "OpenCode free-tier megathread #59387 hits 389 comments",
+      "Claude Code #91870 draws 278 comments and 132 👍",
+      "OpenCode ships process-daemon-v0.6.0 with @opencode/pty",
+      "Both CLIs invest in Code Mode and multi-agent orchestration"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: only 2 issues, no PRs or releases",
+      "#5553 asks for realistic search_files description examples",
+      "Examples in tool descriptions stop small models refusing to search",
+      "Filesystem server 2.3.0 is the latest version referenced",
+      "Digest covers 7 MCP projects including the official Registry",
+      "Both issues target @modelcontextprotocol/server-filesystem"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.108.10 shipped, signed with cosign",
+      "Dify 1.19.0 regressions dominate issue activity",
+      "Dify Human Input 404 (#46535) has no visible fix PR",
+      "Reasoning-model streaming bugs hit both Dify and LiteLLM",
+      "LiteLLM adds litellm.agent(), evals and MCP guardrails",
+      "LiteLLM closed-issue count inflated by a stale sweep"
+    ],
+    "ai-trending": [
+      "alibaba/open-code-review: Go reviewer, +764 stars today",
+      "Tencent/LoopForge chains Codex and Claude Code, +590 today",
+      "microsoft/TokenEconomizer cuts coding-agent token costs",
+      "redhat-et/ripwire: C++23 MCP server finds code cheaply",
+      "yetone/magpie runs Codex on DeepSeek, Claude Code on Kimi",
+      "Topic-search star counts look implausibly high for new repos"
+    ],
+    "ai-web": [
+      "Anthropic's 8 new articles are mostly backfilled archive posts",
+      "Anthropic's $100M Claude Frontier Academy announced",
+      "Barclays rolls out Claude Code across the bank",
+      "Anthropic commits $10M to Canadian research",
+      "'Building strong safety evaluations' explains eval design",
+      "OpenAI's 4 new items are metadata-only, no analysis possible"
+    ],
+    "ai-hn": [
+      "'All AI-generated code should be Open Source' hits 1,277 pts",
+      "Qwen4-Max tops model news with 869 points",
+      "Chinese models allegedly fingerprinted by export-controlled GPUs",
+      "Windows 11 telemetry on coding agents draws 684 pts",
+      "Credential isolation for AI agents sparks heavy debate",
+      "Community skeptical of AI economics and hype-returns gap"
+    ],
+    "ai-arxiv": [
+      "Latent Lattice Language Models add a new compute-scaling axis",
+      "Optimistic verifiers get hacked: reward hacking paper",
+      "MCP tool-provider misbinding exposes agent trust gaps",
+      "Bagging gives sample-complexity guarantees for CoT learning",
+      "Temporal contamination in LMs inflates economic forecasting",
+      "Bitwise-identical MXFP4 training improves reproducibility"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,372 likes, ~7M downloads",
+      "DeepSeek-V4.1-Flash-1017 trends with 5,845 likes",
+      "Kimi-K3.1-Pro ships with compressed-tensors, 2,186 likes",
+      "MiniMax-H3-Image trends with ComfyUI and GGUF variants",
+      "Lightricks' LTX-2.5 leads video generation",
+      "Thinking Machines' Inkling-2-Small is its first open-weight model"
+    ],
+    "ai-community": [
+      "Agent force-pushed main to scrub a leaked API key, worsening it",
+      "Read-only Claude Code subagent leaked a secret via output",
+      "Tool switches from observing agent reads to blocking first",
+      "Overnight MCP browser agent post-mortem lists failure modes",
+      "Gemini 4 vs Gemma 4 on AIME 2025, cost first",
+      "Digest spans 30 Dev.to articles and 10 Lobste.rs stories"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.326 adds Code Mode with agent teams",
+      "OpenCode v1.19.6 adds in-app upgrade path to 2.0",
+      "OpenCode free-tier megathread #59387 hits 389 comments",
+      "Claude Code #91870 draws 278 comments and 132 👍",
+      "OpenCode ships process-daemon-v0.6.0 with @opencode/pty",
+      "Both CLIs invest in Code Mode and multi-agent orchestration"
+    ],
+    "ai-agents": [
+      "MCP servers repo quiet: only 2 issues, no PRs or releases",
+      "#5553 asks for realistic search_files description examples",
+      "Examples in tool descriptions stop small models refusing to search",
+      "Filesystem server 2.3.0 is the latest version referenced",
+      "Digest covers 7 MCP projects including the official Registry",
+      "Both issues target @modelcontextprotocol/server-filesystem"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.108.10 shipped, signed with cosign",
+      "Dify 1.19.0 regressions dominate issue activity",
+      "Dify Human Input 404 (#46535) has no visible fix PR",
+      "Reasoning-model streaming bugs hit both Dify and LiteLLM",
+      "LiteLLM adds litellm.agent(), evals and MCP guardrails",
+      "LiteLLM closed-issue count inflated by a stale sweep"
+    ],
+    "ai-trending": [
+      "alibaba/open-code-review: Go reviewer, +764 stars today",
+      "Tencent/LoopForge chains Codex and Claude Code, +590 today",
+      "microsoft/TokenEconomizer cuts coding-agent token costs",
+      "redhat-et/ripwire: C++23 MCP server finds code cheaply",
+      "yetone/magpie runs Codex on DeepSeek, Claude Code on Kimi",
+      "Topic-search star counts look implausibly high for new repos"
+    ],
+    "ai-web": [
+      "Anthropic's 8 new articles are mostly backfilled archive posts",
+      "Anthropic's $100M Claude Frontier Academy announced",
+      "Barclays rolls out Claude Code across the bank",
+      "Anthropic commits $10M to Canadian research",
+      "'Building strong safety evaluations' explains eval design",
+      "OpenAI's 4 new items are metadata-only, no analysis possible"
+    ],
+    "ai-hn": [
+      "'All AI-generated code should be Open Source' hits 1,277 pts",
+      "Qwen4-Max tops model news with 869 points",
+      "Chinese models allegedly fingerprinted by export-controlled GPUs",
+      "Windows 11 telemetry on coding agents draws 684 pts",
+      "Credential isolation for AI agents sparks heavy debate",
+      "Community skeptical of AI economics and hype-returns gap"
+    ],
+    "ai-arxiv": [
+      "Latent Lattice Language Models add a new compute-scaling axis",
+      "Optimistic verifiers get hacked: reward hacking paper",
+      "MCP tool-provider misbinding exposes agent trust gaps",
+      "Bagging gives sample-complexity guarantees for CoT learning",
+      "Temporal contamination in LMs inflates economic forecasting",
+      "Bitwise-identical MXFP4 training improves reproducibility"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,372 likes, ~7M downloads",
+      "DeepSeek-V4.1-Flash-1017 trends with 5,845 likes",
+      "Kimi-K3.1-Pro ships with compressed-tensors, 2,186 likes",
+      "MiniMax-H3-Image trends with ComfyUI and GGUF variants",
+      "Lightricks' LTX-2.5 leads video generation",
+      "Thinking Machines' Inkling-2-Small is its first open-weight model"
+    ],
+    "ai-community": [
+      "Agent force-pushed main to scrub a leaked API key, worsening it",
+      "Read-only Claude Code subagent leaked a secret via output",
+      "Tool switches from observing agent reads to blocking first",
+      "Overnight MCP browser agent post-mortem lists failure modes",
+      "Gemini 4 vs Gemma 4 on AIME 2025, cost first",
+      "Digest spans 30 Dev.to articles and 10 Lobste.rs stories"
+    ]
+  }
+}
