@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.327 released",
+      "OpenCode ships v2.3.1 and v2.3.2",
+      "Claude Code #18435 feature request hits 1068 👍",
+      "OpenCode free-tier megathread #59387: 390 comments",
+      "Claude Code multi-account switching #27302 draws 319 comments",
+      "Claude Code classifier blocks too much; OpenCode checks too little"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.5.0 fixes eight vulnerabilities",
+      "mcp-server-git has six advisories fixed in v2.5.0",
+      "Crafted .git/index escapes the --repository boundary",
+      "Git submodule config can run programs (GHSA-8wv7-r664-7594)",
+      "20 PRs merged or closed in 24h; 21 issues closed",
+      "Follow-up hardening and CI gaps now surfacing"
+    ],
+    "ai-infra": [
+      "Dify 1.20.0 stable released",
+      "LiteLLM ships v1.111.0-rc.1 and v1.110.0",
+      "LiteLLM LTS v1.108.11 also released",
+      "LiteLLM has 500 PRs updated, led by billing work",
+      "Database reliability bugs top both projects' open issues",
+      "Dify PR #46692 turns limit fields into int | null"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++23 MCP server cuts agent token use",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "NVIDIA/SkillEvaluator scores agent skills and plugins",
+      "google-research/paper-orchestra gains 1,529 stars today",
+      "Star totals for cleanyourtv and dsh-our-free-model look inflated",
+      "Skill libraries multiply while almost none are tested"
+    ],
+    "ai-web": [
+      "Anthropic: Claude proved security in 100+ RISC-V libraries",
+      "Anthropic Frontier Red Team and Theorem formal verification",
+      "Anthropic financial services: Excel add-in and live data",
+      "OpenAI GPT-6.2 Astra Sol launch page appears",
+      "OpenAI launches ChatGPT for Sales",
+      "OpenAI and Le Groupe Figaro announce a partnership"
+    ],
+    "ai-hn": [
+      "GPT-6.2 Astra and Sol tops HN: 1325 points, 832 comments",
+      "Microsoft MAI Code 2 and Code 2 Flash launch",
+      "'AI is killing All About Berlin': 663 points",
+      "Google AI answers cut search traffic by 40%",
+      "Windows 11 telemetry on coding agents hits 725 points",
+      "Chinese models show export-controlled GPU fingerprints"
+    ],
+    "ai-arxiv": [
+      "Ambient LLMs: temperature matching for small-data SFT",
+      "Hint-Augmented GRPO fixes zero-reward via activation steering",
+      "Bias-head attribution found non-identifiable",
+      "Higher benchmark scores did not mean more completed work",
+      "Papers probe self-improving agents that train other models",
+      "Federated identity and runtime verification for agent governance"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,535 likes, 6.9M downloads",
+      "Lightricks LTX-2.5 tops video generation at 12,505 likes",
+      "DeepSeek-V4.1-Flash-1017 reaches 5,900 likes",
+      "Meta SAM 3 draws 6,938 likes",
+      "MiniMax-H3-Image gets a Comfy-Org port and GGUF",
+      "Nemotron-3.5-Bolt (4GB) leads the on-device models"
+    ],
+    "ai-community": [
+      "Summing agent trace spans doubles the token count",
+      "Strands A2A: caller reported 0 of 2,369 remote tokens",
+      "Agents ported curl's C to Rust, minus upstream fixes",
+      "Simon Willison: external sandboxes for coding agents",
+      "Remote tool failure still marked 'completed' in A2A",
+      "Dev.to (30 articles) and Lobste.rs (9 stories) covered"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.327 released",
+      "OpenCode ships v2.3.1 and v2.3.2",
+      "Claude Code #18435 feature request hits 1068 👍",
+      "OpenCode free-tier megathread #59387: 390 comments",
+      "Claude Code multi-account switching #27302 draws 319 comments",
+      "Claude Code classifier blocks too much; OpenCode checks too little"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.5.0 fixes eight vulnerabilities",
+      "mcp-server-git has six advisories fixed in v2.5.0",
+      "Crafted .git/index escapes the --repository boundary",
+      "Git submodule config can run programs (GHSA-8wv7-r664-7594)",
+      "20 PRs merged or closed in 24h; 21 issues closed",
+      "Follow-up hardening and CI gaps now surfacing"
+    ],
+    "ai-infra": [
+      "Dify 1.20.0 stable released",
+      "LiteLLM ships v1.111.0-rc.1 and v1.110.0",
+      "LiteLLM LTS v1.108.11 also released",
+      "LiteLLM has 500 PRs updated, led by billing work",
+      "Database reliability bugs top both projects' open issues",
+      "Dify PR #46692 turns limit fields into int | null"
+    ],
+    "ai-trending": [
+      "redhat-et/ripwire: C++23 MCP server cuts agent token use",
+      "microsoft/TokenEconomizer cuts coding-agent costs",
+      "NVIDIA/SkillEvaluator scores agent skills and plugins",
+      "google-research/paper-orchestra gains 1,529 stars today",
+      "Star totals for cleanyourtv and dsh-our-free-model look inflated",
+      "Skill libraries multiply while almost none are tested"
+    ],
+    "ai-web": [
+      "Anthropic: Claude proved security in 100+ RISC-V libraries",
+      "Anthropic Frontier Red Team and Theorem formal verification",
+      "Anthropic financial services: Excel add-in and live data",
+      "OpenAI GPT-6.2 Astra Sol launch page appears",
+      "OpenAI launches ChatGPT for Sales",
+      "OpenAI and Le Groupe Figaro announce a partnership"
+    ],
+    "ai-hn": [
+      "GPT-6.2 Astra and Sol tops HN: 1325 points, 832 comments",
+      "Microsoft MAI Code 2 and Code 2 Flash launch",
+      "'AI is killing All About Berlin': 663 points",
+      "Google AI answers cut search traffic by 40%",
+      "Windows 11 telemetry on coding agents hits 725 points",
+      "Chinese models show export-controlled GPU fingerprints"
+    ],
+    "ai-arxiv": [
+      "Ambient LLMs: temperature matching for small-data SFT",
+      "Hint-Augmented GRPO fixes zero-reward via activation steering",
+      "Bias-head attribution found non-identifiable",
+      "Higher benchmark scores did not mean more completed work",
+      "Papers probe self-improving agents that train other models",
+      "Federated identity and runtime verification for agent governance"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,535 likes, 6.9M downloads",
+      "Lightricks LTX-2.5 tops video generation at 12,505 likes",
+      "DeepSeek-V4.1-Flash-1017 reaches 5,900 likes",
+      "Meta SAM 3 draws 6,938 likes",
+      "MiniMax-H3-Image gets a Comfy-Org port and GGUF",
+      "Nemotron-3.5-Bolt (4GB) leads the on-device models"
+    ],
+    "ai-community": [
+      "Summing agent trace spans doubles the token count",
+      "Strands A2A: caller reported 0 of 2,369 remote tokens",
+      "Agents ported curl's C to Rust, minus upstream fixes",
+      "Simon Willison: external sandboxes for coding agents",
+      "Remote tool failure still marked 'completed' in A2A",
+      "Dev.to (30 articles) and Lobste.rs (9 stories) covered"
+    ]
+  }
+}
