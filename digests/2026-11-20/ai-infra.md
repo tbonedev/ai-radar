@@ -1,6 +1,6 @@
 # AI Infrastructure Digest 2026-11-20
 
-> Generated: 2026-11-19 16:15 UTC | Projects covered: 2
+> Generated: 2026-11-20 15:53 UTC | Projects covered: 2
 
 - [Dify](https://github.com/langgenius/dify)
 - [LiteLLM](https://github.com/BerriAI/litellm)
@@ -9,60 +9,69 @@
 
 ## Cross-Project Comparison
 
-# AI Infrastructure Cross-Project Report: 2026-11-20
+# AI Infrastructure Cross-Project Comparison, 2026-11-20
 
-**Scope note:** The digests cover only two projects, Dify (application platform) and LiteLLM (LLM gateway). No inference engine, local runtime or fine-tuning project was supplied. Sections 3 and 4 are therefore thin, and I have not filled the gaps from outside knowledge. Counts below are the items cited in the digests, not full repository totals.
+**Coverage note:** Only two digests were supplied: Dify (an LLM app platform) and LiteLLM (a gateway). No serving engines (vLLM, SGLang), local runtimes (llama.cpp, Ollama) or fine-tuning frameworks (Unsloth) were included. Sections 3 to 5 therefore cover the application and gateway layers only, and I don't infer anything about the missing projects.
 
 ## 1. Ecosystem Overview
-Today's activity is at the gateway and application layers, not the engine layer. LiteLLM shipped five releases (one release candidate, three stable patches, one LTS patch). It is also moving cost and pricing logic from Python to Rust. Dify is rebuilding its agent runtime (Agent v2) and hardening the sandbox around it. Both projects are fixing regressions in the controls around models, such as rate limits, budgets, Top K retrieval and sandbox timeouts, more than adding new model capability.
+Today's activity sits at the layers above the inference engine, and it centers on reliability rather than new capability. LiteLLM shipped six release tags across five version lines, while open work concentrates on silent correctness failures: misreported `finish_reason`, lost streamed usage and budget overshoot. Dify had no release. Its open items are mostly months-old Agent and workflow bugs, plus a 1.19.0 regression. Both projects are hardening for enterprise use, through FIPS/OpenSSL and security PRs at LiteLLM and RBAC defaults and plugin-daemon error handling at Dify. The one signal that reaches down to the engine layer is a Dify RFC about LLM prefix-cache loss.
 
 ## 2. Activity Comparison
 
-| | Dify | LiteLLM |
-|---|---|---|
-| Issues cited | ~21 (about 9 closed) | ~19 (about 10 closed) |
-| PRs cited | ~10 | ~12 |
-| Release status | No release in 24h. v1.19.0 regressions still arriving | v1.111.0-rc.2, v1.110.1, v1.109.2, v1.106.11, and LTS v1.108.12 |
-| Largest open work | BYOA external agents (#45918, XXL), Service API statistics (#46782, XXL) | Rust pricing stack (#52484, #52624–#52627) |
-| Release notes usable? | n/a | No. Only cosign boilerplate, so changelogs and breaking changes are unknown |
+| Project | Issues | PRs | Release status |
+|---|---|---|---|
+| Dify | 329 total; digest covers the top 30 by comments | 142 total; digest covers the top 20 by comments | None in the last 24h |
+| LiteLLM | Not stated; about 25 cited, 7 closed and the rest open | Not stated; about 20 cited | 6 tags: v1.111.0-rc.3, v1.110.2, v1.109.3, v1.108.13 (LTS), v1.106.12, v1.112.0-dev.1 |
 
-LiteLLM is the more release-active project. Dify's activity is mostly PRs and bug triage on one version line.
+- The Dify counts are the only totals in the data, and they aren't directly comparable to LiteLLM's.
+- LiteLLM's release notes for the RC and patches show only cosign verification, so their contents are unknown.
 
 ## 3. Model Support Race
-No new model architectures shipped today in either project, so there is no race to call.
-- **LiteLLM** has provider and model additions only in open PRs. #52763 updates Azure and Together retirement dates and adds GMI Gemini 4 Hydrogen. #52854 adds API Store as an OpenAI-compatible provider with DeepSeek V4.1. #52681 serves Bedrock Claude Platform `/v1/messages` on Rust. The SGLang provider request (#13681) was closed as stale.
-- **Dify** reported nothing new. Its model-adjacent item is a bug: Agent v2 workflow tools with file inputs run with `files=[]` (#45431).
-
-Neither project is ahead. LiteLLM is the only one adding model coverage, and none of it has merged.
+- **LiteLLM is the only project here with model-catalog work.**
+  - [PR #50768](https://github.com/BerriAI/litellm/pull/50768) is open and adds Meta Muse models on Vertex AI (Wonder 1.0, Ember 1.0, Spark 1.3) with native Responses routing.
+  - [PR #46642](https://github.com/BerriAI/litellm/pull/46642) is open and adds SAP AI Core `reasoning_content`, which is a list of `{content, signature}` objects. LiteLLM currently types the field as `Optional[str]`.
+  - [PR #53108](https://github.com/BerriAI/litellm/pull/53108) removes an undocumented Databricks cost-map entry.
+- **Dify has no model or hardware work.**
+  - Its only new capability is the BYOA external-agent PR ([#45918](https://github.com/langgenius/dify/pull/45918)), which is not a model feature.
+  - [PR #46859](https://github.com/langgenius/dify/pull/46859) adds a Swedish UI locale.
+- **Verdict:** LiteLLM leads, but nothing in the data shows a shipped model. Both new-model PRs are open or in the catalog stage. I can't rank new-architecture support without the engine projects.
 
 ## 4. Performance Frontier
-The digests contain no KV cache, batching, quantization, distributed-serving or kernel work. The optimization effort is in gateway and platform overhead:
-- **LiteLLM, Rust cost pricing** (#52484, #52624, #52625, #52626, #52627). This moves token, Claude, `/v1/messages`, media and fee pricing out of Python. No benchmarks are given.
-- **LiteLLM, memory retention.** A failed proxy call keeps its request body until a full GC (#52278, about 1 GiB growth per burst of 16 failed calls with 20 MiB bodies). A sync exception reference cycle pins messages (#48649). The Helm migration Job peaks at 1.15 GiB (#47076). All three are closed.
-- **Dify, resource hygiene.** Closed fixes for SSE responses left open (#46565) and unclosed download bodies (#42905). Open items are RAG overview metrics polling after indexing finishes (#46699) and a hardcoded 10s OpenSearch timeout (#46750).
+There are no benchmark numbers in either digest. The nearest items are:
+- **KV/prefix cache:** Dify [#44826](https://github.com/langgenius/dify/issues/44826) says Agent context compaction cuts the prefix-cache hit rate to about 10%, against about 99% with a stable prefix. This is the most infrastructure-relevant item in the set. It is an unverified reporter claim, the issue is open and no fix is linked.
+- **Streaming path:** LiteLLM [PR #43718](https://github.com/BerriAI/litellm/pull/43718) keeps the streaming fast path when guardrails use only `pre_call`. Dify [#41556](https://github.com/langgenius/dify/issues/41556) (closed) covered chunked streaming output.
+- **Connection handling:** Dify [PR #39321](https://github.com/langgenius/dify/pull/39321) tries streamable-http first for MCP. This avoids a hang of up to 300s on ambiguous URL paths.
+- **Not covered today:** batching, quantization, distributed serving and kernels have no data.
+- **FIPS work:** LiteLLM's OpenSSL PRs ([#53103](https://github.com/BerriAI/litellm/pull/53103), [#53104](https://github.com/BerriAI/litellm/pull/53104), [#53070](https://github.com/BerriAI/litellm/pull/53070)) are compliance changes, not speed changes.
 
 ## 5. Layer Positioning
-- **Application and agent platform (Dify):** workflow builder, RAG, and its own agent runtime and sandbox. It consumes model endpoints and does not serve them. It is moving toward external agents via A2A 1.0.
-- **Gateway (LiteLLM):** the routing, budget, rate-limit, spend-tracking and MCP layer between applications and providers. Moving pricing to Rust makes it a hot-path component, not just a proxy.
-- **Not represented today:** serving engines, local runtimes and fine-tuning frameworks.
-- **Overlap:** both are adding MCP and A2A-style agent connectivity. LiteLLM has MCP tool discovery and elicitation work. Dify has BYOA.
+
+| Layer | Project | Role today |
+|---|---|---|
+| Application / agent platform | Dify | Workflow, Agent, plugin and MCP orchestration. It sits above any model server and is a consumer of vLLM or SGLang, not an engine itself. |
+| Gateway / routing | LiteLLM | Provider translation, budgets, routing, usage accounting, MCP and A2A. It is the translation layer between apps and providers. |
+| Serving engine, local runtime, fine-tuning | Not in the data | No assessment possible. |
+
+The two overlap at MCP and agent protocols. Both have open MCP auth and tool-listing defects: Dify [#36230](https://github.com/langgenius/dify/issues/36230) and LiteLLM [#52849](https://github.com/BerriAI/litellm/issues/52849) and [#37222](https://github.com/BerriAI/litellm/issues/37222).
 
 ## 6. Trend Signals
-1. **Gateways are being rewritten for speed and cost accuracy.** The Rust pricing migration could change spend numbers. Compare spend before and after you upgrade.
-2. **Agent runtimes are the new reliability surface.** Dify's sandbox hangs and timeout bugs (#46784, #46786) and LiteLLM's MCP gaps are the active bug classes. Gaps include multimodal tool results being dropped (#52560) and discovery regressions (#52849).
-3. **Accounting correctness is a recurring weakness.** Examples are failed requests not counting toward RPM (#21312), priority routing ignoring `tpm` (#52548), duplicate budget webhooks (#44919), and Dify's Top K slots before dedup (#46584).
-4. **Fast release trains carry regression risk.** Dify 1.19.0 has Human Input, Top K and UI regressions. LiteLLM's rc plus four patch lines is hard to track.
+1. **Silent correctness failures are the main risk.**
+   - LiteLLM maps errors to `finish_reason: "stop"` ([#48721](https://github.com/BerriAI/litellm/issues/48721)), so router retries never run.
+   - Dify's Agent can fabricate tool-call success ([#40671](https://github.com/langgenius/dify/issues/40671)).
+   - Both let a failure look like a success.
+2. **Metering is unreliable.** Budgets overshoot by about 10% ([#50125](https://github.com/BerriAI/litellm/issues/50125)), and streamed usage is dropped or estimated (#46059, #46613, #36882).
+3. **MCP integration is immature.** Auth and tool-discovery bugs are open in both projects.
+4. **Enterprise and compliance hardening is rising.** FIPS images, a security-hardening PR (LiteLLM [#53098](https://github.com/BerriAI/litellm/pull/53098)), cosign-signed releases and Dify's RBAC change ([#46860](https://github.com/langgenius/dify/pull/46860)).
+5. **Agent-to-engine coupling is emerging.** Agent context management can undermine prefix caching on self-hosted backends.
 
 **What developers should do:**
-- Pin to LiteLLM LTS v1.108.12 or a patched stable line, not the rc.
-- Verify the read-replica fix (#52284) is in your version.
-- Flush `s3_v2` logs before shutdown (#52588).
-- Don't rely on gateway rate limits alone. Add provider-side limits.
-- Test Dify Agent v2 file-input tools explicitly, and review #46780 before relying on persistent Chatflow agent history.
-- Use non-streaming for Codex/`chatgpt` parallel tool calls on LiteLLM (#45348).
-- Give the LiteLLM Helm migration Job more than 1Gi of memory on affected versions.
-
-To get the engine, runtime and fine-tuning comparison (vLLM, SGLang, llama.cpp, Ollama, Unsloth), send the digests for those projects.
+- Verify tool results and output completeness independently. Don't rely on `finish_reason` or an agent's claim that a tool ran.
+- Leave at least 10% headroom on budget caps, and don't bill from proxy-reported streamed usage.
+- Pin LiteLLM to LTS v1.108.13 or a patched line, verify images with cosign, and skip the v1.111.0 RC and the dev build.
+- Delay Dify 1.19.0 if you use the Question Classifier ([#46744](https://github.com/langgenius/dify/issues/46744)).
+- Add Celery worker liveness checks and a restart policy for self-hosted Dify ([#44188](https://github.com/langgenius/dify/issues/44188)).
+- Add a restart playbook for LiteLLM read-replica deployments ([#52284](https://github.com/BerriAI/litellm/issues/52284)).
+- Track the prefix-cache hit rate if you run long Agent sessions on vLLM or SGLang.
 
 ---
 
@@ -73,54 +82,72 @@ To get the engine, runtime and fine-tuning comparison (vLLM, SGLang, llama.cpp, 
 
 # Dify Digest — 2026-11-20
 
-Dify is an application-layer LLM platform, not an inference engine. This digest therefore covers the model-serving, gateway and agent-runtime areas it touches.
+(Note: Dify is an LLM app platform, not an inference engine. Sections 3 and 4 are mostly empty for that reason. The data comes from the top 30 issues and top 20 PRs by comment count, not all 329 issues and 142 PRs.)
 
 ## 1. Today's Highlights
-No release shipped in the last 24h. Activity centered on the **Agent v2 / Dify Agent** runtime, with several small fixes from one contributor for sandbox and SSE edge cases. Larger feature PRs landed for Chatflow session continuity and external agents (BYOA). Version 1.19.0 regressions are still arriving (Human Input 404, Top K accounting, classifier UI).
+No release shipped in the last 24h. Activity centers on the v1.16–1.19 Agent and workflow stack. Several months-old Agent bugs are still open and active. A new 1.19.0 regression (the Question Classifier can't add categories) was reported today. PR work focuses on plugin-daemon error handling, RBAC defaults and frontend test and refactor cleanup.
 
 ## 2. Releases & Breaking Changes
-No new releases. Items to watch:
-- **BYOA external agent backend** (A2A 1.0, durable invocations, no duplicate business POST on unknown outcome): [PR #45918](https://github.com/langgenius/dify/pull/45918) (open, XXL).
-- **Service API statistics**: eight new `/v1/statistics/` endpoints, authenticated, no Console auth needed: [PR #46782](https://github.com/langgenius/dify/pull/46782) (open, XXL).
-- **Chatflow session continuity**: a per-node setting for the New Agent node to start a fresh Agent session per user message, instead of always reusing participant history: [PR #46780](https://github.com/langgenius/dify/pull/46780).
-- **Builder branch sync**: `feat/dify-builder` merged with main, about 346 commits behind: [PR #46767](https://github.com/langgenius/dify/pull/46767).
-- Docker quick start now needs `DIFY_AGENT_LOCAL_SANDBOX_AUTH_TOKEN`, Docker Compose 2.35.0+ and OpenSSL. The zh-TW docs omitted this ([#46569](https://github.com/langgenius/dify/issues/46569), fixed by [PR #46570](https://github.com/langgenius/dify/pull/46570)).
+No releases in the last 24h.
+
+Behavior change under review: [PR #46860](https://github.com/langgenius/dify/pull/46860) stops automatically adding all workspace members to new apps when RBAC is enabled. It fixes #46855. This would change default app visibility, so check it before upgrading if you rely on RBAC.
 
 ## 3. New Model & Hardware Support
-Nothing reported in the data. Related items:
-- Agent v2 workflow tools: file inputs are hidden from the model, so calls run with `files=[]` ([#45431](https://github.com/langgenius/dify/issues/45431), open).
-- A proposal to add Caddy as an alternative reverse proxy in docker-compose, with a parity-tested prototype ([#46728](https://github.com/langgenius/dify/issues/46728)).
+Nothing on model or hardware backends today.
+
+- [PR #46859](https://github.com/langgenius/dify/pull/46859) adds a Swedish (`sv-SE`) UI locale. This is localization only.
+- [PR #45918](https://github.com/langgenius/dify/pull/45918) is a large backend feature for BYOA (bring-your-own-agent) external agents. It covers connection verification, an immutable Agent Card, masked credentials, and workflow execution support. It's the most significant new capability in flight.
 
 ## 4. Performance & Optimization
-No benchmarks were reported. Related items:
-- OpenSearch client timeout is hardcoded at 10s, so searches fail with read timeouts on cold k-NN graphs. The ask is to make it configurable ([#46750](https://github.com/langgenius/dify/issues/46750)).
-- The new RAG overview keeps polling metrics after indexing finishes, which wastes requests ([#46699](https://github.com/langgenius/dify/issues/46699)).
-- Closed issues: the Async Agent SDK left SSE responses open ([#46565](https://github.com/langgenius/dify/issues/46565)), and ArchiveStorage did not close download response bodies ([#42905](https://github.com/langgenius/dify/issues/42905)).
+No measured numbers were reported. Items of interest:
+
+- [Issue #44826](https://github.com/langgenius/dify/issues/44826) (RFC, 11 comments) says Agent context compaction may break LLM prefix caching. The reporter cites a hit rate of about 10%, against about 99% when the prefix stays stable. This matters for cost and latency on self-hosted vLLM/SGLang backends. I can't confirm the numbers from the summary. The issue is open with no linked fix.
+- [Issue #41556](https://github.com/langgenius/dify/issues/41556) (closed, v1.16.0) reported streaming output arriving in chunks instead of token by token.
+- [PR #39321](https://github.com/langgenius/dify/pull/39321) makes the MCP client try streamable-http first. It also catches httpx timeouts. Before, a streamable-http server on an ambiguous URL path could hang for the default 300s `sse_read_timeout`.
 
 ## 5. Stability & Regressions
-Ranked by severity:
-1. **Human Input form returns 404 "Form not found" in webapp (1.19.0).** The webapp surface was issued a BACKSTAGE token. Closed: [#46535](https://github.com/langgenius/dify/issues/46535).
-2. **Knowledge retrieval: summary and original chunk hits use separate Top K slots before dedup (1.19.0).** This can reduce effective recall. Open, no fix PR seen: [#46584](https://github.com/langgenius/dify/issues/46584).
-3. **Agent transient commands ignore timeout while replaying truncated output.** Fix: [PR #46785](https://github.com/langgenius/dify/pull/46785) for [#46784](https://github.com/langgenius/dify/issues/46784).
-4. **Binding file preview blocks on a FIFO with no writer.** This is a potential hang in the agent sandbox. Fix: [PR #46787](https://github.com/langgenius/dify/pull/46787) for [#46786](https://github.com/langgenius/dify/issues/46786).
-5. **Problem classifier cannot add a category by clicking (1.19.0).** Open: [#46744](https://github.com/langgenius/dify/issues/46744).
-6. **`crypto.randomUUID` is not a function over plain HTTP.** Self-hosted setups without HTTPS are affected. Closed: [#46686](https://github.com/langgenius/dify/issues/46686) and [#45391](https://github.com/langgenius/dify/issues/45391).
-7. **Workflow output panel double-encodes structured JSON.** Fix: [PR #46788](https://github.com/langgenius/dify/pull/46788) for [#46783](https://github.com/langgenius/dify/issues/46783).
-8. **Download filenames don't encode `/` in `Content-Disposition`.** This violates RFC 5987/6266. Fix: [PR #46753](https://github.com/langgenius/dify/pull/46753) for [#46752](https://github.com/langgenius/dify/issues/46752).
-9. **TTS audio fails to play in the browser.** Open: [#35880](https://github.com/langgenius/dify/issues/35880).
-10. **Evaluation preview shows the current judge model, not the run's model.** Closed: [#46756](https://github.com/langgenius/dify/issues/46756).
-11. **Canvas nodes intermittently disabled in 1.18.0.** Closed: [#45147](https://github.com/langgenius/dify/issues/45147).
+Ranked roughly by severity. None of the issues below links a fix PR, except where noted.
 
-Type-checker cleanup: four pyrefly diagnostics in the agent backend ([#46769](https://github.com/langgenius/dify/issues/46769), [PR #46770](https://github.com/langgenius/dify/pull/46770)). Mock-heavy tests: [#45585](https://github.com/langgenius/dify/issues/45585).
+1. **Worker stops consuming Celery tasks after a Redis connection reset** (v1.17.1): [#44188](https://github.com/langgenius/dify/issues/44188). It's a production availability risk. Workers need a restart to recover.
+2. **Agent (FunctionCalling) fabricates tool-call success without running the tool** (v1.16.1): [#40671](https://github.com/langgenius/dify/issues/40671). This is a correctness bug that can silently produce wrong results.
+3. **New in 1.19.0: Question Classifier can't add a category by clicking**: [#46744](https://github.com/langgenius/dify/issues/46744). It has 9 comments and was reported yesterday.
+4. **Agent mode file handling**:
+   - Uploaded files aren't shown, and file variables are invalid in build: [#40874](https://github.com/langgenius/dify/issues/40874).
+   - `#context_files#` is empty for published-app end users: [#42277](https://github.com/langgenius/dify/issues/42277).
+   - Failures with attachments across multiple turns: [#41059](https://github.com/langgenius/dify/issues/41059).
+5. **Plugin and provider problems**:
+   - Model provider plugin migration error: [#40773](https://github.com/langgenius/dify/issues/40773).
+   - Structured output is silently dropped when a plugin doesn't implement it: [#40907](https://github.com/langgenius/dify/issues/40907).
+   - `provider_credential_schema` error in knowledge pipeline setup: [#40985](https://github.com/langgenius/dify/issues/40985).
+   - **Fix in flight:** [PR #46862](https://github.com/langgenius/dify/pull/46862) preserves plugin-daemon errors in provider lists. Today, HTTP 200 with a nonzero daemon code and `data: null` gets turned into `invalid_param`. It fixes #46861.
+6. **Workflow engine**:
+   - Assign Variable node inside a Loop is skipped and can't be tested alone (1.14.2–1.15.0): [#38246](https://github.com/langgenius/dify/issues/38246).
+   - Iteration node returns empty output in parallel mode: [#39977](https://github.com/langgenius/dify/issues/39977).
+   - Conversation variables updated in an iteration don't persist to the main flow: [#43312](https://github.com/langgenius/dify/issues/43312).
+   - Human Input doesn't show the LLM response text: [#37588](https://github.com/langgenius/dify/issues/37588).
+   - A scheduled trigger drifts from 10 minutes to 2 minutes (closed): [#41214](https://github.com/langgenius/dify/issues/41214).
+7. **MCP**:
+   - OAuth never triggers for servers that return 200 on initialize without auth: [#36230](https://github.com/langgenius/dify/issues/36230).
+   - Adding the GitHub MCP server via a GitHub app: [#37374](https://github.com/langgenius/dify/issues/37374).
+   - Related fix: [PR #46305](https://github.com/langgenius/dify/pull/46305) keeps MCP tool-list output as JSON text instead of a Python `str()` repr.
+8. **Other**:
+   - The suggested-question API returns empty content: [#41854](https://github.com/langgenius/dify/issues/41854).
+   - The plugin_daemon HTTP proxy env var only accepts uppercase names: [#18752](https://github.com/langgenius/dify/issues/18752).
+   - The new Agent's conversation detail log can't be opened: [#40761](https://github.com/langgenius/dify/issues/40761).
+
+Small fix PRs:
+- [#43241](https://github.com/langgenius/dify/pull/43241): required Number inputs now accept `0`.
+- [#46304](https://github.com/langgenius/dify/pull/46304): log pagination resets when filters change.
+- [#43476](https://github.com/langgenius/dify/pull/43476): OAuth redirects resolve against the console origin.
 
 ## 6. What This Means for Application Developers
-- **Agent v2 is moving fast.** Expect sandbox hardening and semantics changes such as per-message sessions. If you rely on persistent agent history in Chatflow, check [PR #46780](https://github.com/langgenius/dify/pull/46780) before upgrading.
-- **Workflow tools with file inputs under Agent v2** may silently run with no files ([#45431](https://github.com/langgenius/dify/issues/45431)). Test them explicitly.
-- **On 1.19.0**, validate Human Input flows and RAG Top K behavior when summary indexing is enabled before rolling out.
-- **Self-hosting over HTTP** can break UI features until the `randomUUID` fix ships. Terminate TLS in front, or use localhost.
-- **OpenSearch deployments** should warm k-NN indexes. There is no timeout knob yet.
-- **Service API statistics** ([PR #46782](https://github.com/langgenius/dify/pull/46782)) would enable usage dashboards without Console credentials, once merged.
-- **Docker upgraders** must set the sandbox auth token in `docker/.env`.
+- **Treat Agent-mode tool results as unverified.** Given [#40671](https://github.com/langgenius/dify/issues/40671), validate side effects downstream and don't trust the agent's claim that a tool ran.
+- **Delay the upgrade to 1.19.0 if you use the Question Classifier.** See [#46744](https://github.com/langgenius/dify/issues/46744).
+- **Watch parallel iteration and loop workflows.** Empty outputs and variable-persistence bugs ([#39977](https://github.com/langgenius/dify/issues/39977), [#43312](https://github.com/langgenius/dify/issues/43312), [#38246](https://github.com/langgenius/dify/issues/38246)) call for explicit output checks, or running iterations serially.
+- **Self-hosters should monitor Celery.** Add a worker-liveness check and a restart policy for Redis resets ([#44188](https://github.com/langgenius/dify/issues/44188)).
+- **If you serve models through vLLM or SGLang, check your prefix-cache hit rate.** Long Agent sessions may lose it to compaction ([#44826](https://github.com/langgenius/dify/issues/44826)).
+- **Plan for the RBAC default change.** If you rely on new apps being visible to all members, re-check access once [#46860](https://github.com/langgenius/dify/pull/46860) lands.
+- **BYOA ([#45918](https://github.com/langgenius/dify/pull/45918)) is worth tracking** if you want to plug external agents into workflows.
 
 </details>
 
@@ -130,70 +157,77 @@ Type-checker cleanup: four pyrefly diagnostics in the agent backend ([#46769](ht
 # LiteLLM Digest — 2026-11-20
 
 ## 1. Today's Highlights
-LiteLLM shipped a burst of releases: a v1.111.0 release candidate, patch releases on three stable lines (v1.110.1, v1.109.2, v1.106.11), and an LTS patch (v1.108.12). The main code activity is a stack of PRs from maciej-berri that move cost calculation (token, Claude, `/v1/messages`, media and fee pricing) from Python into Rust. Open bugs center on memory retention after failed calls, MCP edge cases, and routing and rate-limit accounting.
+LiteLLM shipped a burst of releases across several lines: v1.111.0-rc.3, patches v1.110.2, v1.109.3, v1.108.13 (LTS) and v1.106.12, plus the v1.112.0-dev.1 pre-release. Work in flight is dominated by FIPS/OpenSSL hardening of the Rust bridge, a security-hardening PR, and fixes for streaming and Responses API error handling. Several reports concern silent correctness problems: wrong `finish_reason`, lost streamed usage, and budget overshoot.
 
 ## 2. Releases & Breaking Changes
-The release notes in the data only show the cosign verification boilerplate, so I can't list changelog items or breaking changes. Check the release pages before upgrading.
-- **v1.111.0-rc.2**: release candidate for the next minor. Don't use it in production.
-- **v1.110.1**, **v1.109.2**, **v1.106.11**: patch releases on older lines.
-- **v1.108.12 (LTS)**: the `lts` image tag (`ghcr.io/berriai/litellm:lts`) now points to this release.
-- All images are signed. Verify with `cosign verify` using the identity `BerriAI/project-releaser/.github/workflows/release.yml@refs/heads/main`.
+- **v1.111.0-rc.3**: release candidate. The notes provided contain only cosign verification instructions, so the changelog is not visible here.
+- **v1.110.2, v1.109.3, v1.106.12**: patch releases on older lines. Notes show only cosign verification, so the contents are unknown.
+- **v1.108.13 (LTS)**: the `lts` image tag (`ghcr.io/berriai/litellm:lts`) tracks the latest LTS patch. Backports are going to `lts/1.108.x`, for example the A2A streaming fix in [PR #53101](https://github.com/BerriAI/litellm/pull/53101).
+- **v1.112.0-dev.1**: dev pre-release, not for production.
+- **Breaking changes in open or closed PRs (not yet in a confirmed release):**
+  - [PR #49839](https://github.com/BerriAI/litellm/pull/49839) (open, marked `!`): the router now merges deployment `extra_body` with request `extra_body`. Before, a client-supplied `extra_body` replaced the deployment's.
+  - [PR #48373](https://github.com/BerriAI/litellm/pull/48373) (closed, marked `!`): Anthropic fields in `extra_body` now go to the top level of the Messages request. The PR flags a breaking change for Azure AI, Bedrock invoke, Bedrock Mantle, Claude Platform, OpenCode Go and Vertex batch files. I can't tell from the data whether it merged.
+- All releases are signed. Verify with `cosign verify` using the project-releaser workflow identity.
 
 ## 3. New Model & Hardware Support
-There are no hardware or quantization changes today. Model and provider additions are all in open PRs:
-- [PR #52763](https://github.com/BerriAI/litellm/pull/52763): updates Azure and Together retirement dates in the cost map and adds GMI Gemini 4 Hydrogen.
-- [PR #52854](https://github.com/BerriAI/litellm/pull/52854): adds API Store as an OpenAI-compatible provider, with DeepSeek V4.1 models and proper spend tracking (today it shows $0 when set up as a generic endpoint).
-- [PR #52681](https://github.com/BerriAI/litellm/pull/52681): serves Bedrock Claude Platform `/v1/messages` on Rust only. It follows #52328, so all three Bedrock Messages routes would run on Rust.
-- [Issue #13681](https://github.com/BerriAI/litellm/issues/13681): the SGLang provider request was closed as stale, with no implementation visible in the data.
+- [PR #50768](https://github.com/BerriAI/litellm/pull/50768) (open): adds Meta Muse models on Vertex AI (Wonder 1.0, Ember 1.0, Spark 1.3) with catalog entries and native Responses routing.
+- [PR #53108](https://github.com/BerriAI/litellm/pull/53108) (closed): removes the `databricks-gemini-nano-banana-2-1` cost-map row. The endpoint name was a guess, and Databricks hasn't documented it.
+- [PR #46642](https://github.com/BerriAI/litellm/pull/46642) (open): SAP AI Core `reasoning_content` support. SAP returns a list of `{content, signature}` objects, but LiteLLM types the field as `Optional[str]`.
+- FIPS image work (see below) targets compliance environments.
 
 ## 4. Performance & Optimization
-The Rust cost-pricing migration is a series of open PRs. None include benchmark numbers in the data.
-- [#52484](https://github.com/BerriAI/litellm/pull/52484): Claude token calls, budget holds and auth price checks in Rust.
-- [#52624](https://github.com/BerriAI/litellm/pull/52624): native `/v1/messages` pricing in the Rust route, so it isn't re-priced in Python.
-- [#52627](https://github.com/BerriAI/litellm/pull/52627): token pricing for every provider and Decisions calls, replacing per-provider copies of the token math.
-- [#52625](https://github.com/BerriAI/litellm/pull/52625): rerank, vector store, OCR, speech, transcription, search, video and image pricing.
-- [#52626](https://github.com/BerriAI/litellm/pull/52626): A2A, MCP and guardrail fees, batch lines and session parts.
-
-Memory-related reports:
-- [#52278](https://github.com/BerriAI/litellm/issues/52278) (closed): failed proxy calls keep the request body in memory until a full GC. About 1 GiB growth per burst of 16 failed calls with 20 MiB bodies.
-- [#48649](https://github.com/BerriAI/litellm/issues/48649) (closed): a failed sync `completion()` leaves an exception/Logging reference cycle that pins the messages.
-- [#47076](https://github.com/BerriAI/litellm/issues/47076) (closed): the Helm migration Job is OOMKilled at 1Gi since v1.105.x because `prisma generate` runs after migration (1.15 GiB peak).
+No benchmark numbers in today's data. Related work:
+- [PR #43718](https://github.com/BerriAI/litellm/pull/43718): keeps the streaming fast path for guardrails with `event_hook: pre_call` only. Today any `CustomGuardrail` forces the slower per-chunk post-call hook.
+- [PR #53103](https://github.com/BerriAI/litellm/pull/53103), [#53104](https://github.com/BerriAI/litellm/pull/53104), [#53070](https://github.com/BerriAI/litellm/pull/53070): move the FIPS build of the Rust bridge to OpenSSL for virtual-key SHA-256 hashing, HTTPS clients and Postgres TLS. These are compliance changes, not speed changes.
+- [PR #53097](https://github.com/BerriAI/litellm/pull/53097): warns when `fips_mode` starts with a Postgres password (SCRAM) login. SCRAM runs PBKDF2/HMAC client-side outside the FIPS module.
+- [Issue #44047](https://github.com/BerriAI/litellm/issues/44047) (closed): the global registry-load locks added in v1.101.0+ had no timeout.
 
 ## 5. Stability & Regressions
 Ranked by severity:
-1. [#52284](https://github.com/BerriAI/litellm/issues/52284) (closed): with `DATABASE_URL_READ_REPLICA`, a reconnect cancelled by its 2 s timeout leaves the reader Prisma engine permanently dead. Reads never fall back to the writer and the proxy doesn't self-heal. Closed, so presumably fixed.
-2. [#52588](https://github.com/BerriAI/litellm/issues/52588) (open): proxy shutdown can leave `s3_v2` log events undrained, losing logs. No fix PR is visible.
-3. [#21312](https://github.com/BerriAI/litellm/issues/21312) (open): failed requests aren't counted toward RPM limits.
-4. [#52548](https://github.com/BerriAI/litellm/issues/52548) (open): priority routing groups ignore deployment `tpm` limits and fail over early on `rpm` under `usage-based-routing-v2`.
-5. [#44919](https://github.com/BerriAI/litellm/issues/44919) (open): concurrent budget checks send duplicate webhook alerts.
-6. [#45348](https://github.com/BerriAI/litellm/issues/45348) (open): parallel tool-call arguments are dropped when streaming `/v1/messages` for the `chatgpt` (Codex) provider. Each `tool_use` block has empty `input`.
-7. [#52560](https://github.com/BerriAI/litellm/issues/52560) (open): during automatic MCP tool execution, `ImageContent` and `EmbeddedResource` are replaced with text placeholders.
-8. [#52849](https://github.com/BerriAI/litellm/issues/52849) (open): since 1.108.11, MCP tool discovery omits `auth_type: authorization` servers when no upstream credential is supplied.
-9. [#51452](https://github.com/BerriAI/litellm/issues/51452) (open): `ModelNotMappedError` in `litellm/utils.py`, with 11 comments.
-10. [#52456](https://github.com/BerriAI/litellm/issues/52456) (closed): out-of-order OpenAI Decisions answers were silently mapped to the wrong names in 1.110.0.
-11. [#49411](https://github.com/BerriAI/litellm/issues/49411) (closed): `voyage/` embeddings ignore `VOYAGE_API_BASE`.
-12. [#45605](https://github.com/BerriAI/litellm/issues/45605) (closed): `custom_auth_run_common_checks` skipped the key `max_budget` check.
-13. [#52534](https://github.com/BerriAI/litellm/issues/52534) (open): a Gemini direct image edit without an image raises a bare `ValueError` instead of a 400.
 
-Related fix PRs in flight:
-- [#51986](https://github.com/BerriAI/litellm/pull/51986): unregister Vertex pass-through credentials when a deployment is disabled or removed.
-- [#50785](https://github.com/BerriAI/litellm/pull/50785): stop SCIM user writes from overwriting teams added by a concurrent group push.
-- [#39888](https://github.com/BerriAI/litellm/pull/39888): preserve structured chunks through streaming hooks.
-- [#52384](https://github.com/BerriAI/litellm/pull/52384): return an upstream `-32042` URL elicitation error from `/mcp` as a JSON-RPC error.
+1. **Read-replica deadlock** — [#52284](https://github.com/BerriAI/litellm/issues/52284) (closed). With `DATABASE_URL_READ_REPLICA`, a reconnect cancelled by its 2s timeout leaves the reader Prisma engine dead. Reads never fall back to the writer, and key auth and readiness fail until restart.
+2. **Responses API streaming drops connection** — [#52853](https://github.com/BerriAI/litellm/issues/52853) (closed). An upstream 400 on a streaming `/v1/responses` call returns 200, emits `response.created`, then resets the connection (`GenericEvent has no attribute 'type'`).
+3. **Budget overshoot** — [#50125](https://github.com/BerriAI/litellm/issues/50125) (open). A key with a $0.0045 `max_budget` admitted 11 calls, spending $0.00496 (+10.3%). A single call over is expected, but the check seems to admit more.
+4. **Failure reported as "stop"** — [#48721](https://github.com/BerriAI/litellm/issues/48721) (open). `error`, `network_error`, vLLM `abort` and Gemini `MALFORMED_FUNCTION_CALL` map to `finish_reason: "stop"`, so router retries never run.
+5. **Audit logs 500** — [#50905](https://github.com/BerriAI/litellm/issues/50905) (closed). Since v1.108.0, `before_value` is stored as a JSON string, so `GET /audit` returns 500 after `/key/update` or `/team/update`.
+6. **Least-busy routing starvation** — [#39322](https://github.com/BerriAI/litellm/issues/39322) (open). Cache hits push the counter negative, ties always pick the first deployment, and the counter isn't shared across workers.
+7. **MCP regressions** — [#52849](https://github.com/BerriAI/litellm/issues/52849) (open) and [#37222](https://github.com/BerriAI/litellm/issues/37222) (open):
+   - #52849: tools from `auth_type: authorization` servers are missing from `/mcp-rest/tools/list` after upgrading from 1.105.7 to 1.108.11.
+   - #37222: OAuth2 `client_credentials` servers never receive the client ID or secret.
+8. **Usage and caching accuracy**:
+   - [#46059](https://github.com/BerriAI/litellm/issues/46059) (open): watsonx streamed usage is ignored in favor of an estimate.
+   - [#46613](https://github.com/BerriAI/litellm/issues/46613) (open): provider fields on the final stream usage chunk are dropped.
+   - [#49311](https://github.com/BerriAI/litellm/issues/49311) (closed): the exact-match cache never hits when OTel is on and `enable_caching_on_provider_specific_optional_params` is true.
+   - [#36882](https://github.com/BerriAI/litellm/issues/36882) (closed): `cached_tokens` is intermittently dropped from final streaming usage.
+9. **Provider translation bugs** (open unless noted):
+   - [#37609](https://github.com/BerriAI/litellm/issues/37609): sambanova flattens content lists, so `image_url` is lost.
+   - [#40072](https://github.com/BerriAI/litellm/issues/40072): the Responses-to-Bedrock bridge forwards internal `litellm_params`.
+   - [#36848](https://github.com/BerriAI/litellm/issues/36848) (closed): Vertex tool schemas with tuple-form `items` crash.
+   - [#28071](https://github.com/BerriAI/litellm/issues/28071): `token_counter` rejects `video_url` blocks.
+   - [#37469](https://github.com/BerriAI/litellm/issues/37469): `cache_control_injection_points` wrongly invokes Dotprompt.
+10. **UI performance** — [#23005](https://github.com/BerriAI/litellm/issues/23005) (open, stale): the UI is very slow on 1.82.x.
 
-Also worth tracking: [#33414](https://github.com/BerriAI/litellm/issues/33414) (closed), where Docker was leaving zombie processes.
+**Fixes in flight:**
+- [PR #50556](https://github.com/BerriAI/litellm/pull/50556): prices each Anthropic server-side fallback attempt at its own model's rate and skips unbilled refusals.
+- [PR #53100](https://github.com/BerriAI/litellm/pull/53100) and [#53101](https://github.com/BerriAI/litellm/pull/53101): stop sending `stream` in the A2A JSON-RPC body for `message/stream`, with a backport to the LTS branch.
+- [PR #43818](https://github.com/BerriAI/litellm/pull/43818): forwards `url_citation` annotations on the streaming Responses bridge.
+- [PR #49404](https://github.com/BerriAI/litellm/pull/49404): fixes AI Hub publish races across replicas using a DB lock.
+- [PR #53106](https://github.com/BerriAI/litellm/pull/53106): Langfuse skips export when credentials are incomplete.
+- [PR #53107](https://github.com/BerriAI/litellm/pull/53107): logs token-count 5xx at WARNING.
+- [PR #53098](https://github.com/BerriAI/litellm/pull/53098): security hardening covering RBAC on customer mutation endpoints, SSRF on generic logger endpoints, storage and Vault. It needs careful review.
+- [PR #52807](https://github.com/BerriAI/litellm/pull/52807): accepts OpenAI `input_json` content parts on `/v1/decisions` (LTS line).
 
 ## 6. What This Means for Application Developers
-- **Routing and rate limits:** don't rely on RPM accounting counting failed calls (#21312). With `priority` routing, `tpm` and `rpm` limits may not behave as they do with `order` (#52548). Add limits at the provider as well.
-- **MCP:** multimodal tool results (images, embedded resources) are lost in auto-execution (#52560). Tool discovery may differ after upgrading past 1.105.x if you use `auth_type: authorization` (#52849). Watch the elicitation work in #52384 and the response-header callbacks in #52678 if you use MCP.
-- **Streaming with Codex/`chatgpt` provider:** streaming `/v1/messages` with parallel tool calls loses arguments (#45348). Use non-streaming as a workaround, as the issue reports it works.
-- **Operations:**
-  - For stability, prefer the LTS (v1.108.12) or a patched stable line over the rc.
-  - If you run a read replica, confirm the fix for #52284 is in the version you deploy.
-  - Flush logs before shutdown if you use `s3_v2` (#52588).
-  - Budget your Helm migration Job memory above 1Gi on affected versions.
-- **Cost tracking:** the Rust pricing migration could change spend numbers or logging behavior. Compare spend before and after upgrading once it lands.
-- **Observability:** WildEdge's OTel v2 preset is a request, not yet implemented ([#52290](https://github.com/BerriAI/litellm/issues/52290)). The proxy already exports OTLP.
+- **Don't treat `finish_reason: "stop"` as proof of success.** Until #48721 lands, check for empty or truncated output and tool-call validity yourself.
+- **Don't rely on `max_budget` as a hard cap.** #50125 shows overshoot of about 10% on tiny budgets, so leave headroom.
+- **Don't trust proxy-reported streamed usage for billing.** Watsonx (#46059) and the final-chunk issues (#46613, #36882) can skew it.
+- **Handle Responses API streaming failures.** If you stream `/v1/responses`, expect that a bad upstream request may surface as a dropped connection (#52853). Add client-side retries and timeouts.
+- **Pin and verify.** Production users should stay on LTS (v1.108.13) or a patched stable line, and verify images with cosign. Hold off on the v1.111.0 RC and the dev build.
+- **Check upgrade paths.**
+  - Anthropic server-side fallback users: review the `extra_body` merge behavior (#49839, #48373).
+  - MCP users: test tool discovery after upgrading past 1.105.x (#52849).
+  - Read-replica deployments: run a restart or health-check playbook until #52284 is deployed.
+  - FIPS deployments: note the Postgres password-login warning (#53097).
 
 </details>
 

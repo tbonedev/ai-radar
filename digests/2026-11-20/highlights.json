@@ -1,150 +1,150 @@
 {
   "zh": {
     "ai-cli": [
-      "Claude Code v2.1.328 enables auto mode on cloud platforms",
-      "mcp_tool hook gains onFailure: block option",
-      "Claude Code #18435 tops reactions with 1074 👍",
-      "Claude Code #27302 draws 323 comments on privacy",
-      "OpenCode #59387 hits 392 comments, top of its list",
-      "OpenCode `ask` permission gating fails in #56470 and #54524"
+      "Claude Code v2.1.329 improves hook trust and visibility",
+      "OpenCode free-tier megathread hits 399 comments",
+      "Claude Code weekly-limit reset issue #76272 gets 44 👍",
+      "OpenCode #64784 would promote dev to production",
+      "OpenCode v2 background service and plugin API rebuild",
+      "OpenCode clipboard issue #4283 closed with 135 👍"
     ],
     "ai-agents": [
-      "MCP Servers v2.6.0 milestone: tracker issues #5603–#5608 closed",
-      "Version-packages PR #5633 open, so a release looks close",
-      "39 issues and 22 PRs updated in 24 hours",
-      "Memory server lock hand-off ordering fixed in #5623",
-      "Windows lock put-back retry added in #5637",
-      "New 5,000-entity scale test suite for memory server in #5625"
+      "MCP Servers v2.6.0 release prep led by cliffhall",
+      "Changesets PR #5633 is the likely v2.6.0 vehicle",
+      "New npm run image-smoke tests Docker images in CI (#5631)",
+      "Windows CI flake in memory tests fixed with 30s timeout",
+      "17 issues and 6 PRs updated across 7 MCP projects",
+      "Three outside community reports arrived, no comments yet"
     ],
     "ai-infra": [
-      "LiteLLM ships five releases, including v1.111.0-rc.2",
-      "LiteLLM LTS patch v1.108.12 released",
-      "LiteLLM moves pricing logic from Python to Rust",
-      "Dify rebuilding agent runtime as Agent v2",
-      "Dify BYOA external agents PR #45918 is XXL-sized",
-      "Dify v1.19.0 regressions still arriving"
+      "LiteLLM shipped six release tags across five version lines",
+      "LiteLLM v1.108.13 is tagged as an LTS release",
+      "Open LiteLLM bugs: wrong finish_reason and lost streamed usage",
+      "Dify had no release; a 1.19.0 regression is open",
+      "Dify RFC flags LLM prefix-cache loss",
+      "FIPS/OpenSSL and security PRs land at LiteLLM"
     ],
     "ai-trending": [
-      "redhat-et/ripwire: C++23 CLI and MCP server for agent code search",
-      "microsoft/TokenEconomizer cuts coding-agent token spend",
-      "Tencent/wave-mcp: 34 MCP tools for RTL waveform debugging",
-      "brenoepics/video-to-skill turns tutorial videos into agent skills",
-      "Trending star totals show ⭐0, so the report lists daily gains",
-      "Some topic-search star counts (80,831) look inflated or botted"
+      "redhat-et/ripwire: C++23 MCP server cuts agent token costs",
+      "microsoft/TokenEconomizer cuts coding-agent spend as a black box",
+      "Tencent/wave-mcp: 34 MCP tools for chip waveform debugging",
+      "aoci-spec/aoci-code: Git-versioned code and schema index for agents",
+      "A claude-code-tagged repo shows 59,770 stars, which looks inflated",
+      "A free-model plugin shows 81,935 stars, which is suspect"
     ],
     "ai-web": [
-      "Anthropic prices IPO at $83.00 per share",
-      "980M Class A shares offered; trades on Nasdaq as ANT",
-      "Claude Fable 5.2 solves two open black-hole physics problems",
-      "Claude used to formally verify 100+ open-source libraries",
-      "Cyber Verification Program expands to three access tiers",
-      "19 new articles: 12 Anthropic, 7 OpenAI"
+      "Anthropic closes IPO: 1.127B shares at $83 each",
+      "Gross IPO proceeds were about $93.5B; Anthropic got $91.6B",
+      "Anthropic trades on Nasdaq as ANT since Nov 19",
+      "Underwriters fully exercised the 147M-share option",
+      "Concurrent private placement of 313,253,007 shares",
+      "OpenAI published 2 new pages; sitemap total is 1146"
     ],
     "ai-hn": [
-      "Gemini 4 Neon launch tops HN with 955 points",
-      "Gemini 4 Neon vs Opus 5.5 comparison hits 244 points",
-      "Anthropic IPO pricing draws 676 comments",
-      "Genie 4 world model opens publicly, 280 points",
-      "Search traffic loss story reaches 707 points",
-      "Harvard: code review is the new coding-agent bottleneck"
+      "Anthropic employee claims Riemann Hypothesis proof (730 pts)",
+      "Claude solves two open black-hole physics problems",
+      "Google's Gemini 4 Neon tops 1,040 points",
+      "Anthropic's Nasdaq debut draws 2,233 comments",
+      "Frostbite: a CPU architecture designed and verified by AI",
+      "AI-generated 'probable cause' ruled unconstitutional"
     ],
     "ai-arxiv": [
-      "Contrastive prototype structures detect LLM jailbreaks",
-      "Study: general progress substitutes for withheld training data",
-      "On-Policy Morphing converts Transformers to hybrid attention",
-      "JEPA counterfactual formulation co-authored by Yann LeCun",
-      "Rule-configurable interactive world model proposed",
-      "Today's papers focus on agent infrastructure and evaluation"
+      "RL post-training in diffusion transformers is activation steering",
+      "Post-training changes how LLMs read out representations",
+      "Geometry of Lies detects deception at 70B scale",
+      "Agent reliability and security dominate today's papers",
+      "Agent memory folding and small deep-research agents",
+      "New direct-control robotics benchmark and humanoid data effort"
     ],
     "ai-hf": [
-      "Qwen3.8-27B leads with 20,630 likes, 6.6M downloads",
-      "Unsloth's Qwen3.8 GGUF build tops 7.1M downloads",
-      "DeepSeek-V4.1-Flash-1017 reaches 5,956 likes",
-      "LTX-2.5 from Lightricks gets 12,696 likes",
-      "Haru-4B full-duplex speech model has 2,731 likes",
-      "Nemotron 3.5 Bolt E4B fits in about 4GB"
+      "Qwen3.8-27B leads with 20,754 likes and 6.45M downloads",
+      "Haru-4B full-duplex speech model has 4,327 likes",
+      "Lightricks LTX-2.5 video model hits 12,818 likes",
+      "FLUX.3 Klein ComfyUI release gets 3,585 likes",
+      "DeepSeek-V4.1-Flash-1017 draws 6,010 likes",
+      "Meta's SAM 3 stays strong at 7,108 likes"
     ],
     "ai-community": [
-      "Gemma 4 E4B on an 8 GB RTX 3050: thinking costs 2.2x time",
-      "Speculative-decoding drafter cuts wall time 1.38–2.39×",
-      "'rm -rf $D*' bypasses regex AI guardrails",
-      "11 of 11 commercial agents failed the GuardFall test",
-      "Guardrail regex froze the Python event loop via ReDoS",
-      "Pydantic AI v2.70.0 patches two high-severity ReDoS advisories"
+      "Summary-first lost to trimming at 2.6x the tokens",
+      "Tool names are identifiers: don't autocorrect them in evals",
+      "Don't trust the agent, trust the factory",
+      "A RAG that refuses to answer, with abstention measured",
+      "Dev.to has 30 articles; Lobste.rs adds 6 stories",
+      "Truncation is the baseline to test before adding summaries"
     ]
   },
   "en": {
     "ai-cli": [
-      "Claude Code v2.1.328 enables auto mode on cloud platforms",
-      "mcp_tool hook gains onFailure: block option",
-      "Claude Code #18435 tops reactions with 1074 👍",
-      "Claude Code #27302 draws 323 comments on privacy",
-      "OpenCode #59387 hits 392 comments, top of its list",
-      "OpenCode `ask` permission gating fails in #56470 and #54524"
+      "Claude Code v2.1.329 improves hook trust and visibility",
+      "OpenCode free-tier megathread hits 399 comments",
+      "Claude Code weekly-limit reset issue #76272 gets 44 👍",
+      "OpenCode #64784 would promote dev to production",
+      "OpenCode v2 background service and plugin API rebuild",
+      "OpenCode clipboard issue #4283 closed with 135 👍"
     ],
     "ai-agents": [
-      "MCP Servers v2.6.0 milestone: tracker issues #5603–#5608 closed",
-      "Version-packages PR #5633 open, so a release looks close",
-      "39 issues and 22 PRs updated in 24 hours",
-      "Memory server lock hand-off ordering fixed in #5623",
-      "Windows lock put-back retry added in #5637",
-      "New 5,000-entity scale test suite for memory server in #5625"
+      "MCP Servers v2.6.0 release prep led by cliffhall",
+      "Changesets PR #5633 is the likely v2.6.0 vehicle",
+      "New npm run image-smoke tests Docker images in CI (#5631)",
+      "Windows CI flake in memory tests fixed with 30s timeout",
+      "17 issues and 6 PRs updated across 7 MCP projects",
+      "Three outside community reports arrived, no comments yet"
     ],
     "ai-infra": [
-      "LiteLLM ships five releases, including v1.111.0-rc.2",
-      "LiteLLM LTS patch v1.108.12 released",
-      "LiteLLM moves pricing logic from Python to Rust",
-      "Dify rebuilding agent runtime as Agent v2",
-      "Dify BYOA external agents PR #45918 is XXL-sized",
-      "Dify v1.19.0 regressions still arriving"
+      "LiteLLM shipped six release tags across five version lines",
+      "LiteLLM v1.108.13 is tagged as an LTS release",
+      "Open LiteLLM bugs: wrong finish_reason and lost streamed usage",
+      "Dify had no release; a 1.19.0 regression is open",
+      "Dify RFC flags LLM prefix-cache loss",
+      "FIPS/OpenSSL and security PRs land at LiteLLM"
     ],
     "ai-trending": [
-      "redhat-et/ripwire: C++23 CLI and MCP server for agent code search",
-      "microsoft/TokenEconomizer cuts coding-agent token spend",
-      "Tencent/wave-mcp: 34 MCP tools for RTL waveform debugging",
-      "brenoepics/video-to-skill turns tutorial videos into agent skills",
-      "Trending star totals show ⭐0, so the report lists daily gains",
-      "Some topic-search star counts (80,831) look inflated or botted"
+      "redhat-et/ripwire: C++23 MCP server cuts agent token costs",
+      "microsoft/TokenEconomizer cuts coding-agent spend as a black box",
+      "Tencent/wave-mcp: 34 MCP tools for chip waveform debugging",
+      "aoci-spec/aoci-code: Git-versioned code and schema index for agents",
+      "A claude-code-tagged repo shows 59,770 stars, which looks inflated",
+      "A free-model plugin shows 81,935 stars, which is suspect"
     ],
     "ai-web": [
-      "Anthropic prices IPO at $83.00 per share",
-      "980M Class A shares offered; trades on Nasdaq as ANT",
-      "Claude Fable 5.2 solves two open black-hole physics problems",
-      "Claude used to formally verify 100+ open-source libraries",
-      "Cyber Verification Program expands to three access tiers",
-      "19 new articles: 12 Anthropic, 7 OpenAI"
+      "Anthropic closes IPO: 1.127B shares at $83 each",
+      "Gross IPO proceeds were about $93.5B; Anthropic got $91.6B",
+      "Anthropic trades on Nasdaq as ANT since Nov 19",
+      "Underwriters fully exercised the 147M-share option",
+      "Concurrent private placement of 313,253,007 shares",
+      "OpenAI published 2 new pages; sitemap total is 1146"
     ],
     "ai-hn": [
-      "Gemini 4 Neon launch tops HN with 955 points",
-      "Gemini 4 Neon vs Opus 5.5 comparison hits 244 points",
-      "Anthropic IPO pricing draws 676 comments",
-      "Genie 4 world model opens publicly, 280 points",
-      "Search traffic loss story reaches 707 points",
-      "Harvard: code review is the new coding-agent bottleneck"
+      "Anthropic employee claims Riemann Hypothesis proof (730 pts)",
+      "Claude solves two open black-hole physics problems",
+      "Google's Gemini 4 Neon tops 1,040 points",
+      "Anthropic's Nasdaq debut draws 2,233 comments",
+      "Frostbite: a CPU architecture designed and verified by AI",
+      "AI-generated 'probable cause' ruled unconstitutional"
     ],
     "ai-arxiv": [
-      "Contrastive prototype structures detect LLM jailbreaks",
-      "Study: general progress substitutes for withheld training data",
-      "On-Policy Morphing converts Transformers to hybrid attention",
-      "JEPA counterfactual formulation co-authored by Yann LeCun",
-      "Rule-configurable interactive world model proposed",
-      "Today's papers focus on agent infrastructure and evaluation"
+      "RL post-training in diffusion transformers is activation steering",
+      "Post-training changes how LLMs read out representations",
+      "Geometry of Lies detects deception at 70B scale",
+      "Agent reliability and security dominate today's papers",
+      "Agent memory folding and small deep-research agents",
+      "New direct-control robotics benchmark and humanoid data effort"
     ],
     "ai-hf": [
-      "Qwen3.8-27B leads with 20,630 likes, 6.6M downloads",
-      "Unsloth's Qwen3.8 GGUF build tops 7.1M downloads",
-      "DeepSeek-V4.1-Flash-1017 reaches 5,956 likes",
-      "LTX-2.5 from Lightricks gets 12,696 likes",
-      "Haru-4B full-duplex speech model has 2,731 likes",
-      "Nemotron 3.5 Bolt E4B fits in about 4GB"
+      "Qwen3.8-27B leads with 20,754 likes and 6.45M downloads",
+      "Haru-4B full-duplex speech model has 4,327 likes",
+      "Lightricks LTX-2.5 video model hits 12,818 likes",
+      "FLUX.3 Klein ComfyUI release gets 3,585 likes",
+      "DeepSeek-V4.1-Flash-1017 draws 6,010 likes",
+      "Meta's SAM 3 stays strong at 7,108 likes"
     ],
     "ai-community": [
-      "Gemma 4 E4B on an 8 GB RTX 3050: thinking costs 2.2x time",
-      "Speculative-decoding drafter cuts wall time 1.38–2.39×",
-      "'rm -rf $D*' bypasses regex AI guardrails",
-      "11 of 11 commercial agents failed the GuardFall test",
-      "Guardrail regex froze the Python event loop via ReDoS",
-      "Pydantic AI v2.70.0 patches two high-severity ReDoS advisories"
+      "Summary-first lost to trimming at 2.6x the tokens",
+      "Tool names are identifiers: don't autocorrect them in evals",
+      "Don't trust the agent, trust the factory",
+      "A RAG that refuses to answer, with abstention measured",
+      "Dev.to has 30 articles; Lobste.rs adds 6 stories",
+      "Truncation is the baseline to test before adding summaries"
     ]
   }
 }
