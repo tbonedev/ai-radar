@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.330 adds Admin Console enterprise sign-in",
+      "Claude Code #47509 Team Max-20x tier tops reactions at 203 👍",
+      "OpenCode free-tier quota megathread passes 403 comments",
+      "OpenCode V2 rewrite and dev→production PR #64784 pending",
+      "Windows desktop quality is a shared weak spot in both tools",
+      "Claude Code PR #111198 adds security hardening"
+    ],
+    "ai-agents": [
+      "Five MCP test proposals target memory and everything servers",
+      "MCP servers PR #5629 adds release-time Registry listing",
+      "Registry tooling covers seven servers; first entries await next release",
+      "memory README documentation issue #5609 is the maintainers' focus",
+      "Two small correctness bugs found in the git server",
+      "7 projects tracked, 8 issues and 1 PR updated, no releases"
+    ],
+    "ai-infra": [
+      "Dify 1.19.0 and 1.20.0 have open regressions without fix PRs",
+      "LiteLLM v1.108.14 LTS shipped; main is at v1.110.x",
+      "LiteLLM builds a Rust/axum gateway with Redis-shared cooldowns",
+      "LiteLLM closed a large backlog of old issues in one day",
+      "Usage and cost accounting bugs recur across both projects",
+      "MCP auth and discovery issues recur in Dify and LiteLLM"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything gains +767 stars generating agent CLIs",
+      "Tencent/wave-mcp exposes 34 tools for RTL waveform debug",
+      "redhat-et/ripwire is a C++23 CLI and MCP server cutting agent tokens",
+      "microsoft/TokenEconomizer is a black-box cost control tool for agents",
+      "Tracer-Cloud/opensre gains +450 as a CI/CD reliability agent",
+      "Star counts look inflated, so judge projects by what they do"
+    ],
+    "ai-web": [
+      "Anthropic and Theorem use Claude to prove RISC-V security properties",
+      "Claude formal proofs cover 100+ open-source libraries",
+      "Anthropic says formal verification is now practical at scale",
+      "Article date conflict: crawl says Nov 20, excerpt says Oct 22",
+      "OpenAI's Medchembench appears as a metadata-only entry",
+      "3 new articles: 1 Anthropic, 2 OpenAI"
+    ],
+    "ai-hn": [
+      "Anthropic's Nasdaq debut thread hits 2,310 comments",
+      "AI sell-off erases Nasdaq's 2026 gains, about $4T wiped out",
+      "Thinking Machines' Inkling 2 Mini hits 1,148 points",
+      "Google's Gemini 4 Neon draws 1,056 points and 778 comments",
+      "Language Models Can Rewrite Their Own Weights paper: 444 points",
+      "Signal's post on restricting AI agents in mobile OSes leads privacy talk"
+    ],
+    "ai-arxiv": [
+      "Post-training changes how models read out what they represent",
+      "Persona directions detect deception in 70B models",
+      "AutoMaster's Skill-FT lets a model become a better teacher",
+      "RL post-training framed as activation steering",
+      "Papers study agent security incidents and forensic backtracking",
+      "TideCache, GLiDE and Seer target efficient serving and distillation"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,763 likes and 6.3M downloads",
+      "Thinking Machines debuts Inkling-2 Mini and Small",
+      "Inkling-2-Mini leads new LLMs with 1,317 likes",
+      "Lightricks LTX-2.5 tops video with 12,872 likes",
+      "Tencent places Hy4 and Hy4-flash on the board",
+      "Apple FastFrames-L and DepthPro2 trend alongside Meta SAM 3"
+    ],
+    "ai-community": [
+      "Fowler: unhealthy code costs agents 22–35% more to review",
+      "465 PRs across 246 repos tested in a five-agent pipeline",
+      "Scan of 220,000 MCP tool descriptions finds injection rare",
+      "About 1 in 4 MCP servers touches credentials",
+      "MCP tool definition token cost measured across 21,328 servers",
+      "A 'session getting long' hook failed to stop 689K-token calls"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.330 adds Admin Console enterprise sign-in",
+      "Claude Code #47509 Team Max-20x tier tops reactions at 203 👍",
+      "OpenCode free-tier quota megathread passes 403 comments",
+      "OpenCode V2 rewrite and dev→production PR #64784 pending",
+      "Windows desktop quality is a shared weak spot in both tools",
+      "Claude Code PR #111198 adds security hardening"
+    ],
+    "ai-agents": [
+      "Five MCP test proposals target memory and everything servers",
+      "MCP servers PR #5629 adds release-time Registry listing",
+      "Registry tooling covers seven servers; first entries await next release",
+      "memory README documentation issue #5609 is the maintainers' focus",
+      "Two small correctness bugs found in the git server",
+      "7 projects tracked, 8 issues and 1 PR updated, no releases"
+    ],
+    "ai-infra": [
+      "Dify 1.19.0 and 1.20.0 have open regressions without fix PRs",
+      "LiteLLM v1.108.14 LTS shipped; main is at v1.110.x",
+      "LiteLLM builds a Rust/axum gateway with Redis-shared cooldowns",
+      "LiteLLM closed a large backlog of old issues in one day",
+      "Usage and cost accounting bugs recur across both projects",
+      "MCP auth and discovery issues recur in Dify and LiteLLM"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything gains +767 stars generating agent CLIs",
+      "Tencent/wave-mcp exposes 34 tools for RTL waveform debug",
+      "redhat-et/ripwire is a C++23 CLI and MCP server cutting agent tokens",
+      "microsoft/TokenEconomizer is a black-box cost control tool for agents",
+      "Tracer-Cloud/opensre gains +450 as a CI/CD reliability agent",
+      "Star counts look inflated, so judge projects by what they do"
+    ],
+    "ai-web": [
+      "Anthropic and Theorem use Claude to prove RISC-V security properties",
+      "Claude formal proofs cover 100+ open-source libraries",
+      "Anthropic says formal verification is now practical at scale",
+      "Article date conflict: crawl says Nov 20, excerpt says Oct 22",
+      "OpenAI's Medchembench appears as a metadata-only entry",
+      "3 new articles: 1 Anthropic, 2 OpenAI"
+    ],
+    "ai-hn": [
+      "Anthropic's Nasdaq debut thread hits 2,310 comments",
+      "AI sell-off erases Nasdaq's 2026 gains, about $4T wiped out",
+      "Thinking Machines' Inkling 2 Mini hits 1,148 points",
+      "Google's Gemini 4 Neon draws 1,056 points and 778 comments",
+      "Language Models Can Rewrite Their Own Weights paper: 444 points",
+      "Signal's post on restricting AI agents in mobile OSes leads privacy talk"
+    ],
+    "ai-arxiv": [
+      "Post-training changes how models read out what they represent",
+      "Persona directions detect deception in 70B models",
+      "AutoMaster's Skill-FT lets a model become a better teacher",
+      "RL post-training framed as activation steering",
+      "Papers study agent security incidents and forensic backtracking",
+      "TideCache, GLiDE and Seer target efficient serving and distillation"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 20,763 likes and 6.3M downloads",
+      "Thinking Machines debuts Inkling-2 Mini and Small",
+      "Inkling-2-Mini leads new LLMs with 1,317 likes",
+      "Lightricks LTX-2.5 tops video with 12,872 likes",
+      "Tencent places Hy4 and Hy4-flash on the board",
+      "Apple FastFrames-L and DepthPro2 trend alongside Meta SAM 3"
+    ],
+    "ai-community": [
+      "Fowler: unhealthy code costs agents 22–35% more to review",
+      "465 PRs across 246 repos tested in a five-agent pipeline",
+      "Scan of 220,000 MCP tool descriptions finds injection rare",
+      "About 1 in 4 MCP servers touches credentials",
+      "MCP tool definition token cost measured across 21,328 servers",
+      "A 'session getting long' hook failed to stop 689K-token calls"
+    ]
+  }
+}
