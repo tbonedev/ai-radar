@@ -1,0 +1,118 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Neither Claude Code nor OpenCode shipped a release",
+      "Claude Code #45596 'Bring Back Buddy' hits 1,198 👍",
+      "Claude Code #60705 /goal hook issue: 316 comments, closed",
+      "OpenCode #59387 Zen free-tier megathread: 405 comments",
+      "OpenCode #10448 Zen balance API request has 38 👍",
+      "Both tools struggle with Windows, crashes, and agent safety"
+    ],
+    "ai-agents": [
+      "MCP Servers saw 6 open issues, no PRs, no releases",
+      "Four of six issues come from one author on test coverage",
+      "Git server bug: git_branch leaks '* ' prefix (#5641)",
+      "Memory server symlink graph-path edge case (#5644)",
+      "Everything server: error paths must not carry credentials (#5646)",
+      "Issue #5647 builds on #5475 input-property docs"
+    ],
+    "ai-infra": [
+      "LiteLLM shipped v1.112.0-dev.2 and LTS v1.108.15",
+      "LiteLLM 'lts' tag now points to v1.108.15",
+      "LiteLLM fixing Gemini/Vertex, Anthropic, Bedrock translation bugs",
+      "Dify possible regression after the 1.20.0 upgrade",
+      "Dify workflow-comments rework in PR #46864",
+      "Tool calling and streaming cause most breakage"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything makes agent-friendly CLIs for any software",
+      "yetone/magpie routes any agent to any model, 39,966 stars",
+      "redhat-et/ripwire: C++23 CLI and MCP server cutting agent tokens",
+      "microsoft/TokenEconomizer targets coding-agent cost control",
+      "Tracer-Cloud/opensre joins the trending AI repos",
+      "Trending star totals are missing, so treat them cautiously"
+    ],
+    "ai-hn": [
+      "Inkling 2 Mini from Thinking Machines tops HN at 1,433 points",
+      "Gemini 4 Neon launch draws 775 comments",
+      "Anthropic IPO week coincides with Nasdaq sell-off (906 comments)",
+      "Frostbite: AI-designed CPU architecture claim, 673 points",
+      "Claude reportedly solves open physics problems",
+      "OpenRouter and Together.ai disclose data-handling incidents"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini leads weekly likes with 4,169",
+      "Qwen3.8-27B tops the list: 20,841 likes, 6.3M downloads",
+      "DeepSeek-V4.1-Flash-1017 has 5,836 likes",
+      "Many Qwen3.8-27B quantizations and uncensored fine-tunes trend",
+      "Video and image: LTX-2.5, FLUX-3 Klein, FastFrames-L",
+      "Haru-4B full-duplex speech and Nemotron-3.5-Bolt 4GB on-device"
+    ],
+    "ai-community": [
+      "Martin Fowler: unhealthy PRs cost agents 22-35% more",
+      "Same $0.30/M tokens can mean a 37% bigger bill",
+      "Gemini 4 Hydrogen xhigh costs about 6x more than high",
+      "Eval Pyramid II: pass@1, pass@k and pass^k explained",
+      "Complex Method and Complex Conditional drive agent cost most",
+      "465 PRs across 246 repos tested in a five-agent pipeline"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Neither Claude Code nor OpenCode shipped a release",
+      "Claude Code #45596 'Bring Back Buddy' hits 1,198 👍",
+      "Claude Code #60705 /goal hook issue: 316 comments, closed",
+      "OpenCode #59387 Zen free-tier megathread: 405 comments",
+      "OpenCode #10448 Zen balance API request has 38 👍",
+      "Both tools struggle with Windows, crashes, and agent safety"
+    ],
+    "ai-agents": [
+      "MCP Servers saw 6 open issues, no PRs, no releases",
+      "Four of six issues come from one author on test coverage",
+      "Git server bug: git_branch leaks '* ' prefix (#5641)",
+      "Memory server symlink graph-path edge case (#5644)",
+      "Everything server: error paths must not carry credentials (#5646)",
+      "Issue #5647 builds on #5475 input-property docs"
+    ],
+    "ai-infra": [
+      "LiteLLM shipped v1.112.0-dev.2 and LTS v1.108.15",
+      "LiteLLM 'lts' tag now points to v1.108.15",
+      "LiteLLM fixing Gemini/Vertex, Anthropic, Bedrock translation bugs",
+      "Dify possible regression after the 1.20.0 upgrade",
+      "Dify workflow-comments rework in PR #46864",
+      "Tool calling and streaming cause most breakage"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything makes agent-friendly CLIs for any software",
+      "yetone/magpie routes any agent to any model, 39,966 stars",
+      "redhat-et/ripwire: C++23 CLI and MCP server cutting agent tokens",
+      "microsoft/TokenEconomizer targets coding-agent cost control",
+      "Tracer-Cloud/opensre joins the trending AI repos",
+      "Trending star totals are missing, so treat them cautiously"
+    ],
+    "ai-hn": [
+      "Inkling 2 Mini from Thinking Machines tops HN at 1,433 points",
+      "Gemini 4 Neon launch draws 775 comments",
+      "Anthropic IPO week coincides with Nasdaq sell-off (906 comments)",
+      "Frostbite: AI-designed CPU architecture claim, 673 points",
+      "Claude reportedly solves open physics problems",
+      "OpenRouter and Together.ai disclose data-handling incidents"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini leads weekly likes with 4,169",
+      "Qwen3.8-27B tops the list: 20,841 likes, 6.3M downloads",
+      "DeepSeek-V4.1-Flash-1017 has 5,836 likes",
+      "Many Qwen3.8-27B quantizations and uncensored fine-tunes trend",
+      "Video and image: LTX-2.5, FLUX-3 Klein, FastFrames-L",
+      "Haru-4B full-duplex speech and Nemotron-3.5-Bolt 4GB on-device"
+    ],
+    "ai-community": [
+      "Martin Fowler: unhealthy PRs cost agents 22-35% more",
+      "Same $0.30/M tokens can mean a 37% bigger bill",
+      "Gemini 4 Hydrogen xhigh costs about 6x more than high",
+      "Eval Pyramid II: pass@1, pass@k and pass^k explained",
+      "Complex Method and Complex Conditional drive agent cost most",
+      "465 PRs across 246 repos tested in a five-agent pipeline"
+    ]
+  }
+}
