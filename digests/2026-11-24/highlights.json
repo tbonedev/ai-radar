@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "OpenCode v2.4.0 adds built-in desktop browser",
+      "OpenCode v2.4.1 fixes macOS 12 SQLite crash",
+      "OpenCode #59387 hits 408 comments, still open",
+      "Claude Code #60705 closed after 318 comments",
+      "Subagent visibility: Claude Code #109446, OpenCode #41249",
+      "Cost and quota control is top user concern in both tools"
+    ],
+    "ai-agents": [
+      "MCP git server: 21 of 32 input properties undocumented",
+      "Schema-description fix #5475 skipped the Python git server",
+      "MCP Servers repo quiet: no PRs, merges or releases",
+      "Two open issues on git and everything reference servers",
+      "7 MCP projects tracked, including the official Registry",
+      "Maintainers have not yet responded to either open issue"
+    ],
+    "ai-infra": [
+      "No releases from Dify or LiteLLM in 24h",
+      "Dify has 144 PRs updated, mostly refactors and CI fixes",
+      "LiteLLM guardrail bypass and lost audit logs reported",
+      "LiteLLM v1.108.10+ moves to keyless image signing",
+      "Gemini/Vertex and Anthropic translation bugs dominate",
+      "Dify flags unvalidated JSON bodies as a security risk"
+    ],
+    "ai-trending": [
+      "Tencent/wave-mcp: MCP server with 34 RTL waveform tools",
+      "redhat-et/ripwire: C++23 code-search CLI and MCP server",
+      "microsoft/TokenEconomizer cuts coding-agent spend",
+      "rust-anything and fast-anything port code to Rust stepwise",
+      "Trending star counts look inflated, e.g. 84,976 for a plugin repo",
+      "Trending list shows 0 total stars for every repo"
+    ],
+    "ai-web": [
+      "Anthropic published no new content in this crawl",
+      "OpenAI added 'Perplexity and Intelligence' page, dated Nov 22",
+      "OpenAI page appears twice in the crawl as a duplicate",
+      "Only metadata captured, so no article text to assess",
+      "Sitemap totals: Anthropic 502, OpenAI 1,150",
+      "Title is derived from the URL slug and may be inaccurate"
+    ],
+    "ai-hn": [
+      "Inkling 2 Mini tops the feed at 1,473 points",
+      "GLM-5.4 loop transformer for coding hits 856 points",
+      "Gemini 4 Neon thread draws 775 comments",
+      "Anthropic IPO fallout is a major thread",
+      "'87% gas power' post draws 995 comments",
+      "Nasdaq sell-off thread draws 928 comments"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini hits 5,394 likes on new inkling2_loop design",
+      "Qwen3.8-27B leads with 21,654 likes, 6.2M downloads",
+      "DeepSeek-V4.1-Flash-1017 reaches 6,600 likes",
+      "MiniMax-H3 spawns derivatives Sulphur-3 and 10Eros-Max",
+      "Lightricks LTX-2.5 and Meta SAM 3 draw heavy downloads",
+      "Unsloth quantizations of Qwen3.8-27B already out"
+    ],
+    "ai-community": [
+      "60 injected MCP tool failures: LLMs misreported them",
+      "Verifier hit 38% false-positive rate before a fix",
+      "Retraction: tests did not pass on all 107 wrong AI changes",
+      "Regex then judgment model lifts leak recall 0.25 to 0.95",
+      "That detection pipeline costs about $1 a month",
+      "Parallel agent tool calls break when one needs another's answer"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "OpenCode v2.4.0 adds built-in desktop browser",
+      "OpenCode v2.4.1 fixes macOS 12 SQLite crash",
+      "OpenCode #59387 hits 408 comments, still open",
+      "Claude Code #60705 closed after 318 comments",
+      "Subagent visibility: Claude Code #109446, OpenCode #41249",
+      "Cost and quota control is top user concern in both tools"
+    ],
+    "ai-agents": [
+      "MCP git server: 21 of 32 input properties undocumented",
+      "Schema-description fix #5475 skipped the Python git server",
+      "MCP Servers repo quiet: no PRs, merges or releases",
+      "Two open issues on git and everything reference servers",
+      "7 MCP projects tracked, including the official Registry",
+      "Maintainers have not yet responded to either open issue"
+    ],
+    "ai-infra": [
+      "No releases from Dify or LiteLLM in 24h",
+      "Dify has 144 PRs updated, mostly refactors and CI fixes",
+      "LiteLLM guardrail bypass and lost audit logs reported",
+      "LiteLLM v1.108.10+ moves to keyless image signing",
+      "Gemini/Vertex and Anthropic translation bugs dominate",
+      "Dify flags unvalidated JSON bodies as a security risk"
+    ],
+    "ai-trending": [
+      "Tencent/wave-mcp: MCP server with 34 RTL waveform tools",
+      "redhat-et/ripwire: C++23 code-search CLI and MCP server",
+      "microsoft/TokenEconomizer cuts coding-agent spend",
+      "rust-anything and fast-anything port code to Rust stepwise",
+      "Trending star counts look inflated, e.g. 84,976 for a plugin repo",
+      "Trending list shows 0 total stars for every repo"
+    ],
+    "ai-web": [
+      "Anthropic published no new content in this crawl",
+      "OpenAI added 'Perplexity and Intelligence' page, dated Nov 22",
+      "OpenAI page appears twice in the crawl as a duplicate",
+      "Only metadata captured, so no article text to assess",
+      "Sitemap totals: Anthropic 502, OpenAI 1,150",
+      "Title is derived from the URL slug and may be inaccurate"
+    ],
+    "ai-hn": [
+      "Inkling 2 Mini tops the feed at 1,473 points",
+      "GLM-5.4 loop transformer for coding hits 856 points",
+      "Gemini 4 Neon thread draws 775 comments",
+      "Anthropic IPO fallout is a major thread",
+      "'87% gas power' post draws 995 comments",
+      "Nasdaq sell-off thread draws 928 comments"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini hits 5,394 likes on new inkling2_loop design",
+      "Qwen3.8-27B leads with 21,654 likes, 6.2M downloads",
+      "DeepSeek-V4.1-Flash-1017 reaches 6,600 likes",
+      "MiniMax-H3 spawns derivatives Sulphur-3 and 10Eros-Max",
+      "Lightricks LTX-2.5 and Meta SAM 3 draw heavy downloads",
+      "Unsloth quantizations of Qwen3.8-27B already out"
+    ],
+    "ai-community": [
+      "60 injected MCP tool failures: LLMs misreported them",
+      "Verifier hit 38% false-positive rate before a fix",
+      "Retraction: tests did not pass on all 107 wrong AI changes",
+      "Regex then judgment model lifts leak recall 0.25 to 0.95",
+      "That detection pipeline costs about $1 a month",
+      "Parallel agent tool calls break when one needs another's answer"
+    ]
+  }
+}
