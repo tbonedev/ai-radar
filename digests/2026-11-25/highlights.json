@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.331 brings Code Mode to 4 clouds",
+      "Claude Code #6235 AGENTS.md: 410 comments, 5,197 👍",
+      "OpenCode v2.3→v2.4 upgrade fallout dominates issues",
+      "OpenCode adds managed background-service architecture",
+      "Claude Code hooks mistaken for authorization raises concern",
+      "OpenCode reports malformed tool calls and routing stalls"
+    ],
+    "ai-agents": [
+      "MCP memory server v2.2.1 draws 4 of 6 issues",
+      "PR #5652 adds Events extension to everything server",
+      "Events extension (SEP-3415) supports poll and push delivery",
+      "Reporter za69956 audits memory server edge cases",
+      "ContHunt remote MCP listing issue #4812 closed",
+      "No releases; MCP project in hardening phase"
+    ],
+    "ai-infra": [
+      "LiteLLM ships 3 releases: v1.110.3, v1.109.4, v1.108.16",
+      "LiteLLM adopts keyless cosign verification",
+      "LiteLLM building a native Rust gateway",
+      "Dify closes ~25 bug reports in one triage sweep",
+      "Budgets, quotas and rate limits fail under concurrency",
+      "LiteLLM rc/1.112.0 branch already exists"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything gains +1075 stars today",
+      "redhat-et/ripwire: C++23 CLI and MCP server for agents",
+      "aoci-spec/aoci-code keeps a Git-versioned code index",
+      "Tracer-Cloud/opensre targets CI/CD reliability, +408 stars",
+      "mvanhorn/last30days-skill: agent skill for research",
+      "Trending star totals look unreliable and possibly inflated"
+    ],
+    "ai-web": [
+      "Anthropic 'Working with AI': 66 interviews, 58 customers",
+      "AI value comes from output gains, not cost cuts",
+      "AI-driven domestic layoffs found to be very rare",
+      "Coding agents spreading into nontechnical roles",
+      "Alignment and Interpretability pages refreshed Nov 24",
+      "OpenAI published nothing new today"
+    ],
+    "ai-hn": [
+      "Inkling 2 Mini tops HN with 1482 points",
+      "GLM-5.4 first loop transformer hits 1154 points",
+      "Anthropic gas-heavy power mix: 1036 points, 1007 comments",
+      "Anthropic reportedly trading below IPO price",
+      "VP ≠ VNP: Anthropic formal-math result, 348 points",
+      "OpenAI posts matching VP vs VNP preprint"
+    ],
+    "ai-arxiv": [
+      "Loop Residuals convert pretrained LLMs into looped transformers",
+      "Attention Latent Feedback breaks same-depth attention limit",
+      "LLMs steer on injected uncertainty but fail to self-monitor",
+      "FATCAT: fault-injection attacks on model alignment",
+      "Conformal abstention proposed for Text-to-SQL",
+      "Parallel speculative decoding and KV-cache migration for LoRA"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini leads new releases with 5,715 likes",
+      "Qwen3.8-27B tops board: 21,716 likes, 6.1M downloads",
+      "Lightricks LTX-2.5 hits 13,285 likes",
+      "DeepSeek-V4.1-Flash-1017 reaches 6,648 likes",
+      "Inkling-2 quantizations from Unsloth fill several slots",
+      "Tencent, Baidu, Meituan and others release new models"
+    ],
+    "ai-community": [
+      "Scaffold moved agents +39 points; model only 10",
+      "Eugene Yan's lessons from 12 public evals",
+      "Why AI release notes hallucinate from git history",
+      "Agent rules need code enforcement, not prompts",
+      "Dev.to and Lobste.rs: 34 AI stories covered",
+      "Tune the agent harness before buying a bigger model"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.331 brings Code Mode to 4 clouds",
+      "Claude Code #6235 AGENTS.md: 410 comments, 5,197 👍",
+      "OpenCode v2.3→v2.4 upgrade fallout dominates issues",
+      "OpenCode adds managed background-service architecture",
+      "Claude Code hooks mistaken for authorization raises concern",
+      "OpenCode reports malformed tool calls and routing stalls"
+    ],
+    "ai-agents": [
+      "MCP memory server v2.2.1 draws 4 of 6 issues",
+      "PR #5652 adds Events extension to everything server",
+      "Events extension (SEP-3415) supports poll and push delivery",
+      "Reporter za69956 audits memory server edge cases",
+      "ContHunt remote MCP listing issue #4812 closed",
+      "No releases; MCP project in hardening phase"
+    ],
+    "ai-infra": [
+      "LiteLLM ships 3 releases: v1.110.3, v1.109.4, v1.108.16",
+      "LiteLLM adopts keyless cosign verification",
+      "LiteLLM building a native Rust gateway",
+      "Dify closes ~25 bug reports in one triage sweep",
+      "Budgets, quotas and rate limits fail under concurrency",
+      "LiteLLM rc/1.112.0 branch already exists"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything gains +1075 stars today",
+      "redhat-et/ripwire: C++23 CLI and MCP server for agents",
+      "aoci-spec/aoci-code keeps a Git-versioned code index",
+      "Tracer-Cloud/opensre targets CI/CD reliability, +408 stars",
+      "mvanhorn/last30days-skill: agent skill for research",
+      "Trending star totals look unreliable and possibly inflated"
+    ],
+    "ai-web": [
+      "Anthropic 'Working with AI': 66 interviews, 58 customers",
+      "AI value comes from output gains, not cost cuts",
+      "AI-driven domestic layoffs found to be very rare",
+      "Coding agents spreading into nontechnical roles",
+      "Alignment and Interpretability pages refreshed Nov 24",
+      "OpenAI published nothing new today"
+    ],
+    "ai-hn": [
+      "Inkling 2 Mini tops HN with 1482 points",
+      "GLM-5.4 first loop transformer hits 1154 points",
+      "Anthropic gas-heavy power mix: 1036 points, 1007 comments",
+      "Anthropic reportedly trading below IPO price",
+      "VP ≠ VNP: Anthropic formal-math result, 348 points",
+      "OpenAI posts matching VP vs VNP preprint"
+    ],
+    "ai-arxiv": [
+      "Loop Residuals convert pretrained LLMs into looped transformers",
+      "Attention Latent Feedback breaks same-depth attention limit",
+      "LLMs steer on injected uncertainty but fail to self-monitor",
+      "FATCAT: fault-injection attacks on model alignment",
+      "Conformal abstention proposed for Text-to-SQL",
+      "Parallel speculative decoding and KV-cache migration for LoRA"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini leads new releases with 5,715 likes",
+      "Qwen3.8-27B tops board: 21,716 likes, 6.1M downloads",
+      "Lightricks LTX-2.5 hits 13,285 likes",
+      "DeepSeek-V4.1-Flash-1017 reaches 6,648 likes",
+      "Inkling-2 quantizations from Unsloth fill several slots",
+      "Tencent, Baidu, Meituan and others release new models"
+    ],
+    "ai-community": [
+      "Scaffold moved agents +39 points; model only 10",
+      "Eugene Yan's lessons from 12 public evals",
+      "Why AI release notes hallucinate from git history",
+      "Agent rules need code enforcement, not prompts",
+      "Dev.to and Lobste.rs: 34 AI stories covered",
+      "Tune the agent harness before buying a bigger model"
+    ]
+  }
+}
