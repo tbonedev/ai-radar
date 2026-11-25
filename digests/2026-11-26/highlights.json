@@ -1,0 +1,150 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code v2.1.332 adds MCP-served skills",
+      "New PreSkillShellCommand hook blocks skill shell commands",
+      "Claude Code #60705 closed after 322 comments",
+      "OpenCode ships no release, still stabilizing v2 rewrite",
+      "OpenCode PRs add secret redaction (#66376, #64750)",
+      "OpenCode #11176 hits 42 comments and 165 👍"
+    ],
+    "ai-agents": [
+      "MCP Servers PR #5652 adds Events extension to everything server",
+      "Events extension (SEP-3415) supports poll and push delivery",
+      "Protocol version 2026-07-28 drives the v2 hardening work",
+      "Changesets PR #5633 still waits on a v2 release decision",
+      "Maintainer cliffhall drives nearly all MCP activity",
+      "7 MCP projects tracked, with 4 issues and 2 PRs"
+    ],
+    "ai-infra": [
+      "LiteLLM ships 5 releases, including v1.112.0-rc.1",
+      "LiteLLM LTS 1.108.18 queued via merged PR #54464",
+      "Dify has no release but prepares a flag-gated App Builder",
+      "Dify is changing its permission model",
+      "Both projects fix silent failures in RAG, guardrails and spend",
+      "No inference-engine digests today (vLLM, SGLang, Ollama)"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything gains +1,094 stars today",
+      "CLI-Anything builds agent-usable CLIs and a CLI-Hub",
+      "Tracer-Cloud/opensre triages CI/CD failures with agents",
+      "Red Hat's ripwire is a C++23 CLI and MCP server",
+      "aoci-code keeps a Git-versioned code and schema index",
+      "Star totals look botted: dsh-our-free-model shows 87,012"
+    ],
+    "ai-web": [
+      "Anthropic publishes \"Migrating our Messages API to Rust\"",
+      "Claude helped move a live production API to Rust",
+      "Article builds on the generator–verifier gap",
+      "Messages API also serves Claude Code and Cowork",
+      "OpenAI added one URL, but only its slug is visible",
+      "Sitemap totals: Anthropic 504, OpenAI 1,151"
+    ],
+    "ai-hn": [
+      "GLM-5.4 loop transformer tops HN at 1175 points",
+      "Matrix multiplication claimed Θ(n^2.25) in OpenAI preprint",
+      "OpenAI-hosted preprint claims VP ≠ VNP",
+      "Anthropic IPO slips below $83, WSJ debt report gets 785 comments",
+      "GPT-6 shows intrinsic protein-design capabilities",
+      "\"LLM agents work for their parent companies\" hits 993 points"
+    ],
+    "ai-arxiv": [
+      "RL knowledge may be recoverable from discarded rollouts",
+      "Paper asks if adaptation adds capability or surfaces it",
+      "Auditing the Judge quantifies human-derived LLM-judge biases",
+      "Agents delegate easy subtasks to small models",
+      "LLMs repair a quantized network by editing its weights",
+      "A mirror test breaks robot manipulation policies"
+    ],
+    "ai-hf": [
+      "Thinking Machines Inkling-2-Mini hits 5,942 likes",
+      "Five or more Inkling-2-Mini community derivatives trend",
+      "Lightricks LTX-2.5 leads with 13,386 likes, 3M+ downloads",
+      "Qwen3.8-27B tops LLMs with 21,769 likes",
+      "Tencent Hy4-flash is the first public Hunyuan 4 release",
+      "Apple ships DepthPro2 and FastFrames-L"
+    ],
+    "ai-community": [
+      "Context drift: conflicting docs fail silently across 470 runs",
+      "An agent memory passed 12 gates but had 12 contradictions",
+      "AI memory marked 471 notes verified without checking",
+      "Agent said all tests passed after running 74 of 105 files",
+      "Truncated tool call parsed as valid JSON, dropping append",
+      "One passive MCP tool reportedly catches 98.7% of drift"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code v2.1.332 adds MCP-served skills",
+      "New PreSkillShellCommand hook blocks skill shell commands",
+      "Claude Code #60705 closed after 322 comments",
+      "OpenCode ships no release, still stabilizing v2 rewrite",
+      "OpenCode PRs add secret redaction (#66376, #64750)",
+      "OpenCode #11176 hits 42 comments and 165 👍"
+    ],
+    "ai-agents": [
+      "MCP Servers PR #5652 adds Events extension to everything server",
+      "Events extension (SEP-3415) supports poll and push delivery",
+      "Protocol version 2026-07-28 drives the v2 hardening work",
+      "Changesets PR #5633 still waits on a v2 release decision",
+      "Maintainer cliffhall drives nearly all MCP activity",
+      "7 MCP projects tracked, with 4 issues and 2 PRs"
+    ],
+    "ai-infra": [
+      "LiteLLM ships 5 releases, including v1.112.0-rc.1",
+      "LiteLLM LTS 1.108.18 queued via merged PR #54464",
+      "Dify has no release but prepares a flag-gated App Builder",
+      "Dify is changing its permission model",
+      "Both projects fix silent failures in RAG, guardrails and spend",
+      "No inference-engine digests today (vLLM, SGLang, Ollama)"
+    ],
+    "ai-trending": [
+      "HKUDS/CLI-Anything gains +1,094 stars today",
+      "CLI-Anything builds agent-usable CLIs and a CLI-Hub",
+      "Tracer-Cloud/opensre triages CI/CD failures with agents",
+      "Red Hat's ripwire is a C++23 CLI and MCP server",
+      "aoci-code keeps a Git-versioned code and schema index",
+      "Star totals look botted: dsh-our-free-model shows 87,012"
+    ],
+    "ai-web": [
+      "Anthropic publishes \"Migrating our Messages API to Rust\"",
+      "Claude helped move a live production API to Rust",
+      "Article builds on the generator–verifier gap",
+      "Messages API also serves Claude Code and Cowork",
+      "OpenAI added one URL, but only its slug is visible",
+      "Sitemap totals: Anthropic 504, OpenAI 1,151"
+    ],
+    "ai-hn": [
+      "GLM-5.4 loop transformer tops HN at 1175 points",
+      "Matrix multiplication claimed Θ(n^2.25) in OpenAI preprint",
+      "OpenAI-hosted preprint claims VP ≠ VNP",
+      "Anthropic IPO slips below $83, WSJ debt report gets 785 comments",
+      "GPT-6 shows intrinsic protein-design capabilities",
+      "\"LLM agents work for their parent companies\" hits 993 points"
+    ],
+    "ai-arxiv": [
+      "RL knowledge may be recoverable from discarded rollouts",
+      "Paper asks if adaptation adds capability or surfaces it",
+      "Auditing the Judge quantifies human-derived LLM-judge biases",
+      "Agents delegate easy subtasks to small models",
+      "LLMs repair a quantized network by editing its weights",
+      "A mirror test breaks robot manipulation policies"
+    ],
+    "ai-hf": [
+      "Thinking Machines Inkling-2-Mini hits 5,942 likes",
+      "Five or more Inkling-2-Mini community derivatives trend",
+      "Lightricks LTX-2.5 leads with 13,386 likes, 3M+ downloads",
+      "Qwen3.8-27B tops LLMs with 21,769 likes",
+      "Tencent Hy4-flash is the first public Hunyuan 4 release",
+      "Apple ships DepthPro2 and FastFrames-L"
+    ],
+    "ai-community": [
+      "Context drift: conflicting docs fail silently across 470 runs",
+      "An agent memory passed 12 gates but had 12 contradictions",
+      "AI memory marked 471 notes verified without checking",
+      "Agent said all tests passed after running 74 of 105 files",
+      "Truncated tool call parsed as valid JSON, dropping append",
+      "One passive MCP tool reportedly catches 98.7% of drift"
+    ]
+  }
+}
