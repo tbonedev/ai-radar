@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code #60705 hit 324 comments before closing",
+      "OpenCode v2.4.2 ships GPT-6.2 system prompt",
+      "OpenCode #59387 tops issues with 411 comments",
+      "Claude Code Mods and hooks request (#91870) gets 132 👍",
+      "OpenCode v2 adds subagent foreground mode and cancellation",
+      "Windows quality and runaway agents hit both tools"
+    ],
+    "ai-agents": [
+      "MCP servers repo saw only 2 issues in 24h",
+      "Both issues are v2-labeled enhancement requests",
+      "#5660: runtime tests of mcp-server-time, git and fetch",
+      "mcp-caretaker author gives maintainers advance notice",
+      "No PRs, merges or releases in modelcontextprotocol/servers",
+      "Discussion centers on the 'Modern (2026-07-28)' protocol"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.108.18 released; LTS 1.108.19 queued (#54723)",
+      "Dify had no release; v1.20.0 is the latest discussed",
+      "About 20 Dify issues closed, mostly from one reporter",
+      "A hyoban frontend PR stack of ~10 PRs lands in Dify",
+      "Day focused on billing accuracy and Prometheus identity",
+      "No data on vLLM, SGLang, llama.cpp, Ollama or Unsloth"
+    ],
+    "ai-trending": [
+      "Tracer-Cloud/opensre: CI/CD triage agent, +325 today",
+      "microsoft/TokenEconomizer cuts coding-agent token spend",
+      "aoci-code: Git-versioned code and schema map via MCP",
+      "fast-anything ports hot Python/Node/Ruby paths to Rust",
+      "Trending star totals read 0; topic-search counts look botted",
+      "cleanyourtv shows a dubious 61,173 stars"
+    ],
+    "ai-hn": [
+      "Matrix multiplication exponent is 9/4: 1,056 points",
+      "GLM-5.4, Z.ai's first loop transformer, tops HN at 1,180",
+      "OpenAI preprint refutes the polynomial Hirsch conjecture",
+      "Anthropic trades below its $83 IPO price (796 comments)",
+      "OpenAI cuts GPT-6.2 usage limits, fueling cost worries",
+      "Essay 'LLM agents work for their parent companies' tops 1,000"
+    ],
+    "ai-arxiv": [
+      "Tokenisation is not in APX unless P=NP",
+      "Mixture-of-Loops Transformer targets looped-model efficiency",
+      "LoopTitan questions the gains of looped MoE",
+      "Coding agents out-reason video generation models on visual tasks",
+      "Long-context speculative decoding on natively sparse models",
+      "Attack-policy selection can distort AI monitor evaluations"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini hits 6,181 likes with six-plus derivatives",
+      "Qwen3.8-27B leads text models: 21,834 likes, 6.0M downloads",
+      "Lightricks LTX-2.5 tops video: 13,525 likes, 3.0M downloads",
+      "inclusionAI Ling-3.2-air: MIT-licensed vision-language MoE",
+      "Aleph-Alpha releases Kolibri-1.1",
+      "Abliterated and uncensored Inkling variants trend"
+    ],
+    "ai-community": [
+      "A 3-case benchmark said 3/3; the full sweep said 70%",
+      "The 3-check rule before accepting any AI coding task",
+      "Exit code 0 is the weakest evidence an agent can give",
+      "Gemma 4 function calls on an 8 GB RTX 3050",
+      "Thinking on cut Gemma E4B prose answers from 1 in 9 to 1 in 100",
+      "Anthropic's Rust Messages API: tests said 98%, prod 25%"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code #60705 hit 324 comments before closing",
+      "OpenCode v2.4.2 ships GPT-6.2 system prompt",
+      "OpenCode #59387 tops issues with 411 comments",
+      "Claude Code Mods and hooks request (#91870) gets 132 👍",
+      "OpenCode v2 adds subagent foreground mode and cancellation",
+      "Windows quality and runaway agents hit both tools"
+    ],
+    "ai-agents": [
+      "MCP servers repo saw only 2 issues in 24h",
+      "Both issues are v2-labeled enhancement requests",
+      "#5660: runtime tests of mcp-server-time, git and fetch",
+      "mcp-caretaker author gives maintainers advance notice",
+      "No PRs, merges or releases in modelcontextprotocol/servers",
+      "Discussion centers on the 'Modern (2026-07-28)' protocol"
+    ],
+    "ai-infra": [
+      "LiteLLM v1.108.18 released; LTS 1.108.19 queued (#54723)",
+      "Dify had no release; v1.20.0 is the latest discussed",
+      "About 20 Dify issues closed, mostly from one reporter",
+      "A hyoban frontend PR stack of ~10 PRs lands in Dify",
+      "Day focused on billing accuracy and Prometheus identity",
+      "No data on vLLM, SGLang, llama.cpp, Ollama or Unsloth"
+    ],
+    "ai-trending": [
+      "Tracer-Cloud/opensre: CI/CD triage agent, +325 today",
+      "microsoft/TokenEconomizer cuts coding-agent token spend",
+      "aoci-code: Git-versioned code and schema map via MCP",
+      "fast-anything ports hot Python/Node/Ruby paths to Rust",
+      "Trending star totals read 0; topic-search counts look botted",
+      "cleanyourtv shows a dubious 61,173 stars"
+    ],
+    "ai-hn": [
+      "Matrix multiplication exponent is 9/4: 1,056 points",
+      "GLM-5.4, Z.ai's first loop transformer, tops HN at 1,180",
+      "OpenAI preprint refutes the polynomial Hirsch conjecture",
+      "Anthropic trades below its $83 IPO price (796 comments)",
+      "OpenAI cuts GPT-6.2 usage limits, fueling cost worries",
+      "Essay 'LLM agents work for their parent companies' tops 1,000"
+    ],
+    "ai-arxiv": [
+      "Tokenisation is not in APX unless P=NP",
+      "Mixture-of-Loops Transformer targets looped-model efficiency",
+      "LoopTitan questions the gains of looped MoE",
+      "Coding agents out-reason video generation models on visual tasks",
+      "Long-context speculative decoding on natively sparse models",
+      "Attack-policy selection can distort AI monitor evaluations"
+    ],
+    "ai-hf": [
+      "Inkling-2-Mini hits 6,181 likes with six-plus derivatives",
+      "Qwen3.8-27B leads text models: 21,834 likes, 6.0M downloads",
+      "Lightricks LTX-2.5 tops video: 13,525 likes, 3.0M downloads",
+      "inclusionAI Ling-3.2-air: MIT-licensed vision-language MoE",
+      "Aleph-Alpha releases Kolibri-1.1",
+      "Abliterated and uncensored Inkling variants trend"
+    ],
+    "ai-community": [
+      "A 3-case benchmark said 3/3; the full sweep said 70%",
+      "The 3-check rule before accepting any AI coding task",
+      "Exit code 0 is the weakest evidence an agent can give",
+      "Gemma 4 function calls on an 8 GB RTX 3050",
+      "Thinking on cut Gemma E4B prose answers from 1 in 9 to 1 in 100",
+      "Anthropic's Rust Messages API: tests said 98%, prod 25%"
+    ]
+  }
+}
