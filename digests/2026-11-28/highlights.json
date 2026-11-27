@@ -1,0 +1,134 @@
+{
+  "zh": {
+    "ai-cli": [
+      "Claude Code and OpenCode shipped no releases in 24h",
+      "Claude Code #36151 tops reactions with 785 👍",
+      "OpenCode #59387 hits 415 comments on billing issues",
+      "OpenCode PR #66842 closes three issues at once",
+      "OpenCode adds ripgrep bundling and 17-language docs",
+      "Users ask Claude Code for session handoff (#11455, #47926)"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.6.0 security release fixes 8 advisories",
+      "Upgrade mcp-server-git and mcp-server-fetch to 2026.11.27",
+      "server-memory 2.2.2 patches a security vulnerability",
+      "All 14 PRs merged or closed in one day",
+      "16 duplicate 'Withdrawn' issues from ShieldPi1 cleaned up",
+      "Two flaky memory-server tests and one new advisory remain"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.113.0-dev.1 and LTS patch v1.108.19",
+      "LiteLLM v1.108.20 is in preparation",
+      "Dify migrates session management and fixes Agent V2 bugs",
+      "LiteLLM fixes tool-call translation and billing regressions",
+      "Vector-DB scoping leaks surface in Dify",
+      "LiteLLM stale-bot cleanup closes about four issues"
+    ],
+    "ai-trending": [
+      "minimind trains a 64M-param LLM from scratch in 2 hours",
+      "HKUDS/CLI-Anything wraps software in agent-friendly CLIs",
+      "Tracer-Cloud/opensre investigates CI/CD pipeline failures",
+      "microsoft/TokenEconomizer cuts coding-agent token spend",
+      "kajisho5/ffmpeg-skill gives agents 42 FFmpeg tools",
+      "Trending star totals show ⭐0, so counts are unreliable"
+    ],
+    "ai-hn": [
+      "OpenAI preprint: matrix multiplication exponent is nine fourths",
+      "OpenAI preprint claims the polynomial Hirsch conjecture is false",
+      "GLM-5.4 debuts as Z.ai's first loop transformer (1183 pts)",
+      "Matrix multiplication post draws 1067 points, 607 comments",
+      "HN debates whether Claude sabotages research tasks",
+      "OpenAI usage-limit cuts spark cost-control speculation"
+    ],
+    "ai-arxiv": [
+      "Mixture-of-Loops Transformer rethinks state passing between loops",
+      "LoopTitan questions the gains reported for looped MoE",
+      "Tokenisation is not in APX unless P=NP",
+      "Papers study coding agents over-editing code",
+      "Long-context speculative decoding for natively sparse models",
+      "RL for long-horizon agents gets new work"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 21,894 likes and 5.75M downloads",
+      "Inkling-2-Mini has 6,398 likes and six top-30 derivatives",
+      "Lightricks LTX-2.5 leads video generation (13,676 likes)",
+      "Apple DepthPro2 and Meta SAM 3D Body are trending",
+      "NVIDIA Nemotron-Labs-Image and FLUX.3 Klein trend",
+      "Baidu ERNIE-5.5-Flash-Preview is a lightweight MoE preview"
+    ],
+    "ai-community": [
+      "A2A timeouts can still land writes; use idempotency keys",
+      "Coding agents shouldn't be able to close their own tickets",
+      "Loop checks miss agent fixation on the same issues",
+      "Replaying real calls found 5 MCP schema changes, not 2",
+      "Blind retries double-spent quota in 7 Bedrock experiments",
+      "TaskState.failed arrived as end_turn in the Bedrock tests"
+    ]
+  },
+  "en": {
+    "ai-cli": [
+      "Claude Code and OpenCode shipped no releases in 24h",
+      "Claude Code #36151 tops reactions with 785 👍",
+      "OpenCode #59387 hits 415 comments on billing issues",
+      "OpenCode PR #66842 closes three issues at once",
+      "OpenCode adds ripgrep bundling and 17-language docs",
+      "Users ask Claude Code for session handoff (#11455, #47926)"
+    ],
+    "ai-agents": [
+      "MCP Servers v2.6.0 security release fixes 8 advisories",
+      "Upgrade mcp-server-git and mcp-server-fetch to 2026.11.27",
+      "server-memory 2.2.2 patches a security vulnerability",
+      "All 14 PRs merged or closed in one day",
+      "16 duplicate 'Withdrawn' issues from ShieldPi1 cleaned up",
+      "Two flaky memory-server tests and one new advisory remain"
+    ],
+    "ai-infra": [
+      "LiteLLM ships v1.113.0-dev.1 and LTS patch v1.108.19",
+      "LiteLLM v1.108.20 is in preparation",
+      "Dify migrates session management and fixes Agent V2 bugs",
+      "LiteLLM fixes tool-call translation and billing regressions",
+      "Vector-DB scoping leaks surface in Dify",
+      "LiteLLM stale-bot cleanup closes about four issues"
+    ],
+    "ai-trending": [
+      "minimind trains a 64M-param LLM from scratch in 2 hours",
+      "HKUDS/CLI-Anything wraps software in agent-friendly CLIs",
+      "Tracer-Cloud/opensre investigates CI/CD pipeline failures",
+      "microsoft/TokenEconomizer cuts coding-agent token spend",
+      "kajisho5/ffmpeg-skill gives agents 42 FFmpeg tools",
+      "Trending star totals show ⭐0, so counts are unreliable"
+    ],
+    "ai-hn": [
+      "OpenAI preprint: matrix multiplication exponent is nine fourths",
+      "OpenAI preprint claims the polynomial Hirsch conjecture is false",
+      "GLM-5.4 debuts as Z.ai's first loop transformer (1183 pts)",
+      "Matrix multiplication post draws 1067 points, 607 comments",
+      "HN debates whether Claude sabotages research tasks",
+      "OpenAI usage-limit cuts spark cost-control speculation"
+    ],
+    "ai-arxiv": [
+      "Mixture-of-Loops Transformer rethinks state passing between loops",
+      "LoopTitan questions the gains reported for looped MoE",
+      "Tokenisation is not in APX unless P=NP",
+      "Papers study coding agents over-editing code",
+      "Long-context speculative decoding for natively sparse models",
+      "RL for long-horizon agents gets new work"
+    ],
+    "ai-hf": [
+      "Qwen3.8-27B leads with 21,894 likes and 5.75M downloads",
+      "Inkling-2-Mini has 6,398 likes and six top-30 derivatives",
+      "Lightricks LTX-2.5 leads video generation (13,676 likes)",
+      "Apple DepthPro2 and Meta SAM 3D Body are trending",
+      "NVIDIA Nemotron-Labs-Image and FLUX.3 Klein trend",
+      "Baidu ERNIE-5.5-Flash-Preview is a lightweight MoE preview"
+    ],
+    "ai-community": [
+      "A2A timeouts can still land writes; use idempotency keys",
+      "Coding agents shouldn't be able to close their own tickets",
+      "Loop checks miss agent fixation on the same issues",
+      "Replaying real calls found 5 MCP schema changes, not 2",
+      "Blind retries double-spent quota in 7 Bedrock experiments",
+      "TaskState.failed arrived as end_turn in the Bedrock tests"
+    ]
+  }
+}
